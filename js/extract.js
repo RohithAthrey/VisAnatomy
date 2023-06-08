@@ -3,6 +3,15 @@ const stackMinGap = -1, stackMaxGap = 1, stackAllignmentDiff = 0.15;
 var legend, xAxis, yAxis, xGridlines, yGridlines;
 var rects4Grouping;
 
+// global json object to keep track of annotation results
+var annotations = {
+    legend: null,
+    xAxis: null,
+    yAxis: null,
+    xGridlines: null,
+    yGridlines: null,
+};
+
 function extract(jsonArr, chartName) {
     let nodes = jsonArr["allNodes"];
     let rects = jsonArr["rects"];
