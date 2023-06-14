@@ -43,11 +43,19 @@ function extract(jsonArr, chartName) {
     findGridlines(rects, lines);
     console.log("xGridlines", xGridlines);
     console.log("yGridlines", yGridlines);
+
+    // updating global object gridlines properties
+    annotations['xGridlines'] = xGridlines;
+    annotations['yGridlines'] = yGridlines;
+
     // Legend
     //let colorMapping = {}
     //let legendArea = {"elements": [], "type": null};
     legend = findLegend(texts, rects, lines, numOfColor);
     console.log("legend", legend);
+
+    // updating global object xAxis property
+    annotations['legend'] = legend;
     
     //rbox2Html = displayLegend(legend, rbox2Html);
     displayLegend(legend);
@@ -77,10 +85,16 @@ function extract(jsonArr, chartName) {
     console.log("x axis", xAxis);
     displayAxis(xAxis);
 
+    // updating global object xAxis property
+    annotations['xAxis'] = xAxis;
+
     // Y axis
     yAxis = findyAxis(texts, rects, lines, nodes, nodeIndex, xAxis);
     console.log("y axis", yAxis);
     displayAxis(yAxis);
+
+    // updating global object yAxis property
+    annotations['yAxis'] = yAxis;
 
     // if Y labels are found while X labels are not; perform X label heuristic again
     if ('labels' in yAxis && !('labels' in xAxis)) {
@@ -88,6 +102,8 @@ function extract(jsonArr, chartName) {
         console.log("x axis", xAxis);
         displayAxis(xAxis);
     }
+
+    console.log("annotations", annotations);
 
     rects4Grouping = [rects, rectWith0WH]; // record a global variable for the later grouping heuristics
     // console.log(JSON.stringify({'rects': rects, "texts": texts, "lines": lines}))
