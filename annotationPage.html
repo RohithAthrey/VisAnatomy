@@ -440,7 +440,7 @@
                 </div>
             </div>            
             <button id = "saveButton" onclick="post()" style="position:absolute;bottom:1px;right:10px;">Save</button>
-            <button id = "loadButton" onclick="loadFile()" style="position:absolute;bottom:1px;right:110px;">loadTest</button>
+            <button id = "loadButton" onclick="loadFile()" style="position:absolute;bottom:1px;right:110px;">Load</button>
         </div>
         <div id="container">
             <div id="rbox1" class="rbox1" style="position:absolute; top:10px; left:10px; display: block; border:#ccc 0px solid;">
@@ -567,8 +567,28 @@
       }
 
       function loadFile() {
-        console.log(sessionStorage.getItem('fileName'));
+        filename = sessionStorage.getItem('fileName');
+        console.log("loading from: " + filename);
         
+        fetch('/annotations/' + filename + '.json')
+            .then(response => {
+                if (!response.ok) {
+                    console.log("save file not found");
+                    throw new Error("HTTP error " + response.status);
+                }
+                return response.json();
+            })
+            .then(json => {
+                this.users = json;
+                // loading the annotation data into the global variable
+                annotations = json;
+
+                // testing annotation was loaded
+                console.log("loaded annotations", annotations);
+            })
+            .catch(function () {
+                this.dataError = true;
+            })
       }
 
       
