@@ -374,6 +374,19 @@
             text-align: center;
             line-height: 10px;
       }
+      #loadButton{
+        position: absolute;
+            bottom: 20px;
+            right: 100px;
+            width: 100px;
+            height: 30px;
+            background: #eee;
+            border: #ccc 1px solid;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+            line-height: 20px;
+      }
     </style>
 </head>
 <body ondrop="drop(event)" ondragover="allowDrop(event)">
@@ -426,7 +439,8 @@
                     <div class="axisLabels" id="legendLabels" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
                 </div>
             </div>            
-            <button id = "saveButton" onclick="post()" style="position:absolute;bottom:10px;right:10px;">Save</button>
+            <button id = "saveButton" onclick="post()" style="position:absolute;bottom:1px;right:10px;">Save</button>
+            <button id = "loadButton" onclick="loadFile()" style="position:absolute;bottom:1px;right:110px;">Load</button>
         </div>
         <div id="container">
             <div id="rbox1" class="rbox1" style="position:absolute; top:10px; left:10px; display: block; border:#ccc 0px solid;">
@@ -447,6 +461,8 @@
         var areaSelection;
         var numOfColor;
         var atlasSceneGraph, atlasRenderer = atlas.renderer("svg", "atlasCanvas"), atlasTbl;
+        let chartName2Path = null;
+        let chartUrl2Web = null;
 
         function refresh() {
             console.log(sessionStorage.getItem("fileName"))
@@ -461,6 +477,7 @@
                 d3.select("body").style("overflow-y", "auto");
             }
         }
+    }
 
         function loadDemo(demo) {
             fetch("./examples/" + demo + ".svg")
@@ -518,6 +535,7 @@
 
             URL.revokeObjectURL(link.href);
         }
+
         function post() {
           let xhr = new XMLHttpRequest();
           xhr.open("POST", "/");
@@ -543,6 +561,36 @@
           console.log(data["chart"]);
           xhr.send(JSON.stringify(data));
       }
+
+      function getKeyByValue(object, value) {
+        return Object.keys(object).find((key) => object[key] === value);
+      }
+
+      function loadFile() {
+        filename = sessionStorage.getItem('fileName');
+        console.log("loading from: " + filename);
+        
+        fetch('/annotations/' + filename + '.json')
+            .then(response => {
+                if (!response.ok) {
+                    console.log("save file not found");
+                    throw new Error("HTTP error " + response.status);
+                }
+                return response.json();
+            })
+            .then(json => {
+                this.users = json;
+                // loading the annotation data into the global variable
+                annotations = json;
+
+                // testing annotation was loaded
+                console.log("loaded annotations", annotations);
+            })
+            .catch(function () {
+                this.dataError = true;
+            })
+      }
+
       
         document.addEventListener('keyup', function(e){
             if (e.code == "Escape")
@@ -553,6 +601,6 @@
             refresh();
         });
     </script>
-    
+
 </body>
 </html>
