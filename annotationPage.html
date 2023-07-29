@@ -387,9 +387,24 @@
             text-align: center;
             line-height: 20px;
       }
+      #alertBox {
+            position: fixed;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 10px 20px;
+            background-color: #f0f0f0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            visibility: hidden;
+            opacity: 0;
+            transition: visibility 0s, opacity 0.3s ease-in-out;
+      }
     </style>
 </head>
 <body ondrop="drop(event)" ondragover="allowDrop(event)">
+    <div class="notification" id="alertBox"> "notification info when saving" </div>
     <div style="display:none;">
         <ul id="demoList" class="demos">
         </ul>
@@ -533,8 +548,17 @@
           xhr.onreadystatechange = function () {
               if (xhr.readyState === 4) {
                 if(xhr.status >= 200 && xhr.status < 300){
-                    alert("Save successful");
-                  console.log(xhr.responseText);
+                    const alertBox = document.getElementById("alertBox");
+                    alertBox.textContent = `Annotations for the chart has been saved successfully to 'annotations / ${sessionStorage.getItem('fileName')}.json'!`;
+                    alertBox.style.visibility = "visible";
+                    alertBox.style.opacity = "1";
+
+                    // Hide the alert box after 3 seconds
+                    setTimeout(function() {
+                        alertBox.style.visibility = "hidden";
+                        alertBox.style.opacity = "0";
+                    }, 3000);
+                    console.log(xhr.responseText);
               } 
               else{
                 console.error("Error: " + xhr.status);
