@@ -523,19 +523,6 @@
             })
         }
 
-        function saveFile2() {
-            const jsonString = JSON.stringify(annotations);
-
-            const blob = new Blob([jsonString], { type: 'text/plain' });
-
-            const link = document.createElement('a');
-            link.href = URL.createObjectURL(blob);
-            link.download = "annotations.json";
-            link.click();
-
-            URL.revokeObjectURL(link.href);
-        }
-
         function post() {
           let xhr = new XMLHttpRequest();
           xhr.open("POST", "/");
@@ -585,6 +572,14 @@
 
                 // testing annotation was loaded
                 console.log("loaded annotations", annotations);
+
+                // update the values and the display boxes
+                xAxis = annotations.annotation.xAxis;
+                yAxis = annotations.annotation.yAxis;
+                legend = annotations.annotation.legend;
+                displayAxis(xAxis);
+                displayAxis(yAxis);
+                displayLegend(legend);
             })
             .catch(function () {
                 this.dataError = true;
