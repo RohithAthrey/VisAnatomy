@@ -455,7 +455,6 @@
                 </div>
             </div>            
             <button id = "saveButton" onclick="post()" style="position:absolute;bottom:1px;right:10px;">Save</button>
-            <button id = "loadButton" onclick="loadFile()" style="position:absolute;bottom:1px;right:110px;">Load</button>
         </div>
         <div id="container">
             <div id="rbox1" class="rbox1" style="position:absolute; top:10px; left:10px; display: block; border:#ccc 0px solid;">
@@ -487,11 +486,8 @@
             console.log(fileName);
 
             if (fileName) {   // load file from url if it exists
-                loadDemo(fileName);
-
-                // loading the corresponding annotations if they exist
                 sessionStorage.setItem("fileName", fileName + '.svg');
-                loadFile();
+                loadDemo(fileName);
             } else if (sessionStorage.getItem('svg') && sessionStorage.getItem('svg').length > 0) { loadDemo("artboard");
 
                 let demo = window.location.hash.replace("#", "");
@@ -507,6 +503,7 @@
     }
 
         function loadDemo(demo) {
+            loadFile();
             fetch("./examples/" + demo + ".svg")
             .then((resp) => {
                 return resp.text();
@@ -591,41 +588,7 @@
         return Object.keys(object).find((key) => object[key] === value);
       }
 
-      function loadFile() {
-        filename = sessionStorage.getItem('fileName');
-        console.log("loading from: " + filename);
-        
-        fetch('/annotations/' + filename + '.json')
-            .then(response => {
-                if (!response.ok) {
-                    console.log("save file not found");
-                    throw new Error("HTTP error " + response.status);
-                }
-                return response.json();
-            })
-            .then(json => {
-                this.users = json;
-                // loading the annotation data into the global variable
-                annotations = json;
-
-                // testing annotation was loaded
-                console.log("loaded annotations", annotations);
-
-                alertBox.textContent = "Annotations have been loaded from: 'annotations / " + filename + ".json'!";
-                alertBox.style.visibility = "visible";
-                alertBox.style.opacity = "1";
-                // update the values and the display boxes
-                xAxis = annotations.annotation.xAxis;
-                yAxis = annotations.annotation.yAxis;
-                legend = annotations.annotation.legend;
-                displayAxis(xAxis);
-                displayAxis(yAxis);
-                displayLegend(legend);
-            })
-            .catch(function () {
-                this.dataError = true;
-            })
-      }
+      
 
       
         document.addEventListener('keyup', function(e){
