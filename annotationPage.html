@@ -361,9 +361,50 @@
             display: inline-block;
             vertical-align: middle;
         }
+        #saveButton {
+            position: absolute;
+            bottom: 20px;
+            right: 100px;
+            width: 100px;
+            height: 30px;
+            background: #eee;
+            border: #ccc 1px solid;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+            line-height: 10px;
+      }
+      #loadButton{
+        position: absolute;
+            bottom: 20px;
+            right: 100px;
+            width: 100px;
+            height: 30px;
+            background: #eee;
+            border: #ccc 1px solid;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+            line-height: 20px;
+      }
+      #alertBox {
+            position: fixed;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 10px 20px;
+            background-color: #f0f0f0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            visibility: hidden;
+            opacity: 0;
+            transition: visibility 0s, opacity 0.3s ease-in-out;
+      }
     </style>
 </head>
 <body ondrop="drop(event)" ondragover="allowDrop(event)">
+    <div class="notification" id="alertBox"> "notification info when saving" </div>
     <div style="display:none;">
         <ul id="demoList" class="demos">
         </ul>
@@ -412,7 +453,8 @@
                     </div>
                     <div class="axisLabels" id="legendLabels" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
                 </div>
-            </div>
+            </div>            
+            <button id = "saveButton" onclick="post()" style="position:absolute;bottom:1px;right:10px;">Save</button>
         </div>
         <div id="container">
             <div id="rbox1" class="rbox1" style="position:absolute; top:10px; left:10px; display: block; border:#ccc 0px solid;">
@@ -426,6 +468,11 @@
     </div>
 
     <script>
+        window.addEventListener('beforeunload', function(event) {
+            event.returnValue = 'Are you sure you want to leave?';
+            return 'Are you sure you want to leave?';
+        });
+
         window.onhashchange = refresh;
         let uploaded = false;
         let metaData;
@@ -433,26 +480,41 @@
         var areaSelection;
         var numOfColor;
         var atlasSceneGraph, atlasRenderer = atlas.renderer("svg", "atlasCanvas"), atlasTbl;
+        let chartName2Path = null;
+        let chartUrl2Web = null;
 
         function refresh() {
-            if (sessionStorage.getItem('svg').length > 0) { loadDemo("artboard");}
-            let demo = window.location.hash.replace("#", "");
-            if (demo && demo != "") {
-                d3.select("body").style("overflow-y", "hidden");
-                window.scrollTo(0,0); 
-                loadDemo(demo);
-            } else {
-                d3.select("body").style("overflow-y", "auto");
+            // getting file name from url
+            const urlParams = new URLSearchParams(window.location.search);
+            const fileName = urlParams.get("file");
+
+            console.log(fileName);
+
+            if (fileName) {   // load file from url if it exists
+                sessionStorage.setItem("fileName", fileName + '.svg');
+                loadDemo(fileName);
+            } else if (sessionStorage.getItem('svg') && sessionStorage.getItem('svg').length > 0) { loadDemo("artboard");
+
+                let demo = window.location.hash.replace("#", "");
+                
+                if (demo && demo != "") {
+                    d3.select("body").style("overflow-y", "hidden");
+                    window.scrollTo(0,0); 
+                    loadDemo(demo);
+                } else {
+                    d3.select("body").style("overflow-y", "auto");
+                }
             }
-        }
+    }
 
         function loadDemo(demo) {
+            loadFile();
             fetch("./examples/" + demo + ".svg")
             .then((resp) => {
                 return resp.text();
             })
-            .then((text) => {
-                if(sessionStorage.getItem('svg') ? sessionStorage.getItem('svg').length > 0 : false) text = sessionStorage.getItem('svg');
+            .then((rawSVG) => {
+                if(sessionStorage.getItem('svg') ? sessionStorage.getItem('svg').length > 0 : false) rawSVG = sessionStorage.getItem('svg');
                 undoStack = [];
                 redoStack = [];
                 atlasSG_histroy = [];
@@ -468,15 +530,72 @@
                 d3.select("#preprocessUI").style("visibility", "visible");
                 d3.select("#layers").selectAll('*').remove();
                 d3.selectAll(".axisLabels").selectAll("button").remove();
-                displaySVG(text, demo);
-                let jsonArr = flattenSVG(text);
+
+                // in display.js, adding id and class attributes to the svg elements
+                displaySVG(rawSVG, demo);
+
+                // in cleanup.js, flattening the svg elements into json format grouped by element types like rectangle, texts, lines, etc.; we may want to modify it later
+                let jsonArr = flattenSVG(rawSVG); 
+
+                // in preprocess-interaction.js, attaching drag and drop event listeners to the svg text elements
                 enableDragDrop(jsonArr.texts);
+
+                // in extract.js, extracting from the svg file the legend mark and labels, and the x and y axis labels, ticks, and paths if any, and the grid lines if any
+                // extract() calls displayAxis() and displayLegend() to display the extracted elements
                 mainContent = extract(jsonArr, demo);
+
+                // in display.js, setting a proper view box for the svg file so that the svg file fits into the browser window
                 setViewBox(jsonArr.texts, jsonArr.lines, mainContent.rects);
+
+                // in preprocess-interaction.js, activating the area-selecting event so that one can also select the area of the legend, or x and y axis to annotate
                 enableAreaSelection();
             })
         }
 
+        function post() {
+          let xhr = new XMLHttpRequest();
+          xhr.open("POST", "/");
+          xhr.overrideMimeType("text/plain");
+          xhr.setRequestHeader("Accept", "application/json");
+          xhr.setRequestHeader("Content-Type", "application/json");
+ 
+          xhr.onreadystatechange = function () {
+              if (xhr.readyState === 4) {
+                if(xhr.status >= 200 && xhr.status < 300){
+                    const alertBox = document.getElementById("alertBox");
+                    alertBox.textContent = `Annotations for the chart has been saved successfully to 'annotations / ${sessionStorage.getItem('fileName')}.json'!`;
+                    alertBox.style.visibility = "visible";
+                    alertBox.style.opacity = "1";
+
+                    // Hide the alert box after 3 seconds
+                    setTimeout(function() {
+                        alertBox.style.visibility = "hidden";
+                        alertBox.style.opacity = "0";
+                    }, 3000);
+                    console.log(xhr.responseText);
+              } 
+              else{
+                console.error("Error: " + xhr.status);
+                alertBox.textContent = "Error: '" + xhr.status + "' occurred while saving the annotations";
+                alertBox.style.visibility = "visible";
+                alertBox.style.opacity = "1";
+            }
+          }
+      };
+          let data = {}
+          data["chart"] = sessionStorage.getItem("fileName");
+          data["annotation"] = annotations;
+          console.log(data["chart"]);
+          xhr.send(JSON.stringify(data));
+      }
+
+      function getKeyByValue(object, value) {
+        return Object.keys(object).find((key) => object[key] === value);
+      }
+
+      
+
+      
         document.addEventListener('keyup', function(e){
             if (e.code == "Escape")
                 deactivateAreaSelect();
@@ -486,6 +605,6 @@
             refresh();
         });
     </script>
-    
+
 </body>
 </html>

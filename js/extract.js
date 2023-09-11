@@ -3,6 +3,15 @@ const stackMinGap = -1, stackMaxGap = 1, stackAllignmentDiff = 0.15;
 var legend, xAxis, yAxis, xGridlines, yGridlines;
 var rects4Grouping;
 
+// global json object to keep track of annotation results
+var annotations = {
+    legend: null,
+    xAxis: null,
+    yAxis: null,
+    xGridlines: null,
+    yGridlines: null,
+};
+
 function extract(jsonArr, chartName) {
     let nodes = jsonArr["allNodes"];
     let rects = jsonArr["rects"];
@@ -34,6 +43,11 @@ function extract(jsonArr, chartName) {
     findGridlines(rects, lines);
     console.log("xGridlines", xGridlines);
     console.log("yGridlines", yGridlines);
+
+    // updating global object gridlines properties
+    annotations['xGridlines'] = xGridlines;
+    annotations['yGridlines'] = yGridlines;
+
     // Legend
     //let colorMapping = {}
     //let legendArea = {"elements": [], "type": null};
