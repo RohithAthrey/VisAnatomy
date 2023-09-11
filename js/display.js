@@ -224,6 +224,71 @@ function displayLegend(legend) {
   annotations["legend"] = legend;
 }
 
+function displayTitleXLabel(text) {
+  let title = text;
+  let btn = d3
+    .select("#xTitle")
+    .append("button")
+    //.datum(text)
+    .attr("type", "button")
+    .attr("class", "titlebutton")
+    .attr("style", "position: absolute; top: 1px; left: 200px")
+    .attr("style", "width: 100%")
+    .attr("id", "xTitleID")
+    //.attr("style", "width: 100px; height: 15px;")
+
+    //.attr("id", "IDinSVGtext1")
+    .attr("draggable", true)
+    .text(text["content"])
+    .on("dragstart", drag);
+  btn
+    .attr("style", "background-color: #f2f2f2")
+    .on("mouseover", function (event) {
+      d3.select("body")
+        .append("div")
+        .attr("class", "tooltip")
+        .style("opacity", 0.75)
+        .style("width", "100%")
+        .style("left", event.pageX + "px")
+        .style("top", event.pageY - 28 + "px");
+    })
+    .on("mouseout", function () {
+      d3.select(".tooltip").remove();
+    });
+  btn.attr("style", "width: 100%");
+}
+
+function displayTitleYLabel(text) {
+  let title = text;
+  let btn = d3
+    .select("#yTitle")
+    .append("button")
+    //.datum(text)
+    .attr("type", "button")
+    .attr("class", "titlebutton")
+    .attr("style", "position: absolute; top: 1px; left: 200px")
+    .attr("id", "yTitleID")
+    //.attr("style", "width: 100px; height: 15px;")
+
+    //.attr("id", "IDinSVGtext1")
+    .attr("draggable", true)
+    .text(text["content"])
+    .on("dragstart", drag);
+  btn
+    .attr("style", "background-color: #f2f2f2")
+    .on("mouseover", function (event) {
+      d3.select("body")
+        .append("div")
+        .attr("class", "tooltip")
+        .style("opacity", 0.75)
+        .style("left", event.pageX + "px")
+        .style("top", event.pageY - 28 + "px");
+    })
+    .on("mouseout", function () {
+      d3.select(".tooltip").remove();
+    });
+}
+
 /**
  * Unhandled:
  * horizontalbar_highchart (rect3, rect4), stacked_highchart (rect8, rect13), highcharts_grouped_3

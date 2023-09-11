@@ -121,8 +121,7 @@
             position: absolute;
             bottom: 0;
             left: 0px;
-            border: #ccc 1px solid;
-            height: 350px;
+            height: 220px;
         }
 
         .pages {
@@ -464,14 +463,18 @@
             width: 100%
         }
 
-        .title-container{
+     
+        #title-container{
             width: 200px; /* Set the desired width */
             height: 50px; /* Set the desired height */
             padding: 10px;
             position: relative; 
             margin-left: -30px;
+            box-sizing: border-box;
+
 
         }
+        
 
         .textbox {
             width: 80%;
@@ -494,17 +497,18 @@
         #xAxisMeta{
            background-color: #4f0599;
         }
-
-       #xTitle{
-            background-color: gray;
-
-
+ */
+       #xTitle, #yTitle, #legendTitle{
+            /*background-color: gray;*/
+            border: #bbb 1px solid;
+            height: 45px;
+            display: inline-block;
+            vertical-align: top;
+            overflow: scroll;
         }
 
-        #xLabels{
-            background-color: green;
-        }
-        */
+     
+       
         
     </style>
 </head>
@@ -539,16 +543,16 @@
 
                     <!--This is the second part of the column (title)-->
 
-                    <div class="TitleBox column-div-x" id="xTitle"> 
-                        <div class="title-container">
+                    <div class="TitleBox column-div-x" ondrop="drop(event)" ondragover="allowDrop(event)" id="xTitle"> 
+                         <!--<div id="title-container">
                             <input type="text" class="textbox" placeholder="TITLE">
-                          </div>
+                          </div>-->
                     </div> 
 
 
                     <!--This is the third part of the column (the label)-->
                     <div class="axisLabels column-div-x" id="xLabels" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-                    <!--<input type="image" src="img/plus.png" id="addXAxis" onclick="addAxisLevel('x');" width="16px" height="16px" style="position:absolute;right:7px;" class="selectAreaBtn"></input>-->
+                    <input type="image" src="img/plus.png" id="addXAxis" onclick="addAxisLevel('x');" width="16px" height="16px" style="position:absolute;right:7px;" class="selectAreaBtn"></input>
                 </div>
 
 
@@ -569,12 +573,12 @@
                     
                      <!-- This is the 2nd column div -->
 
-                    <div class="TitleBox column-div-y" id="yTitle"> 
-                        <div class="title-container">
-                            <input type="text" class="textbox" placeholder="TITLE">
-                          </div>
+                 
+                     <div class="TitleBox column-div-y" ondrop="drop(event)" ondragover="allowDrop(event)" id="yTitle"> 
+                        <!--<div id="title-container">
+                           <input type="text" class="textbox" placeholder="TITLE">
+                         </div>-->
                     </div> 
-
                     
                 <!-- This is the 3rd column div -->
                     <div class="axisLabels column-div-y" id="yLabels" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
@@ -583,7 +587,7 @@
                 </div>
 
 
-                <!-- This is the main column div -->
+                <!-- This is the  main legend div -->
 
                 <div class="axisDiv main-div-legend">
 
@@ -599,11 +603,10 @@
                     </div>
 
                     <!-- This is the 2nd column div-->
-                    <div class="TitleBox column-div-legend" id="yTitle"> 
-                        <!--<b>TITLE</b> -->
-                        <div class="title-container">
-                            <input type="text" class="textbox" placeholder="TITLE">
-                          </div>
+                    <div class="TitleBox column-div-legend" ondrop="drop(event)" ondragover="allowDrop(event)" id="legendTitle"> 
+                        <!--<div id="title-container">
+                           <input type="text" class="textbox" placeholder="TITLE">
+                         </div>-->
                     </div> 
 
 
@@ -679,6 +682,11 @@
                 chartDecomposition = {};
                 btnCheck = {};
                 legend = undefined;
+
+                titleXaxis = undefined;
+                titleYaxis = undefined;
+                titleLabel = undefined;
+                
                 xAxis = undefined;
                 yAxis = undefined;
                 xGridlines = undefined;
