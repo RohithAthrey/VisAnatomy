@@ -20,7 +20,7 @@ function addAxisLevel(t) {
     "calc(",
     (100 / (axis["upperLevels"].length + 1)).toFixed(1),
     "% - ",
-    150 / (axis["upperLevels"].length + 1),
+    405 / (axis["upperLevels"].length + 1),
     "px)",
   ].join("");
   d3.select("#" + t + "AxisDiv")
