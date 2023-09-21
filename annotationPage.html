@@ -742,58 +742,61 @@
               "
             ></div>
           </div>
-          <div
-            id="markSelections"
-            style="
-              height: 24%;
-              width: 100%;
-              border: #0ba7bc 1px solid;
-              padding: 5px;
-              margin-bottom: 10px;
-            "
-          >
+          <div>
             <h3>Mark Selections</h3>
+            <div
+              id="markSelections"
+              style="
+                height: 150px;
+                width: 100%;
+                border: #0ba7bc 1px solid;
+                padding: 5px;
+                margin-bottom: 10px;
+              "
+            ></div>
           </div>
-          <div
-            id="markRoles"
-            style="
-              height: 24%;
-              width: 100%;
-              border: #0ba7bc 1px solid;
-              padding: 5px;
-              margin-bottom: 10px;
-            "
-          >
+          <div>
             <h3>Mark Types and Roles</h3>
-            <div width="100%">
-              Select a Mark Type
-              <select
-                class="fieldType"
-                id="markTypeSelection"
-                onchange="markAnnotationChanged('Type')"
-              >
-                <option value="none">none</option>
-                <option value="Rectangle">Rectangle</option>
-                <option value="Circle">Circle</option>
-                <option value="Area">Area</option>
-                <option value="Singleline">Single line</option>
-                <option value="Polyline">Polyline</option>
-              </select>
-            </div>
-            <br />
-            <div width="100%">
-              Select a Mark Role
-              <select
-                class="fieldType"
-                id="markRoleSelection"
-                onchange="markAnnotationChanged('Role')"
-              >
-                <option value="none">none</option>
-                <option value="Main Chart">Main Chart</option>
-                <option value="Annotation">Annotation</option>
-                <option value="Gridlines">Gridlines</option>
-                <option value="Noise">Noise</option>
-              </select>
+            <div
+              id="markRoles"
+              style="
+                height: 150;
+                width: 100%;
+                border: #0ba7bc 1px solid;
+                padding: 5px;
+                margin-bottom: 10px;
+              "
+            >
+              <div width="100%">
+                Select a Mark Type
+                <select
+                  class="fieldType"
+                  id="markTypeSelection"
+                  onchange="markAnnotationChanged('Type')"
+                >
+                  <option value="none">none</option>
+                  <option value="Rectangle">Rectangle</option>
+                  <option value="Circle">Circle</option>
+                  <option value="Area">Area</option>
+                  <option value="Singleline">Single line</option>
+                  <option value="Polyline">Polyline</option>
+                </select>
+              </div>
+              <br />
+              <div width="100%">
+                Select a Mark Role
+                <select
+                  class="fieldType"
+                  id="markRoleSelection"
+                  onchange="markAnnotationChanged('Role')"
+                >
+                  <option value="none">none</option>
+                  <option value="Main Chart">Main Chart</option>
+                  <option value="Annotation">Annotation</option>
+                  <option value="Gridlines">Gridlines</option>
+                  <option value="Noise">Noise</option>
+                </select>
+              </div>
             </div>
           </div>
         </div>
