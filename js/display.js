@@ -1,23 +1,4 @@
-function displaySVG(text, chartName) {
-  // text = IDadder(text);
-  // let svgInfo = text.substring(0, text.indexOf('>')+1);
-  // if (svgInfo.indexOf('width') == -1) {
-  //     text = text.substring(0, text.indexOf('>')) + " width=\"50%\"" + text.substring(text.indexOf('>'))
-  // }
-  // if (svgInfo.indexOf('height') == -1) {
-  //     text = text.substring(0, text.indexOf('>')) + " height=\"100%\"" + text.substring(text.indexOf('>'))
-  // }
-  // if (svgInfo.indexOf('viewBox') > -1) {
-  //     text = text.substring(0, text.indexOf('viewBox')) + "viewBox_old" + text.substring(text.indexOf('viewBox')+7)
-  // }
-  // if (svgInfo.indexOf('preserveAspectRatio') > -1) {
-  //     text = text.substring(0, text.indexOf('preserveAspectRatio')) + "preserveAspectRatio_old" + text.substring(text.indexOf('preserveAspectRatio')+19)
-  // }
-  // text = text.substring(0, text.indexOf('>')) + " viewBox=\"-50 -50 1000 750\" preserveAspectRatio=\"xMinYMid\"" + text.substring(text.indexOf('>'))
-  // if (text.indexOf("<a") > 0) {
-  //     text = text.substring(0, text.indexOf('<a')) + text.substring(text.indexOf('</a>')+4)
-  // }
-
+function displaySVG(text) {
   document.getElementById("rbox1").innerHTML = text;
   let vis = d3.select("#rbox1").select("svg").attr("id", "vis");
 
@@ -45,11 +26,14 @@ function displaySVG(text, chartName) {
         [
           "rect",
           "circle",
+          "ellipse",
           "text",
           "line",
           "polyline",
+          "ploygon",
           "path",
           "image",
+          "use",
         ].includes(element.nodeName)
       ) {
         if (element.hasAttribute("class")) {
@@ -361,10 +345,6 @@ function displayTitleLegendLabel(thisText, mode) {
     });
 }
 
-/**
- * Unhandled:
- * horizontalbar_highchart (rect3, rect4), stacked_highchart (rect8, rect13), highcharts_grouped_3
- */
 function setViewBox() {
   let vb = getViewBox();
   let margin = 15,

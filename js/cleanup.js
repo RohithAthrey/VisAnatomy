@@ -55,13 +55,18 @@ function groupSVGElementsByTypeWithCoordinates() {
     const right = bbox.right - svgBBox.x;
     const bottom = bbox.bottom - svgBBox.y;
 
-    groupedElements.push({
-      left: left,
-      top: top,
-      right: right,
-      bottom: bottom,
-      id: element.id,
-    });
+    let zeroWidth = element.attributes.width?.value === "0";
+    let zeroHeight = element.attributes.height?.value === "0";
+
+    if (!(zeroHeight || zeroWidth)) {
+      groupedElements.push({
+        left: left,
+        top: top,
+        right: right,
+        bottom: bottom,
+        id: element.id,
+      });
+    }
   });
 
   return groupedElements;

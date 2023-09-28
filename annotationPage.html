@@ -566,6 +566,11 @@
     </button>
     <div id="preprocessUI" style="visibility: visible">
       <div class="mainbox" id="axisAndLegend">
+        <div style="margin-left: 20px">
+          <span style="margin-right: 30px; font-weight: bold"
+            >Axis & Legend Detection Results</span
+          >
+        </div>
         <div class="float-container" id="buttons" style="display: block">
           <!-- This is the main x axis div -->
           <div class="axisDiv" id="xAxisDiv">
@@ -1024,22 +1029,20 @@
             d3.selectAll(".axisLabels").selectAll("button").remove();
 
             // in display.js, adding id and class attributes to the svg elements
-            displaySVG(rawSVG, demo);
+            displaySVG(rawSVG);
 
             // in cleanup.js, flattening the svg elements into json format grouped by element types like rectangle, texts, lines, etc.; we may want to modify it later
             let allLeafNodesGroupedByType = groupSVGElementsByType();
             console.log(allLeafNodesGroupedByType);
 
-            // console.log(groupSVGElementsByTypeWithCoordinates());
-
+            // TBD: we need to update the flattenSVG function to be consistent with groupSVGElementsByType(), to avoid the previous complex lead-node processing
             let jsonArr = flattenSVG(rawSVG);
-
             // in preprocess-interaction.js, attaching drag and drop event listeners to the svg text elements
             enableDragDrop(jsonArr.texts);
 
             // in extract.js, extracting from the svg file the legend mark and labels, and the x and y axis labels, ticks, and paths if any, and the grid lines if any
             // extract() calls displayAxis() and displayLegend() to display the extracted elements
-            mainContent = extract(jsonArr, demo);
+            mainContent = extract(jsonArr);
             // mainContent = allLeafNodesGroupedByType;
             console.log("main chart area contains ", mainContent);
 

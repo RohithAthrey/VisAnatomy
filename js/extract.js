@@ -16,7 +16,7 @@ var annotations = {
   yGridlines: null,
 };
 
-function extract(jsonArr, chartName) {
+function extract(jsonArr) {
   let nodes = jsonArr["allNodes"];
   let rects = jsonArr["rects"];
   let originalRects = [...rects];
