@@ -143,6 +143,7 @@ function displayAxisLabel(label, divID) {
 }
 
 function displayLegend(legend) {
+  annotations["legend"] = legend;
   if (Object.keys(legend) === 0) return;
   d3.select("#legendLabels").selectAll("button").remove();
 

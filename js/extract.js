@@ -768,6 +768,7 @@ function findxAxis(texts, rects, lines, nodes, nodeIndex) {
     //baselineX = mostFrenquentY;
     xAxis["attrX"] = Object.keys(Labels[0]);
     xAxis["baseline"] = mostFrenquentY;
+    xAxis["ticks"] = [];
     for (let label of Labels) {
       texts.splice(texts.indexOf(label), 1);
     }
@@ -971,6 +972,7 @@ function findyAxis(texts, rects, lines, nodes, nodeIndex, xAxis) {
     yAxis["labels"] = Labels;
     yAxis["attrY"] = Object.keys(Labels[0]);
     yAxis["baseline"] = mostFrenquentX;
+    yAxis["ticks"] = [];
     for (let label of Labels) {
       texts.splice(texts.indexOf(label), 1);
     }

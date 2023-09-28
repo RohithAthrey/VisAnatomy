@@ -73,11 +73,28 @@ function groupSVGElementsByTypeWithCoordinates() {
 }
 
 function groupSVGElementsByType() {
+  const referenceElements = [
+    ...(legend.labels ? legend.labels : []),
+    ...(legend.marks ? legend.marks : []),
+    ...(xAxis.labels ? xAxis.labels : []),
+    ...(yAxis.labels ? yAxis.labels : []),
+    ...(xAxis.ticks ? xAxis.ticks : []),
+    ...(yAxis.ticks ? yAxis.ticks : []),
+  ].map((element) => element.id);
+  referenceElements.push(
+    ...[
+      xAxis.path ? xAxis.path.id : undefined,
+      yAxis.path ? yAxis.path.id : undefined,
+    ]
+  );
+  console.log(referenceElements);
+
   const tempDiv = document.getElementById("rbox1");
 
   // Get all leaf-node elements (elements without child elements)
   const leafElements = Array.from(tempDiv.querySelectorAll("*")).filter(
-    (element) => element.childElementCount === 0
+    (element) =>
+      element.childElementCount === 0 && !referenceElements.includes(element.id)
   );
 
   // Group the elements by their element type
@@ -88,7 +105,12 @@ function groupSVGElementsByType() {
     if (!groupedElements[elementType]) {
       groupedElements[elementType] = [];
     }
-    groupedElements[elementType].push({ element: element, id: element.id });
+    let zeroWidth = element.attributes.width?.value === "0";
+    let zeroHeight = element.attributes.height?.value === "0";
+
+    if (!(zeroHeight || zeroWidth)) {
+      groupedElements[elementType].push({ element: element, id: element.id });
+    }
   });
 
   return groupedElements;
