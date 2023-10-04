@@ -91,6 +91,7 @@ function initilizeMarkAnnotation() {
   document.getElementById("markSelections").innerHTML = "";
 
   Object.keys(channelBasedBatchSelections4AllMarks).forEach((elementType) => {
+    // need to add batch selection every mark of a certain type and all marks
     let channelBasedBatchSelections =
       channelBasedBatchSelections4AllMarks[elementType];
     Object.keys(channelBasedBatchSelections).forEach((channel) => {
