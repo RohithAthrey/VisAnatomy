@@ -10,3 +10,5 @@ To install all the relevant packages, run ```pip install -r requirements.txt``` 
 
 ## Running Flask app
 Finally, run ```flask run``` in the terminal to start an instance of the flask app. The interface should now be accessible in your browser at ```http://127.0.0.1:5000``` or ```http://localhost:5000```
+
+You can add or modify the flask environment variables in the .flaskenv file.
