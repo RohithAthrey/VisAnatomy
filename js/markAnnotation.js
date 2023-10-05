@@ -36,7 +36,7 @@ function initilizeMarkAnnotation() {
       element.element.attributes["font-size"]?.value === "0" ||
       element.element.attributes["stroke"]?.value === "transparent"
   );
-  console.log(invisibleElements);
+
   allLeftNodes = allLeftNodes.filter(
     (element) => !invisibleElements.includes(element)
   );
@@ -113,7 +113,6 @@ function initilizeMarkAnnotation() {
         selectionDiv.style.cursor = "pointer";
         document.getElementById("markSelections").appendChild(selectionDiv);
         d3.select("#" + selectionDiv.id).on("click", () => {
-          console.log(elementType + "_" + channel + "_" + value);
           selectionOnClick(selectionDiv.id, valueJson[value]);
         });
       }
@@ -232,7 +231,7 @@ function dertermineChannelBasedBatchSelections(elementType) {
             r.element.attributes[channel]?.value === value ||
             (value === "undefined" && !r.element.attributes[channel]) ||
             (channel === "fill" &&
-              r.element.parentNode.attributes[channel].value === value)
+              r.element.parentNode.attributes[channel]?.value === value)
         )
         .map((r) => r.id);
     });
