@@ -82,6 +82,8 @@ function initilizeMarkAnnotation() {
     });
   });
 
+  annotations.markAnnotations = markAnnotations;
+
   // then populate all possible mark batch selections
   leafNodeTypes.forEach((elementType) => {
     channelBasedBatchSelections4AllMarks[elementType] =
@@ -92,7 +94,20 @@ function initilizeMarkAnnotation() {
   document.getElementById("markSelections").innerHTML = "";
 
   Object.keys(channelBasedBatchSelections4AllMarks).forEach((elementType) => {
-    // need to add batch selection every mark of a certain type and all marks
+    // batch selection based on type
+    let typeDiv = document.createElement("div");
+    typeDiv.classList.add("selectionDiv");
+    typeDiv.id = elementType + "_all";
+    typeDiv.innerHTML = typeDiv.id;
+    document.getElementById("markSelections").appendChild(typeDiv);
+    d3.select("#" + typeDiv.id).on("click", () => {
+      selectionOnClick(
+        typeDiv.id,
+        mainContent[elementType].map((r) => r.id)
+      );
+    });
+
+    // batch selection based on channels
     let channelBasedBatchSelections =
       channelBasedBatchSelections4AllMarks[elementType];
     Object.keys(channelBasedBatchSelections).forEach((channel) => {
@@ -104,13 +119,6 @@ function initilizeMarkAnnotation() {
         selectionDiv.id =
           elementType + "_" + channel + "_value" + values.indexOf(value);
         selectionDiv.innerHTML = elementType + "_" + channel + "_" + value;
-        selectionDiv.style.display = "inline-block";
-        selectionDiv.style.width = "100%";
-        selectionDiv.style.height = "fit-content";
-        selectionDiv.style.border = "1px solid #000";
-        selectionDiv.style.padding = "2px";
-        selectionDiv.style.margin = "2px";
-        selectionDiv.style.cursor = "pointer";
         document.getElementById("markSelections").appendChild(selectionDiv);
         d3.select("#" + selectionDiv.id).on("click", () => {
           selectionOnClick(selectionDiv.id, valueJson[value]);
@@ -118,6 +126,15 @@ function initilizeMarkAnnotation() {
       }
     });
   });
+
+  d3.selectAll(".selectionDiv")
+    .style("display", "inline-block")
+    .style("width", "100%")
+    .style("height", "fit-content")
+    .style("border", "1px solid #000")
+    .style("padding", "2px")
+    .style("margin", "2px")
+    .style("cursor", "pointer");
 }
 
 function markOnClick(markID) {
@@ -204,6 +221,9 @@ function reflectChanges() {
       markDiv.appendChild(roleTag);
     }
   });
+
+  annotations.markAnnotations = markAnnotations;
+  console.log(annotations);
 }
 
 function dertermineChannelBasedBatchSelections(elementType) {
