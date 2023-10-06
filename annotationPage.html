@@ -502,14 +502,14 @@
         line-height: 20px;
       }
       #alertBox {
-        position: fixed;
-        top: 20px;
-        left: 50%;
-        transform: translateX(-50%);
-        padding: 10px 20px;
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        width: 20%;
+        padding: 2px 4px;
         background-color: #f0f0f0;
         border: 1px solid #ddd;
-        border-radius: 5px;
+        border-radius: 2px;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
         visibility: hidden;
         opacity: 0;
@@ -891,6 +891,8 @@
         return "Are you sure you want to leave?";
       });
 
+      var annotationLoaded = false;
+
       // breadcrumb ui functions
       const sectionTitles = [
         "Axis & Legend",
@@ -1051,15 +1053,9 @@
             inYTitle = false;
             titleLegend = [];
 
-            legend = {};
-            xAxis = {};
-            yAxis = {};
-            xGridlines = {};
-            yGridlines = {};
             demoName = demo;
             d3.select("#preprocessUI").style("visibility", "visible");
             d3.select("#layers").selectAll("*").remove();
-            d3.selectAll(".axisLabels").selectAll("button").remove();
 
             // in display.js, adding id and class attributes to the svg elements
             displaySVG(rawSVG);
@@ -1069,9 +1065,12 @@
             // in preprocess-interaction.js, attaching drag and drop event listeners to the svg text elements
             enableDragDrop(jsonArr.texts);
 
-            // in extract.js, extracting from the svg file the legend mark and labels, and the x and y axis labels, ticks, and paths if any, and the grid lines if any
-            // extract() calls displayAxis() and displayLegend() to display the extracted elements
-            extract(jsonArr);
+            if (!annotationLoaded) {
+              d3.selectAll(".axisLabels").selectAll("button").remove();
+              // in extract.js, extracting from the svg file the legend mark and labels, and the x and y axis labels, ticks, and paths if any, and the grid lines if any
+              // extract() calls displayAxis() and displayLegend() to display the extracted elements
+              extract(jsonArr);
+            }
 
             // in display.js, setting a proper view box for the svg file so that the svg file fits into the browser window
             setViewBox();
@@ -1092,7 +1091,7 @@
           if (xhr.readyState === 4) {
             if (xhr.status >= 200 && xhr.status < 300) {
               const alertBox = document.getElementById("alertBox");
-              alertBox.textContent = `Annotations for the chart has been saved successfully to 'annotations / ${sessionStorage.getItem(
+              alertBox.textContent = `Annotations saved to 'annotations / ${sessionStorage.getItem(
                 "fileName"
               )}.json'!`;
               alertBox.style.visibility = "visible";
@@ -1117,8 +1116,7 @@
         };
         let data = {};
         data["chart"] = sessionStorage.getItem("fileName");
-        data["annotation"] = annotations;
-        console.log(data["chart"]);
+        data["annotations"] = annotations;
         xhr.send(JSON.stringify(data));
       }
 

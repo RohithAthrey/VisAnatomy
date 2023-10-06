@@ -1,0 +1,107 @@
+<svg class="chart" width="381" height="1009" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g class="gantt-chart" width="381" height="1009" transform="translate(150, 20)">
+<rect rx="5" ry="5" class="bar-killed" y="0" transform="translate(0,565)" height="164" width="17.140926406224672"/>
+<rect rx="5" ry="5" class="bar" y="0" transform="translate(17.38087615496839,383)" height="164" width="6.428331171988976"/>
+<rect rx="5" ry="5" class="bar" y="0" transform="translate(17.973010212352083,19)" height="164" width="3.4908818284973258"/>
+<rect rx="5" ry="5" class="bar-failed" y="0" transform="translate(27.005957205381748,747)" height="164" width="5.805235856702872"/>
+<rect rx="5" ry="5" class="bar" y="0" transform="translate(29.86213324687956,201)" height="164" width="21.061395688118004"/>
+<rect rx="5" ry="5" class="bar-running" y="0" transform="translate(33.519431836602365,383)" height="164" width="13.932566056086884"/>
+<rect rx="5" ry="5" class="bar" y="0" transform="translate(34.31668422758956,565)" height="164" width="24.707083806127415"/>
+<rect rx="5" ry="5" class="bar" y="0" transform="translate(52.86247771113633,19)" height="164" width="2.275652455827526"/>
+<rect rx="5" ry="5" class="bar" y="0" transform="translate(59.25597746798508,383)" height="164" width="7.229453720213975"/>
+<rect rx="5" ry="5" class="bar-running" y="0" transform="translate(63.760840492786514,201)" height="164" width="15.63543524071973"/>
+<rect rx="5" ry="5" class="bar-running" y="0" transform="translate(67.42200923974713,747)" height="164" width="10.724205705949089"/>
+<rect rx="5" ry="5" class="bar-running" y="0" transform="translate(79.91100664613388,565)" height="164" width="23.046786351110384"/>
+<rect rx="5" ry="5" class="bar-running" y="0" transform="translate(80.7392202950235,19)" height="164" width="1.1649173285783831"/>
+<rect rx="5" ry="5" class="bar-running" y="0" transform="translate(88.92460285297456,201)" height="164" width="10.685504133571087"/>
+<rect rx="5" ry="5" class="bar-running" y="0" transform="translate(101.5877573350624,19)" height="164" width="0.9714094666882858"/>
+<rect rx="5" ry="5" class="bar-running" y="0" transform="translate(108.60435240719727,19)" height="164" width="1.1649173285783974"/>
+<rect rx="5" ry="5" class="bar-running" y="0" transform="translate(117.71857270222077,201)" height="164" width="0.9327078943102833"/>
+<rect rx="5" ry="5" class="bar" y="0" transform="translate(122.52530799157076,19)" height="164" width="2.275652455827526"/>
+<rect rx="5" ry="5" class="bar" y="0" transform="translate(128.9188077484195,383)" height="164" width="7.229453720213968"/>
+<rect rx="5" ry="5" class="bar" y="0" transform="translate(131.84464662019775,565)" height="164" width="1.4861403793159411"/>
+<rect rx="5" ry="5" class="bar-running" y="0" transform="translate(133.42367077322095,201)" height="164" width="15.635435240719715"/>
+<rect rx="5" ry="5" class="bar-running" y="0" transform="translate(137.08483952018156,747)" height="164" width="10.724205705949089"/>
+<rect rx="5" ry="5" class="bar" y="0" transform="translate(155.25522775166152,201)" height="164" width="7.128829632031142"/>
+<rect rx="5" ry="5" class="bar-failed" y="0" transform="translate(166.33161776625062,747)" height="164" width="5.805235856702865"/>
+<rect rx="5" ry="5" class="bar" y="0" transform="translate(184.571668828011,383)" height="164" width="6.428331171988987"/>
+<g class="x axis" transform="translate(0, 929)">
+<g class="tick" transform="translate(11.053169071162262,0)" style="opacity: 1;">
+<line y2="8" x2="0"/>
+<text dy=".71em" y="16" x="0" style="text-anchor: middle;">00:00</text>
+</g>
+<g class="tick" transform="translate(24.985735127249146,0)" style="opacity: 1;">
+<line y2="8" x2="0"/>
+<text dy=".71em" y="16" x="0" style="text-anchor: middle;">01:00</text>
+</g>
+<g class="tick" transform="translate(38.918301183336034,0)" style="opacity: 1;">
+<line y2="8" x2="0"/>
+<text dy=".71em" y="16" x="0" style="text-anchor: middle;">02:00</text>
+</g>
+<g class="tick" transform="translate(52.85086723942292,0)" style="opacity: 1;">
+<line y2="8" x2="0"/>
+<text dy=".71em" y="16" x="0" style="text-anchor: middle;">03:00</text>
+</g>
+<g class="tick" transform="translate(66.78343329550981,0)" style="opacity: 1;">
+<line y2="8" x2="0"/>
+<text dy=".71em" y="16" x="0" style="text-anchor: middle;">04:00</text>
+</g>
+<g class="tick" transform="translate(80.7159993515967,0)" style="opacity: 1;">
+<line y2="8" x2="0"/>
+<text dy=".71em" y="16" x="0" style="text-anchor: middle;">05:00</text>
+</g>
+<g class="tick" transform="translate(94.64856540768358,0)" style="opacity: 1;">
+<line y2="8" x2="0"/>
+<text dy=".71em" y="16" x="0" style="text-anchor: middle;">06:00</text>
+</g>
+<g class="tick" transform="translate(108.58113146377048,0)" style="opacity: 1;">
+<line y2="8" x2="0"/>
+<text dy=".71em" y="16" x="0" style="text-anchor: middle;">07:00</text>
+</g>
+<g class="tick" transform="translate(122.51369751985736,0)" style="opacity: 1;">
+<line y2="8" x2="0"/>
+<text dy=".71em" y="16" x="0" style="text-anchor: middle;">08:00</text>
+</g>
+<g class="tick" transform="translate(136.44626357594424,0)" style="opacity: 1;">
+<line y2="8" x2="0"/>
+<text dy=".71em" y="16" x="0" style="text-anchor: middle;">09:00</text>
+</g>
+<g class="tick" transform="translate(150.3788296320311,0)" style="opacity: 1;">
+<line y2="8" x2="0"/>
+<text dy=".71em" y="16" x="0" style="text-anchor: middle;">10:00</text>
+</g>
+<g class="tick" transform="translate(164.311395688118,0)" style="opacity: 1;">
+<line y2="8" x2="0"/>
+<text dy=".71em" y="16" x="0" style="text-anchor: middle;">11:00</text>
+</g>
+<g class="tick" transform="translate(178.2439617442049,0)" style="opacity: 1;">
+<line y2="8" x2="0"/>
+<text dy=".71em" y="16" x="0" style="text-anchor: middle;">12:00</text>
+</g>
+<path class="domain" d="M0,8V0H191V8"/>
+</g>
+<g class="y axis">
+<g class="tick" transform="translate(0,101)" style="opacity: 1;">
+<line x2="0" y2="0"/>
+<text dy=".32em" x="-3" y="0" style="text-anchor: end;">D Job</text>
+</g>
+<g class="tick" transform="translate(0,283)" style="opacity: 1;">
+<line x2="0" y2="0"/>
+<text dy=".32em" x="-3" y="0" style="text-anchor: end;">P Job</text>
+</g>
+<g class="tick" transform="translate(0,465)" style="opacity: 1;">
+<line x2="0" y2="0"/>
+<text dy=".32em" x="-3" y="0" style="text-anchor: end;">E Job</text>
+</g>
+<g class="tick" transform="translate(0,647)" style="opacity: 1;">
+<line x2="0" y2="0"/>
+<text dy=".32em" x="-3" y="0" style="text-anchor: end;">A Job</text>
+</g>
+<g class="tick" transform="translate(0,829)" style="opacity: 1;">
+<line x2="0" y2="0"/>
+<text dy=".32em" x="-3" y="0" style="text-anchor: end;">N Job</text>
+</g>
+<path class="domain" d="M0,0H0V929H0"/>
+</g>
+</g>
+</svg>

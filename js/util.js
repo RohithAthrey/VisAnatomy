@@ -1,3 +1,10 @@
+legend = {};
+xAxis = {};
+yAxis = {};
+xGridlines = {};
+yGridlines = {};
+markAnnotations = {};
+
 function loadFile() {
   filename = sessionStorage.getItem("fileName");
   console.log("loading from: " + filename);
@@ -13,21 +20,23 @@ function loadFile() {
     .then((json) => {
       this.users = json;
       // loading the annotation data into the global variable
-      annotations = json;
+      annotations = json.annotations;
+      annotationLoaded = true;
 
       // testing annotation was loaded
       console.log("loaded annotations", annotations);
 
       alertBox.textContent =
-        "Annotations have been loaded from: 'annotations / " +
-        filename +
-        ".json'!";
+        "Annotations loaded from: 'annotations / " + filename + ".json'!";
       alertBox.style.visibility = "visible";
       alertBox.style.opacity = "1";
       // update the values and the display boxes
-      xAxis = annotations.annotation.xAxis;
-      yAxis = annotations.annotation.yAxis;
-      legend = annotations.annotation.legend;
+      xAxis = annotations.xAxis;
+      yAxis = annotations.yAxis;
+      legend = annotations.legend;
+      xGridlines = annotations.xGridlines;
+      yGridlines = annotations.yGridlines;
+      markAnnotations = annotations.markAnnotations;
       displayAxis(xAxis);
       displayAxis(yAxis);
       displayLegend(legend);

@@ -63,6 +63,7 @@ function displaySVG(text) {
 }
 
 function displayAxis(axis) {
+  console.log(axis);
   if (Object.keys(axis) === 0) return;
   d3.select("#" + axis.type + "Labels")
     .selectAll("button")
@@ -108,13 +109,10 @@ function displayAxis(axis) {
   } else if (axis.type == "y") {
     annotations["yAxis"] = axis;
   }
-
-  console.log("annotations", annotations);
 }
 
 function displayAxisLabel(label, divID) {
-  let btn = d3
-    .select("#" + divID)
+  d3.select("#" + divID)
     .append("button")
     .datum(label)
     .attr("type", "button")
@@ -123,23 +121,6 @@ function displayAxisLabel(label, divID) {
     .attr("draggable", true)
     .text(label["content"])
     .on("dragstart", drag);
-  //   if (label["id"] in btnCheck) {
-  //     let message = btnCheck[label["id"]];
-  //     btn
-  //       .attr("style", "background-color: #FC6F51")
-  //       .on("mouseover", function (event) {
-  //         d3.select("body")
-  //           .append("div")
-  //           .attr("class", "tooltip")
-  //           .style("opacity", 0.75)
-  //           .html(message.substring(0, message.length - 1) + ".")
-  //           .style("left", event.pageX + "px")
-  //           .style("top", event.pageY - 28 + "px");
-  //       })
-  //       .on("mouseout", function () {
-  //         d3.select(".tooltip").remove();
-  //       });
-  //   }
 }
 
 function displayLegend(legend) {
@@ -161,8 +142,7 @@ function displayLegend(legend) {
   );
 
   for (let label of labels) {
-    let btn = d3
-      .select("#legendLabels")
+    d3.select("#legendLabels")
       .append("button")
       .datum(label)
       .attr("type", "button")
@@ -186,23 +166,6 @@ function displayLegend(legend) {
       })
       .text(label["content"])
       .on("dragstart", drag);
-    if (label["id"] in btnCheck) {
-      let message = btnCheck[label["id"]];
-      btn
-        .attr("style", "background-color: #FC6F51")
-        .on("mouseover", function (event) {
-          d3.select("body")
-            .append("div")
-            .attr("class", "tooltip")
-            .style("opacity", 0.75)
-            .html(message.substring(0, message.length - 1) + ".")
-            .style("left", event.pageX + "px")
-            .style("top", event.pageY - 28 + "px");
-        })
-        .on("mouseout", function () {
-          d3.select(".tooltip").remove();
-        });
-    }
   }
 }
 

@@ -1,4 +1,3 @@
-var markAnnotations = {};
 var markSelection = [];
 var graphicsElementTypes = [
   "line",
@@ -53,21 +52,39 @@ function initilizeMarkAnnotation() {
   );
 
   document.getElementById("allMarks").innerHTML = "";
-  leafNodeTypes.forEach((type) => {
-    // initialize the type and role of each graphical element
-    mainContent[type].forEach((element) => {
-      markAnnotations[element.id] = {
-        Type: type === "path" ? "none" : type,
-        Role: "none",
-      };
-    });
 
+  if (Object.keys(markAnnotations).length === 0) {
+    leafNodeTypes.forEach((type) => {
+      // initialize the type and role of each graphical element
+      mainContent[type].forEach((element) => {
+        markAnnotations[element.id] = {
+          Type: type === "path" ? "none" : type,
+          Role: "none",
+        };
+      });
+    });
+  }
+
+  leafNodeTypes.forEach((type) => {
     // then add the mark annotation divs
     mainContent[type].forEach((element) => {
       let markDiv = document.createElement("div");
       markDiv.classList.add("markDiv");
       markDiv.id = "mark_" + element.id;
       markDiv.innerHTML = element.id;
+      let markID = element.id;
+      if (markAnnotations[markID]["Type"] !== "none") {
+        let typeTag = document.createElement("span");
+        typeTag.innerHTML = " " + markAnnotations[markID]["Type"];
+        typeTag.style.color = "#E69F00";
+        markDiv.appendChild(typeTag);
+      }
+      if (markAnnotations[markID]["Role"] !== "none") {
+        let roleTag = document.createElement("span");
+        roleTag.innerHTML = " " + markAnnotations[markID]["Role"];
+        roleTag.style.color = "#009E73";
+        markDiv.appendChild(roleTag);
+      }
       markDiv.style.display = "inline-block";
       markDiv.style.width = "100%";
       markDiv.style.height = "fit-content";
@@ -223,7 +240,6 @@ function reflectChanges() {
   });
 
   annotations.markAnnotations = markAnnotations;
-  console.log(annotations);
 }
 
 function dertermineChannelBasedBatchSelections(elementType) {

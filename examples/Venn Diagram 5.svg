@@ -1,0 +1,47 @@
+<svg xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:svg="http://www.w3.org/2000/svg" xmlns:ns1="http://sozi.baierouge.fr" xmlns:xlink="http://www.w3.org/1999/xlink" id="svg5867" sodipodi:docname="diagramme de venn.svg" viewBox="0 0 110.03 105.03" version="1.1" inkscape:version="0.48.0 r9654">
+  <title id="title5947">diagramme de venn</title>
+  <sodipodi:namedview id="base" bordercolor="#666666" inkscape:pageshadow="2" inkscape:window-y="12" fit-margin-left="0" pagecolor="#ffffff" fit-margin-top="0" inkscape:window-maximized="0" inkscape:zoom="0.24748737" inkscape:window-x="305" inkscape:window-height="790" showgrid="false" borderopacity="1.0" inkscape:current-layer="layer1" inkscape:cx="1272.8417" inkscape:cy="55.249546" fit-margin-right="0" fit-margin-bottom="0" inkscape:window-width="1018" inkscape:pageopacity="0.0" inkscape:document-units="px"/>
+  <g id="layer1" inkscape:label="Calque 1" inkscape:groupmode="layer" transform="translate(-285.71 -402.27)">
+    <g id="g3134" transform="translate(-332.15 -511.88)">
+      <path id="path3132-1" d="m659.42 953.94c8.2255-3.271 17.201-2.0032 26.85 0.42149-3.7325 8-7.026 16.145-14 20-7.5907-4.175-10.11-12.782-12.85-20.421z" sodipodi:nodetypes="cccc" style="stroke-linejoin:round;stroke-dashoffset:3.003;stroke:#cccccc;stroke-linecap:round;stroke-width:2;fill:#cccccc" inkscape:connector-curvature="0"/>
+      <path id="path3126-4" style="stroke-linejoin:round;stroke-dashoffset:2;stroke:#000000;stroke-linecap:round;stroke-width:2;fill:none" d="m687.08 948.68c0.31936 18.54-17.194 34.914-35.33 33.49-17.418-0.21604-33.457-16.187-32.878-34.076 0.26314-17.596 16.086-33.357 33.499-32.923 16.395-0.58197 32.664 12.454 34.506 29.265 0.14755 1.4093 0.24401 2.8261 0.20215 4.2441z" inkscape:export-ydpi="84.154686" inkscape:export-filename="/Users/lmproulx/Desktop/isotype/text3279.png" inkscape:connector-curvature="0" inkscape:export-xdpi="84.154686"/>
+      <path id="path3130-0" style="stroke-linejoin:round;stroke-dashoffset:2;stroke:#000000;stroke-linecap:round;stroke-width:2;fill:none" d="m707.2 984.61c0.31939 18.54-17.194 34.914-35.33 33.49-17.418-0.216-33.457-16.187-32.878-34.076 0.26315-17.596 16.086-33.357 33.499-32.923 16.395-0.58197 32.664 12.454 34.506 29.265 0.14756 1.4093 0.244 2.8261 0.20215 4.2441z" inkscape:export-ydpi="84.154686" inkscape:export-filename="/Users/lmproulx/Desktop/isotype/text3279.png" inkscape:connector-curvature="0" inkscape:export-xdpi="84.154686"/>
+      <path id="path3128-6" style="stroke-linejoin:round;stroke-dashoffset:2;stroke:#000000;stroke-linecap:round;stroke-width:2;fill:none" d="m726.87 949.1c0.31939 18.54-17.194 34.914-35.33 33.49-17.418-0.21604-33.457-16.187-32.878-34.076 0.26317-17.596 16.086-33.357 33.499-32.923 16.395-0.58197 32.664 12.454 34.506 29.265 0.14755 1.4093 0.24396 2.8261 0.20215 4.2441z" inkscape:export-ydpi="84.154686" inkscape:export-filename="/Users/lmproulx/Desktop/isotype/text3279.png" inkscape:connector-curvature="0" inkscape:export-xdpi="84.154686"/>
+    </g>
+  </g>
+  <metadata>
+    <rdf:RDF>
+      <cc:Work>
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+        <cc:license rdf:resource="http://creativecommons.org/licenses/publicdomain/"/>
+        <dc:publisher>
+          <cc:Agent rdf:about="http://openclipart.org/">
+            <dc:title>Openclipart</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:title>diagramme de Venn / Venn diagram</dc:title>
+        <dc:date>2011-03-06T19:03:55</dc:date>
+        <dc:description/>
+        <dc:source>https://openclipart.org/detail/125869/diagramme-de-venn--venn-diagram-by-lmproulx</dc:source>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>lmproulx</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>graphic organizer</rdf:li>
+            <rdf:li>line art</rdf:li>
+            <rdf:li>venn diagram</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+      </cc:Work>
+      <cc:License rdf:about="http://creativecommons.org/licenses/publicdomain/">
+        <cc:permits rdf:resource="http://creativecommons.org/ns#Reproduction"/>
+        <cc:permits rdf:resource="http://creativecommons.org/ns#Distribution"/>
+        <cc:permits rdf:resource="http://creativecommons.org/ns#DerivativeWorks"/>
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+</svg>

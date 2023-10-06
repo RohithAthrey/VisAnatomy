@@ -1,0 +1,1232 @@
+<svg width="960" height="960" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g transform="translate(2,2)">
+<g class="node" transform="translate(478,478)">
+<title>flare 956,129</title>
+<circle r="477.99999999999994"/>
+</g>
+<g class="node" transform="translate(317.61153489517824,510.96512263870443)">
+<title>vis 432,629</title>
+<circle r="314.2588657384303"/>
+</g>
+<g class="node" transform="translate(787.4248633548278,510.96512263870443)">
+<title>util 165,157</title>
+<circle r="155.55446272121932"/>
+</g>
+<g class="node" transform="translate(674.4573541578709,768.9396806230012)">
+<title>animate 100,024</title>
+<circle r="126.07034211911761"/>
+</g>
+<g class="node" transform="translate(668.1393536736059,276.6603311153825)">
+<title>query 89,721</title>
+<circle r="107.3671380473296"/>
+</g>
+<g class="node" transform="translate(506.080238625525,128.09470295818596)">
+<title>analytics 48,716</title>
+<circle r="112.48486362631796"/>
+</g>
+<g class="node" transform="translate(498.8681206175753,843.965336642548)">
+<title>scale 31,294</title>
+<circle r="64.87579687413826"/>
+</g>
+<g class="node" transform="translate(843.4284699848972,293.76033528946016)">
+<title>data 30,284</title>
+<circle r="68.75408282042072"/>
+</g>
+<g class="node" transform="translate(378.1092548015087,882.0808068820438)">
+<title>physics 29,934</title>
+<circle r="61.75552920578825"/>
+</g>
+<g class="node" transform="translate(334.57466868767125,137.7966989264803)">
+<title>display 24,254</title>
+<circle r="59.29490597847811"/>
+</g>
+<g class="node" transform="translate(794.1603527054752,685.9672839324837)">
+<title>flex 4,116</title>
+<circle r="19.577268482142696"/>
+</g>
+<g class="node" transform="translate(183.02800495910373,525.0173708401126)">
+<title>operator 183,967</title>
+<circle r="178.94370690702576"/>
+</g>
+<g class="node" transform="translate(496.6457422592592,525.0173708401126)">
+<title>data 110,583</title>
+<circle r="134.6740303931297"/>
+</g>
+<g class="node" transform="translate(373.31456221743315,701.1627302968234)">
+<title>controls 44,639</title>
+<circle r="80.35565971649943"/>
+</g>
+<g class="node" transform="translate(372.6129303925663,355.48652336839046)">
+<title>legend 36,003</title>
+<circle r="75.38512000036955"/>
+</g>
+<g class="node" transform="translate(244.54342521108293,280.86657184956573)">
+<title>axis 33,886</title>
+<circle r="72.83746708439881"/>
+</g>
+<g class="leaf node" transform="translate(257.2875676785168,730.1800957963294)">
+<title>Visualization 16,540</title>
+<circle r="39.24480417167137"/>
+<text dy="0.3em">Visualization</text>
+</g>
+<g class="node" transform="translate(480.460277045069,358.62090669600127)">
+<title>events 7,011</title>
+<circle r="32.50776456033489"/>
+</g>
+<g class="leaf node" transform="translate(750.0472098300305,507.75700848255656)">
+<title>Strings 22,026</title>
+<circle r="45.287905031758505"/>
+<text dy="0.3em">Strings</text>
+</g>
+<g class="leaf node" transform="translate(837.5276520995728,507.75700848255656)">
+<title>Shapes 19,118</title>
+<circle r="42.19253723778375"/>
+<text dy="0.3em">Shapes</text>
+</g>
+<g class="leaf node" transform="translate(796.7718068466434,579.8273071913748)">
+<title>Maths 17,705</title>
+<circle r="40.60339791762712"/>
+<text dy="0.3em">Maths</text>
+</g>
+<g class="leaf node" transform="translate(796.5449440606558,443.29776296760366)">
+<title>Displays 12,555</title>
+<circle r="34.19186359484753"/>
+<text dy="0.3em">Displays</text>
+</g>
+<g class="node" transform="translate(724.5929489816261,426.73035981679453)">
+<title>palette 11,946</title>
+<circle r="39.642873778655336"/>
+</g>
+<g class="leaf node" transform="translate(724.1780269104353,580.5809305245573)">
+<title>Geometry 10,993</title>
+<circle r="31.994293736825178"/>
+<text dy="0.3em">Geometry</text>
+</g>
+<g class="node" transform="translate(870.1099866273352,432.05001496396295)">
+<title>heap 10,587</title>
+<circle r="40.22807542011505"/>
+</g>
+<g class="leaf node" transform="translate(867.6472326548278,573.9342653250012)">
+<title>Colors 10,001</title>
+<circle r="30.516598749486672"/>
+<text dy="0.3em">Colors</text>
+</g>
+<g class="node" transform="translate(672.1212631465278,482.2089898563225)">
+<title>math 9,346</title>
+<circle r="36.71913382617445"/>
+</g>
+<g class="leaf node" transform="translate(675.0691978833472,546.5907951724714)">
+<title>Arrays 8,258</title>
+<circle r="27.73012664265518"/>
+<text dy="0.3em">Arrays</text>
+</g>
+<g class="leaf node" transform="translate(905.1399813565956,490.203721088576)">
+<title>Dates 8,217</title>
+<circle r="27.661202575455604"/>
+<text dy="0.3em">Dates</text>
+</g>
+<g class="leaf node" transform="translate(913.7851007305449,542.4787246235959)">
+<title>Sort 6,887</title>
+<circle r="25.323833836499208"/>
+<text dy="0.3em">Sort</text>
+</g>
+<g class="leaf node" transform="translate(776.0449016859941,388.07875061059116)">
+<title>Stats 6,557</title>
+<circle r="24.70967342284691"/>
+<text dy="0.3em">Stats</text>
+</g>
+<g class="leaf node" transform="translate(823.4778551595656,389.71930322671125)">
+<title>Property 5,559</title>
+<circle r="22.751642278598403"/>
+<text dy="0.3em">Propert</text>
+</g>
+<g class="leaf node" transform="translate(754.7956070838095,615.8501450440009)">
+<title>Filter 2,324</title>
+<circle r="14.7106707583068"/>
+<text dy="0.3em">Filt</text>
+</g>
+<g class="leaf node" transform="translate(841.4593046739105,607.1271862934856)">
+<title>Orientation 1,486</title>
+<circle r="11.763154967319148"/>
+<text dy="0.3em">Ori</text>
+</g>
+<g class="leaf node" transform="translate(776.6186322105383,625.1755405283765)">
+<title>IValueProxy 874</title>
+<circle r="9.021320869490552"/>
+<text dy="0.3em">IVa</text>
+</g>
+<g class="leaf node" transform="translate(826.1058212684045,616.0043110162785)">
+<title>IPredicate 383</title>
+<circle r="5.971917517087839"/>
+<text dy="0.3em">I</text>
+</g>
+<g class="leaf node" transform="translate(858.7154036562757,608.9136953971791)">
+<title>IEvaluable 335</title>
+<circle r="5.585175409600816"/>
+<text dy="0.3em">I</text>
+</g>
+<g class="node" transform="translate(626.6593687353441,775.3259189101681)">
+<title>interpolate 23,081</title>
+<circle r="58.72673310562129"/>
+</g>
+<g class="leaf node" transform="translate(728.5139517796329,775.3259189101681)">
+<title>Transitioner 19,975</title>
+<circle r="43.12784993866744"/>
+<text dy="0.3em">Transitioner</text>
+</g>
+<g class="leaf node" transform="translate(691.4811831081951,849.5239750294805)">
+<title>Easing 17,010</title>
+<circle r="39.79848777955608"/>
+<text dy="0.3em">Easing</text>
+</g>
+<g class="leaf node" transform="translate(689.8688553490591,714.1042312151484)">
+<title>Transition 9,201</title>
+<circle r="29.270620503427253"/>
+<text dy="0.3em">Transitio</text>
+</g>
+<g class="leaf node" transform="translate(640.8432413967884,694.180814361555)">
+<title>Tween 6,006</title>
+<circle r="23.64868941761315"/>
+<text dy="0.3em">Tween</text>
+</g>
+<g class="leaf node" transform="translate(628.8457770954402,857.3470948557416)">
+<title>FunctionSequence 5,842</title>
+<circle r="23.32357880732538"/>
+<text dy="0.3em">Functio</text>
+</g>
+<g class="leaf node" transform="translate(741.8518266906165,710.7397995095891)">
+<title>Scheduler 5,593</title>
+<circle r="22.82111310372526"/>
+<text dy="0.3em">Schedul</text>
+</g>
+<g class="leaf node" transform="translate(752.6249406328869,836.5796699641277)">
+<title>Sequence 5,534</title>
+<circle r="22.700425153895992"/>
+<text dy="0.3em">Sequenc</text>
+</g>
+<g class="leaf node" transform="translate(595.7252456133411,700.8111989478182)">
+<title>Parallel 5,176</title>
+<circle r="21.953893220620476"/>
+<text dy="0.3em">Paralle</text>
+</g>
+<g class="leaf node" transform="translate(600.6877184354794,839.1659292562366)">
+<title>TransitionEvent 1,116</title>
+<circle r="10.194044170063922"/>
+<text dy="0.3em">Tra</text>
+</g>
+<g class="leaf node" transform="translate(671.0889182259779,679.7911375707597)">
+<title>ISchedulable 1,041</title>
+<circle r="9.84554538480206"/>
+<text dy="0.3em">ISc</text>
+</g>
+<g class="leaf node" transform="translate(757.8010297596829,735.3031779086781)">
+<title>Pause 449</title>
+<circle r="6.466028049264526"/>
+<text dy="0.3em">Pa</text>
+</g>
+<g class="node" transform="translate(628.4934041196833,275.8406851860525)">
+<title>methods 14,326</title>
+<circle r="43.99026469773831"/>
+</g>
+<g class="leaf node" transform="translate(708.4552324542852,275.8406851860525)">
+<title>Query 13,896</title>
+<circle r="35.97156363686357"/>
+<text dy="0.3em">Query</text>
+</g>
+<g class="leaf node" transform="translate(674.6754359181167,322.7764552789525)">
+<title>Expression 5,130</title>
+<circle r="21.856121499570058"/>
+<text dy="0.3em">Express</text>
+</g>
+<g class="leaf node" transform="translate(674.6696605006982,228.9800536267726)">
+<title>Comparison 5,103</title>
+<circle r="21.798529511456557"/>
+<text dy="0.3em">Compari</text>
+</g>
+<g class="leaf node" transform="translate(636.5553818214156,212.72660864132123)">
+<title>DateUtil 4,141</title>
+<circle r="19.636633250829174"/>
+<text dy="0.3em">DateUt</text>
+</g>
+<g class="leaf node" transform="translate(636.487511565961,338.93708726000676)">
+<title>StringUtil 4,130</title>
+<circle r="19.610534892681386"/>
+<text dy="0.3em">String</text>
+</g>
+<g class="leaf node" transform="translate(714.7540996277395,221.19630345570272)">
+<title>Arithmetic 3,891</title>
+<circle r="19.034655851127077"/>
+<text dy="0.3em">Arithm</text>
+</g>
+<g class="leaf node" transform="translate(714.5360878166358,330.1545152146682)">
+<title>Match 3,748</title>
+<circle r="18.681605844102386"/>
+<text dy="0.3em">Match</text>
+</g>
+<g class="leaf node" transform="translate(599.2398689224706,220.61623032790882)">
+<title>CompositeExpression 3,677</title>
+<circle r="18.50381290897341"/>
+<text dy="0.3em">Compos</text>
+</g>
+<g class="leaf node" transform="translate(599.3716084755796,330.9633369724954)">
+<title>ExpressionIterator 3,617</title>
+<circle r="18.352222592282313"/>
+<text dy="0.3em">Expres</text>
+</g>
+<g class="leaf node" transform="translate(666.3039868832213,190.71585634932273)">
+<title>Fn 3,240</title>
+<circle r="17.369484075675306"/>
+<text dy="0.3em">Fn</text>
+</g>
+<g class="leaf node" transform="translate(665.7233179995867,359.98380881624064)">
+<title>BinaryExpression 2,893</title>
+<circle r="16.41302498262906"/>
+<text dy="0.3em">Binar</text>
+</g>
+<g class="leaf node" transform="translate(744.6552076442856,313.06148536455896)">
+<title>If 2,732</title>
+<circle r="15.949782355752559"/>
+<text dy="0.3em">If</text>
+</g>
+<g class="leaf node" transform="translate(742.1582855134769,239.24506233337456)">
+<title>IsA 2,039</title>
+<circle r="13.779168995793535"/>
+<text dy="0.3em">IsA</text>
+</g>
+<g class="leaf node" transform="translate(694.9908581213408,355.36366142807185)">
+<title>Variance 1,876</title>
+<circle r="13.216937330321802"/>
+<text dy="0.3em">Vari</text>
+</g>
+<g class="leaf node" transform="translate(695.3420215261508,196.64107805134051)">
+<title>AggregateExpression 1,616</title>
+<circle r="12.26690754243552"/>
+<text dy="0.3em">Aggr</text>
+</g>
+<g class="leaf node" transform="translate(581.3185206057981,306.3362532665176)">
+<title>Range 1,594</title>
+<circle r="12.183121412580185"/>
+<text dy="0.3em">Rang</text>
+</g>
+<g class="leaf node" transform="translate(581.4472291659409,245.42937641343372)">
+<title>Not 1,554</title>
+<circle r="12.029287951686667"/>
+<text dy="0.3em">Not</text>
+</g>
+<g class="leaf node" transform="translate(752.7175904477049,261.2545320273573)">
+<title>Literal 1,214</title>
+<circle r="10.632215170294941"/>
+<text dy="0.3em">Lit</text>
+</g>
+<g class="leaf node" transform="translate(752.9639138241879,288.23461562369596)">
+<title>Variable 1,124</title>
+<circle r="10.230516716521674"/>
+<text dy="0.3em">Var</text>
+</g>
+<g class="leaf node" transform="translate(612.3540959504348,356.30943218225224)">
+<title>Xor 1,101</title>
+<circle r="10.125304045697137"/>
+<text dy="0.3em">Xor</text>
+</g>
+<g class="leaf node" transform="translate(640.791214461499,368.00992287939977)">
+<title>And 1,027</title>
+<circle r="9.779116850156798"/>
+<text dy="0.3em">And</text>
+</g>
+<g class="leaf node" transform="translate(612.6674790916068,196.0371877461875)">
+<title>Or 970</title>
+<circle r="9.503865486215997"/>
+<text dy="0.3em">Or</text>
+</g>
+<g class="leaf node" transform="translate(640.4635653793702,184.0340732828382)">
+<title>Distinct 933</title>
+<circle r="9.320843918642375"/>
+<text dy="0.3em">Dis</text>
+</g>
+<g class="leaf node" transform="translate(576.3070643091775,285.64267535383)">
+<title>Average 891</title>
+<circle r="9.108634293359405"/>
+<text dy="0.3em">Ave</text>
+</g>
+<g class="leaf node" transform="translate(576.615117120301,265.75198300838434)">
+<title>Maximum 843</title>
+<circle r="8.85988737034913"/>
+<text dy="0.3em">Ma</text>
+</g>
+<g class="leaf node" transform="translate(766.6309796306949,274.9058932377875)">
+<title>Minimum 843</title>
+<circle r="8.85988737034913"/>
+<text dy="0.3em">Mi</text>
+</g>
+<g class="leaf node" transform="translate(716.7010002970159,357.33231128871546)">
+<title>Sum 791</title>
+<circle r="8.582279526295652"/>
+<text dy="0.3em">Su</text>
+</g>
+<g class="leaf node" transform="translate(715.9217856553546,193.65853580485262)">
+<title>Count 781</title>
+<circle r="8.527857420548527"/>
+<text dy="0.3em">Co</text>
+</g>
+<g class="node" transform="translate(460.2864667636069,128.09470295818596)">
+<title>graph 26,435</title>
+<circle r="66.69109176439986"/>
+</g>
+<g class="node" transform="translate(572.7713303899249,128.09470295818596)">
+<title>cluster 15,207</title>
+<circle r="45.7937718619181"/>
+</g>
+<g class="node" transform="translate(531.7456375719612,186.60364686696602)">
+<title>optimization 7,074</title>
+<circle r="25.66533524497686"/>
+</g>
+<g class="leaf node" transform="translate(481.75450069236507,845.2318132772219)">
+<title>TimeScale 5,833</title>
+<circle r="23.305606099552"/>
+<text dy="0.3em">TimeSca</text>
+</g>
+<g class="leaf node" transform="translate(526.2872829877737,845.2318132772219)">
+<title>QuantitativeScale 4,839</title>
+<circle r="21.227176195856632"/>
+<text dy="0.3em">Quantit</text>
+</g>
+<g class="leaf node" transform="translate(505.9905335071518,881.042509046978)">
+<title>Scale 4,268</title>
+<circle r="19.935476427524517"/>
+<text dy="0.3em">Scale</text>
+</g>
+<g class="leaf node" transform="translate(505.9345681871382,810.8392157428682)">
+<title>OrdinalScale 3,770</title>
+<circle r="18.7363542402302"/>
+<text dy="0.3em">Ordina</text>
+</g>
+<g class="leaf node" transform="translate(470.3395739827292,806.4416355394429)">
+<title>LogScale 3,151</title>
+<circle r="17.12926054688131"/>
+<text dy="0.3em">LogSc</text>
+</g>
+<g class="leaf node" transform="translate(471.0119865138419,882.0605469902331)">
+<title>QuantileScale 2,435</title>
+<circle r="15.057882242615925"/>
+<text dy="0.3em">Quant</text>
+</g>
+<g class="leaf node" transform="translate(538.6412759093857,812.2414960809249)">
+<title>IScaleMap 2,105</title>
+<circle r="14.000400641324978"/>
+<text dy="0.3em">ISca</text>
+</g>
+<g class="leaf node" transform="translate(538.7165838299634,877.1457834898724)">
+<title>ScaleType 1,821</title>
+<circle r="13.02175100135058"/>
+<text dy="0.3em">Scal</text>
+</g>
+<g class="leaf node" transform="translate(450.4810083319862,863.2501900893477)">
+<title>RootScale 1,756</title>
+<circle r="12.787235674938767"/>
+<text dy="0.3em">Root</text>
+</g>
+<g class="leaf node" transform="translate(452.06009760534204,827.9137447407219)">
+<title>LinearScale 1,316</title>
+<circle r="11.069865861273708"/>
+<text dy="0.3em">Lin</text>
+</g>
+<g class="node" transform="translate(825.0371117771219,291.3426010689786)">
+<title>converters 18,349</title>
+<circle r="50.204487259126346"/>
+</g>
+<g class="leaf node" transform="translate(892.8533173273119,291.3426010689786)">
+<title>DataSource 3,331</title>
+<circle r="17.611718291063635"/>
+<text dy="0.3em">DataS</text>
+</g>
+<g class="leaf node" transform="translate(883.6944264040685,325.32978290912695)">
+<title>DataUtil 3,322</title>
+<circle r="17.587909723720536"/>
+<text dy="0.3em">DataU</text>
+</g>
+<g class="leaf node" transform="translate(882.0654751823687,261.4174558232053)">
+<title>DataSchema 2,165</title>
+<circle r="14.198529367903795"/>
+<text dy="0.3em">Data</text>
+</g>
+<g class="leaf node" transform="translate(863.7188982583848,241.6128091263163)">
+<title>DataField 1,759</title>
+<circle r="12.79815405092107"/>
+<text dy="0.3em">Data</text>
+</g>
+<g class="leaf node" transform="translate(860.8296504678887,337.84632589951553)">
+<title>DataTable 772</title>
+<circle r="8.478578859169886"/>
+<text dy="0.3em">Da</text>
+</g>
+<g class="leaf node" transform="translate(844.0709207815796,236.98743605107913)">
+<title>DataSet 586</title>
+<circle r="7.386917041700155"/>
+<text dy="0.3em">Da</text>
+</g>
+<g class="leaf node" transform="translate(347.6201398929417,882.2942779959593)">
+<title>NBodyForce 10,498</title>
+<circle r="31.26566699186087"/>
+<text dy="0.3em">NBodyForce</text>
+</g>
+<g class="leaf node" transform="translate(409.37493107375053,882.2942779959593)">
+<title>Simulation 9,983</title>
+<circle r="30.48912418894789"/>
+<text dy="0.3em">Simulation</text>
+</g>
+<g class="leaf node" transform="translate(379.0896460630604,917.842052005842)">
+<title>Particle 2,822</title>
+<circle r="16.210369654523493"/>
+<text dy="0.3em">Parti</text>
+</g>
+<g class="leaf node" transform="translate(379.06631630121194,849.2429686699348)">
+<title>Spring 2,213</title>
+<circle r="14.355063590458855"/>
+<text dy="0.3em">Spri</text>
+</g>
+<g class="leaf node" transform="translate(354.2218673460109,839.0180775819315)">
+<title>SpringForce 1,681</title>
+<circle r="12.511179943930532"/>
+<text dy="0.3em">Spri</text>
+</g>
+<g class="leaf node" transform="translate(403.2422847533601,841.1055339033406)">
+<title>GravityForce 1,336</title>
+<circle r="11.153666193280621"/>
+<text dy="0.3em">Gra</text>
+</g>
+<g class="leaf node" transform="translate(353.3927499365694,923.1921180712441)">
+<title>DragForce 1,082</title>
+<circle r="10.037557452961343"/>
+<text dy="0.3em">Dra</text>
+</g>
+<g class="leaf node" transform="translate(400.7400875070695,917.1808381377579)">
+<title>IForce 319</title>
+<circle r="5.45016631529528"/>
+<text dy="0.3em">I</text>
+</g>
+<g class="leaf node" transform="translate(305.8953698756682,137.7966989264803)">
+<title>TextSprite 10,066</title>
+<circle r="30.615607166475073"/>
+<text dy="0.3em">TextSprite</text>
+</g>
+<g class="leaf node" transform="translate(365.1902758541463,137.7966989264803)">
+<title>DirtySprite 8,833</title>
+<circle r="28.67929881200304"/>
+<text dy="0.3em">DirtySpri</text>
+</g>
+<g class="leaf node" transform="translate(337.11077601163794,175.545038308314)">
+<title>RectSprite 3,623</title>
+<circle r="18.3674379238379"/>
+<text dy="0.3em">RectSp</text>
+</g>
+<g class="leaf node" transform="translate(336.9256879821122,107.57547687016114)">
+<title>LineSprite 1,732</title>
+<circle r="12.699550738864003"/>
+<text dy="0.3em">Line</text>
+</g>
+<g class="leaf node" transform="translate(794.1603527054752,685.9672839324837)">
+<title>FlareVis 4,116</title>
+<circle r="19.577268482142696"/>
+<text dy="0.3em">FlareV</text>
+</g>
+<g class="node" transform="translate(124.28184870933707,532.9518504722316)">
+<title>layout 108,083</title>
+<circle r="119.66414178417331"/>
+</g>
+<g class="node" transform="translate(293.841148337137,532.9518504722316)">
+<title>label 17,057</title>
+<circle r="49.89515784362659"/>
+</g>
+<g class="node" transform="translate(264.0033608888359,626.9712985155055)">
+<title>encoder 14,897</title>
+<circle r="48.74535193897683"/>
+</g>
+<g class="node" transform="translate(262.6703530679332,442.786921783726)">
+<title>distortion 14,219</title>
+<circle r="45.50574803843471"/>
+</g>
+<g class="node" transform="translate(194.97767042327723,388.1068552707127)">
+<title>filter 11,893</title>
+<circle r="41.51269229174854"/>
+</g>
+<g class="leaf node" transform="translate(198.42366272848096,653.789680950749)">
+<title>OperatorList 5,248</title>
+<circle r="22.10605910728419"/>
+<text dy="0.3em">Operato</text>
+</g>
+<g class="leaf node" transform="translate(133.98448543388002,393.87327317199316)">
+<title>OperatorSequence 4,190</title>
+<circle r="19.752470652318102"/>
+<text dy="0.3em">Operat</text>
+</g>
+<g class="leaf node" transform="translate(161.9045398253003,662.777189241615)">
+<title>OperatorSwitch 2,581</title>
+<circle r="15.502738306299781"/>
+<text dy="0.3em">Opera</text>
+</g>
+<g class="leaf node" transform="translate(316.0590980805754,471.73700781150137)">
+<title>Operator 2,490</title>
+<circle r="15.226990867698294"/>
+<text dy="0.3em">Opera</text>
+</g>
+<g class="leaf node" transform="translate(316.12872949503026,592.5403411240767)">
+<title>SortOperator 2,023</title>
+<circle r="13.725000062768943"/>
+<text dy="0.3em">Sort</text>
+</g>
+<g class="leaf node" transform="translate(135.46056936480076,663.0796791977837)">
+<title>IOperator 1,286</title>
+<circle r="10.942962173917365"/>
+<text dy="0.3em">IOp</text>
+</g>
+<g class="leaf node" transform="translate(463.700112633033,521.5509035563838)">
+<title>Data 20,544</title>
+<circle r="43.737798244234014"/>
+<text dy="0.3em">Data</text>
+</g>
+<g class="leaf node" transform="translate(550.3634110755615,521.5509035563838)">
+<title>DataList 19,788</title>
+<circle r="42.92550019829458"/>
+<text dy="0.3em">DataList</text>
+</g>
+<g class="leaf node" transform="translate(507.83610413516055,595.6185450853152)">
+<title>NodeSprite 19,382</title>
+<circle r="42.48285628549084"/>
+<text dy="0.3em">NodeSprite</text>
+</g>
+<g class="leaf node" transform="translate(507.7416165354073,459.44112405243885)">
+<title>ScaleBinding 11,275</title>
+<circle r="32.40206500762313"/>
+<text dy="0.3em">ScaleBindi</text>
+</g>
+<g class="leaf node" transform="translate(445.14349951591987,449.1090712699529)">
+<title>DataSprite 10,349</title>
+<circle r="31.042994446092518"/>
+<text dy="0.3em">DataSprite</text>
+</g>
+<g class="leaf node" transform="translate(569.9663982416904,450.88593856463865)">
+<title>TreeBuilder 9,930</title>
+<circle r="30.4080827164927"/>
+<text dy="0.3em">TreeBuilde</text>
+</g>
+<g class="node" transform="translate(428.1272458784449,594.2935414636916)">
+<title>render 8,867</title>
+<circle r="37.23701400533752"/>
+</g>
+<g class="leaf node" transform="translate(575.3717444852382,585.5620218804249)">
+<title>Tree 7,147</title>
+<circle r="25.797421807568576"/>
+<text dy="0.3em">Tree</text>
+</g>
+<g class="leaf node" transform="translate(413.7021166547536,486.1359795724765)">
+<title>EdgeSprite 3,301</title>
+<circle r="17.532230665747544"/>
+<text dy="0.3em">EdgeS</text>
+</g>
+<g class="leaf node" transform="translate(347.00077149773887,703.7514522292558)">
+<title>TooltipControl 8,435</title>
+<circle r="28.025731515766985"/>
+<text dy="0.3em">TooltipCo</text>
+</g>
+<g class="leaf node" transform="translate(402.0835834953288,703.7514522292558)">
+<title>SelectionControl 7,862</title>
+<circle r="27.05708048182295"/>
+<text dy="0.3em">Selection</text>
+</g>
+<g class="leaf node" transform="translate(375.4142818388926,744.9870515228707)">
+<title>PanZoomControl 5,222</title>
+<circle r="22.051231441369502"/>
+<text dy="0.3em">PanZoom</text>
+</g>
+<g class="leaf node" transform="translate(375.40198262654565,663.3594374011918)">
+<title>HoverControl 4,896</title>
+<circle r="21.351830751457246"/>
+<text dy="0.3em">HoverCo</text>
+</g>
+<g class="leaf node" transform="translate(333.73391777803425,656.7190193250206)">
+<title>ControlList 4,665</title>
+<circle r="20.84204060974987"/>
+<text dy="0.3em">Contro</text>
+</g>
+<g class="leaf node" transform="translate(334.690490504144,749.0026682038744)">
+<title>ClickControl 3,824</title>
+<circle r="18.870063235178744"/>
+<text dy="0.3em">ClickC</text>
+</g>
+<g class="leaf node" transform="translate(412.96233225315245,661.8443037035602)">
+<title>ExpandControl 2,832</title>
+<circle r="16.23906567566512"/>
+<text dy="0.3em">Expan</text>
+</g>
+<g class="leaf node" transform="translate(413.1710889223781,745.0517757972954)">
+<title>DragControl 2,649</title>
+<circle r="15.705631118584298"/>
+<text dy="0.3em">DragC</text>
+</g>
+<g class="leaf node" transform="translate(436.4412350499723,681.0742193678304)">
+<title>AnchorControl 2,138</title>
+<circle r="14.109715733107466"/>
+<text dy="0.3em">Anch</text>
+</g>
+<g class="leaf node" transform="translate(432.793226168458,726.6073036652916)">
+<title>Control 1,353</title>
+<circle r="11.22440457267058"/>
+<text dy="0.3em">Con</text>
+</g>
+<g class="leaf node" transform="translate(318.77548227793,726.8226764756395)">
+<title>IControl 763</title>
+<circle r="8.42901220530143"/>
+<text dy="0.3em">IC</text>
+</g>
+<g class="leaf node" transform="translate(341.299647660965,355.48652336839046)">
+<title>Legend 20,859</title>
+<circle r="44.07183726876826"/>
+<text dy="0.3em">Legend</text>
+</g>
+<g class="leaf node" transform="translate(416.68476766133455,355.48652336839046)">
+<title>LegendRange 10,530</title>
+<circle r="31.313282731601277"/>
+<text dy="0.3em">LegendRang</text>
+</g>
+<g class="leaf node" transform="translate(388.8795614080976,399.47680403894475)">
+<title>LegendItem 4,614</title>
+<circle r="20.727799965237292"/>
+<text dy="0.3em">Legend</text>
+</g>
+<g class="leaf node" transform="translate(219.56017005838368,280.86657184956573)">
+<title>Axis 24,593</title>
+<circle r="47.85421193169955"/>
+<text dy="0.3em">Axis</text>
+</g>
+<g class="leaf node" transform="translate(292.3976371427825,280.86657184956573)">
+<title>CartesianAxes 6,703</title>
+<circle r="24.98325515269925"/>
+<text dy="0.3em">Cartesia</text>
+</g>
+<g class="leaf node" transform="translate(270.8717802109286,309.71464583356374)">
+<title>Axes 1,302</title>
+<circle r="11.010826155716773"/>
+<text dy="0.3em">Axe</text>
+</g>
+<g class="leaf node" transform="translate(269.8610086847428,257.0694059231736)">
+<title>AxisGridLine 652</title>
+<circle r="7.791807446538652"/>
+<text dy="0.3em">Ax</text>
+</g>
+<g class="leaf node" transform="translate(261.2730376924494,244.1811628244894)">
+<title>AxisLabel 636</title>
+<circle r="7.695608604412317"/>
+<text dy="0.3em">Ax</text>
+</g>
+<g class="leaf node" transform="translate(465.191182801945,355.9989237465916)">
+<title>DataEvent 2,313</title>
+<circle r="14.675815054326861"/>
+<text dy="0.3em">Data</text>
+</g>
+<g class="leaf node" transform="translate(493.09801823516034,355.9989237465916)">
+<title>SelectionEvent 1,880</title>
+<circle r="13.231020378888456"/>
+<text dy="0.3em">Sele</text>
+</g>
+<g class="leaf node" transform="translate(480.5185694039689,378.5431990938132)">
+<title>TooltipEvent 1,701</title>
+<circle r="12.585386881377445"/>
+<text dy="0.3em">Tool</text>
+</g>
+<g class="leaf node" transform="translate(480.39500104018214,336.31184800530593)">
+<title>VisualizationEvent 1,117</title>
+<circle r="10.198610371488908"/>
+<text dy="0.3em">Vis</text>
+</g>
+<g class="leaf node" transform="translate(709.8087165744421,422.8152823647385)">
+<title>ColorPalette 6,367</title>
+<circle r="24.349039749046305"/>
+<text dy="0.3em">ColorPal</text>
+</g>
+<g class="leaf node" transform="translate(748.7636104309282,422.8152823647385)">
+<title>SizePalette 2,291</title>
+<circle r="14.605854107439772"/>
+<text dy="0.3em">Size</text>
+</g>
+<g class="leaf node" transform="translate(737.6209879525289,448.9951046328762)">
+<title>ShapePalette 2,059</title>
+<circle r="13.846582162366845"/>
+<text dy="0.3em">Shap</text>
+</g>
+<g class="leaf node" transform="translate(736.8334063496641,400.50071297789617)">
+<title>Palette 1,229</title>
+<circle r="10.697698535238937"/>
+<text dy="0.3em">Pal</text>
+</g>
+<g class="leaf node" transform="translate(859.3948934488434,432.05001496396295)">
+<title>FibonacciHeap 9,354</title>
+<circle r="29.512982241623273"/>
+<text dy="0.3em">Fibonacci</text>
+</g>
+<g class="leaf node" transform="translate(899.6229688689584,432.05001496396295)">
+<title>HeapNode 1,233</title>
+<circle r="10.715093178491772"/>
+<text dy="0.3em">Hea</text>
+</g>
+<g class="leaf node" transform="translate(654.9824337072666,473.972744747543)">
+<title>SparseMatrix 3,366</title>
+<circle r="17.704002797438967"/>
+<text dy="0.3em">Spars</text>
+</g>
+<g class="leaf node" transform="translate(689.8537078207337,473.972744747543)">
+<title>DenseMatrix 3,165</title>
+<circle r="17.167271316028096"/>
+<text dy="0.3em">Dense</text>
+</g>
+<g class="leaf node" transform="translate(672.9356335374026,502.72171231404104)">
+<title>IMatrix 2,815</title>
+<circle r="16.190252177119042"/>
+<text dy="0.3em">IMatr</text>
+</g>
+<g class="leaf node" transform="translate(607.2850443560051,772.1238557373971)">
+<title>Interpolator 8,746</title>
+<circle r="28.537711963512752"/>
+<text dy="0.3em">Interpola</text>
+</g>
+<g class="leaf node" transform="translate(650.1420986240938,772.1238557373971)">
+<title>MatrixInterpolator 2,202</title>
+<circle r="14.31934230457606"/>
+<text dy="0.3em">Matr</text>
+</g>
+<g class="leaf node" transform="translate(640.4031290372237,798.5094033994335)">
+<title>ColorInterpolator 2,047</title>
+<circle r="13.806173762503967"/>
+<text dy="0.3em">Colo</text>
+</g>
+<g class="leaf node" transform="translate(640.3975316103279,745.758361293345)">
+<title>RectangleInterpolator 2,042</title>
+<circle r="13.789301980858875"/>
+<text dy="0.3em">Rect</text>
+</g>
+<g class="leaf node" transform="translate(617.2201237640385,731.1858154714619)">
+<title>ArrayInterpolator 1,983</title>
+<circle r="13.588633043611551"/>
+<text dy="0.3em">Arra</text>
+</g>
+<g class="leaf node" transform="translate(617.7155690321149,811.8023317023244)">
+<title>PointInterpolator 1,675</title>
+<circle r="12.488831882127656"/>
+<text dy="0.3em">Poin</text>
+</g>
+<g class="leaf node" transform="translate(666.0231349785513,750.7406353556247)">
+<title>ObjectInterpolator 1,629</title>
+<circle r="12.316149611043667"/>
+<text dy="0.3em">Obje</text>
+</g>
+<g class="leaf node" transform="translate(664.9597306475382,793.0773254333294)">
+<title>NumberInterpolator 1,382</title>
+<circle r="11.344057919878942"/>
+<text dy="0.3em">Num</text>
+</g>
+<g class="leaf node" transform="translate(594.0045536389856,809.6989869431056)">
+<title>DateInterpolator 1,375</title>
+<circle r="11.31529192340966"/>
+<text dy="0.3em">Dat</text>
+</g>
+<g class="leaf node" transform="translate(620.4062018411993,276.8392746308489)">
+<title>range 772</title>
+<circle r="8.478578859169886"/>
+<text dy="0.3em">ra</text>
+</g>
+<g class="leaf node" transform="translate(637.2305276551789,276.8392746308489)">
+<title>iff 748</title>
+<circle r="8.345746954809801"/>
+<text dy="0.3em">if</text>
+</g>
+<g class="leaf node" transform="translate(628.9450115724351,290.4970694580776)">
+<title>gte 625</title>
+<circle r="7.628768258494227"/>
+<text dy="0.3em">gt</text>
+</g>
+<g class="leaf node" transform="translate(628.9447217670389,263.2246071468866)">
+<title>lte 619</title>
+<circle r="7.592061863054573"/>
+<text dy="0.3em">lt</text>
+</g>
+<g class="leaf node" transform="translate(613.8904313131737,262.25690099333923)">
+<title>gt 603</title>
+<circle r="7.493299129276594"/>
+<text dy="0.3em">gt</text>
+</g>
+<g class="leaf node" transform="translate(613.8501394511835,291.4035779927005)">
+<title>mul 603</title>
+<circle r="7.493299129276594"/>
+<text dy="0.3em">mu</text>
+</g>
+<g class="leaf node" transform="translate(643.9957835429547,262.5383717034895)">
+<title>sub 600</title>
+<circle r="7.474635839700599"/>
+<text dy="0.3em">su</text>
+</g>
+<g class="leaf node" transform="translate(644.0294382274495,291.1173066184216)">
+<title>neq 599</title>
+<circle r="7.4684043789761265"/>
+<text dy="0.3em">ne</text>
+</g>
+<g class="leaf node" transform="translate(604.715980548518,274.0598150465806)">
+<title>lt 597</title>
+<circle r="7.455925833285629"/>
+<text dy="0.3em">lt</text>
+</g>
+<g class="leaf node" transform="translate(599.3188059542575,287.94726270320024)">
+<title>div 595</title>
+<circle r="7.4434263679438795"/>
+<text dy="0.3em">di</text>
+</g>
+<g class="leaf node" transform="translate(652.8451368757833,274.54049076365243)">
+<title>eq 594</title>
+<circle r="7.437168757448988"/>
+<text dy="0.3em">eq</text>
+</g>
+<g class="leaf node" transform="translate(658.64633137193,288.2301140515613)">
+<title>add 593</title>
+<circle r="7.4309058773845615"/>
+<text dy="0.3em">ad</text>
+</g>
+<g class="leaf node" transform="translate(622.1486485786185,249.8408004586635)">
+<title>mod 591</title>
+<circle r="7.4183642551505"/>
+<text dy="0.3em">mo</text>
+</g>
+<g class="leaf node" transform="translate(621.9856971906155,302.8525652239477)">
+<title>isa 461</title>
+<circle r="6.551864036485979"/>
+<text dy="0.3em">is</text>
+</g>
+<g class="leaf node" transform="translate(636.0654180529812,250.97755012080972)">
+<title>fn 460</title>
+<circle r="6.544754035437196"/>
+<text dy="0.3em">fn</text>
+</g>
+<g class="leaf node" transform="translate(636.1690070148378,302.048175567565)">
+<title>not 386</title>
+<circle r="5.995260606143928"/>
+<text dy="0.3em">n</text>
+</g>
+<g class="leaf node" transform="translate(630.1035469909372,312.18062454359904)">
+<title>stddev 363</title>
+<circle r="5.813902258067527"/>
+<text dy="0.3em">s</text>
+</g>
+<g class="leaf node" transform="translate(600.6776729694158,261.4955455956532)">
+<title>xor 354</title>
+<circle r="5.741376729698255"/>
+<text dy="0.3em">x</text>
+</g>
+<g class="leaf node" transform="translate(657.0516215803141,262.2162490411105)">
+<title>variance 335</title>
+<circle r="5.585175409600816"/>
+<text dy="0.3em">v</text>
+</g>
+<g class="leaf node" transform="translate(647.5986738828948,303.6299404097281)">
+<title>and 330</title>
+<circle r="5.54333830059786"/>
+<text dy="0.3em">a</text>
+</g>
+<g class="leaf node" transform="translate(609.986367030467,303.7925864203285)">
+<title>or 323</title>
+<circle r="5.484230186387777"/>
+<text dy="0.3em">o</text>
+</g>
+<g class="leaf node" transform="translate(647.9396724061796,250.33871211858653)">
+<title>orderby 307</title>
+<circle r="5.346672726626963"/>
+<text dy="0.3em">o</text>
+</g>
+<g class="leaf node" transform="translate(609.3895957775723,250.23162109049034)">
+<title>update 307</title>
+<circle r="5.346672726626963"/>
+<text dy="0.3em">u</text>
+</g>
+<g class="leaf node" transform="translate(599.6911018704052,300.6617890064971)">
+<title>where 299</title>
+<circle r="5.276549393291173"/>
+<text dy="0.3em">w</text>
+</g>
+<g class="leaf node" transform="translate(658.0401729802625,300.89653588224263)">
+<title>select 296</title>
+<circle r="5.250011675716613"/>
+<text dy="0.3em">s</text>
+</g>
+<g class="leaf node" transform="translate(630.680061050049,240.52403128234724)">
+<title>distinct 292</title>
+<circle r="5.2144179658187335"/>
+<text dy="0.3em">d</text>
+</g>
+<g class="leaf node" transform="translate(598.8852918188659,250.73281485661406)">
+<title>average 287</title>
+<circle r="5.169581209451953"/>
+<text dy="0.3em">a</text>
+</g>
+<g class="leaf node" transform="translate(658.3464643055681,251.5761418521197)">
+<title>max 283</title>
+<circle r="5.133429848377315"/>
+<text dy="0.3em">m</text>
+</g>
+<g class="leaf node" transform="translate(592.5614467449388,277.33993463236857)">
+<title>min 283</title>
+<circle r="5.133429848377315"/>
+<text dy="0.3em">m</text>
+</g>
+<g class="leaf node" transform="translate(665.046412764273,277.4497296802041)">
+<title>sum 280</title>
+<circle r="5.106148362859274"/>
+<text dy="0.3em">s</text>
+</g>
+<g class="leaf node" transform="translate(666.3958933881031,267.35465898437803)">
+<title>count 277</title>
+<circle r="5.07872033083628"/>
+<text dy="0.3em">c</text>
+</g>
+<g class="leaf node" transform="translate(591.6810279944356,267.2868709255634)">
+<title>_ 264</title>
+<circle r="4.9581125049659915"/>
+<text dy="0.3em">_</text>
+</g>
+<g class="leaf node" transform="translate(448.20710764502167,127.286583422038)">
+<title>MaxFlowMinCut 7,840</title>
+<circle r="27.019197451050477"/>
+<text dy="0.3em">MaxFlowMi</text>
+</g>
+<g class="leaf node" transform="translate(498.69317003568125,127.286583422038)">
+<title>ShortestPaths 5,914</title>
+<circle r="23.466864939609078"/>
+<text dy="0.3em">Shortes</text>
+</g>
+<g class="leaf node" transform="translate(476.85174803743763,168.41458571618537)">
+<title>LinkDistance 5,731</title>
+<circle r="23.100938182427402"/>
+<text dy="0.3em">LinkDis</text>
+</g>
+<g class="leaf node" transform="translate(476.50271391817427,92.09068837400689)">
+<title>BetweennessCentrality 3,534</title>
+<circle r="18.140434551406013"/>
+<text dy="0.3em">Betwee</text>
+</g>
+<g class="leaf node" transform="translate(441.72000901273066,82.90395808811328)">
+<title>SpanningTree 3,416</title>
+<circle r="17.835009488729504"/>
+<text dy="0.3em">Spann</text>
+</g>
+<g class="leaf node" transform="translate(553.839614212747,119.50312050343832)">
+<title>HierarchicalCluster 6,714</title>
+<circle r="25.00374621282518"/>
+<text dy="0.3em">Hierarch</text>
+</g>
+<g class="leaf node" transform="translate(597.992632497312,119.50312050343832)">
+<title>AgglomerativeCluster 3,938</title>
+<circle r="19.14927207173971"/>
+<text dy="0.3em">Agglom</text>
+</g>
+<g class="leaf node" transform="translate(581.3415095216689,153.6492436956522)">
+<title>CommunityStructure 3,812</title>
+<circle r="18.840432130949694"/>
+<text dy="0.3em">Commun</text>
+</g>
+<g class="leaf node" transform="translate(579.9462608796932,98.79638525376596)">
+<title>MergeEdge 743</title>
+<circle r="8.317806645539592"/>
+<text dy="0.3em">Me</text>
+</g>
+<g class="leaf node" transform="translate(531.7456375719612,186.60364686696602)">
+<title>AspectRatioBanker 7,074</title>
+<circle r="25.66533524497686"/>
+<text dy="0.3em">AspectRa</text>
+</g>
+<g class="leaf node" transform="translate(805.0410056170145,291.3426010689786)">
+<title>GraphMLConverter 9,800</title>
+<circle r="30.208381099018958"/>
+<text dy="0.3em">GraphMLCon</text>
+</g>
+<g class="leaf node" transform="translate(855.2454928761409,291.3426010689786)">
+<title>DelimitedTextConverter 4,294</title>
+<circle r="19.99610616010739"/>
+<text dy="0.3em">Delimi</text>
+</g>
+<g class="leaf node" transform="translate(838.1740162646611,321.1775908028244)">
+<title>JSONConverter 2,220</title>
+<circle r="14.377749109777433"/>
+<text dy="0.3em">JSON</text>
+</g>
+<g class="leaf node" transform="translate(837.4994361456878,265.85438179561856)">
+<title>IDataConverter 1,314</title>
+<circle r="11.06145091071417"/>
+<text dy="0.3em">IDa</text>
+</g>
+<g class="leaf node" transform="translate(820.7751734368859,256.31177642392424)">
+<title>Converters 721</title>
+<circle r="8.193737492230936"/>
+<text dy="0.3em">Co</text>
+</g>
+<g class="leaf node" transform="translate(95.27407623003062,527.2499278553737)">
+<title>NodeLinkTreeLayout 12,870</title>
+<circle r="34.61813659167882"/>
+<text dy="0.3em">NodeLinkTre</text>
+</g>
+<g class="leaf node" transform="translate(163.80103650619742,527.2499278553737)">
+<title>RadialTreeLayout 12,348</title>
+<circle r="33.90882368448798"/>
+<text dy="0.3em">RadialTreeL</text>
+</g>
+<g class="leaf node" transform="translate(130.2382603182113,585.6305329994564)">
+<title>CirclePackingLayout 12,003</title>
+<circle r="33.43176587659429"/>
+<text dy="0.3em">CirclePacki</text>
+</g>
+<g class="leaf node" transform="translate(130.19709276596527,473.531284106223)">
+<title>CircleLayout 9,317</title>
+<circle r="29.454554706699877"/>
+<text dy="0.3em">CircleLay</text>
+</g>
+<g class="leaf node" transform="translate(71.76220277119913,467.86194646727375)">
+<title>TreeMapLayout 9,191</title>
+<circle r="29.25470996221612"/>
+<text dy="0.3em">TreeMapLa</text>
+</g>
+<g class="leaf node" transform="translate(188.64158647797126,469.2974363690263)">
+<title>StackedAreaLayout 9,121</title>
+<circle r="29.143092958666973"/>
+<text dy="0.3em">StackedAr</text>
+</g>
+<g class="leaf node" transform="translate(68.84229862895191,584.0004175160611)">
+<title>ForceDirectedLayout 8,411</title>
+<circle r="27.985832482819042"/>
+<text dy="0.3em">ForceDire</text>
+</g>
+<g class="leaf node" transform="translate(190.652037267013,582.020817578864)">
+<title>Layout 7,881</title>
+<circle r="27.089755011741158"/>
+<text dy="0.3em">Layout</text>
+</g>
+<g class="leaf node" transform="translate(38.05866953088669,510.4092629346595)">
+<title>AxisLayout 6,725</title>
+<circle r="25.02422049387084"/>
+<text dy="0.3em">AxisLayo</text>
+</g>
+<g class="leaf node" transform="translate(216.62103866301868,511.24781321276964)">
+<title>IcicleTreeLayout 4,864</title>
+<circle r="21.281939137578952"/>
+<text dy="0.3em">IcicleT</text>
+</g>
+<g class="leaf node" transform="translate(28.541493655690914,555.7022470984173)">
+<title>DendrogramLayout 4,853</title>
+<circle r="21.257860823825123"/>
+<text dy="0.3em">Dendrog</text>
+</g>
+<g class="leaf node" transform="translate(223.77912780140375,550.5117974906896)">
+<title>BundledEdgeRouter 3,727</title>
+<circle r="18.629195918816134"/>
+<text dy="0.3em">Bundle</text>
+</g>
+<g class="leaf node" transform="translate(104.31018017446324,434.72745272623644)">
+<title>IndentedTreeLayout 3,174</title>
+<circle r="17.19166243131138"/>
+<text dy="0.3em">Inden</text>
+</g>
+<g class="leaf node" transform="translate(157.16886948670776,437.02078525701455)">
+<title>PieLayout 2,728</title>
+<circle r="15.938101810534658"/>
+<text dy="0.3em">PieLa</text>
+</g>
+<g class="leaf node" transform="translate(95.35489415176737,609.7896094306069)">
+<title>RandomLayout 870</title>
+<circle r="9.000653440578533"/>
+<text dy="0.3em">Ran</text>
+</g>
+<g class="leaf node" transform="translate(274.8774075670003,528.6421287471999)">
+<title>Labeler 9,956</title>
+<circle r="30.447865863915016"/>
+<text dy="0.3em">Labeler</text>
+</g>
+<g class="leaf node" transform="translate(324.37948711494494,528.6421287471999)">
+<title>RadialLabeler 3,899</title>
+<circle r="19.05421368402962"/>
+<text dy="0.3em">Radial</text>
+</g>
+<g class="leaf node" transform="translate(309.29960952734507,561.6853051314588)">
+<title>StackedAreaLabeler 3,202</title>
+<circle r="17.267325567745463"/>
+<text dy="0.3em">Stack</text>
+</g>
+<g class="leaf node" transform="translate(254.2083136868384,625.7951888077827)">
+<title>PropertyEncoder 4,138</title>
+<circle r="19.62951895801039"/>
+<text dy="0.3em">Proper</text>
+</g>
+<g class="leaf node" transform="translate(293.28146633305613,625.7951888077827)">
+<title>Encoder 4,060</title>
+<circle r="19.443633688207346"/>
+<text dy="0.3em">Encode</text>
+</g>
+<g class="leaf node" transform="translate(273.9196840613851,656.9120372891788)">
+<title>ColorEncoder 3,179</title>
+<circle r="17.205198109678875"/>
+<text dy="0.3em">Color</text>
+</g>
+<g class="leaf node" transform="translate(273.8999347726599,599.7098423568425)">
+<title>SizeEncoder 1,830</title>
+<circle r="13.05389029581668"/>
+<text dy="0.3em">Size</text>
+</g>
+<g class="leaf node" transform="translate(248.93350838686874,594.0563778322419)">
+<title>ShapeEncoder 1,690</title>
+<circle r="12.544627387987722"/>
+<text dy="0.3em">Shap</text>
+</g>
+<g class="leaf node" transform="translate(242.36509475356758,436.4932563418729)">
+<title>Distortion 6,314</title>
+<circle r="24.247485176500504"/>
+<text dy="0.3em">Distorti</text>
+</g>
+<g class="leaf node" transform="translate(286.99381628265905,436.4932563418729)">
+<title>BifocalDistortion 4,461</title>
+<circle r="20.381236352590985"/>
+<text dy="0.3em">Bifoca</text>
+</g>
+<g class="leaf node" transform="translate(268.1639711890005,469.83240868373133)">
+<title>FisheyeDistortion 3,444</title>
+<circle r="17.907954617248297"/>
+<text dy="0.3em">Fishe</text>
+</g>
+<g class="leaf node" transform="translate(177.0391734480699,380.5434299057802)">
+<title>FisheyeTreeFilter 5,219</title>
+<circle r="22.044896397492145"/>
+<text dy="0.3em">Fisheye</text>
+</g>
+<g class="leaf node" transform="translate(217.1602265584303,380.5434299057802)">
+<title>VisibilityFilter 3,509</title>
+<circle r="18.076156712868272"/>
+<text dy="0.3em">Visibi</text>
+</g>
+<g class="leaf node" transform="translate(200.7822413955763,411.7501731071034)">
+<title>GraphDistanceFilter 3,165</title>
+<circle r="17.167271316028096"/>
+<text dy="0.3em">Graph</text>
+</g>
+<g class="leaf node" transform="translate(413.6623287474748,594.2935414636916)">
+<title>EdgeRenderer 5,569</title>
+<circle r="22.77209687436744"/>
+<text dy="0.3em">EdgeRen</text>
+</g>
+<g class="leaf node" transform="translate(450.89934275281234,594.2935414636916)">
+<title>ShapeRenderer 2,247</title>
+<circle r="14.464917130970086"/>
+<text dy="0.3em">Shap</text>
+</g>
+<g class="leaf node" transform="translate(438.2329688656399,612.9221326245239)">
+<title>ArrowType 698</title>
+<circle r="8.061987585104081"/>
+<text dy="0.3em">Ar</text>
+</g>
+<g class="leaf node" transform="translate(437.7134550170818,578.9932541156729)">
+<title>IRenderer 353</title>
+<circle r="5.733261705529737"/>
+<text dy="0.3em">I</text>
+</g>
+</g>
+</svg>
