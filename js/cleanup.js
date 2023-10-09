@@ -635,6 +635,7 @@ function removeAllSpace(str) {
 }
 
 function process_rects(Rects) {
+  if (!Rects) return [[], []];
   let target = Rects;
 
   let processed = [],
