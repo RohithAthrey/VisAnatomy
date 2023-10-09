@@ -30,10 +30,12 @@ function initilizeMarkAnnotation() {
       element.element.attributes["visibility"]?.value === "hidden" ||
       element.element.attributes["display"]?.value === "none" ||
       element.element.attributes["opacity"]?.value === "0" ||
-      element.element.attributes["stroke-width"]?.value === "0" ||
+      (element.element.attributes.localName === "line" &&
+        element.element.attributes["stroke-width"]?.value === "0") ||
       element.element.attributes["fill"]?.value === "transparent" ||
       element.element.attributes["font-size"]?.value === "0" ||
-      element.element.attributes["stroke"]?.value === "transparent"
+      (element.element.attributes.localName === "line" &&
+        element.element.attributes["stroke"]?.value === "transparent")
   );
 
   allLeftNodes = allLeftNodes.filter(
