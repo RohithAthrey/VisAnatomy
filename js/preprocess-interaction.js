@@ -1,7 +1,6 @@
 var undoStack = [],
   redoStack = [];
 var btnCheck = {};
-var chartDecomposition = {};
 
 function addAxisLevel(t) {
   let axis = t === "x" ? xAxis : yAxis;

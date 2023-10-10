@@ -125,7 +125,6 @@
             //     alert("File with the same name already exists in the examples folder. Please choose a different file or rename your file.");
             // } else {
             newSVG();
-            loadFile();
 
             const reader = new FileReader();
             reader.onload = async function (event) {
@@ -168,15 +167,13 @@
         fileReader.onload = function () {
           sessionStorage.setItem("svg", fileReader.result);
           sessionStorage.setItem("fileName", uploadedSVG.name);
-          //   localStorage["svg"] = fileReader.result;
         };
-        // url = 'http://localhost:8080/demoPage.html?filename=' + b;
-        // document.location.href = url;
         document.getElementById("myFile").value = null;
       }
 
       $(document).ready(() => {
         sessionStorage.setItem("svg", "");
+        sessionStorage.setItem("fileName", undefined);
       });
     </script>
   </body>

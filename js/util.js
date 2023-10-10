@@ -12,8 +12,8 @@ function loadFile() {
   fetch("/annotations/" + filename + ".json")
     .then((response) => {
       if (!response.ok) {
-        console.log("save file not found");
-        throw new Error("HTTP error " + response.status);
+        console.log("no annotation file found");
+        // throw new Error("HTTP error " + response.status);
       }
       return response.json();
     })
@@ -44,6 +44,48 @@ function loadFile() {
     .catch(function () {
       this.dataError = true;
     });
+}
+
+function post() {
+  let xhr = new XMLHttpRequest();
+  xhr.open("POST", "/");
+  xhr.overrideMimeType("text/plain");
+  xhr.setRequestHeader("Accept", "application/json");
+  xhr.setRequestHeader("Content-Type", "application/json");
+
+  xhr.onreadystatechange = function () {
+    if (xhr.readyState === 4) {
+      if (xhr.status >= 200 && xhr.status < 300) {
+        const alertBox = document.getElementById("alertBox");
+        alertBox.textContent = `Annotations saved to 'annotations / ${sessionStorage.getItem(
+          "fileName"
+        )}.json'!`;
+        alertBox.style.visibility = "visible";
+        alertBox.style.opacity = "1";
+
+        // Hide the alert box after 3 seconds
+        setTimeout(function () {
+          alertBox.style.visibility = "hidden";
+          alertBox.style.opacity = "0";
+        }, 3000);
+        console.log(xhr.responseText);
+      } else {
+        console.error("Error: " + xhr.status);
+        alertBox.textContent =
+          "Error: '" + xhr.status + "' occurred while saving the annotations";
+        alertBox.style.visibility = "visible";
+        alertBox.style.opacity = "1";
+      }
+    }
+  };
+  let data = {};
+  data["chart"] = sessionStorage.getItem("fileName");
+  data["annotations"] = annotations;
+  xhr.send(JSON.stringify(data));
+}
+
+function getKeyByValue(object, value) {
+  return Object.keys(object).find((key) => object[key] === value);
 }
 
 function clientPt2SVGPt(x, y) {

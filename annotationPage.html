@@ -444,9 +444,9 @@
     </div>
 
     <script>
-      var questionMark = document.getElementById("questionMark");
-      var popOutContainer = document.getElementById("popOutContainer");
-      var closeButton = document.getElementById("closeButton");
+      const questionMark = document.getElementById("questionMark");
+      const popOutContainer = document.getElementById("popOutContainer");
+      const closeButton = document.getElementById("closeButton");
 
       questionMark.addEventListener("click", function () {
         //when ? is clicked
@@ -454,7 +454,7 @@
       });
 
       closeButton.addEventListener("click", function () {
-        //when x is clicked
+        //when the cross mark is clicked
         popOutContainer.style.display = "none";
       });
 
@@ -472,6 +472,12 @@
       window.addEventListener("beforeunload", function (event) {
         event.returnValue = "Are you sure you want to leave?";
         return "Are you sure you want to leave?";
+      });
+
+      // Initialize the section title and breadcrumb navigation
+      document.addEventListener("DOMContentLoaded", function () {
+        // Initialize breadcrumb navigation
+        updateBreadcrumb();
       });
 
       var annotationLoaded = false;
@@ -528,7 +534,6 @@
       function arrangeAnnotationDivs(currentStage) {
         switch (currentStage) {
           case "Axis & Legend":
-            console.log("stage 1!");
             allLeftNodes
               .map((node) => node.id)
               .forEach((r) => {
@@ -540,8 +545,6 @@
               "hidden";
             break;
           case "Marks":
-            console.log("stage 2!");
-
             // remove all reference elements from mainContent
             mainContent = groupSVGElementsByType();
             console.log(mainContent);
@@ -554,6 +557,10 @@
             document.getElementById("generalizedSelection").style.visibility =
               "visible";
             break;
+          case "Groups":
+          case "Layout":
+          case "Encodings":
+          case "Constraints":
           default:
             document.getElementById("axisAndLegend").style.visibility =
               "hidden";
@@ -563,56 +570,23 @@
         }
       }
 
-      // Initialize the section title and breadcrumb navigation
-      document.addEventListener("DOMContentLoaded", function () {
-        // Initialize breadcrumb navigation
-        updateBreadcrumb();
-      });
-
-      window.onhashchange = refresh;
-      let uploaded = false;
-      let metaData;
       var demoName, mainContent;
       var areaSelection;
       var numOfColor;
-      var atlasSceneGraph,
-        atlasRenderer = atlas.renderer("svg", "atlasCanvas"),
-        atlasTbl;
-      let chartName2Path = null;
-      let chartUrl2Web = null;
+      const fileName = sessionStorage.getItem("fileName");
+
+      window.onhashchange = refresh;
 
       function refresh() {
-        // getting file name from url
-        const urlParams = new URLSearchParams(window.location.search);
-        const fileName = urlParams.get("file");
-
         console.log(fileName);
-
         if (fileName) {
-          // load file from url if it exists
-          sessionStorage.setItem("fileName", fileName + ".svg");
           loadDemo(fileName);
-        } else if (
-          sessionStorage.getItem("svg") &&
-          sessionStorage.getItem("svg").length > 0
-        ) {
-          loadDemo("artboard");
-
-          let demo = window.location.hash.replace("#", "");
-
-          if (demo && demo != "") {
-            d3.select("body").style("overflow-y", "hidden");
-            window.scrollTo(0, 0);
-            loadDemo(demo);
-          } else {
-            d3.select("body").style("overflow-y", "auto");
-          }
         }
       }
 
       function loadDemo(demo) {
         loadFile();
-        fetch("./examples/" + demo + ".svg")
+        fetch("./examples/" + demo)
           .then((resp) => {
             return resp.text();
           })
@@ -623,12 +597,6 @@
                 : false
             )
               rawSVG = sessionStorage.getItem("svg");
-            undoStack = [];
-            redoStack = [];
-            atlasSG_histroy = [];
-            steps = [];
-            chartDecomposition = {};
-            btnCheck = {};
 
             titleXaxis = [];
             inXTitle = false;
@@ -661,50 +629,6 @@
             // in preprocess-interaction.js, activating the area-selecting event so that one can also select the area of the legend, or x and y axis to annotate
             enableAreaSelection();
           });
-      }
-
-      function post() {
-        let xhr = new XMLHttpRequest();
-        xhr.open("POST", "/");
-        xhr.overrideMimeType("text/plain");
-        xhr.setRequestHeader("Accept", "application/json");
-        xhr.setRequestHeader("Content-Type", "application/json");
-
-        xhr.onreadystatechange = function () {
-          if (xhr.readyState === 4) {
-            if (xhr.status >= 200 && xhr.status < 300) {
-              const alertBox = document.getElementById("alertBox");
-              alertBox.textContent = `Annotations saved to 'annotations / ${sessionStorage.getItem(
-                "fileName"
-              )}.json'!`;
-              alertBox.style.visibility = "visible";
-              alertBox.style.opacity = "1";
-
-              // Hide the alert box after 3 seconds
-              setTimeout(function () {
-                alertBox.style.visibility = "hidden";
-                alertBox.style.opacity = "0";
-              }, 3000);
-              console.log(xhr.responseText);
-            } else {
-              console.error("Error: " + xhr.status);
-              alertBox.textContent =
-                "Error: '" +
-                xhr.status +
-                "' occurred while saving the annotations";
-              alertBox.style.visibility = "visible";
-              alertBox.style.opacity = "1";
-            }
-          }
-        };
-        let data = {};
-        data["chart"] = sessionStorage.getItem("fileName");
-        data["annotations"] = annotations;
-        xhr.send(JSON.stringify(data));
-      }
-
-      function getKeyByValue(object, value) {
-        return Object.keys(object).find((key) => object[key] === value);
       }
 
       document.addEventListener("keyup", function (e) {
