@@ -126,26 +126,26 @@
             // } else {
             newSVG();
 
-            const reader = new FileReader();
-            reader.onload = async function (event) {
-              const svgData = event.target.result;
-              // Send the SVG data to the server
-              const response = await fetch(`http://localhost:5200/save_file`, {
-                method: "POST",
-                headers: {
-                  "Content-Type": "text/plain",
-                  "X-Filename": filename, // Pass filename in header
-                },
-                body: svgData,
-              });
+            // const reader = new FileReader();
+            // reader.onload = async function (event) {
+            //   const svgData = event.target.result;
+            //   // Send the SVG data to the server
+            //   const response = await fetch(`http://localhost:5200/save_file`, {
+            //     method: "POST",
+            //     headers: {
+            //       "Content-Type": "text/plain",
+            //       "X-Filename": filename, // Pass filename in header
+            //     },
+            //     body: svgData,
+            //   });
 
-              if (response.ok) {
-                alert("File saved to examples folder.");
-              } else {
-                alert("Error saving file to examples folder.");
-              }
-            };
-            reader.readAsText(file);
+            //   if (response.ok) {
+            //     alert("File saved to examples folder.");
+            //   } else {
+            //     alert("Error saving file to examples folder.");
+            //   }
+            // };
+            // reader.readAsText(file);
 
             event.target.submit();
             // }

@@ -57,6 +57,7 @@ function displaySVG(text) {
   }
 
   const svgElement = document.querySelector("#vis");
+  svgElement.removeAttribute("viewBox");
   addClassAndIdToLeaves(svgElement);
 
   vis.style("height", "100%").style("width", "100%");
@@ -320,6 +321,11 @@ function setViewBox() {
     ].join(",");
   d3.select("#vis").attr("viewBox", vbString);
   //d3.select("#overlay").attr("viewBox", vbString);
+
+  // let svgString = document.getElementById("vis").outerHTML;
+  // svgString = setCorrectViewBox(svgString);
+  // document.getElementById("vis").outerHTML = svgString;
+
   if (legend.type === "continuous") {
     let legendBar = legend.marks[0];
     let pos = document.getElementById(legendBar.id).getBoundingClientRect();
@@ -499,6 +505,32 @@ function getViewBox() {
       .map((bbox) => bbox.bottom)
       .reduce((a, b) => Math.max(a, b)),
   };
+}
+
+function setCorrectViewBox(svgString) {
+  // Parse the SVG content
+  const parser = new DOMParser();
+  const svgDoc = parser.parseFromString(svgString, "image/svg+xml");
+  const svgElement = svgDoc.documentElement;
+
+  // Extract width and height attributes from SVG
+  const width = svgElement.getAttribute("width");
+  const height = svgElement.getAttribute("height");
+
+  // If width and height exist, set the viewBox
+  if (width && height) {
+    const widthValue = parseFloat(width);
+    const heightValue = parseFloat(height);
+
+    // Set or update the viewBox attribute
+    svgElement.setAttribute("viewBox", `0 0 ${widthValue} ${heightValue}`);
+  }
+
+  // Serialize the updated SVG back to a string
+  const serializer = new XMLSerializer();
+  const updatedSvgString = serializer.serializeToString(svgElement);
+
+  return updatedSvgString;
 }
 
 function getBoundingBox(node) {

@@ -36,8 +36,9 @@ var referenceElements = [];
 function groupSVGElementsByTypeWithCoordinates() {
   const tempDiv = document.getElementById("rbox1");
 
-  const leafElements = Array.from(tempDiv.querySelectorAll("*")).filter(
-    (element) => element.childElementCount === 0
+  const allElements = Array.from(tempDiv.querySelectorAll("*")).filter(
+    // (element) => element.childElementCount === 0
+    (element) => graphicsElementTypes.includes(element.tagName) // here we use all nodes other than lead nodes because there are rare cases where <rect> is not a leaf node like the example in https://observablehq.com/@d3/diverging-bar-chart
   );
 
   const groupedElements = [];
@@ -45,7 +46,7 @@ function groupSVGElementsByTypeWithCoordinates() {
   const svgElement = tempDiv.querySelector("svg");
   const svgBBox = svgElement.getBoundingClientRect();
 
-  leafElements.forEach((element) => {
+  allElements.forEach((element) => {
     // Get the bounding box for the element
     const bbox = element.getBoundingClientRect();
 
