@@ -338,18 +338,23 @@
             border: #ccc 0px solid;
           "
         >
-          <div style="height: 100%">
+          <div
+            style="
+              position: absolute;
+              top: 20%;
+              height: 80%;
+              width: 47.5%;
+              border: #0ba7bc 1px solid;
+              padding: 5px;
+              margin-bottom: 10px;
+              vertical-align: top;
+            "
+          >
             <h3>All Mark IDs</h3>
-
             <div
               id="allMarks"
               style="
                 height: 90%;
-                width: 250px;
-                border: #0ba7bc 1px solid;
-                padding: 5px;
-                margin-bottom: 10px;
-                vertical-align: top;
                 overflow: scroll;
                 overflow: -moz-scrollbars-vertical;
               "
@@ -357,23 +362,22 @@
           </div>
           <div
             style="
-              height: 100%;
-              width: calc(100% - 275px);
               position: absolute;
-              top: 0;
-              right: 0;
+              top: 20%;
+              right: 2.5%;
+              height: 80%;
+              width: 47.5%;
+              border: #0ba7bc 1px solid;
+              padding: 5px;
+              margin-bottom: 10px;
+              vertical-align: top;
             "
           >
             <h3>Mark Selections</h3>
             <div
               id="markSelections"
               style="
-                height: calc(90% - 150px);
-                width: 100%;
-                border: #0ba7bc 1px solid;
-                padding: 5px;
-                margin-bottom: 10px;
-                vertical-align: top;
+                height: 90%;
                 overflow: scroll;
                 overflow: -moz-scrollbars-vertical;
               "
@@ -381,25 +385,26 @@
           </div>
           <div
             style="
-              height: 150;
-              width: calc(100% - 275px);
+              height: 20%;
+              width: 100%;
               position: absolute;
-              bottom: 0;
-              right: 0;
+              top: 0;
+              left: 0;
             "
           >
-            <h3>Mark Types and Roles</h3>
             <div
               id="markRoles"
               style="
-                height: 100%;
-                width: 100%;
+                height: 90%;
+                width: 97.5%;
                 border: #0ba7bc 1px solid;
                 padding: 5px;
                 margin-bottom: 10px;
               "
             >
-              <div width="100%">
+              <h3>Mark Types and Roles</h3>
+
+              <div width="47.5%">
                 Select a Mark Type
                 <select
                   class="fieldType"
@@ -419,7 +424,7 @@
                 </select>
               </div>
               <br />
-              <div width="100%">
+              <div width="47.5%">
                 Select a Mark Role
                 <select
                   class="fieldType"
@@ -534,6 +539,9 @@
       function arrangeAnnotationDivs(currentStage) {
         switch (currentStage) {
           case "Axis & Legend":
+            // set the height of the container div
+            d3.select("#container").style("height", "calc(100% - 300px)");
+
             referenceElements.forEach((rid) => {
               d3.select("#" + rid).style("opacity", "1");
             });
@@ -548,6 +556,8 @@
               "hidden";
             break;
           case "Marks":
+            d3.select("#container").style("height", "calc(100% - 75px)");
+
             // remove all reference elements from mainContent
             mainContentElements = groupSVGElementsByType();
             console.log(mainContentElements);

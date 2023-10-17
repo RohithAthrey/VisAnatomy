@@ -88,7 +88,7 @@ function initilizeMarkAnnotation() {
         markDiv.appendChild(roleTag);
       }
       markDiv.style.display = "inline-block";
-      markDiv.style.width = "100%";
+      markDiv.style.width = "95%";
       markDiv.style.height = "fit-content";
       markDiv.style.border = "1px solid #000";
       markDiv.style.padding = "2px";
@@ -148,7 +148,7 @@ function initilizeMarkAnnotation() {
 
   d3.selectAll(".selectionDiv")
     .style("display", "inline-block")
-    .style("width", "100%")
+    .style("width", "95%")
     .style("height", "fit-content")
     .style("border", "1px solid #000")
     .style("padding", "2px")
