@@ -1,5 +1,6 @@
 /*
  * This script is able to turn a annotated json from the tool into usable by the CAST animation tool.
+ * toCastable.js script usage: "node toCastable.js [path to file]"
  */
 const SVGPathCommander = require('svg-path-commander');
 // const jsdom = require("jsdom");
@@ -303,6 +304,7 @@ function processPath(obj) {
 
   // Start of verticies
   ans += `<g transform="translate(0,0)" opacity="1">`;
+
 
   for (let vertex of obj.vertices) {
     ans += `<g transform="translate(0,0)" opacity="1">`;
@@ -750,7 +752,48 @@ function processBump(obj, num) {
 
       ans += `</path>`
 
+    } else {
+
+      // Added to handle multiline graph
+
+      const circle = {
+        type: "element",
+        name: "circle",
+        attributes: {
+          cx: vertex.x,
+          cy: vertex.y,
+          r: 1
+        }
+      }
+
+      const path = toPath(circle)
+
+      ans += `<path id="mark${vertexCounter++}" class=" mark Symbol1 symbol" `
+      ans += `d="${path}" `
+      ans += `data-datum="{&quot;_TYPE&quot;:&quot;symbol&quot;,&quot;_MARKID&quot;:&quot;Symbol1&quot;,&quot;_x&quot;:${vertex.x},&quot;_y&quot;:${vertex.y},&quot;_id&quot;:&quot;${vertexCounter - 1002}&quot;`
+
+      dataScope = vertex.dataScope
+      f2v = dataScope.f2v
+
+      for (let key in f2v) {
+        ans += `,&quot;${key}&quot;:&quot;${f2v[key]}&quot;`
+      }
+
+      ans += `}" `
+
+      ans += `style="stroke-linecap: round; stroke-linejoin: round; text-anchor: start; cursor: pointer; pointer-events: all;" `
+
+      ans += `fill="${vertex.fillColor}"> `
+
+      ans += `</path>`
+
     }
+
+
+
+
+
+
 
     ans += `</g>`;
   }
