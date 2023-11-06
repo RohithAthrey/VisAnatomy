@@ -72,29 +72,32 @@
         "
       ></svg> -->
     </div>
-    <div id="breadcrumb"></div>
-    <button
-      id="nextButton"
-      onclick="nextSection()"
-      style="position: absolute; left: calc(50% + 275px); top: 8px"
-    >
-      Next
-    </button>
-    <button
-      id="prevButton"
-      onclick="prevSection()"
-      style="position: absolute; right: calc(50% + 260px); top: 8px"
-    >
-      Back
-    </button>
-    <button
-      id="saveButton"
-      onclick="post()"
-      style="position: absolute; top: 8px; right: calc(2%)"
-    >
-      Save
-    </button>
+
     <div id="preprocessUI" style="visibility: visible">
+      <div id="annotationStages">
+        <div id="breadcrumb"></div>
+        <button
+          id="nextButton"
+          onclick="nextSection()"
+          style="position: absolute; left: calc(50% + 275px); top: 8px"
+        >
+          Next
+        </button>
+        <button
+          id="prevButton"
+          onclick="prevSection()"
+          style="position: absolute; right: calc(50% + 260px); top: 8px"
+        >
+          Back
+        </button>
+        <button
+          id="saveButton"
+          onclick="post()"
+          style="position: absolute; top: 8px; right: calc(2%)"
+        >
+          Save
+        </button>
+      </div>
       <div class="mainbox" id="axisAndLegend">
         <div style="margin-left: 20px">
           <span style="margin-right: 30px; font-weight: bold"
@@ -588,16 +591,25 @@
       var numOfColor;
       const fileName = sessionStorage.getItem("fileName");
 
-      window.onhashchange = refresh;
+      // window.onhashchange = refresh;
 
-      function refresh() {
-        if (fileName) {
-          loadDemo(fileName);
-        }
-      }
+      // function refresh() {
+      //   if (fileName) {
+      //     loadDemo(fileName);
+      //   }
+      // }
 
       function loadDemo(demo) {
+        legend = {};
+        xAxis = {};
+        yAxis = {};
+        xGridlines = {};
+        yGridlines = {};
+        markAnnotations = {};
+
+        sessionStorage.setItem("fileName", demo.split(".")[0]);
         loadFile();
+
         fetch("./examples/" + demo)
           .then((resp) => {
             return resp.text();
@@ -615,6 +627,9 @@
             titleYaxis = [];
             inYTitle = false;
             titleLegend = [];
+
+            currentSectionIndex = 0;
+            updateBreadcrumb();
 
             demoName = demo;
             d3.select("#preprocessUI").style("visibility", "visible");
@@ -656,15 +671,24 @@
             // Populate the <ul> list with filenames
             files.forEach((file) => {
               const li = document.createElement("li");
-              li.textContent = file;
+              li.classList.add("demoItem");
+              li.id = file.split(".")[0];
+              li.textContent = file.split(".")[0];
               li.addEventListener("click", () => {
                 loadDemo(file);
+                d3.selectAll(".demoItem")
+                  .style("color", "black")
+                  .style("font-weight", "normal");
+
+                d3.select("#" + file.split(".")[0])
+                  .style("color", "red")
+                  .style("font-weight", "bold");
               });
               ulElement.appendChild(li);
             });
           });
 
-        refresh();
+        // refresh();
       });
     </script>
   </body>

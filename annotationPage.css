@@ -125,6 +125,12 @@ body {
   color: blue;
 }
 
+#annotationStages {
+  position: absolute;
+  width: calc(100% - 250px);
+  right: 0px;
+}
+
 .mainbox {
   width: calc(100% - 250px);
   margin-left: 10px;
