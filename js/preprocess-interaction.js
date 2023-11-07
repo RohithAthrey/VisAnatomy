@@ -723,6 +723,16 @@ function enableDragDrop(texts) {
             }
           }
 
+          if (titleYaxis.includes(thisText)) {
+            titleYaxis.splice(titleYaxis.indexOf(thisText), 1);
+            displayTitleYLabel(thisText, "delete");
+          }
+
+          if (titleXaxis.includes(thisText)) {
+            titleXaxis.splice(titleXaxis.indexOf(thisText), 1);
+            displayTitleXLabel(thisText, "delete");
+          }
+
           displayTitleLegendLabel(thisText);
         }
 
@@ -772,27 +782,16 @@ function enableDragDrop(texts) {
 
           //if the dragged element is already present in the y title display
           //remove the button from there and display the dragged element in x title
-          if (inYTitle) {
-            console.log("equalss");
-            var button = document.getElementById("yTitleID");
-            console.log(button);
-            var buttonText = button.textContent;
-            console.log(buttonText);
-            if (buttonText === thisText["content"]) {
-              button.remove();
-            }
+          if (titleYaxis.includes(thisText)) {
+            titleYaxis.splice(titleYaxis.indexOf(thisText), 1);
+            displayTitleYLabel(thisText, "delete");
+          }
+          if (titleLegend.includes(thisText)) {
+            titleLegend.splice(titleLegend.indexOf(thisText), 1);
+            displayTitleLegendLabel(thisText, "delete");
           }
 
-          // add the text object to the title label object,
-          //still have to implement
-          inXTitle = true;
-          console.log(inXTitle);
-
-          // update the title display box, see in js/display.js if no buttons present
-          // var buttons = document.getElementsByClassName("titleXbutton");
-          // if (buttons.length == 0) {
           displayTitleXLabel(thisText);
-          //  }
         } else if (e.id.startsWith("yTitle")) {
           console.log("in y title label box");
 
@@ -835,23 +834,17 @@ function enableDragDrop(texts) {
 
           //if the dragged element is already present in the y title display
           //remove the button from there and display the dragged element in x title
-          if (inXTitle) {
-            console.log("equals");
-            var button = document.getElementById("xTitleID");
-            console.log(button);
-            var buttonText = button.textContent;
-            console.log(buttonText);
-            if (buttonText === thisText["content"]) {
-              button.remove();
-            }
+          if (titleXaxis.includes(thisText)) {
+            titleXaxis.splice(titleXaxis.indexOf(thisText), 1);
+            displayTitleXLabel(thisText, "delete");
           }
 
-          inYTitle = true;
+          if (titleLegend.includes(thisText)) {
+            titleLegend.splice(titleLegend.indexOf(thisText), 1);
+            displayTitleLegendLabel(thisText, "delete");
+          }
 
-          //var buttons = document.getElementsByClassName("titleYbutton");
-          //if (buttons.length == 0) {
           displayTitleYLabel(thisText);
-          // }
         }
       }
     });
