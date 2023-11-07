@@ -686,11 +686,12 @@
               });
               ulElement.appendChild(li);
             });
+
+            d3.select("#BarChart1")
+              .style("color", "red")
+              .style("font-weight", "bold");
           });
 
-        d3.select("#BarChart1")
-          .style("color", "red")
-          .style("font-weight", "bold");
         loadDemo("barChart1.svg");
       });
     </script>
