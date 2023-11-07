@@ -271,31 +271,21 @@ function allowDrop(ev) {
 function drag(ev) {
   // defined on the text elements in the label display boxes
   ev.dataTransfer.setData("text", ev.target.id);
+  draggedFromID = ev.srcElement.parentNode.id;
 }
 
 function drop(ev) {
   ev.preventDefault();
   var data = ev.dataTransfer.getData("text");
-  console.log(data);
 
-  if (data == "xTitleID") {
-    draggedFromNode = document.getElementById("xTitleID");
-    console.log(draggedFromNode);
-    draggedFromID = draggedFromNode.parentNode.id;
-  } else if (data == "yTitleID") {
-    draggedFromNode = document.getElementById("yTitleID");
-    console.log(draggedFromNode);
-    draggedFromID = draggedFromNode.parentNode.id;
-  } else {
-    draggedFromNode = document.getElementById(data);
-    draggedFromID = draggedFromNode.parentNode.id;
-  } // dragged element
+  draggedToID = ev.srcElement.id;
+  console.log(draggedFromID, draggedToID);
 
   /* dropping from a x/y axis label box into xtitle box */
   if (
-    ev.currentTarget.id.startsWith("xTitle") ||
-    ev.currentTarget.id.startsWith("yTitle") ||
-    ev.currentTarget.id.startsWith("legendTitle")
+    draggedToID.startsWith("xTitle") ||
+    draggedToID.startsWith("yTitle") ||
+    draggedToID.startsWith("legendTitle")
   ) {
     let thisText = d3.select("#" + data).datum();
     if (
@@ -314,9 +304,9 @@ function drop(ev) {
         }
       }
 
-      let thisTitle = ev.currentTarget.id.startsWith("xTitle")
+      let thisTitle = draggedToID.startsWith("xTitle")
         ? "x"
-        : ev.currentTarget.id.startsWith("yTitle")
+        : draggedToID.startsWith("yTitle")
         ? "y"
         : "legend";
 
@@ -327,17 +317,60 @@ function drop(ev) {
         case "y":
           displayTitleYLabel(thisText);
           break;
-        case "x":
+        case "Legend":
           displayTitleLegendLabel(thisText);
           break;
       }
 
       displayAxis(xAxis);
       displayAxis(yAxis);
+    } else if (
+      draggedFromID.startsWith("legendTitle") ||
+      draggedFromID.startsWith("xTitle") ||
+      draggedFromID.startsWith("yTitle")
+    ) {
+      let sourceTitle = draggedFromID.startsWith("xTitle")
+        ? "x"
+        : draggedFromID.startsWith("yTitle")
+        ? "y"
+        : "legend";
+
+      switch (sourceTitle) {
+        case "x":
+          titleXaxis.splice(titleXaxis.indexOf(thisText), 1);
+          displayTitleXLabel(thisText, "delete");
+          break;
+        case "y":
+          titleYaxis.splice(titleYaxis.indexOf(thisText), 1);
+          displayTitleYLabel(thisText, "delete");
+          break;
+        case "legend":
+          titleLegend.splice(titleLegend.indexOf(thisText), 1);
+          displayTitleLegendLabel(thisText, "delete");
+          break;
+      }
+
+      let thisTitle = draggedToID.startsWith("xTitle")
+        ? "x"
+        : draggedToID.startsWith("yTitle")
+        ? "y"
+        : "legend";
+
+      switch (thisTitle) {
+        case "x":
+          displayTitleXLabel(thisText);
+          break;
+        case "y":
+          displayTitleYLabel(thisText);
+          break;
+        case "legend":
+          displayTitleLegendLabel(thisText);
+          break;
+      }
     }
   } else if (
-    ev.currentTarget.id.startsWith("xLabels") ||
-    ev.currentTarget.id.startsWith("yLabels")
+    draggedToID.startsWith("xLabels") ||
+    draggedToID.startsWith("yLabels")
   ) {
     let thisText = d3.select("#" + data).datum();
     // when the element is dropped in the detected region
@@ -345,14 +378,14 @@ function drop(ev) {
     if (
       draggedFromID.startsWith("xTitle") ||
       draggedFromID.startsWith("yTitle") ||
-      ev.currentTarget.id.startsWith("legendTitle")
+      draggedFromID.startsWith("legendTitle")
     ) {
       let thisTitle = draggedFromID.startsWith("xTitle")
         ? "x"
         : draggedFromID.startsWith("yTitle")
         ? "y"
         : "legend";
-      console.log(thisTitle);
+
       switch (thisTitle) {
         case "x":
           titleXaxis.splice(titleXaxis.indexOf(thisText), 1);
@@ -361,7 +394,6 @@ function drop(ev) {
           break;
         case "y":
           titleYaxis.splice(titleYaxis.indexOf(thisText), 1);
-          console.log(titleYaxis);
           displayTitleYLabel(thisText, "delete");
           console.log("y title is ", titleYaxis);
           break;
@@ -372,7 +404,7 @@ function drop(ev) {
           break;
       }
 
-      let thisAxis = ev.currentTarget.id.startsWith("xLabels") ? xAxis : yAxis;
+      let thisAxis = draggedToID.startsWith("xLabels") ? xAxis : yAxis;
 
       thisAxis["labels"].push(thisText); // TBD: need to handle upper levels [IMPORTANT]
       console.log(thisAxis["labels"].map((l) => l["content"]));
@@ -391,12 +423,8 @@ function drop(ev) {
         legend: duplicate(legend),
         btnCheck: Object.assign({}, btnCheck),
       });
-      moveAxisLabel(
-        draggedFromID,
-        ev.currentTarget.id,
-        d3.select("#" + data).datum()
-      );
-      buttonCheck(ev.currentTarget.id, d3.select("#" + data).datum());
+      moveAxisLabel(draggedFromID, draggedToID, d3.select("#" + data).datum());
+      buttonCheck(draggedToID, d3.select("#" + data).datum());
       displayAxis(xAxis);
       displayAxis(yAxis);
       ev.stopImmediatePropagation(); // stop the event from bubbling up to the SVG element

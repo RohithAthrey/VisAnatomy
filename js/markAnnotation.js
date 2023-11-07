@@ -5,7 +5,7 @@ var graphicsElementTypes = [
   "rect",
   "circle",
   "ellipse",
-  "ploygon",
+  "polygon",
   "path",
   "image",
   "text",
