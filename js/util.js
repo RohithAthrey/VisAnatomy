@@ -1,18 +1,12 @@
-legend = {};
-xAxis = {};
-yAxis = {};
-xGridlines = {};
-yGridlines = {};
-markAnnotations = {};
-
-function loadFile() {
-  filename = sessionStorage.getItem("fileName");
+function loadFile(filename) {
+  // filename = sessionStorage.getItem("fileName");
   console.log("loading from: " + filename);
 
   fetch("/annotations/" + filename + ".json")
     .then((response) => {
       if (!response.ok) {
         console.log("no annotation file found");
+
         // throw new Error("HTTP error " + response.status);
       }
       return response.json();
@@ -26,10 +20,10 @@ function loadFile() {
       // testing annotation was loaded
       console.log("loaded annotations", annotations);
 
-      alertBox.textContent =
-        "Annotations loaded from: 'annotations / " + filename + ".json'!";
-      alertBox.style.visibility = "visible";
-      alertBox.style.opacity = "1";
+      // alertBox.textContent =
+      //   "Annotations loaded from: 'annotations / " + filename + ".json'!";
+      // alertBox.style.visibility = "visible";
+      // alertBox.style.opacity = "1";
       // update the values and the display boxes
       xAxis = annotations.xAxis;
       yAxis = annotations.yAxis;

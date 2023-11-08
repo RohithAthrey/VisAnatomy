@@ -626,32 +626,15 @@
       // }
 
       function loadDemo(demo) {
-        legend = {};
-        xAxis = {};
-        yAxis = {};
-        xGridlines = {};
-        yGridlines = {};
-        markAnnotations = {};
-
         sessionStorage.setItem("fileName", demo.split(".")[0]);
-        loadFile();
+        loadFile(demo.split(".")[0]);
 
         fetch("./examples/" + demo)
           .then((resp) => {
             return resp.text();
           })
           .then((rawSVG) => {
-            // if (
-            //   sessionStorage.getItem("svg")
-            //     ? sessionStorage.getItem("svg").length > 0
-            //     : false
-            // )
-            //   rawSVG = sessionStorage.getItem("svg");
-
-            titleXaxis = [];
-            titleYaxis = [];
-            titleLegend = [];
-            chartTitle = [];
+            console.log("processing SVG...");
 
             currentSectionIndex = 0;
             updateBreadcrumb();
@@ -669,7 +652,6 @@
             enableDragDrop(jsonArr.texts);
 
             if (!annotationLoaded) {
-              d3.selectAll(".axisLabels").selectAll("button").remove();
               // in extract.js, extracting from the svg file the legend mark and labels, and the x and y axis labels, ticks, and paths if any, and the grid lines if any
               // extract() calls displayAxis() and displayLegend() to display the extracted elements
               mainContent = extract(jsonArr);
@@ -700,6 +682,21 @@
               li.id = file.split(".")[0];
               li.textContent = file.split(".")[0];
               li.addEventListener("click", () => {
+                annotations = {};
+                xAxis = {};
+                yAxis = {};
+                legend = {};
+                xGridlines = {};
+                yGridlines = {};
+                markAnnotations = {};
+                chartTitle = [];
+                titleLegend = [];
+                titleXaxis = [];
+                titleYaxis = [];
+                annotationLoaded = false;
+                d3.selectAll(".axisLabels").selectAll("button").remove();
+                d3.selectAll(".axisTitle").selectAll("button").remove();
+                d3.selectAll(".chartTitle").selectAll("button").remove();
                 d3.selectAll(".demoItem")
                   .style("color", "black")
                   .style("font-weight", "normal");
@@ -707,6 +704,7 @@
                 d3.select("#" + file.split(".")[0])
                   .style("color", "red")
                   .style("font-weight", "bold");
+
                 loadDemo(file);
               });
               ulElement.appendChild(li);

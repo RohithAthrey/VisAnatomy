@@ -235,6 +235,23 @@ body {
   padding-right: 5px;
 }
 
+.titleXbutton:empty::before {
+  content: "Text element(s) for the X-axis";
+  color: lightgray;
+}
+.titleYbutton:empty::before {
+  content: "Text element(s) for the Y-axis";
+  color: lightgray;
+}
+.titleLegendButton:empty::before {
+  content: "Text element(s) for the legend";
+  color: lightgray;
+}
+.chartTitleButton:empty::before {
+  content: "Text element(s) for the chart title";
+  color: lightgray;
+}
+
 .titleXbutton:hover {
   opacity: 1;
   /* background-color: #3e8e41; */
