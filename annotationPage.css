@@ -217,7 +217,8 @@ body {
 
 .titleXbutton,
 .titleYbutton,
-.legendTitleID {
+.titleLegendButton,
+.chartTitleButton {
   display: inline-block;
   cursor: pointer;
   text-align: center;
@@ -248,7 +249,7 @@ body {
   color: #fff;
 }
 
-.legendTitleID:hover {
+.titleLegendButton:hover {
   opacity: 1;
   /* background-color: #3e8e41; */
   background-color: #333;
@@ -311,6 +312,15 @@ td:hover {
 /* #preprocessUI select option:disabled {
         display:none;
     } */
+
+.chartTitle {
+  border: #bbb 1px solid;
+  display: inline-block;
+  vertical-align: top;
+  overflow: scroll;
+  overflow: -moz-scrollbars-vertical;
+  margin-right: 10px;
+}
 
 .axisDiv {
   width: 100%;

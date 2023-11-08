@@ -181,6 +181,8 @@ function displayTitleXLabel(thisText, mode) {
     else titleXaxis.push(thisText);
   }
 
+  annotations["xAxis_title"] = titleXaxis;
+
   console.log(titleXaxis);
   let text = thisText["content"];
   let btn = d3
@@ -219,7 +221,8 @@ function displayTitleYLabel(thisText, mode) {
     else titleYaxis.push(thisText);
   }
 
-  console.log(titleYaxis);
+  annotations["yAxis_title"] = titleYaxis;
+
   let text = thisText["content"];
   let btn = d3
     .select("#yTitle")
@@ -256,10 +259,9 @@ function displayTitleLegendLabel(thisText, mode) {
     else titleLegend.push(thisText);
   }
 
-  console.log(titleLegend);
+  annotations["legend_title"] = titleLegend;
+
   let text = thisText["content"];
-  console.log(text);
-  console.log("Display legend");
 
   let btn = d3
     .select("#legendTitle")
@@ -283,6 +285,80 @@ function displayTitleLegendLabel(thisText, mode) {
         .attr("style", "background-color: #f2f2f2; width: 100%")
         .attr("style", "color: black");
     });
+}
+
+function displayChartTitle(thisText, mode) {
+  if (mode === "delete") {
+    d3.select("#chartTitle")
+      .select("#" + "chartTitleIDinSVG" + thisText["id"])
+      .remove();
+    return;
+  } else {
+    if (chartTitle.includes(thisText)) return;
+    else chartTitle.push(thisText);
+  }
+
+  annotations["chart_title"] = chartTitle;
+
+  let text = thisText["content"];
+
+  let btn = d3
+    .select("#chartTitle")
+    .append("button")
+    .datum(thisText)
+    .attr("type", "button")
+    .attr("class", "chartTitleButton")
+    .attr("id", "chartTitleIDinSVG" + thisText["id"])
+    .text(text)
+    .attr("draggable", true)
+    .on("dragstart", drag);
+
+  btn
+    .attr("style", "background-color: #f2f2f2")
+    .on("mouseover", function (event) {
+      d3.select(this) // Select the hovered button
+        .attr("style", "color: #fff");
+    })
+    .on("mouseout", function () {
+      d3.select(this) // Select the hovered button
+        .attr("style", "background-color: #f2f2f2; width: 100%")
+        .attr("style", "color: black");
+    });
+}
+
+function disPlayTitles(chartTitle, legendTitle, xTitle, yTitle) {
+  let allTitles = [chartTitle, legendTitle, xTitle, yTitle];
+  ["chartTitle", "legendTitle", "xTitle", "yTitle"].forEach((id) => {
+    d3.select("#" + id)
+      .selectAll("button")
+      .remove();
+    for (let title of allTitles[
+      ["chartTitle", "legendTitle", "xTitle", "yTitle"].indexOf(id)
+    ]) {
+      let btn = d3
+        .select("#" + id)
+        .append("button")
+        .datum(title)
+        .attr("type", "button")
+        .attr("class", "chartTitleButton")
+        .attr("id", "chartTitleIDinSVG" + title["id"])
+        .text(title["content"])
+        .attr("draggable", true)
+        .on("dragstart", drag);
+
+      btn
+        .attr("style", "background-color: #f2f2f2")
+        .on("mouseover", function (event) {
+          d3.select(this) // Select the hovered button
+            .attr("style", "color: #fff");
+        })
+        .on("mouseout", function () {
+          d3.select(this) // Select the hovered button
+            .attr("style", "background-color: #f2f2f2; width: 100%")
+            .attr("style", "color: black");
+        });
+    }
+  });
 }
 
 function setViewBox() {

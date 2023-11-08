@@ -123,6 +123,19 @@
               alt="Question Mark"
               style="width: 15px; height: 15px; cursor: pointer"
           /></span>
+          <div
+            id="chartTitle"
+            class="chartTitle"
+            style="
+              height: 30px;
+              position: absolute;
+              top: 5px;
+              right: 5px;
+              width: 50%;
+            "
+            ondrop="drop(event)"
+            ondragover="allowDrop(event)"
+          ></div>
           <div class="pop-out-container" id="popOutContainer">
             <span class="close-button" id="closeButton">&times;</span>
             <div class="pop-out-content">
@@ -636,10 +649,9 @@
             //   rawSVG = sessionStorage.getItem("svg");
 
             titleXaxis = [];
-            inXTitle = false;
             titleYaxis = [];
-            inYTitle = false;
             titleLegend = [];
+            chartTitle = [];
 
             currentSectionIndex = 0;
             updateBreadcrumb();

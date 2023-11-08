@@ -213,8 +213,6 @@ function inferTblSchema(scene) {
       }
     }
   }
-  // console.log(levels);
-  // console.log(encodedFields);
   return {
     categorical: Math.max(levels, encodedFields["categorical"]),
     quantitative: encodedFields["quantitative"],
@@ -280,7 +278,7 @@ function drop(ev) {
   let thisText = d3.select("#" + data).datum();
 
   draggedToID = ev.srcElement.id;
-  console.log(draggedFromID, draggedToID);
+  console.log("Dragging from " + draggedFromID + "to " + draggedToID);
 
   /* dropping from a x/y axis label box into xtitle box */
   if (
@@ -405,7 +403,6 @@ function drop(ev) {
       let thisAxis = draggedToID.startsWith("xLabels") ? xAxis : yAxis;
 
       thisAxis["labels"].push(thisText); // TBD: need to handle upper levels [IMPORTANT]
-      console.log(thisAxis["labels"].map((l) => l["content"]));
 
       displayAxis(xAxis);
       displayAxis(yAxis);
@@ -439,7 +436,6 @@ function drop(ev) {
       draggedFromID.startsWith("xLabels") ||
       draggedFromID.startsWith("yLabels")
     ) {
-      console.log(draggedFromID);
       removeAxisLabel(draggedFromID, d3.select("#" + data).datum());
       displayAxis(xAxis);
       displayAxis(yAxis);
@@ -457,8 +453,6 @@ function drop(ev) {
         ? "y"
         : "legend";
 
-      console.log(thisText);
-
       switch (thisTitle) {
         case "x":
           titleXaxis.splice(titleXaxis.indexOf(thisText), 1);
@@ -473,6 +467,9 @@ function drop(ev) {
           displayTitleLegendLabel(thisText, "delete");
           break;
       }
+    } else if (draggedFromID.startsWith("chartTitle")) {
+      chartTitle.splice(chartTitle.indexOf(thisText), 1);
+      displayChartTitle(thisText, "delete");
     }
     ev.stopImmediatePropagation();
   }
@@ -601,8 +598,6 @@ function enableDragDrop(texts) {
         event.sourceEvent.pageX,
         event.sourceEvent.pageY
       );
-
-      console.log(elements);
       //check where the element is being dropped
       for (let e of elements) {
         if (e.tagName !== "DIV") continue;
@@ -690,8 +685,6 @@ function enableDragDrop(texts) {
           // buttonCheck(TargetID, thisText);
           break;
         } else if (e.id.startsWith("legendTitle")) {
-          console.log("in legend");
-
           //check if the dragged element is present in the xAxis label
           //and remove it from the label if present
           for (let i = 0; i < xAxis["labels"].length; i++) {
@@ -738,17 +731,6 @@ function enableDragDrop(texts) {
 
         //if we drop the dragged element in the title box region
         else if (e.id.startsWith("xTitle")) {
-          var buttons = document.getElementsByClassName("titlebutton");
-
-          //if any button present exit out and dont do anything
-          // if (buttons.length > 0) {
-          //     return;
-          //  }
-
-          console.log(thisText);
-          console.log(xAxis["labels"]);
-          console.log(yAxis["labels"]);
-
           //check if the dragged element is present in the xAxis label
           //and remove it from the label if present
           for (let i = 0; i < xAxis["labels"].length; i++) {
@@ -793,12 +775,6 @@ function enableDragDrop(texts) {
 
           displayTitleXLabel(thisText);
         } else if (e.id.startsWith("yTitle")) {
-          console.log("in y title label box");
-
-          console.log(thisText["content"]);
-
-          console.log(legend["labels"]);
-
           //check if the dragged element is present in the xAxis label
           //and remove it from the label if present
           for (let i = 0; i < xAxis["labels"].length; i++) {
@@ -830,8 +806,6 @@ function enableDragDrop(texts) {
             }
           }
 
-          console.log(inXTitle);
-
           //if the dragged element is already present in the y title display
           //remove the button from there and display the dragged element in x title
           if (titleXaxis.includes(thisText)) {
@@ -845,6 +819,8 @@ function enableDragDrop(texts) {
           }
 
           displayTitleYLabel(thisText);
+        } else if (e.id.startsWith("chartTitle")) {
+          displayChartTitle(thisText);
         }
       }
     });

@@ -39,9 +39,14 @@ function loadFile() {
       markAnnotations = annotations.markAnnotations
         ? annotations.markAnnotations
         : {};
+      chartTitle = annotations.chart_title ? annotations.chart_title : [];
+      titleLegend = annotations.title_legend ? annotations.title_legend : [];
+      titleXaxis = annotations.xAxis_title ? annotations.xAxis_title : [];
+      titleYaxis = annotations.yAxis_title ? annotations.yAxis_title : [];
       displayAxis(xAxis);
       displayAxis(yAxis);
       displayLegend(legend);
+      disPlayTitles(chartTitle, titleLegend, titleXaxis, titleYaxis);
     })
     .catch(function () {
       this.dataError = true;
