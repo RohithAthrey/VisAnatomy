@@ -124,7 +124,7 @@ function initilizeMarkAnnotation() {
     let typeDiv = document.createElement("div");
     typeDiv.classList.add("selectionDiv");
     typeDiv.id = elementType + "_all";
-    typeDiv.innerHTML = typeDiv.id;
+    typeDiv.innerHTML = "Select all " + elementType + "s";
     document.getElementById("markSelections").appendChild(typeDiv);
     d3.select("#" + typeDiv.id).on("click", () => {
       selectionOnClick(
@@ -144,7 +144,19 @@ function initilizeMarkAnnotation() {
         selectionDiv.classList.add("selectionDiv");
         selectionDiv.id =
           elementType + "_" + channel + "_value" + values.indexOf(value);
-        selectionDiv.innerHTML = elementType + "_" + channel + "_" + value;
+        selectionDiv.innerHTML =
+          "Select " + elementType + "s whose " + channel + " is ";
+        if (channel === "fill") {
+          // If the channel is 'fill', create a colored rectangle with the same fill color
+          selectionDiv.innerHTML +=
+            '<div class="inline-rectangle" style="background-color: ' +
+            value +
+            ';"></div>';
+        } else {
+          // If the channel is not 'fill', simply append the value
+          selectionDiv.innerHTML += value;
+        }
+
         document.getElementById("markSelections").appendChild(selectionDiv);
         d3.select("#" + selectionDiv.id).on("click", () => {
           selectionOnClick(selectionDiv.id, valueJson[value]);
