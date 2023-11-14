@@ -464,6 +464,8 @@
                   <option value="xAxisTick">X Axis Tick</option>
                   <option value="yAxisLine">Y Axis Line</option>
                   <option value="yAxisTick">Y Axis Tick</option>
+                  <option value="chartTitlr">Chart Title</option>
+                  <option value="legendMark">Legend Mark</option>
                   <option value="Noise">Noise</option>
                 </select>
               </div>
@@ -573,7 +575,7 @@
             allLeftNodes
               .map((node) => node.id)
               .forEach((r) => {
-                d3.select("#" + r).style("opacity", "1");
+                if (r.length > 0) d3.select("#" + r).style("opacity", "1");
               });
             document.getElementById("axisAndLegend").style.visibility =
               "visible";

@@ -209,13 +209,13 @@ function svgHighlighting() {
   allLeftNodes
     .map((node) => node.id)
     .forEach((r) => {
-      d3.select("#" + r).style("opacity", "1");
+      if (r.length > 0) d3.select("#" + r).style("opacity", "1");
     }); // need to recover to full opacity first
   allLeftNodes
     .map((node) => node.id)
     .filter((r) => !markSelection.includes(r))
     .forEach((r) => {
-      d3.select("#" + r).style("opacity", "0.2");
+      if (r.length > 0) d3.select("#" + r).style("opacity", "0.2");
     }); // set opacity to 0.2 for all non-selected elements
   allLeftNodes
     .map((node) => node.id)
