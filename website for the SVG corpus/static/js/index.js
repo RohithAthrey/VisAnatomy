@@ -50,7 +50,7 @@ function createExampleCards(examples){
     subdiv.className = "col s12 m6 l3"
     subdiv.innerHTML += '<div class="card sticky-action">'+
           '<div class="card-image waves-effect waves-block waves-light">'+
-            '<img class="activator" id="'+examples[i].filename+'" src="/static/ExampleFiles/'+examples[i].filename+'" width=250 height=200>'+
+            '<img class="activator" id="'+examples[i].filename+'" src="/static/ExampleFiles/'+examples[i].filename+'">'+
           '</div>'+
           '<div class="card-content">'+
             '<span class="card-title activator grey-text text-darken-4"><i class="material-icons right extext" id="'+examples[i].filename+'">more_vert</i></span>'+
@@ -109,7 +109,7 @@ function readMore(element){
 
 function expandExample(filename, link){
   log("clicked on example source", filename);
-  // console.log('clicked on example source', filename)
+  console.log('clicked on example source', filename)
   // window.open("/scratch/"+filename+"/", "_blank");
   window.open(link, "_blank")
 }
