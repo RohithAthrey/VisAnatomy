@@ -357,120 +357,110 @@
             position: absolute;
             top: 20px;
             right: 10px;
-            display: block;
+            display: flex;
+            flex-direction: column;
             width: 40%;
             height: calc(100% - 50px);
             border: #ccc 0px solid;
           "
         >
-          <div
-            style="
-              position: absolute;
-              top: 25%;
-              height: 75%;
-              width: 47.5%;
-              border: #0ba7bc 1px solid;
-              padding: 5px;
-              margin-bottom: 10px;
-              vertical-align: top;
-            "
-          >
-            <h3>All Mark IDs</h3>
-            <div
-              id="allMarks"
-              style="
-                height: 85%;
-                overflow: scroll;
-                overflow: -moz-scrollbars-vertical;
-              "
-            ></div>
-          </div>
-          <div
-            style="
-              position: absolute;
-              top: 25%;
-              right: 2.5%;
-              height: 75%;
-              width: 47.5%;
-              border: #0ba7bc 1px solid;
-              padding: 5px;
-              margin-bottom: 10px;
-              vertical-align: top;
-            "
-          >
-            <h3>Mark Selections</h3>
-            <div
-              id="markSelections"
-              style="
-                height: 85%;
-                overflow: scroll;
-                overflow: -moz-scrollbars-vertical;
-              "
-            ></div>
-          </div>
-          <div
-            style="
-              height: 25%;
-              width: 100%;
-              position: absolute;
-              top: 0;
-              left: 0;
-            "
-          >
+          <div style="width: 100%; padding: 5px">
             <div
               id="markRoles"
               style="
-                height: 90%;
-                width: 97.5%;
+                flex-grow: 1;
+                background-color: lightblue;
+                margin-top: 5px;
+                margin-right: 5px;
+                padding-left: 10px;
+                padding-bottom: 10px;
+              "
+            >
+              <!-- <h3>Mark Types and Roles</h3> -->
+              <div style="display: flex; justify-content: space-between">
+                <div style="flex-grow: 1; margin-right: 5px">
+                  Assign a Mark Type
+                  <select
+                    class="fieldType"
+                    id="markTypeSelection"
+                    onchange="markAnnotationChanged('Type')"
+                  >
+                    <option value="none">Not Assigned</option>
+                    <option value="Singleline">Straight Line</option>
+                    <option value="Polyline">Polyline</option>
+                    <option value="Rectangle">Rectangle</option>
+                    <option value="Circle">Circle</option>
+                    <option value="Ellipse">Ellipse</option>
+                    <option value="Ploygon">Ploygon</option>
+                    <option value="Area">Area</option>
+                    <option value="Image">Image</option>
+                    <option value="Text">Text</option>
+                  </select>
+                </div>
+                <div style="flex-grow: 1; margin-right: 5px">
+                  Assign a Mark Role
+                  <select
+                    class="fieldType"
+                    id="markRoleSelection"
+                    onchange="markAnnotationChanged('Role')"
+                  >
+                    <option value="none">Not Assigned</option>
+                    <option value="Main Chart">Main Chart</option>
+                    <option value="Grid Line">Gridline</option>
+                    <option value="Annotation">Annotation</option>
+                    <option value="xAxisLine">X Axis Line</option>
+                    <option value="xAxisTick">X Axis Tick</option>
+                    <option value="yAxisLine">Y Axis Line</option>
+                    <option value="yAxisTick">Y Axis Tick</option>
+                    <option value="chartTitlr">Chart Title</option>
+                    <option value="legendMark">Legend Mark</option>
+                    <option value="legendLine">Legend Line</option>
+                    <option value="legendTick">Legend Tick</option>
+                    <option value="Noise">Noise</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div style="display: flex; flex-grow: 1; width: 100%">
+            <div
+              style="
                 border: #0ba7bc 1px solid;
                 padding: 5px;
                 margin-bottom: 10px;
+                overflow: auto;
+                width: 49%;
               "
             >
-              <h3>Mark Types and Roles</h3>
-
-              <div width="47.5%">
-                Select a Mark Type
-                <select
-                  class="fieldType"
-                  id="markTypeSelection"
-                  onchange="markAnnotationChanged('Type')"
-                >
-                  <option value="none">Not Assigned</option>
-                  <option value="Singleline">Straight Line</option>
-                  <option value="Polyline">Polyline</option>
-                  <option value="Rectangle">Rectangle</option>
-                  <option value="Circle">Circle</option>
-                  <option value="Ellipse">Ellipse</option>
-                  <option value="Ploygon">Ploygon</option>
-                  <option value="Area">Area</option>
-                  <option value="Image">Image</option>
-                  <option value="Text">Text</option>
-                </select>
-              </div>
-              <br />
-              <div width="47.5%">
-                Select a Mark Role
-                <select
-                  class="fieldType"
-                  id="markRoleSelection"
-                  onchange="markAnnotationChanged('Role')"
-                >
-                  <option value="none">Not Assigned</option>
-                  <option value="Main Chart">Main Chart</option>
-                  <option value="Grid Line">Gridline</option>
-                  <option value="Annotation">Annotation</option>
-                  <option value="xAxisLine">X Axis Line</option>
-                  <option value="xAxisTick">X Axis Tick</option>
-                  <option value="yAxisLine">Y Axis Line</option>
-                  <option value="yAxisTick">Y Axis Tick</option>
-                  <option value="chartTitlr">Chart Title</option>
-                  <option value="legendMark">Legend Mark</option>
-                  <option value="legendLine">Legend Line</option>
-                  <option value="legendTick">Legend Tick</option>
-                  <option value="Noise">Noise</option>
-                </select>
-              </div>
+              <h3>All Marks</h3>
+              <div
+                id="allMarks"
+                style="
+                  height: 85%;
+                  overflow: scroll;
+                  overflow: -moz-scrollbars-vertical;
+                "
+              ></div>
+            </div>
+            <div
+              style="
+                border: #0ba7bc 1px solid;
+                padding: 5px;
+                margin-bottom: 10px;
+                overflow: auto;
+                width: 49%;
+              "
+            >
+              <h3>Group Selections</h3>
+              <div
+                id="markSelections"
+                style="
+                  height: 85%;
+                  overflow: scroll;
+                  overflow: -moz-scrollbars-vertical;
+                "
+              ></div>
             </div>
           </div>
         </div>
