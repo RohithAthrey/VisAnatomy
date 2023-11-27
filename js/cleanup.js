@@ -115,11 +115,40 @@ function groupSVGElementsByType() {
     let zeroHeight = element.attributes.height?.value === "0";
 
     if (!(zeroHeight || zeroWidth)) {
-      groupedElements[elementType].push({ element: element, id: element.id });
+      groupedElements[elementType].push({
+        element: addStyleAttributesToElement(element),
+        id: element.id,
+      });
     }
   });
 
   return groupedElements;
+}
+
+function addStyleAttributesToElement(svgElement) {
+  // Check if the element has a style attribute
+  if (svgElement.hasAttribute("style")) {
+    // Get the style attribute value
+    const styles = svgElement.getAttribute("style");
+
+    // Split the styles into individual key-value pairs
+    styles.split(";").forEach((style) => {
+      // Split each style into key and value
+      let [key, value] = style.split(":");
+
+      // Trim whitespace and set the attribute on the element
+      if (key && value) {
+        key = key.trim();
+        value = value.trim();
+        svgElement.setAttribute(key, value);
+      }
+    });
+
+    // Optional: Remove the style attribute after parsing
+    // svgElement.removeAttribute('style');
+  }
+
+  return svgElement;
 }
 
 function flattenSVG(svgString) {
