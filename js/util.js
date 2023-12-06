@@ -33,7 +33,7 @@ function loadFile(filename) {
       markAnnotations = annotations.markAnnotations
         ? annotations.markAnnotations
         : {};
-      chartTitle = annotations.chart_title ? annotations.chart_title : [];
+      chartTitle = annotations.chartTitle ? annotations.chartTitle : [];
       titleLegend = annotations.title_legend ? annotations.title_legend : [];
       titleXaxis = annotations.xAxis_title ? annotations.xAxis_title : [];
       titleYaxis = annotations.yAxis_title ? annotations.yAxis_title : [];
@@ -81,6 +81,7 @@ function post() {
   };
   let data = {};
   annotations.mainContent = mainContent;
+  annotations.chartTitle = chartTitle;
   data["chart"] = sessionStorage.getItem("fileName");
   data["annotations"] = annotations;
   xhr.send(JSON.stringify(data));

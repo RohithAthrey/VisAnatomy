@@ -304,8 +304,6 @@ function displayChartTitle(thisText, mode) {
     else chartTitle.push(thisText);
   }
 
-  annotations["chart_title"] = chartTitle;
-
   let text = thisText["content"];
 
   let btn = d3

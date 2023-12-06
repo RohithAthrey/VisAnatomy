@@ -61,7 +61,8 @@ function initilizeMarkAnnotation() {
       // initialize the type and role of each graphical element
       mainContentElements[type].forEach((element) => {
         markAnnotations[element.id] = {
-          Type: type === "path" ? "none" : type,
+          // Type: type === "path" ? "none" : type,
+          Type: "none",
           Role: "none",
         };
       });
