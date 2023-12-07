@@ -456,8 +456,6 @@ td:hover {
 
 .layerText {
   text-anchor: start;
-  dominant-baseline: text-before-edge;
-  alignment-baseline: text-before-edge;
   pointer-events: none;
 }
 #dialog {

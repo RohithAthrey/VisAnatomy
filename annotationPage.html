@@ -696,9 +696,6 @@
               // Add event listener to toggle the sublist display
               li.addEventListener("click", (event) => {
                 event.stopPropagation(); // Prevent the event from bubbling up
-                document
-                  .querySelectorAll(".chartSublist")
-                  .forEach((el) => (el.style.display = "none"));
                 subUl.style.display =
                   subUl.style.display === "none" ? "block" : "none";
               });
@@ -712,6 +709,7 @@
 
                 // Add the same event listener as before
                 subLi.addEventListener("click", () => {
+                  event.stopPropagation();
                   initilizeVariables();
                   d3.selectAll(".axisLabels").selectAll("button").remove();
                   d3.selectAll(".axisTitle").selectAll("button").remove();
@@ -725,6 +723,11 @@
                     .style("font-weight", "bold");
 
                   loadDemo(file);
+
+                  document
+                    .querySelectorAll(".chartSublist")
+                    .forEach((el) => (el.style.display = "none"));
+                  subUl.style.display = "block";
                 });
 
                 subUl.appendChild(subLi);
