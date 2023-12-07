@@ -94,7 +94,7 @@ function groupSVGElementsByType() {
 
   const tempDiv = document.getElementById("rbox1");
 
-  // Get all leaf-node elements (elements without child elements)
+  // Get all leaf-node elements (elements whose tag is within basic elements or without child elements)
   const leafElements = Array.from(tempDiv.querySelectorAll("*")).filter(
     (element) =>
       ((element.childElementCount === 0 &&
