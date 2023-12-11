@@ -1,3 +1,18 @@
+function initilizeVariables() {
+  annotations = {};
+  xAxis = {};
+  yAxis = {};
+  legend = {};
+  xGridlines = [];
+  yGridlines = [];
+  markInfo = {};
+  chartTitle = [];
+  titleLegend = [];
+  titleXaxis = [];
+  titleYaxis = [];
+  annotationLoaded = false;
+}
+
 function loadFile(filename) {
   // filename = sessionStorage.getItem("fileName");
   console.log("loading from: " + filename);
@@ -30,9 +45,7 @@ function loadFile(filename) {
       legend = annotations.legend;
       xGridlines = annotations.xGridlines;
       yGridlines = annotations.yGridlines;
-      markAnnotations = annotations.markAnnotations
-        ? annotations.markAnnotations
-        : {};
+      markInfo = annotations.markInfo ? annotations.markInfo : {};
       chartTitle = annotations.chartTitle ? annotations.chartTitle : [];
       titleLegend = annotations.title_legend ? annotations.title_legend : [];
       titleXaxis = annotations.xAxis_title ? annotations.xAxis_title : [];
@@ -80,9 +93,10 @@ function post() {
     }
   };
   let data = {};
-  annotations.mainContent = mainContent;
+
   annotations.chartTitle = chartTitle;
-  // TBD: revise the following values based on 'markAnnotations' value
+  annotations.markInfo = markInfo;
+  // TBD: revise the following values based on 'markInfo' value
   annotations["xGridlines"] = xGridlines;
   annotations["yGridlines"] = yGridlines;
   annotations["xAxis"] = xAxis;
@@ -91,26 +105,6 @@ function post() {
   data["chart"] = sessionStorage.getItem("fileName");
   data["annotations"] = annotations;
   xhr.send(JSON.stringify(data));
-}
-
-function getKeyByValue(object, value) {
-  return Object.keys(object).find((key) => object[key] === value);
-}
-
-function clientPt2SVGPt(x, y) {
-  const vis = document.getElementById("vis");
-  const pt = vis.createSVGPoint();
-  pt.x = x;
-  pt.y = y;
-  return pt.matrixTransform(vis.getScreenCTM().inverse());
-}
-
-function makeAsync(s) {
-  let c =
-    "try {\n" +
-    s +
-    "\n} catch (err) {showError(err.name ? err.name + ': ' + err.message : undefined, 0, 0, 0, err);}";
-  return "(async () => {" + c + "})();";
 }
 
 function onlyUnique(value, index, self) {
@@ -198,25 +192,6 @@ function arrayCompare(_arr1, _arr2) {
   return true;
 }
 
-function getIndicesOf(searchStr, str, caseSensitive) {
-  var searchStrLen = searchStr.length;
-  if (searchStrLen == 0) {
-    return [];
-  }
-  var startIndex = 0,
-    index,
-    indices = [];
-  if (!caseSensitive) {
-    str = str.toLowerCase();
-    searchStr = searchStr.toLowerCase();
-  }
-  while ((index = str.indexOf(searchStr, startIndex)) > -1) {
-    indices.push(index);
-    startIndex = index + searchStrLen;
-  }
-  return indices;
-}
-
 function findBetween(left, right, candidate) {
   if (!candidate || candidate.length == 0) return false;
   finding = candidate.filter(function (rect) {
@@ -286,51 +261,6 @@ function removeElementsByClass(className) {
   while (elements.length > 0) {
     elements[0].parentNode.removeChild(elements[0]);
   }
-}
-
-function IDadder(rawSVG) {
-  LGpos = rawSVG.indexOf("<linearGradient");
-  let id4LG = -1;
-  if (LGpos !== -1) {
-    id4LG = rawSVG.indexOf(" id=", LGpos);
-  }
-  existingID = getIndicesOf(" id=", rawSVG);
-  if (id4LG !== -1) {
-    existingID.splice(existingID.indexOf(id4LG), 1);
-  }
-  start = 0;
-  substrings = [];
-  for (let ri of existingID) {
-    substrings.push(rawSVG.slice(start, ri + 1));
-    start = ri + 1;
-  }
-  substrings.push(rawSVG.slice(start));
-  rawSVG = substrings[0];
-  for (let i = 1; i < substrings.length; i++) {
-    rawSVG = rawSVG + "old" + substrings[i];
-  }
-  target = ["<rect ", "<text ", "<line ", "<path "];
-  for (let t of target) {
-    rectIndex = getIndicesOf(t, rawSVG);
-    start = 0;
-    substrings = [];
-    for (let ri of rectIndex) {
-      substrings.push(rawSVG.slice(start, ri + 5));
-      start = ri + 5;
-    }
-    substrings.push(rawSVG.slice(start));
-    rawSVG = "";
-    let id = 0;
-    for (let subs of substrings) {
-      if (id !== substrings.length - 1) {
-        rawSVG = rawSVG + subs + ' id="' + t.slice(1, t.length - 1) + id + '" ';
-      }
-      id = id + 1;
-    }
-    rawSVG = rawSVG + substrings[substrings.length - 1];
-  }
-
-  return rawSVG;
 }
 
 function textProcessor(texts) {
@@ -448,15 +378,6 @@ function _inferType(values) {
   return types[0];
 }
 
-function getAtlasChannel(c) {
-  switch (c) {
-    case "fill":
-      return "fillColor";
-    default:
-      return c;
-  }
-}
-
 function findSubArray(arr, subarr, from_index) {
   var i = from_index >>> 0,
     sl = subarr.length,
@@ -493,48 +414,6 @@ function typeByAtlas(type) {
   //     const aty = dt.toArrow();
   //     console.log(aty.U.children['0'].type)
   // }
-}
-
-function groupingJsonGenerator(groupings, level, parent, innerIndex) {
-  let thisJson = {};
-  thisJson.id = parent + innerIndex;
-  thisJson.tag = "G-LV" + level;
-  thisJson.parent = parent;
-  thisJson.level = level;
-  thisJson.class = 0;
-  // thisJson.rects = rects;
-  thisJson.children = [];
-  if (typeof groupings == "object" && groupings instanceof Array)
-    return thisJson;
-  for (let i in Object.keys(groupings)) {
-    g = groupings[i];
-    thisJson.children.push(groupingJsonGenerator(g, level + 1, thisJson.id, i));
-  }
-  return thisJson;
-}
-
-function groupingJsonGenerator(colls, level, parent, innerIndex) {
-  let thisJson = {};
-  thisJson.id = parent + innerIndex;
-  thisJson.tag = colls.Layout;
-  thisJson.parent = parent;
-  thisJson.level = level;
-  thisJson.class = 0;
-  // thisJson.rects = rects;
-  thisJson.children = [];
-  if (!Object.keys(colls).includes("collections")) return thisJson;
-  // console.log(colls)
-  for (let coll of colls.collections) {
-    thisJson.children.push(
-      groupingJsonGenerator(
-        coll,
-        level + 1,
-        thisJson.id,
-        colls.collections.indexOf(coll)
-      )
-    );
-  }
-  return thisJson;
 }
 
 // below are merged from the Mystique repo on 03/01/2022
@@ -936,8 +815,4 @@ function inferEncodings() {
     if (basicLayout.substring(0, 4) === "Tree") rectEnc.push("area");
     encodings.push(rectEnc);
   }
-}
-
-function onlyUnique(value, index, array) {
-  return array.indexOf(value) === index;
 }

@@ -115,9 +115,9 @@
             id="chartTitle"
             class="chartTitle"
             style="
-              height: 30px;
+              height: 35px;
               position: absolute;
-              top: 5px;
+              top: 0px;
               right: 5px;
               width: 50%;
             "
@@ -509,7 +509,7 @@
         "Constraints",
       ];
 
-      let currentSectionIndex = 0;
+      var currentSectionIndex = 0;
 
       function nextSection() {
         if (currentSectionIndex < sectionTitles.length - 1) {
@@ -566,6 +566,7 @@
               "visible";
             document.getElementById("generalizedSelection").style.visibility =
               "hidden";
+            if (jsonArr?.texts) svgTextHighlight(jsonArr.texts);
             break;
           case "Marks":
             d3.select("#container").style("height", "calc(100% - 75px)");
@@ -582,6 +583,9 @@
               "hidden";
             document.getElementById("generalizedSelection").style.visibility =
               "visible";
+            d3.select("#rbox1")
+              .selectAll("text")
+              .style("pointer-events", "none");
 
             break;
           case "Groups":
@@ -597,12 +601,12 @@
         }
       }
 
-      var demoName, mainContent;
+      var demoName, mainContent, jsonArr;
       var areaSelection;
-      var numOfColor;
       const fileName = sessionStorage.getItem("fileName");
 
       function loadDemo(demo) {
+        // demo is the full name of a SVG file, e.g., "BarChart1.svg"
         sessionStorage.setItem("fileName", demo.split(".")[0]);
         loadFile(demo.split(".")[0]);
 
@@ -611,20 +615,18 @@
             return resp.text();
           })
           .then((rawSVG) => {
-            console.log("processing SVG...");
+            // TBD: we need to update the flattenSVG function to be consistent with groupSVGElementsByType(), to avoid the previous complex lead-node processing
+            jsonArr = flattenSVG(rawSVG);
 
             currentSectionIndex = 0;
             updateBreadcrumb();
 
             demoName = demo;
             d3.select("#preprocessUI").style("visibility", "visible");
-            d3.select("#layers").selectAll("*").remove();
 
-            // in display.js, adding id and class attributes to the svg elements
+            // in display.js, adding id and class attributes to the svg file
             displaySVG(rawSVG);
 
-            // TBD: we need to update the flattenSVG function to be consistent with groupSVGElementsByType(), to avoid the previous complex lead-node processing
-            let jsonArr = flattenSVG(rawSVG);
             // in preprocess-interaction.js, attaching drag and drop event listeners to the svg text elements
             enableDragDrop(jsonArr.texts);
 
@@ -645,21 +647,6 @@
       document.addEventListener("keyup", function (e) {
         if (e.code == "Escape") deactivateAreaSelect();
       });
-
-      function initilizeVariables() {
-        annotations = {};
-        xAxis = {};
-        yAxis = {};
-        legend = {};
-        xGridlines = [];
-        yGridlines = [];
-        markAnnotations = {};
-        chartTitle = [];
-        titleLegend = [];
-        titleXaxis = [];
-        titleYaxis = [];
-        annotationLoaded = false;
-      }
 
       $(document).ready(() => {
         fetch("./SVG_Names.json")

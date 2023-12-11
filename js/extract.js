@@ -1,18 +1,5 @@
-const gridGap = -0.2,
-  whDiff = 1,
-  gridAllignmentDiff = 1;
-const stackMinGap = -1,
-  stackMaxGap = 1,
-  stackAllignmentDiff = 0.15;
-var legend, xAxis, yAxis, xGridlines, yGridlines;
 var rects4Grouping;
-
-// global json object to keep track of annotation results
-var annotations = {
-  legend: null,
-  xAxis: null,
-  yAxis: null,
-};
+var numOfColor;
 
 function extract(jsonArr) {
   let nodes = jsonArr["allNodes"];

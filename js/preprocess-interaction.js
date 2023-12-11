@@ -137,88 +137,6 @@ function deactivateAreaSelect() {
   d3.selectAll(".selectAreaBtn").style("background", "#eee");
 }
 
-function proceed() {
-  xAxis.fieldType = d3.select("#xFieldType").property("value");
-  yAxis.fieldType = d3.select("#yFieldType").property("value");
-  legend.fieldType = d3.select("#legendFieldType").property("value");
-  chartDecomposition = {};
-  d3.select("#preprocessUI").style("visibility", "hidden");
-  d3.select("#reuseUI").style("visibility", "visible");
-  bottomUpGrouping();
-  // if (!finalGroups) {
-  //     if (allHoriColls) {
-  //       if (allHoriColls.length > 0) finalGroups = allHoriColls;
-  //     } else if (allVertColls) {
-  //       if (allVertColls.length > 0) finalGroups = allVertColls;
-  //     }
-  //   }
-  //   if (newColls) {
-  //     if (newColls.length > 0) atlasSceneGraph = getAtlasScene();
-  //   } else {
-  //     newColls = [];
-  //     newColls.push({});
-  //     newColls[0].collections = finalGroups;
-  //     atlasSceneGraph = getAtlasScene();
-  //   }
-  inferEncodings();
-  chartDecomposition.objects = newColls[0];
-  chartDecomposition.encodings = encodings;
-  chartDecomposition.alignments = alignments;
-  console.log("Chart Decomposition Results: ", chartDecomposition);
-  atlasSceneGraph = getAtlasScene();
-  console.log("Atlas Scene Graph: ", atlasSceneGraph);
-
-  schema = inferTblSchema(atlasSceneGraph);
-  console.log("table columns", schema);
-  d3.select("#tblSchemaInfo").text(
-    "Your dataset should have at least " +
-      schema["categorical"] +
-      " categorical columns and at least " +
-      schema["quantitative"] +
-      " quantitative columns."
-  );
-  loadReuseUI();
-}
-
-function inferTblSchema(scene) {
-  let collections = scene.children.filter((d) => d.type === "collection");
-  let levels = 0;
-  for (let c of collections) {
-    let item = c.firstChild,
-      l = 1;
-    while (item.type === "collection") {
-      item = item.firstChild;
-      l++;
-    }
-    if (l > levels) {
-      levels = l;
-    }
-  }
-  let encodedFields = { categorical: 0, quantitative: 0 };
-  for (let l = 0; l < encodings.length; l++) {
-    let e = encodings[l];
-    for (let channel of e) {
-      switch (channel) {
-        case "width":
-        case "height":
-        case "fill-opacity":
-        case "x":
-        case "y":
-        case "area":
-          encodedFields["quantitative"] += 1;
-          break;
-        default:
-          encodedFields["categorical"] += 1;
-          break;
-      }
-    }
-  }
-  return {
-    categorical: Math.max(levels, encodedFields["categorical"]),
-    quantitative: encodedFields["quantitative"],
-  };
-}
-
 function save() {
   xAxis["fieldType"] = d3.select("#xFieldType").property("value");
   yAxis["fieldType"] = d3.select("#yFieldType").property("value");
@@ -541,9 +459,6 @@ function removeLegendLabel(text) {
   mainContent.texts.push(text);
 }
 
-/**
- * bug: waterfall_04
- */
 function enableDragDrop(texts) {
   let svg = d3.select("#rbox1");
   let dragHandler = d3
@@ -827,6 +742,12 @@ function enableDragDrop(texts) {
 
   dragHandler(svg.selectAll("text"));
 
+  svgTextHighlight(texts);
+}
+
+function svgTextHighlight(texts) {
+  let svg = d3.select("#rbox1");
+  svg.selectAll("text").style("pointer-events", "all");
   svg
     .selectAll("text")
     .style("pointer-events", "auto")

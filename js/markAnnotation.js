@@ -56,11 +56,11 @@ function initilizeMarkAnnotation() {
 
   document.getElementById("allMarks").innerHTML = "";
 
-  if (Object.keys(markAnnotations).length === 0) {
+  if (Object.keys(markInfo).length === 0) {
     leafNodeTypes.forEach((type) => {
       // initialize the type and role of each graphical element
       mainContentElements[type].forEach((element) => {
-        markAnnotations[element.id] = {
+        markInfo[element.id] = {
           // Type: type === "path" ? "none" : type,
           Type: "none",
           Role: "none",
@@ -77,20 +77,20 @@ function initilizeMarkAnnotation() {
       markDiv.id = "mark_" + element.id;
       markDiv.innerHTML = element.id;
       let markID = element.id;
-      if (!markAnnotations[markID])
-        markAnnotations[markID] = {
+      if (!markInfo[markID])
+        markInfo[markID] = {
           Type: type === "path" ? "none" : type,
           Role: "none",
         };
-      if (markAnnotations[markID]["Type"] !== "none") {
+      if (markInfo[markID]["Type"] !== "none") {
         let typeTag = document.createElement("span");
-        typeTag.innerHTML = "&nbsp;" + markAnnotations[markID]["Type"];
+        typeTag.innerHTML = "&nbsp;" + markInfo[markID]["Type"];
         typeTag.style.color = "#E69F00";
         markDiv.appendChild(typeTag);
       }
-      if (markAnnotations[markID]["Role"] !== "none") {
+      if (markInfo[markID]["Role"] !== "none") {
         let roleTag = document.createElement("span");
-        roleTag.innerHTML = "&nbsp;" + markAnnotations[markID]["Role"];
+        roleTag.innerHTML = "&nbsp;" + markInfo[markID]["Role"];
         roleTag.style.color = "#009E73";
         markDiv.appendChild(roleTag);
       }
@@ -107,8 +107,6 @@ function initilizeMarkAnnotation() {
       });
     });
   });
-
-  annotations.markAnnotations = markAnnotations;
 
   // then populate all possible mark batch selections
   console.log(leafNodeTypes);
@@ -180,10 +178,8 @@ function markOnClick(markID) {
     .style("color", "white");
   markSelection = [markID];
   document.getElementById("numberOfMarksSelected").innerHTML = "1";
-  document.getElementById("markTypeSelection").value =
-    markAnnotations[markID].Type;
-  document.getElementById("markRoleSelection").value =
-    markAnnotations[markID].Role;
+  document.getElementById("markTypeSelection").value = markInfo[markID].Type;
+  document.getElementById("markRoleSelection").value = markInfo[markID].Role;
   svgHighlighting();
 }
 
@@ -261,10 +257,10 @@ function svgHighlighting() {
 
 function markAnnotationChanged(attr) {
   if (markSelection.length === 0) return;
-  console.log(markAnnotations);
+  console.log(markInfo);
   markSelection.map((selectedMarkID) => {
     let thisValue = document.getElementById("mark" + attr + "Selection").value;
-    markAnnotations[selectedMarkID][attr] = thisValue;
+    markInfo[selectedMarkID][attr] = thisValue;
     // switch (thisValue) {
     //   case "Horizontal Gridline":
     //     xGridlines.push(selectedMarkID);
@@ -301,21 +297,19 @@ function reflectChanges() {
   markSelection.forEach((markID) => {
     let markDiv = document.getElementById("mark_" + markID);
     markDiv.innerHTML = markID;
-    if (markAnnotations[markID]["Type"] !== "none") {
+    if (markInfo[markID]["Type"] !== "none") {
       let typeTag = document.createElement("span");
-      typeTag.innerHTML = "&nbsp;" + markAnnotations[markID]["Type"];
+      typeTag.innerHTML = "&nbsp;" + markInfo[markID]["Type"];
       typeTag.style.color = "#E69F00";
       markDiv.appendChild(typeTag);
     }
-    if (markAnnotations[markID]["Role"] !== "none") {
+    if (markInfo[markID]["Role"] !== "none") {
       let roleTag = document.createElement("span");
-      roleTag.innerHTML = "&nbsp;" + markAnnotations[markID]["Role"];
+      roleTag.innerHTML = "&nbsp;" + markInfo[markID]["Role"];
       roleTag.style.color = "#009E73";
       markDiv.appendChild(roleTag);
     }
   });
-
-  annotations.markAnnotations = markAnnotations;
 }
 
 function dertermineChannelBasedBatchSelections(elementType) {
