@@ -29,9 +29,9 @@ function extract(jsonArr) {
   //let rbox2Html = "<svg id='overlay' height='100%' width='100%' viewbox=\"-50 -50 1000 750\" preserveAspectRatio=\"xMinYMin\">";
 
   //rbox2Html =
-  findGridlines(rects, lines);
-  console.log("xGridlines", xGridlines);
-  console.log("yGridlines", yGridlines);
+  // findGridlines(rects, lines);
+  // console.log("xGridlines", xGridlines);
+  // console.log("yGridlines", yGridlines);
 
   // Legend
   //let colorMapping = {}
@@ -212,6 +212,7 @@ function findGridlines(rects, lines) {
 }
 
 function findLegendInArea(tl, br, texts, rects) {
+  // TBD: need to update this
   let labels = [],
     marks = [];
   for (let text of texts) {
@@ -594,11 +595,8 @@ function findAxisInArea(o, tl, br, texts, rects, lines) {
   let axis = o == "x" ? xAxis : yAxis;
   axis["type"] = o;
   axis["labels"] = labels;
-  axis["attrX"] = Object.keys(labels[0]);
-  axis["baseline"] =
-    o == "x"
-      ? d3.mean(labels.map((d) => d.y))
-      : d3.mean(labels.map((d) => d.x));
+  axis["ticks"] = [];
+  axis["path"] = [];
 
   //remove from main content and the other axis/legend
   let otherAxis = o == "y" ? xAxis : yAxis;
@@ -741,112 +739,10 @@ function findxAxis(texts, rects, lines, nodes, nodeIndex) {
       mostFrenquentY = ys[0];
     }
   }
-  if (Labels.length >= 3) {
-    XLabelsExist = true;
-    // XLabelSet = Labels;
-    xAxis["type"] = "x";
-    xAxis["labels"] = Labels;
-    //baselineX = mostFrenquentY;
-    xAxis["attrX"] = Object.keys(Labels[0]);
-    xAxis["baseline"] = mostFrenquentY;
-    xAxis["ticks"] = [];
-    for (let label of Labels) {
-      texts.splice(texts.indexOf(label), 1);
-    }
-    x = Math.min(...Labels.map((t) => t["x"]));
-    width = Math.max(...Labels.map((t) => t["x"])) - x;
-    // rbox2Html = rbox2Html + "<rect x = '" + (x-20) + "' y = '" + (mostFrenquentY-10) + "' width='" + (width+40) +"' stroke='black' stroke-width='2' stroke-dasharray='4' height='20'" + "' style='fill-opacity: 0;'' />";
-    ancestry = findNearesrParent(nodeIndex, nodes, Labels);
-    candidateLines = findleaves(nodeIndex, nodes, ancestry, lines);
-    let isXaxis = false;
-    let isXticks = false;
-    while (isXaxis == false || isXticks == false) {
-      if (candidateLines.length !== 0) {
-        if (isXaxis == false) {
-          possibleAxis = candidateLines.filter(function (line) {
-            if (
-              line["y1"] == line["y2"] &&
-              line["y1"] <= mostFrenquentY &&
-              line["y1"] - mostFrenquentY > -25 &&
-              Math.abs(line["x1"] - line["x2"]) >= width - 10
-            )
-              return line;
-          });
-          possibleAxis = possibleAxis.sort((a, b) =>
-            a["y1"] - mostFrenquentY > b["y1"] - mostFrenquentY ? -1 : 1
-          ); // sort based on distance to the labels
-          xAxisLine = possibleAxis[0];
-          if (xAxisLine) {
-            isXaxis = true;
-            lines.splice(lines.indexOf(xAxisLine), 1);
-            xAxis["path"] = xAxisLine;
-            // rbox2Html = rbox2Html + "<line x1 = '" + xAxisLine['x1'] + "' x2 = '" + xAxisLine['x2'] + "' y1 = '" + xAxisLine['y1'] + "' y2 = '" + xAxisLine['y2'] +"' stroke='red' stroke-width='3' stroke-dasharray='4' />";
-          }
-        }
-        if (isXticks == false) {
-          possibleTicks = candidateLines.filter(function (line) {
-            if (
-              line["x1"] == line["x2"] &&
-              Labels[0]["y"] > 0.5 * (line["y1"] + line["y2"]) &&
-              Labels[0]["y"] < 30 + 0.5 * (line["y1"] + line["y2"]) &&
-              Math.abs(line["y1"] - line["y2"]) < 10
-            )
-              return line;
-          });
-          if (possibleTicks.length !== 0) {
-            // check whether the number of ticks >= the number of labels
-            isXticks = true;
-            xAxis["ticks"] = [];
-            for (let line of possibleTicks) {
-              lines.splice(lines.indexOf(line), 1);
-              xAxis["ticks"].push(line);
-              // rbox2Html = rbox2Html + "<line x1 = '" + line['x1'] + "' x2 = '" + line['x2'] + "' y1='" + line['y1'] + "' y2='" + line['y2'] + "' stroke='#CF27CF' stroke-width='3' stroke-dasharray='4' />";
-            }
-          }
-        }
-      }
-      ancestry = nodes
-        .filter((n) => n["id"] == ancestry)
-        .map((n) => n["parent"])[0];
-      if (ancestry) {
-        candidateLines = findleaves(nodeIndex, nodes, ancestry, lines);
-        continue;
-      } else {
-        break;
-      }
-    }
-    // find any possible thin rect to be the y axis
-    if (isXaxis == false) {
-      rect_xAxis = rects.filter(function (rect) {
-        if (
-          rect["bottom"] >= Math.max(...Labels.map((t) => t["y"])) - 30 &&
-          rect["bottom"] - Math.max(...Labels.map((t) => t["y"])) <= 30 &&
-          rect.width >= width &&
-          rect.height < 2
-        )
-          return rect;
-      });
-      if (rect_xAxis.length !== 0) {
-        console.log("rect-x-axis!");
-        xAxisLine = rect_xAxis[0];
-        xAxis["path"] = xAxisLine;
-        rects.splice(rects.indexOf(xAxisLine), 1);
-      }
-    }
-
-    // find axis title
-    let xTitle = "";
-    possible_x_title = texts.filter(
-      (t) =>
-        t["y"] > mostFrenquentY &&
-        Math.min(...Labels.map((l) => l["x"])) < t["x"] &&
-        t["x"] < Math.max(...Labels.map((l) => l["x"]))
-    );
-    if (possible_x_title.length == 1) {
-      xTitle = possible_x_title[0]["content"] + ":";
-      xAxis["title"] = xTitle;
-    }
-  }
+  xAxis["type"] = "x";
+  xAxis["labels"] = Labels;
+  xAxis["ticks"] = [];
+  xAxis["path"] = [];
 
   return xAxis;
 }
@@ -945,120 +841,10 @@ function findyAxis(texts, rects, lines, nodes, nodeIndex, xAxis) {
       mostFrenquentX = xs[0];
     }
   }
-  if (Labels.length >= 3) {
-    YLabelsExist = true;
-    // YLabelSet = Labels;
-    // baselineY = mostFrenquentX;
-    yAxis["type"] = "y";
-    yAxis["labels"] = Labels;
-    yAxis["attrY"] = Object.keys(Labels[0]);
-    yAxis["baseline"] = mostFrenquentX;
-    yAxis["ticks"] = [];
-    for (let label of Labels) {
-      texts.splice(texts.indexOf(label), 1);
-    }
-    y = Math.min(...Labels.map((t) => t["y"]));
-    height = Math.max(...Labels.map((t) => t["y"])) - y;
-    leftb = Math.min(...Labels.map((t) => t["left"]));
-    rightb = Math.max(...Labels.map((t) => t["right"]));
-    // rbox2Html = rbox2Html + "<rect x = '" + (leftb-10) + "' y = '" + (y-10) + "' height='" + (height + 20) +"' stroke='black' stroke-width='2' stroke-dasharray='4' width=' " + (rightb - leftb + 20) + "' style='fill-opacity: 0;'' />";
-    ancestry = findNearesrParent(nodeIndex, nodes, Labels);
-    candidateLines = findleaves(nodeIndex, nodes, ancestry, lines);
-    let isYaxis = false;
-    let isYticks = false;
-    while (isYaxis == false || isYticks == false) {
-      if (candidateLines.length > 0) {
-        if (isYaxis == false) {
-          possibleAxis = candidateLines.filter(function (line) {
-            if (
-              line["x1"] == line["x2"] &&
-              line["x1"] >= Math.max(...Labels.map((t) => t["right"])) - 30 &&
-              line["x1"] - Math.max(...Labels.map((t) => t["right"])) < 30 &&
-              Math.abs(line["y1"] - line["y2"]) >=
-                Math.max(...Labels.map((t) => t["y"])) -
-                  Math.min(...Labels.map((t) => t["y"]))
-            )
-              return line;
-          });
-          possibleAxis = possibleAxis.sort((a, b) =>
-            Math.abs(a["x1"] - mostFrenquentX) >
-            Math.abs(b["x1"] - mostFrenquentX)
-              ? 1
-              : -1
-          );
-          yAxisLine = possibleAxis[0];
-          if (yAxisLine) {
-            isYaxis = true;
-            yAxis["path"] = yAxisLine;
-            lines.splice(lines.indexOf(yAxisLine), 1);
-            // rbox2Html = rbox2Html + "<line x1 = '" + yAxisLine['x1'] + "' x2 = '" + yAxisLine['x2'] + "' y1 = '" + yAxisLine['y1'] + "' y2 = '" + yAxisLine['y2'] +"' stroke='red' stroke-width='3' stroke-dasharray='4' />";
-          }
-        }
-        if (isYticks == false) {
-          possibleTicks = candidateLines.filter(function (line) {
-            if (
-              line["y1"] == line["y2"] &&
-              ((0.5 * (line["x1"] + line["x2"]) > Labels[0]["left"] - 30 &&
-                0.5 * (line["x1"] + line["x2"]) < Labels[0]["left"] + 30) ||
-                (0.5 * (line["x1"] + line["x2"]) > Labels[0]["right"] - 30 &&
-                  0.5 * (line["x1"] + line["x2"]) < Labels[0]["right"] + 30)) &&
-              Math.abs(line["x1"] - line["x2"]) < 20
-            )
-              return line;
-          });
-          if (possibleTicks) {
-            isYticks = true;
-            yAxis["ticks"] = [];
-            for (let line of possibleTicks) {
-              yAxis["ticks"].push(line);
-              lines.splice(lines.indexOf(line), 1);
-              // rbox2Html = rbox2Html + "<line x1 = '" + line['x1'] + "' x2 = '" + line['x2'] + "' y1='" + line['y1'] + "' y2='" + line['y2'] + "' stroke='#CF27CF' stroke-width='3' stroke-dasharray='4' />";
-            }
-          }
-        }
-      }
-      ancestry = nodes
-        .filter((n) => n["id"] == ancestry)
-        .map((n) => n["parent"])[0];
-      if (ancestry) {
-        candidateLines = findleaves(nodeIndex, nodes, ancestry, lines);
-        continue;
-      } else {
-        break;
-      }
-    }
-    // find any possible thin rect to be the y axis
-    if (isYaxis == false) {
-      rect_yAxis = rects.filter(function (rect) {
-        if (
-          rect["x"] >= Math.max(...Labels.map((t) => t["right"])) - 30 &&
-          rect["x"] - Math.max(...Labels.map((t) => t["right"])) <= 30 &&
-          rect.height >= height &&
-          rect.width < 2
-        )
-          return rect;
-      });
-      if (rect_yAxis.length !== 0) {
-        console.log("rect-y-axis!");
-        yAxisLine = rect_yAxis[0];
-        yAxis["path"] = yAxisLine;
-        rects.splice(rects.indexOf(yAxisLine), 1);
-      }
-    }
-
-    // find axis title
-    let yTitle = "";
-    possible_y_title = texts.filter(
-      (t) =>
-        t["x"] < mostFrenquentX &&
-        Math.min(...Labels.map((l) => l["y"])) < t["y"] &&
-        t["y"] < Math.max(...Labels.map((l) => l["y"]))
-    );
-    if (possible_y_title.length == 1) {
-      yTitle = possible_y_title[0]["content"] + ":";
-      yAxis["title"] = yTitle;
-    }
-  }
+  yAxis["type"] = "y";
+  yAxis["labels"] = Labels;
+  yAxis["ticks"] = [];
+  yAxis["path"] = [];
 
   return yAxis;
 }

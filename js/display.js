@@ -187,8 +187,6 @@ function displayTitleXLabel(thisText, mode) {
     else titleXaxis.push(thisText);
   }
 
-  annotations["xAxis_title"] = titleXaxis;
-
   console.log(titleXaxis);
   let text = thisText["content"];
   let btn = d3
@@ -226,8 +224,6 @@ function displayTitleYLabel(thisText, mode) {
     if (titleYaxis.includes(thisText)) return;
     else titleYaxis.push(thisText);
   }
-
-  annotations["yAxis_title"] = titleYaxis;
 
   let text = thisText["content"];
   let btn = d3

@@ -78,18 +78,18 @@ function groupSVGElementsByType() {
     ...(legend.marks ? legend.marks : []),
     ...(xAxis.labels ? xAxis.labels : []),
     ...(yAxis.labels ? yAxis.labels : []),
-    ...(xAxis.ticks ? xAxis.ticks : []),
-    ...(yAxis.ticks ? yAxis.ticks : []),
     ...chartTitle,
     ...titleLegend,
     ...titleXaxis,
     ...titleYaxis,
-  ].map((element) => element.id);
+  ].map((element) => element.id); // those contain mark elements
   referenceElements.push(
     ...[
-      xAxis.path ? xAxis.path.id : undefined,
-      yAxis.path ? yAxis.path.id : undefined,
-    ]
+      ...(xAxis.ticks ? xAxis.ticks : []),
+      ...(yAxis.ticks ? yAxis.ticks : []),
+      ...(xAxis.path ? xAxis.path : []),
+      ...(yAxis.path ? yAxis.path : []),
+    ] // those contain mark IDs
   );
 
   const tempDiv = document.getElementById("rbox1");

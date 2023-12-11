@@ -13,7 +13,7 @@ function initilizeVariables() {
   annotationLoaded = false;
 }
 
-function loadFile(filename) {
+function tryLoadAnnotations(filename) {
   // filename = sessionStorage.getItem("fileName");
   console.log("loading from: " + filename);
 
@@ -47,9 +47,9 @@ function loadFile(filename) {
       yGridlines = annotations.yGridlines;
       markInfo = annotations.markInfo ? annotations.markInfo : {};
       chartTitle = annotations.chartTitle ? annotations.chartTitle : [];
-      titleLegend = annotations.title_legend ? annotations.title_legend : [];
-      titleXaxis = annotations.xAxis_title ? annotations.xAxis_title : [];
-      titleYaxis = annotations.yAxis_title ? annotations.yAxis_title : [];
+      titleLegend = annotations.legend.title ? annotations.legend.title : [];
+      titleXaxis = annotations.xAxis.title ? annotations.xAxis.title : [];
+      titleYaxis = annotations.yAxis.title ? annotations.yAxis.title : [];
       displayAxis(xAxis);
       displayAxis(yAxis);
       displayLegend(legend);
@@ -96,12 +96,38 @@ function post() {
 
   annotations.chartTitle = chartTitle;
   annotations.markInfo = markInfo;
-  // TBD: revise the following values based on 'markInfo' value
-  annotations["xGridlines"] = xGridlines;
-  annotations["yGridlines"] = yGridlines;
+
+  annotations["xGridlines"] = Object.keys(markInfo).filter(
+    (mark) => markInfo[mark].role === "Horizontal Gridline"
+  );
+  annotations["yGridlines"] = Object.keys(markInfo).filter(
+    (mark) => markInfo[mark].role === "Vertical Gridline"
+  );
+
+  // complete x axis elements
+  xAxis.path = Object.keys(markInfo).filter(
+    (mark) => markInfo[mark].role === "X Axis Line"
+  );
+  xAxis.ticks = Object.keys(markInfo).filter(
+    (mark) => markInfo[mark].role === "X Axis Tick"
+  );
+  xAxis.title = titleXaxis;
   annotations["xAxis"] = xAxis;
+
+  // complete y axis elements
+  yAxis.path = Object.keys(markInfo).filter(
+    (mark) => markInfo[mark].role === "Y Axis Line"
+  );
+  yAxis.ticks = Object.keys(markInfo).filter(
+    (mark) => markInfo[mark].role === "Y Axis Tick"
+  );
+  yAxis.title = titleYaxis;
   annotations["yAxis"] = yAxis;
+
+  // complete legend elements
+  legend.title = titleLegend;
   annotations["legend"] = legend;
+
   data["chart"] = sessionStorage.getItem("fileName");
   data["annotations"] = annotations;
   xhr.send(JSON.stringify(data));

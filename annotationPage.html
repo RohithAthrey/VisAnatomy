@@ -608,7 +608,7 @@
       function loadDemo(demo) {
         // demo is the full name of a SVG file, e.g., "BarChart1.svg"
         sessionStorage.setItem("fileName", demo.split(".")[0]);
-        loadFile(demo.split(".")[0]);
+        tryLoadAnnotations(demo.split(".")[0]);
 
         fetch("./examples/" + demo)
           .then((resp) => {
