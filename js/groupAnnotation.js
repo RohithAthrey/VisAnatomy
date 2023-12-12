@@ -114,14 +114,22 @@ function enableAreaSelection4GroupAnnotation() {
             return checkIntersection(element, { x, y, width: 1, height: 1 });
           }), // clicked element
           element = document.getElementById(clickedElement);
-        if (theGroup.includes(element)) {
-          element.classList.add("unselected4Group");
-          element.classList.remove("selected4Group");
-          theGroup = theGroup.filter((item) => item !== element);
+        if (element === null) {
+          theGroup.forEach((element) => {
+            element.classList.add("unselected4Group");
+            element.classList.remove("selected4Group");
+          });
+          theGroup = [];
         } else {
-          element.classList.add("selected4Group");
-          element.classList.remove("unselected4Group");
-          theGroup.push(element);
+          if (theGroup.includes(element)) {
+            element.classList.add("unselected4Group");
+            element.classList.remove("selected4Group");
+            theGroup = theGroup.filter((item) => item !== element);
+          } else {
+            element.classList.add("selected4Group");
+            element.classList.remove("unselected4Group");
+            theGroup.push(element);
+          }
         }
         mainChartMarks.forEach((id) => {
           d3.select("#" + id).style(
