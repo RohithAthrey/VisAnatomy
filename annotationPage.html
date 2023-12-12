@@ -457,6 +457,33 @@
             </div>
           </div>
         </div>
+        <div
+          id="groupSelection"
+          style="
+            position: absolute;
+            top: 20px;
+            right: 10px;
+            display: flex;
+            flex-direction: column;
+            width: 40%;
+            height: calc(100% - 50px);
+            border: #ccc 0px solid;
+          "
+        >
+          <h3>
+            Please select a group of main chart marks by drawing a rectangle
+            using your mouse on the SVG visualization.
+          </h3>
+          <h4>Selected group contains the following mark:</h4>
+          <div
+            id="selectedGroup"
+            style="
+              height: 85%;
+              overflow: scroll;
+              overflow: -moz-scrollbars-vertical;
+            "
+          ></div>
+        </div>
       </div>
     </div>
 
@@ -569,6 +596,8 @@
               "visible";
             document.getElementById("generalizedSelection").style.visibility =
               "hidden";
+            document.getElementById("groupSelection").style.visibility =
+              "hidden";
             if (jsonArr?.texts) svgTextHighlight(jsonArr.texts);
             break;
           case "Marks":
@@ -589,6 +618,8 @@
               "hidden";
             document.getElementById("generalizedSelection").style.visibility =
               "visible";
+            document.getElementById("groupSelection").style.visibility =
+              "hidden";
             d3.select("#rbox1")
               .selectAll("text")
               .style("pointer-events", "none");
@@ -599,6 +630,8 @@
               "hidden";
             document.getElementById("generalizedSelection").style.visibility =
               "hidden";
+            document.getElementById("groupSelection").style.visibility =
+              "visible";
             d3.select("#container").style("height", "calc(100% - 75px)");
             initilizeGroupAnnotation();
           case "Layout":
