@@ -139,6 +139,28 @@ function onlyUnique(value, index, self) {
   return self.indexOf(value) === index;
 }
 
+function clientPt2SVGPt(x, y) {
+  const vis = document.getElementById("vis");
+  const pt = vis.createSVGPoint();
+  pt.x = x;
+  pt.y = y;
+  return pt.matrixTransform(vis.getScreenCTM().inverse());
+}
+
+function isOverlap(bbox1, bbox2) {
+  // Check if one rectangle is on left side of other
+  if (bbox1.x + bbox1.width < bbox2.x || bbox2.x + bbox2.width < bbox1.x) {
+    return false;
+  }
+
+  // Check if one rectangle is above other
+  if (bbox1.y + bbox1.height < bbox2.y || bbox2.y + bbox2.height < bbox1.y) {
+    return false;
+  }
+
+  return true;
+}
+
 function removeSpace(str) {
   while (str[0] == " ") {
     str = str.substring(1);
