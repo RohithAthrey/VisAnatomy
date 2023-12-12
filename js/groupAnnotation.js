@@ -10,9 +10,15 @@ function initilizeGroupAnnotation() {
   allSVGElementID.forEach((id) => {
     d3.select("#" + id).style(
       "opacity",
-      mainChartMarks.includes(id) ? "1" : "0.3"
+      theGroup.length === 0
+        ? mainChartMarks.includes(id)
+          ? "1"
+          : "0.3"
+        : theGroup.map((e) => e.id).includes(id)
+        ? "1"
+        : "0.3"
     );
-  }); // set opacity
+  });
 
   groupSelection = true;
   enableAreaSelection4GroupAnnotation();
