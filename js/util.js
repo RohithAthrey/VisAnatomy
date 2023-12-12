@@ -100,28 +100,28 @@ function post() {
   annotations.contentMarks = contentMarks;
 
   annotations["xGridlines"] = Object.keys(markInfo).filter(
-    (mark) => markInfo[mark].role === "Horizontal Gridline"
+    (mark) => markInfo[mark].Role === "Horizontal Gridline"
   );
   annotations["yGridlines"] = Object.keys(markInfo).filter(
-    (mark) => markInfo[mark].role === "Vertical Gridline"
+    (mark) => markInfo[mark].Role === "Vertical Gridline"
   );
 
   // complete x axis elements
   xAxis.path = Object.keys(markInfo).filter(
-    (mark) => markInfo[mark].role === "X Axis Line"
+    (mark) => markInfo[mark].Role === "X Axis Line"
   );
   xAxis.ticks = Object.keys(markInfo).filter(
-    (mark) => markInfo[mark].role === "X Axis Tick"
+    (mark) => markInfo[mark].Role === "X Axis Tick"
   );
   xAxis.title = titleXaxis;
   annotations["xAxis"] = xAxis;
 
   // complete y axis elements
   yAxis.path = Object.keys(markInfo).filter(
-    (mark) => markInfo[mark].role === "Y Axis Line"
+    (mark) => markInfo[mark].Role === "Y Axis Line"
   );
   yAxis.ticks = Object.keys(markInfo).filter(
-    (mark) => markInfo[mark].role === "Y Axis Tick"
+    (mark) => markInfo[mark].Role === "Y Axis Tick"
   );
   yAxis.title = titleYaxis;
   annotations["yAxis"] = yAxis;

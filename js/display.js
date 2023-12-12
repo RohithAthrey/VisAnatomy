@@ -1,4 +1,6 @@
+var allSVGElementID = [];
 function displaySVG(text) {
+  allSVGElementID = [];
   document.getElementById("rbox1").innerHTML = text;
   let vis = d3.select("#rbox1").select("svg").attr("id", "vis");
 
@@ -19,6 +21,7 @@ function displaySVG(text) {
           "id",
           element.nodeName + indices[element.nodeName]++
         );
+        allSVGElementID.push(element.id);
       }
     }
 
