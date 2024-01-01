@@ -11,6 +11,8 @@ function initilizeVariables() {
   titleXaxis = [];
   titleYaxis = [];
   annotationLoaded = false;
+  groupAnnotations = [];
+  marksHaveGroupAnnotation = [];
 }
 
 function tryLoadAnnotations(filename) {
@@ -140,11 +142,11 @@ function onlyUnique(value, index, self) {
 }
 
 function clientPt2SVGPt(x, y) {
-  const vis = document.getElementById("vis");
-  const pt = vis.createSVGPoint();
+  const svgVis = document.getElementById("vis");
+  const pt = svgVis.createSVGPoint();
   pt.x = x;
   pt.y = y;
-  return pt.matrixTransform(vis.getScreenCTM().inverse());
+  return pt.matrixTransform(svgVis.getScreenCTM().inverse());
 }
 
 function isOverlap(bbox1, bbox2) {

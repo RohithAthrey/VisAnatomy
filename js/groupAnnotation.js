@@ -1,11 +1,28 @@
 var groupSelection = false,
   isDragging = false;
-var theGroup = [];
+var theGroup;
+var groupAnnotations;
+var marksHaveGroupAnnotation;
 
 function initilizeGroupAnnotation() {
+  document
+    .getElementById("button4FormingGroups")
+    .addEventListener("click", (e) => {
+      e.stopPropagation();
+      if (theGroup.length === 0) return;
+      groupAnnotations.push([theGroup.map((e) => e.id)]); //TBD: filter unique
+      marksHaveGroupAnnotation = marksHaveGroupAnnotation.concat(
+        theGroup.map((e) => e.id)
+      );
+      theGroup = [];
+      console.log(marksHaveGroupAnnotation);
+      console.log(groupAnnotations);
+    });
+  // To be completed
   mainChartMarks = Object.keys(markInfo).filter(
     (m) => markInfo[m].Role === "Main Chart Mark"
   ); // main chart marks
+  theGroup = [];
 
   allSVGElementID.forEach((id) => {
     d3.select("#" + id).style(
@@ -44,22 +61,24 @@ function checkIntersection(element, rect) {
 }
 
 function updateSelection(bbox4Selection) {
-  mainChartMarks.forEach((elementID) => {
-    let element = document.getElementById(elementID);
-    if (checkIntersection(element, bbox4Selection)) {
-      element.classList.add("selected4Group");
-      element.classList.remove("unselected4Group");
-      if (!theGroup.includes(element)) {
-        theGroup.push(element);
+  mainChartMarks
+    .filter((id) => !marksHaveGroupAnnotation.includes(id))
+    .forEach((elementID) => {
+      let element = document.getElementById(elementID);
+      if (checkIntersection(element, bbox4Selection)) {
+        element.classList.add("selected4Group");
+        element.classList.remove("unselected4Group");
+        if (!theGroup.includes(element)) {
+          theGroup.push(element);
+        }
+        d3.select("#" + elementID).style("opacity", "1");
+      } else {
+        element.classList.add("unselected4Group");
+        element.classList.remove("selected4Group");
+        theGroup = theGroup.filter((item) => item !== element);
+        d3.select("#" + elementID).style("opacity", "0.3");
       }
-      d3.select("#" + elementID).style("opacity", "1");
-    } else {
-      element.classList.add("unselected4Group");
-      element.classList.remove("selected4Group");
-      theGroup = theGroup.filter((item) => item !== element);
-      d3.select("#" + elementID).style("opacity", "0.3");
-    }
-  });
+    });
   showSelectedMarks();
 }
 
