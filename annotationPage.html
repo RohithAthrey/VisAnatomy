@@ -478,32 +478,43 @@
               height: 200px;
               border: 2px solid rgb(102, 105, 105);
               padding: 5px;
+              margin-bottom: 10px;
             "
           >
-            <h3>Here display specified mark groups.</h3>
+            <h4>Here display specified mark groups.</h4>
           </div>
 
-          <h4>
-            Please select a group of main chart marks by drawing a rectangle
-            using your mouse on the SVG visualization. Current selection
-            contains the following marks:
-          </h4>
           <div
-            id="selectedGroup"
             style="
-              height: 10%;
               overflow: scroll;
               overflow: -moz-scrollbars-vertical;
-              margin: 0 0 5px 0;
+              border: 2px solid rgb(102, 105, 105);
+              padding: 5px;
+              margin-bottom: 10px;
             "
-          ></div>
-          <button
-            class="btn"
-            id="button4FormingGroups"
-            style="margin-bottom: 5px"
           >
-            selected marks form a group!
-          </button>
+            <h4>
+              Please select a group of main chart marks by drawing a rectangle
+              using your mouse on the SVG visualization. Current selection
+              contains the following marks:
+            </h4>
+            <div
+              id="selectedGroup"
+              style="
+                height: 75px;
+                overflow: scroll;
+                overflow: -moz-scrollbars-vertical;
+                margin: 0 0 5px 0;
+              "
+            ></div>
+            <button
+              class="btn"
+              id="button4FormingGroups"
+              style="margin-bottom: 5px"
+            >
+              selected marks form a group!
+            </button>
+          </div>
 
           <div
             id="possibleOtherGroupsContainer"
@@ -513,7 +524,7 @@
               padding: 5px;
             "
           >
-            <h3>Here display possible other valid mark groups.</h3>
+            <h4>Here display possible other valid mark groups.</h4>
             <p>
               Please hover over each label to see the highlight for the
               corresponding mark group, and decide if you would like to accept
