@@ -470,22 +470,41 @@
             border: #ccc 0px solid;
           "
         >
-          <h3>
+          <div
+            id="specifiedGroups"
+            style="
+              overflow: scroll;
+              overflow: -moz-scrollbars-vertical;
+              height: 200px;
+              border: 2px solid rgb(102, 105, 105);
+              padding: 5px;
+            "
+          >
+            <h3>Here display specified mark groups.</h3>
+          </div>
+
+          <h4>
             Please select a group of main chart marks by drawing a rectangle
-            using your mouse on the SVG visualization.
-          </h3>
-          <h4>Current selection contains the following mark:</h4>
+            using your mouse on the SVG visualization. Current selection
+            contains the following marks:
+          </h4>
           <div
             id="selectedGroup"
             style="
-              height: 15%;
+              height: 10%;
               overflow: scroll;
               overflow: -moz-scrollbars-vertical;
+              margin: 0 0 5px 0;
             "
           ></div>
-          <button class="btn" id="button4FormingGroups">
+          <button
+            class="btn"
+            id="button4FormingGroups"
+            style="margin-bottom: 5px"
+          >
             selected marks form a group!
           </button>
+
           <div
             id="possibleOtherGroupsContainer"
             style="
@@ -494,11 +513,11 @@
               padding: 5px;
             "
           >
+            <h3>Here display possible other valid mark groups.</h3>
             <p>
-              Below are posible other groups; please hover over each label to
-              see the highlight for the corresponding mark group, and decide if
-              you would like to accept it or not by clicking the corresponding
-              button shown below.
+              Please hover over each label to see the highlight for the
+              corresponding mark group, and decide if you would like to accept
+              it or not by clicking the corresponding button shown below.
             </p>
             <div
               id="possibleOtherGroups"
