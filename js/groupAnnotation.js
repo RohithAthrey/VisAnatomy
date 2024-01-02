@@ -3,6 +3,7 @@ var groupSelection = false,
 var theGroup;
 var groupAnnotations;
 var marksHaveGroupAnnotation;
+var possibleOtherGroups;
 
 function initilizeGroupAnnotation() {
   document
@@ -15,9 +16,44 @@ function initilizeGroupAnnotation() {
         theGroup.map((e) => e.id)
       );
       if (groupAnnotations.length === 1) {
-        let possibleOtherGroups = inferOtherGroups();
+        possibleOtherGroups = inferOtherGroups();
+        console.log(possibleOtherGroups);
         if (possibleOtherGroups.length > 0) {
           // TBD: show a list of possible other groups
+          document.getElementById(
+            "possibleOtherGroupsContainer"
+          ).style.visibility = "visible";
+          possibleOtherGroups.forEach((group) => {
+            let groupDiv = document.createElement("div");
+            let label = document.createElement("label");
+            let thisID = "group" + (possibleOtherGroups.indexOf(group) + 1);
+            label.setAttribute("id", thisID);
+            label.innerHTML = group;
+            groupDiv.appendChild(label);
+            document
+              .getElementById("possibleOtherGroups")
+              .appendChild(groupDiv);
+            d3.select("#" + thisID)
+              .style("font-family", "'Arial', sans-serif")
+              .style("font-size", "16px")
+              .style("color", "#333")
+              .style("background-color", "#f0f0f0")
+              .style("border", "1px solid #ddd")
+              .style("padding", "8px 12px")
+              .style("border-radius", "4px")
+              .style("display", "inline-block")
+              .style("margin-bottom", "5px")
+              .on("mouseover", function () {
+                d3.select(this)
+                  .style("background-color", "#e9e9e9")
+                  .style("cursor", "pointer");
+                highlightOnePossibleGroup(group);
+              })
+              .on("mouseout", function () {
+                d3.select(this).style("background-color", "#f0f0f0");
+                unhighlightOnePossibleGroup(group);
+              });
+          });
         }
       }
 
@@ -26,6 +62,7 @@ function initilizeGroupAnnotation() {
       console.log(marksHaveGroupAnnotation);
       console.log(groupAnnotations);
     });
+
   // To be completed
   mainChartMarks = Object.keys(markInfo).filter(
     (m) => markInfo[m].Role === "Main Chart Mark"
@@ -215,3 +252,41 @@ function showSelectedMarks() {
     document.getElementById("selectedGroup").appendChild(button);
   });
 }
+
+highlightOnePossibleGroup = (group) => {
+  marksHaveGroupAnnotation.forEach((id) => {
+    d3.select("#" + id).style("opacity", "0.3");
+  });
+  group.forEach((id) => {
+    d3.select("#" + id).style("opacity", "1");
+  });
+};
+
+unhighlightOnePossibleGroup = (group) => {
+  marksHaveGroupAnnotation.forEach((id) => {
+    d3.select("#" + id).style("opacity", "1");
+  });
+  group.forEach((id) => {
+    d3.select("#" + id).style("opacity", "0.3");
+  });
+};
+
+acceptInferredGroups = () => {
+  groupAnnotations = groupAnnotations.concat(possibleOtherGroups);
+  possibleOtherGroups.forEach((group) => {
+    marksHaveGroupAnnotation = marksHaveGroupAnnotation.concat(group);
+  });
+  possibleOtherGroups = [];
+  document.getElementById("possibleOtherGroupsContainer").style.visibility =
+    "hidden";
+  // console.log(groupAnnotations);
+  // console.log(marksHaveGroupAnnotation);
+};
+
+rejectInferredGroups = () => {
+  possibleOtherGroups = [];
+  document.getElementById("possibleOtherGroupsContainer").style.visibility =
+    "hidden";
+  // console.log(groupAnnotations);
+  // console.log(marksHaveGroupAnnotation);
+};
