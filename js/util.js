@@ -173,6 +173,23 @@ function removeSpace(str) {
   return str;
 }
 
+function extractNumber(str) {
+  // Extract the number from the end of the string
+  let matches = str.match(/(\d+)$/);
+  return matches ? parseInt(matches[0], 10) : 0;
+}
+
+function sortByEndingNumber(strings) {
+  return strings.sort((a, b) => {
+    // Extract numbers from strings
+    let numA = extractNumber(a);
+    let numB = extractNumber(b);
+
+    // Compare the numbers
+    return numA - numB;
+  });
+}
+
 function ColorToHex(color) {
   var hexadecimal = color.toString(16);
   return hexadecimal.length == 1 ? "0" + hexadecimal : hexadecimal;

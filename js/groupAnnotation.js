@@ -10,10 +10,18 @@ function initilizeGroupAnnotation() {
     .addEventListener("click", (e) => {
       e.stopPropagation();
       if (theGroup.length === 0) return;
-      groupAnnotations.push([theGroup.map((e) => e.id)]); //TBD: filter unique
+      groupAnnotations.push(theGroup.map((e) => e.id)); //TBD: filter unique
       marksHaveGroupAnnotation = marksHaveGroupAnnotation.concat(
         theGroup.map((e) => e.id)
       );
+      if (groupAnnotations.length === 1) {
+        let possibleOtherGroups = inferOtherGroups();
+        if (possibleOtherGroups.length > 0) {
+          // TBD: show a list of possible other groups
+        }
+      }
+
+      // for debugging
       theGroup = [];
       console.log(marksHaveGroupAnnotation);
       console.log(groupAnnotations);
@@ -39,6 +47,38 @@ function initilizeGroupAnnotation() {
 
   groupSelection = true;
   enableAreaSelection4GroupAnnotation();
+}
+
+function inferOtherGroups() {
+  let referenceGroup = sortByEndingNumber(groupAnnotations[0]);
+  if (referenceGroup.length === 0) return;
+  let remainingMarks = sortByEndingNumber(
+    mainChartMarks.filter((m) => !marksHaveGroupAnnotation.includes(m))
+  );
+  let remainingGroups = [];
+  while (remainingMarks.length > 0) {
+    // TBD: check also the differences between the number part of corresponding marks
+    let thisGroup = [];
+    referenceGroup.forEach((mark) => {
+      let matchingString = findMatchingString(mark, remainingMarks);
+      if (matchingString !== undefined) {
+        thisGroup.push(matchingString);
+        remainingMarks = remainingMarks.filter((m) => m !== matchingString);
+      } else {
+        return [];
+      }
+    });
+    remainingGroups.push(thisGroup);
+  }
+  return remainingGroups;
+}
+
+function findMatchingString(exampleString, stringArray) {
+  // Extract the character part from the example string
+  let charPart = exampleString.match(/[a-zA-Z]+/)[0];
+
+  // Find the first string in the array that starts with the same character part
+  return stringArray.find((str) => str.startsWith(charPart));
 }
 
 function checkIntersection(element, rect) {
