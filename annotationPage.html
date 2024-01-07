@@ -511,6 +511,7 @@
               class="btn"
               id="button4FormingGroups"
               style="margin-bottom: 5px"
+              onclick="clickEvent4FormingGroupButton(event)"
             >
               selected marks form a group!
             </button>
@@ -808,10 +809,12 @@
                   d3.selectAll(".chartTitle").selectAll("button").remove();
                   d3.select("#specifiedGroups").selectAll("div").remove();
                   d3.select("#selectedGroup").selectAll("button").remove();
+                  d3.select("#possibleOtherGroups").selectAll("div").remove();
                   d3.select("#possibleOtherGroupsContainer").style(
                     "visibility",
                     "hidden"
                   );
+
                   d3.selectAll(".demoItem")
                     .style("color", "black")
                     .style("font-weight", "normal");

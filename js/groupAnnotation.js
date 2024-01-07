@@ -6,88 +6,6 @@ var marksHaveGroupAnnotation;
 var possibleOtherGroups;
 
 function initilizeGroupAnnotation() {
-  document
-    .getElementById("button4FormingGroups")
-    .addEventListener("click", (e) => {
-      e.stopPropagation();
-      if (theGroup.length === 0) return;
-      // display the new group
-      groupAnnotations.push(theGroup.map((e) => e.id)); //TBD: filter unique
-      marksHaveGroupAnnotation = marksHaveGroupAnnotation.concat(
-        theGroup.map((e) => e.id)
-      );
-      let groupDiv = document.createElement("div");
-      let label = document.createElement("label");
-      label.classList.add("specifiedGroup");
-      label.innerHTML = theGroup.map((e) => e.id).join(", ");
-      d3.select(label)
-        .style("font-family", "'Arial', sans-serif")
-        .style("font-size", "16px")
-        .style("color", "#333")
-        .style("background-color", "#f0f0f0")
-        .style("border", "1px solid #ddd")
-        .style("padding", "8px 12px")
-        .style("border-radius", "4px")
-        .style("display", "inline-block")
-        .style("margin-bottom", "5px")
-        .on("mouseover", function () {
-          d3.select(this)
-            .style("background-color", "#e9e9e9")
-            .style("cursor", "pointer");
-          highlightOnePossibleGroup(label.innerHTML.split(", "));
-        })
-        .on("mouseout", function () {
-          d3.select(this).style("background-color", "#f0f0f0");
-          unhighlightOnePossibleGroup(label.innerHTML.split(", "));
-        });
-      groupDiv.appendChild(label);
-      document.getElementById("specifiedGroups").appendChild(groupDiv);
-
-      // if the group is the first one, infer other groups
-      // we may also allow inferrence when we have >1 groups
-      if (groupAnnotations.length === 1) {
-        possibleOtherGroups = inferOtherGroups();
-        if (possibleOtherGroups.length > 0) {
-          document.getElementById(
-            "possibleOtherGroupsContainer"
-          ).style.visibility = "visible";
-          possibleOtherGroups.forEach((group) => {
-            let groupDiv = document.createElement("div");
-            let label = document.createElement("label");
-            label.classList.add("possibleGroup");
-            label.innerHTML = group.join(", ");
-            d3.select(label)
-              .style("font-family", "'Arial', sans-serif")
-              .style("font-size", "16px")
-              .style("color", "#333")
-              .style("background-color", "#f0f0f0")
-              .style("border", "1px solid #ddd")
-              .style("padding", "8px 12px")
-              .style("border-radius", "4px")
-              .style("display", "inline-block")
-              .style("margin-bottom", "5px")
-              .on("mouseover", function () {
-                d3.select(this)
-                  .style("background-color", "#e9e9e9")
-                  .style("cursor", "pointer");
-                highlightOnePossibleGroup(group);
-              })
-              .on("mouseout", function () {
-                d3.select(this).style("background-color", "#f0f0f0");
-                unhighlightOnePossibleGroup(group);
-              });
-            groupDiv.appendChild(label);
-            document
-              .getElementById("possibleOtherGroups")
-              .appendChild(groupDiv);
-          });
-        }
-      }
-
-      console.log(marksHaveGroupAnnotation);
-      console.log(groupAnnotations);
-    });
-
   // TBD: variable initilization
   theGroup = [];
   marksHaveGroupAnnotation = groupAnnotations.flat();
@@ -112,6 +30,84 @@ function initilizeGroupAnnotation() {
 
   groupSelection = true;
   enableAreaSelection4GroupAnnotation();
+}
+
+function clickEvent4FormingGroupButton(e) {
+  e.stopPropagation();
+  if (theGroup.length === 0) return;
+  // display the new group
+  console.log("test");
+  groupAnnotations.push(theGroup.map((e) => e.id)); //TBD: filter unique
+  marksHaveGroupAnnotation = marksHaveGroupAnnotation.concat(
+    theGroup.map((e) => e.id)
+  );
+  let groupDiv = document.createElement("div");
+  let label = document.createElement("label");
+  label.classList.add("specifiedGroup");
+  label.innerHTML = theGroup.map((e) => e.id).join(", ");
+  d3.select(label)
+    .style("font-family", "'Arial', sans-serif")
+    .style("font-size", "16px")
+    .style("color", "#333")
+    .style("background-color", "#f0f0f0")
+    .style("border", "1px solid #ddd")
+    .style("padding", "8px 12px")
+    .style("border-radius", "4px")
+    .style("display", "inline-block")
+    .style("margin-bottom", "5px")
+    .on("mouseover", function () {
+      d3.select(this)
+        .style("background-color", "#e9e9e9")
+        .style("cursor", "pointer");
+      highlightOnePossibleGroup(label.innerHTML.split(", "));
+    })
+    .on("mouseout", function () {
+      d3.select(this).style("background-color", "#f0f0f0");
+      unhighlightOnePossibleGroup(label.innerHTML.split(", "));
+    });
+  groupDiv.appendChild(label);
+  document.getElementById("specifiedGroups").appendChild(groupDiv);
+
+  // if the group is the first one, infer other groups
+  // we may also allow inferrence when we have >1 groups
+  if (groupAnnotations.length === 1) {
+    possibleOtherGroups = inferOtherGroups();
+    if (possibleOtherGroups.length > 0) {
+      document.getElementById("possibleOtherGroupsContainer").style.visibility =
+        "visible";
+      possibleOtherGroups.forEach((group) => {
+        let groupDiv = document.createElement("div");
+        let label = document.createElement("label");
+        label.classList.add("possibleGroup");
+        label.innerHTML = group.join(", ");
+        d3.select(label)
+          .style("font-family", "'Arial', sans-serif")
+          .style("font-size", "16px")
+          .style("color", "#333")
+          .style("background-color", "#f0f0f0")
+          .style("border", "1px solid #ddd")
+          .style("padding", "8px 12px")
+          .style("border-radius", "4px")
+          .style("display", "inline-block")
+          .style("margin-bottom", "5px")
+          .on("mouseover", function () {
+            d3.select(this)
+              .style("background-color", "#e9e9e9")
+              .style("cursor", "pointer");
+            highlightOnePossibleGroup(group);
+          })
+          .on("mouseout", function () {
+            d3.select(this).style("background-color", "#f0f0f0");
+            unhighlightOnePossibleGroup(group);
+          });
+        groupDiv.appendChild(label);
+        document.getElementById("possibleOtherGroups").appendChild(groupDiv);
+      });
+    }
+  }
+
+  console.log(marksHaveGroupAnnotation);
+  console.log(groupAnnotations);
 }
 
 function inferOtherGroups() {
