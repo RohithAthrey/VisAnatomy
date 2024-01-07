@@ -438,7 +438,11 @@ function mergeGroups() {
   // TBD: unify the label style with the one in the previous section
 
   selectedLabels.forEach((selectedlabel) => {
-    d3.select(selectedlabel).style("border", "2.5px solid black");
+    d3.select(selectedlabel)
+      .style("border", "2.5px solid black")
+      .on("click", null)
+      .on("mouseover", null)
+      .on("mouseout", null);
     label.appendChild(selectedlabel);
   });
 
