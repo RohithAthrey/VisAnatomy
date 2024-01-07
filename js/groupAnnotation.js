@@ -49,7 +49,6 @@ function clickEvent4FormingGroupButton(e) {
     .style("font-size", "16px")
     .style("color", "#333")
     .style("background-color", "#f0f0f0")
-    .style("border", "1px solid #ddd")
     .style("padding", "8px 12px")
     .style("border-radius", "4px")
     .style("display", "inline-block")
@@ -84,7 +83,6 @@ function clickEvent4FormingGroupButton(e) {
           .style("font-size", "16px")
           .style("color", "#333")
           .style("background-color", "#f0f0f0")
-          .style("border", "1px solid #ddd")
           .style("padding", "8px 12px")
           .style("border-radius", "4px")
           .style("display", "inline-block")
@@ -104,6 +102,9 @@ function clickEvent4FormingGroupButton(e) {
       });
     }
   }
+
+  theGroup = [];
+  document.getElementById("selectedGroup").innerHTML = "";
 
   console.log(marksHaveGroupAnnotation);
   console.log(groupAnnotations);
@@ -320,7 +321,6 @@ acceptInferredGroups = () => {
       .style("font-size", "16px")
       .style("color", "#333")
       .style("background-color", "#f0f0f0")
-      .style("border", "1px solid #ddd")
       .style("padding", "8px 12px")
       .style("border-radius", "4px")
       .style("display", "inline-block")
@@ -348,3 +348,151 @@ rejectInferredGroups = () => {
   document.getElementById("possibleOtherGroupsContainer").style.visibility =
     "hidden";
 };
+
+function go2HigherGrouping() {
+  if (mainChartMarks.length !== marksHaveGroupAnnotation.length) {
+    alert(
+      "Please make sure each main chart mark has been allocated to a group first."
+    );
+    return;
+  }
+
+  d3.select("#current-section").style("visibility", "hidden");
+  d3.select("#specifiedGroups").style("visibility", "hidden");
+  d3.select("#higherLevelGroups").style("visibility", "visible");
+  groupAnnotations.forEach((group) => {
+    let label = document.createElement("label");
+    label.classList.add("specifiedGroup");
+    label.innerHTML = group.join(", ");
+    // TBD: unify the label style with the one in the previous section
+    d3.select(label)
+      .style("font-family", "'Arial', sans-serif")
+      .style("font-size", "16px")
+      .style("color", "#333")
+      .style("background-color", "#f0f0f0")
+      .style("padding", "3px")
+      .style("margin", "5px")
+      .style("border", "2.5px solid black")
+      .style("border-radius", "4px")
+      .style("display", "inline-block")
+      .on("mouseover", function () {
+        d3.select(this)
+          .style("background-color", "#e9e9e9")
+          .style("cursor", "pointer");
+        group.forEach((id) => {
+          d3.select("#" + id).style("opacity", "1");
+        });
+      })
+      .on("mouseout", function () {
+        d3.select(this).style("background-color", "#f0f0f0");
+        if (d3.select(this).style("border") === "2.5px solid black")
+          group.forEach((id) => {
+            d3.select("#" + id).style("opacity", "0.3");
+          });
+      })
+      .on("click", function () {
+        let newBorder =
+          d3.select(this).style("border") === "2.5px solid black"
+            ? "2.5px solid red"
+            : "2.5px solid black";
+        d3.select(this).style("border", newBorder);
+        if (newBorder === "2.5px solid red") {
+          group.forEach((id) => {
+            d3.select("#" + id).style("opacity", "1");
+          });
+        } else {
+          group.forEach((id) => {
+            d3.select("#" + id).style("opacity", "0.3");
+          });
+        }
+      });
+    document.getElementById("higherLevelGroups").appendChild(label);
+  });
+}
+
+var selectedGroups;
+
+function mergeGroups() {
+  selectedGroups = [];
+  let selectedLabels = [];
+  document.getElementById("higherLevelGroups").childNodes.forEach((label) => {
+    if (label.nodeName !== "LABEL") return;
+    if (label.style.border === "2.5px solid red") {
+      selectedLabels.push(label);
+      processLabelInnerHtml(label);
+    }
+  });
+
+  if (selectedGroups.length === 0) {
+    alert("Please select at least one group.");
+    return;
+  }
+
+  let mergedGroup = [...selectedGroups.flat()];
+
+  // TBD: design data structure to store nested grouping
+
+  let label = document.createElement("label");
+  label.classList.add("specifiedGroup");
+
+  // TBD: unify the label style with the one in the previous section
+
+  selectedLabels.forEach((selectedlabel) => {
+    d3.select(selectedlabel).style("border", "2.5px solid black");
+    label.appendChild(selectedlabel);
+  });
+
+  document.getElementById("higherLevelGroups").appendChild(label);
+
+  d3.select(label)
+    .style("font-family", "'Arial', sans-serif")
+    .style("font-size", "16px")
+    .style("color", "#333")
+    .style("background-color", "#f0f0f0")
+    .style("padding", "3px")
+    .style("margin", "5px")
+    .style("border", "2.5px solid black")
+    .style("border-radius", "4px")
+    .style("display", "inline-block")
+    .on("mouseover", function () {
+      d3.select(this)
+        .style("background-color", "#e9e9e9")
+        .style("cursor", "pointer");
+      mergedGroup.forEach((id) => {
+        d3.select("#" + id).style("opacity", "1");
+      });
+    })
+    .on("mouseout", function () {
+      d3.select(this).style("background-color", "#f0f0f0");
+      if (d3.select(this).style("border") === "2.5px solid black")
+        mergedGroup.forEach((id) => {
+          d3.select("#" + id).style("opacity", "0.3");
+        });
+    })
+    .on("click", function () {
+      let newBorder =
+        d3.select(this).style("border") === "2.5px solid black"
+          ? "2.5px solid red"
+          : "2.5px solid black";
+      d3.select(this).style("border", newBorder);
+      if (newBorder === "2.5px solid red") {
+        mergedGroup.forEach((id) => {
+          d3.select("#" + id).style("opacity", "1");
+        });
+      } else {
+        mergedGroup.forEach((id) => {
+          d3.select("#" + id).style("opacity", "0.3");
+        });
+      }
+    });
+}
+
+function processLabelInnerHtml(node) {
+  if (node.childNodes.length >= 2) {
+    node.childNodes.forEach((childNode) => processLabelInnerHtml(childNode));
+  } else {
+    selectedGroups.push(...node.innerHTML.split(", "));
+  }
+}
+
+function concludeFinalGrouping() {}
