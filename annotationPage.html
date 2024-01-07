@@ -657,6 +657,9 @@
               "hidden";
             document.getElementById("groupSelection").style.visibility =
               "hidden";
+            document.getElementById(
+              "possibleOtherGroupsContainer"
+            ).style.visibility = "hidden";
             if (jsonArr?.texts) svgTextHighlight(jsonArr.texts);
             break;
           case "Marks":
@@ -679,6 +682,9 @@
               "visible";
             document.getElementById("groupSelection").style.visibility =
               "hidden";
+            document.getElementById(
+              "possibleOtherGroupsContainer"
+            ).style.visibility = "hidden";
             d3.select("#rbox1")
               .selectAll("text")
               .style("pointer-events", "none");

@@ -36,7 +36,6 @@ function clickEvent4FormingGroupButton(e) {
   e.stopPropagation();
   if (theGroup.length === 0) return;
   // display the new group
-  console.log("test");
   groupAnnotations.push(theGroup.map((e) => e.id)); //TBD: filter unique
   marksHaveGroupAnnotation = marksHaveGroupAnnotation.concat(
     theGroup.map((e) => e.id)
@@ -134,7 +133,7 @@ function inferOtherGroups() {
             (extractNumber(referenceGroup[i]) -
               extractNumber(referenceGroup[i - 1])));
       }
-      if (matchingString !== undefined) {
+      if (remainingMarks.includes(matchingString)) {
         thisGroup.push(matchingString);
         remainingMarks = remainingMarks.filter((m) => m !== matchingString);
       } else {
