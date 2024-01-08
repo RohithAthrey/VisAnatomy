@@ -1,1 +1,3 @@
-function initilizeLayoutAnnotation() {}
+function initilizeLayoutAnnotation() {
+  d3.select("#LayoutAnnotationDiv").style("visibility", "visible");
+}
