@@ -1,3 +1,6 @@
+var groupLayouts = {};
+var groupsByDepth = {};
+
 function initilizeLayoutAnnotation() {
   // assuming nestedGrouping is a length 1 array and the first element is the nested grouping
   console.log(convertToJSON(nestedGrouping[0]));
@@ -5,25 +8,38 @@ function initilizeLayoutAnnotation() {
   document
     .getElementById("LayoutAnnotation")
     .appendChild(createList(convertToJSON(nestedGrouping[0])));
+
+  console.log(groupsByDepth);
 }
 
 function convertToJSON(thisNestedGrouping) {
   // Function to flatten an array and remove duplicates
   const flattenUnique = (arr) => [...new Set(arr.flat(Infinity))];
   let groupIndex = groupAnnotations.length;
+  groupsByDepth = {};
 
   // Recursive function to handle nested arrays
-  function processGroup(group) {
+  function processGroup(group, depth) {
     if (Array.isArray(group)) {
+      if (groupsByDepth[depth]) {
+        groupsByDepth[depth].push(groupIndex);
+      } else {
+        groupsByDepth[depth] = [groupIndex];
+      }
       return {
         id: groupIndex++,
         marks: flattenUnique(group)
           .map((i) => groupAnnotations[i])
           .flat(Infinity),
         layout: "",
-        children: group.map((subGroup) => processGroup(subGroup)),
+        children: group.map((subGroup) => processGroup(subGroup, depth + 1)),
       };
     } else {
+      if (groupsByDepth[depth]) {
+        groupsByDepth[depth].push(group);
+      } else {
+        groupsByDepth[depth] = [group];
+      }
       return {
         id: group,
         marks: groupAnnotations[group],
@@ -33,7 +49,7 @@ function convertToJSON(thisNestedGrouping) {
     }
   }
 
-  return processGroup(thisNestedGrouping);
+  return processGroup(thisNestedGrouping, 0);
 }
 
 function createList(item) {
