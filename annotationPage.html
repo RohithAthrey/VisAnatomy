@@ -604,17 +604,79 @@
           </div>
         </div>
         <div
-          id="LayoutAnnotation"
           style="
             position: absolute;
             top: 20px;
             right: 10px;
+            display: flex;
+            flex-grow: 1;
             width: 40%;
             height: calc(100% - 50px);
-            border: #ccc 0px solid;
-            visibility: hidden;
           "
-        ></div>
+        >
+          <div
+            id="LayoutAnnotation"
+            style="
+              padding: 25px;
+              margin-bottom: 10px;
+              vertical-align: top;
+              width: 49%;
+            "
+          >
+            <h4>Grouping Structure</h4>
+          </div>
+          <div
+            id="LayoutSpec"
+            style="
+              padding: 25px;
+              margin-bottom: 10px;
+              vertical-align: top;
+              width: 49%;
+            "
+          >
+            <h4 style="text-align: center">Layout Specification</h4>
+            <p>Select a layout type:</p>
+            <select class="fieldType" id="layoutTypeSelection">
+              <option value="none">Not Assigned</option>
+              <option value="Grid">Grid</option>
+              <option value="Stack">Stack</option>
+              <option value="Packing">Packing</option>
+              <option value="Encoded with Data">Encoded with Data</option>
+            </select>
+
+            <div
+              id="layoutDetails"
+              style="
+                width: 100%;
+                height: 40%;
+                padding-top: 15px;
+                border: 2.5px solid lightblue;
+              "
+            >
+              TBD: this DIV is to display layout parameters
+            </div>
+
+            <div>
+              <label for="Checkbox4Layout">
+                Apply across same-level groups
+              </label>
+              <input
+                type="checkbox"
+                id="Checkbox4Layout"
+                name="batchLayoutAssignment"
+              />
+            </div>
+
+            <button
+              class="btn"
+              id="button4LayoutSpec"
+              style="margin-top: 10px"
+              onclick="clickEvent4LayoutSpecButton(event)"
+            >
+              Record Layout!
+            </button>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -780,6 +842,7 @@
             break;
           case "Groups":
             d3.select("#LayoutAnnotation").style("visibility", "hidden");
+            d3.select("#LayoutSpec").style("visibility", "hidden");
             document.getElementById("axisAndLegend").style.visibility =
               "hidden";
             document.getElementById("generalizedSelection").style.visibility =
@@ -795,6 +858,7 @@
             break;
           case "Layout":
             d3.select("#LayoutAnnotation").style("visibility", "visible");
+            d3.select("#LayoutSpec").style("visibility", "visible");
             initilizeLayoutAnnotation();
             document.getElementById("groupSelection").style.visibility =
               "hidden";
@@ -805,6 +869,7 @@
             break;
           case "Encodings":
             d3.select("#LayoutAnnotation").style("visibility", "hidden");
+            d3.select("#LayoutSpec").style("visibility", "hidden");
             initilizeEncodingAnnotation();
             break;
           case "Constraints":

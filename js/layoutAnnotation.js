@@ -4,7 +4,8 @@ var groupsByDepth = {};
 function initilizeLayoutAnnotation() {
   // assuming nestedGrouping is a length 1 array and the first element is the nested grouping
   console.log(convertToJSON(nestedGrouping[0]));
-  document.getElementById("LayoutAnnotation").innerHTML = "";
+  document.getElementById("LayoutAnnotation").innerHTML =
+    "<h4>Grouping Structure</h4>";
   document
     .getElementById("LayoutAnnotation")
     .appendChild(createList(convertToJSON(nestedGrouping[0])));
@@ -76,6 +77,11 @@ function createList(item) {
       item.marks.forEach((mark) => {
         d3.select("#" + mark).style("opacity", "0.3");
       });
+    })
+    .on("click", function () {
+      item.marks.forEach((mark) => {
+        d3.select("#" + mark).style("opacity", "1");
+      });
     });
   container.appendChild(content);
 
@@ -118,3 +124,5 @@ function createList(item) {
 
   return container;
 }
+
+function layoutAnnotationChanged() {}
