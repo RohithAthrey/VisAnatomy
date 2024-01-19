@@ -132,17 +132,35 @@ function convertToJSON2(thisNestedGrouping) {
   return processGroup(thisNestedGrouping, 0);
 }
 
-function toggleItem(listItem) {
-  listItem.classList.toggle("selected");
+function recordSingleEncoding() {
+  const selectedChannels = getSelectedChannelsTexts();
+  const selectedGroup = d3.select("#selectedGroup4EncodingStage1").text();
+  if (selectedChannels.length == 0) {
+    alert("Please select at least one channel");
+  } else if (!selectedGroup) {
+    alert("Please select a group");
+  } else {
+    objectEncodings[selectedGroup] = selectedChannels;
+  }
+  console.log(objectEncodings);
 }
 
-function recordSingleEncoding() {}
+function recordBatchEncoding() {
+  const selectedChannels = getSelectedChannelsTexts();
+  const selectedGroup = d3.select("#selectedGroup4EncodingStage1").text();
+  if (selectedChannels.length == 0) {
+    alert("Please select at least one channel");
+  } else if (!selectedGroup) {
+    alert("Please select a group");
+  } else {
+    objectEncodings[selectedGroup] = selectedChannels;
+  }
+  console.log(objectEncodings);
+}
 
-function recordBatchEncoding() {}
-
-function getSelectedItemsTexts() {
+function getSelectedChannelsTexts() {
   const selectedTexts = [];
-  const listItems = document.querySelectorAll("#itemList .list-item");
+  const listItems = document.querySelectorAll("#channelList .list-item");
 
   listItems.forEach((item) => {
     if (item.classList.contains("selected")) {
@@ -152,4 +170,8 @@ function getSelectedItemsTexts() {
   });
 
   return selectedTexts;
+}
+
+function toggleItem(listItem) {
+  listItem.classList.toggle("selected");
 }
