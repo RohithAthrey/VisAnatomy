@@ -102,22 +102,23 @@ function createList(item) {
       listItem.appendChild(childElement);
       childrenContainer.appendChild(listItem);
     });
-  } else {
-    // For lowest level items, display individual marks as foldable but non-expandable
-    item.marks.forEach((mark) => {
-      const markItem = document.createElement("li");
-      markItem.textContent = mark;
-      d3.select(markItem)
-        .on("mouseover", function () {
-          d3.select(this).style("cursor", "pointer");
-          d3.select("#" + mark).style("opacity", "1");
-        })
-        .on("mouseout", function () {
-          d3.select("#" + mark).style("opacity", "0.3");
-        });
-      childrenContainer.appendChild(markItem);
-    });
   }
+  // else {
+  //   // For lowest level items, display individual marks as foldable but non-expandable
+  //   item.marks.forEach((mark) => {
+  //     const markItem = document.createElement("li");
+  //     markItem.textContent = mark;
+  //     d3.select(markItem)
+  //       .on("mouseover", function () {
+  //         d3.select(this).style("cursor", "pointer");
+  //         d3.select("#" + mark).style("opacity", "1");
+  //       })
+  //       .on("mouseout", function () {
+  //         d3.select("#" + mark).style("opacity", "0.3");
+  //       });
+  //     childrenContainer.appendChild(markItem);
+  //   });
+  // }
 
   container.appendChild(childrenContainer);
 
