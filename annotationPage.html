@@ -387,6 +387,7 @@
                     <option value="Area">Area</option>
                     <option value="Image">Image</option>
                     <option value="Text">Text</option>
+                    <option value="Path">Path</option>
                   </select>
                 </div>
                 <div style="flex-grow: 1; margin-right: 5px">
@@ -747,13 +748,14 @@
           >
             <h4 style="text-align: center">Encoded Channels</h4>
             <p>
-              Select the channels that are used for encoding data for the
-              selected object
+              Select one group or mark on the left by clicking, then select the
+              channels (will shown below) that are used for encoding data for
+              the selected object
               <span id="selectedGroup4EncodingStage1" style="color: red"></span
               >:
             </p>
             <ul id="channelList">
-              <li class="list-item" onclick="toggleItem(this)">
+              <!-- <li class="list-item" onclick="toggleItem(this)">
                 <span class="dot"></span> width
               </li>
               <li class="list-item" onclick="toggleItem(this)">
@@ -776,7 +778,7 @@
               </li>
               <li class="list-item" onclick="toggleItem(this)">
                 <span class="dot"></span> size
-              </li>
+              </li> -->
             </ul>
 
             <div>

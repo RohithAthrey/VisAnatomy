@@ -5,12 +5,12 @@ const typeSpecificChannels = {
     "y (y1)",
     "x2",
     "y2",
-    "stroke (color)",
+    "color",
     "strokeWidth",
     "opacity",
     "length",
   ],
-  Polyline: ["vertices", "stroke (color)", "strokeWidth", "opacity", "length"],
+  Polyline: ["vertices", "color", "strokeWidth", "opacity", "length"],
   Rectangle: [
     "x (left)",
     "y (top)",
@@ -38,7 +38,8 @@ const typeSpecificChannels = {
   ],
   Text: ["x", "y", "text", "color", "opacity", "fontSize", "fontWeight"],
   Image: ["x", "y", "width", "height", "opacity"],
-  area: ["x list", "y list", "fill", "opacity"],
+  Area: ["x list", "y list", "fill", "opacity"],
+  Path: ["shape", "x", "y", "size", "fill", "opacity"],
 };
 
 function initilizeEncodingAnnotation() {
@@ -51,7 +52,6 @@ function initilizeEncodingAnnotation() {
 }
 
 function createList2(item) {
-  // TBD: create object-type-specific list; can use annotated mark types and roles
   const container = document.createElement("div");
   container.style.backgroundColor = "#f0f0f0"; // Background color for each list
 
@@ -78,6 +78,7 @@ function createList2(item) {
     })
     .on("click", function () {
       d3.select("#selectedGroup4EncodingStage1").text("Group " + item.id);
+      populateChannelList(["x", "y"]);
       if (Object.keys(objectEncodings).includes(item.id.toString())) {
         let thisEncoding = objectEncodings["Group " + item.id];
         let channelList = document.getElementById("channelList");
@@ -136,8 +137,10 @@ function createList2(item) {
           d3.select("#selectedGroup4EncodingStage2").text(markItem.textContent);
           if (Object.keys(objectEncodings).includes(mark)) {
             let thisEncoding = objectEncodings[mark];
-            let channelList = document.getElementById("channelList");
-            let listItems = channelList.querySelectorAll(".list-item");
+            let channelList = typeSpecificChannels[markInfo[mark].Type];
+            populateChannelList(channelList);
+            let channelListHTML = document.getElementById("channelList");
+            let listItems = channelListHTML.querySelectorAll(".list-item");
             listItems.forEach((item) => {
               if (thisEncoding.includes(item.textContent.trim())) {
                 item.classList.add("selected");
@@ -146,8 +149,8 @@ function createList2(item) {
               }
             });
           } else {
-            let channelList = document.getElementById("channelList");
-            let listItems = channelList.querySelectorAll(".list-item");
+            let channelListHTML = document.getElementById("channelList");
+            let listItems = channelListHTML.querySelectorAll(".list-item");
             listItems.forEach((item) => {
               item.classList.remove("selected");
             });
@@ -270,4 +273,23 @@ function getSelectedChannelsTexts() {
 function toggleItem(listItem) {
   listItem.classList.toggle("selected");
   recordSingleEncoding();
+}
+
+function populateChannelList(channelArray) {
+  const ulElement = document.getElementById("channelList");
+  ulElement.innerHTML = "";
+
+  channelArray.forEach((item) => {
+    const li = document.createElement("li");
+    li.className = "list-item";
+    li.setAttribute("onclick", "toggleItem(this)");
+
+    const span = document.createElement("span");
+    span.className = "dot";
+
+    li.appendChild(span);
+    li.appendChild(document.createTextNode(` ${item}`));
+
+    ulElement.appendChild(li);
+  });
 }
