@@ -135,10 +135,11 @@ function createList2(item) {
         .on("click", function () {
           d3.select("#selectedGroup4EncodingStage1").text(markItem.textContent);
           d3.select("#selectedGroup4EncodingStage2").text(markItem.textContent);
+          let channelList = typeSpecificChannels[markInfo[mark].Type];
+          console.log(mark, markInfo[mark]);
+          populateChannelList(channelList);
           if (Object.keys(objectEncodings).includes(mark)) {
             let thisEncoding = objectEncodings[mark];
-            let channelList = typeSpecificChannels[markInfo[mark].Type];
-            populateChannelList(channelList);
             let channelListHTML = document.getElementById("channelList");
             let listItems = channelListHTML.querySelectorAll(".list-item");
             listItems.forEach((item) => {
