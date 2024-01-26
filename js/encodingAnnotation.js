@@ -37,7 +37,18 @@ function createList2(item) {
     .on("click", function () {
       d3.select("#selectedGroup4EncodingStage1").text("Group " + item.id);
       d3.select("#selectedGroup4EncodingStage2").text("Group " + item.id);
-      // TBD: toggle encoding channels
+      if (Object.keys(objectEncodings).includes(item.id.toString())) {
+        let thisEncoding = objectEncodings["Group " + item.id];
+        let channelList = document.getElementById("channelList");
+        let listItems = channelList.querySelectorAll(".list-item");
+        listItems.forEach((item) => {
+          if (thisEncoding.includes(item.textContent.trim())) {
+            item.classList.add("selected");
+          } else {
+            item.classList.remove("selected");
+          }
+        });
+      }
     });
   container.appendChild(content);
 
@@ -76,7 +87,18 @@ function createList2(item) {
         .on("click", function () {
           d3.select("#selectedGroup4EncodingStage1").text(markItem.textContent);
           d3.select("#selectedGroup4EncodingStage2").text(markItem.textContent);
-          // TBD: toggle encoding channels
+          if (Object.keys(objectEncodings).includes(mark)) {
+            let thisEncoding = objectEncodings[mark];
+            let channelList = document.getElementById("channelList");
+            let listItems = channelList.querySelectorAll(".list-item");
+            listItems.forEach((item) => {
+              if (thisEncoding.includes(item.textContent.trim())) {
+                item.classList.add("selected");
+              } else {
+                item.classList.remove("selected");
+              }
+            });
+          }
         });
       childrenContainer.appendChild(markItem);
     });
@@ -192,7 +214,5 @@ function getSelectedChannelsTexts() {
 
 function toggleItem(listItem) {
   listItem.classList.toggle("selected");
-  if (listItem.classList.contains("selected")) {
-    recordSingleEncoding();
-  }
+  recordSingleEncoding();
 }
