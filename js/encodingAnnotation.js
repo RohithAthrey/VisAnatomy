@@ -64,6 +64,8 @@ function createList2(item) {
 
   const content = document.createElement("span");
   content.textContent = "Group " + item.id;
+  let thisEncoding = objectEncodings["Group " + item.id];
+
   d3.select(content)
     .on("mouseover", function () {
       d3.select(this).style("cursor", "pointer");
@@ -80,7 +82,6 @@ function createList2(item) {
       d3.select("#selectedGroup4EncodingStage1").text("Group " + item.id);
       populateChannelList(["x", "y"]);
       if (Object.keys(objectEncodings).includes(item.id.toString())) {
-        let thisEncoding = objectEncodings["Group " + item.id];
         let channelList = document.getElementById("channelList");
         let listItems = channelList.querySelectorAll(".list-item");
         listItems.forEach((item) => {
@@ -102,7 +103,9 @@ function createList2(item) {
 
   // TBD: add encoding indicator
   const EncIndicator = document.createElement("span");
-  EncIndicator.textContent = " ";
+  EncIndicator.textContent = thisEncoding
+    ? " [" + thisEncoding.toString() + "]"
+    : " ";
   EncIndicator.id = "EncIndicator" + item.id;
   EncIndicator.style.cssText =
     "margin-left: 2px; vertical-align: middle; color: #03C03C;";
@@ -122,6 +125,7 @@ function createList2(item) {
   } else {
     // For lowest level items, display individual marks as foldable but non-expandable
     item.marks.forEach((mark) => {
+      let thisMarkEncoding = objectEncodings[mark];
       const markItem = document.createElement("li");
       markItem.textContent = mark;
       d3.select(markItem)
@@ -139,11 +143,10 @@ function createList2(item) {
           console.log(mark, markInfo[mark]);
           populateChannelList(channelList);
           if (Object.keys(objectEncodings).includes(mark)) {
-            let thisEncoding = objectEncodings[mark];
             let channelListHTML = document.getElementById("channelList");
             let listItems = channelListHTML.querySelectorAll(".list-item");
             listItems.forEach((item) => {
-              if (thisEncoding.includes(item.textContent.trim())) {
+              if (thisMarkEncoding.includes(item.textContent.trim())) {
                 item.classList.add("selected");
               } else {
                 item.classList.remove("selected");
@@ -157,6 +160,14 @@ function createList2(item) {
             });
           }
         });
+      const markEncIndicator = document.createElement("span");
+      markEncIndicator.textContent = thisMarkEncoding
+        ? " [" + thisMarkEncoding.toString() + "]"
+        : " ";
+      markEncIndicator.id = "EncIndicator" + markItem.textContent;
+      markEncIndicator.style.cssText =
+        "margin-left: 2px; vertical-align: middle; color: #03C03C;";
+      markItem.appendChild(markEncIndicator);
       childrenContainer.appendChild(markItem);
     });
   }
