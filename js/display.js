@@ -73,7 +73,6 @@ function displaySVG(text) {
 }
 
 function displayAxis(axis) {
-  console.log(axis);
   if (Object.keys(axis) === 0) return;
   d3.select("#" + axis.type + "Labels")
     .selectAll("button")

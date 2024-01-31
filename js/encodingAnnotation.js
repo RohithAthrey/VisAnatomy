@@ -43,7 +43,6 @@ const typeSpecificChannels = {
 };
 
 function initilizeEncodingAnnotation() {
-  console.log(convertToJSON2(nestedGrouping[0]));
   document.getElementById("EncodingAnnotation").innerHTML =
     "<h4>Grouping Structure</h4>";
   document

@@ -109,12 +109,10 @@ function initilizeMarkAnnotation() {
   });
 
   // then populate all possible mark batch selections
-  console.log(leafNodeTypes);
   leafNodeTypes.forEach((elementType) => {
     channelBasedBatchSelections4AllMarks[elementType] =
       dertermineChannelBasedBatchSelections(elementType);
   });
-  console.log(channelBasedBatchSelections4AllMarks);
 
   document.getElementById("markSelections").innerHTML = "";
 
