@@ -226,7 +226,14 @@ function recordBatchGroupLayout() {
       if (group.includes(parseInt(selectedGroup))) {
         group.forEach((groupID) => {
           groupLayouts[groupID] = thisLayoutJson;
-          d3.select("#layoutIndicator" + groupID).text(" " + thisLayoutType);
+          d3.select("#layoutIndicator" + groupID).text(
+            " " +
+              thisLayoutType +
+              "-" +
+              thisLayoutJson.params.orientation[0] +
+              "-" +
+              thisLayoutJson.params.alignment[0]
+          );
         });
       }
     });
