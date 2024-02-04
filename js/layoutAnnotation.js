@@ -96,10 +96,12 @@ function createList(item) {
     " " +
     (Object.keys(groupLayouts).includes(item.id.toString())
       ? groupLayouts[item.id].type +
-        "-" +
-        groupLayouts[item.id].params.orientation[0] +
-        "-" +
-        groupLayouts[item.id].params.alignment[0]
+        (groupLayouts[item.id].params.orientation[0]
+          ? "-" + groupLayouts[item.id].params.orientation[0]
+          : "") +
+        (groupLayouts[item.id].params.alignment[0]
+          ? "-" + groupLayouts[item.id].params.alignment[0]
+          : "")
       : "");
   container.appendChild(layoutIndicator);
 
@@ -195,10 +197,12 @@ function recordlayout() {
     d3.select("#layoutIndicator" + selectedGroup).text(
       " " +
         thisLayoutType +
-        "-" +
-        groupLayouts[selectedGroup].params.orientation[0] +
-        "-" +
-        groupLayouts[selectedGroup].params.alignment[0]
+        (groupLayouts[item.id].params.orientation[0]
+          ? "-" + groupLayouts[item.id].params.orientation[0]
+          : "") +
+        (groupLayouts[item.id].params.alignment[0]
+          ? "-" + groupLayouts[item.id].params.alignment[0]
+          : "")
     );
   }
   console.log(groupLayouts);
@@ -229,10 +233,12 @@ function recordBatchGroupLayout() {
           d3.select("#layoutIndicator" + groupID).text(
             " " +
               thisLayoutType +
-              "-" +
-              thisLayoutJson.params.orientation[0] +
-              "-" +
-              thisLayoutJson.params.alignment[0]
+              (thisLayoutJson.params.orientation[0]
+                ? "-" + thisLayoutJson.params.orientation[0]
+                : "") +
+              (thisLayoutJson.params.alignment[0]
+                ? "-" + thisLayoutJson.params.alignment[0]
+                : "")
           );
         });
       }
