@@ -102,9 +102,17 @@ function initilizeMarkAnnotation() {
       markDiv.style.margin = "2px";
       markDiv.style.cursor = "pointer";
       document.getElementById("allMarks").appendChild(markDiv);
-      d3.select("#mark_" + element.id).on("click", () => {
-        markOnClick(element.id);
-      });
+      d3.select("#mark_" + element.id)
+        .on("mouseover", () => {
+          d3.select("#" + element.id).style("opacity", "1");
+        })
+        .on("mouseout", () => {
+          if (!markSelection.includes(element.id))
+            d3.select("#" + element.id).style("opacity", "0.2");
+        })
+        .on("click", () => {
+          markOnClick(element.id);
+        });
     });
   });
 
@@ -152,9 +160,21 @@ function initilizeMarkAnnotation() {
         }
 
         document.getElementById("markSelections").appendChild(selectionDiv);
-        d3.select("#" + selectionDiv.id).on("click", () => {
-          selectionOnClick(selectionDiv.id, valueJson[value]);
-        });
+        d3.select("#" + selectionDiv.id)
+          .on("mouseover", () => {
+            valueJson[value].forEach((markID) => {
+              d3.select("#" + markID).style("opacity", "1");
+            });
+          })
+          .on("mouseout", () => {
+            valueJson[value].forEach((markID) => {
+              if (!markSelection.includes(markID))
+                d3.select("#" + markID).style("opacity", "0.2");
+            });
+          })
+          .on("click", () => {
+            selectionOnClick(selectionDiv.id, valueJson[value]);
+          });
       }
     });
   });
@@ -167,6 +187,8 @@ function initilizeMarkAnnotation() {
     .style("padding", "2px")
     .style("margin", "2px")
     .style("cursor", "pointer");
+
+  svgHighlighting();
 }
 
 function markOnClick(markID) {
@@ -256,6 +278,10 @@ function disableAllMarkSelections() {
     .style("background-color", "white")
     .style("color", "black");
   markSelection = [];
+  document.getElementById("numberOfMarksSelected").innerHTML = "0";
+  document.getElementById("markTypeSelection").value = "none";
+  document.getElementById("markRoleSelection").value = "none";
+  svgHighlighting();
 }
 
 function svgHighlighting() {
