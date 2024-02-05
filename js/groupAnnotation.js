@@ -61,6 +61,34 @@ function initilizeGroupAnnotation() {
   enableAreaSelection4GroupAnnotation();
 }
 
+function clearGrouping() {
+  d3.select("#specifiedGroups").selectAll("label").remove();
+  d3.select("#possibleOtherGroups").selectAll("div").remove();
+  d3.select("#higherLevelGroups").selectAll("label").remove();
+  document.getElementById("possibleOtherGroupsContainer").style.visibility =
+    "hidden";
+  document.getElementById("higherLevelGroups").style.visibility = "hidden";
+  nestedGrouping = [];
+  groupAnnotations = [];
+  marksHaveGroupAnnotation = [];
+  possibleOtherGroups = [];
+  theGroup = [];
+  groupSelection = true;
+  isDragging = false;
+  allSVGElementID.forEach((id) => {
+    d3.select("#" + id).style(
+      "opacity",
+      theGroup.length === 0
+        ? mainChartMarks.includes(id)
+          ? "1"
+          : "0.3"
+        : theGroup.map((e) => e.id).includes(id)
+        ? "1"
+        : "0.3"
+    );
+  });
+}
+
 function clickEvent4FormingGroupButton(e) {
   e.stopPropagation();
   if (theGroup.length === 0) return;
