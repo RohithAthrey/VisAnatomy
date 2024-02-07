@@ -1,4 +1,16 @@
 var style = {};
+var graphicsElementTypes = [
+  "line",
+  "polyline",
+  "rect",
+  "circle",
+  "ellipse",
+  "polygon",
+  "path",
+  "image",
+  "text",
+  "use",
+];
 var keys_of_interest = [
   "style",
   "transform",
@@ -38,7 +50,7 @@ function groupSVGElementsByTypeWithCoordinates() {
 
   const allElements = Array.from(tempDiv.querySelectorAll("*")).filter(
     // (element) => element.childElementCount === 0
-    (element) => graphicsElementTypes.includes(element.tagName) // here we use all nodes other than lead nodes because there are rare cases where <rect> is not a leaf node like the example in https://observablehq.com/@d3/diverging-bar-chart
+    (element) => graphicsElementTypes.includes(element.tagName) // here we use all nodes other than leaf nodes because there are rare cases where <rect> is not a leaf node like the example in https://observablehq.com/@d3/diverging-bar-chart
   );
 
   const groupedElements = [];
@@ -64,7 +76,10 @@ function groupSVGElementsByTypeWithCoordinates() {
         top: top,
         right: right,
         bottom: bottom,
+        height: bbox.height,
+        width: bbox.width,
         id: element.id,
+        tagName: element.tagName,
       });
     }
   });
@@ -84,16 +99,7 @@ function groupSVGElementsByType() {
     ...titleLegend,
     ...titleXaxis,
     ...titleYaxis,
-  ].map((element) => element.id); // those contain mark elements
-  // // we move ticks and paths outisde referenceElements because they can be annotated as well and should be able to be revised
-  // referenceElements.push(
-  //   ...[
-  //     ...(xAxis.ticks ? xAxis.ticks : []),
-  //     ...(yAxis.ticks ? yAxis.ticks : []),
-  //     ...(xAxis.path ? xAxis.path : []),
-  //     ...(yAxis.path ? yAxis.path : []),
-  //   ] // those contain mark IDs
-  // );
+  ].map((element) => element.id);
 
   const tempDiv = document.getElementById("rbox1");
 

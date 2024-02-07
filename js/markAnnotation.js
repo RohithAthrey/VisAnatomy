@@ -1,16 +1,4 @@
 var markSelection = [];
-var graphicsElementTypes = [
-  "line",
-  "polyline",
-  "rect",
-  "circle",
-  "ellipse",
-  "polygon",
-  "path",
-  "image",
-  "text",
-  "use",
-];
 var channelBasedBatchSelections4AllMarks = {};
 var allLeftNodes = [];
 
