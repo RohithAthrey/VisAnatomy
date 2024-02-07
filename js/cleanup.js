@@ -82,6 +82,7 @@ function groupSVGElementsByTypeWithCoordinates() {
         tagName: element.tagName,
         content:
           element.tagName === "text" ? element.textContent : element.innerHTML,
+        fill: element.attributes.fill?.value,
       });
     }
   });

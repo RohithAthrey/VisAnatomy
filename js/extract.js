@@ -1,45 +1,31 @@
 var rects4Grouping;
 var numOfColor;
 
-function extract(groupedGraphicsElement) {
-  let nodes = groupedGraphicsElement["allNodes"];
-  let rects = groupedGraphicsElement["rects"];
+function extract() {
+  let rects = groupedGraphicsElement["rects"]
+    ? groupedGraphicsElement["rects"]
+    : [];
   let originalRects = [...rects];
-  // console.log([...rects])
   rects = rects.filter(filterRect);
 
   let texts = textProcessor(groupedGraphicsElement["texts"]);
-  let lines = groupedGraphicsElement["lines"];
-  let rectWith0WH = groupedGraphicsElement["rectWith0WH"];
 
-  let nodeIndex = {};
-  nodes.map((n, i) => (nodeIndex[n["id"]] = i));
-
-  let attrs = ["x", "y", "width", "height", "fill", "right", "bottom", "level"];
   let thisColors;
-  for (let attr of attrs) {
-    attrValues = rects.map((rect) => rect[attr]).filter(onlyUnique);
-    if (attr == "fill") {
-      thisColors = attrValues;
-      numOfColor = attrValues.length;
-    }
-  }
+  thisColors = rects
+    .map((rect) => rect.fill)
+    .filter(
+      (f) =>
+        f !== undefined &&
+        f !== null &&
+        f !== "" &&
+        f !== "none" &&
+        f !== "transparent"
+    )
+    .filter(onlyUnique);
+  numOfColor = thisColors.length;
 
-  // GridLines
-  //let rbox2Html = "<svg id='overlay' height='100%' width='100%' viewbox=\"-50 -50 1000 750\" preserveAspectRatio=\"xMinYMin\">";
-
-  //rbox2Html =
-  // findGridlines(rects, lines);
-  // console.log("xGridlines", xGridlines);
-  // console.log("yGridlines", yGridlines);
-
-  // Legend
-  //let colorMapping = {}
-  //let legendArea = {"elements": [], "type": null};
-  legend = findLegend(texts, rects, lines, numOfColor);
+  legend = findLegend(texts, groupedGraphicsElement["rects"], numOfColor);
   console.log("legend", legend);
-
-  //rbox2Html = displayLegend(legend, rbox2Html);
   displayLegend(legend);
 
   // further filtering out rects
@@ -99,116 +85,25 @@ function extract(groupedGraphicsElement) {
             e.y <= r.bottom - 10
         ).length == 0
     );
-  // console.log("Rects in the main chart area:")
-  // console.log(rects)
 
-  // X axis
-  xAxis = findxAxis(texts, rects, lines, nodes, nodeIndex);
-  console.log("x axis", xAxis);
-  displayAxis(xAxis);
+  // // X axis
+  // xAxis = findxAxis(texts, rects, lines, nodes, nodeIndex);
+  // console.log("x axis", xAxis);
+  // displayAxis(xAxis);
 
-  // Y axis
-  yAxis = findyAxis(texts, rects, lines, nodes, nodeIndex, xAxis);
-  console.log("y axis", yAxis);
-  displayAxis(yAxis);
+  // // Y axis
+  // yAxis = findyAxis(texts, rects, lines, nodes, nodeIndex, xAxis);
+  // console.log("y axis", yAxis);
+  // displayAxis(yAxis);
 
-  // if Y labels are found while X labels are not; perform X label heuristic again
-  if ("labels" in yAxis && !("labels" in xAxis)) {
-    xAxis = findxAxis(texts, rects, lines, nodes, nodeIndex);
-    console.log("x axis", xAxis);
-    displayAxis(xAxis);
-  }
+  // // if Y labels are found while X labels are not; perform X label heuristic again
+  // if ("labels" in yAxis && !("labels" in xAxis)) {
+  //   xAxis = findxAxis(texts, rects, lines, nodes, nodeIndex);
+  //   console.log("x axis", xAxis);
+  //   displayAxis(xAxis);
+  // }
 
-  rects4Grouping = [rects, rectWith0WH]; // record a global variable for the later grouping heuristics
-  // console.log(JSON.stringify({'rects': rects, "texts": texts, "lines": lines}))
-  return { rects: rects, texts: texts, lines: lines };
-}
-
-function filterRect(rect) {
-  // consider stroke attrs
-  // are stoke and fill-in independent?
-  if (!rect["opacity"] || rect["opacity"] !== "0") {
-    if (rect["stroke"]) {
-      if (
-        rect["stroke"] !== "#ffffff" &&
-        rect["stroke"] !== "#FFFFFF" &&
-        rect["stroke"] !== "white" &&
-        rect["stroke"] !== "none" &&
-        rect["stroke"] !== "transparent" &&
-        rect["stroke"] !== "rgb(255, 255, 255)"
-      ) {
-        if (
-          (rect["stroke-width"]
-            ? !["0", "0px", "0%"].includes(removeSpace(rect["stroke-width"]))
-            : true) &&
-          (rect["stroke-opacity"]
-            ? parseFloat(rect["stroke-opacity"]) > 0.05
-            : true)
-        ) {
-          return rect;
-        }
-      }
-    }
-    if (!rect["fill-opacity"] || parseFloat(rect["fill-opacity"]) > 0.05) {
-      if (rect["tag"] == "circle" || !rect["fill"]) return rect;
-      if (
-        (rect["width"] < 2000 || rect["height"] < 2000) &&
-        rect["fill"] !== "#ffffff" &&
-        rect["fill"] !== "#FFFFFF" &&
-        rect["fill"] !== "white" &&
-        rect["fill"] !== "none" &&
-        rect["fill"] !== "transparent"
-      ) {
-        return rect;
-        // to-dos: to avoid deleting white rects in heatmaps or matrix charts
-      }
-    }
-  }
-}
-
-function findGridlines(rects, lines) {
-  // gridlines (according to the tests, there could be repeated lines inside)
-  let rectMostLeft = Math.min(...rects.map((r) => r["x"]));
-  let rectMostRight = Math.max(...rects.map((r) => r["right"]));
-  let rectMostTop = Math.min(...rects.map((r) => r["y"]));
-  let rectMostBottom = Math.max(...rects.map((r) => r["bottom"]));
-  // horizontal gridlines
-  let Hlines = lines.filter(
-    (l) =>
-      l["y1"] == l["y2"] &&
-      Math.abs(l["x1"] - l["x2"]) - (rectMostRight - rectMostLeft) > -50
-  );
-  if (Hlines.length >= 3) {
-    // for (let l of Hlines) {
-    //     // rbox2Html = rbox2Html + "<line x1 = '" + l['x1'] + "' x2 = '" + l['x2'] + "' y1 = '" + l['y1'] + "' y2 = '" + l['y2'] +"' stroke='red' stroke-width='3' stroke-dasharray='4' />";
-    // }
-    yGridlines = {
-      stroke: Hlines[0].stroke,
-      opacity:
-        "stroke-opacity" in Hlines[0]
-          ? parseFloat(Hlines[0]["stroke-opacity"])
-          : 1,
-    };
-  }
-  let Vlines = lines.filter(
-    (l) =>
-      l["x1"] == l["x2"] &&
-      Math.abs(l["y1"] - l["y2"]) - (rectMostBottom - rectMostTop) > -50
-  );
-  if (Vlines.length >= 3) {
-    // for (let l of Vlines) {
-    //     // rbox2Html = rbox2Html + "<line x1 = '" + l['x1'] + "' x2 = '" + l['x2'] + "' y1 = '" + l['y1'] + "' y2 = '" + l['y2'] +"' stroke='red' stroke-width='3' stroke-dasharray='4' />";
-    // }
-    if (Hlines[0])
-      xGridlines = {
-        stroke: Vlines[0].stroke,
-        opacity:
-          "stroke-opacity" in Hlines[0]
-            ? parseFloat(Hlines[0]["stroke-opacity"])
-            : 1,
-      };
-  }
-  //return rbox2Html
+  return { rects: rects, texts: texts };
 }
 
 function findLegendInArea(tl, br, texts, rects) {
@@ -298,8 +193,10 @@ function findLegendInArea(tl, br, texts, rects) {
   }
 }
 
-function findLegend(texts, rects, lines, numOfColor) {
-  if (texts.length == 0) return { labels: [], marks: [] };
+function findLegend(texts, rects, numOfColor) {
+  if (!texts || !rects) return { labels: [], marks: [] };
+  if (texts.length === 0 || rects.length === 0)
+    return { labels: [], marks: [] };
   let LegendExist = false,
     legendArea = { elements: [], type: null },
     colorMapping = {};
@@ -307,15 +204,19 @@ function findLegend(texts, rects, lines, numOfColor) {
   let allY, uniqueY, allX, uniqueX;
   if (numOfColor > 20) {
     let legendBar = rects.filter(function (rect) {
-      if (rect["fill"]) {
-        if (rect["fill"].indexOf("url") !== -1) return rect;
+      if (document.getElementById(rect["id"]).attributes["fill"].value) {
+        if (
+          document
+            .getElementById(rect["id"])
+            .attributes["fill"].value.indexOf("url") !== -1
+        )
+          return rect;
       }
     })[0]; // assuming there is only one bar
     if (legendBar) {
       LegendExist = true;
       let legendLabel = [],
         legendTick = [];
-      rects.splice(rects.indexOf(legendBar), 1);
       if (legendBar["width"] > legendBar["height"]) {
         allY = texts.map((text) => text["y"]);
         uniqueY = texts
@@ -343,15 +244,7 @@ function findLegend(texts, rects, lines, numOfColor) {
               legendBar["width"] + 20
           ) {
             legendLabel = texts4legend;
-            line4ticks = lines.filter(
-              (line) =>
-                line["x1"] == line["x2"] &&
-                line["x1"] >= legendBar["x"] - 10 &&
-                line["x1"] <= legendBar["x"] + legendBar["width"] + 10 &&
-                line["y1"] >= legendBar["y"] - 10 &&
-                line["y2"] <= legendBar["y"] + legendBar["height"] + 10
-            );
-            legendTick = line4ticks ? line4ticks : [];
+            legendTick = [];
             break;
           }
         }
@@ -382,23 +275,12 @@ function findLegend(texts, rects, lines, numOfColor) {
               legendBar["height"] + 20
           ) {
             legendLabel = texts4legend;
-            line4ticks = lines.filter(
-              (line) =>
-                line["y1"] == line["y2"] &&
-                line["y1"] >= legendBar["y"] - 10 &&
-                line["y1"] <= legendBar["y"] + legendBar["height"] + 10 &&
-                line["x1"] >= legendBar["x"] - 10 &&
-                line["x2"] <= legendBar["x"] + legendBar["width"] + 10
-            );
-            legendTick = line4ticks ? line4ticks : [];
+            legendTick = [];
             break;
           }
         }
       }
 
-      for (let line of legendTick) {
-        lines.splice(lines.indexOf(line), 1);
-      }
       for (let label of legendLabel) {
         texts.splice(texts.indexOf(label), 1);
       }
@@ -407,8 +289,6 @@ function findLegend(texts, rects, lines, numOfColor) {
       result["ticks"] = legendTick;
       result["labels"] = legendLabel;
       result["marks"] = [legendBar];
-      result["x"] = result["marks"][0].x;
-      result["y"] = result["marks"][0].y;
       result["orientation"] =
         result["marks"][0].width > result["marks"][0].height ? "horz" : "vert";
       return result;
@@ -419,26 +299,27 @@ function findLegend(texts, rects, lines, numOfColor) {
     candidateRects = [];
     // assuming the legend rects are square or circles
     for (let rect of rects) {
-      if (rect["width"] == rect["height"] || rect["tag"] == "circle") {
+      if (Math.abs(rect["width"] - rect["height"]) < 0.1) {
         candidateRects.push(rect);
       }
     }
     let alllegendElements = [],
       isLegend;
+    console.log(candidateRects);
     if (candidateRects != []) {
       // find any horizontal legend
-      allY = candidateRects.map((c) => c["y"]);
+      allY = candidateRects.map((c) => c["top"]);
       uniqueY = allY.filter(onlyUnique);
       for (let y of uniqueY) {
         if (countInArray(allY, y) >= 2) {
           // sort the texts
           rectOfy = rects
             .filter(function (rect) {
-              if (rect["y"] == y) return rect;
+              if (Math.abs(rect["top"] - y) < 1) return rect;
             })
-            .sort((a, b) => (a["x"] > b["x"] ? 1 : -1));
+            .sort((a, b) => (a["left"] > b["left"] ? 1 : -1));
           if (
-            rectOfy.map((r) => r["fill"]).filter(onlyUnique).length ==
+            rectOfy.map((r) => r.fill).filter(onlyUnique).length ==
             rectOfy.length
           ) {
             isLegend = true;
@@ -461,9 +342,10 @@ function findLegend(texts, rects, lines, numOfColor) {
             legendElements.push(rectOfy[rectOfy.length - 1]);
             lastText = texts.filter(
               (text) =>
-                Math.abs(text["y"] - legendElements[1]["y"]) < 10 &&
-                (text["x"] > legendElements[legendElements.length - 1]["x"] ||
-                  text["x"] < legendElements[0]["x"])
+                Math.abs(text["top"] - legendElements[1]["top"]) < 10 &&
+                (text["left"] >
+                  legendElements[legendElements.length - 1]["left"] ||
+                  text["left"] < legendElements[0]["left"])
             );
             legendElements.push(lastText[0]);
             alllegendElements = alllegendElements.concat(legendElements);
@@ -474,28 +356,20 @@ function findLegend(texts, rects, lines, numOfColor) {
       if (alllegendElements.length > 0) {
         result["type"] = "discrete";
         result["mapping"] = {};
-        result["labels"] = alllegendElements.filter((d) => d.tag == "text");
-        // legendArea.type = "discrete";
-        //legendArea.elements = [].concat(alllegendElements);
-        result["marks"] = alllegendElements.filter((d) => d.tag != "text");
+        result["labels"] = alllegendElements.filter((d) => d.tagName == "text");
+        result["marks"] = alllegendElements.filter((d) => d.tagName != "text");
         result["orientation"] = "horz";
-        //colorMapping = {};
         for (let i = 0; i < alllegendElements.length - 1; i += 2) {
-          // colorMapping[alllegendElements[i+1]['content']] = alllegendElements[i]['fill'];
           result["mapping"][alllegendElements[i + 1]["content"]] =
             alllegendElements[i]["fill"];
-          rects.splice(rects.indexOf(alllegendElements[i]), 1);
-          texts.splice(texts.indexOf(alllegendElements[i + 1]), 1);
         }
-        result["x"] = d3.min(result["marks"].map((d) => d.x));
-        result["y"] = d3.min(result["marks"].map((d) => d.y));
         return result;
         // calculating bounding box
       } else {
         LegendExist == false;
         // find any vertical legend
-        allX = texts.map((text) => text["x"]);
-        uniqueX = texts.map((text) => text["x"]).filter(onlyUnique);
+        allX = texts.map((text) => text["left"]);
+        uniqueX = texts.map((text) => text["left"]).filter(onlyUnique);
         // finding the legend area
         for (let x of uniqueX) {
           legendElements = [];
@@ -503,17 +377,17 @@ function findLegend(texts, rects, lines, numOfColor) {
             // sort the texts
             textOfx = texts
               .filter(function (text) {
-                if (text["x"] == x) return text;
+                if (Math.abs(text["left"] - x) < 1) return text;
               })
-              .sort((a, b) => (a["y"] > b["y"] ? 1 : -1));
+              .sort((a, b) => (a["top"] > b["top"] ? 1 : -1));
             isLegend = true;
             firstFinding = candidateRects.filter(function (rect) {
               if (
-                ((rect["x"] - textOfx[0]["right"] > 0 &&
-                  rect["x"] - textOfx[0]["right"] < 30) ||
-                  (textOfx[0]["x"] - rect["x"] > 0 &&
-                    textOfx[0]["x"] - rect["x"] < 30)) &&
-                Math.abs(rect["y"] - textOfx[0]["y"]) < 30
+                ((rect["left"] - textOfx[0]["right"] > 0 &&
+                  rect["left"] - textOfx[0]["right"] < 30) ||
+                  (textOfx[0]["left"] - rect["right"] > 0 &&
+                    textOfx[0]["left"] - rect["right"] < 30)) &&
+                Math.abs(rect["top"] - textOfx[0]["top"]) < 30
               ) {
                 return rect;
               }
@@ -522,17 +396,18 @@ function findLegend(texts, rects, lines, numOfColor) {
               continue;
             }
             legendElements = legendElements.concat(textOfx);
-            if (firstFinding.length > 1) {
+            if (firstFinding.length >= 1) {
               // firstFinding = firstFinding.sort((a, b) => (Math.abs(a['y'] - textOfx[0]['y']) > Math.abs(b['y'] - textOfx[0]['y'])) ? 1 : -1);
               firstFinding = firstFinding[0];
             }
-            findings = candidateRects.filter(function (rect) {
-              if (rect["x"] == firstFinding["x"]) {
-                return rect;
-              }
-            });
+            findings = candidateRects.filter(
+              (rect) =>
+                Math.abs(
+                  parseFloat(rect["left"]) - parseFloat(firstFinding["left"])
+                ) < 1
+            );
             if (
-              findings.length != textOfx.length ||
+              findings.length !== textOfx.length ||
               findings.map((r) => r["fill"]).filter(onlyUnique).length !==
                 findings.length
             ) {
@@ -550,24 +425,19 @@ function findLegend(texts, rects, lines, numOfColor) {
               // legendArea.type = "discrete";
               // legendArea.elements = legendArea.elements.concat(legendElements);
               //result['marks'] = result['marks'].concat(legendElements);
-              result["labels"] = legendElements.filter((d) => d.tag == "text");
-              result["marks"] = legendElements.filter((d) => d.tag != "text");
-              result["x"] = d3.min(result["marks"].map((d) => d.x));
-              result["y"] = d3.min(result["marks"].map((d) => d.y));
+              result["labels"] = legendElements.filter(
+                (d) => d.tagName == "text"
+              );
+              result["marks"] = legendElements.filter(
+                (d) => d.tagName != "text"
+              );
               // colorMapping = {};
               for (let i = 0; i < legendElements.length / 2; i += 1) {
                 // colorMapping[legendElements[i]['content']] = legendElements[i + legendElements.length / 2]['fill'];
                 result["mapping"][legendElements[i]["content"]] =
                   legendElements[i + legendElements.length / 2]["fill"];
-                rects.splice(
-                  rects.indexOf(legendElements[i + legendElements.length / 2]),
-                  1
-                );
-                texts.splice(texts.indexOf(legendElements[i]), 1);
               }
               return result;
-              // calculating bounding box
-              //rbox2Html = rbox2Html + "<rect x = '" + (x - 30) + "' y = '" + (legendElements[legendElements.length/2]['y'] - 10) + "' width='" + (legendElements[0]['x'] - legendElements[legendElements.length-1]['x'] + 100) +"' stroke='#CF27CF' stroke-width='3' stroke-dasharray='4' height='" + (legendElements[legendElements.length-1]['y'] - legendElements[0]['y'] + 50) + "' style='fill-opacity: 0;'' />";
             }
           }
         }
@@ -847,4 +717,46 @@ function findyAxis(texts, rects, lines, nodes, nodeIndex, xAxis) {
   yAxis["path"] = [];
 
   return yAxis;
+}
+
+function filterRect(rect) {
+  // consider stroke attrs
+  // are stoke and fill-in independent?
+  if (!rect["opacity"] || rect["opacity"] !== "0") {
+    if (rect["stroke"]) {
+      if (
+        rect["stroke"] !== "#ffffff" &&
+        rect["stroke"] !== "#FFFFFF" &&
+        rect["stroke"] !== "white" &&
+        rect["stroke"] !== "none" &&
+        rect["stroke"] !== "transparent" &&
+        rect["stroke"] !== "rgb(255, 255, 255)"
+      ) {
+        if (
+          (rect["stroke-width"]
+            ? !["0", "0px", "0%"].includes(removeSpace(rect["stroke-width"]))
+            : true) &&
+          (rect["stroke-opacity"]
+            ? parseFloat(rect["stroke-opacity"]) > 0.05
+            : true)
+        ) {
+          return rect;
+        }
+      }
+    }
+    if (!rect["fill-opacity"] || parseFloat(rect["fill-opacity"]) > 0.05) {
+      if (rect["tag"] == "circle" || !rect["fill"]) return rect;
+      if (
+        (rect["width"] < 2000 || rect["height"] < 2000) &&
+        rect["fill"] !== "#ffffff" &&
+        rect["fill"] !== "#FFFFFF" &&
+        rect["fill"] !== "white" &&
+        rect["fill"] !== "none" &&
+        rect["fill"] !== "transparent"
+      ) {
+        return rect;
+        // to-dos: to avoid deleting white rects in heatmaps or matrix charts
+      }
+    }
+  }
 }

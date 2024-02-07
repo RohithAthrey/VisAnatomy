@@ -279,7 +279,7 @@ function mode(arr) {
 function countInArray(array, what) {
   var count = 0;
   for (var i = 0; i < array.length; i++) {
-    if (array[i] === what) {
+    if (Math.abs(array[i] - what) < 1) {
       count++;
     }
   }
@@ -312,8 +312,8 @@ function findBetween(left, right, candidate) {
   if (!candidate || candidate.length == 0) return false;
   finding = candidate.filter(function (rect) {
     if (rect) {
-      if (rect["x"] > left["x"] && rect["x"] < right["x"]) {
-        if (Math.abs(rect["y"] - left["y"]) < 30) {
+      if (rect["left"] > left["left"] && rect["left"] < right["left"]) {
+        if (Math.abs(rect["top"] - left["top"]) < 30) {
           return rect;
         }
       }
@@ -323,7 +323,9 @@ function findBetween(left, right, candidate) {
     return false;
   } else {
     finding = finding.sort((a, b) =>
-      Math.abs(a["y"] - left["y"]) > Math.abs(b["y"] - left["y"]) ? 1 : -1
+      Math.abs(a["top"] - left["top"]) > Math.abs(b["top"] - left["top"])
+        ? 1
+        : -1
     );
     return finding[0];
   }
@@ -385,7 +387,7 @@ function textProcessor(texts) {
     text["opacity"] ? (text["opacity"] == 0 ? false : true) : true
   );
   texts = texts.filter(function (text) {
-    if (text["x"] > -50 && text["y"] > -50) return text;
+    if (text["left"] > -50 && text["left"] > -50) return text;
   }); // for the smallpox example, there are weird texts whose y is -9999
   for (let text of texts) {
     textElement = document.getElementById(text["id"]);
@@ -395,25 +397,25 @@ function textProcessor(texts) {
     if (text["text-anchor"]) {
       switch (text["text-anchor"]) {
         case "middle":
-          text["left"] = text["x"] - bbox.width / 2;
-          text["right"] = text["x"] + bbox.width / 2;
+          text["left"] = text["left"] - bbox.width / 2;
+          text["right"] = text["left"] + bbox.width / 2;
           break;
         case "end":
-          text["left"] = text["x"] - bbox.width;
-          text["right"] = text["x"];
+          text["left"] = text["left"] - bbox.width;
+          text["right"] = text["left"];
           break;
         case "start":
         default:
-          text["left"] = text["x"];
-          text["right"] = text["x"] + bbox.width;
+          text["left"] = text["left"];
+          text["right"] = text["left"] + bbox.width;
           break;
       }
     } else {
-      text["left"] = text["x"];
-      text["right"] = text["x"] + bbox.width;
+      text["left"] = text["left"];
+      text["right"] = text["left"] + bbox.width;
     }
-    text["top"] = text["y"] - bbox.height;
-    text["bottom"] = text["y"];
+    text["top"] = text["top"] - bbox.height;
+    text["bottom"] = text["bottom"];
   }
   texts = texts.sort((a, b) => (a["content"] > b["content"] ? 1 : -1));
   let results = [];
@@ -423,8 +425,8 @@ function textProcessor(texts) {
       results.filter(
         (r) =>
           r["content"] == texts[i]["content"] &&
-          r["x"] == texts[i]["x"] &&
-          r["y"] == texts[i]["y"] &&
+          r["left"] == texts[i]["left"] &&
+          r["top"] == texts[i]["top"] &&
           r["height"] == texts[i]["height"] &&
           r["width"] == texts[i]["width"]
       ).length > 0

@@ -44,7 +44,6 @@
     <script type="text/javascript" src="js/extract.js"></script>
     <script type="text/javascript" src="js/util.js"></script>
     <script type="text/javascript" src="js/preprocess-interaction.js"></script>
-    <script type="text/javascript" src="js/grouping.js"></script>
     <script type="text/javascript" src="js/markAnnotation.js"></script>
     <script type="text/javascript" src="js/groupAnnotation.js"></script>
     <script type="text/javascript" src="js/layoutAnnotation.js"></script>
@@ -1046,7 +1045,7 @@
         }
       }
 
-      var demoName, contentMarks, groupedGraphicsElement;
+      var demoName, contentMarks, groupedGraphicsElement, allGraphicsElement;
       var areaSelection;
       const fileName = sessionStorage.getItem("fileName");
       var mainChartMarks;
@@ -1071,9 +1070,8 @@
             displaySVG(rawSVG);
 
             // TBD: we need to update the flattenSVG function to be consistent with groupSVGElementsByType(), to avoid the previous complex lead-node processing
-            groupedGraphicsElement = groupLeftNodesByTag(
-              groupSVGElementsByTypeWithCoordinates()
-            );
+            allGraphicsElement = groupSVGElementsByTypeWithCoordinates();
+            groupedGraphicsElement = groupLeftNodesByTag(allGraphicsElement);
             console.log(groupedGraphicsElement);
 
             // in preprocess-interaction.js, attaching drag and drop event listeners to the svg text elements
@@ -1082,7 +1080,7 @@
             if (!annotationLoaded) {
               // in extract.js, extracting from the svg file the legend mark and labels, and the x and y axis labels, ticks, and paths if any, and the grid lines if any
               // extract() calls displayAxis() and displayLegend() to display the extracted elements
-              contentMarks = extract(groupedGraphicsElement);
+              contentMarks = extract();
             }
 
             // in display.js, setting a proper view box for the svg file so that the svg file fits into the browser window
