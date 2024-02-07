@@ -397,7 +397,6 @@ function findLegend(texts, rects, numOfColor) {
             }
             legendElements = legendElements.concat(textOfx);
             if (firstFinding.length >= 1) {
-              // firstFinding = firstFinding.sort((a, b) => (Math.abs(a['y'] - textOfx[0]['y']) > Math.abs(b['y'] - textOfx[0]['y'])) ? 1 : -1);
               firstFinding = firstFinding[0];
             }
             findings = candidateRects.filter(
@@ -420,20 +419,13 @@ function findLegend(texts, rects, numOfColor) {
               result["type"] = "discrete";
               result["mapping"] = {};
               result["orientation"] = "vert";
-              //result['x'] = x;
-              //result['marks'] = [];
-              // legendArea.type = "discrete";
-              // legendArea.elements = legendArea.elements.concat(legendElements);
-              //result['marks'] = result['marks'].concat(legendElements);
               result["labels"] = legendElements.filter(
                 (d) => d.tagName == "text"
               );
               result["marks"] = legendElements.filter(
                 (d) => d.tagName != "text"
               );
-              // colorMapping = {};
               for (let i = 0; i < legendElements.length / 2; i += 1) {
-                // colorMapping[legendElements[i]['content']] = legendElements[i + legendElements.length / 2]['fill'];
                 result["mapping"][legendElements[i]["content"]] =
                   legendElements[i + legendElements.length / 2]["fill"];
               }
