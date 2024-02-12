@@ -1072,7 +1072,7 @@
             // in display.js, adding id and class attributes to the svg file
             displaySVG(rawSVG);
 
-            // TBD: we need to update the flattenSVG function to be consistent with groupSVGElementsByType(), to avoid the previous complex lead-node processing
+            // get all basic graphic elements from the svg file
             groupSVGElementsByTypeWithCoordinates();
             console.log(groupedGraphicsElement);
 

@@ -101,15 +101,7 @@ function enableAreaSelection() {
             groupedGraphicsElement.texts
           );
         } else if (areaSelection == "legend") {
-          let rects = contentMarks.rects;
-          if (xAxis.path) rects = rects.concat([xAxis.path]);
-          if (yAxis.path) rects = rects.concat([yAxis.path]);
-          findLegendInArea(
-            topLeft,
-            btmRight,
-            contentMarks.texts.concat(xAxis.labels).concat(yAxis.labels),
-            rects
-          );
+          findLegendInArea(topLeft, btmRight, groupedGraphicsElement.texts);
         }
 
         displayAxis(xAxis);

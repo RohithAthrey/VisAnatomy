@@ -46,95 +46,82 @@ function extract() {
     }
   );
 
-  console.log(allGraphicsElement);
-
   return { rects: rects, texts: texts };
 }
 
-function findLegendInArea(tl, br, texts, rects) {
-  // TBD: need to update this
-  let labels = [],
-    marks = [];
+function findLegendInArea(tl, br, texts) {
+  // Below only works for discrete legends
+  let legendLabels = [],
+    legendMarks = [];
   for (let text of texts) {
-    let left = "left" in text ? text.left : text.x;
     if (
-      left >= tl.x &&
-      left + text.width <= br.x &&
-      text.y >= tl.y &&
-      text.y + text.height <= br.y
+      !(
+        text.left > br.x ||
+        text.right < tl.x ||
+        text.top > br.y ||
+        text.bottom < tl.y
+      )
     ) {
-      labels.push(text);
+      legendLabels.push(text);
+    }
+  }
+  if (legendLabels.length === 0) return;
+
+  ["rects", "circles", "paths"].forEach((tag) => {
+    let marksInArea = groupedGraphicsElement[tag]
+      ? groupedGraphicsElement[tag].filter((mark) => {
+          if (
+            !(
+              mark.left > br.x ||
+              mark.right < tl.x ||
+              mark.top > br.y ||
+              mark.bottom < tl.y
+            ) &&
+            mark.fill
+          ) {
+            return true;
+          }
+        })
+      : [];
+    if (marksInArea.length === legendLabels.length) {
+      legendMarks = marksInArea;
+    }
+  });
+
+  legendLabels.sort((a, b) => a.y - b.y).sort((a, b) => a.x - b.x);
+  legendMarks.sort((a, b) => a.y - b.y).sort((a, b) => a.x - b.x);
+  let result = {
+    labels: legendLabels,
+    marks: legendMarks,
+    type: "discrete",
+    orientation: "horz",
+    mapping: {},
+  };
+
+  if (legendMarks) {
+    for (let i = 0; i < legendLabels.length; i++) {
+      result.mapping[legendLabels[i].content] = legendMarks[i].fill;
     }
   }
 
-  if (labels.length == 0) return;
-
-  for (let r of rects) {
-    if (
-      r.x >= tl.x &&
-      r.x + r.width <= br.x &&
-      r.y >= tl.y &&
-      r.y + r.height <= br.y
-    ) {
-      marks.push(r);
-    }
-  }
-  let result = { labels: labels, marks: marks };
-
-  //todo: find ticks
-  if (marks.length == 1) result["type"] = "continuous";
-  else result["type"] = "discrete";
-
-  //todo: determine orientation and mapping
-  let left = d3.min(labels.map((d) => ("left" in d ? d.left : d.x))),
-    right = d3.max(
-      labels.map((d) => ("left" in d ? d.left + d.width : d.x + d.width))
-    ),
-    top = d3.min(labels.map((d) => d.y)),
-    btm = d3.max(labels.map((d) => d.y + d.height));
-  let xDiffs = labels.map((d) =>
-      "left" in d ? Math.abs(d.left - left) : Math.abs(d.x - left)
-    ),
-    yDiffs = labels.map((d) => Math.abs(d.y - btm));
-  if (d3.sum(xDiffs) < d3.sum(yDiffs)) {
-    result["orientation"] = "vert";
-    if ((result["type"] = "discrete")) {
-      labels.sort((a, b) => a.y - b.y);
-      marks.sort((a, b) => a.y - b.y);
-      result.mapping = {};
-      for (let i = 0; i < labels.length; i++) {
-        result.mapping[labels[i].content] = marks[i] ? marks[i].fill : "white";
-      }
-    }
-  } else {
-    result["orientation"] = "horz";
-    if ((result["type"] = "discrete")) {
-      labels.sort((a, b) => a.x - b.x);
-      marks.sort((a, b) => a.x - b.x);
-      result.mapping = {};
-      for (let i = 0; i < labels.length; i++) {
-        result.mapping[labels[i].content] = marks[i] ? marks[i].fill : "white";
-      }
-    }
-  }
-  result["x"] = d3.min(result["marks"].map((d) => d.x));
-  result["y"] = d3.min(result["marks"].map((d) => d.y));
+  result.orientation =
+    legendMarks.map((m) => m.left).filter(onlyUnique).length >
+    legendMarks.map((m) => m.top).filter(onlyUnique).length
+      ? "horz"
+      : "vert";
 
   legend = result;
-  console.log(legend);
 
-  for (let l of labels) {
-    if (contentMarks.texts.indexOf(l) >= 0)
-      contentMarks.texts.splice(contentMarks.texts.indexOf(l), 1);
+  for (let l of legendLabels) {
+    allGraphicsElement[l.id].hasARole = true;
     if (xAxis.labels.indexOf(l) >= 0)
       xAxis.labels.splice(xAxis.labels.indexOf(l), 1);
     if (yAxis.labels.indexOf(l) >= 0)
       yAxis.labels.splice(yAxis.labels.indexOf(l), 1);
   }
 
-  for (let r of marks) {
-    if (contentMarks.rects.indexOf(r) >= 0)
-      contentMarks.rects.splice(contentMarks.rects.indexOf(r), 1);
+  for (let r of legendMarks) {
+    allGraphicsElement[r.id].hasARole = true;
   }
 }
 
