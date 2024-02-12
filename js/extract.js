@@ -40,6 +40,14 @@ function extract() {
   console.log("y axis", yAxis);
   displayAxis(yAxis);
 
+  [...legend.labels, ...legend.marks, ...xAxis.labels, ...yAxis.labels].forEach(
+    (label) => {
+      allGraphicsElement[label.id].hasARole = true;
+    }
+  );
+
+  console.log(allGraphicsElement);
+
   return { rects: rects, texts: texts };
 }
 
@@ -375,15 +383,17 @@ function findLegend(texts, rects, numOfColor) {
   return { labels: [], marks: [] };
 }
 
-function findAxisInArea(o, tl, br, texts, rects, lines) {
+function findAxisInArea(o, tl, br, texts) {
   let labels = [];
   for (let text of texts) {
-    let left = "left" in text ? text.left : text.x;
+    let left = text.left;
     if (
-      left >= tl.x &&
-      left + text.width <= br.x &&
-      text.y >= tl.y &&
-      text.y + text.height <= br.y
+      !(
+        text.left > br.x ||
+        text.right < tl.x ||
+        text.top > br.y ||
+        text.bottom < tl.y
+      )
     ) {
       labels.push(text);
     }
@@ -399,54 +409,26 @@ function findAxisInArea(o, tl, br, texts, rects, lines) {
   //remove from main content and the other axis/legend
   let otherAxis = o == "y" ? xAxis : yAxis;
   for (let l of labels) {
-    if (contentMarks.texts.indexOf(l) >= 0)
-      contentMarks.texts.splice(contentMarks.texts.indexOf(l), 1);
+    allGraphicsElement[l.id].hasARole = true;
     if (otherAxis.labels.indexOf(l) >= 0)
       otherAxis.labels.splice(otherAxis.labels.indexOf(l), 1);
     if (legend.labels.indexOf(l) >= 0)
       legend.labels.splice(legend.labels.indexOf(l), 1);
   }
 
-  //todo: find axis path and ticks
-  let candidateLines = [],
-    ticks = [],
-    path;
-  for (let l of lines) {
-    if (l.x1 >= tl.x && l.x2 <= br.x) {
-      candidateLines.push(l);
-    }
-  }
-  if (o == "x") {
-    for (let l of candidateLines) {
-      if (l.x1 == l.x2) {
-        ticks.push(l);
-        lines.splice(lines.indexOf(l), 1);
-      }
-      if (l.y1 == l.y2) {
-        path = l;
-        lines.splice(lines.indexOf(l), 1);
-      }
-    }
-  } else if (o == "y") {
-    for (let l of candidateLines) {
-      if (l.y1 == l.y2) {
-        ticks.push(l);
-        lines.splice(lines.indexOf(l), 1);
-      }
-      if (l.x1 == l.x2) {
-        path = l;
-        lines.splice(lines.indexOf(l), 1);
-      }
-    }
-  }
-  axis.ticks = ticks;
-  axis.path = path;
+  // we leave the ticks and path to the mark annotation stage
 }
 
 function findxAxis(texts) {
   // find the set of texts whose y coordinates are very close and they form the largest set among all possible sets
   let allY = texts.map((text) => text["top"]).filter(onlyUnique);
-  let xAxis = { labels: [], type: "x", ticks: [], path: [] };
+  let xAxis = {
+    labels: [],
+    type: "x",
+    ticks: [],
+    path: [],
+    fieldType: undefined,
+  };
   for (let y of allY) {
     let thisLabels = texts.filter((text) => Math.abs(text["top"] - y) <= 1);
     let leftout = texts.filter(
@@ -467,7 +449,13 @@ function findxAxis(texts) {
 function findyAxis(texts) {
   // find the set of texts whose y coordinates are very close and they form the largest set among all possible sets
   let allX = texts.map((text) => text["left"]).filter(onlyUnique);
-  let yAxis = { labels: [], type: "y", ticks: [], path: [] };
+  let yAxis = {
+    labels: [],
+    type: "y",
+    ticks: [],
+    path: [],
+    fieldType: undefined,
+  };
   for (let x of allX) {
     let thisLabels = texts.filter((text) => Math.abs(text["left"] - x) <= 1);
     let leftout = texts.filter(

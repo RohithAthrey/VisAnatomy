@@ -98,9 +98,7 @@ function enableAreaSelection() {
             areaSelection,
             topLeft,
             btmRight,
-            contentMarks.texts,
-            contentMarks.rects,
-            contentMarks.lines
+            groupedGraphicsElement.texts
           );
         } else if (areaSelection == "legend") {
           let rects = contentMarks.rects;

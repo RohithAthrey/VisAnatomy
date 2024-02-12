@@ -1045,7 +1045,10 @@
         }
       }
 
-      var demoName, contentMarks, groupedGraphicsElement, allGraphicsElement;
+      var demoName,
+        contentMarks,
+        groupedGraphicsElement = {},
+        allGraphicsElement = {};
       var areaSelection;
       const fileName = sessionStorage.getItem("fileName");
       var mainChartMarks;
@@ -1070,8 +1073,7 @@
             displaySVG(rawSVG);
 
             // TBD: we need to update the flattenSVG function to be consistent with groupSVGElementsByType(), to avoid the previous complex lead-node processing
-            allGraphicsElement = groupSVGElementsByTypeWithCoordinates();
-            groupedGraphicsElement = groupLeftNodesByTag(allGraphicsElement);
+            groupSVGElementsByTypeWithCoordinates();
             console.log(groupedGraphicsElement);
 
             // in preprocess-interaction.js, attaching drag and drop event listeners to the svg text elements

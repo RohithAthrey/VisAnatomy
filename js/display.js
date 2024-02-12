@@ -92,9 +92,9 @@ function displayAxis(axis) {
   } else {
     type = typeByAtlas(_inferType(labels.map((xl) => xl.content)));
   }
-  if (axis.fieldType) {
-    type = axis.fieldType;
-  }
+
+  axis.fieldType = type;
+
   d3.select("#" + axis.type + "FieldType").property("value", type);
 
   labels = labels.sort((a, b) =>
@@ -560,7 +560,7 @@ function setViewBox() {
 }
 
 function getViewBox() {
-  let allBBoxes = groupSVGElementsByTypeWithCoordinates();
+  let allBBoxes = Object.values(allGraphicsElement);
   return {
     left: allBBoxes.map((bbox) => bbox.left).reduce((a, b) => Math.min(a, b)),
     top: allBBoxes.map((bbox) => bbox.top).reduce((a, b) => Math.min(a, b)),

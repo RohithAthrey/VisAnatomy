@@ -53,8 +53,6 @@ function groupSVGElementsByTypeWithCoordinates() {
     (element) => graphicsElementTypes.includes(element.tagName) // here we use all nodes other than leaf nodes because there are rare cases where <rect> is not a leaf node like the example in https://observablehq.com/@d3/diverging-bar-chart
   );
 
-  const groupedElements = [];
-
   const svgElement = tempDiv.querySelector("svg");
   const svgBBox = svgElement.getBoundingClientRect();
 
@@ -71,7 +69,7 @@ function groupSVGElementsByTypeWithCoordinates() {
     let zeroHeight = element.attributes.height?.value === "0";
 
     if (!(zeroHeight || zeroWidth) && top > -1000 && left > -1000) {
-      groupedElements.push({
+      allGraphicsElement[element.id] = {
         left: left,
         top: top,
         right: right,
@@ -81,13 +79,46 @@ function groupSVGElementsByTypeWithCoordinates() {
         id: element.id,
         tagName: element.tagName,
         content:
-          element.tagName === "text" ? element.textContent : element.innerHTML,
+          element.tagName === "text" ? element.textContent : element.innerHTML, // TBD: need to get text content more accurately, e.g., in grouped bar chart 6
         fill: element.attributes.fill?.value,
-      });
+        hasARole: false,
+      };
+      if (Object.keys(groupedGraphicsElement).includes(element.tagName + "s"))
+        groupedGraphicsElement[element.tagName + "s"].push({
+          left: left,
+          top: top,
+          right: right,
+          bottom: bottom,
+          height: bbox.height,
+          width: bbox.width,
+          id: element.id,
+          tagName: element.tagName,
+          content:
+            element.tagName === "text"
+              ? element.textContent
+              : element.innerHTML, // TBD: need to get text content more accurately, e.g., in grouped bar chart 6
+          fill: element.attributes.fill?.value,
+        });
+      else
+        groupedGraphicsElement[element.tagName + "s"] = [
+          {
+            left: left,
+            top: top,
+            right: right,
+            bottom: bottom,
+            height: bbox.height,
+            width: bbox.width,
+            id: element.id,
+            tagName: element.tagName,
+            content:
+              element.tagName === "text"
+                ? element.textContent
+                : element.innerHTML, // TBD: need to get text content more accurately, e.g., in grouped bar chart 6
+            fill: element.attributes.fill?.value,
+          },
+        ];
     }
   });
-
-  return groupedElements;
 }
 
 function groupSVGElementsByType() {
