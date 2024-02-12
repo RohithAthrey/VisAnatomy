@@ -41,12 +41,12 @@ function extract() {
   displayAxis(yAxis);
 
   [...legend.labels, ...legend.marks, ...xAxis.labels, ...yAxis.labels].forEach(
-    (label) => {
-      allGraphicsElement[label.id].hasARole = true;
+    (object) => {
+      allGraphicsElement[object.id].isReferenceElement = true;
     }
   );
 
-  return { rects: rects, texts: texts };
+  console.log("allGraphicsElement", allGraphicsElement);
 }
 
 function findLegendInArea(tl, br, texts) {
@@ -77,8 +77,13 @@ function findLegendInArea(tl, br, texts) {
               mark.top > br.y ||
               mark.bottom < tl.y
             ) &&
-            mark.fill
+            mark.fill !== undefined &&
+            mark.fill !== null &&
+            mark.fill !== "" &&
+            mark.fill !== "none" &&
+            mark.fill !== "transparent"
           ) {
+            console.log(mark, mark.fill);
             return true;
           }
         })
@@ -98,7 +103,9 @@ function findLegendInArea(tl, br, texts) {
     mapping: {},
   };
 
-  if (legendMarks) {
+  if (legendMarks.length > 0) {
+    // TBD: consider display info for legend marks and labels in the UI
+    console.log(legendMarks, legendLabels);
     for (let i = 0; i < legendLabels.length; i++) {
       result.mapping[legendLabels[i].content] = legendMarks[i].fill;
     }
@@ -113,7 +120,7 @@ function findLegendInArea(tl, br, texts) {
   legend = result;
 
   for (let l of legendLabels) {
-    allGraphicsElement[l.id].hasARole = true;
+    allGraphicsElement[l.id].isReferenceElement = true;
     if (xAxis.labels.indexOf(l) >= 0)
       xAxis.labels.splice(xAxis.labels.indexOf(l), 1);
     if (yAxis.labels.indexOf(l) >= 0)
@@ -121,7 +128,7 @@ function findLegendInArea(tl, br, texts) {
   }
 
   for (let r of legendMarks) {
-    allGraphicsElement[r.id].hasARole = true;
+    allGraphicsElement[r.id].isReferenceElement = true;
   }
 }
 
@@ -396,7 +403,7 @@ function findAxisInArea(o, tl, br, texts) {
   //remove from main content and the other axis/legend
   let otherAxis = o == "y" ? xAxis : yAxis;
   for (let l of labels) {
-    allGraphicsElement[l.id].hasARole = true;
+    allGraphicsElement[l.id].isReferenceElement = true;
     if (otherAxis.labels.indexOf(l) >= 0)
       otherAxis.labels.splice(otherAxis.labels.indexOf(l), 1);
     if (legend.labels.indexOf(l) >= 0)

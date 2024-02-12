@@ -410,6 +410,7 @@
                     <option value="Y Axis Tick">Y Axis Tick</option>
                     <option value="Legend Mark">Legend Mark</option>
                     <option value="Legend Label">Legend Label</option>
+                    <option value="Legend Tick">Legend Tick</option>
                     <option value="Noise">Noise</option>
                   </select>
                 </div>
@@ -966,7 +967,7 @@
             });
             d3.select("#container").style("height", "calc(100% - 75px)");
 
-            // remove all reference elements from contentMarks
+            // remove all reference elements from the svg
             mainContentElements = groupSVGElementsByType();
 
             // below for initilizing the mark annotation
@@ -1045,10 +1046,7 @@
         }
       }
 
-      var demoName,
-        contentMarks,
-        groupedGraphicsElement = {},
-        allGraphicsElement = {};
+      var demoName, contentMarks, groupedGraphicsElement, allGraphicsElement;
       var areaSelection;
       const fileName = sessionStorage.getItem("fileName");
       var mainChartMarks;
@@ -1074,16 +1072,13 @@
 
             // get all basic graphic elements from the svg file
             groupSVGElementsByTypeWithCoordinates();
-            console.log(groupedGraphicsElement);
+            if (!annotationLoaded) {
+              // extract() calls displayAxis() and displayLegend() to display the extracted elements
+              extract();
+            }
 
             // in preprocess-interaction.js, attaching drag and drop event listeners to the svg text elements
             enableDragDrop(groupedGraphicsElement.texts);
-
-            if (!annotationLoaded) {
-              // in extract.js, extracting from the svg file the legend mark and labels, and the x and y axis labels, ticks, and paths if any, and the grid lines if any
-              // extract() calls displayAxis() and displayLegend() to display the extracted elements
-              contentMarks = extract();
-            }
 
             // in display.js, setting a proper view box for the svg file so that the svg file fits into the browser window
             setViewBox();

@@ -81,7 +81,7 @@ function groupSVGElementsByTypeWithCoordinates() {
         content:
           element.tagName === "text" ? element.textContent : element.innerHTML, // TBD: need to get text content more accurately, e.g., in grouped bar chart 6
         fill: element.attributes.fill?.value,
-        hasARole: false,
+        isReferenceElement: false,
       };
       if (Object.keys(groupedGraphicsElement).includes(element.tagName + "s"))
         groupedGraphicsElement[element.tagName + "s"].push({

@@ -135,7 +135,6 @@ function save() {
     xAxis: xAxis,
     yAxis: yAxis,
     legend: legend,
-    contentMarks: contentMarks,
   };
   var file = new Blob([JSON.stringify(result)], { type: "json" });
   if (window.navigator.msSaveOrOpenBlob)
@@ -402,14 +401,12 @@ function addAxisLabel(TargetID, text) {
   } else {
     if (axis["labels"].indexOf(text) < 0) axis["labels"].push(text);
   }
-  if (contentMarks.texts.indexOf(text) >= 0)
-    contentMarks.texts.splice(contentMarks.texts.indexOf(text), 1);
+  allGraphicsElement[text.id].isReferenceElement = true;
 }
 
 function addLegendLabel(text) {
   if (legend["labels"].indexOf(text) < 0) legend["labels"].push(text);
-  if (contentMarks.texts.indexOf(text) >= 0)
-    contentMarks.texts.splice(contentMarks.texts.indexOf(text), 1);
+  allGraphicsElement[text.id].isReferenceElement = true;
 }
 
 function moveAxisLabel(fromID, toID, text) {
@@ -438,14 +435,14 @@ function removeAxisLabel(fromID, text) {
       if (level.indexOf(text) >= 0) level.splice(level.indexOf(text), 1);
     }
   }
-  contentMarks.texts.push(text);
+  allGraphicsElement[text.id].isReferenceElement = false;
 }
 
 function removeLegendLabel(text) {
   if (legend["labels"].indexOf(text) >= 0) {
     legend["labels"].splice(legend["labels"].indexOf(text), 1);
   }
-  contentMarks.texts.push(text);
+  allGraphicsElement[text.id].isReferenceElement = false;
 }
 
 function enableDragDrop(texts) {

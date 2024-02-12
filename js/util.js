@@ -42,11 +42,12 @@ function tryLoadAnnotations(filename) {
       // testing annotation was loaded
       console.log("loaded annotations", annotations);
 
-      // alertBox.textContent =
-      //   "Annotations loaded from: 'annotations / " + filename + ".json'!";
-      // alertBox.style.visibility = "visible";
-      // alertBox.style.opacity = "1";
-      // update the values and the display boxes
+      allGraphicsElement = annotations.allGraphicsElement
+        ? annotations.allGraphicsElement
+        : {};
+      groupedGraphicsElement = annotations.groupedGraphicsElement
+        ? annotations.groupedGraphicsElement
+        : {};
       xAxis = annotations.referenceElement.xAxis;
       yAxis = annotations.referenceElement.yAxis;
       legend = annotations.referenceElement.legend;
@@ -62,7 +63,6 @@ function tryLoadAnnotations(filename) {
         ? annotations.encodingInfo
         : {};
       chartTitle = annotations.chartTitle ? annotations.chartTitle : [];
-      contentMarks = annotations.contentMarks ? annotations.contentMarks : [];
       titleLegend = annotations.referenceElement.legend.title
         ? annotations.referenceElement.legend.title
         : [];
@@ -116,8 +116,27 @@ function post() {
   };
   let data = {};
 
-  annotations.chartTitle = chartTitle;
-  annotations.contentMarks = contentMarks;
+  [
+    legend.marks,
+    legend.labels,
+    legend.title,
+    xAxis.labels,
+    yAxis.labels,
+    xAxis.title,
+    yAxis.title,
+  ].forEach((object) => {
+    if (!object) return;
+    if (object.length > 0) {
+      object.forEach((element) => {
+        allGraphicsElement[element.id].isReferenceElement = true;
+      });
+    }
+  });
+  annotations.allGraphicsElement = allGraphicsElement;
+  annotations.groupedGraphicsElement = groupedGraphicsElement;
+  annotations.chartTitle = chartTitle.map(
+    (title) => allGraphicsElement[title.id]
+  );
   annotations.markInfo = markInfo;
   annotations.groupInfo = groupAnnotations;
   annotations.nestedGrouping = nestedGrouping;
@@ -139,7 +158,8 @@ function post() {
   xAxis.ticks = Object.keys(markInfo).filter(
     (mark) => markInfo[mark].Role === "X Axis Tick"
   );
-  xAxis.title = titleXaxis;
+  xAxis.title = titleXaxis.map((title) => allGraphicsElement[title.id]);
+  xAxis.labels = xAxis.labels.map((label) => allGraphicsElement[label.id]);
   annotations.referenceElement["xAxis"] = xAxis;
 
   // complete y axis elements
@@ -149,12 +169,30 @@ function post() {
   yAxis.ticks = Object.keys(markInfo).filter(
     (mark) => markInfo[mark].Role === "Y Axis Tick"
   );
-  yAxis.title = titleYaxis;
+  yAxis.title = titleXaxis.map((title) => allGraphicsElement[title.id]);
+  yAxis.labels = yAxis.labels.map((label) => allGraphicsElement[label.id]);
   annotations.referenceElement["yAxis"] = yAxis;
 
   // complete legend elements
   legend.title = titleLegend;
+  // TBD: need to keep an eye on the legend info when annotating
+  legend.ticks = Object.keys(markInfo).filter(
+    (mark) => markInfo[mark].Role === "Legend Tick"
+  );
+  legend.marks = legend.marks.map((mark) => allGraphicsElement[mark.id]);
+  legend.labels = legend.labels.map((label) => allGraphicsElement[label.id]);
+  legend.marks.push(
+    ...Object.keys(markInfo).filter(
+      (mark) => markInfo[mark].Role === "Legend Mark"
+    )
+  );
+  legend.labels.push(
+    ...Object.keys(markInfo).filter(
+      (mark) => markInfo[mark].Role === "Legend Label"
+    )
+  );
   annotations.referenceElement["legend"] = legend;
+  delete annotations.contentMarks;
 
   data["chart"] = sessionStorage.getItem("fileName");
   data["annotations"] = annotations;
