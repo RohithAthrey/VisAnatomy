@@ -160,6 +160,8 @@ function post() {
   );
   xAxis.title = titleXaxis.map((title) => allGraphicsElement[title.id]);
   xAxis.labels = xAxis.labels.map((label) => allGraphicsElement[label.id]);
+  xAxis.fieldType = d3.select("#xFieldType").property("value");
+  console.log(xAxis);
   annotations.referenceElement["xAxis"] = xAxis;
 
   // complete y axis elements
@@ -169,8 +171,9 @@ function post() {
   yAxis.ticks = Object.keys(markInfo).filter(
     (mark) => markInfo[mark].Role === "Y Axis Tick"
   );
-  yAxis.title = titleXaxis.map((title) => allGraphicsElement[title.id]);
+  yAxis.title = titleYaxis.map((title) => allGraphicsElement[title.id]);
   yAxis.labels = yAxis.labels.map((label) => allGraphicsElement[label.id]);
+  yAxis.fieldType = d3.select("#yFieldType").property("value");
   annotations.referenceElement["yAxis"] = yAxis;
 
   // complete legend elements

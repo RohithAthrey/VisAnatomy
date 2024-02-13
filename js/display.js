@@ -87,13 +87,16 @@ function displayAxis(axis) {
 
   let labels = axis["labels"];
   let type;
-  if (labels.length === 0) {
-    type = "Null";
+  if (axis.fieldType !== "Null") {
+    type = axis.fieldType;
   } else {
-    type = typeByAtlas(_inferType(labels.map((xl) => xl.content)));
+    if (labels.length === 0) {
+      type = "Null";
+    } else {
+      type = typeByAtlas(_inferType(labels.map((xl) => xl.content)));
+    }
+    axis.fieldType = type;
   }
-
-  axis.fieldType = type;
 
   d3.select("#" + axis.type + "FieldType").property("value", type);
 

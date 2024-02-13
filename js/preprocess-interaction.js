@@ -30,22 +30,32 @@ function addAxisLevel(t) {
 
 function fieldTypeChanged(xy) {
   let val = d3.select("#" + xy + "FieldType").property("value");
-  let axis = xy == "x" ? xAxis : yAxis;
-  if (val == "Null") {
-    undoStack.push({
-      xAxis: duplicate(xAxis),
-      yAxis: duplicate(yAxis),
-      legend: duplicate(legend),
-      btnCheck: Object.assign({}, btnCheck),
-    });
-    let labels = axis.labels.map((d) => d);
-    for (let l of labels) {
-      removeAxisLabel(xy + "Labels", l);
-    }
-    axis.ticks = [];
-    displayAxis(axis);
+  switch (xy) {
+    case "x":
+      if (val == "Null") {
+        let labels = xAxis.labels.map((d) => d);
+        for (let l of labels) {
+          removeAxisLabel(xy + "Labels", l);
+        }
+        xAxis.ticks = [];
+        displayAxis(xAxis);
+      }
+      xAxis.fieldType = val;
+      console.log(xAxis);
+      break;
+    case "y":
+      if (val == "Null") {
+        let labels = yAxis.labels.map((d) => d);
+        for (let l of labels) {
+          removeAxisLabel(xy + "Labels", l);
+        }
+        yAxis.ticks = [];
+        displayAxis(yAxis);
+      }
+      yAxis.fieldType = val;
+      console.log(yAxis);
+      break;
   }
-  axis.fieldType = val;
 }
 
 function enableAreaSelection() {

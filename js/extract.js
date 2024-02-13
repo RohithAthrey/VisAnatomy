@@ -5,7 +5,6 @@ function extract() {
   let rects = groupedGraphicsElement["rects"]
     ? groupedGraphicsElement["rects"]
     : [];
-  let originalRects = [...rects];
   rects = rects.filter(filterRect);
 
   let texts = textProcessor([...groupedGraphicsElement["texts"]]);
@@ -30,13 +29,13 @@ function extract() {
   texts = texts.filter((text) => !legend.labels.includes(text));
 
   // X axis
-  xAxis = findxAxis(texts);
+  var xAxis = findxAxis(texts);
   console.log("x axis", xAxis);
   displayAxis(xAxis);
   texts = texts.filter((text) => !xAxis.labels.includes(text));
 
   // Y axis
-  yAxis = findyAxis(texts);
+  var yAxis = findyAxis(texts);
   console.log("y axis", yAxis);
   displayAxis(yAxis);
 
