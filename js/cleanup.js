@@ -79,7 +79,9 @@ function groupSVGElementsByTypeWithCoordinates() {
         id: element.id,
         tagName: element.tagName,
         content:
-          element.tagName === "text" ? element.textContent : element.innerHTML, // TBD: need to get text content more accurately, e.g., in grouped bar chart 6
+          element.tagName === "text"
+            ? element.textContent.trim()
+            : element.innerHTML.trim(), // TBD: need to get text content more accurately, e.g., in grouped bar chart 6
         fill: element.attributes.fill
           ? element.attributes.fill.value
           : addStyleAttributesToElement(
@@ -99,8 +101,8 @@ function groupSVGElementsByTypeWithCoordinates() {
           tagName: element.tagName,
           content:
             element.tagName === "text"
-              ? element.textContent
-              : element.innerHTML, // TBD: need to get text content more accurately, e.g., in grouped bar chart 6
+              ? element.textContent.trim()
+              : element.innerHTML.trim(), // TBD: need to get text content more accurately, e.g., in grouped bar chart 6
           fill: element.attributes.fill
             ? element.attributes.fill.value
             : addStyleAttributesToElement(
@@ -120,8 +122,8 @@ function groupSVGElementsByTypeWithCoordinates() {
             tagName: element.tagName,
             content:
               element.tagName === "text"
-                ? element.textContent
-                : element.innerHTML, // TBD: need to get text content more accurately, e.g., in grouped bar chart 6
+                ? element.textContent.trim()
+                : element.innerHTML.trim(), // TBD: need to get text content more accurately, e.g., in grouped bar chart 6
             fill: element.attributes.fill
               ? element.attributes.fill.value
               : addStyleAttributesToElement(

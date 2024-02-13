@@ -134,9 +134,12 @@ function post() {
   });
   annotations.allGraphicsElement = allGraphicsElement;
   annotations.groupedGraphicsElement = groupedGraphicsElement;
-  annotations.chartTitle = chartTitle.map(
-    (title) => allGraphicsElement[title.id]
-  );
+  annotations.chartTitle =
+    chartTitle.length > 0
+      ? chartTitle.map((title) => allGraphicsElement[title.id])
+      : Object.keys(markInfo).filter(
+          (mark) => markInfo[mark].Role === "Chart Title"
+        );
   annotations.markInfo = markInfo;
   annotations.groupInfo = groupAnnotations;
   annotations.nestedGrouping = nestedGrouping;
