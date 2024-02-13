@@ -80,7 +80,11 @@ function groupSVGElementsByTypeWithCoordinates() {
         tagName: element.tagName,
         content:
           element.tagName === "text" ? element.textContent : element.innerHTML, // TBD: need to get text content more accurately, e.g., in grouped bar chart 6
-        fill: element.attributes.fill?.value,
+        fill: element.attributes.fill
+          ? element.attributes.fill.value
+          : addStyleAttributesToElement(
+              document.getElementById(element.id)
+            ).getAttribute("fill"),
         isReferenceElement: false,
       };
       if (Object.keys(groupedGraphicsElement).includes(element.tagName + "s"))
@@ -97,7 +101,11 @@ function groupSVGElementsByTypeWithCoordinates() {
             element.tagName === "text"
               ? element.textContent
               : element.innerHTML, // TBD: need to get text content more accurately, e.g., in grouped bar chart 6
-          fill: element.attributes.fill?.value,
+          fill: element.attributes.fill
+            ? element.attributes.fill.value
+            : addStyleAttributesToElement(
+                document.getElementById(element.id)
+              ).getAttribute("fill"),
         });
       else
         groupedGraphicsElement[element.tagName + "s"] = [

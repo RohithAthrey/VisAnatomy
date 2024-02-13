@@ -174,23 +174,25 @@ function post() {
   annotations.referenceElement["yAxis"] = yAxis;
 
   // complete legend elements
-  legend.title = titleLegend;
+  legend.title = titleLegend.map((title) => allGraphicsElement[title.id]);
   // TBD: need to keep an eye on the legend info when annotating
   legend.ticks = Object.keys(markInfo).filter(
     (mark) => markInfo[mark].Role === "Legend Tick"
   );
   legend.marks = legend.marks.map((mark) => allGraphicsElement[mark.id]);
   legend.labels = legend.labels.map((label) => allGraphicsElement[label.id]);
-  legend.marks.push(
-    ...Object.keys(markInfo).filter(
-      (mark) => markInfo[mark].Role === "Legend Mark"
-    )
-  );
-  legend.labels.push(
-    ...Object.keys(markInfo).filter(
-      (mark) => markInfo[mark].Role === "Legend Label"
-    )
-  );
+  // legend.marks = legend.marks.push(
+  //   ...Object.keys(markInfo)
+  //     .filter((mark) => markInfo[mark].Role === "Legend Mark")
+  //     .map((mark) => allGraphicsElement[mark])
+  // );
+  // legend.marks = legend.marks.filter(onlyUnique);
+  // legend.labels = legend.labels.push(
+  //   ...Object.keys(markInfo)
+  //     .filter((mark) => markInfo[mark].Role === "Legend Label")
+  //     .map((mark) => allGraphicsElement[mark])
+  // );
+  // legend.labels = legend.labels.filter(onlyUnique);
   annotations.referenceElement["legend"] = legend;
   delete annotations.contentMarks;
 

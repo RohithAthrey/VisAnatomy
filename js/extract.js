@@ -83,7 +83,6 @@ function findLegendInArea(tl, br, texts) {
             mark.fill !== "none" &&
             mark.fill !== "transparent"
           ) {
-            console.log(mark, mark.fill);
             return true;
           }
         })
