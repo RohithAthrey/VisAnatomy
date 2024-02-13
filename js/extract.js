@@ -29,13 +29,13 @@ function extract() {
   texts = texts.filter((text) => !legend.labels.includes(text));
 
   // X axis
-  var xAxis = findxAxis(texts);
+  xAxis = findxAxis(texts);
   console.log("x axis", xAxis);
   displayAxis(xAxis);
   texts = texts.filter((text) => !xAxis.labels.includes(text));
 
   // Y axis
-  var yAxis = findyAxis(texts);
+  yAxis = findyAxis(texts);
   console.log("y axis", yAxis);
   displayAxis(yAxis);
 
@@ -80,7 +80,11 @@ function findLegendInArea(tl, br, texts) {
             mark.fill !== null &&
             mark.fill !== "" &&
             mark.fill !== "none" &&
-            mark.fill !== "transparent"
+            mark.fill !== "transparent" &&
+            mark.fill !== "rgb(255, 255, 255)" &&
+            mark.fill !== "#ffffff" &&
+            mark.fill !== "#FFFFFF" &&
+            mark.fill !== "white"
           ) {
             return true;
           }
@@ -100,6 +104,8 @@ function findLegendInArea(tl, br, texts) {
     orientation: "horz",
     mapping: {},
   };
+
+  console.log(legendMarks, legendLabels);
 
   if (legendMarks.length > 0) {
     // TBD: consider display info for legend marks and labels in the UI

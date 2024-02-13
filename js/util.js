@@ -132,6 +132,20 @@ function post() {
       });
     }
   });
+  if (xAxis.upperLevels) {
+    xAxis.upperLevels.forEach((level) => {
+      level.forEach((element) => {
+        allGraphicsElement[element.id].isReferenceElement = true;
+      });
+    });
+  }
+  if (yAxis.upperLevels) {
+    yAxis.upperLevels.forEach((level) => {
+      level.forEach((element) => {
+        allGraphicsElement[element.id].isReferenceElement = true;
+      });
+    });
+  }
   annotations.allGraphicsElement = allGraphicsElement;
   annotations.groupedGraphicsElement = groupedGraphicsElement;
   annotations.chartTitle =
@@ -164,7 +178,13 @@ function post() {
   xAxis.title = titleXaxis.map((title) => allGraphicsElement[title.id]);
   xAxis.labels = xAxis.labels.map((label) => allGraphicsElement[label.id]);
   xAxis.fieldType = d3.select("#xFieldType").property("value");
-  console.log(xAxis);
+  if (xAxis.upperLevels) {
+    let newUpperLevels = [];
+    xAxis.upperLevels.forEach((level) => {
+      newUpperLevels.push(level.map((label) => allGraphicsElement[label.id]));
+    });
+    xAxis.upperLevels = newUpperLevels;
+  }
   annotations.referenceElement["xAxis"] = xAxis;
 
   // complete y axis elements
@@ -177,6 +197,13 @@ function post() {
   yAxis.title = titleYaxis.map((title) => allGraphicsElement[title.id]);
   yAxis.labels = yAxis.labels.map((label) => allGraphicsElement[label.id]);
   yAxis.fieldType = d3.select("#yFieldType").property("value");
+  if (yAxis.upperLevels) {
+    let newUpperLevels = [];
+    yAxis.upperLevels.forEach((level) => {
+      newUpperLevels.push(level.map((label) => allGraphicsElement[label.id]));
+    });
+    yAxis.upperLevels = newUpperLevels;
+  }
   annotations.referenceElement["yAxis"] = yAxis;
 
   // complete legend elements
