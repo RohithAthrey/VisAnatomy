@@ -50,7 +50,9 @@ function groupSVGElementsByTypeWithCoordinates() {
 
   const allElements = Array.from(tempDiv.querySelectorAll("*")).filter(
     // (element) => element.childElementCount === 0
-    (element) => graphicsElementTypes.includes(element.tagName) // here we use all nodes other than leaf nodes because there are rare cases where <rect> is not a leaf node like the example in https://observablehq.com/@d3/diverging-bar-chart
+    (element) =>
+      graphicsElementTypes.includes(element.tagName) ||
+      element.tagName === "tspan" // here we use all nodes other than leaf nodes because there are rare cases where <rect> is not a leaf node like the example in https://observablehq.com/@d3/diverging-bar-chart
   );
 
   const svgElement = tempDiv.querySelector("svg");
@@ -79,9 +81,9 @@ function groupSVGElementsByTypeWithCoordinates() {
         id: element.id,
         tagName: element.tagName,
         content:
-          element.tagName === "text"
+          element.tagName === "text" || element.tagName === "tspan"
             ? element.textContent.trim()
-            : element.innerHTML.trim(), // TBD: need to get text content more accurately, e.g., in grouped bar chart 6
+            : element.innerHTML.trim(), // TBD: need to get text content more accurately, e.g., in grouped bar chart 6 and stacked bar chart 3
         fill: element.attributes.fill
           ? element.attributes.fill.value
           : addStyleAttributesToElement(
@@ -133,6 +135,7 @@ function groupSVGElementsByTypeWithCoordinates() {
         ];
     }
   });
+  console.log(allGraphicsElement);
 }
 
 function groupSVGElementsByType() {
