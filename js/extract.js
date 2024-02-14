@@ -7,7 +7,27 @@ function extract() {
     : [];
   rects = rects.filter(filterRect);
 
-  let texts = textProcessor([...groupedGraphicsElement["texts"]]);
+  let texts;
+  try {
+    texts = textProcessor([...groupedGraphicsElement["texts"]]);
+  } catch (e) {
+    legend = { labels: [], marks: [], mapping: {} };
+    xAxis = {
+      labels: [],
+      ticks: [],
+      path: [],
+      fieldType: undefined,
+      type: "x",
+    };
+    yAxis = {
+      labels: [],
+      ticks: [],
+      path: [],
+      fieldType: undefined,
+      type: "y",
+    };
+    return;
+  }
 
   let thisColors;
   thisColors = rects
