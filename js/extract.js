@@ -167,7 +167,7 @@ function findLegend(texts, rects, numOfColor) {
   let allY, uniqueY, allX, uniqueX;
   if (numOfColor > 20) {
     let legendBar = rects.filter(function (rect) {
-      if (document.getElementById(rect["id"]).attributes["fill"].value) {
+      if (document.getElementById(rect["id"]).attributes["fill"]?.value) {
         if (
           document
             .getElementById(rect["id"])

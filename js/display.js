@@ -454,8 +454,8 @@ function setViewBox() {
       // console.log("Hidden position of the legend bar: ", hiddenLeft, hiddenTop, hiddenWidth, hiddenHeight)
 
       let colors = [];
-      let tickPos = legend.ticks.map((tick) =>
-        document.getElementById(tick.id).getBoundingClientRect()
+      let tickPos = legend.ticks.map((tickid) =>
+        document.getElementById(tickid).getBoundingClientRect()
       );
       let labelPos = legend.labels.map((label) =>
         document.getElementById(label.id).getBoundingClientRect()
