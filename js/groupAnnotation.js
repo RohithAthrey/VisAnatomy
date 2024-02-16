@@ -347,6 +347,17 @@ function enableAreaSelection4GroupAnnotation() {
 //   });
 // }
 
+function selectAllMarks() {
+  theGroup = mainChartMarks.map((id) => document.getElementById(id));
+  showSelectedMarks();
+  mainChartMarks.forEach((id) => {
+    let element = document.getElementById(id);
+    element.classList.add("selected4Group");
+    element.classList.remove("unselected4Group");
+    d3.select("#" + id).style("opacity", "1");
+  });
+}
+
 function showSelectedMarks() {
   document.getElementById("selectedGroup").innerHTML = "";
   theGroup.forEach((element) => {
@@ -712,5 +723,3 @@ function clearMergedGroups() {
     processGroup(group, document.getElementById("higherLevelGroups"));
   });
 }
-
-function concludeFinalGrouping() {}

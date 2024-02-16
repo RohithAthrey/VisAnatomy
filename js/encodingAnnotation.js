@@ -21,10 +21,11 @@ const typeSpecificChannels = {
     "fill",
     "opacity",
     "area",
+    "shape",
   ],
-  Circle: ["x", "y", "radius", "fill", "opacity", "area"],
-  Ploygon: ["vertices", "radius", "fill", "opacity"],
-  Ellipse: ["x", "y", "rx", "ry", "fill", "opacity"],
+  Circle: ["x", "y", "radius", "fill", "opacity", "area", "shape"],
+  Ploygon: ["vertices", "radius", "fill", "opacity", "shape"],
+  Ellipse: ["x", "y", "rx", "ry", "fill", "opacity", "shape"],
   Arc: [
     "x",
     "y",
@@ -35,10 +36,11 @@ const typeSpecificChannels = {
     "endAngle",
     "fill",
     "opacity",
+    "shape",
   ],
   Text: ["x", "y", "text", "color", "opacity", "fontSize", "fontWeight"],
   Image: ["x", "y", "width", "height", "opacity"],
-  Area: ["x list", "y list", "fill", "opacity"],
+  Area: ["x list", "y list", "fill", "opacity", "shape"],
   Path: ["shape", "x", "y", "size", "fill", "opacity"],
 };
 
