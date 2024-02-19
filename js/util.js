@@ -212,8 +212,18 @@ function post() {
   legend.ticks = Object.keys(markInfo).filter(
     (mark) => markInfo[mark].Role === "Legend Tick"
   );
-  legend.marks = legend.marks.map((mark) => allGraphicsElement[mark.id]);
-  legend.labels = legend.labels.map((label) => allGraphicsElement[label.id]);
+  legend.marks =
+    legend.marks.length === 0
+      ? Object.keys(markInfo)
+          .filter((mark) => markInfo[mark].Role === "Legend Mark")
+          .map((mark) => allGraphicsElement[mark])
+      : legend.marks.map((mark) => allGraphicsElement[mark.id]);
+  legend.labels =
+    legend.labels.length === 0
+      ? Object.keys(markInfo)
+          .filter((mark) => markInfo[mark].Role === "Legend Label")
+          .map((mark) => allGraphicsElement[mark])
+      : legend.labels.map((label) => allGraphicsElement[label.id]);
   // legend.marks = legend.marks.push(
   //   ...Object.keys(markInfo)
   //     .filter((mark) => markInfo[mark].Role === "Legend Mark")
