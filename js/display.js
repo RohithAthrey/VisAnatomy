@@ -39,7 +39,7 @@ function displaySVG(text) {
           "text",
           "line",
           "polyline",
-          "ploygon",
+          "polygon",
           "path",
           "image",
           "use",
