@@ -22,7 +22,9 @@ function initilizeMarkAnnotation() {
       (element.element.attributes.localName === "line" &&
         (element.element.attributes["stroke-width"]?.value === "0" ||
           element.element.attributes["stroke"]?.value === "transparent")) ||
-      element.element.attributes["fill"]?.value === "transparent" ||
+      (element.element.attributes["fill"]?.value === "transparent" &&
+        !element.element.attributes["stroke-width"] &&
+        !element.element.attributes["stroke-width"]) ||
       element.element.attributes["font-size"]?.value === "0" ||
       element.element.parentNode?.nodeName.toLowerCase() === "clippath"
   );

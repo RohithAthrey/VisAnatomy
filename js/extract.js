@@ -44,6 +44,8 @@ function extract() {
   numOfColor = thisColors.length;
 
   legend = findLegend(texts, groupedGraphicsElement["rects"], numOfColor);
+  if (legend.labels?.length === 0)
+    legend = findLegend(texts, groupedGraphicsElement["circles"], numOfColor);
   console.log("legend", legend);
   displayLegend(legend);
   texts = texts.filter((text) => !legend.labels.includes(text));
