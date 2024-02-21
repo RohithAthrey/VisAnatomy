@@ -176,7 +176,7 @@ function post() {
     (mark) => markInfo[mark].Role === "X Axis Tick"
   );
   xAxis.title = titleXaxis.map((title) => allGraphicsElement[title.id]);
-  xAxis.labels = xAxis.labels.map((label) => allGraphicsElement[label.id]);
+  xAxis.labels = xAxis.labels?.map((label) => allGraphicsElement[label.id]);
   xAxis.fieldType = d3.select("#xFieldType").property("value");
   if (xAxis.upperLevels) {
     let newUpperLevels = [];

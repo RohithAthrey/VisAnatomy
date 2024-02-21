@@ -200,7 +200,11 @@ function addStyleAttributesToElement(svgElement) {
       if (key && value) {
         key = key.trim();
         value = value.trim();
-        svgElement.setAttribute(key, value);
+        try {
+          svgElement.setAttribute(key, value);
+        } catch (e) {
+          // do nothing
+        }
       }
     });
 
