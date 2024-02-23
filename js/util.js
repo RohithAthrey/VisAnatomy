@@ -282,7 +282,7 @@ function removeSpace(str) {
 
 function extractNumber(str) {
   // Extract the number from the end of the string
-  let matches = str.match(/(\d+)$/);
+  let matches = str?.match(/(\d+)$/);
   return matches ? parseInt(matches[0], 10) : 0;
 }
 
