@@ -59,6 +59,34 @@ function initilizeGroupAnnotation() {
 
   groupSelection = true;
   enableAreaSelection4GroupAnnotation();
+
+  const colorBasedSelection = document.getElementById(
+    "colorBasedGroupSelection"
+  );
+  colorBasedSelection.innerHTML = "";
+  mainChartMarks
+    .map((id) => allGraphicsElement[id].fill)
+    .filter(onlyUnique)
+    .forEach((color) => {
+      let button = document.createElement("button");
+      button.setAttribute("class", "btn btn-outline-secondary");
+      button.setAttribute("type", "button");
+      // hover event TBD
+      button.onclick = function () {
+        theGroup = mainChartMarks
+          .filter((thisMarkID) => allGraphicsElement[thisMarkID].fill === color)
+          .map((id) => document.getElementById(id));
+        showSelectedMarks();
+        theGroup.forEach((element) => {
+          element.classList.add("selected4Group");
+          element.classList.remove("unselected4Group");
+          // set element opacity to be 1
+          d3.select("#" + element.id).style("opacity", "1");
+        });
+      };
+      button.innerHTML = color;
+      colorBasedSelection.appendChild(button);
+    });
 }
 
 function clearGrouping() {

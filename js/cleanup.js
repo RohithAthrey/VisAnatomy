@@ -86,9 +86,9 @@ function groupSVGElementsByTypeWithCoordinates() {
             : element.innerHTML.trim(), // TBD: need to get text content more accurately, e.g., in grouped bar chart 6 and stacked bar chart 3
         fill: element.attributes.fill
           ? element.attributes.fill.value
-          : addStyleAttributesToElement(
-              document.getElementById(element.id)
-            ).getAttribute("fill"),
+          : element.style.fill
+          ? element.style.fill
+          : getClosestAncestorColor(element.id),
         isReferenceElement: false,
       };
       if (Object.keys(groupedGraphicsElement).includes(element.tagName + "s"))
@@ -128,14 +128,25 @@ function groupSVGElementsByTypeWithCoordinates() {
                 : element.innerHTML.trim(), // TBD: need to get text content more accurately, e.g., in grouped bar chart 6
             fill: element.attributes.fill
               ? element.attributes.fill.value
-              : addStyleAttributesToElement(
-                  document.getElementById(element.id)
-                ).getAttribute("fill"),
+              : element.style.fill
+              ? element.style.fill
+              : getClosestAncestorColor(element.id),
           },
         ];
     }
   });
   console.log(allGraphicsElement);
+}
+
+function getClosestAncestorColor(elementID) {
+  let element = document.getElementById(elementID);
+  let parent = element.parentElement;
+  while (parent.tagName !== "svg") {
+    if (parent.attributes.fill) return parent.attributes.fill.value;
+    if (parent.style.fill) return parent.style.fill;
+    parent = parent.parentElement;
+  }
+  return "undefined";
 }
 
 function groupSVGElementsByType() {

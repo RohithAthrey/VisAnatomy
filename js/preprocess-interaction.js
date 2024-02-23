@@ -28,6 +28,21 @@ function addAxisLevel(t) {
   //d3.select("#" + t + "AxisDiv").append("<div class="axisLabels" id="xLabels" ondrop="drop(event)" ondragover="allowDrop(event)"></div>")
 }
 
+function legendFieldTypeChanged() {
+  let val = d3.select("#legendFieldType").property("value");
+  legend.fieldType = val;
+  if (val == "Null") {
+    let labels = legend.labels.map((d) => d);
+    for (let l of labels) {
+      removeLegendLabel(l);
+    }
+    legend.ticks = [];
+    legend.marks = [];
+    legend.mapping = {};
+    displayLegend(legend);
+  }
+}
+
 function fieldTypeChanged(xy) {
   let val = d3.select("#" + xy + "FieldType").property("value");
   switch (xy) {

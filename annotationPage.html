@@ -275,7 +275,11 @@
                 height="16px"
                 class="selectAreaBtn"
               /><br />
-              <select class="fieldType" id="legendFieldType">
+              <select
+                class="fieldType"
+                id="legendFieldType"
+                onchange="legendFieldTypeChanged()"
+              >
                 <option value="Null">none</option>
                 <option value="string">categories</option>
                 <option value="number">numbers</option>
@@ -587,8 +591,10 @@
               <button class="btn" onclick="selectAllMarks()">
                 selectAllMarks
               </button>
-              to select all marks. Current selection contains the following
-              marks:
+              to select all marks. You can also clicl the following button to
+              select all marks of a specific color:
+              <h4 id="colorBasedGroupSelection"></h4>
+              Current selection contains the following marks:
             </h4>
             <div
               id="selectedGroup"
@@ -683,6 +689,7 @@
               <option value="Stack">Stack</option>
               <option value="Packing">Packing</option>
               <option value="Encoded with Data">Encoded with Data</option>
+              <option value="Layered">Layered</option>
             </select>
 
             <div

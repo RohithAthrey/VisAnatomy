@@ -318,10 +318,15 @@ function findLegend(texts, rects, numOfColor) {
         }
       }
 
+      alllegendElements = alllegendElements.filter(onlyUnique).filter((d) => d);
+
       if (alllegendElements.length > 0) {
+        console.log(alllegendElements);
         result["type"] = "discrete";
         result["mapping"] = {};
-        result["labels"] = alllegendElements.filter((d) => d.tagName == "text");
+        result["labels"] = alllegendElements.filter(
+          (d) => d.tagName === "text"
+        );
         result["marks"] = alllegendElements.filter((d) => d.tagName != "text");
         result["orientation"] = "horz";
         for (let i = 0; i < alllegendElements.length - 1; i += 2) {

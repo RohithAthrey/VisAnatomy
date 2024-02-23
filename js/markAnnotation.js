@@ -385,9 +385,7 @@ function dertermineChannelBasedBatchSelections(elementType) {
         r.element.attributes[channel]
           ? r.element.attributes[channel].value
           : channel === "fill"
-          ? r.element.parentNode.attributes[channel]?.value
-            ? r.element.parentNode.attributes[channel]?.value
-            : "undefined"
+          ? allGraphicsElement[r.element.id].fill
           : "undefined"
       )
       .filter(onlyUnique);
@@ -398,7 +396,7 @@ function dertermineChannelBasedBatchSelections(elementType) {
             r.element.attributes[channel]?.value === value ||
             (value === "undefined" && !r.element.attributes[channel]) ||
             (channel === "fill" &&
-              r.element.parentNode.attributes[channel]?.value === value)
+              allGraphicsElement[r.element.id].fill === value)
         )
         .map((r) => r.id);
     });
