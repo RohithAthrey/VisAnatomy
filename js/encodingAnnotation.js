@@ -10,7 +10,14 @@ const typeSpecificChannels = {
     "opacity",
     "length",
   ],
-  Polyline: ["vertices", "color", "strokeWidth", "opacity", "length"],
+  Polyline: [
+    "vertices",
+    "color",
+    "strokeWidth",
+    "opacity",
+    "length",
+    "vertices",
+  ],
   Rectangle: [
     "x (left)",
     "y (top)",
@@ -41,7 +48,7 @@ const typeSpecificChannels = {
   Text: ["x", "y", "text", "color", "opacity", "fontSize", "fontWeight"],
   Image: ["x", "y", "width", "height", "opacity"],
   Area: ["x list", "y list", "fill", "opacity", "shape"],
-  Path: ["shape", "x", "y", "size", "fill", "opacity"],
+  Path: ["shape", "x", "y", "size", "fill", "opacity", "vertices"],
 };
 
 function initilizeEncodingAnnotation() {

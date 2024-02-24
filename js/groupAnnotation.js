@@ -87,6 +87,32 @@ function initilizeGroupAnnotation() {
       button.innerHTML = color;
       colorBasedSelection.appendChild(button);
     });
+
+  const typeBasedSelection = document.getElementById("typeBasedSelection");
+  typeBasedSelection.innerHTML = "";
+  mainChartMarks
+    .map((id) => markInfo[id].Type)
+    .filter(onlyUnique)
+    .forEach((type) => {
+      let button = document.createElement("button");
+      button.setAttribute("class", "btn btn-outline-secondary");
+      button.setAttribute("type", "button");
+      // hover event TBD
+      button.onclick = function () {
+        theGroup = mainChartMarks
+          .filter((thisMarkID) => markInfo[thisMarkID].Type === type)
+          .map((id) => document.getElementById(id));
+        showSelectedMarks();
+        theGroup.forEach((element) => {
+          element.classList.add("selected4Group");
+          element.classList.remove("unselected4Group");
+          // set element opacity to be 1
+          d3.select("#" + element.id).style("opacity", "1");
+        });
+      };
+      button.innerHTML = type;
+      typeBasedSelection.appendChild(button);
+    });
 }
 
 function clearGrouping() {
@@ -121,6 +147,7 @@ function clickEvent4FormingGroupButton(e) {
   e.stopPropagation();
   if (theGroup.length === 0) return;
   // display the new group
+  console.log(theGroup.map((e) => e.id));
   groupAnnotations.push(theGroup.map((e) => e.id)); //TBD: filter unique
   marksHaveGroupAnnotation = marksHaveGroupAnnotation.concat(
     theGroup.map((e) => e.id)
@@ -226,6 +253,7 @@ function inferOtherGroups() {
         return [];
       }
     });
+    if (thisGroup.length === 0) return [];
     remainingGroups.push(thisGroup);
   }
   return remainingGroups;
