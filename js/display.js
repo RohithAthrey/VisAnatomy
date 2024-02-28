@@ -81,7 +81,6 @@ function updateUseElementReferences(svgElement) {
     if (href && href.includes("#")) {
       let originalId = href.split("#")[1];
       if (idMappings[originalId]) {
-        console.log(originalId, idMappings[originalId]);
         let newHref = "#" + idMappings[originalId];
         use.setAttribute("href", newHref); // Update for modern browsers
         use.setAttribute("xlink:href", newHref); // Update for compatibility

@@ -175,8 +175,18 @@ function post() {
   xAxis.ticks = Object.keys(markInfo).filter(
     (mark) => markInfo[mark].Role === "X Axis Tick"
   );
-  xAxis.title = titleXaxis.map((title) => allGraphicsElement[title.id]);
-  xAxis.labels = xAxis.labels?.map((label) => allGraphicsElement[label.id]);
+  xAxis.title =
+    titleXaxis.length > 0
+      ? titleXaxis.map((title) => allGraphicsElement[title.id])
+      : Object.keys(markInfo)
+          .filter((mark) => markInfo[mark].Role === "X Axis Title")
+          .map((title) => allGraphicsElement[title]);
+  xAxis.labels =
+    xAxis.labels.length > 0
+      ? xAxis.labels.map((label) => allGraphicsElement[label.id])
+      : Object.keys(markInfo)
+          .filter((mark) => markInfo[mark].Role === "X Axis Label")
+          .map((label) => allGraphicsElement[label]);
   xAxis.fieldType = d3.select("#xFieldType").property("value");
   if (xAxis.upperLevels) {
     let newUpperLevels = [];
@@ -194,8 +204,18 @@ function post() {
   yAxis.ticks = Object.keys(markInfo).filter(
     (mark) => markInfo[mark].Role === "Y Axis Tick"
   );
-  yAxis.title = titleYaxis.map((title) => allGraphicsElement[title.id]);
-  yAxis.labels = yAxis.labels.map((label) => allGraphicsElement[label.id]);
+  yAxis.title =
+    titleYaxis.length > 0
+      ? titleYaxis.map((title) => allGraphicsElement[title.id])
+      : Object.keys(markInfo)
+          .filter((mark) => markInfo[mark].Role === "Y Axis Title")
+          .map((title) => allGraphicsElement[title]);
+  yAxis.labels =
+    yAxis.labels.length > 0
+      ? yAxis.labels.map((label) => allGraphicsElement[label.id])
+      : Object.keys(markInfo)
+          .filter((mark) => markInfo[mark].Role === "Y Axis Label")
+          .map((label) => allGraphicsElement[label]);
   yAxis.fieldType = d3.select("#yFieldType").property("value");
   if (yAxis.upperLevels) {
     let newUpperLevels = [];
@@ -207,7 +227,12 @@ function post() {
   annotations.referenceElement["yAxis"] = yAxis;
 
   // complete legend elements
-  legend.title = titleLegend.map((title) => allGraphicsElement[title.id]);
+  legend.title =
+    titleLegend.length > 0
+      ? titleLegend.map((title) => allGraphicsElement[title.id])
+      : Object.keys(markInfo)
+          .filter((mark) => markInfo[mark].Role === "Legend Title")
+          .map((title) => allGraphicsElement[title]);
   // TBD: need to keep an eye on the legend info when annotating
   legend.ticks = Object.keys(markInfo).filter(
     (mark) => markInfo[mark].Role === "Legend Tick"
