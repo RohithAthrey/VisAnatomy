@@ -191,16 +191,15 @@ function markOnClick(markID) {
       .style("background-color", "white")
       .style("color", "black");
     markSelection.splice(markSelection.indexOf(markID), 1);
-    document.getElementById("numberOfMarksSelected").innerHTML = markSelection.length;
-      // parseInt(document.getElementById("numberOfMarksSelected").innerHTML) - 1;
+    document.getElementById("numberOfMarksSelected").innerHTML =
+      markSelection.length;
+    // parseInt(document.getElementById("numberOfMarksSelected").innerHTML) - 1;
   } else {
-    d3.select("#mark_" + markID)
-      .style("background-color", "#eee")
-      ;
-      // .style("color", "white");
-    if (markSelection.indexOf(markID) < 0)
-      markSelection.push(markID);
-    document.getElementById("numberOfMarksSelected").innerHTML = markSelection.length;
+    d3.select("#mark_" + markID).style("background-color", "#eee");
+    // .style("color", "white");
+    if (markSelection.indexOf(markID) < 0) markSelection.push(markID);
+    document.getElementById("numberOfMarksSelected").innerHTML =
+      markSelection.length;
     //parseInt(document.getElementById("numberOfMarksSelected").innerHTML) + 1;
   }
 
@@ -247,9 +246,8 @@ function selectionOnClick(selectionID, selection) {
   document.getElementById("numberOfMarksSelected").innerHTML =
     markSelection.length.toString();
   markSelection.forEach((markID) => {
-    d3.select("#mark_" + markID)
-      .style("background-color", "#000000")
-      .style("color", "white");
+    d3.select("#mark_" + markID).style("background-color", "#eee");
+    // .style("color", "white");
   });
   // }
   document.getElementById("markTypeSelection").value =

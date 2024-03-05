@@ -1,6 +1,12 @@
 var groupsByDepth = {};
 
 function initilizeLayoutAnnotation() {
+  // avoid the need for clicking go2higherLevelGroups button when only one group presents
+  nestedGrouping =
+    nestedGrouping.length === 0
+      ? groupAnnotations.map((g, i) => i)
+      : nestedGrouping;
+
   // assuming nestedGrouping is a length 1 array and the first element is the nested grouping
   document.getElementById("LayoutAnnotation").innerHTML =
     "<h4>Grouping Structure</h4>";
