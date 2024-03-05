@@ -49,16 +49,16 @@ body {
 #breadcrumb {
   position: absolute;
   left: calc(50% - 250px);
-  width: 500px;
+  width: 600px;
   height: 30px;
   font-weight: bold;
-  margin: 10px 0;
+  margin: 10px auto;
   margin-left: 25px;
   margin-right: 25px;
 }
 .breadcrumb-item {
-  margin-right: 3px;
-  margin-left: 3px;
+  margin-right: 6px;
+  margin-left: 6px;
 }
 .current-section {
   font-weight: bold;
@@ -131,7 +131,7 @@ body {
 #annotationStages {
   position: absolute;
   width: calc(100% - 250px);
-  right: 0px;
+  margin: 0 125px;
 }
 
 .mainbox {

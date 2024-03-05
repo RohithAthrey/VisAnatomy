@@ -87,9 +87,9 @@ function initilizeMarkAnnotation() {
       markDiv.style.display = "inline-block";
       markDiv.style.width = "95%";
       markDiv.style.height = "fit-content";
-      markDiv.style.border = "1px solid #000";
+      markDiv.style.border = "1px solid #eee";
       markDiv.style.padding = "2px";
-      markDiv.style.margin = "2px";
+      markDiv.style.margin = "0px";
       markDiv.style.cursor = "pointer";
       document.getElementById("allMarks").appendChild(markDiv);
       d3.select("#mark_" + element.id)
@@ -184,21 +184,24 @@ function initilizeMarkAnnotation() {
 function markOnClick(markID) {
   // disableAllMarkSelections();
   if (
-    d3.select("#mark_" + markID).style("background-color") === "rgb(0, 0, 0)"
+    markSelection.indexOf(markID) >= 0
+    //d3.select("#mark_" + markID).style("background-color") === "rgb(0, 0, 0)"
   ) {
     d3.selectAll("#mark_" + markID)
       .style("background-color", "white")
       .style("color", "black");
     markSelection.splice(markSelection.indexOf(markID), 1);
-    document.getElementById("numberOfMarksSelected").innerHTML =
-      parseInt(document.getElementById("numberOfMarksSelected").innerHTML) - 1;
+    document.getElementById("numberOfMarksSelected").innerHTML = markSelection.length;
+      // parseInt(document.getElementById("numberOfMarksSelected").innerHTML) - 1;
   } else {
     d3.select("#mark_" + markID)
-      .style("background-color", "#000000")
-      .style("color", "white");
-    markSelection.push(markID);
-    document.getElementById("numberOfMarksSelected").innerHTML =
-      parseInt(document.getElementById("numberOfMarksSelected").innerHTML) + 1;
+      .style("background-color", "#eee")
+      ;
+      // .style("color", "white");
+    if (markSelection.indexOf(markID) < 0)
+      markSelection.push(markID);
+    document.getElementById("numberOfMarksSelected").innerHTML = markSelection.length;
+    //parseInt(document.getElementById("numberOfMarksSelected").innerHTML) + 1;
   }
 
   document.getElementById("markTypeSelection").value =
