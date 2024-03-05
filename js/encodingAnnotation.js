@@ -25,7 +25,7 @@ const typeSpecificChannels = {
   ],
   Circle: ["x", "y", "radius", "fill", "opacity", "area", "shape"],
   Ploygon: ["x", "y", "vertices", "radius", "fill", "opacity", "shape"],
-  Ellipse: ["x", "y", "rx", "ry", "fill", "opacity", "shape"],
+  Ellipse: ["x", "y", "rx", "ry", "fill", "opacity", "shape", "size"],
   Arc: [
     "x",
     "y",
