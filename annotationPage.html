@@ -545,19 +545,66 @@
               >.
             </h4>
           </div>
+          <div id="current-section" style="
+                      border: 0px solid rgb(102, 105, 105);
+                      padding: 5px;
+                      margin-bottom: 10px;
+                    ">
+            <div style="font-weight: bold; margin-bottom: 3px;">
+              Select a group of main chart marks by drawing a rectangle
+              using your mouse on the visualization; or choose one of the options below: 
+            </div>
+            <button class="btn selectionBtn" onclick="selectAllMarks()">
+              <!-- selectAllMarks -->
+              Select all main chart marks
+            </button>
+            <!-- to select all marks. -->
+            <div id="typeBasedSelection"></div>
+            <!-- You can also click the following button to select all marks of a
+            specific color: -->
+            <div id="colorBasedGroupSelection"></div>
+
+            <div style="margin-top: 20px">
+              <span id="selectionForGrouping">0</span> marks selected
+              <button class="btn" id="button4FormingGroups" style="margin-bottom: 5px"
+              onclick="clickEvent4FormingGroupButton(event)">
+              <!-- selected marks form a group! -->
+              Group selected marks
+            </button>
+            </div>
+            <div id="selectedGroup" style="
+                        border: 1.5px solid #aaa;
+                        height: 75px;
+                        overflow: scroll;
+                        overflow: -moz-scrollbars-vertical;
+                        padding: 5px;
+                        margin: 0px 0 5px 0;
+                      "></div>
+          </div>
+
+          <div style="margin-top: 20px">
+            Current grouping
+            <button
+                type="button"
+                onclick="clearGrouping()"
+                style="margin-bottom: 5px;"
+              >
+              Clear Grouping
+              </button>
+          </div>
           <div
             id="specifiedGroups"
             style="
               overflow: scroll;
               overflow: -moz-scrollbars-vertical;
               height: 200px;
-              border: 2px solid rgb(102, 105, 105);
+              border: 1.5px solid #aaa;
               padding: 5px;
               margin-bottom: 10px;
             "
           >
-            <h4>
-              Here display specified mark groups. Once all the main chart marks
+            <!-- <h4> -->
+              <!-- Here display specified mark groups. Once all the main chart marks
               have been grouped, you can further
               <button
                 type="button"
@@ -570,9 +617,10 @@
                 onclick="go2HigherGrouping()"
               >
                 specify higher-level groups
-              </button>
-              . Click
-              <button
+              </button> -->
+               
+              <!-- Click -->
+              <!-- <button
                 type="button"
                 style="
                   padding: 1px 1px;
@@ -583,50 +631,24 @@
                 onclick="clearGrouping()"
               >
                 redoGrouping
-              </button>
-              if you want to redo the lowest-level grouping.
-            </h4>
+              </button> -->
+              <!-- if you want to redo the lowest-level grouping. -->
+            <!-- </h4> -->
           </div>
-
-          <div
-            id="current-section"
+          <button
+            type="button"
             style="
-              border: 2px solid rgb(102, 105, 105);
-              padding: 5px;
-              margin-bottom: 10px;
+              padding: 3px;
+              margin-left: 2.5px;
+              margin-right: 2.5px;
+              margin-top: 20px;
+              vertical-align: middle;
             "
+            onclick="go2HigherGrouping()"
           >
-            <h4>
-              Please select a group of main chart marks by drawing a rectangle
-              using your mouse on the SVG visualization; click
-              <button class="btn" onclick="selectAllMarks()">
-                selectAllMarks
-              </button>
-              to select all marks.
-              <h4 id="typeBasedSelection"></h4>
-              You can also click the following button to select all marks of a
-              specific color:
-              <h4 id="colorBasedGroupSelection"></h4>
-              Current selection contains the following marks:
-            </h4>
-            <div
-              id="selectedGroup"
-              style="
-                height: 75px;
-                overflow: scroll;
-                overflow: -moz-scrollbars-vertical;
-                margin: 0 0 5px 0;
-              "
-            ></div>
-            <button
-              class="btn"
-              id="button4FormingGroups"
-              style="margin-bottom: 5px"
-              onclick="clickEvent4FormingGroupButton(event)"
-            >
-              selected marks form a group!
-            </button>
-          </div>
+          Next: Specify higher-level groups >>
+          </button>
+
 
           <div
             id="possibleOtherGroupsContainer"

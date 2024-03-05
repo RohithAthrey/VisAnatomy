@@ -601,3 +601,12 @@ span {
 .selected {
   color: #4caf50; /* Text color changes when selected */
 }
+
+.selectionBtn {
+  border: 1px solid #ccc;
+  background-color: #FAFAFA;
+  border-radius: 5px;
+  padding: 2px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}

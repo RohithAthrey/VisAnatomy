@@ -69,7 +69,7 @@ function initilizeGroupAnnotation() {
     .filter(onlyUnique)
     .forEach((color) => {
       let button = document.createElement("button");
-      button.setAttribute("class", "btn btn-outline-secondary");
+      button.setAttribute("class", "btn btn-outline-secondary selectionBtn");
       button.setAttribute("type", "button");
       // hover event TBD
       button.onclick = function () {
@@ -84,7 +84,12 @@ function initilizeGroupAnnotation() {
           d3.select("#" + element.id).style("opacity", "1");
         });
       };
-      button.innerHTML = color;
+      //button.innerHTML = color;
+      button.innerHTML = "Select all marks whose fill is " + color;
+      button.innerHTML +=
+      ' <div class="inline-container"><div class="inline-rectangle" style="background-color: ' +
+      color +
+      '; border: 2px solid black; margin-bottom:4px;"></div></div>';
       colorBasedSelection.appendChild(button);
     });
 
@@ -95,7 +100,7 @@ function initilizeGroupAnnotation() {
     .filter(onlyUnique)
     .forEach((type) => {
       let button = document.createElement("button");
-      button.setAttribute("class", "btn btn-outline-secondary");
+      button.setAttribute("class", "btn btn-outline-secondary selectionBtn");
       button.setAttribute("type", "button");
       // hover event TBD
       button.onclick = function () {
@@ -110,7 +115,8 @@ function initilizeGroupAnnotation() {
           d3.select("#" + element.id).style("opacity", "1");
         });
       };
-      button.innerHTML = type;
+      // button.innerHTML = type;
+      button.innerHTML = "Select all " + type.toLowerCase() + " marks";
       typeBasedSelection.appendChild(button);
     });
 }
@@ -415,6 +421,7 @@ function selectAllMarks() {
 }
 
 function showSelectedMarks() {
+  document.getElementById("selectionForGrouping").innerHTML = theGroup.length;
   document.getElementById("selectedGroup").innerHTML = "";
   theGroup.forEach((element) => {
     let markID = element.id;
