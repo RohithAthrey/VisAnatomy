@@ -365,11 +365,12 @@ function drop(ev) {
 
       switch (thisTitle) {
         case "axis":
-          axes[draggedFromID.split("_")[1]].title.splice(
-            axes[draggedFromID.split("_")[1]].title.indexOf(thisText),
+          let thisIndex = draggedFromID.split("_")[1];
+          axes[thisIndex].title.splice(
+            axes[thisIndex].title.indexOf(thisText),
             1
           );
-          displayTitleYLabel(thisText, "delete");
+          displayAxisTitle(thisText, thisIndex, "delete");
           break;
         case "legend":
           titleLegend.splice(titleLegend.indexOf(thisText), 1);
