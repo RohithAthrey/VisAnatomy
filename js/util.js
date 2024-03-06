@@ -4,6 +4,10 @@ function initilizeVariables() {
   annotations = {};
   xAxis = {};
   yAxis = {};
+  axes = {
+    1: { labels: [], fieldType: "Null", title: [], type: "x" },
+    2: { labels: [], fieldType: "Null", title: [], type: "y" },
+  };
   legend = {};
   xGridlines = [];
   yGridlines = [];

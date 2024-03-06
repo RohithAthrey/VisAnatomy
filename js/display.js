@@ -148,14 +148,16 @@ function updateUseElementReferences(svgElement) {
 //   }
 // }
 
-function displayAxis(axis) {
-  if (Object.keys(axis) === 0) return;
-  d3.select("#" + axis.type + "Labels")
+function displayAxis(index) {
+  console.log(axes);
+  let axis = axes[index];
+  if (Object.keys(axis).length === 0) return;
+  d3.select("#axisLabel_" + index)
     .selectAll("button")
     .remove();
   if (axis.upperLevels) {
     for (let [i, level] of axis.upperLevels.entries()) {
-      d3.select("#" + axis.type + "Labels" + (i + 1))
+      d3.select("#" + "#axisLabel" + index + (i + 1))
         .selectAll("button")
         .remove();
     }
@@ -163,7 +165,7 @@ function displayAxis(axis) {
 
   let labels = axis["labels"];
   let type;
-  if (axis.fieldType !== "Null") {
+  if (axis.fieldType) {
     type = axis.fieldType;
   } else {
     if (labels.length === 0) {
@@ -174,20 +176,24 @@ function displayAxis(axis) {
     axis.fieldType = type;
   }
 
-  d3.select("#" + axis.type + "FieldType").property("value", type);
+  d3.select("#fieldType_" + index).property("value", type);
+  d3.select("#axisType_" + index).property(
+    "value",
+    axis.type ? axis.type : "x"
+  );
 
   labels = labels.sort((a, b) =>
     parseFloat(a.id.substring(4)) > parseFloat(b.id.substring(4)) ? 1 : -1
   );
 
   for (let label of labels) {
-    displayAxisLabel(label, axis.type + "Labels");
+    displayAxisLabel(label, "#axisLabel_" + index);
   }
 
   [1, 2, 3].forEach((i) => {
-    d3.select("#" + axis.type + "Labels" + i).remove();
+    d3.select("#" + "axisLabel_" + index + i).remove();
   });
-  d3.select("#" + axis.type + "Labels").style("width", "calc(100% - 405px)");
+  d3.select("#" + "axisLabel_" + index).style("width", "calc(100% - 405px)");
 
   if (axis.upperLevels) {
     let size = [
@@ -201,21 +207,21 @@ function displayAxis(axis) {
       d3.select("#" + axis.type + "AxisDiv")
         .append("div")
         .attr("class", "axisLabels")
-        .attr("id", axis.type + "Labels" + (i + 1))
+        .attr("id", "#axisLabel" + index + (i + 1))
         .on("drop", drop)
         .on("dragover", allowDrop);
       d3.select("#" + axis.type + "AxisDiv")
         .selectAll(".axisLabels")
         .style("width", size);
       for (let label of level) {
-        displayAxisLabel(label, axis.type + "Labels" + (i + 1));
+        displayAxisLabel(label, "#axisLabel" + index + (i + 1));
       }
     }
   }
 }
 
 function displayAxisLabel(label, divID) {
-  d3.select("#" + divID)
+  d3.select(divID)
     .append("button")
     .datum(label)
     .attr("type", "button")
@@ -268,6 +274,43 @@ function displayLegend(legend) {
       })
       .text(label["content"])
       .on("dragstart", drag);
+  }
+}
+
+function displayAxisTitle(thisText, axisIndex, mode) {
+  let axis = axes[axisIndex];
+  if (mode === "delete") {
+    let index = axis.title.indexOf(thisText);
+    if (index > -1) axis.title.splice(index, 1);
+  } else {
+    if (axis.title.indexOf(thisText) < 0) axis.title.push(thisText);
+  }
+
+  let thisDiv = d3.select("#axisTitle_" + axisIndex);
+  thisDiv.selectAll("button").remove();
+  for (let title of axis.title) {
+    let btn = thisDiv
+      .append("button")
+      .datum(title)
+      .attr("type", "button")
+      .attr("class", "titleButton")
+      .attr("style", "position: absolute; top: 1px; left: 200px")
+      .attr("style", "width: 100%")
+      .attr("id", "axis_" + axisIndex + "_titleIDinSVG" + title["id"]) // this ID is important!!
+      .attr("draggable", true)
+      .text(title["content"])
+      .on("dragstart", drag);
+    btn
+      .attr("style", "background-color: #f2f2f2")
+      .on("mouseover", function (event) {
+        d3.select(this) // Select the hovered button
+          .attr("style", "color: #fff");
+      })
+      .on("mouseout", function () {
+        d3.select(this) // Select the hovered button
+          .attr("style", "background-color: #f2f2f2; width: 100%")
+          .attr("style", "color: black");
+      });
   }
 }
 
