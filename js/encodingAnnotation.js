@@ -134,7 +134,7 @@ function createList2(item) {
   EncIndicator.textContent = thisEncoding
     ? " [" + thisEncoding.toString() + "]"
     : " ";
-  EncIndicator.id = "EncIndicator" + item.id;
+  EncIndicator.id = ("EncIndicator" + item.id).trim();
   EncIndicator.style.cssText =
     "margin-left: 2px; vertical-align: middle; color: #03C03C;";
   container.appendChild(EncIndicator);
@@ -193,7 +193,7 @@ function createList2(item) {
       markEncIndicator.textContent = thisMarkEncoding
         ? " [" + thisMarkEncoding.toString() + "]"
         : " ";
-      markEncIndicator.id = "EncIndicator" + markItem.textContent;
+      markEncIndicator.id = ("EncIndicator" + markItem.textContent).trim();
       markEncIndicator.style.cssText =
         "margin-left: 2px; vertical-align: middle; color: #03C03C;";
       markItem.appendChild(markEncIndicator);
@@ -304,14 +304,13 @@ function recordBatchEncoding() {
       });
     } else {
       groupAnnotations.flat(Infinity).forEach((mark) => {
+        console.log(extractNonNumeric(mark));
         if (
           selectedGroup.startsWith(extractNonNumeric(mark)) &&
           markInfo[mark].Type === markInfo[selectedGroup].Type
         ) {
           objectEncodings[mark] = selectedChannels;
-          document.getElementById(
-            "EncIndicator" + mark.split(" ")[0]
-          ).textContent =
+          document.getElementById("EncIndicator" + mark).textContent =
             selectedChannels.length > 0
               ? " [" + selectedChannels.toString() + "]"
               : " ";
