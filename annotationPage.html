@@ -806,10 +806,10 @@
                 </select>
               </p>
               <p>
-                <span> Alignment: </span>
+                <span> Horizontal Alignment: </span>
                 <select
                   class="fieldType"
-                  id="layoutAlignSelection"
+                  id="horiLayoutAlignSelection"
                   onchange="recordlayout()"
                 >
                   <option value="none"></option>
@@ -819,7 +819,22 @@
                   <option value="Left">Left</option>
                   <option value="Center">Center</option>
                   <option value="Right">Right</option>
-                  <option value="Customized">Customized</option>
+                </select>
+              </p>
+              <p>
+                <span> Vertical Alignment: </span>
+                <select
+                  class="fieldType"
+                  id="vertLayoutAlignSelection"
+                  onchange="recordlayout()"
+                >
+                  <option value="none"></option>
+                  <option value="Bottom">Bottom</option>
+                  <option value="Middle">Middle</option>
+                  <option value="Top">Top</option>
+                  <option value="Left">Left</option>
+                  <option value="Center">Center</option>
+                  <option value="Right">Right</option>
                 </select>
               </p>
             </div>

@@ -70,13 +70,27 @@ function createList(item) {
             break;
           }
         }
-        let alignmentSelection = document.getElementById(
-          "layoutAlignSelection"
+        let horiAlignmentSelection = document.getElementById(
+          "horiLayoutAlignSelection"
         );
         let thisLayoutAlign = thisLayout.params.alignment;
-        for (let i = 0; i < alignmentSelection.options.length; i++) {
-          if (alignmentSelection.options[i].text == thisLayoutAlign) {
-            alignmentSelection.selectedIndex = i;
+        let thisHoriLayoutAlign = thisLayout.params.horiAlignment;
+        let thisVertLayoutAlign = thisLayout.params.vertAlignment;
+        for (let i = 0; i < horiAlignmentSelection.options.length; i++) {
+          if (
+            horiAlignmentSelection.options[i].text ===
+            (thisHoriLayoutAlign ? thisHoriLayoutAlign : thisLayoutAlign)
+          ) {
+            horiAlignmentSelection.selectedIndex = i;
+            break;
+          }
+        }
+        let vertAlignmentSelection = document.getElementById(
+          "vertLayoutAlignSelection"
+        );
+        for (let i = 0; i < vertAlignmentSelection.options.length; i++) {
+          if (vertAlignmentSelection.options[i].text === thisVertLayoutAlign) {
+            vertAlignmentSelection.selectedIndex = i;
             break;
           }
         }
@@ -208,8 +222,11 @@ function recordlayout() {
         (groupLayouts[selectedGroup].params.orientation[0]
           ? "-" + groupLayouts[selectedGroup].params.orientation[0]
           : "") +
-        (groupLayouts[selectedGroup].params.alignment[0]
-          ? "-" + groupLayouts[selectedGroup].params.alignment[0]
+        (groupLayouts[selectedGroup].params.horiAlignment[0]
+          ? "-" + groupLayouts[selectedGroup].params.horiAlignment[0]
+          : "") +
+        (groupLayouts[selectedGroup].params.vertAlignment[0]
+          ? "-" + groupLayouts[selectedGroup].params.vertAlignment[0]
           : "")
     );
   }
@@ -244,8 +261,11 @@ function recordBatchGroupLayout() {
               (thisLayoutJson.params.orientation[0]
                 ? "-" + thisLayoutJson.params.orientation[0]
                 : "") +
-              (thisLayoutJson.params.alignment[0]
-                ? "-" + thisLayoutJson.params.alignment[0]
+              (thisLayoutJson.params.horiAlignment[0]
+                ? "-" + thisLayoutJson.params.horiAlignment[0]
+                : "") +
+              (thisLayoutJson.params.vertAlignment[0]
+                ? "-" + thisLayoutJson.params.vertAlignment[0]
                 : "")
           );
         });
@@ -265,8 +285,11 @@ function getThisLayoutJson() {
   let orientationSelection = document.getElementById("layoutOriSelection");
   thisLayoutJson.params.orientation =
     orientationSelection.options[orientationSelection.selectedIndex].text;
-  let alignmentSelection = document.getElementById("layoutAlignSelection");
-  thisLayoutJson.params.alignment =
+  let alignmentSelection = document.getElementById("horiLayoutAlignSelection");
+  thisLayoutJson.params.horiAlignment =
+    alignmentSelection.options[alignmentSelection.selectedIndex].text;
+  alignmentSelection = document.getElementById("vertLayoutAlignSelection");
+  thisLayoutJson.params.vertAlignment =
     alignmentSelection.options[alignmentSelection.selectedIndex].text;
   console.log(thisLayoutJson);
   return thisLayoutJson;
