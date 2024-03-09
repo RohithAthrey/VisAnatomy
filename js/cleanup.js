@@ -153,14 +153,14 @@ function groupSVGElementsByType() {
   referenceElements = [
     ...(legend.labels ? legend.labels : []),
     ...(legend.marks ? legend.marks : []),
-    ...(xAxis.labels ? xAxis.labels : []),
-    ...(yAxis.labels ? yAxis.labels : []),
-    ...(xAxis.upperLevels ? xAxis.upperLevels.flat() : []),
-    ...(yAxis.upperLevels ? yAxis.upperLevels.flat() : []),
+    ...Object.keys(axes)
+      .map((key) => axes[key].labels)
+      .flat(),
+    ...Object.keys(axes)
+      .map((key) => axes[key].title)
+      .flat(),
     ...chartTitle,
     ...titleLegend,
-    ...titleXaxis,
-    ...titleYaxis,
   ].map((element) => element.id);
 
   const tempDiv = document.getElementById("rbox1");
