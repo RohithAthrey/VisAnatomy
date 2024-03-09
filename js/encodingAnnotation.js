@@ -194,6 +194,9 @@ function createList2(item) {
           d3.select("#" + mark).style("opacity", "0.3");
         })
         .on("click", function () {
+          d3.select("#selectedObjectType").text(
+            markInfo[mark].Type.toLowerCase()
+          );
           d3.select("#selectedGroup4EncodingStage1").text(
             markItem.textContent.split(" ")[0]
           );
