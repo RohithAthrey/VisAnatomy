@@ -37,8 +37,8 @@ const typeSpecificChannels = {
     "opacity",
     "area",
     "shape",
-    "polar angle",
-    "polar radius",
+    "polarAngle",
+    "polarRadius",
   ],
   Circle: [
     "x",
