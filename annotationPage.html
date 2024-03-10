@@ -1314,6 +1314,22 @@
                     "visibility",
                     "hidden"
                   );
+                  // reset the selection options in the layout stage
+                  d3.select("#layoutTypeSelection").property("value", "none");
+                  d3.select("#layoutOriSelection").property("value", "none");
+                  d3.select("#horiLayoutAlignSelection").property(
+                    "value",
+                    "none"
+                  );
+                  d3.select("#vertLayoutAlignSelection").property(
+                    "value",
+                    "none"
+                  );
+                  d3.select("#selectedGroup4LayoutStage").text("");
+                  // reset the selection options in the encoding stage
+                  d3.select("#channelList").selectAll("li").remove();
+                  d3.select("#selectedGroup4EncodingStage1").text("");
+                  d3.select("#selectedObjectType").text("object");
 
                   d3.selectAll(".demoItem")
                     .style("color", "black")
