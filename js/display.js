@@ -396,7 +396,9 @@ function displayTitles(chartTitle, legendTitle) {
     d3.select("#" + id)
       .selectAll("button")
       .remove();
-    for (let title of allTitles[["chartTitle", "legendTitle"].indexOf(id)]) {
+    for (let title of allTitles[["chartTitle", "legendTitle"].indexOf(id)].map(
+      (e) => (typeof e === "string" ? allGraphicsElement[e] : e)
+    )) {
       let btn = d3
         .select("#" + id)
         .append("button")

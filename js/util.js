@@ -134,14 +134,20 @@ function post() {
     legend.title,
     ...Object.keys(axes).map((k) => axes[k].labels),
     ...Object.keys(axes).map((k) => axes[k].title),
-  ].forEach((object) => {
-    if (!object) return;
-    if (object.length > 0) {
+  ]
+    .filter((e) => e.length > 0)
+    .forEach((object) => {
       object.forEach((element) => {
-        allGraphicsElement[element.id].isReferenceElement = true;
+        switch (typeof element) {
+          case "string":
+            allGraphicsElement[element].isReferenceElement = true;
+            break;
+          case "object":
+            allGraphicsElement[element.id].isReferenceElement = true;
+            break;
+        }
       });
-    }
-  });
+    });
   //// TBD: handle higher level labels using new axes?
   // if (xAxis.upperLevels) {
   //   xAxis.upperLevels.forEach((level) => {
@@ -160,7 +166,7 @@ function post() {
   annotations.allGraphicsElement = allGraphicsElement;
   annotations.groupedGraphicsElement = groupedGraphicsElement;
   annotations.chartTitle =
-    chartTitle.length > 0
+    chartTitle.filter((e) => e !== null).length > 0
       ? chartTitle.map((title) => allGraphicsElement[title.id])
       : Object.keys(markInfo).filter(
           (mark) => markInfo[mark].Role === "Chart Title"
