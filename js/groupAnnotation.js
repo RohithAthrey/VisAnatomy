@@ -87,9 +87,9 @@ function initilizeGroupAnnotation() {
       //button.innerHTML = color;
       button.innerHTML = "Select all marks whose fill is " + color;
       button.innerHTML +=
-      ' <div class="inline-container"><div class="inline-rectangle" style="background-color: ' +
-      color +
-      '; border: 2px solid black; margin-bottom:4px;"></div></div>';
+        ' <div class="inline-container"><div class="inline-rectangle" style="background-color: ' +
+        color +
+        '; border: 2px solid black; margin-bottom:4px;"></div></div>';
       colorBasedSelection.appendChild(button);
     });
 
@@ -547,6 +547,7 @@ function createLabel(text) {
 
 function processGroup(group, parentElement) {
   let thisLabel;
+  console.log(group);
   if (Array.isArray(group)) {
     // Create a parent label if the group is an array
     thisLabel = createLabel("");
@@ -689,8 +690,8 @@ function mergeGroups() {
       if (label.style.border === "2.5px solid red") {
         selectedLabels.push(label);
         processLabelInnerHtml(label);
-        indices2beRemoved.push(i - 3); // 3 is the number of divs before the first label by inspecting the DOM
-        thisNestedGroup.push(nestedGrouping[i - 3]);
+        indices2beRemoved.push(i - 5); // 3 is the number of divs before the first label by inspecting the DOM
+        thisNestedGroup.push(nestedGrouping[i - 5]);
       }
     });
 
