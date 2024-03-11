@@ -149,7 +149,7 @@ function createList2(item) {
     })
     .on("click", function () {
       d3.select("#selectedGroup4EncodingStage1").text("Group " + item.id);
-      populateChannelList(["x", "y"]);
+      populateChannelList(["x", "y", "polarAngle", "polarRadius"]);
       if (Object.keys(objectEncodings).includes("Group " + item.id)) {
         let channelList = document.getElementById("channelList");
         let listItems = channelList.querySelectorAll(".list-item");
