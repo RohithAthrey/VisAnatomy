@@ -1,8 +1,10 @@
 var availableTexts;
+var groupMarkCorrespondence = {};
+var textObjectLinking = {};
 
 function initilizeConstraintAnnotation() {
   // first filter out texts whose mark role is not Main Chart Mark or isReferenceElement is false
-  console.log(referenceElements);
+  groupMarkCorrespondence = {};
   availableTexts = Object.values(allGraphicsElement).filter(function (d) {
     return d.tagName === "text" && !referenceElements.includes(d.id)
       ? markInfo[d.id]?.Role !== "Main Chart Mark"
@@ -19,6 +21,7 @@ function initilizeConstraintAnnotation() {
 }
 
 function createList3(item) {
+  console.log(item);
   const container = document.createElement("div");
   container.style.backgroundColor = "#E5FFFF"; // Background color for each list
   container.style.padding = "3px";
@@ -32,6 +35,8 @@ function createList3(item) {
 
   const content = document.createElement("span");
   content.textContent = "Group " + item.id;
+  content.id = "conPage_" + content.textContent;
+  groupMarkCorrespondence[content.id] = item.marks;
 
   d3.select(content)
     .on("mouseover", function () {
@@ -64,7 +69,9 @@ function createList3(item) {
     // For lowest level items, display individual marks as foldable but non-expandable
     item.marks.forEach((mark) => {
       const markItem = document.createElement("li");
-      markItem.textContent = mark.split(" ")[0] + " ";
+      markItem.textContent = mark.split(" ")[0];
+      markItem.id = "conPage_" + markItem.textContent;
+      groupMarkCorrespondence[markItem.id] = [mark];
       d3.select(markItem)
         .on("mouseover", function () {
           d3.select(this).style("cursor", "pointer");
@@ -104,6 +111,87 @@ function enableDD4AnnotationRoleText() {
       .selectAll("tspan")
       .style("opacity", 1);
   });
+
+  let dragHandler2 = d3
+    .drag()
+    .on("start", function (event) {
+      let current = d3.select(this);
+      let thisText = availableTexts.filter(
+        (t) => t["id"] == current.attr("id")
+      )[0];
+      document.getElementById("pairInfo").style.visibility = "visible";
+      document.getElementById("draggingText").innerHTML =
+        current.attr("id") + ": " + thisText["content"];
+
+      d3.select("body")
+        .append("div")
+        .attr("class", "div4text")
+        .attr(
+          "style",
+          "display: block; position:absolute; top: " +
+            (event.sourceEvent.pageY - 12.5) +
+            "px; left: " +
+            (event.sourceEvent.pageX - 50) +
+            "px; height: " +
+            25 +
+            "px; width: " +
+            100 +
+            "px"
+        )
+        .html(thisText["content"]);
+    })
+    .on("drag", function (event) {
+      let current = d3.select(this);
+      // get the element ID where the mouse is currently at
+      let elements = document.elementsFromPoint(
+        event.sourceEvent.pageX,
+        event.sourceEvent.pageY
+      );
+      let element = elements.filter((d) => d.id.startsWith("conPage"))[0];
+      mainChartMarks.forEach((mark) => {
+        d3.select("#" + mark).style("opacity", "0.3");
+      });
+      groupMarkCorrespondence[element?.id]?.forEach((mark) => {
+        d3.select("#" + mark).style("opacity", "1");
+      });
+      document.getElementById("droppingObject").innerHTML = element
+        ? element.id.split("_")[1]
+        : "";
+      d3.select(".div4text").attr(
+        "style",
+        "display: block; position:absolute; top: " +
+          (event.sourceEvent.pageY - 12.5) +
+          "px; left: " +
+          (event.sourceEvent.pageX - 50) +
+          "px; height: " +
+          25 +
+          "px; width: " +
+          100 +
+          "px"
+      );
+    })
+    .on("end", function (event) {
+      let current = d3.select(this);
+      let elements = document.elementsFromPoint(
+        event.sourceEvent.pageX,
+        event.sourceEvent.pageY
+      );
+      let element = elements.filter((d) => d.id.startsWith("conPage"))[0];
+      d3.select(".div4text").remove();
+      document.getElementById("pairInfo").style.visibility = "hidden";
+      document.getElementById("droppingObject").innerHTML = "";
+      document.getElementById("draggingText").innerHTML = "";
+      textObjectLinking[element.id.split("_")[1]] = [
+        availableTexts.filter((t) => t["id"] == current.attr("id"))[0].id,
+      ];
+      // display textObjectLinking in pretty JSON format in pairingStructure DIV
+      document.getElementById("pairingStructure").innerHTML = JSON.stringify(
+        textObjectLinking,
+        null,
+        2
+      );
+    });
+
   // add the hover effect on the texts specified by textIDs, such that when hovered over the color turns red when mouseout the color turns back to the original color
   textIDs.forEach(function (textID) {
     d3.select("#" + textID)
@@ -115,5 +203,6 @@ function enableDD4AnnotationRoleText() {
           .style("fill", markInfo[textID]?.fill || "black")
           .style("font-weight", "normal");
       });
+    dragHandler2(d3.select("#" + textID));
   });
 }

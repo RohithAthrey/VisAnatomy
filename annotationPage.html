@@ -960,7 +960,31 @@
               vertical-align: top;
               width: 49%;
             "
-          ></div>
+          >
+            <h4>
+              Drag a text from the SVG chart and drop it onto its corresponding
+              visual object displayed in the grouping structure to pair them as
+              a text-object linking.
+
+              <p id="pairInfo" style="visibility: hidden">
+                Current pairing
+                <span id="draggingText" style="color: blue"> </span> and
+                <span id="droppingObject" style="color: red"></span>
+              </p>
+            </h4>
+
+            <div
+              id="pairingStructure"
+              style="
+                overflow: scroll;
+                overflow: -moz-scrollbars-vertical;
+                height: 200px;
+                border: 0.5px solid #aaa;
+                padding: 5px;
+                margin-bottom: 10px;
+              "
+            ></div>
+          </div>
         </div>
       </div>
     </div>
@@ -1169,6 +1193,9 @@
               .on("mousedown", null)
               .on("mouseup", null)
               .on("mousemove", null);
+            d3.select("#rbox1")
+              .selectAll("text")
+              .style("pointer-events", "none");
             break;
           case "Encodings":
             d3.select("#rbox1")
