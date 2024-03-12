@@ -1,6 +1,5 @@
 var availableTexts;
 var groupMarkCorrespondence = {};
-var textObjectLinking = {};
 
 function initilizeConstraintAnnotation() {
   // first filter out texts whose mark role is not Main Chart Mark or isReferenceElement is false
@@ -18,6 +17,12 @@ function initilizeConstraintAnnotation() {
   document
     .getElementById("ConstraintAnnotation")
     .appendChild(createList3(convertToJSON2(nestedGrouping[0])));
+
+  document.getElementById("pairingStructure").innerHTML = JSON.stringify(
+    textObjectLinking,
+    null,
+    2
+  );
 }
 
 function createList3(item) {
