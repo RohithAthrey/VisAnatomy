@@ -104,8 +104,8 @@ function initilizeMarkAnnotation() {
           if (!markSelection.includes(element.id))
             d3.select("#" + element.id).style("opacity", "0.2");
         })
-        .on("click", () => {
-          markOnClick(element.id);
+        .on("click", (event) => {
+          markOnClick(element.id, event);
         });
     });
   });
@@ -187,27 +187,76 @@ function initilizeMarkAnnotation() {
   svgHighlighting();
 }
 
-function markOnClick(markID) {
-  // disableAllMarkSelections();
-  if (
-    markSelection.indexOf(markID) >= 0
-    //d3.select("#mark_" + markID).style("background-color") === "rgb(0, 0, 0)"
-  ) {
-    d3.selectAll("#mark_" + markID)
-      .style("background-color", "white")
-      .style("color", "black");
-    markSelection.splice(markSelection.indexOf(markID), 1);
-    document.getElementById("numberOfMarksSelected").innerHTML =
-      markSelection.length;
-    // parseInt(document.getElementById("numberOfMarksSelected").innerHTML) - 1;
+// function markOnClick(markID) { // the old function without the shift-click feature
+//   // disableAllMarkSelections();
+//   if (
+//     markSelection.indexOf(markID) >= 0
+//     //d3.select("#mark_" + markID).style("background-color") === "rgb(0, 0, 0)"
+//   ) {
+//     d3.selectAll("#mark_" + markID)
+//       .style("background-color", "white")
+//       .style("color", "black");
+//     markSelection.splice(markSelection.indexOf(markID), 1);
+//     document.getElementById("numberOfMarksSelected").innerHTML =
+//       markSelection.length;
+//     // parseInt(document.getElementById("numberOfMarksSelected").innerHTML) - 1;
+//   } else {
+//     d3.select("#mark_" + markID).style("background-color", "#eee");
+//     // .style("color", "white");
+//     if (markSelection.indexOf(markID) < 0) markSelection.push(markID);
+//     document.getElementById("numberOfMarksSelected").innerHTML =
+//       markSelection.length;
+//     //parseInt(document.getElementById("numberOfMarksSelected").innerHTML) + 1;
+//   }
+
+//   document.getElementById("markTypeSelection").value =
+//     markSelection.map((r) => markInfo[r].Type).filter(onlyUnique).length === 1
+//       ? markInfo[markID].Type
+//       : "none";
+//   document.getElementById("markRoleSelection").value =
+//     markSelection.map((r) => markInfo[r].Role).filter(onlyUnique).length === 1
+//       ? markInfo[markID].Role
+//       : "none";
+//   svgHighlighting();
+// }
+
+function markOnClick(markID, event) {
+  if (event.shiftKey) {
+    // Shift-click: Select all marks between the last clicked mark and the current mark
+    const markDivs = Array.from(document.getElementById("allMarks").children);
+    const lastClickedMarkIndex = markDivs.findIndex(
+      (markDiv) =>
+        markDiv.id === "mark_" + markSelection[markSelection.length - 1]
+    );
+    const currentClickedMarkIndex = markDivs.findIndex(
+      (markDiv) => markDiv.id === "mark_" + markID
+    );
+
+    const startIndex = Math.min(lastClickedMarkIndex, currentClickedMarkIndex);
+    const endIndex = Math.max(lastClickedMarkIndex, currentClickedMarkIndex);
+
+    for (let i = startIndex; i <= endIndex; i++) {
+      const currentMarkID = markDivs[i].id.replace("mark_", "");
+      if (!markSelection.includes(currentMarkID)) {
+        markSelection.push(currentMarkID);
+        d3.select("#mark_" + currentMarkID).style("background-color", "#eee");
+      }
+    }
   } else {
-    d3.select("#mark_" + markID).style("background-color", "#eee");
-    // .style("color", "white");
-    if (markSelection.indexOf(markID) < 0) markSelection.push(markID);
-    document.getElementById("numberOfMarksSelected").innerHTML =
-      markSelection.length;
-    //parseInt(document.getElementById("numberOfMarksSelected").innerHTML) + 1;
+    // Regular click: Toggle the selection of the clicked mark
+    if (markSelection.indexOf(markID) >= 0) {
+      d3.selectAll("#mark_" + markID)
+        .style("background-color", "white")
+        .style("color", "black");
+      markSelection.splice(markSelection.indexOf(markID), 1);
+    } else {
+      d3.select("#mark_" + markID).style("background-color", "#eee");
+      if (markSelection.indexOf(markID) < 0) markSelection.push(markID);
+    }
   }
+
+  document.getElementById("numberOfMarksSelected").innerHTML =
+    markSelection.length;
 
   document.getElementById("markTypeSelection").value =
     markSelection.map((r) => markInfo[r].Type).filter(onlyUnique).length === 1
