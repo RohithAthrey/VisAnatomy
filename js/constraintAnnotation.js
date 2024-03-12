@@ -19,7 +19,7 @@ function initilizeConstraintAnnotation() {
     .appendChild(createList3(convertToJSON2(nestedGrouping[0])));
 
   document.getElementById("pairingStructure").innerHTML = JSON.stringify(
-    textObjectLinking,
+    textObjectLinking ? textObjectLinking : {},
     null,
     2
   );
@@ -186,9 +186,11 @@ function enableDD4AnnotationRoleText() {
       document.getElementById("pairInfo").style.visibility = "hidden";
       document.getElementById("droppingObject").innerHTML = "";
       document.getElementById("draggingText").innerHTML = "";
-      textObjectLinking[element.id.split("_")[1]] = [
-        availableTexts.filter((t) => t["id"] == current.attr("id"))[0].id,
-      ];
+      if (element) {
+        textObjectLinking[element.id.split("_")[1]] = [
+          availableTexts.filter((t) => t["id"] == current.attr("id"))[0].id,
+        ];
+      }
       // display textObjectLinking in pretty JSON format in pairingStructure DIV
       document.getElementById("pairingStructure").innerHTML = JSON.stringify(
         textObjectLinking,
