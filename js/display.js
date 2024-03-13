@@ -149,13 +149,15 @@ function updateUseElementReferences(svgElement) {
 // }
 
 function displayAxis(index) {
-  console.log(axes);
   let axis = axes[index];
+  console.log(axis);
+
   if (Object.keys(axis).length === 0) return;
   d3.select("#axis_" + index)
     .selectAll(".higerLevelLabelBox")
     .remove();
   d3.select("axisLabel_" + index).style("width", "calc(100% - 405px)");
+  console.log(d3.select("#axisLabel_" + index));
   d3.select("#axisLabel_" + index)
     .selectAll("button")
     .remove();
@@ -191,12 +193,14 @@ function displayAxis(index) {
     parseFloat(a.id.substring(4)) > parseFloat(b.id.substring(4)) ? 1 : -1
   );
 
+  console.log(labels);
+
   for (let label of labels) {
     displayAxisLabel(label, "#axisLabel_" + index);
   }
 
   [1, 2, 3].forEach((i) => {
-    d3.select("#" + "axisLabel_" + index + i).remove();
+    d3.select("#" + "axisLabel_" + index + "_" + i).remove();
   });
   d3.select("#" + "axisLabel_" + index).style("width", "calc(100% - 405px)");
 
@@ -248,6 +252,7 @@ function displayAxis(index) {
 }
 
 function displayAxisLabel(label, divID) {
+  console.log(divID);
   d3.select(divID)
     .append("button")
     .datum(label)

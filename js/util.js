@@ -5,8 +5,8 @@ function initilizeVariables() {
   xAxis = {};
   yAxis = {};
   axes = {
-    1: { labels: [], fieldType: "Null", title: [], type: "x" },
-    2: { labels: [], fieldType: "Null", title: [], type: "y" },
+    1: { labels: [], fieldType: "Null", title: [], ticks: [], type: "x" },
+    2: { labels: [], fieldType: "Null", title: [], ticks: [], type: "y" },
   };
   legend = {};
   xGridlines = [];
@@ -83,17 +83,26 @@ function tryLoadAnnotations(filename) {
         ? annotations.referenceElement.legend.title
         : [];
       console.log("start loading axes");
+      // remove axes whose id is more than 3
+      for (let thisIndex = 3; thisIndex <= 20; thisIndex++) {
+        // check if the axis with ID "#axis_" + thisIndex exists
+        if (d3.select("#axis_" + thisIndex).empty()) {
+          // if it exists, remove it
+          break;
+        }
+        d3.select("#axis_" + thisIndex).remove();
+      }
       Object.keys(axes).forEach((k) => {
         let index = parseInt(k);
         console.log("loading axis", index, axes[index]);
+        if (parseInt(k) > axisCount) addAxisConfiguration();
         displayAxis(index);
       });
-      console.log("end loading axes");
+      console.log("finish loading axes");
       displayLegend(legend);
       displayTitles(chartTitle, titleLegend);
     })
     .catch(function () {
-      console.log("error loading the annotation file");
       this.dataError = true;
     });
 }
