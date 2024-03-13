@@ -57,6 +57,7 @@ const typeSpecificChannels = {
     "vertices",
     "radius",
     "fill",
+    "strokeColor",
     "opacity",
     "shape",
     "vertices-polarAngle",
@@ -106,7 +107,7 @@ const typeSpecificChannels = {
     "fill",
     "opacity",
     "shape",
-    "stroke color",
+    "strokeColor",
   ],
   Path: [
     "shape",
