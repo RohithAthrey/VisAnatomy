@@ -93,7 +93,6 @@ function tryLoadAnnotations(filename) {
       displayTitles(chartTitle, titleLegend);
     })
     .catch(function () {
-      console.log("error loading the annotation file");
       this.dataError = true;
     });
 }
