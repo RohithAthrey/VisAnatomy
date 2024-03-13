@@ -413,6 +413,7 @@ function findLegend(texts, rects, numOfColor) {
 
 function findAxisInArea(o, tl, br, texts) {
   let labels = [];
+  if (!texts || texts.length === 0) return;
   for (let text of texts) {
     let left = text.left;
     if (
