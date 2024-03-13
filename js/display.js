@@ -150,14 +150,12 @@ function updateUseElementReferences(svgElement) {
 
 function displayAxis(index) {
   let axis = axes[index];
-  console.log(axis);
 
   if (Object.keys(axis).length === 0) return;
   d3.select("#axis_" + index)
     .selectAll(".higerLevelLabelBox")
     .remove();
   d3.select("axisLabel_" + index).style("width", "calc(100% - 405px)");
-  console.log(d3.select("#axisLabel_" + index));
   d3.select("#axisLabel_" + index)
     .selectAll("button")
     .remove();

@@ -194,6 +194,7 @@
                   type="image"
                   src="img/select-area.png"
                   onclick="activateAreaSelect(1);"
+                  id="axis1Area"
                   width="16px"
                   height="16px"
                   class="selectAreaBtn"
@@ -259,6 +260,7 @@
                   type="image"
                   src="img/select-area.png"
                   onclick="activateAreaSelect(2);"
+                  id="axis2Area"
                   width="16px"
                   height="16px"
                   class="selectAreaBtn"
@@ -1261,7 +1263,7 @@
               <option value="number">numbers</option>
               <option value="date">dates</option>
             </select>
-            <input type="image" src="img/select-area.png" onclick="activateAreaSelect(${axisCount});" width="16px" height="16px" class="selectAreaBtn" style="margin-left: 0px; margin-top: 5px"/>
+            <input type="image" src="img/select-area.png" onclick="activateAreaSelect(${axisCount});" id="axis${axisCount}Area" width="16px" height="16px" class="selectAreaBtn" style="margin-left: 0px; margin-top: 5px"/>
           </div>
           <input type="image" src="img/plus.png" onclick="addAxisLevel(${axisCount});" width="16px" height="16px" style="position: absolute; right: 7px;" class="selectAreaBtn" />
         </div>

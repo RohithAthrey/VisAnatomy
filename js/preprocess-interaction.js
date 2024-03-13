@@ -143,7 +143,7 @@ function activateAreaSelect(index) {
   areaSelection = index;
   document.body.style.cursor = "crosshair";
   d3.selectAll(".selectAreaBtn").style("background", "#eee");
-  d3.select("#" + index + "Area").style("background", "#c8e6fa");
+  d3.select("#axis" + index + "Area").style("background", "#c8e6fa");
 }
 
 function deactivateAreaSelect() {

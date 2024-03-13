@@ -427,6 +427,11 @@ function findAxisInArea(o, tl, br, texts) {
     }
   }
   if (labels.length == 0) return;
+  // filter labels by their IDs, onlyUnique doesn't work here
+  labels = labels
+    .map((l) => l.id)
+    .filter(onlyUnique)
+    .map((id) => allGraphicsElement[id]);
 
   let axis = axes[o];
   axis["type"] = axis["type"] ? axis["type"] : o;
