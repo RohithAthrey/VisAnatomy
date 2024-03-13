@@ -89,7 +89,17 @@ const typeSpecificChannels = {
     "opacity",
     "shape",
   ],
-  Text: ["x", "y", "text", "color", "opacity", "fontSize", "fontWeight"],
+  Text: [
+    "x",
+    "y",
+    "text",
+    "color",
+    "opacity",
+    "fontSize",
+    "fontWeight",
+    "polarAngle",
+    "polarRadius",
+  ],
   Image: ["x", "y", "width", "height", "opacity"],
   Area: [
     "x",
