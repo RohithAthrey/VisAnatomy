@@ -47,11 +47,18 @@ function fieldTypeChanged(index) {
   let val = d3.select("#fieldType_" + index).property("value");
   index = parseInt(index);
   if (val == "Null") {
-    let labels = axes[index].labels.map((d) => d);
+    let labels = [...axes[index].labels];
     for (let l of labels) {
       removeAxisLabel("axisLabel_" + index, l);
     }
-    axes[index] = { labels: [], fieldType: "Null" };
+    axes[index] = {
+      labels: [],
+      fieldType: "Null",
+      title: [],
+      type: "x",
+      ticks: [],
+      path: [],
+    };
   }
 
   axes[index].fieldType = val;

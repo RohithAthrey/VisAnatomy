@@ -1239,7 +1239,9 @@
 
       function addAxisConfiguration() {
         axisCount++;
-        axes[axisCount] = { labels: [], fieldType: "Null", title: [] };
+        axes[axisCount] = axes[axisCount]
+          ? axes[axisCount]
+          : { labels: [], fieldType: "Null", title: [] };
         const axisDiv = document.createElement("div");
         axisDiv.className = "axisDiv";
         axisDiv.id = `axis_${axisCount}`;
