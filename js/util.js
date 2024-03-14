@@ -92,6 +92,7 @@ function tryLoadAnnotations(filename) {
         }
         d3.select("#axis_" + thisIndex).remove();
       }
+      axisCount = 2;
       Object.keys(axes).forEach((k) => {
         let index = parseInt(k);
         console.log("loading axis", index, axes[index]);
