@@ -191,8 +191,6 @@ function displayAxis(index) {
     parseFloat(a.id.substring(4)) > parseFloat(b.id.substring(4)) ? 1 : -1
   );
 
-  console.log(labels);
-
   for (let label of labels) {
     displayAxisLabel(label, "#axisLabel_" + index);
   }
@@ -250,7 +248,6 @@ function displayAxis(index) {
 }
 
 function displayAxisLabel(label, divID) {
-  console.log(divID);
   d3.select(divID)
     .append("button")
     .datum(label)
