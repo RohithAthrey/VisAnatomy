@@ -45,6 +45,7 @@ const typeSpecificChannels = {
     "y",
     "radius",
     "fill",
+    "strokeColor",
     "opacity",
     "area",
     "shape",
