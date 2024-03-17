@@ -179,25 +179,37 @@
             <span style="margin-right: 30px; font-weight: bold"
               >Axis & Legend Detection Results</span
             >
-            <span
-              ><img
-                src="img/plus.png"
-                alt="Add Axis"
-                style="width: 15px; height: 15px; cursor: pointer"
-                onclick="addAxisConfiguration();"
-            /></span>
-            <span
+            <button
+              style="height: 30px; cursor: pointer"
+              onclick="addAxisConfiguration();"
+            >
+              Add an Axis
+            </button>
+            <!-- <span
               ><img
                 id="questionMark"
                 src="img/question mark.png"
                 alt="Question Mark"
                 style="width: 15px; height: 15px; cursor: pointer"
-            /></span>
+            /></span> -->
           </div>
           <div class="float-container" id="buttons" style="display: block">
             <!-- This is the main axis div -->
             <div class="axisDiv" id="axis_1">
               <!--This is the first part of the column-->
+              <!-- <span class="deleteAxis" onclick="deleteAxis(1)">
+                <svg width="20" height="20">
+                  <circle cx="10" cy="10" r="8" fill="red" />
+                  <line
+                    x1="6"
+                    y1="10"
+                    x2="14"
+                    y2="10"
+                    stroke="white"
+                    stroke-width="2"
+                  />
+                </svg>
+              </span> -->
               <div class="axisRow">
                 <div class="axisMeta">
                   <select
@@ -257,6 +269,19 @@
 
             <div class="axisDiv" id="axis_2">
               <!--This is the first part of the column-->
+              <!-- <span class="deleteAxis" onclick="deleteAxis(2)">
+                <svg width="20" height="20">
+                  <circle cx="10" cy="10" r="8" fill="red" />
+                  <line
+                    x1="6"
+                    y1="10"
+                    x2="14"
+                    y2="10"
+                    stroke="white"
+                    stroke-width="2"
+                  />
+                </svg>
+              </span> -->
               <div class="axisRow">
                 <div class="axisMeta">
                   <select
@@ -320,15 +345,6 @@
               <div class="axisRow">
                 <div class="axisMeta">
                   <b>Legend</b>
-                  <input
-                    type="image"
-                    src="img/select-area.png"
-                    id="legendArea"
-                    onclick="activateAreaSelect('legend');"
-                    width="16px"
-                    height="16px"
-                    class="selectAreaBtn"
-                  />
                   <select
                     class="fieldType"
                     id="legendFieldType"
@@ -339,6 +355,15 @@
                     <option value="number">numbers</option>
                     <option value="date">dates</option>
                   </select>
+                  <input
+                    type="image"
+                    src="img/select-area.png"
+                    id="legendArea"
+                    onclick="activateAreaSelect('legend');"
+                    width="16px"
+                    height="16px"
+                    class="selectAreaBtn"
+                  />
                 </div>
                 <div
                   class="axisTitle"
@@ -1079,10 +1104,10 @@
       const popOutContainer = document.getElementById("popOutContainer");
       const closeButton = document.getElementById("closeButton");
 
-      questionMark.addEventListener("click", function () {
-        //when ? is clicked
-        popOutContainer.style.display = "block";
-      });
+      // questionMark.addEventListener("click", function () {
+      //   //when ? is clicked
+      //   popOutContainer.style.display = "block";
+      // });
 
       closeButton.addEventListener("click", function () {
         //when the cross mark is clicked
@@ -1177,6 +1202,8 @@
               .forEach((r) => {
                 if (r.length > 0) d3.select("#" + r).style("opacity", "1");
               });
+            document.getElementById("chartTitleDiv").style.visibility =
+              "visible";
             document.getElementById("axisAndLegend").style.visibility =
               "visible";
             document.getElementById("generalizedSelection").style.visibility =
@@ -1204,6 +1231,8 @@
               svgTextHighlight(groupedGraphicsElement.texts);
             break;
           case "Marks":
+            document.getElementById("chartTitleDiv").style.visibility =
+              "hidden";
             allSVGElementID.forEach((rid) => {
               d3.select("#" + rid).style("opacity", "1");
             });
@@ -1315,6 +1344,47 @@
       var mainChartMarks;
 
       let axisCount = 2;
+
+      function deleteAxis(axisIndex) {
+        const axisDiv = document.getElementById(`axis_${axisIndex}`);
+        axisDiv.remove();
+
+        // Remove the corresponding axis from the axe variable
+        delete axes[axisIndex];
+
+        // Reorder the axe variable and update the div IDs
+        const newAxes = {};
+        let newIndex = 1;
+        for (const key in axes) {
+          if (axes.hasOwnProperty(key)) {
+            newAxes[newIndex] = axes[key];
+            const div = document.getElementById(`axis_${key}`);
+            if (div) {
+              div.id = `axis_${newIndex}`;
+              div
+                .querySelector(".deleteAxis")
+                .setAttribute("onclick", `deleteAxis(${newIndex})`);
+              div.querySelector(".axisType").id = `axisType_${newIndex}`;
+              div
+                .querySelector(".axisType")
+                .setAttribute("onchange", `axisTypeChanged(${newIndex})`);
+              div.querySelector(".fieldType").id = `fieldType_${newIndex}`;
+              div
+                .querySelector(".fieldType")
+                .setAttribute("onchange", `fieldTypeChanged(${newIndex})`);
+              div.querySelector(".selectAreaBtn").id = `axis${newIndex}Area`;
+              div
+                .querySelector(".selectAreaBtn")
+                .setAttribute("onclick", `activateAreaSelect(${newIndex});`);
+              div.querySelector(".axisTitle").id = `axisTitle_${newIndex}`;
+              div.querySelector(".axisLabels").id = `axisLabel_${newIndex}`;
+            }
+            newIndex++;
+          }
+        }
+        axes = newAxes;
+        axisCount = newIndex - 1;
+      }
 
       function addAxisConfiguration() {
         axisCount++;
