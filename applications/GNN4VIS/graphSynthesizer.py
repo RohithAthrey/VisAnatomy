@@ -207,6 +207,7 @@ def generateGraphData(chartName):
 
 
 
+# print(len(getAllChartNames()))
 for chartName in getAllChartNames():
     # if the chart has already been processed, i.e., the json file exists, then skip it
     if (os.path.exists(os.path.join(os.path.dirname(os.path.realpath(__file__)), chartName+".json"))):
