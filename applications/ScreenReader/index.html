@@ -1,12 +1,18 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>SVG Chart Viewer</title>
+    <title>Screen Reader Use Case</title>
+    <script
+      type="text/javascript"
+      charset="utf8"
+      src="./js/buildStackedBars.js"
+    ></script>
     <style>
       body {
         display: flex;
         height: 100vh;
         margin: 0;
+        overflow: hidden;
       }
       .chart-list {
         width: 200px;
@@ -50,6 +56,7 @@
       </ul>
     </div>
     <div class="chart-container">
+      <div id="last-key-pressed">Last key pressed:</div>
       <div id="chart-svg"></div>
     </div>
 
@@ -67,7 +74,19 @@
           true
         );
         xhr.send();
+        switch (chartName) {
+          case "ConnectedDotPlot9 from Mascot":
+            break;
+          case "GeoHeatmap10 from D3":
+            break;
+          case "LineGraph17 from HighCharts":
+            break;
+          case "StackedBarChart11 from ApexCharts":
+            initilizeStackedBarChart();
+            break;
+        }
       }
+      loadChart("StackedBarChart11 from ApexCharts");
     </script>
   </body>
 </html>
