@@ -5,7 +5,12 @@
     <script
       type="text/javascript"
       charset="utf8"
-      src="./js/buildStackedBars.js"
+      src="./js/buildStackedBar.js"
+    ></script>
+    <script
+      type="text/javascript"
+      charset="utf8"
+      src="./js/buildMultiLine.js"
     ></script>
     <style>
       body {
@@ -74,19 +79,21 @@
           true
         );
         xhr.send();
+        console.clear();
         switch (chartName) {
           case "ConnectedDotPlot9 from Mascot":
             break;
           case "GeoHeatmap10 from D3":
             break;
           case "LineGraph17 from HighCharts":
+            // initilizeMultiLineChart();
             break;
           case "StackedBarChart11 from ApexCharts":
             initilizeStackedBarChart();
             break;
         }
       }
-      loadChart("StackedBarChart11 from ApexCharts");
+      loadChart("LineGraph17 from HighCharts");
     </script>
   </body>
 </html>

@@ -9,8 +9,7 @@ function initilizeStackedBarChart() {
     if (jsonXhr.readyState === 4 && jsonXhr.status === 200) {
       var annotationData = JSON.parse(jsonXhr.responseText);
       // Process the annotation data as needed
-      console.log(annotationData);
-      builtTree(annotationData.annotations);
+      builtTree_stackedBar(annotationData.annotations);
     }
   };
   jsonXhr.open(
@@ -21,14 +20,13 @@ function initilizeStackedBarChart() {
   jsonXhr.send();
 }
 
-function builtTree(annotation) {
+function builtTree_stackedBar(annotation) {
   markInfo = annotation["markInfo"];
   allElements = annotation["allGraphicsElement"];
   referenceElements = annotation["referenceElement"];
   mainChartMarks = Object.keys(markInfo)
     .filter((key) => markInfo[key]["Role"] === "Main Chart Mark")
     .map((id) => allElements[id]);
-  console.log(mainChartMarks);
   var treeRepresentation = {
     root: {
       level: 0,
@@ -52,7 +50,6 @@ function builtTree(annotation) {
   referenceElements.legend.labels.map((label) => {
     thisColor = referenceElements.legend.mapping[label.content];
     marksOflabel = mainChartMarks.filter((mark) => mark.fill === thisColor);
-    console.log(marksOflabel);
     treeRepresentation[label.id] = {
       level: 2,
       name: label.content,
@@ -119,28 +116,28 @@ function builtTree(annotation) {
     });
   });
 
-  addKeyBoardNavigation(treeRepresentation, mainChartMarks);
+  addKeyBoardNavigation_stackedBar(treeRepresentation, mainChartMarks);
 }
 
-function addKeyBoardNavigation(treeRepresentation, allMarks) {
+function addKeyBoardNavigation_stackedBar(treeRepresentation, allMarks) {
   var lastKeyPressedDiv = document.getElementById("last-key-pressed");
   // Listen to the keyboard event
   document.addEventListener("keydown", function (event) {
     switch (event.key) {
       case "ArrowUp":
-        navigateUp(treeRepresentation);
+        navigateUp_stackedBar(treeRepresentation);
         lastKeyPressedDiv.textContent = "Last key pressed: ArrowUp";
         break;
       case "ArrowRight":
-        navigateRight(treeRepresentation);
+        navigateRight_stackedBar(treeRepresentation);
         lastKeyPressedDiv.textContent = "Last key pressed: ArrowRight";
         break;
       case "ArrowDown":
-        navigateDown(treeRepresentation);
+        navigateDown_stackedBar(treeRepresentation);
         lastKeyPressedDiv.textContent = "Last key pressed: ArrowDown";
         break;
       case "ArrowLeft":
-        navigateLeft(treeRepresentation);
+        navigateLeft_stackedBar(treeRepresentation);
         lastKeyPressedDiv.textContent = "Last key pressed: ArrowLeft";
         break;
       default:
@@ -157,7 +154,7 @@ function addKeyBoardNavigation(treeRepresentation, allMarks) {
   });
 }
 
-function navigateUp(treeRepresentation) {
+function navigateUp_stackedBar(treeRepresentation) {
   // Navigate to the parent node
   if (treeRepresentation[currentNode].parent !== null) {
     currentNode = treeRepresentation[currentNode].parent;
@@ -165,7 +162,7 @@ function navigateUp(treeRepresentation) {
   }
 }
 
-function navigateRight(treeRepresentation) {
+function navigateRight_stackedBar(treeRepresentation) {
   // Navigate to the next sibling node
   var siblings =
     treeRepresentation[treeRepresentation[currentNode].parent]?.children;
@@ -177,7 +174,7 @@ function navigateRight(treeRepresentation) {
   }
 }
 
-function navigateDown(treeRepresentation) {
+function navigateDown_stackedBar(treeRepresentation) {
   // Navigate to the first child node
   if (treeRepresentation[currentNode].children !== null) {
     currentNode = treeRepresentation[currentNode].children[0];
@@ -185,7 +182,7 @@ function navigateDown(treeRepresentation) {
   }
 }
 
-function navigateLeft(treeRepresentation) {
+function navigateLeft_stackedBar(treeRepresentation) {
   // Navigate to the previous sibling node
   var siblings =
     treeRepresentation[treeRepresentation[currentNode].parent]?.children;
