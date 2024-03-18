@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SVG Chart Viewer</title>
+    <style>
+      body {
+        display: flex;
+        height: 100vh;
+        margin: 0;
+      }
+      .chart-list {
+        width: 200px;
+        padding: 10px;
+        border-right: 1px solid #ccc;
+      }
+      .chart-list ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+      }
+      .chart-list li {
+        cursor: pointer;
+        padding: 10px;
+        border-bottom: 1px solid #ccc;
+      }
+      .chart-list li:last-child {
+        border-bottom: none;
+      }
+      .chart-container {
+        flex: 1;
+        padding: 10px;
+      }
+      #chart-svg {
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="chart-list">
+      <ul>
+        <li onclick="loadChart('ConnectedDotPlot9 from Mascot')">
+          Connected Dot Plot
+        </li>
+        <li onclick="loadChart('GeoHeatmap10 from D3')">Geo-Heatmap</li>
+        <li onclick="loadChart('LineGraph17 from HighCharts')">Line Graph</li>
+        <li onclick="loadChart('StackedBarChart11 from ApexCharts')">
+          Stacked Bar Charts
+        </li>
+      </ul>
+    </div>
+    <div class="chart-container">
+      <div id="chart-svg"></div>
+    </div>
+
+    <script>
+      function loadChart(chartName) {
+        var xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = function () {
+          if (xhr.readyState === 4 && xhr.status === 200) {
+            document.getElementById("chart-svg").innerHTML = xhr.responseText;
+          }
+        };
+        xhr.open(
+          "GET",
+          "targeted SVGs with Annotations/" + chartName + ".svg",
+          true
+        );
+        xhr.send();
+      }
+    </script>
+  </body>
+</html>
