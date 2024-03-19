@@ -116,13 +116,14 @@ function builtTree_stackedBar(annotation) {
     });
   });
 
+  console.log(treeRepresentation);
   addKeyBoardNavigation_stackedBar(treeRepresentation, mainChartMarks);
 }
 
 function addKeyBoardNavigation_stackedBar(treeRepresentation, allMarks) {
   var lastKeyPressedDiv = document.getElementById("last-key-pressed");
   // Listen to the keyboard event
-  document.addEventListener("keydown", function (event) {
+  document.onkeydown = function (event) {
     switch (event.key) {
       case "ArrowUp":
         navigateUp_stackedBar(treeRepresentation);
@@ -151,7 +152,7 @@ function addKeyBoardNavigation_stackedBar(treeRepresentation, allMarks) {
         document.getElementById(mark.id).style.opacity = 0.3;
       }
     });
-  });
+  };
 }
 
 function navigateUp_stackedBar(treeRepresentation) {
