@@ -12,6 +12,16 @@
       charset="utf8"
       src="./js/buildMultiLine.js"
     ></script>
+    <script
+      type="text/javascript"
+      charset="utf8"
+      src="./js/buildConnectedDotPlot.js"
+    ></script>
+    <script
+      type="text/javascript"
+      charset="utf8"
+      src="./js/buildGeoHeatmap.js"
+    ></script>
     <style>
       body {
         display: flex;
@@ -82,6 +92,7 @@
         console.clear();
         switch (chartName) {
           case "ConnectedDotPlot9 from Mascot":
+            initilizeConnectedDotPlot();
             break;
           case "GeoHeatmap10 from D3":
             break;
@@ -93,7 +104,7 @@
             break;
         }
       }
-      loadChart("LineGraph17 from HighCharts");
+      loadChart("ConnectedDotPlot9 from Mascot");
     </script>
   </body>
 </html>
