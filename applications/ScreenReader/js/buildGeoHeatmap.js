@@ -482,7 +482,7 @@ function builtTree_geoHeatmap(annotation) {
       name: "All Provinces in China",
       marks: mainChartMarks,
       children: [...provinces.map((province) => "Province_" + province)],
-      parent: null,
+      parent: "root",
     },
   };
 
@@ -593,7 +593,6 @@ function navigateRight_geoHeatmap(treeRepresentation) {
   // Navigate to the next sibling node
   var siblings =
     treeRepresentation[treeRepresentation[currentNode].parent]?.children;
-  console.log(treeRepresentation[currentNode].parent);
   if (siblings === undefined) return;
   var currentIndex = siblings.indexOf(currentNode);
   if (currentIndex < siblings.length - 1) {
