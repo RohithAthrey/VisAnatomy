@@ -22,6 +22,11 @@
       charset="utf8"
       src="./js/buildGeoHeatmap.js"
     ></script>
+    <script
+      type="text/javascript"
+      charset="utf8"
+      src="./js/buildSimpleBar.js"
+    ></script>
     <style>
       body {
         display: flex;
@@ -60,13 +65,16 @@
   <body>
     <div class="chart-list">
       <ul>
+        <li onclick="loadChart('BarChart4 from poetrybetweenpain')">
+          Simple Bar Chart
+        </li>
         <li onclick="loadChart('ConnectedDotPlot9 from Mascot')">
           Connected Dot Plot
         </li>
         <li onclick="loadChart('GeoHeatmap9 from D3')">Geo-Heatmap</li>
         <li onclick="loadChart('LineGraph17 from HighCharts')">Line Graph</li>
         <li onclick="loadChart('StackedBarChart11 from ApexCharts')">
-          Stacked Bar Charts
+          Stacked Bar Chart
         </li>
       </ul>
     </div>
@@ -91,6 +99,9 @@
         xhr.send();
         console.clear();
         switch (chartName) {
+          case "BarChart4 from poetrybetweenpain":
+            initilizeSimpleBarChart();
+            break;
           case "ConnectedDotPlot9 from Mascot":
             initilizeConnectedDotPlot();
             break;
