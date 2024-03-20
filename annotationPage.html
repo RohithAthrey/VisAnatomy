@@ -180,7 +180,7 @@
               >Axes and Legends</span
             >
             <button
-              style="height: 20px; cursor: pointer; font-size: 12.5px;"
+              style="height: 20px; cursor: pointer; font-size: 12.5px"
               onclick="addAxisConfiguration();"
             >
               Add an Axis
@@ -217,7 +217,7 @@
                     class="axisType fieldType"
                     id="axisType_1"
                     onchange="axisTypeChanged(1)"
-                    style="font-size: 12px; width: 60px;color: #fff;                    "
+                    style="font-size: 12px; width: 60px; color: #fff"
                   >
                     <option value="x">X</option>
                     <option value="y">Y</option>
@@ -1482,6 +1482,7 @@
             const ulElement = document.getElementById("demoList");
 
             files.forEach((file) => {
+              console.log(file);
               // Extract base name (e.g., "barChart" from "barChart1")
               const baseName = file.replace(/\d+\.svg$/, "");
 
