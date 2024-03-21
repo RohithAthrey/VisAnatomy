@@ -1,0 +1,130 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Chart Type Counts and Percentages",
+  "data": {
+    "values": [
+      { "Chart Type": "Line Graph", "Count": 21 },
+      { "Chart Type": "Pie Chart", "Count": 14 },
+      { "Chart Type": "Scatter Plot", "Count": 14 },
+      { "Chart Type": "Waffle Chart", "Count": 14 },
+      { "Chart Type": "Heatmap", "Count": 13 },
+      { "Chart Type": "Marimekko Chart", "Count": 13 },
+      { "Chart Type": "Treemap", "Count": 13 },
+      { "Chart Type": "Violin Plot", "Count": 13 },
+      { "Chart Type": "Waterfall Chart", "Count": 13 },
+      { "Chart Type": "Bubble Chart", "Count": 12 },
+      { "Chart Type": "Diverging Stacked Bar Chart", "Count": 12 },
+      { "Chart Type": "Stacked Area Chart", "Count": 12 },
+      { "Chart Type": "Stacked Bar Chart", "Count": 12 },
+      { "Chart Type": "Area Chart", "Count": 11 },
+      { "Chart Type": "Box And Whisker Plot", "Count": 11 },
+      { "Chart Type": "Bump Chart", "Count": 11 },
+      { "Chart Type": "Density Plot", "Count": 11 },
+      { "Chart Type": "Donut Chart", "Count": 11 },
+      { "Chart Type": "Range Chart", "Count": 11 },
+      { "Chart Type": "Bar Chart", "Count": 10 },
+      { "Chart Type": "Bar Chart In Radial Layout", "Count": 10 },
+      { "Chart Type": "Bullet Chart", "Count": 10 },
+      { "Chart Type": "Calendar Plot", "Count": 10 },
+      { "Chart Type": "Candlestick Chart", "Count": 10 },
+      { "Chart Type": "Circle Packing", "Count": 10 },
+      { "Chart Type": "Connected Dot Plot", "Count": 10 },
+      { "Chart Type": "Connected Scatterplot", "Count": 10 },
+      { "Chart Type": "Dot Plot", "Count": 10 },
+      { "Chart Type": "Gantt Chart", "Count": 10 },
+      { "Chart Type": "Geo-Heatmap", "Count": 10 },
+      { "Chart Type": "Grouped Bar Chart", "Count": 10 },
+      { "Chart Type": "Kagi Chart", "Count": 10 },
+      { "Chart Type": "Matrix Diagram", "Count": 10 },
+      { "Chart Type": "Parallel Coordinates Plot", "Count": 10 },
+      { "Chart Type": "Polar Area Chart", "Count": 10 },
+      { "Chart Type": "Radar Chart", "Count": 10 },
+      { "Chart Type": "Radial Bar Chart", "Count": 10 },
+      { "Chart Type": "Spiral Plot", "Count": 10 },
+      { "Chart Type": "Stream Graph", "Count": 10 },
+      { "Chart Type": "Word Cloud", "Count": 10 },
+      { "Chart Type": "Others", "Count": 18 }
+    ]
+  },
+  "transform": [
+    {
+      "calculate": "datum.Count / 470 * 100",
+      "as": "Percentage"
+    },
+    {
+      "calculate": "format(datum.Percentage, '.2f') + '%'",
+      "as": "PercentageText"
+    },
+    {
+      "window": [
+        {
+          "op": "lag",
+          "field": "Percentage",
+          "as": "PrevPercentage"
+        }
+      ],
+      "sort": [{ "field": "Percentage", "order": "descending" }]
+    }
+  ],
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "Chart Type",
+      "type": "nominal",
+      "sort": "-y",
+      "axis": { "labelAngle": -45, "labelFontSize": 14, "titleFontSize": 16 }
+    },
+    "y": {
+      "field": "Count",
+      "type": "quantitative",
+      "title": "Count",
+      "axis": { "titleFontSize": 16, "labelFontSize": 14, "titleFontSize": 16 }
+    },
+    "color": { "value": "#17BECF" }
+  },
+  "layer": [
+    {
+      "mark": "bar"
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "right",
+        "baseline": "top",
+        "dx": 8,
+        "dy": 5,
+        "fontSize": 14
+      },
+      "encoding": {
+        "text": { "field": "Count", "type": "quantitative" },
+        "color": { "value": "white" }
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "middle",
+        "dx": 0,
+        "dy": -5,
+        "angle": -45,
+        "fontSize": 14
+      },
+      "encoding": {
+        "text": { "field": "PercentageText", "type": "nominal" },
+        "color": { "value": "black" },
+        "opacity": {
+          "condition": {
+            "test": "datum.Percentage !== datum.PrevPercentage",
+            "value": 1
+          },
+          "value": 0
+        }
+      }
+    }
+  ],
+  "config": {
+    "view": { "stroke": null },
+    "axis": { "grid": false }
+  }
+}
