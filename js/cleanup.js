@@ -69,8 +69,7 @@ function groupSVGElementsByTypeWithCoordinates() {
 
     let zeroWidth = element.attributes.width?.value === "0";
     let zeroHeight = element.attributes.height?.value === "0";
-
-    if (!(zeroHeight && zeroWidth) && top > -1000 && left > -1000) {
+    if (!(zeroHeight && zeroWidth) && top > -4000 && left > -4000) {
       allGraphicsElement[element.id] = {
         left: left,
         top: top,
@@ -154,14 +153,21 @@ function groupSVGElementsByType() {
     ...(legend.labels ? legend.labels : []),
     ...(legend.marks ? legend.marks : []),
     ...Object.keys(axes)
-      .map((key) => axes[key].labels)
+      .map((key) => (axes[key].labels ? axes[key].labels : []))
       .flat(),
     ...Object.keys(axes)
-      .map((key) => axes[key].title)
+      .map((key) => (axes[key].title ? axes[key].title : []))
+      .flat(),
+    ...Object.keys(axes)
+      .map((key) =>
+        axes[key].upperLevels ? axes[key].upperLevels.flat(Infinity) : []
+      )
       .flat(),
     ...chartTitle,
     ...titleLegend,
-  ].map((element) => element.id);
+  ]
+    .filter((e) => e !== null)
+    .map((element) => element.id);
 
   const tempDiv = document.getElementById("rbox1");
 

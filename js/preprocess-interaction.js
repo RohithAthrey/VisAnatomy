@@ -47,11 +47,18 @@ function fieldTypeChanged(index) {
   let val = d3.select("#fieldType_" + index).property("value");
   index = parseInt(index);
   if (val == "Null") {
-    let labels = axes[index].labels.map((d) => d);
+    let labels = [...axes[index].labels];
     for (let l of labels) {
       removeAxisLabel("axisLabel_" + index, l);
     }
-    axes[index] = { labels: [], fieldType: "Null" };
+    axes[index] = {
+      labels: [],
+      fieldType: "Null",
+      title: [],
+      type: "x",
+      ticks: [],
+      path: [],
+    };
   }
 
   axes[index].fieldType = val;
@@ -136,7 +143,7 @@ function activateAreaSelect(index) {
   areaSelection = index;
   document.body.style.cursor = "crosshair";
   d3.selectAll(".selectAreaBtn").style("background", "#eee");
-  d3.select("#" + index + "Area").style("background", "#c8e6fa");
+  d3.select("#axis" + index + "Area").style("background", "#c8e6fa");
 }
 
 function deactivateAreaSelect() {
@@ -201,7 +208,6 @@ function drop(ev) {
   ev.preventDefault();
   var data = ev.dataTransfer.getData("text");
   let thisText = d3.select("#" + data).datum();
-  console.log(thisText);
 
   draggedToID = ev.srcElement.id;
   if (draggedToID.includes("IDinSVG")) {

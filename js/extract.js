@@ -413,6 +413,7 @@ function findLegend(texts, rects, numOfColor) {
 
 function findAxisInArea(o, tl, br, texts) {
   let labels = [];
+  if (!texts || texts.length === 0) return;
   for (let text of texts) {
     let left = text.left;
     if (
@@ -427,6 +428,11 @@ function findAxisInArea(o, tl, br, texts) {
     }
   }
   if (labels.length == 0) return;
+  // filter labels by their IDs, onlyUnique doesn't work here
+  labels = labels
+    .map((l) => l.id)
+    .filter(onlyUnique)
+    .map((id) => allGraphicsElement[id]);
 
   let axis = axes[o];
   axis["type"] = axis["type"] ? axis["type"] : o;

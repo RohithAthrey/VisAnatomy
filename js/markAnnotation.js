@@ -2,6 +2,102 @@ var markSelection = [];
 var channelBasedBatchSelections4AllMarks = {};
 var allLeftNodes = [];
 
+function toggleDropdown() {
+  const optionList = document.getElementById("optionList");
+  optionList.style.display =
+    optionList.style.display === "block" ? "none" : "block";
+  hideAllSublists();
+}
+
+function toggleSublist(event, optionValue) {
+  const sublistId = getSublistId(optionValue);
+  const sublist = document.getElementById(sublistId);
+
+  if (sublist.style.display === "block") {
+    sublist.style.display = "none";
+  } else {
+    hideAllSublists();
+    populateSublist(sublist);
+    sublist.style.display = "block";
+  }
+
+  event.stopPropagation();
+}
+
+function hideAllSublists() {
+  const sublists = document.getElementsByClassName("sublist");
+  for (let i = 0; i < sublists.length; i++) {
+    sublists[i].style.display = "none";
+  }
+}
+
+function populateSublist(sublist) {
+  sublist.innerHTML = "";
+
+  for (let i = 1; i <= Object.keys(axes).length; i++) {
+    const subOption = document.createElement("div");
+    subOption.className = "sub-option";
+    subOption.textContent = "axis " + i;
+    subOption.onclick = () => {
+      markAnnotationChanged("Axis " + i + " " + sublist.id.substring(3));
+      d3.selectAll(".highlightRect").remove();
+    };
+    subOption.onmouseover = () => {
+      // get axes[i].labels and fetch their positions through allGraphicsElement using their IDs and draw a rectangle around them, with padding 5px
+      let axis = axes[i];
+      let labels = axis.labels;
+      let labelPositions = labels.map((label) => {
+        let labelElement = allGraphicsElement[label.id];
+        return {
+          x: labelElement.left,
+          y: labelElement.top,
+          width: labelElement.width,
+          height: labelElement.height,
+        };
+      });
+      let x = Math.min(...labelPositions.map((pos) => pos.x));
+      let y = Math.min(...labelPositions.map((pos) => pos.y));
+      let width = Math.max(...labelPositions.map((pos) => pos.x + pos.width));
+      let height = Math.max(...labelPositions.map((pos) => pos.y + pos.height));
+      let svg = document.getElementById("rbox1").querySelector("svg");
+      let rect = document.createElementNS("http://www.w3.org/2000/svg", "rect");
+      try {
+        rect.setAttribute("x", x - 5);
+        rect.setAttribute("y", y - 5);
+        rect.setAttribute("width", width - x + 10);
+        rect.setAttribute("height", height - y + 10);
+        rect.setAttribute("stroke", "red");
+        rect.setAttribute("stroke-width", "2");
+        rect.setAttribute("fill", "none");
+        rect.classList.add("highlightRect");
+        svg.appendChild(rect);
+      } catch (e) {
+        console.log(e);
+      }
+    };
+    subOption.onmouseout = () => {
+      d3.selectAll(".highlightRect").remove();
+    };
+
+    sublist.appendChild(subOption);
+  }
+}
+
+function getSublistId(optionValue) {
+  switch (optionValue) {
+    case "Axis Label":
+      return "sublabel";
+    case "Axis Title":
+      return "subtitle";
+    case "Axis Path":
+      return "subpath";
+    case "Axis Ticks":
+      return "subticks";
+    default:
+      return "";
+  }
+}
+
 function initilizeMarkAnnotation() {
   referenceElements.forEach((rid) => {
     d3.select("#" + rid).style("opacity", "0.1");
@@ -44,7 +140,9 @@ function initilizeMarkAnnotation() {
     graphicsElementTypes.includes(key)
   );
 
-  document.getElementById("totalNumberOfMarks").innerHTML = leafNodeTypes.map((type) => mainContentElements[type].length).reduce((a, b) => a + b)
+  document.getElementById("totalNumberOfMarks").innerHTML = leafNodeTypes
+    .map((type) => mainContentElements[type].length)
+    .reduce((a, b) => a + b);
   document.getElementById("allMarks").innerHTML = "";
 
   if (Object.keys(markInfo).length === 0) {
@@ -102,8 +200,8 @@ function initilizeMarkAnnotation() {
           if (!markSelection.includes(element.id))
             d3.select("#" + element.id).style("opacity", "0.2");
         })
-        .on("click", () => {
-          markOnClick(element.id);
+        .on("click", (event) => {
+          markOnClick(element.id, event);
         });
     });
   });
@@ -185,36 +283,85 @@ function initilizeMarkAnnotation() {
   svgHighlighting();
 }
 
-function markOnClick(markID) {
-  // disableAllMarkSelections();
-  if (
-    markSelection.indexOf(markID) >= 0
-    //d3.select("#mark_" + markID).style("background-color") === "rgb(0, 0, 0)"
-  ) {
-    d3.selectAll("#mark_" + markID)
-      .style("background-color", "white")
-      .style("color", "black");
-    markSelection.splice(markSelection.indexOf(markID), 1);
-    document.getElementById("numberOfMarksSelected").innerHTML =
-      markSelection.length;
-    // parseInt(document.getElementById("numberOfMarksSelected").innerHTML) - 1;
+// function markOnClick(markID) { // the old function without the shift-click feature
+//   // disableAllMarkSelections();
+//   if (
+//     markSelection.indexOf(markID) >= 0
+//     //d3.select("#mark_" + markID).style("background-color") === "rgb(0, 0, 0)"
+//   ) {
+//     d3.selectAll("#mark_" + markID)
+//       .style("background-color", "white")
+//       .style("color", "black");
+//     markSelection.splice(markSelection.indexOf(markID), 1);
+//     document.getElementById("numberOfMarksSelected").innerHTML =
+//       markSelection.length;
+//     // parseInt(document.getElementById("numberOfMarksSelected").innerHTML) - 1;
+//   } else {
+//     d3.select("#mark_" + markID).style("background-color", "#eee");
+//     // .style("color", "white");
+//     if (markSelection.indexOf(markID) < 0) markSelection.push(markID);
+//     document.getElementById("numberOfMarksSelected").innerHTML =
+//       markSelection.length;
+//     //parseInt(document.getElementById("numberOfMarksSelected").innerHTML) + 1;
+//   }
+
+//   document.getElementById("markTypeSelection").value =
+//     markSelection.map((r) => markInfo[r].Type).filter(onlyUnique).length === 1
+//       ? markInfo[markID].Type
+//       : "none";
+//   document.getElementById("markRoleSelection").value =
+//     markSelection.map((r) => markInfo[r].Role).filter(onlyUnique).length === 1
+//       ? markInfo[markID].Role
+//       : "none";
+//   svgHighlighting();
+// }
+
+function markOnClick(markID, event) {
+  if (event.shiftKey) {
+    // Shift-click: Select all marks between the last clicked mark and the current mark
+    const markDivs = Array.from(document.getElementById("allMarks").children);
+    const lastClickedMarkIndex = markDivs.findIndex(
+      (markDiv) =>
+        markDiv.id === "mark_" + markSelection[markSelection.length - 1]
+    );
+    const currentClickedMarkIndex = markDivs.findIndex(
+      (markDiv) => markDiv.id === "mark_" + markID
+    );
+
+    const startIndex = Math.min(lastClickedMarkIndex, currentClickedMarkIndex);
+    const endIndex = Math.max(lastClickedMarkIndex, currentClickedMarkIndex);
+
+    for (let i = startIndex; i <= endIndex; i++) {
+      const currentMarkID = markDivs[i].id.replace("mark_", "");
+      if (!markSelection.includes(currentMarkID)) {
+        markSelection.push(currentMarkID);
+        d3.select("#mark_" + currentMarkID).style("background-color", "#eee");
+      }
+    }
   } else {
-    d3.select("#mark_" + markID).style("background-color", "#eee");
-    // .style("color", "white");
-    if (markSelection.indexOf(markID) < 0) markSelection.push(markID);
-    document.getElementById("numberOfMarksSelected").innerHTML =
-      markSelection.length;
-    //parseInt(document.getElementById("numberOfMarksSelected").innerHTML) + 1;
+    // Regular click: Toggle the selection of the clicked mark
+    if (markSelection.indexOf(markID) >= 0) {
+      d3.selectAll("#mark_" + markID)
+        .style("background-color", "white")
+        .style("color", "black");
+      markSelection.splice(markSelection.indexOf(markID), 1);
+    } else {
+      d3.select("#mark_" + markID).style("background-color", "#eee");
+      if (markSelection.indexOf(markID) < 0) markSelection.push(markID);
+    }
   }
+
+  document.getElementById("numberOfMarksSelected").innerHTML =
+    markSelection.length;
 
   document.getElementById("markTypeSelection").value =
     markSelection.map((r) => markInfo[r].Type).filter(onlyUnique).length === 1
       ? markInfo[markID].Type
       : "none";
-  document.getElementById("markRoleSelection").value =
-    markSelection.map((r) => markInfo[r].Role).filter(onlyUnique).length === 1
-      ? markInfo[markID].Role
-      : "none";
+  // document.getElementById("markRoleSelection").value =
+  //   markSelection.map((r) => markInfo[r].Role).filter(onlyUnique).length === 1
+  //     ? markInfo[markID].Role
+  //     : "none";
   svgHighlighting();
 }
 
@@ -258,10 +405,10 @@ function selectionOnClick(selectionID, selection) {
     markSelection.map((r) => markInfo[r].Type).filter(onlyUnique).length === 1
       ? markInfo[markSelection[0]].Type
       : "none";
-  document.getElementById("markRoleSelection").value =
-    markSelection.map((r) => markInfo[r].Role).filter(onlyUnique).length === 1
-      ? markInfo[markSelection[0]].Role
-      : "none";
+  // document.getElementById("markRoleSelection").value =
+  //   markSelection.map((r) => markInfo[r].Role).filter(onlyUnique).length === 1
+  //     ? markInfo[markSelection[0]].Role
+  //     : "none";
   svgHighlighting();
 }
 
@@ -275,7 +422,7 @@ function disableAllMarkSelections() {
   markSelection = [];
   document.getElementById("numberOfMarksSelected").innerHTML = "0";
   document.getElementById("markTypeSelection").value = "none";
-  document.getElementById("markRoleSelection").value = "none";
+  // document.getElementById("markRoleSelection").value = "none";
   svgHighlighting();
 }
 
@@ -322,40 +469,29 @@ function svgHighlighting() {
 }
 
 function markAnnotationChanged(attr) {
-  if (markSelection.length === 0) return;
+  optionList.style.display = "none";
+  if (markSelection.length === 0) {
+    return;
+  }
   console.log(markInfo);
   markSelection.map((selectedMarkID) => {
-    let thisValue = document.getElementById("mark" + attr + "Selection").value;
-    markInfo[selectedMarkID][attr] = thisValue;
-    // switch (thisValue) {
-    //   case "Horizontal Gridline":
-    //     xGridlines.push(selectedMarkID);
-    //     break;
-    //   case "Vertical Gridline":
-    //     yGridlines.push(selectedMarkID);
-    //     break;
-    //   case "X Axis Line":
-    //     xAxis["line"] = selectedMarkID;
-    //     break;
-    //   case "Y Axis Line":
-    //     yAxis["line"] = selectedMarkID;
-    //     break;
-    //   case "X Axis Tick":
-    //     if (xAxis["ticks"]) xAxis["ticks"].push(selectedMarkID);
-    //     else xAxis["ticks"] = [selectedMarkID];
-    //     break;
-    //   case "Y Axis Tick":
-    //     if (yAxis["ticks"]) yAxis["ticks"].push(selectedMarkID);
-    //     else yAxis["ticks"] = [selectedMarkID];
-    //     break;
-    //   case "Legend Mark":
-    //     legend.marks.push(selectedMarkID);
-    //     break;
-    //   case "Legend Label":
-    //     legend.labels.push(selectedMarkID);
-    //     break;
-    // }
+    if (attr === "Type") {
+      let thisValue = document.getElementById(
+        "mark" + attr + "Selection"
+      ).value;
+      markInfo[selectedMarkID][attr] = thisValue;
+    } else {
+      markInfo[selectedMarkID].Role = attr;
+    }
   });
+  if (attr.includes("Axis")) {
+    let axisID = parseInt(attr.split(" ")[1]);
+    let component = attr.split(" ")[2];
+    axes[axisID][component] =
+      component === "Label" || component === "title"
+        ? markSelection.map((r) => allGraphicsElement[r])
+        : markSelection;
+  }
   reflectChanges();
 }
 

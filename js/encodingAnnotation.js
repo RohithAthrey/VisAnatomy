@@ -11,6 +11,7 @@ const typeSpecificChannels = {
     "strokeWidth",
     "opacity",
     "length",
+    "strokeDash",
   ],
   Polyline: [
     "vertices-x",
@@ -21,6 +22,9 @@ const typeSpecificChannels = {
     "strokeWidth",
     "opacity",
     "length",
+    "vertices-polarAngle",
+    "vertices-polarRadius",
+    "strokeDash",
   ],
   Rectangle: [
     "x",
@@ -35,13 +39,38 @@ const typeSpecificChannels = {
     "opacity",
     "area",
     "shape",
+    "polarAngle",
+    "polarRadius",
   ],
-  Circle: ["x", "y", "radius", "fill", "opacity", "area", "shape"],
-  Ploygon: ["x", "y", "vertices", "radius", "fill", "opacity", "shape"],
+  Circle: [
+    "x",
+    "y",
+    "radius",
+    "fill",
+    "strokeColor",
+    "opacity",
+    "area",
+    "shape",
+    "polarAngle",
+    "polarRadius",
+  ],
+  Ploygon: [
+    "x",
+    "y",
+    "vertices",
+    "radius",
+    "fill",
+    "strokeColor",
+    "opacity",
+    "shape",
+    "vertices-polarAngle",
+    "vertices-polarRadius",
+  ],
   Ellipse: ["x", "y", "rx", "ry", "fill", "opacity", "shape", "size"],
   Arc: [
     "x",
     "y",
+    "thickness",
     "innerRadius",
     "outerRadius",
     "angle",
@@ -63,11 +92,23 @@ const typeSpecificChannels = {
     "opacity",
     "shape",
   ],
-  Text: ["x", "y", "text", "color", "opacity", "fontSize", "fontWeight"],
+  Text: [
+    "x",
+    "y",
+    "text",
+    "color",
+    "opacity",
+    "fontSize",
+    "fontWeight",
+    "polarAngle",
+    "polarRadius",
+  ],
   Image: ["x", "y", "width", "height", "opacity"],
   Area: [
     "x",
     "y",
+    "width",
+    "height",
     "top-vertices-x",
     "top-vertices-y",
     "bottom-vertices-x",
@@ -76,21 +117,28 @@ const typeSpecificChannels = {
     "left-vertices-y",
     "right-vertices-x",
     "right-vertices-y",
+    "top-vertices-polarAngle",
+    "top-vertices-polarRadius",
+    "bottom-vertices-polarAngle",
+    "bottom-vertices-polarRadius",
     "fill",
     "opacity",
     "shape",
-    "stroke color",
+    "strokeColor",
   ],
   Path: [
     "shape",
     "x",
     "y",
+    "top",
     "right",
     "bottom",
+    "left",
     "size",
     "fill",
     "opacity",
     "vertices",
+    "strokeDash",
   ],
 };
 
@@ -132,7 +180,7 @@ function createList2(item) {
     })
     .on("click", function () {
       d3.select("#selectedGroup4EncodingStage1").text("Group " + item.id);
-      populateChannelList(["x", "y"]);
+      populateChannelList(["x", "y", "polarAngle", "polarRadius"]);
       if (Object.keys(objectEncodings).includes("Group " + item.id)) {
         let channelList = document.getElementById("channelList");
         let listItems = channelList.querySelectorAll(".list-item");

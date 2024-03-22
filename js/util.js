@@ -5,8 +5,8 @@ function initilizeVariables() {
   xAxis = {};
   yAxis = {};
   axes = {
-    1: { labels: [], fieldType: "Null", title: [], type: "x" },
-    2: { labels: [], fieldType: "Null", title: [], type: "y" },
+    1: { labels: [], fieldType: "Null", title: [], ticks: [], type: "x" },
+    2: { labels: [], fieldType: "Null", title: [], ticks: [], type: "y" },
   };
   legend = {};
   xGridlines = [];
@@ -22,11 +22,18 @@ function initilizeVariables() {
   marksHaveGroupAnnotation = [];
   groupLayouts = {};
   objectEncodings = {};
+  textObjectLinking = {};
 }
 
 function tryLoadAnnotations(filename) {
   // filename = sessionStorage.getItem("fileName");
   console.log("loading from: " + filename);
+
+  // remove axes whose id is more than 3
+  for (let thisIndex = 1; thisIndex <= 20; thisIndex++) {
+    d3.select("#axis_" + thisIndex).remove();
+  }
+  axisCount = 0;
 
   fetch("/annotations/" + filename + ".json")
     .then((response) => {
@@ -74,22 +81,30 @@ function tryLoadAnnotations(filename) {
       objectEncodings = annotations.encodingInfo
         ? annotations.encodingInfo
         : {};
+      textObjectLinking = annotations.textObjectLinking
+        ? annotations.textObjectLinking
+        : {};
       chartTitle = annotations.chartTitle ? annotations.chartTitle : [];
       titleLegend = annotations.referenceElement.legend.title
         ? annotations.referenceElement.legend.title
         : [];
       console.log("start loading axes");
+
       Object.keys(axes).forEach((k) => {
         let index = parseInt(k);
         console.log("loading axis", index, axes[index]);
+        // if (parseInt(k) > axisCount) {
+        //   console.log("add an axis");
+        //   addAxisConfiguration();
+        // }
+        addAxisConfiguration();
         displayAxis(index);
       });
-      console.log("end loading axes");
+      console.log("finish loading axes");
       displayLegend(legend);
       displayTitles(chartTitle, titleLegend);
     })
     .catch(function () {
-      console.log("error loading the annotation file");
       this.dataError = true;
     });
 }
@@ -132,16 +147,22 @@ function post() {
     legend.marks,
     legend.labels,
     legend.title,
-    ...Object.keys(axes).map((k) => axes[k].labels),
-    ...Object.keys(axes).map((k) => axes[k].title),
-  ].forEach((object) => {
-    if (!object) return;
-    if (object.length > 0) {
+    ...Object.keys(axes).map((k) => (axes[k].labels ? axes[k].labels : [])),
+    ...Object.keys(axes).map((k) => (axes[k].title ? axes[k].title : [])),
+  ]
+    .filter((e) => e?.length > 0)
+    .forEach((object) => {
       object.forEach((element) => {
-        allGraphicsElement[element.id].isReferenceElement = true;
+        switch (typeof element) {
+          case "string":
+            allGraphicsElement[element].isReferenceElement = true;
+            break;
+          case "object":
+            allGraphicsElement[element.id].isReferenceElement = true;
+            break;
+        }
       });
-    }
-  });
+    });
   //// TBD: handle higher level labels using new axes?
   // if (xAxis.upperLevels) {
   //   xAxis.upperLevels.forEach((level) => {
@@ -160,7 +181,7 @@ function post() {
   annotations.allGraphicsElement = allGraphicsElement;
   annotations.groupedGraphicsElement = groupedGraphicsElement;
   annotations.chartTitle =
-    chartTitle.length > 0
+    chartTitle.filter((e) => e !== null).length > 0
       ? chartTitle.map((title) => allGraphicsElement[title.id])
       : Object.keys(markInfo).filter(
           (mark) => markInfo[mark].Role === "Chart Title"
@@ -170,6 +191,7 @@ function post() {
   annotations.nestedGrouping = nestedGrouping;
   annotations.layoutInfo = groupLayouts;
   annotations.encodingInfo = objectEncodings;
+  annotations.textObjectLinking = textObjectLinking;
   annotations.referenceElement = {};
 
   annotations.referenceElement["xGridlines"] = Object.keys(markInfo).filter(
