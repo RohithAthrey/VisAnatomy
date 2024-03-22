@@ -57,14 +57,15 @@ function createExampleCards(examples){
             // '<span class="card-title activator grey-text text-darken-4"><i class="material-icons right extext" id="'+examples[i].filename+'">more_vert</i></span>'+
             // '<p><a id="'+examples[i].filename+'" href="/static/ExampleFiles/'+examples[i].filename+'" target="_blank">Example source</a></p>'+
             // '<p><a id="'+examples[i].filename+'" onclick=expandExample("'+String(examples[i].filename)+'") target="_blank">Example source</a></p>'+
-            '<p><a id="'+examples[i].filename+'" onclick=expandExample("'+String(examples[i].filename)+'","'+String(examples[i].source)+'") target="_blank">' +examples[i].filename.slice(0, -4)+ '</a></p>'+
+            '<p><a class ="modal-trigger" id="'+examples[i].filename+'" href="#bookmarkModal" data-id="'+examples[i].filename+'">'+examples[i].filename.slice(0, -4)+'</a></p>'+
+            // '<p><a id="'+examples[i].filename+'" onclick=expandExample("'+String(examples[i].filename)+'","'+String(examples[i].source)+'")>' +examples[i].filename.slice(0, -4)+ '</a></p>'+
           '</div>'+
-          '<div class="card-pop-out-container" id="cardPopOutContainer">'+
-            '<span class="close-button" id="cardPopOutCloseButton">&times;</span>'+
-            '<div class="card-pop-out-content">'+
-              '<img target="_blank" id="imagepopout" src="../examples/' + examples[i].filename.slice(0, -4) + 'svg" alt="' + examples[i].filename.slice(0, -4) + '">'+
-            '</div>'+
-          '</div>'+
+          // '<div class="card-pop-out-container" id="cardPopOutContainer">'+
+          //   '<span class="close-button" id="cardPopOutCloseButton">&times;</span>'+
+          //   '<div class="card-pop-out-content">'+
+          //     '<img target="_blank" id="imagepopout" src="/static/examples/'+ examples[i].filename.replace('png', "svg") + '" alt="' + examples[i].filename.slice(0, -4) + '">'+
+          //   '</div>'+
+          // '</div>'+
         '</div>'+
           // '<div class="card-reveal">'+
           //   '<span class="card-title grey-text text-darken-4"><i class="material-icons right extext">close</i></span>'+
@@ -133,52 +134,52 @@ const styleElement = document.createElement('style');
 styleElement.textContent = cssStyles;
 document.head.appendChild(styleElement);
 
-document.addEventListener('DOMContentLoaded', function() {
-  const imgElement = document.getElementById('imagepopout');
-  const wholeCards = document.getElementById("wholeCard");
+// document.addEventListener('DOMContentLoaded', function() {
+//   const imgElement = document.getElementById('imagepopout');
+//   const wholeCards = document.getElementById("wholeCard");
   
-  const popOutContainer = document.getElementById("cardPopOutContainer");
+//   const popOutContainer = document.getElementById("cardPopOutContainer");
 
-  let popOutOpen = false; 
-  const cardImages = document.getElementsByClassName("card-image-pop");
-  setTimeout(() => {
-    cardImage = Array.from(cardImages);
-    for (let i = 0; i < cardImage.length; i++) {
-      const card = cardImage[i];
-      console.log(card);
-      cardImage[i].addEventListener("click", function() {
-        if (!popOutOpen) {
-          console.log("Card clicked");
-          var popOutContainer = card.querySelector(".card-pop-out-container");
-          popOutContainer.style.display = "block";
-          popOutOpen = true;
+//   let popOutOpen = false; 
+//   const cardImages = document.getElementsByClassName("card-image-pop");
+//   setTimeout(() => {
+//     cardImage = Array.from(cardImages);
+//     for (let i = 0; i < cardImage.length; i++) {
+//       const card = cardImage[i];
+//       console.log(card);
+//       cardImage[i].addEventListener("click", function() {
+//         if (!popOutOpen) {
+//           console.log("Card clicked");
+//           var popOutContainer = card.querySelector(".card-pop-out-container");
+//           popOutContainer.style.display = "block";
+//           popOutOpen = true;
 
-          // Event delegation for the close button
-          document.body.addEventListener("click", closeButtonHandler);
-        }
-      });
-    }
-  }, 1000);
+//           // Event delegation for the close button
+//           document.body.addEventListener("click", closeButtonHandler);
+//         }
+//       });
+//     }
+//   }, 1000);
 
-  function closeButtonHandler(event) {
-    if (event.target.id === "cardPopOutCloseButton") {
-      event.stopPropagation();
-      console.log("Close button clicked");
+//   function closeButtonHandler(event) {
+//     if (event.target.id === "cardPopOutCloseButton") {
+//       event.stopPropagation();
+//       console.log("Close button clicked");
       
-      // Find the pop-out container
-      const popOutContainer = event.target.closest(".card-pop-out-container");
+//       // Find the pop-out container
+//       const popOutContainer = event.target.closest(".card-pop-out-container");
   
-      if (popOutContainer) {
-        // Hide the pop-out container
-        popOutContainer.style.display = "none";
-        popOutOpen = false;
-      } else {
-        console.log("Pop-out container not found");
-      }
-    }
-  }
+//       if (popOutContainer) {
+//         // Hide the pop-out container
+//         popOutContainer.style.display = "none";
+//         popOutOpen = false;
+//       } else {
+//         console.log("Pop-out container not found");
+//       }
+//     }
+//   }
   
-  });
+//   });
 
 function clearEndContent(){
   document.getElementById("wiz").style.display = "block"
@@ -211,6 +212,12 @@ function expandExample(filename, link){
   // window.open("/scratch/"+filename+"/", "_blank");
   window.open(link, "_blank")
 }
+
+// function openModal(filename, link){
+//   console.log("modal triggered")
+//   $('#bookmarkModal').modal()
+//   $('#bookmarkModal').modal(open)
+// }
 
 function initiateChips(data){
   //fetch tags for autocomplete
@@ -301,6 +308,7 @@ function fetchExamples(selectedtags){
   })
   .then((response) => response.json())
   .then((data) => {
+    console.log(data)
     createExampleCards(data)
   })
   .catch((error) => {
@@ -363,53 +371,31 @@ function initializeModal(){
 
   $(document).ready(function(){
     $('#bookmarkModal').modal({
-      onOpenStart: function(){
+      onOpenStart: function(modal, trigger){
         log("opened bookmarks", "")
-        bookmarkModal()
+        
+        bookmarkModal(trigger.id)
       }
+      // ready: function(modal, trigger) {
+      //   modal.find('input[name="id"]').val(trigger.data('id'))
+      // }
     });
   });
        
 }
-function bookmarkModal(){
-  var exampleCards = document.getElementById("bkModalContent")
+function bookmarkModal(id){
+  var exampleCards = document.getElementById("bkModalContentsvg")
+  // clear previous  content
   while(exampleCards.firstChild){
     exampleCards.removeChild(exampleCards.firstChild);
   }
 
-  // console.log(bookmarks)
-  if (bookmarks.size ==0){
-    exampleCards.innerHTML = "No Bookmarked Examples"
-  }
-
-  i=0
-  bk= Array.from(bookmarks)
-  var div =div = document.createElement('div')
-  div.className ="row"
+  fetch("/static/examples/"+id.replace("png", "svg"))
+  .then(r=> r.text())
+  .then((text)=>{
+    exampleCards.innerHTML=text
+  } )
   
-  while (i<bk.length){
-    // console.log(bk)
-    var subdiv = document.createElement('div')
-    subdiv.className = "col s12 m6"
-    subdiv.innerHTML += '<div class="card">'+
-          '<div class="card-image">'+
-            '<img id="'+bk[i]+'" src="/static/examples_png/'+bk[i]+'" width=250 height=200>'+
-          '</div>'+
-          '<div class="card-content">'+
-          '</div>'+
-          '<div class="card-action">'+
-            // '<a href="javascript:void(0)"><i class="material-icons bk" id="bk_'+bk[i]+'">bookmark</i></a>'+
-          '</div>'+
-        '</div>'
-    div.appendChild(subdiv)
-    //if fourth element in div then append to examplecards div and then reset.
-    if (div.childElementCount == 2 || i==bk.length-1){
-      exampleCards.appendChild(div)
-      div = document.createElement('div')
-      div.className ="row"
-    }
-    i++;
-  }
 }
 
 function addBookmark(d){
@@ -457,6 +443,8 @@ function logImageViews(){
     })
   })
 }
+
+//main function that initializes the main page. 
 function init (){
  
     // $(document).ready(function(){

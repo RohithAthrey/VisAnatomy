@@ -24,13 +24,13 @@ class Examples:
         self.tags = defaultdict(list)
         self.readTags()
     def readTags(self):
-        self.df = pd.read_csv('app/examples_details.csv')
-        
+        self.df = pd.read_csv('app/examples_collection_output.csv')
+        self.df = self.df.dropna()
         # I need some structure that stores a list of all tags and the example filenames, descriptions and source link for each file in that tag
         for index, row in self.df.iterrows():
-            image = Image(row["Filename"], row["Description"], row["sourceLink"], [r.strip().lower() for r in row["Tags"].split(",")])
-            for tag in row["Tags"].split(","):
-                self.tags[tag.strip().lower()].append(image)
+            image = Image(row["Filename"], row["Description"], row["Link"], row["Tag"]) #might switch out description with Type
+            # for tag in row["Tag"].split(","):
+            self.tags[row["Tag"].strip().lower()].append(image)
         #just sanity checking.
         # for t in self.tags:
         #     print(t)
@@ -49,7 +49,7 @@ class Examples:
                     examples.append(img)
                     examples_ids.add(img["filename"])
         random.shuffle(examples)
-        return examples
+        return examples[:5]
 
     def getAllImages(self) -> list:
         examples =[]
@@ -61,7 +61,7 @@ class Examples:
                 else:
                     img = copy.deepcopy(image)
                     img = img.__dict__
-                    img["tag"] = []
+                    img["tag"] = [] #why do I have this here?
                     examples.append(img)
                     examples_ids.add(img["filename"])
         
