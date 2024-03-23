@@ -78,37 +78,37 @@
   }
   
 
-  {
-    ...
-    "path2": {
-      "Property":{
-        "left": 105.5,"top": 5.5,"right": 305.5,"bottom": 205.5,
-        "height": 200,"width": 200,"id": "path2",
-        "tagName": "path","content": "", "fill": "none",
-      }
-      "Type": "Path", 
-      "Role": "Vertical Gridline"
+{
+  ...
+  "path16": {
+    "Property":{
+      "left": 227.87,"top": 6,"right": 265.04,"bottom": 24,
+      "height": 18,"width": 37.17,"id": "path16",
+      "tagName": "path","content": "","fill": "#eeca3b"
+  },
+    "Type": "Rectangle", 
+    "Role": "Main Chart Mark",
+    "Encoded Channels": ["Width", "Fill"]
+  },
+  ...
+  "path82": {
+    "Property":{
+      "left": 324,"top": 87,"right": 334,"bottom": 97,
+      "height": 10,"width": 10,"id": "path82",
+      "tagName": "path","content": "","fill": "#eeca3b",
+  },
+    "Type": "Rectangle", 
+    "Role": "Legend Mark"
+  },
+  ...
+  "text0": {
+    "Property":{
+      "left": 105.5,"top": 211.7,"right": 111.1,"bottom": 222.9,
+      "height": 11.2,"width": 5.6,"id": "text0",
+      "tagName": "text","content": "0","fill": "#000",
     },
-    ...
-    "path68": {
-      "Property":{
-        "left": 139.3,"top": 186,"right": 163.7,"bottom": 204,
-        "height": 18,"width": 24.37,"id": "path68",
-        "tagName": "path","content": "","fill": "#f58518",
-      }
-      "Type": "Rectangle", 
-      "Role": "Main Chart Mark", 
-      "Encoded Channels": ["Width", "Fill"]
-    },
-    ...
-    "text0": {
-      "Property":{
-        "left": 105.5,"top": 211.7,"right": 111.1,"bottom": 222.9,
-        "height": 11.2,"width": 5.6,"id": "text0",
-        "tagName": "text","content": "0","fill": "#000",
-      }
-      "Type": "text", 
-      "Role": "Axis 1 Label"
-    }
-    ...
+    "Type": "text", 
+    "Role": "Axis 1 Label"
+  }
+  ...
 }
