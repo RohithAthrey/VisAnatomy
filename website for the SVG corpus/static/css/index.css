@@ -19,3 +19,8 @@
     background-color: #f1f1f1;
   }
   
+div.card-image img.activator {
+    width: 250px; 
+    height: 200px;
+    object-fit: cover;
+}

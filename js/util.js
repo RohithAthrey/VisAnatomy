@@ -1,18 +1,45 @@
-legend = {};
-xAxis = {};
-yAxis = {};
-xGridlines = {};
-yGridlines = {};
-markAnnotations = {};
+function initilizeVariables() {
+  groupedGraphicsElement = {};
+  allGraphicsElement = {};
+  annotations = {};
+  xAxis = {};
+  yAxis = {};
+  axes = {
+    1: { labels: [], fieldType: "Null", title: [], ticks: [], type: "x" },
+    2: { labels: [], fieldType: "Null", title: [], ticks: [], type: "y" },
+  };
+  legend = {};
+  xGridlines = [];
+  yGridlines = [];
+  markInfo = {};
+  chartTitle = [];
+  titleLegend = [];
+  titleXaxis = [];
+  titleYaxis = [];
+  annotationLoaded = false;
+  nestedGrouping = [];
+  groupAnnotations = [];
+  marksHaveGroupAnnotation = [];
+  groupLayouts = {};
+  objectEncodings = {};
+  textObjectLinking = {};
+}
 
-function loadFile() {
-  filename = sessionStorage.getItem("fileName");
+function tryLoadAnnotations(filename) {
+  // filename = sessionStorage.getItem("fileName");
   console.log("loading from: " + filename);
+
+  // remove axes whose id is more than 3
+  for (let thisIndex = 1; thisIndex <= 20; thisIndex++) {
+    d3.select("#axis_" + thisIndex).remove();
+  }
+  axisCount = 0;
 
   fetch("/annotations/" + filename + ".json")
     .then((response) => {
       if (!response.ok) {
         console.log("no annotation file found");
+
         // throw new Error("HTTP error " + response.status);
       }
       return response.json();
@@ -26,20 +53,56 @@ function loadFile() {
       // testing annotation was loaded
       console.log("loaded annotations", annotations);
 
-      alertBox.textContent =
-        "Annotations loaded from: 'annotations / " + filename + ".json'!";
-      alertBox.style.visibility = "visible";
-      alertBox.style.opacity = "1";
-      // update the values and the display boxes
-      xAxis = annotations.xAxis;
-      yAxis = annotations.yAxis;
-      legend = annotations.legend;
-      xGridlines = annotations.xGridlines;
-      yGridlines = annotations.yGridlines;
-      markAnnotations = annotations.markAnnotations;
-      displayAxis(xAxis);
-      displayAxis(yAxis);
+      allGraphicsElement = annotations.allGraphicsElement
+        ? annotations.allGraphicsElement
+        : {};
+      groupedGraphicsElement = annotations.groupedGraphicsElement
+        ? annotations.groupedGraphicsElement
+        : {};
+      xAxis = annotations.referenceElement.xAxis
+        ? annotations.referenceElement.xAxis
+        : {};
+      yAxis = annotations.referenceElement.yAxis
+        ? annotations.referenceElement.yAxis
+        : {};
+      axes = annotations.referenceElement.axes
+        ? annotations.referenceElement.axes
+        : { 1: xAxis, 2: yAxis };
+      console.log(axes);
+      legend = annotations.referenceElement.legend;
+      xGridlines = annotations.referenceElement.xGridlines;
+      yGridlines = annotations.referenceElement.yGridlines;
+      markInfo = annotations.markInfo ? annotations.markInfo : {};
+      groupAnnotations = annotations.groupInfo ? annotations.groupInfo : [];
+      nestedGrouping = annotations.nestedGrouping
+        ? annotations.nestedGrouping
+        : [];
+      groupLayouts = annotations.layoutInfo ? annotations.layoutInfo : {};
+      objectEncodings = annotations.encodingInfo
+        ? annotations.encodingInfo
+        : {};
+      textObjectLinking = annotations.textObjectLinking
+        ? annotations.textObjectLinking
+        : {};
+      chartTitle = annotations.chartTitle ? annotations.chartTitle : [];
+      titleLegend = annotations.referenceElement.legend.title
+        ? annotations.referenceElement.legend.title
+        : [];
+      console.log("start loading axes");
+
+      Object.keys(axes).forEach((k) => {
+        let index = parseInt(k);
+        console.log("loading axis", index, axes[index]);
+        // if (parseInt(k) > axisCount) {
+        //   console.log("add an axis");
+        //   addAxisConfiguration();
+        // }
+        addAxisConfiguration();
+        displayAxis(index);
+      });
+      console.log("finish loading axes");
       displayLegend(legend);
+      displayTitles(chartTitle, titleLegend);
     })
     .catch(function () {
       this.dataError = true;
@@ -79,33 +142,193 @@ function post() {
     }
   };
   let data = {};
+
+  [
+    legend.marks,
+    legend.labels,
+    legend.title,
+    ...Object.keys(axes).map((k) => (axes[k].labels ? axes[k].labels : [])),
+    ...Object.keys(axes).map((k) => (axes[k].title ? axes[k].title : [])),
+  ]
+    .filter((e) => e?.length > 0)
+    .forEach((object) => {
+      object.forEach((element) => {
+        switch (typeof element) {
+          case "string":
+            allGraphicsElement[element].isReferenceElement = true;
+            break;
+          case "object":
+            allGraphicsElement[element.id].isReferenceElement = true;
+            break;
+        }
+      });
+    });
+  //// TBD: handle higher level labels using new axes?
+  // if (xAxis.upperLevels) {
+  //   xAxis.upperLevels.forEach((level) => {
+  //     level.forEach((element) => {
+  //       allGraphicsElement[element.id].isReferenceElement = true;
+  //     });
+  //   });
+  // }
+  // if (yAxis.upperLevels) {
+  //   yAxis.upperLevels.forEach((level) => {
+  //     level.forEach((element) => {
+  //       allGraphicsElement[element.id].isReferenceElement = true;
+  //     });
+  //   });
+  // }
+  annotations.allGraphicsElement = allGraphicsElement;
+  annotations.groupedGraphicsElement = groupedGraphicsElement;
+  annotations.chartTitle =
+    chartTitle.filter((e) => e !== null).length > 0
+      ? chartTitle.map((title) => allGraphicsElement[title.id])
+      : Object.keys(markInfo).filter(
+          (mark) => markInfo[mark].Role === "Chart Title"
+        );
+  annotations.markInfo = markInfo;
+  annotations.groupInfo = groupAnnotations;
+  annotations.nestedGrouping = nestedGrouping;
+  annotations.layoutInfo = groupLayouts;
+  annotations.encodingInfo = objectEncodings;
+  annotations.textObjectLinking = textObjectLinking;
+  annotations.referenceElement = {};
+
+  annotations.referenceElement["xGridlines"] = Object.keys(markInfo).filter(
+    (mark) => markInfo[mark].Role === "Horizontal Gridline"
+  );
+  annotations.referenceElement["yGridlines"] = Object.keys(markInfo).filter(
+    (mark) => markInfo[mark].Role === "Vertical Gridline"
+  );
+
+  // save the axes
+  annotations.referenceElement["axes"] = axes;
+
+  // // complete x axis elements
+  // xAxis.path = Object.keys(markInfo).filter(
+  //   (mark) => markInfo[mark].Role === "X Axis Line"
+  // );
+  // xAxis.ticks = Object.keys(markInfo).filter(
+  //   (mark) => markInfo[mark].Role === "X Axis Tick"
+  // );
+  // xAxis.title =
+  //   titleXaxis.length > 0
+  //     ? titleXaxis.map((title) => allGraphicsElement[title.id])
+  //     : Object.keys(markInfo)
+  //         .filter((mark) => markInfo[mark].Role === "X Axis Title")
+  //         .map((title) => allGraphicsElement[title]);
+  // xAxis.labels =
+  //   xAxis.labels.length > 0
+  //     ? xAxis.labels.map((label) => allGraphicsElement[label.id])
+  //     : Object.keys(markInfo)
+  //         .filter((mark) => markInfo[mark].Role === "X Axis Label")
+  //         .map((label) => allGraphicsElement[label]);
+  // xAxis.fieldType = d3.select("#xFieldType").property("value");
+  // if (xAxis.upperLevels) {
+  //   let newUpperLevels = [];
+  //   xAxis.upperLevels.forEach((level) => {
+  //     newUpperLevels.push(level.map((label) => allGraphicsElement[label.id]));
+  //   });
+  //   xAxis.upperLevels = newUpperLevels;
+  // }
+  // annotations.referenceElement["xAxis"] = xAxis;
+
+  // // complete y axis elements
+  // yAxis.path = Object.keys(markInfo).filter(
+  //   (mark) => markInfo[mark].Role === "Y Axis Line"
+  // );
+  // yAxis.ticks = Object.keys(markInfo).filter(
+  //   (mark) => markInfo[mark].Role === "Y Axis Tick"
+  // );
+  // yAxis.title =
+  //   titleYaxis.length > 0
+  //     ? titleYaxis.map((title) => allGraphicsElement[title.id])
+  //     : Object.keys(markInfo)
+  //         .filter((mark) => markInfo[mark].Role === "Y Axis Title")
+  //         .map((title) => allGraphicsElement[title]);
+  // yAxis.labels =
+  //   yAxis.labels.length > 0
+  //     ? yAxis.labels.map((label) => allGraphicsElement[label.id])
+  //     : Object.keys(markInfo)
+  //         .filter((mark) => markInfo[mark].Role === "Y Axis Label")
+  //         .map((label) => allGraphicsElement[label]);
+  // yAxis.fieldType = d3.select("#yFieldType").property("value");
+  // if (yAxis.upperLevels) {
+  //   let newUpperLevels = [];
+  //   yAxis.upperLevels.forEach((level) => {
+  //     newUpperLevels.push(level.map((label) => allGraphicsElement[label.id]));
+  //   });
+  //   yAxis.upperLevels = newUpperLevels;
+  // }
+  // annotations.referenceElement["yAxis"] = yAxis;
+
+  // complete legend elements
+  legend.title =
+    titleLegend.length > 0
+      ? titleLegend.map((title) => allGraphicsElement[title.id])
+      : Object.keys(markInfo)
+          .filter((mark) => markInfo[mark].Role === "Legend Title")
+          .map((title) => allGraphicsElement[title]);
+  // TBD: need to keep an eye on the legend info when annotating
+  legend.ticks = Object.keys(markInfo).filter(
+    (mark) => markInfo[mark].Role === "Legend Tick"
+  );
+  legend.marks =
+    legend.marks.length === 0
+      ? Object.keys(markInfo)
+          .filter((mark) => markInfo[mark].Role === "Legend Mark")
+          .map((mark) => allGraphicsElement[mark])
+      : legend.marks.map((mark) => allGraphicsElement[mark.id]);
+  legend.labels =
+    legend.labels.length === 0
+      ? Object.keys(markInfo)
+          .filter((mark) => markInfo[mark].Role === "Legend Label")
+          .map((mark) => allGraphicsElement[mark])
+      : legend.labels.map((label) => allGraphicsElement[label.id]);
+  // legend.marks = legend.marks.push(
+  //   ...Object.keys(markInfo)
+  //     .filter((mark) => markInfo[mark].Role === "Legend Mark")
+  //     .map((mark) => allGraphicsElement[mark])
+  // );
+  // legend.marks = legend.marks.filter(onlyUnique);
+  // legend.labels = legend.labels.push(
+  //   ...Object.keys(markInfo)
+  //     .filter((mark) => markInfo[mark].Role === "Legend Label")
+  //     .map((mark) => allGraphicsElement[mark])
+  // );
+  // legend.labels = legend.labels.filter(onlyUnique);
+  annotations.referenceElement["legend"] = legend;
+  delete annotations.contentMarks;
+
   data["chart"] = sessionStorage.getItem("fileName");
   data["annotations"] = annotations;
   xhr.send(JSON.stringify(data));
 }
 
-function getKeyByValue(object, value) {
-  return Object.keys(object).find((key) => object[key] === value);
+function onlyUnique(value, index, self) {
+  return self.indexOf(value) === index;
 }
 
 function clientPt2SVGPt(x, y) {
-  const vis = document.getElementById("vis");
-  const pt = vis.createSVGPoint();
+  const svgVis = document.getElementById("vis");
+  const pt = svgVis.createSVGPoint();
   pt.x = x;
   pt.y = y;
-  return pt.matrixTransform(vis.getScreenCTM().inverse());
+  return pt.matrixTransform(svgVis.getScreenCTM().inverse());
 }
 
-function makeAsync(s) {
-  let c =
-    "try {\n" +
-    s +
-    "\n} catch (err) {showError(err.name ? err.name + ': ' + err.message : undefined, 0, 0, 0, err);}";
-  return "(async () => {" + c + "})();";
-}
+function isOverlap(bbox1, bbox2) {
+  // Check if one rectangle is on left side of other
+  if (bbox1.x + bbox1.width < bbox2.x || bbox2.x + bbox2.width < bbox1.x) {
+    return false;
+  }
 
-function onlyUnique(value, index, self) {
-  return self.indexOf(value) === index;
+  // Check if one rectangle is above other
+  if (bbox1.y + bbox1.height < bbox2.y || bbox2.y + bbox2.height < bbox1.y) {
+    return false;
+  }
+
+  return true;
 }
 
 function removeSpace(str) {
@@ -116,6 +339,35 @@ function removeSpace(str) {
     str = str.substring(0, str.length - 1);
   }
   return str;
+}
+
+function extractNumber(str) {
+  // Extract the number from the end of the string
+  let matches = str?.match(/(\d+)$/);
+  return matches ? parseInt(matches[0], 10) : 0;
+}
+
+function extractNonNumeric(str) {
+  // Extract the non-numeric part of the string
+  let nonNumeric = str.replace(/(\d+)$/, "");
+  return nonNumeric;
+}
+
+function sortByEndingNumber(strings) {
+  return strings.sort((a, b) => {
+    // Extract non-numeric parts
+    let nonNumericA = extractNonNumeric(a);
+    let nonNumericB = extractNonNumeric(b);
+
+    // Compare non-numeric parts
+    if (nonNumericA < nonNumericB) return -1;
+    if (nonNumericA > nonNumericB) return 1;
+
+    // If non-numeric parts are equal, extract and compare numbers
+    let numA = extractNumber(a);
+    let numB = extractNumber(b);
+    return numA - numB;
+  });
 }
 
 function ColorToHex(color) {
@@ -160,7 +412,7 @@ function mode(arr) {
 function countInArray(array, what) {
   var count = 0;
   for (var i = 0; i < array.length; i++) {
-    if (array[i] === what) {
+    if (Math.abs(array[i] - what) < 1) {
       count++;
     }
   }
@@ -189,31 +441,12 @@ function arrayCompare(_arr1, _arr2) {
   return true;
 }
 
-function getIndicesOf(searchStr, str, caseSensitive) {
-  var searchStrLen = searchStr.length;
-  if (searchStrLen == 0) {
-    return [];
-  }
-  var startIndex = 0,
-    index,
-    indices = [];
-  if (!caseSensitive) {
-    str = str.toLowerCase();
-    searchStr = searchStr.toLowerCase();
-  }
-  while ((index = str.indexOf(searchStr, startIndex)) > -1) {
-    indices.push(index);
-    startIndex = index + searchStrLen;
-  }
-  return indices;
-}
-
 function findBetween(left, right, candidate) {
   if (!candidate || candidate.length == 0) return false;
   finding = candidate.filter(function (rect) {
     if (rect) {
-      if (rect["x"] > left["x"] && rect["x"] < right["x"]) {
-        if (Math.abs(rect["y"] - left["y"]) < 30) {
+      if (rect["left"] > left["left"] && rect["left"] < right["left"]) {
+        if (Math.abs(rect["top"] - left["top"]) < 30) {
           return rect;
         }
       }
@@ -223,7 +456,9 @@ function findBetween(left, right, candidate) {
     return false;
   } else {
     finding = finding.sort((a, b) =>
-      Math.abs(a["y"] - left["y"]) > Math.abs(b["y"] - left["y"]) ? 1 : -1
+      Math.abs(a["top"] - left["top"]) > Math.abs(b["top"] - left["top"])
+        ? 1
+        : -1
     );
     return finding[0];
   }
@@ -279,58 +514,13 @@ function removeElementsByClass(className) {
   }
 }
 
-function IDadder(rawSVG) {
-  LGpos = rawSVG.indexOf("<linearGradient");
-  let id4LG = -1;
-  if (LGpos !== -1) {
-    id4LG = rawSVG.indexOf(" id=", LGpos);
-  }
-  existingID = getIndicesOf(" id=", rawSVG);
-  if (id4LG !== -1) {
-    existingID.splice(existingID.indexOf(id4LG), 1);
-  }
-  start = 0;
-  substrings = [];
-  for (let ri of existingID) {
-    substrings.push(rawSVG.slice(start, ri + 1));
-    start = ri + 1;
-  }
-  substrings.push(rawSVG.slice(start));
-  rawSVG = substrings[0];
-  for (let i = 1; i < substrings.length; i++) {
-    rawSVG = rawSVG + "old" + substrings[i];
-  }
-  target = ["<rect ", "<text ", "<line ", "<path "];
-  for (let t of target) {
-    rectIndex = getIndicesOf(t, rawSVG);
-    start = 0;
-    substrings = [];
-    for (let ri of rectIndex) {
-      substrings.push(rawSVG.slice(start, ri + 5));
-      start = ri + 5;
-    }
-    substrings.push(rawSVG.slice(start));
-    rawSVG = "";
-    let id = 0;
-    for (let subs of substrings) {
-      if (id !== substrings.length - 1) {
-        rawSVG = rawSVG + subs + ' id="' + t.slice(1, t.length - 1) + id + '" ';
-      }
-      id = id + 1;
-    }
-    rawSVG = rawSVG + substrings[substrings.length - 1];
-  }
-
-  return rawSVG;
-}
-
 function textProcessor(texts) {
   if (texts.length == 0) return [];
   texts = texts.filter((text) =>
     text["opacity"] ? (text["opacity"] == 0 ? false : true) : true
   );
   texts = texts.filter(function (text) {
-    if (text["x"] > -50 && text["y"] > -50) return text;
+    if (text["left"] > -50 && text["left"] > -50) return text;
   }); // for the smallpox example, there are weird texts whose y is -9999
   for (let text of texts) {
     textElement = document.getElementById(text["id"]);
@@ -340,25 +530,25 @@ function textProcessor(texts) {
     if (text["text-anchor"]) {
       switch (text["text-anchor"]) {
         case "middle":
-          text["left"] = text["x"] - bbox.width / 2;
-          text["right"] = text["x"] + bbox.width / 2;
+          text["left"] = text["left"] - bbox.width / 2;
+          text["right"] = text["left"] + bbox.width / 2;
           break;
         case "end":
-          text["left"] = text["x"] - bbox.width;
-          text["right"] = text["x"];
+          text["left"] = text["left"] - bbox.width;
+          text["right"] = text["left"];
           break;
         case "start":
         default:
-          text["left"] = text["x"];
-          text["right"] = text["x"] + bbox.width;
+          text["left"] = text["left"];
+          text["right"] = text["left"] + bbox.width;
           break;
       }
     } else {
-      text["left"] = text["x"];
-      text["right"] = text["x"] + bbox.width;
+      text["left"] = text["left"];
+      text["right"] = text["left"] + bbox.width;
     }
-    text["top"] = text["y"] - bbox.height;
-    text["bottom"] = text["y"];
+    text["top"] = text["top"] - bbox.height;
+    text["bottom"] = text["bottom"];
   }
   texts = texts.sort((a, b) => (a["content"] > b["content"] ? 1 : -1));
   let results = [];
@@ -368,8 +558,8 @@ function textProcessor(texts) {
       results.filter(
         (r) =>
           r["content"] == texts[i]["content"] &&
-          r["x"] == texts[i]["x"] &&
-          r["y"] == texts[i]["y"] &&
+          r["left"] == texts[i]["left"] &&
+          r["top"] == texts[i]["top"] &&
           r["height"] == texts[i]["height"] &&
           r["width"] == texts[i]["width"]
       ).length > 0
@@ -439,15 +629,6 @@ function _inferType(values) {
   return types[0];
 }
 
-function getAtlasChannel(c) {
-  switch (c) {
-    case "fill":
-      return "fillColor";
-    default:
-      return c;
-  }
-}
-
 function findSubArray(arr, subarr, from_index) {
   var i = from_index >>> 0,
     sl = subarr.length,
@@ -484,48 +665,6 @@ function typeByAtlas(type) {
   //     const aty = dt.toArrow();
   //     console.log(aty.U.children['0'].type)
   // }
-}
-
-function groupingJsonGenerator(groupings, level, parent, innerIndex) {
-  let thisJson = {};
-  thisJson.id = parent + innerIndex;
-  thisJson.tag = "G-LV" + level;
-  thisJson.parent = parent;
-  thisJson.level = level;
-  thisJson.class = 0;
-  // thisJson.rects = rects;
-  thisJson.children = [];
-  if (typeof groupings == "object" && groupings instanceof Array)
-    return thisJson;
-  for (let i in Object.keys(groupings)) {
-    g = groupings[i];
-    thisJson.children.push(groupingJsonGenerator(g, level + 1, thisJson.id, i));
-  }
-  return thisJson;
-}
-
-function groupingJsonGenerator(colls, level, parent, innerIndex) {
-  let thisJson = {};
-  thisJson.id = parent + innerIndex;
-  thisJson.tag = colls.Layout;
-  thisJson.parent = parent;
-  thisJson.level = level;
-  thisJson.class = 0;
-  // thisJson.rects = rects;
-  thisJson.children = [];
-  if (!Object.keys(colls).includes("collections")) return thisJson;
-  // console.log(colls)
-  for (let coll of colls.collections) {
-    thisJson.children.push(
-      groupingJsonGenerator(
-        coll,
-        level + 1,
-        thisJson.id,
-        colls.collections.indexOf(coll)
-      )
-    );
-  }
-  return thisJson;
 }
 
 // below are merged from the Mystique repo on 03/01/2022
@@ -927,8 +1066,4 @@ function inferEncodings() {
     if (basicLayout.substring(0, 4) === "Tree") rectEnc.push("area");
     encodings.push(rectEnc);
   }
-}
-
-function onlyUnique(value, index, array) {
-  return array.indexOf(value) === index;
 }

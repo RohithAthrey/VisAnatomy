@@ -1,119 +1,252 @@
+var allSVGElementID = [];
+var idMappings = {}; // To track original to new ID mappings
+var indices = {}; // To track the number of each element type
+
 function displaySVG(text) {
+  allSVGElementID = [];
+  idMappings = {}; // Reset ID mappings
+  indices = {}; // Reset indices
   document.getElementById("rbox1").innerHTML = text;
   let vis = d3.select("#rbox1").select("svg").attr("id", "vis");
-
-  let indices = {};
-
-  function addClassAndIdToLeaves(element) {
-    // set ID
-    if (element.nodeType === Node.ELEMENT_NODE && element.nodeName !== "svg") {
-      if (!Object.keys(indices).includes(element.nodeName)) {
-        indices[element.nodeName] = 0;
-      }
-      element.setAttribute(
-        "id",
-        element.nodeName + indices[element.nodeName]++
-      );
-    }
-
-    if (element.hasChildNodes()) {
-      element.childNodes.forEach((childNode) => {
-        addClassAndIdToLeaves(childNode);
-      });
-    } else {
-      // set class
-      if (
-        [
-          "rect",
-          "circle",
-          "ellipse",
-          "text",
-          "line",
-          "polyline",
-          "ploygon",
-          "path",
-          "image",
-          "use",
-        ].includes(element.nodeName)
-      ) {
-        if (element.hasAttribute("class")) {
-          const existingClasses = element.getAttribute("class").split(" ");
-          if (!existingClasses.includes("mark")) {
-            element.setAttribute(
-              "class",
-              `${element.getAttribute("class")} mark`
-            );
-          }
-        } else {
-          element.setAttribute("class", "mark");
-        }
-        // element.addEventListener("contextmenu", (event) => {
-        //   event.preventDefault();
-        //   console.log('Right-clicked on leaf node with class "mark"');
-        //   // Your code to handle the right-click event goes here
-        // });
-      }
-    }
-  }
 
   const svgElement = document.querySelector("#vis");
   svgElement.removeAttribute("viewBox");
   addClassAndIdToLeaves(svgElement);
+  updateUseElementReferences(svgElement);
 
   vis.style("height", "100%").style("width", "100%");
 }
 
-function displayAxis(axis) {
-  console.log(axis);
-  if (Object.keys(axis) === 0) return;
-  d3.select("#" + axis.type + "Labels")
-    .selectAll("button")
-    .remove();
-  if (axis.upperLevels) {
-    for (let [i, level] of axis.upperLevels.entries()) {
-      d3.select("#" + axis.type + "Labels" + (i + 1))
-        .selectAll("button")
-        .remove();
+function addClassAndIdToLeaves(element) {
+  // Set ID
+  if (element.nodeType === Node.ELEMENT_NODE && element.nodeName !== "svg") {
+    let originalId = element.getAttribute("id"); // Get original ID if exists
+    if (!Object.keys(indices).includes(element.nodeName)) {
+      indices[element.nodeName] = 0;
+    }
+    if (
+      element.nodeName !== "linearGradient" &&
+      element.nodeName !== "g" &&
+      element.nodeName.indexOf(":") === -1
+    ) {
+      let newId = element.nodeName + indices[element.nodeName]++;
+      element.setAttribute("id", newId);
+      allSVGElementID.push(newId);
+      if (originalId) {
+        idMappings[originalId] = newId; // Track original to new ID
+      }
     }
   }
 
+  if (element.hasChildNodes()) {
+    element.childNodes.forEach((childNode) => {
+      addClassAndIdToLeaves(childNode);
+    });
+  } else {
+    // Set class for specific elements
+    setClassForSpecificElements(element);
+  }
+}
+
+function setClassForSpecificElements(element) {
+  if (
+    [
+      "rect",
+      "circle",
+      "ellipse",
+      "text",
+      "line",
+      "polyline",
+      "polygon", // Fixed typo 'ploygon' to 'polygon'
+      "path",
+      "image",
+      "use",
+    ].includes(element.nodeName)
+  ) {
+    if (element.hasAttribute("class")) {
+      const existingClasses = element.getAttribute("class").split(" ");
+      if (!existingClasses.includes("mark")) {
+        element.setAttribute("class", `${element.getAttribute("class")} mark`);
+      }
+    } else {
+      element.setAttribute("class", "mark");
+    }
+  }
+}
+
+// After all elements have been processed, update <use> element references
+function updateUseElementReferences(svgElement) {
+  svgElement.querySelectorAll("use").forEach((use) => {
+    let href = use.getAttribute("href") || use.getAttribute("xlink:href");
+    if (href && href.includes("#")) {
+      let originalId = href.split("#")[1];
+      if (idMappings[originalId]) {
+        let newHref = "#" + idMappings[originalId];
+        use.setAttribute("href", newHref); // Update for modern browsers
+        use.setAttribute("xlink:href", newHref); // Update for compatibility
+      }
+    }
+  });
+}
+
+// function addClassAndIdToLeaves(element) { // Original function to add class and ID to leaves
+//   // set ID
+//   if (element.nodeType === Node.ELEMENT_NODE && element.nodeName !== "svg") {
+//     if (!Object.keys(indices).includes(element.nodeName)) {
+//       indices[element.nodeName] = 0;
+//     }
+//     if (
+//       element.nodeName !== "linearGradient" &&
+//       element.nodeName !== "g" &&
+//       element.nodeName.indexOf(":") === -1
+//     ) {
+//       element.setAttribute(
+//         "id",
+//         element.nodeName + indices[element.nodeName]++
+//       );
+//       allSVGElementID.push(element.id);
+//     }
+//   }
+
+//   if (element.hasChildNodes()) {
+//     element.childNodes.forEach((childNode) => {
+//       addClassAndIdToLeaves(childNode);
+//     });
+//   } else {
+//     // set class
+//     if (
+//       [
+//         "rect",
+//         "circle",
+//         "ellipse",
+//         "text",
+//         "line",
+//         "polyline",
+//         "polygon",
+//         "path",
+//         "image",
+//         "use",
+//       ].includes(element.nodeName)
+//     ) {
+//       if (element.hasAttribute("class")) {
+//         const existingClasses = element.getAttribute("class").split(" ");
+//         if (!existingClasses.includes("mark")) {
+//           element.setAttribute(
+//             "class",
+//             `${element.getAttribute("class")} mark`
+//           );
+//         }
+//       } else {
+//         element.setAttribute("class", "mark");
+//       }
+//       // element.addEventListener("contextmenu", (event) => {
+//       //   event.preventDefault();
+//       //   console.log('Right-clicked on leaf node with class "mark"');
+//       //   // Your code to handle the right-click event goes here
+//       // });
+//     }
+//   }
+// }
+
+function displayAxis(index) {
+  let axis = axes[index];
+
+  if (Object.keys(axis).length === 0) return;
+  d3.select("#axis_" + index)
+    .selectAll(".higerLevelLabelBox")
+    .remove();
+  d3.select("#axisLabel_" + index)
+    .selectAll("button")
+    .remove();
+  // if (axis.upperLevels) {
+  //   for (let [i, level] of axis.upperLevels.entries()) {
+  //     console.log(i);
+  //     d3.select("#" + "#axisLabel" + index + (i + 1))
+  //       .selectAll("button")
+  //       .remove();
+  //   }
+  // }
+
   let labels = axis["labels"];
   let type;
-  if (labels.length === 0) {
-    type = "Null";
-  } else {
-    type = typeByAtlas(_inferType(labels.map((xl) => xl.content)));
-  }
   if (axis.fieldType) {
     type = axis.fieldType;
+  } else {
+    if (labels.length === 0) {
+      type = "Null";
+    } else {
+      type = typeByAtlas(_inferType(labels.map((xl) => xl.content)));
+    }
+    axis.fieldType = type;
   }
-  d3.select("#" + axis.type + "FieldType").property("value", type);
+
+  d3.select("#fieldType_" + index).property("value", type);
+  d3.select("#axisType_" + index).property(
+    "value",
+    axis.type ? axis.type : "x"
+  );
 
   labels = labels.sort((a, b) =>
     parseFloat(a.id.substring(4)) > parseFloat(b.id.substring(4)) ? 1 : -1
   );
 
   for (let label of labels) {
-    displayAxisLabel(label, axis.type + "Labels");
+    displayAxisLabel(label, "#axisLabel_" + index);
   }
+
+  [1, 2, 3].forEach((i) => {
+    d3.select("#" + "axisLabel_" + index + "_" + i).remove();
+  });
+
   if (axis.upperLevels) {
+    let size = [
+      "calc(",
+      (100 / (axis["upperLevels"].length + 1)).toFixed(1),
+      "% - ",
+      405 / (axis["upperLevels"].length + 1),
+      "px)",
+    ].join("");
     for (let [i, level] of axis.upperLevels.entries()) {
+      let thisHigherLevelLabelBoxID = "#axisLabel_" + index + "_" + (i + 1);
+      if (!document.getElementById(thisHigherLevelLabelBoxID)) {
+        d3.select("#axis_" + index)
+          .append("div")
+          .attr("class", "axisLabels higerLevelLabelBox") // add another class to the div
+          .attr("id", thisHigherLevelLabelBoxID)
+          .on("drop", drop)
+          .on("dragover", allowDrop);
+      }
+      d3.select("#axis_" + index)
+        .selectAll(".axisLabels")
+        .style("width", size);
+    }
+
+    for (let [i, level] of axis.upperLevels.entries()) {
+      let thisHigherLevelLabelBoxID = "#axisLabel_" + index + "_" + (i + 1);
+
+      document.getElementById(thisHigherLevelLabelBoxID).innerHTML = "";
+
       for (let label of level) {
-        displayAxisLabel(label, axis.type + "Labels" + (i + 1));
+        // this is pretty weird that using d3 won't work so has to use pure html
+        let thisLabel = document.createElement("button");
+        thisLabel.innerHTML = label.content;
+        thisLabel.setAttribute("draggable", true);
+        thisLabel.setAttribute("id", "IDinSVG" + label.id);
+        thisLabel.setAttribute("type", "button");
+        thisLabel.setAttribute("class", "labelButton");
+        thisLabel.addEventListener("dragstart", drag);
+        document
+          .getElementById(thisHigherLevelLabelBoxID)
+          .appendChild(thisLabel);
       }
     }
   }
 
-  // updating annotations object
-  if (axis.type == "x") {
-    annotations["xAxis"] = axis;
-  } else if (axis.type == "y") {
-    annotations["yAxis"] = axis;
-  }
+  displayAxisTitle(axis.title, index, "load");
 }
 
 function displayAxisLabel(label, divID) {
-  d3.select("#" + divID)
+  d3.select(divID)
     .append("button")
     .datum(label)
     .attr("type", "button")
@@ -125,7 +258,6 @@ function displayAxisLabel(label, divID) {
 }
 
 function displayLegend(legend) {
-  annotations["legend"] = legend;
   if (Object.keys(legend) === 0) return;
   d3.select("#legendLabels").selectAll("button").remove();
 
@@ -170,96 +302,43 @@ function displayLegend(legend) {
   }
 }
 
-function displayTitleXLabel(thisText, mode) {
+function displayAxisTitle(thisText, axisIndex, mode) {
+  let axis = axes[axisIndex];
+
   if (mode === "delete") {
-    d3.select("#xTitle")
-      .select("#" + "xTItleIDinSVG" + thisText["id"])
-      .remove();
-    return;
+    let index = axis.title.indexOf(thisText);
+    if (index > -1) axis.title.splice(index, 1);
   } else {
-    if (titleXaxis.includes(thisText)) return;
-    else titleXaxis.push(thisText);
+    if (mode !== "load" && axis.title.indexOf(thisText) < 0)
+      axis.title.push(thisText);
   }
 
-  console.log(titleXaxis);
-  let text = thisText["content"];
-  let btn = d3
-    .select("#xTitle")
-    .append("button")
-    .datum(thisText)
-    .attr("type", "button")
-    .attr("class", "titleXbutton")
-    .attr("style", "position: absolute; top: 1px; left: 200px")
-    .attr("style", "width: 100%")
-    .attr("id", "xTItleIDinSVG" + thisText["id"]) // this ID is important!!
-    .attr("draggable", true)
-    .text(text)
-    .on("dragstart", drag);
-  btn
-    .attr("style", "background-color: #f2f2f2")
-    .on("mouseover", function (event) {
-      d3.select(this) // Select the hovered button
-        .attr("style", "color: #fff");
-
-      d3.select("body")
-        .append("div")
-        .attr("class", "tooltip")
-        .style("opacity", 0.75)
-        .style("width", "100%")
-        .style("background-color: black");
-    })
-    .on("mouseout", function () {
-      d3.select(this) // Select the hovered button
-        .attr("style", "background-color: #f2f2f2; width: 100%")
-        .attr("style", "color: black");
-
-      d3.select(".tooltip").remove();
-    });
-}
-
-function displayTitleYLabel(thisText, mode) {
-  if (mode === "delete") {
-    d3.select("#yTitle")
-      .select("#" + "yTitleIDinSVG" + thisText["id"])
-      .remove();
-    return;
-  } else {
-    if (titleYaxis.includes(thisText)) return;
-    else titleYaxis.push(thisText);
+  let thisDiv = d3.select("#axisTitle_" + axisIndex);
+  thisDiv.selectAll("button").remove();
+  for (let title of axis.title) {
+    let btn = thisDiv
+      .append("button")
+      .datum(title)
+      .attr("type", "button")
+      .attr("class", "labelButton")
+      .attr("style", "position: absolute; top: 1px; left: 200px")
+      .attr("style", "width: 100%")
+      .attr("id", "axis_" + axisIndex + "_titleIDinSVG" + title["id"]) // TBD: make the ID consistent with the rest
+      .attr("draggable", true)
+      .text(title["content"])
+      .on("dragstart", drag);
+    btn
+      .attr("style", "background-color: #f2f2f2")
+      .on("mouseover", function (event) {
+        d3.select(this) // Select the hovered button
+          .attr("style", "color: #fff");
+      })
+      .on("mouseout", function () {
+        d3.select(this) // Select the hovered button
+          .attr("style", "background-color: #f2f2f2; width: 100%")
+          .attr("style", "color: black");
+      });
   }
-
-  console.log(titleYaxis);
-  let text = thisText["content"];
-  let btn = d3
-    .select("#yTitle")
-    .append("button")
-    .datum(thisText)
-    .attr("type", "button")
-    .attr("class", "titleYbutton")
-    .attr("style", "position: absolute; top: 1px; left: 200px")
-    .attr("id", "yTitleIDinSVG" + thisText["id"])
-    .attr("draggable", true)
-    .text(text)
-    .on("dragstart", drag);
-  btn
-    .attr("style", "background-color: #f2f2f2")
-    .on("mouseover", function (event) {
-      d3.select(this) // Select the hovered button
-        .attr("style", "color: #fff");
-
-      d3.select("body")
-        .append("div")
-        .attr("class", "tooltip")
-        .style("opacity", 0.75)
-        .style("width", "100%")
-        .style("background-color: black");
-    })
-    .on("mouseout", function () {
-      d3.select(this) // Select the hovered button
-        .attr("style", "background-color: #f2f2f2; width: 100%")
-        .attr("style", "color: black");
-      d3.select(".tooltip").remove();
-    });
 }
 
 function displayTitleLegendLabel(thisText, mode) {
@@ -273,17 +352,14 @@ function displayTitleLegendLabel(thisText, mode) {
     else titleLegend.push(thisText);
   }
 
-  console.log(titleLegend);
   let text = thisText["content"];
-  console.log(text);
-  console.log("Display legend");
 
   let btn = d3
     .select("#legendTitle")
     .append("button")
     .datum(thisText)
     .attr("type", "button")
-    .attr("class", "titleLegendButton")
+    .attr("class", "labelButton")
     .attr("id", "legendTitleIDinSVG" + thisText["id"])
     .text(text)
     .attr("draggable", true)
@@ -294,20 +370,82 @@ function displayTitleLegendLabel(thisText, mode) {
     .on("mouseover", function (event) {
       d3.select(this) // Select the hovered button
         .attr("style", "color: #fff");
-
-      d3.select("body")
-        .append("div")
-        .attr("class", "tooltip")
-        .style("opacity", 0.75)
-        .style("width", "100%")
-        .style("background-color: black");
     })
     .on("mouseout", function () {
       d3.select(this) // Select the hovered button
         .attr("style", "background-color: #f2f2f2; width: 100%")
         .attr("style", "color: black");
-      d3.select(".tooltip").remove();
     });
+}
+
+function displayChartTitle(thisText, mode) {
+  if (mode === "delete") {
+    chartTitle.splice(chartTitle.indexOf(thisText), 1);
+  } else {
+    if (!chartTitle.includes(thisText)) chartTitle.push(thisText);
+  }
+
+  d3.select("#chartTitle").selectAll("button").remove();
+
+  for (let thisTitle of chartTitle) {
+    let btn = d3
+      .select("#chartTitle")
+      .append("button")
+      .datum(thisTitle)
+      .attr("type", "button")
+      .attr("class", "chartTitleButton")
+      .attr("id", "chartTitleIDinSVG" + thisTitle["id"])
+      .text(thisTitle["content"])
+      .attr("draggable", true)
+      .on("dragstart", drag);
+
+    btn
+      .attr("style", "background-color: #f2f2f2")
+      .on("mouseover", function (event) {
+        d3.select(this) // Select the hovered button
+          .attr("style", "color: #fff");
+      })
+      .on("mouseout", function () {
+        d3.select(this) // Select the hovered button
+          .attr("style", "background-color: #f2f2f2; width: 100%")
+          .attr("style", "color: black");
+      });
+  }
+}
+
+function displayTitles(chartTitle, legendTitle) {
+  let allTitles = [chartTitle, legendTitle];
+  ["chartTitle", "legendTitle"].forEach((id) => {
+    d3.select("#" + id)
+      .selectAll("button")
+      .remove();
+    for (let title of allTitles[["chartTitle", "legendTitle"].indexOf(id)].map(
+      (e) => (typeof e === "string" ? allGraphicsElement[e] : e)
+    )) {
+      let btn = d3
+        .select("#" + id)
+        .append("button")
+        .datum(title)
+        .attr("type", "button")
+        .attr("class", id + "Button")
+        .attr("id", id + "IDinSVG" + title["id"])
+        .text(title["content"])
+        .attr("draggable", true)
+        .on("dragstart", drag);
+
+      btn
+        .attr("style", "background-color: #f2f2f2")
+        .on("mouseover", function (event) {
+          d3.select(this) // Select the hovered button
+            .attr("style", "color: #fff");
+        })
+        .on("mouseout", function () {
+          d3.select(this) // Select the hovered button
+            .attr("style", "background-color: #f2f2f2; width: 100%")
+            .attr("style", "color: black");
+        });
+    }
+  });
 }
 
 function setViewBox() {
@@ -387,8 +525,8 @@ function setViewBox() {
       // console.log("Hidden position of the legend bar: ", hiddenLeft, hiddenTop, hiddenWidth, hiddenHeight)
 
       let colors = [];
-      let tickPos = legend.ticks.map((tick) =>
-        document.getElementById(tick.id).getBoundingClientRect()
+      let tickPos = legend.ticks.map((tickid) =>
+        document.getElementById(tickid).getBoundingClientRect()
       );
       let labelPos = legend.labels.map((label) =>
         document.getElementById(label.id).getBoundingClientRect()
@@ -496,7 +634,7 @@ function setViewBox() {
 }
 
 function getViewBox() {
-  let allBBoxes = groupSVGElementsByTypeWithCoordinates();
+  let allBBoxes = Object.values(allGraphicsElement);
   return {
     left: allBBoxes.map((bbox) => bbox.left).reduce((a, b) => Math.min(a, b)),
     top: allBBoxes.map((bbox) => bbox.top).reduce((a, b) => Math.min(a, b)),

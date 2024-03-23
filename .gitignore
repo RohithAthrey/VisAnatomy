@@ -23,7 +23,6 @@ npm-debug.log
 # configuration Files
 .eslintrc.json
 *.pyc
-newSVGs
 
-# annotation files
-annotations
+# # annotation files
+# annotations/*.json

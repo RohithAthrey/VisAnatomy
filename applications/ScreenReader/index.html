@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Screen Reader Use Case</title>
+    <script
+      type="text/javascript"
+      charset="utf8"
+      src="./js/buildStackedBar.js"
+    ></script>
+    <script
+      type="text/javascript"
+      charset="utf8"
+      src="./js/buildMultiLine.js"
+    ></script>
+    <script
+      type="text/javascript"
+      charset="utf8"
+      src="./js/buildConnectedDotPlot.js"
+    ></script>
+    <script
+      type="text/javascript"
+      charset="utf8"
+      src="./js/buildGeoHeatmap.js"
+    ></script>
+    <script
+      type="text/javascript"
+      charset="utf8"
+      src="./js/buildSimpleBar.js"
+    ></script>
+    <style>
+      body {
+        display: flex;
+        height: 100vh;
+        margin: 0;
+        overflow: hidden;
+      }
+      .chart-list {
+        width: 200px;
+        padding: 10px;
+        border-right: 1px solid #ccc;
+      }
+      .chart-list ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+      }
+      .chart-list li {
+        cursor: pointer;
+        padding: 10px;
+        border-bottom: 1px solid #ccc;
+      }
+      .chart-list li:last-child {
+        border-bottom: none;
+      }
+      .chart-container {
+        flex: 1;
+        padding: 10px;
+      }
+      #chart-svg {
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="chart-list">
+      <ul>
+        <li onclick="loadChart('BarChart4 from poetrybetweenpain')">
+          Simple Bar Chart
+        </li>
+        <li onclick="loadChart('ConnectedDotPlot9 from Mascot')">
+          Connected Dot Plot
+        </li>
+        <li onclick="loadChart('GeoHeatmap9 from D3')">Geo-Heatmap</li>
+        <li onclick="loadChart('LineGraph17 from HighCharts')">Line Graph</li>
+        <li onclick="loadChart('StackedBarChart11 from ApexCharts')">
+          Stacked Bar Chart
+        </li>
+      </ul>
+    </div>
+    <div class="chart-container">
+      <div id="last-key-pressed">Last key pressed:</div>
+      <div id="chart-svg"></div>
+    </div>
+
+    <script>
+      function loadChart(chartName) {
+        var xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = function () {
+          if (xhr.readyState === 4 && xhr.status === 200) {
+            document.getElementById("chart-svg").innerHTML = xhr.responseText;
+          }
+        };
+        xhr.open(
+          "GET",
+          "targeted SVGs with Annotations/" + chartName + ".svg",
+          true
+        );
+        xhr.send();
+        console.clear();
+        switch (chartName) {
+          case "BarChart4 from poetrybetweenpain":
+            initilizeSimpleBarChart();
+            break;
+          case "ConnectedDotPlot9 from Mascot":
+            initilizeConnectedDotPlot();
+            break;
+          case "GeoHeatmap9 from D3":
+            initilizeGeoHeatmap();
+            break;
+          case "LineGraph17 from HighCharts":
+            initilizeMultiLineChart();
+            break;
+          case "StackedBarChart11 from ApexCharts":
+            initilizeStackedBarChart();
+            break;
+        }
+      }
+      loadChart("GeoHeatmap9 from D3");
+    </script>
+  </body>
+</html>

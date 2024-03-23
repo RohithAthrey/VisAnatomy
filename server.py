@@ -7,7 +7,7 @@ class MyHTTPRequestHandler(SimpleHTTPRequestHandler):
     def do_GET(self):
         print(self.path)
         if (self.path == "/"):#root path
-            self.path = "index.html" 
+            self.path = "/annotationPage.html"
         elif self.path.startswith("/check_file_exists/"):
             filename = self.path.split('/')[-1]
             folder_path = "examples"
@@ -34,6 +34,7 @@ class MyHTTPRequestHandler(SimpleHTTPRequestHandler):
         return SimpleHTTPRequestHandler.do_GET(self)
     
     def do_POST(self):
+        print(self.path)
         if self.path.startswith("/save_file"):
             print("saving new file")
             try:

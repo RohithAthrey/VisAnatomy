@@ -1,4 +1,16 @@
 var style = {};
+var graphicsElementTypes = [
+  "line",
+  "polyline",
+  "rect",
+  "circle",
+  "ellipse",
+  "polygon",
+  "path",
+  "image",
+  "text",
+  "use",
+];
 var keys_of_interest = [
   "style",
   "transform",
@@ -38,10 +50,10 @@ function groupSVGElementsByTypeWithCoordinates() {
 
   const allElements = Array.from(tempDiv.querySelectorAll("*")).filter(
     // (element) => element.childElementCount === 0
-    (element) => graphicsElementTypes.includes(element.tagName) // here we use all nodes other than lead nodes because there are rare cases where <rect> is not a leaf node like the example in https://observablehq.com/@d3/diverging-bar-chart
+    (element) =>
+      graphicsElementTypes.includes(element.tagName) ||
+      element.tagName === "tspan" // here we use all nodes other than leaf nodes because there are rare cases where <rect> is not a leaf node like the example in https://observablehq.com/@d3/diverging-bar-chart
   );
-
-  const groupedElements = [];
 
   const svgElement = tempDiv.querySelector("svg");
   const svgBBox = svgElement.getBoundingClientRect();
@@ -57,43 +69,115 @@ function groupSVGElementsByTypeWithCoordinates() {
 
     let zeroWidth = element.attributes.width?.value === "0";
     let zeroHeight = element.attributes.height?.value === "0";
-
-    if (!(zeroHeight || zeroWidth)) {
-      groupedElements.push({
+    if (!(zeroHeight && zeroWidth) && top > -4000 && left > -4000) {
+      allGraphicsElement[element.id] = {
         left: left,
         top: top,
         right: right,
         bottom: bottom,
+        height: bbox.height,
+        width: bbox.width,
         id: element.id,
-      });
+        tagName: element.tagName,
+        content:
+          element.tagName === "text" || element.tagName === "tspan"
+            ? element.textContent.trim()
+            : element.innerHTML.trim(), // TBD: need to get text content more accurately, e.g., in grouped bar chart 6 and stacked bar chart 3
+        fill: element.attributes.fill
+          ? element.attributes.fill.value
+          : element.style.fill
+          ? element.style.fill
+          : getClosestAncestorColor(element.id),
+        isReferenceElement: false,
+      };
+      if (Object.keys(groupedGraphicsElement).includes(element.tagName + "s"))
+        groupedGraphicsElement[element.tagName + "s"].push({
+          left: left,
+          top: top,
+          right: right,
+          bottom: bottom,
+          height: bbox.height,
+          width: bbox.width,
+          id: element.id,
+          tagName: element.tagName,
+          content:
+            element.tagName === "text"
+              ? element.textContent.trim()
+              : element.innerHTML.trim(), // TBD: need to get text content more accurately, e.g., in grouped bar chart 6
+          fill: element.attributes.fill
+            ? element.attributes.fill.value
+            : addStyleAttributesToElement(
+                document.getElementById(element.id)
+              ).getAttribute("fill"),
+        });
+      else
+        groupedGraphicsElement[element.tagName + "s"] = [
+          {
+            left: left,
+            top: top,
+            right: right,
+            bottom: bottom,
+            height: bbox.height,
+            width: bbox.width,
+            id: element.id,
+            tagName: element.tagName,
+            content:
+              element.tagName === "text"
+                ? element.textContent.trim()
+                : element.innerHTML.trim(), // TBD: need to get text content more accurately, e.g., in grouped bar chart 6
+            fill: element.attributes.fill
+              ? element.attributes.fill.value
+              : element.style.fill
+              ? element.style.fill
+              : getClosestAncestorColor(element.id),
+          },
+        ];
     }
   });
+  console.log(allGraphicsElement);
+}
 
-  return groupedElements;
+function getClosestAncestorColor(elementID) {
+  let element = document.getElementById(elementID);
+  let parent = element.parentElement;
+  while (parent.tagName !== "svg") {
+    if (parent.attributes.fill) return parent.attributes.fill.value;
+    if (parent.style.fill) return parent.style.fill;
+    parent = parent.parentElement;
+  }
+  return "undefined";
 }
 
 function groupSVGElementsByType() {
   referenceElements = [
     ...(legend.labels ? legend.labels : []),
     ...(legend.marks ? legend.marks : []),
-    ...(xAxis.labels ? xAxis.labels : []),
-    ...(yAxis.labels ? yAxis.labels : []),
-    ...(xAxis.ticks ? xAxis.ticks : []),
-    ...(yAxis.ticks ? yAxis.ticks : []),
-  ].map((element) => element.id);
-  referenceElements.push(
-    ...[
-      xAxis.path ? xAxis.path.id : undefined,
-      yAxis.path ? yAxis.path.id : undefined,
-    ]
-  );
+    ...Object.keys(axes)
+      .map((key) => (axes[key].labels ? axes[key].labels : []))
+      .flat(),
+    ...Object.keys(axes)
+      .map((key) => (axes[key].title ? axes[key].title : []))
+      .flat(),
+    ...Object.keys(axes)
+      .map((key) =>
+        axes[key].upperLevels ? axes[key].upperLevels.flat(Infinity) : []
+      )
+      .flat(),
+    ...chartTitle,
+    ...titleLegend,
+  ]
+    .filter((e) => e !== null)
+    .map((element) => element.id);
 
   const tempDiv = document.getElementById("rbox1");
 
-  // Get all leaf-node elements (elements without child elements)
+  // Get all leaf-node elements (elements whose tag is within basic elements or without child elements)
   const leafElements = Array.from(tempDiv.querySelectorAll("*")).filter(
     (element) =>
-      element.childElementCount === 0 && !referenceElements.includes(element.id)
+      ((element.childElementCount === 0 &&
+        !graphicsElementTypes.includes(element.parentElement.tagName)) ||
+        graphicsElementTypes.includes(element.tagName)) &&
+      !referenceElements.includes(element.id)
   );
 
   // Group the elements by their element type
@@ -107,12 +191,45 @@ function groupSVGElementsByType() {
     let zeroWidth = element.attributes.width?.value === "0";
     let zeroHeight = element.attributes.height?.value === "0";
 
-    if (!(zeroHeight || zeroWidth)) {
-      groupedElements[elementType].push({ element: element, id: element.id });
+    if (!(zeroHeight && zeroWidth)) {
+      groupedElements[elementType].push({
+        element: addStyleAttributesToElement(element),
+        id: element.id,
+      });
     }
   });
 
   return groupedElements;
+}
+
+function addStyleAttributesToElement(svgElement) {
+  // Check if the element has a style attribute
+  if (svgElement.hasAttribute("style")) {
+    // Get the style attribute value
+    const styles = svgElement.getAttribute("style");
+
+    // Split the styles into individual key-value pairs
+    styles.split(";").forEach((style) => {
+      // Split each style into key and value
+      let [key, value] = style.split(":");
+
+      // Trim whitespace and set the attribute on the element
+      if (key && value) {
+        key = key.trim();
+        value = value.trim();
+        try {
+          svgElement.setAttribute(key, value);
+        } catch (e) {
+          // do nothing
+        }
+      }
+    });
+
+    // Optional: Remove the style attribute after parsing
+    // svgElement.removeAttribute('style');
+  }
+
+  return svgElement;
 }
 
 function flattenSVG(svgString) {
