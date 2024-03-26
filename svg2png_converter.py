@@ -5,7 +5,7 @@ import xml.etree.ElementTree as ET
 
 # Specify the input folder containing SVG files and output folder for PNG files
 input_folder = "./examples"
-output_folder = "./examples_png_v2"
+output_folder = "./examples_png"
 
 # # Specify the default output size (in pixels) if SVG size is undefined
 # default_width = 800
