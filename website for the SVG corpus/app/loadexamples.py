@@ -1,8 +1,8 @@
 from collections import defaultdict
 from typing import List
 import pandas as pd
-import copy
-import random
+import copy, random, json
+
 
 class Image:
     def __init__(self, filename:str, description:str, source:str, tags:list):
@@ -24,10 +24,24 @@ class Examples:
         self.tags = defaultdict(list)
         self.readTags()
     def readTags(self):
-        self.df = pd.read_csv('app/examples_collection_output.csv')
-        self.df = self.df.dropna()
+        self.svgJson = json.load(open("../SVG_NAMES.json"))
+        # self.df = pd.read_csv('app/examples_collection_output.csv')
+        # self.df = self.df.dropna()
         # I need some structure that stores a list of all tags and the example filenames, descriptions and source link for each file in that tag
-        for index, row in self.df.iterrows():
+        for k in self.svgJson:
+            # row = self.df.loc[self.df['Filename']==k.replace(".svg", ".png")]
+            # if row.empty:
+            #     print("Missing file:", k)
+            #     continue
+            row = {
+                "Filename": k.replace(".svg", ".png"),
+                "Description": k.replace(".svg", ""),
+                "Tag": k.split()[0].lower().strip(),
+                "Link":""
+            }
+        # for index, row in self.df.iterrows():
+            # row = row.iloc[0]
+            # print(row["Filename"])
             image = Image(row["Filename"], row["Description"], row["Link"], row["Tag"]) #might switch out description with Type
             # for tag in row["Tag"].split(","):
             self.tags[row["Tag"].strip().lower()].append(image)

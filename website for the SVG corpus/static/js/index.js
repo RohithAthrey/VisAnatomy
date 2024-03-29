@@ -2,25 +2,25 @@
 var bookmarks = new Set()
 var oldtags = []
  
-function log(userevent,data){
-  fetch('/log',{
-    method:'POST',
-    headers: {
-    'Content-Type': 'application/json',
-    },
-    body: JSON.stringify({
-      "id": userdetails.id ? userdetails.id: null,
-      'log':{
-        "time": Date.now(),
-        "event": userevent,
-        "data": data,
-        "id": userdetails.id ? userdetails.id: null
-      }
-    })
-  }).catch((error) => {
-    console.error("Error:", error)
-  })
-}
+// function log(userevent,data){
+//   fetch('/log',{
+//     method:'POST',
+//     headers: {
+//     'Content-Type': 'application/json',
+//     },
+//     body: JSON.stringify({
+//       "id": userdetails.id ? userdetails.id: null,
+//       'log':{
+//         "time": Date.now(),
+//         "event": userevent,
+//         "data": data,
+//         "id": userdetails.id ? userdetails.id: null
+//       }
+//     })
+//   }).catch((error) => {
+//     console.error("Error:", error)
+//   })
+// }
 //populate the div for the examples cards with the examples
 function createExampleCards(examples){
   var exampleCards = document.getElementById("examplecards")
@@ -110,7 +110,7 @@ function readMore(element){
 }
 
 function expandExample(filename, link){
-  log("clicked on example source", filename);
+  // log("clicked on example source", filename);
   console.log('clicked on example source', filename)
   // window.open("/scratch/"+filename+"/", "_blank");
   window.open(link, "_blank")
@@ -133,7 +133,7 @@ function initiateChips(data){
         },
         onChipDelete: (e,d) =>{
           chip =d.childNodes[0].textContent
-          log("removing tag", chip)
+          // log("removing tag", chip)
           var selectedtags = Array()
           $("input:checkbox[type=checkbox]:checked").each(function(){
             selectedtags.push($(this).val());
@@ -180,7 +180,7 @@ function initiateChips(data){
             
           });
           
-          log('adding tag', getDifference(oldtags, selectedtags)[0])
+          // log('adding tag', getDifference(oldtags, selectedtags)[0])
           
           oldtags = selectedtags
           fetchExamples(selectedtags)
@@ -192,7 +192,7 @@ function initiateChips(data){
     })
 }
 function fetchExamples(selectedtags){
-  log("fetching example set", Array(selectedtags).join(","))
+  // log("fetching example set", Array(selectedtags).join(","))
    //get images that match tags form backend
    fetch('/examples', {
     method:'POST',
@@ -225,12 +225,12 @@ function formSubmission(){
       deletedTag = getDifference(selectedtags, oldtags)[0]
     }
     if (oldtags.length < selectedtags.length){
-      log('adding tag', getDifference(oldtags, selectedtags)[0])
+      // log('adding tag', getDifference(oldtags, selectedtags)[0])
     }
     var chipsData = M.Chips.getInstance($('.chips')).chipsData;
     chipsData.forEach(e =>{ 
       if (e.tag == deletedTag){
-        log('removing tag', e.tag)
+        // log('removing tag', e.tag)
       }else{
         if (!selectedtags.includes(e.tag)){
           selectedtags.push(e.tag)
@@ -268,7 +268,7 @@ function initializeModal(){
   $(document).ready(function(){
     $('#bookmarkModal').modal({
       onOpenStart: function(modal, trigger){
-        log("opened bookmarks", "")
+        // log("opened bookmarks", "")
         
         bookmarkModal(trigger.id)
       }
@@ -308,7 +308,7 @@ function bookmarkModal(id){
       j = '{"file": "missing"}'
       $('#json-display').jsonViewer(JSON.parse(j))
     }
-    
+    s
   } )
 
 }
@@ -318,11 +318,11 @@ function addBookmark(d){
   if (bookmarks.has(id)){
     bookmarks.delete(id)
     document.getElementById(d).innerText="bookmark_border"
-    log("removing bookmark", id)
+    // log("removing bookmark", id)
   }else{
     bookmarks.add(id)
     document.getElementById(d).innerText="bookmark"
-    log("adding bookmark", id)
+    // log("adding bookmark", id)
   }
 }
 
