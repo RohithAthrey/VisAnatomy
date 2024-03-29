@@ -42,7 +42,7 @@ function createExampleCards(examples){
 
     var subdiv = document.createElement('div')
     source = ""
-    subdiv.className = "col s12 m6 l3"
+    subdiv.className = "col s4"
     subdiv.innerHTML += '<div class="card sticky-action">'+
         '<div class="card-image-pop">'+
           '<div class="card-image waves-effect waves-block waves-light"  id="wholeCard">'+
@@ -72,7 +72,7 @@ function createExampleCards(examples){
     div.appendChild(subdiv)
   
     //if fourth element in div then append to examplecards div and then reset.
-    if (div.childElementCount == 4 || i==examples.length-1){
+    if (div.childElementCount == 3 || i==examples.length-1){
       exampleCards.appendChild(div)
       div = document.createElement('div')
       div.className ="row"
@@ -163,7 +163,11 @@ function initiateChips(data){
               i++
             }
           oldtags = selectedtags
-          fetchExamples(selectedtags)
+          if(selectedtags.length ==0){
+            fetchExamples("all")
+          }else{
+            fetchExamples(selectedtags)
+          }
         },
         onChipAdd: (e,d) =>{
           var selectedtags = Array()
@@ -249,10 +253,14 @@ function formSubmission(){
         )
         i++
       }
-    console.log('selected chips', chips)
+    // console.log('selected chips', chips)
     oldtags = selectedtags
     initiateChips(chips)
-    fetchExamples(selectedtags)
+    if (selectedtags.length ==0){
+      fetchExamples('all')
+    }else{
+      fetchExamples(selectedtags)
+    }
   })
 }
 
@@ -294,21 +302,23 @@ function bookmarkModal(id){
   .then(r=> r.text())
   .then((text)=>{
     try {
-      $('#json-display').jsonViewer(JSON.parse(text)) //https://github.com/abodelot/jquery.json-viewer
-      // collaspe all but root
-      var elements = document.getElementsByClassName("json-toggle")
-      for (var i = 0, len = elements.length; i < len; i++) {
-        if (i <= 1){
-          continue
-        }
-        elements[i].click()
-      }
+      // viewer= documen.querySelector("#json-display")
+      new JsonViewer({
+        value: JSON.parse(text),
+        defaultInspectDepth: 2,
+        theme: 'light'
+      }).render('#json-display') //https://www.jsdelivr.com/package/npm/@textea/json-viewer
+      // viewer.data=JSON.parse(text) //https://github.com/alenaksu/json-viewer
+      // $("span:contains('annotations:')").collapse("toggle")
+      
     } catch (error) {
       console.log(error)
       j = '{"file": "missing"}'
-      $('#json-display').jsonViewer(JSON.parse(j))
+      new JsonViewer({
+        value: JSON.parse(j),
+        defaultInspectDepth: 2
+      }).render('#json-display')
     }
-    s
   } )
 
 }

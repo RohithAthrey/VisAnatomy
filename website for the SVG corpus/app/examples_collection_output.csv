@@ -1,16 +1,226 @@
 Type,ID,Description,Filename,Tag,Link
+Area Chart,1,Area Chart 1,AreaChart1.png,area,https://vega.github.io/vega/examples/area-chart/
+Area Chart,2,Area Chart 2,AreaChart2.png,area,https://observablehq.com/@elishaterada/simple-area-chart-with-tooltip
+Area Chart,3,Area Chart 3,AreaChart3.png,area,https://apexcharts.com/docs/chart-types/area-chart/
+Area Chart,4,Area Chart 4,AreaChart4.png,area,https://mascot-vis.github.io/gallery.html#AreaChart
+Area Chart,5,Area Chart 5,AreaChart5.png,area,https://observablehq.com/@valentinachaconbuitrago/area-chart-with-focus-context
+Area Chart,6,Area Chart 6,AreaChart6.png,area,https://observablehq.com/@bartok32/real-time-area-chart
+Area Chart,7,Area Chart 7,AreaChart7.png,area,https://observablehq.com/@d3/zoomable-area-chart
+Area Chart,8,Area Chart 8,AreaChart8.png,area,https://mascot-vis.github.io/gallery.html#AreaChart2
+Area Chart,9,Area Chart 9,AreaChart9.png,area,https://observablehq.com/@xianwu/area-chart-basic
+Area Chart,10,Area Chart 10,AreaChart10.png,area,https://docs.evidence.dev/components/area-chart
+Area Chart,11,Area Chart 11,AreaChart11.png,area,https://apexcharts.com/docs/chart-types/area-chart/
 Bar Chart,1,Bar Chart 1,BarChart1.png,bar,https://playground.anychart.com/docs/v8/samples/BCT_Bar_Chart_03
 Bar Chart,2,Bar Chart 2,BarChart2.png,bar,https://apexcharts.com/javascript-chart-demos/bar-charts/
 Bar Chart,3,Bar Chart 3,BarChart3.png,bar,https://vega.github.io/vega-lite/examples/bar.html
-Bar Chart,4,Bar Chart 4,BarChart4.png,bar,https://observablehq.com/@d3/bar-chart
+Bar Chart,4,Bar Chart 4,BarChart4.png,bar,https://poetrybetweenpain.deb.is/images/charts/chrt-LiveDie.svg
 Bar Chart,5,Bar Chart 5,BarChart5.png,bar,https://observablehq.com/@d3/diverging-bar-chart
 Bar Chart,6,Bar Chart 6,BarChart6.png,bar,https://insights.datylon.com/stories/nIWdVHXAxLrae7nECdRFFQ
-Bar Chart,13,Bar Chart 13,BarChart13.png,bar,https://observablehq.com/@observablehq/plot-bar
-Bar Chart,8,Bar Chart 8,BarChart8.png,bar,https://observablehq.com/@d3/hierarchical-bar-chart
-Bar Chart,9,Bar Chart 9,BarChart9.png,bar,https://doc.sagemath.org/html/en/reference/plotting/sage/plot/bar_chart.html
-Bar Chart,10,Bar Chart 10,BarChart10.png,bar,https://bl.ocks.org/tlfrd/187e45e0629711c4560cf6bcd0767b27
-Bar Chart,11,Bar Chart 11,BarChart11.png,bar,https://www.diagrammm.com/bar_chart
-Bar Chart,12,Bar Chart 12,BarChart12.png,bar,https://xari.dev/horizontal-bar-plot/
+Bar Chart,7,Bar Chart 7,BarChart7.png,bar,https://www.diagrammm.com/bar_chart
+Bar Chart,8,Bar Chart 8,BarChart8.png,bar,https://xari.dev/horizontal-bar-plot/
+Bar Chart,9,Bar Chart 9,BarChart9.png,bar,https://observablehq.com/@observablehq/plot-bar
+Bar Chart,10,Bar Chart 10,BarChart10.png,bar,https://gist.github.com/tlfrd/187e45e0629711c4560cf6bcd0767b27
+Bar Chart in Radial Layout,1,Bar Chart in Radial Layout 1,BarChartinRadialLayout1.png,bar,https://agill.xyz/research/haiku/analysis/colors
+Bar Chart in Radial Layout,2,Bar Chart in Radial Layout 2,BarChartinRadialLayout2.png,bar,https://observablehq.com/@d3/radial-stacked-bar-chart
+Bar Chart in Radial Layout,3,Bar Chart in Radial Layout 3,BarChartinRadialLayout3.png,bar,https://observablehq.com/@s0rta/radial-bar-chart-proof-of-conecpt
+Bar Chart in Radial Layout,4,Bar Chart in Radial Layout 4,BarChartinRadialLayout4.png,bar,https://www.predicthq.com/blog/ldi-july22
+Bar Chart in Radial Layout,5,Bar Chart in Radial Layout 5,BarChartinRadialLayout5.png,bar,https://www.commerce.ai/2022-report-register
+Bar Chart in Radial Layout,6,Bar Chart in Radial Layout 6,BarChartinRadialLayout6.png,bar,https://observablehq.com/@instancia/radial-stacked-bar-chart
+Bar Chart in Radial Layout,7,Bar Chart in Radial Layout 7,BarChartinRadialLayout7.png,bar,https://observablehq.com/@kclosu/radial-stacked-bar-chart
+Bar Chart in Radial Layout,8,Bar Chart in Radial Layout 8,BarChartinRadialLayout8.png,bar,https://datavizcatalogue.com/methods/radial_column_chart.html
+Bar Chart in Radial Layout,9,Bar Chart in Radial Layout 9,BarChartinRadialLayout9.png,bar,https://observablehq.com/@paulyiu/radial-stacked-bar-chart/2
+Bar Chart in Radial Layout,10,Bar Chart in Radial Layout 10,BarChartinRadialLayout10.png,bar,https://datavizcatalogue.com/methods/radial_column_chart.html
+Box-and-whisker plot,1,Box-and-whisker plot 1,Box-and-whiskerplot1.png,box-and-whisker,https://www.nagwa.com/en/explainers/812192146073/
+Box-and-whisker plot,2,Box-and-whisker plot 2,Box-and-whiskerplot2.png,box-and-whisker,https://apexcharts.com/wp-content/uploads/2021/02/basic-boxplot.svg
+Box-and-whisker plot,3,Box-and-whisker plot 3,Box-and-whiskerplot3.png,box-and-whisker,https://www.khanacademy.org/math/statistics-probability/summarizing-quantitative-data/box-whisker-plots/a/box-plot-review
+Box-and-whisker plot,4,Box-and-whisker plot 4,Box-and-whiskerplot4.png,box-and-whisker,https://www.codecademy.com/learn/stats-associations-between-variables/modules/stats-associations-between-variables/cheatsheet
+Box-and-whisker plot,5,Box-and-whisker plot 5,Box-and-whiskerplot5.png,box-and-whisker,https://apexcharts.com/wp-content/uploads/2021/02/horizontal-boxplot.svg
+Box-and-whisker plot,6,Box-and-whisker plot 6,Box-and-whiskerplot6.png,box-and-whisker,https://alex-hhh.github.io/2021/04/box-and-whiskers-plot.html
+Box-and-whisker plot,7,Box-and-whisker plot 7,Box-and-whiskerplot7.png,box-and-whisker,https://observablehq.com/@d3/box-plot
+Box-and-whisker plot,8,Box-and-whisker plot 8,Box-and-whiskerplot8.png,box-and-whisker,https://observablehq.com/@mukhtyar/box-plot
+Box-and-whisker plot,9,Box-and-whisker plot 9,Box-and-whiskerplot9.png,box-and-whisker,https://vega.github.io/vega-lite/examples/boxplot_minmax_2D_vertical.html
+Box-and-whisker plot,10,Box-and-whisker plot 10,Box-and-whiskerplot10.png,box-and-whisker,https://data-illustrator.cs.umd.edu/app/index.html?project=few_box_plot
+Box-and-whisker plot,11,Box-and-whisker plot 11,Box-and-whiskerplot11.png,box-and-whisker,https://bookdown.org/max/FES/stroke-exploration.html
+Bubble Chart,1,Bubble Chart 1,BubbleChart1.png,bubble,https://insights.datylon.com/stories/qS11V4CyLM1etV1Q925FOg
+Bubble Chart,2,Bubble Chart 2,BubbleChart2.png,bubble,https://insights.datylon.com/stories/jVPwg1Q_CeguvLAxY4VJKw
+Bubble Chart,3,Bubble Chart 3,BubbleChart3.png,bubble,https://apexcharts.com/javascript-chart-demos/bubble-charts/simple/
+Bubble Chart,4,Bubble Chart 4,BubbleChart4.png,bubble,https://www.highcharts.com/demo/highcharts/bubble
+Bubble Chart,5,Bubble Chart 5,BubbleChart5.png,bubble,https://insights.datylon.com/stories/jZ9edVDAp0wT6rQzn5FDng
+Bubble Chart,6,Bubble Chart 6,BubbleChart6.png,bubble,https://mascot-vis.github.io/gallery#BubblePlot
+Bubble Chart,7,Bubble Chart 7,BubbleChart7.png,bubble,https://insights.datylon.com/stories/n3Bf_ByGdHpYCHoEQw5EUw
+Bubble Chart,8,Bubble Chart 8,BubbleChart8.png,bubble,https://vega.github.io/vega-lite/examples/point_bubble.html
+Bubble Chart,9,Bubble Chart 9,BubbleChart9.png,bubble,https://vega.github.io/vega-lite/examples/circle_bubble_health_income.html
+Bubble Chart,10,Bubble Chart 10,BubbleChart10.png,bubble,https://vega.github.io/vega-lite/examples/circle_natural_disasters.html
+Bubble Chart,11,Bubble Chart 11,BubbleChart11.png,bubble,https://www.zingchart.com/gallery/world-countries-by-adjusted-net-national-income-and-fertility-rate
+Bubble Chart,12,Bubble Chart 12,BubbleChart12.png,bubble,https://developers.google.com/chart/interactive/docs/gallery/bubblechart
+Bullet Chart,1,Bullet Chart 1,BulletChart1.png,bullet,https://mascot-vis.github.io/gallery.html#BulletChart
+Bullet Chart,2,Bullet Chart 2,BulletChart2.png,bullet,https://okviz.com/bullet-chart/
+Bullet Chart,3,Bullet Chart 3,BulletChart3.png,bullet,https://www.ibm.com/design/language/data-visualization/charts/
+Bullet Chart,4,Bullet Chart 4,BulletChart4.png,bullet,https://vis.zone/graph/bullet-graph/
+Bullet Chart,5,Bullet Chart 5,BulletChart5.png,bullet,https://datavizcatalogue.com/methods/bullet_graph.html
+Bullet Chart,6,Bullet Chart 6,BulletChart6.png,bullet,https://www.fusioncharts.com/charts
+Bullet Chart,7,Bullet Chart 7,BulletChart7.png,bullet,https://www.fusioncharts.com/charts/bullet-graphs/horizontal-bullet-graph?framework=javascript
+Bullet Chart,8,Bullet Chart 8,BulletChart8.png,bullet,https://insights.datylon.com/stories/pdRiJv2a9qTzq2esUDJPDQ
+Bullet Chart,9,Bullet Chart 9,BulletChart9.png,bullet,https://insights.datylon.com/stories/sUH1REVrdrPZhjXbIOJABA
+Bullet Chart,10,Bullet Chart 10,BulletChart10.png,bullet,https://commons.wikimedia.org/wiki/File:Labelled_Bullet_Graph_Example.svg
+Bump Chart,1,Bump Chart 1,BumpChart1.png,bump,https://data-illustrator.cs.umd.edu/app/index.html?project=new_car_colors
+Bump Chart,2,Bump Chart 2,BumpChart2.png,bump,https://commons.wikimedia.org/wiki/File:Canada_Historical_Population_Bump_Chart_no_signature.svg
+Bump Chart,3,Bump Chart 3,BumpChart3.png,bump,https://placeless.net/blog/rawgraphs-intro
+Bump Chart,4,Bump Chart 4,BumpChart4.png,bump,https://observablehq.com/@analyzer2004/bump-chart
+Bump Chart,5,Bump Chart 5,BumpChart5.png,bump,https://observablehq.com/@fil/bump-chart
+Bump Chart,6,Bump Chart 6,BumpChart6.png,bump,https://vega.github.io/vega-lite/examples/line_bump.html
+Bump Chart,7,Bump Chart 7,BumpChart7.png,bump,https://insights.datylon.com/stories/s6O9Mt4Za_2Per9-911JKQ
+Bump Chart,8,Bump Chart 8,BumpChart8.png,bump,https://www.digitalmethods.net/Dmi/WinterSchool2017BeyondTheBubbleEmotions
+Bump Chart,9,Bump Chart 9,BumpChart9.png,bump,https://nivo.rocks/bump/
+Bump Chart,10,Bump Chart 10,BumpChart10.png,bump,https://jscharting.com/examples/chart-types/line/bump/
+Bump Chart,11,Bump Chart 11,BumpChart11.png,bump,https://lilljegren.com/
+Calendar,1,Calendar 1,Calendar1.png,calendar,https://vega.github.io/vega/examples/calendar-view/
+Calendar,2,Calendar 2,Calendar2.png,calendar,https://www.zingchart.com/docs/chart-types/calendar
+Calendar,3,Calendar 3,Calendar3.png,calendar,https://observablehq.com/@ee2dev/plot-exploration-how-to-customize-the-calendar-visualizat
+Calendar,4,Calendar 4,Calendar4.png,calendar,https://observablehq.com/@ee2dev/plot-exploration-how-to-customize-the-calendar-visualizat
+Calendar,5,Calendar 5,Calendar5.png,calendar,https://mascot-vis.github.io/gallery.html#MultipleCalendarHeatMaps
+Calendar,6,Calendar 6,Calendar6.png,calendar,https://www.anychart.com/products/anychart/gallery/Calendar_Chart/GitHub_Contributions.php
+Calendar,7,Calendar 7,Calendar7.png,calendar,https://www.anychart.com/products/anychart/gallery/Calendar_Chart/Mike_Bostock_GitHub_Contributions.php?theme=lightGlamour
+Calendar,8,Calendar 8,Calendar8.png,calendar,https://observablehq.com/@stvkas/streaking-calendar
+Calendar,9,Calendar 9,Calendar9.png,calendar,https://cal-heatmap.com/docs/showcase
+Calendar,10,Calendar 10,Calendar10.png,calendar,https://observablehq.com/@nyem69/calendar
+Candlestick Chart,1,Candlestick Chart 1,CandlestickChart1.png,candlestick,https://codepen.io/frederickallen/pen/MZXNVY
+Candlestick Chart,2,Candlestick Chart 2,CandlestickChart2.png,candlestick,https://garys-io.github.io/garys-io-candlestick-chart-d3/
+Candlestick Chart,3,Candlestick Chart 3,CandlestickChart3.png,candlestick,https://www.fusioncharts.com/dev/chart-guide/standard-charts/candlestick-chart
+Candlestick Chart,4,Candlestick Chart 4,CandlestickChart4.png,candlestick,https://www.spotfire.com/content/dam/spotfire/images/graphics/inforgraphics/candlestick-chart-example.svg
+Candlestick Chart,5,Candlestick Chart 5,CandlestickChart5.png,candlestick,https://juliastats.org/TimeSeries.jl/latest/plotting/
+Candlestick Chart,6,Candlestick Chart 6,CandlestickChart6.png,candlestick,https://diagrammm.com/candlestick_chart
+Candlestick Chart,7,Candlestick Chart 7,CandlestickChart7.png,candlestick,https://en.wikipedia.org/wiki/File:Candlestick_chart_scheme_02-en.svg
+Candlestick Chart,8,Candlestick Chart 8,CandlestickChart8.png,candlestick,https://observablehq.com/@d3/candlestick-chart
+Candlestick Chart,9,Candlestick Chart 9,CandlestickChart9.png,candlestick,https://www.forex.com/en-us/trading-academy/courses/technical-analysis/key-candlestick-patterns/
+Candlestick Chart,10,Candlestick Chart 10,CandlestickChart10.png,candlestick,https://enrichmoney.in/blog-article/top-5-candlestick-patterns-traders-must-know
+Circle Packing,1,Circle Packing 1,CirclePacking1.png,circle,https://observablehq.com/@danyyyy89/force-simulation-to-visualize-word-cloud
+Circle Packing,2,Circle Packing 2,CirclePacking2.png,circle,https://www.amcharts.com/demos-v4/packed-circle-chart-v4/
+Circle Packing,3,Circle Packing 3,CirclePacking3.png,circle,https://commons.wikimedia.org/wiki/File:Bubble_chart_of_programming_paradigms_en.svg
+Circle Packing,4,Circle Packing 4,CirclePacking4.png,circle,https://r-graph-gallery.com/circle-packing.html
+Circle Packing,5,Circle Packing 5,CirclePacking5.png,circle,https://vega.github.io/vega/examples/circle-packing/
+Circle Packing,6,Circle Packing 6,CirclePacking6.png,circle,https://www.zingchart.com/docs/chart-types/bubble-pack
+Circle Packing,7,Circle Packing 7,CirclePacking7.png,circle,https://observablehq.com/@d3/pack
+Circle Packing,8,Circle Packing 8,CirclePacking8.png,circle,https://observablehq.com/@d3/bubble-chart
+Circle Packing,9,Circle Packing 9,CirclePacking9.png,circle,https://observablehq.com/@didoesdigital/d3-circle-packing
+Circle Packing,10,Circle Packing 10,CirclePacking10.png,circle,https://observablehq.com/@danielefadda/force-simulation-to-visualize-word-cloud-with-split-versio 
+Connected Dot Plot,1,Connected Dot Plot 1,ConnectedDotPlot1.png,connected,https://bl.ocks.org/maartenzam/6235b42b9f9ec3851c492082957180d8
+Connected Dot Plot,2,Connected Dot Plot 2,ConnectedDotPlot2.png,connected,https://insights.datylon.com/stories/n6UJjXcgFI-zC-k7vF1H1g
+Connected Dot Plot,3,Connected Dot Plot 3,ConnectedDotPlot3.png,connected,https://plotdb.com/chart/980/#
+Connected Dot Plot,4,Connected Dot Plot 4,ConnectedDotPlot4.png,connected,https://vega.github.io/vega-lite/examples/layer_ranged_dot.html
+Connected Dot Plot,5,Connected Dot Plot 5,ConnectedDotPlot5.png,connected,https://observablehq.com/@d3/dot-plot
+Connected Dot Plot,6,Connected Dot Plot 6,ConnectedDotPlot6.png,connected,https://observablehq.com/@lorenries/political-science-rankings-connected-dot-plot
+Connected Dot Plot,7,Connected Dot Plot 7,ConnectedDotPlot7.png,connected,https://dataviz.unhcr.org/tools/r/r_dotplot.html
+Connected Dot Plot,8,Connected Dot Plot 8,ConnectedDotPlot8.png,connected,https://mascot-vis.github.io/gallery#LollipopChart
+Connected Dot Plot,9,Connected Dot Plot 9,ConnectedDotPlot9.png,connected,https://mascot-vis.github.io/gallery#DumbbellChart
+Connected Dot Plot,10,Connected Dot Plot 10,ConnectedDotPlot10.png,connected,https://www.datylon.com/resources/chart-library/dot-plot
+Connected Scatterplot,1,Connected Scatterplot 1,ConnectedScatterplot1.png,connected,https://insights.datylon.com/stories/oqOJDl0RCVUMdGl2dJ1Kuw
+Connected Scatterplot,2,Connected Scatterplot 2,ConnectedScatterplot2.png,connected,https://mascot-vis.github.io/gallery.html#ConnectedScatterplot
+Connected Scatterplot,3,Connected Scatterplot 3,ConnectedScatterplot3.png,connected,https://observablehq.com/@d3/connected-scatterplot
+Connected Scatterplot,4,Connected Scatterplot 4,ConnectedScatterplot4.png,connected,https://vega.github.io/vega-lite/examples/connected_scatterplot.html
+Connected Scatterplot,5,Connected Scatterplot 5,ConnectedScatterplot5.png,connected,https://medium.com/mlearning-ai/tableau-tutorial-how-to-create-a-connected-scatterplot-12a67f4a6855
+Connected Scatterplot,6,Connected Scatterplot 6,ConnectedScatterplot6.png,connected,https://d3-graph-gallery.com/graph/connectedscatter_multi.html
+Connected Scatterplot,7,Connected Scatterplot 7,ConnectedScatterplot7.png,connected,https://dataviz.unhcr.org/tools/r/r_scatterplot_connected.html
+Connected Scatterplot,8,Connected Scatterplot 8,ConnectedScatterplot8.png,connected,https://finnstats.com/index.php/2022/11/16/how-to-make-a-connected-scatter-plot-in-r/
+Connected Scatterplot,9,Connected Scatterplot 9,ConnectedScatterplot9.png,connected,http://steveharoz.com/research/connected_scatterplot/
+Connected Scatterplot,10,Connected Scatterplot 10,ConnectedScatterplot10.png,connected,http://steveharoz.com/research/connected_scatterplot/
+Density plot,1,Density plot 1,Densityplot1.png,density,https://en.wikipedia.org/wiki/File:Rating_count_density_by_project_quality_assessment.svg
+Density plot,2,Density plot 2,Densityplot2.png,density,https://datavizcatalogue.com/methods/density_plot.html
+Density plot,3,Density plot 3,Densityplot3.png,density,https://d3-graph-gallery.com/graph/density_basic.html
+Density plot,4,Density plot 4,Densityplot4.png,density,https://commons.wikimedia.org/wiki/File:Reaction_time_density_plot.svg
+Density plot,5,Density plot 5,Densityplot5.png,density,https://vega.github.io/vega-lite/examples/area_density.html
+Density plot,6,Density plot 6,Densityplot6.png,density,https://mascot-vis.github.io/gallery#DensityPlot
+Density plot,7,Density plot 7,Densityplot7.png,density,https://insights.datylon.com/stories/r5Suw19BKP9CwiaV_xBLqA
+Density plot,8,Density plot 8,Densityplot8.png,density,https://mascot-vis.github.io/gallery.html#ridgelinePlot
+Density plot,9,Density plot 9,Densityplot9.png,density,https://wilkelab.org/SDS375/slides/visualizing-distributions-2_files/figure-html/temps_densities_overlapping-1.svg
+Density plot,10,Density plot 10,Densityplot10.png,density,https://people.ohio.edu/ruhil/RBookNew/05-VisualizingData_files/figure-html/05-VisualizingData-28-1.svg
+Density plot,11,Density plot 11,Densityplot11.png,density,https://bookdown.org/max/FES/figures/numeric-kPCA-comparison-1.svg
+Diverging Stacked Bar Chart,1,Diverging Stacked Bar Chart 1,DivergingStackedBarChart1.png,diverging,https://observablehq.com/@d3/diverging-stacked-bar-chart
+Diverging Stacked Bar Chart,2,Diverging Stacked Bar Chart 2,DivergingStackedBarChart2.png,diverging,https://plotly.com/javascript/bar-charts/#diverging-bar-chart
+Diverging Stacked Bar Chart,3,Diverging Stacked Bar Chart 3,DivergingStackedBarChart3.png,diverging,https://vega.github.io/vega-lite/examples/bar_diverging_stack_population_pyramid.html
+Diverging Stacked Bar Chart,4,Diverging Stacked Bar Chart 4,DivergingStackedBarChart4.png,diverging,https://mascot-vis.github.io/gallery.html#DivergingBarChart
+Diverging Stacked Bar Chart,5,Diverging Stacked Bar Chart 5,DivergingStackedBarChart5.png,diverging,https://vega.github.io/vega-lite/examples/bar_diverging_stack_transform.html
+Diverging Stacked Bar Chart,6,Diverging Stacked Bar Chart 6,DivergingStackedBarChart6.png,diverging,https://insights.datylon.com/stories/vyl9HVKNAlSO7vbXR6pJCw
+Diverging Stacked Bar Chart,7,Diverging Stacked Bar Chart 7,DivergingStackedBarChart7.png,diverging,https://insights.datylon.com/stories/vlnwCk-K4g0kkrdtGSVC1Q
+Diverging Stacked Bar Chart,8,Diverging Stacked Bar Chart 8,DivergingStackedBarChart8.png,diverging,https://insights.datylon.com/stories/jxgTr06G-ndlbUbkbZpEtw
+Diverging Stacked Bar Chart,9,Diverging Stacked Bar Chart 9,DivergingStackedBarChart9.png,diverging,https://www.anychart.com/products/anychart/gallery/Bar_Charts/Stacked_Bar_Chart_with_Negative_Values.php
+Diverging Stacked Bar Chart,10,Diverging Stacked Bar Chart 10,DivergingStackedBarChart10.png,diverging,https://package.elm-lang.org/packages/gampleman/elm-visualization/latest/Shape
+Diverging Stacked Bar Chart,11,Diverging Stacked Bar Chart 11,DivergingStackedBarChart11.png,diverging,https://c3js.org/samples/chart_bar_stacked.html
+Diverging Stacked Bar Chart,12,Diverging Stacked Bar Chart 12,DivergingStackedBarChart12.png,diverging,https://www.mckinsey.com/featured-insights/2020-year-in-review/a-tale-of-2020-in-20-mckinsey-charts
+Donut Chart,1,Donut Chart 1,DonutChart1.png,donut,https://insights.datylon.com/stories/sfoIRoAR3q-oB0eCyTFB0w
+Donut Chart,3,Donut Chart 3,DonutChart3.png,donut,https://bl.ocks.org/mbostock/3887193
+Donut Chart,4,Donut Chart 4,DonutChart4.png,donut,https://www.datylon.com/resources/chart-library/donut-chart
+Donut Chart,5,Donut Chart 5,DonutChart5.png,donut,https://apexcharts.com/javascript-chart-demos/pie-charts/
+Donut Chart,6,Donut Chart 6,DonutChart6.png,donut,https://commons.wikimedia.org/wiki/File:Donut-Chart.svg
+Donut Chart,7,Donut Chart 7,DonutChart7.png,donut,https://observablehq.com/@thetylerwolf/day-6-donut-chart
+Donut Chart,8,Donut Chart 8,DonutChart8.png,donut,https://developers.google.com/chart/interactive/docs/gallery/piechart#donut
+Donut Chart,9,Donut Chart 9,DonutChart9.png,donut,https://apexcharts.com/javascript-chart-demos/pie-charts/donut-with-pattern/
+Donut Chart,10,Donut Chart 10,DonutChart10.png,donut,https://vega.github.io/vega/examples/donut-chart/
+Donut Chart,11,Donut Chart 11,DonutChart11.png,donut,https://www.datylon.com/blog/types-of-charts-graphs-examples-data-visualization#donut-chart
+Donut Chart,12,Donut Chart 12,DonutChart12.png,donut,https://accessibility.pearson.com/resources/dataviz/
+Dot Plot,1,Dot Plot 1,DotPlot1.png,dot,https://plotly.com/python/dot-plots/
+Dot Plot,2,Dot Plot 2,DotPlot2.png,dot,https://public.flourish.studio/visualisation/114249/
+Dot Plot,3,Dot Plot 3,DotPlot3.png,dot,https://plotly.com/python/dot-plots/
+Dot Plot,4,Dot Plot 4,DotPlot4.png,dot,http://pklab.med.harvard.edu/peterk/conos/scripts/cluster/scripts/seurat3/ggplot2/tests/figs/geom-dotplot/basic-dotplot-with-dot-density-binning-binwidth-4.svg
+Dot Plot,5,Dot Plot 5,DotPlot5.png,dot,https://mathspace.co/textbooks/syllabuses/Syllabus-862/topics/Topic-19221/subtopics/Subtopic-258372/
+Dot Plot,6,Dot Plot 6,DotPlot6.png,dot,https://www.khanacademy.org/math/cc-third-grade-math/represent-and-interpret-data/imp-line-plots/a/line-plots-review
+Dot Plot,7,Dot Plot 7,DotPlot7.png,dot,https://observablehq.com/@d3/dot-strip-plot
+Dot Plot,8,Dot Plot 8,DotPlot8.png,dot,https://quantamental.amadeus.ch/post/the-feds-new-dot-plot-in-python
+Dot Plot,9,Dot Plot 9,DotPlot9.png,dot,https://www.hcbravo.org/IntroDataSci/bookdown-notes/basic-plotting-with-ggplot.html
+Dot Plot,10,Dot Plot 10,DotPlot10.png,dot,https://mathworld.wolfram.com/DotPlot.html
+Gantt Chart,1,Gantt Chart 1,GanttChart1.png,gantt,https://vega.github.io/editor/#/examples/vega-lite/bar_gantt
+Gantt Chart,2,Gantt Chart 2,GanttChart2.png,gantt,https://lib.rs/crates/gantt_chart
+Gantt Chart,3,Gantt Chart 3,GanttChart3.png,gantt,https://plotly.com/r/gantt/
+Gantt Chart,4,Gantt Chart 4,GanttChart4.png,gantt,https://mascot-vis.github.io/gallery.html#GanttChart
+Gantt Chart,5,Gantt Chart 5,GanttChart5.png,gantt,http://jsfiddle.net/fusioncharts/fLqSL/?utm_source=visualisingdata&utm_medium=website
+Gantt Chart,6,Gantt Chart 6,GanttChart6.png,gantt,https://www.highcharts.com/demo/gantt/interactive-gantt
+Gantt Chart,7,Gantt Chart 7,GanttChart7.png,gantt,https://www.officetimeline.com/gantt-chart/templates/gantt
+Gantt Chart,8,Gantt Chart 8,GanttChart8.png,gantt,https://doc.cuba-platform.com/charts-6.4/gantt_chart.html
+Gantt Chart,9,Gantt Chart 9,GanttChart9.png,gantt,https://www.smartsheet.com/content/project-management-charts
+Gantt Chart,10,Gantt Chart 10,GanttChart10.png,gantt,https://www.tibco.com/reference-center/what-is-a-gantt-chart
+Geo Heatmap,1,Geo Heatmap 1,GeoHeatmap1.png,geo,https://observablehq.com/@parkerziegler/choropleths-four-ways
+Geo Heatmap,2,Geo Heatmap 2,GeoHeatmap2.png,geo,https://observablehq.com/@lisilinhart/choropleth-map
+Geo Heatmap,3,Geo Heatmap 3,GeoHeatmap3.png,geo,https://www.tibco.com/reference-center/what-is-a-geographical-chart
+Geo Heatmap,4,Geo Heatmap 4,GeoHeatmap4.png,geo,https://aeturrell.github.io/coding-for-economists/geo-vis.html
+Geo Heatmap,5,Geo Heatmap 5,GeoHeatmap5.png,geo,https://vega.github.io/vega-lite/examples/geo_choropleth.html
+Geo Heatmap,6,Geo Heatmap 6,GeoHeatmap6.png,geo,https://vega.github.io/vega-lite/examples/geo_repeat.html
+Geo Heatmap,7,Geo Heatmap 7,GeoHeatmap7.png,geo,https://observablehq.com/@clhenrick/reusable-choropleth-map
+Geo Heatmap,8,Geo Heatmap 8,GeoHeatmap8.png,geo,https://observablehq.com/@gcmleon/choropleth-map-animation
+Geo Heatmap,9,Geo Heatmap 9,GeoHeatmap9.png,geo,https://observablehq.com/@z-richard/choropleth-map-of-the-covid-19-cases-in-china
+Geo Heatmap,10,Geo Heatmap 10,GeoHeatmap10.png,geo,https://observablehq.com/@parthmerchant/the-energy-viz-project
+Grouped Bar Chart,1,Grouped Bar Chart 1,GroupedBarChart1.png,grouped,https://mascot-vis.github.io/gallery.html#BarChartVert
+Grouped Bar Chart,2,Grouped Bar Chart 2,GroupedBarChart2.png,grouped,https://mascot-vis.github.io/gallery.html#BarChartHorz
+Grouped Bar Chart,3,Grouped Bar Chart 3,GroupedBarChart3.png,grouped,https://vega.github.io/vega/examples/grouped-bar-chart/
+Grouped Bar Chart,4,Grouped Bar Chart 4,GroupedBarChart4.png,grouped,https://www.jasondavies.com/american-forces-in-afghanistan-and-iraq/
+Grouped Bar Chart,5,Grouped Bar Chart 5,GroupedBarChart5.png,grouped,https://commons.wikimedia.org/wiki/File:Charts_SVG_Example_6_-_Grouped_Bar_Chart.svg
+Grouped Bar Chart,6,Grouped Bar Chart 6,GroupedBarChart6.png,grouped,https://apexcharts.com/react-chart-demos/bar-charts/grouped/
+Grouped Bar Chart,7,Grouped Bar Chart 7,GroupedBarChart7.png,grouped,https://d3-graph-gallery.com/graph/barplot_grouped_basicWide.html
+Grouped Bar Chart,8,Grouped Bar Chart 8,GroupedBarChart8.png,grouped,https://developers.google.com/chart/interactive/docs/gallery/barchart#creating-material-bar-charts
+Grouped Bar Chart,9,Grouped Bar Chart 9,GroupedBarChart9.png,grouped,https://www.highcharts.com/demo/bar-basic
+Grouped Bar Chart,10,Grouped Bar Chart 10,GroupedBarChart10.png,grouped,https://nvd3.org/examples/multiBar.html
+Heatmap,1,Heatmap 1,Heatmap1.png,heatmap,http://graphics.wsj.com/infectious-diseases-and-vaccines/
+Heatmap,2,Heatmap 2,Heatmap2.png,heatmap,https://vega.github.io/vega/examples/heatmap/
+Heatmap,3,Heatmap 3,Heatmap3.png,heatmap,https://observablehq.com/@sjengle/zillow-affordability-heatmap
+Heatmap,4,Heatmap 4,Heatmap4.png,heatmap,https://observablehq.com/@nbremer/hexagon-grid-heatmap
+Heatmap,5,Heatmap 5,Heatmap5.png,heatmap,https://observablehq.com/@lorenries/political-science-rankings-heatmap
+Heatmap,6,Heatmap 6,Heatmap6.png,heatmap,https://observablehq.com/@palewire/california-coronavirus-reopening-heatmap
+Heatmap,7,Heatmap 7,Heatmap7.png,heatmap,https://observablehq.com/@eliaslevy/d3-heatmap
+Heatmap,8,Heatmap 8,Heatmap8.png,heatmap,https://observablehq.com/@marialuisacp/heatmap
+Heatmap,9,Heatmap 9,Heatmap9.png,heatmap,https://datavizcatalogue.com/methods/heatmap.html
+Heatmap,10,Heatmap 10,Heatmap10.png,heatmap,https://nivo.rocks/heatmap/
+Heatmap,11,Heatmap 11,Heatmap11.png,heatmap,https://apexcharts.com/javascript-chart-demos/heatmap-charts/color-range/
+Heatmap,12,Heatmap 12,Heatmap12.png,heatmap,https://apexcharts.com/javascript-chart-demos/heatmap-charts/basic/
+Heatmap,13,Heatmap 13,Heatmap13.png,heatmap,https://bookdown.org/max/FES/
+Kagi Chart,1,Kagi Chart 1,KagiChart1.png,kagi,https://arpitnarechania.github.io/d3-kagi/
+Kagi Chart,2,Kagi Chart 2,KagiChart2.png,kagi,https://datavizcatalogue.com/methods/kagi_chart.html
+Kagi Chart,3,Kagi Chart 3,KagiChart3.png,kagi,https://diagrammm.com/kagi_chart
+Kagi Chart,4,Kagi Chart 4,KagiChart4.png,kagi,https://diagrammm.com/kagi_chart
+Kagi Chart,5,Kagi Chart 5,KagiChart5.png,kagi,https://datavizcatalogue.com/methods/kagi_chart.html
+Kagi Chart,6,Kagi Chart 6,KagiChart6.png,kagi,https://arpitnarechania.github.io/d3-kagi/
+Kagi Chart,7,Kagi Chart 7,KagiChart7.png,kagi,https://arpitnarechania.github.io/d3-kagi/
+Kagi Chart,8,Kagi Chart 8,KagiChart8.png,kagi,https://arpitnarechania.github.io/d3-kagi/
+Kagi Chart,9,Kagi Chart 9,KagiChart9.png,kagi,https://arpitnarechania.github.io/d3-kagi/
+Kagi Chart,10,Kagi Chart 10,KagiChart10.png,kagi,https://arpitnarechania.github.io/d3-kagi/
 Line Graph,1,Line Graph 1,LineGraph1.png,line,https://bl.ocks.org/mbostock/3883245
 Line Graph,2,Line Graph 2,LineGraph2.png,line,https://www.datawrapper.de/_/hBToO/
 Line Graph,3,Line Graph 3,LineGraph3.png,line,https://www.datawrapper.de/_/SD6eX/
@@ -27,274 +237,68 @@ Line Graph,13,Line Graph 13,LineGraph13.png,line,https://apexcharts.com/javascri
 Line Graph,14,Line Graph 14,LineGraph14.png,line,https://community.visualdatatools.com/datagraph/knowledge-base/line-graph/
 Line Graph,15,Line Graph 15,LineGraph15.png,line,https://diagrammm.com/basic_line
 Line Graph,16,Line Graph 16,LineGraph16.png,line,https://diagrammm.com/basic_line
-Line Graph,17,Line Graph 17,LineGraph17.png,line,https://www.dataquest.io/blog/data-visualization-in-r-with-ggplot2-a-beginner-tutorial/
+Line Graph,17,Line Graph 17,LineGraph17.png,line,https://www.highcharts.com/demo/line-ajax
 Line Graph,18,Line Graph 18,LineGraph18.png,line,https://www.highcharts.com/demo/line-basic
-Line Graph,19,Line Graph 19,LineGraph19.png,line,https://www.highcharts.com/demo/line-ajax
-Dot Plot,1,Dot Plot 1,DotPlot1.png,dot,https://plotly.com/python/dot-plots/
-Dot Plot,2,Dot Plot 2,DotPlot2.png,dot,https://public.flourish.studio/visualisation/114249/
-Dot Plot,3,Dot Plot 3,DotPlot3.png,dot,https://plotly.com/python/dot-plots/
-Dot Plot,4,Dot Plot 4,DotPlot4.png,dot,https://jscharting.com/examples/chart-types/point-marker/csv-data/
-Dot Plot,5,Dot Plot 5,DotPlot5.png,dot,https://mathspace.co/textbooks/syllabuses/Syllabus-862/topics/Topic-19221/subtopics/Subtopic-258372/
-Dot Plot,6,Dot Plot 6,DotPlot6.png,dot,https://www.khanacademy.org/math/cc-third-grade-math/represent-and-interpret-data/imp-line-plots/a/line-plots-review
-Dot Plot,7,Dot Plot 7,DotPlot7.png,dot,https://observablehq.com/@d3/dot-strip-plot
-Dot Plot,8,Dot Plot 8,DotPlot8.png,dot,https://www.khanacademy.org/math/cc-third-grade-math/represent-and-interpret-data/imp-line-plots/a/line-plots-review
-Dot Plot,9,Dot Plot 9,DotPlot9.png,dot,https://jscharting.com/examples/chart-types/point-marker/
-Dot Plot,10,Dot Plot 10,DotPlot10.png,dot,https://mathworld.wolfram.com/DotPlot.html
-Dot Plot,11,Dot Plot 11,DotPlot11.png,dot,https://quantamental.amadeus.ch/post/the-feds-new-dot-plot-in-python
-Dot Plot,12,Dot Plot 12,DotPlot12.png,dot,https://www.hcbravo.org/IntroDataSci/bookdown-notes/basic-plotting-with-ggplot.html
-Dot Plot,13,Dot Plot 13,DotPlot13.png,dot,https://visithungary.com/weather-around-the-year
-Dot Plot,14,Dot Plot 14,DotPlot14.png,dot,http://pklab.med.harvard.edu/peterk/conos/scripts/cluster/scripts/seurat3/ggplot2/tests/figs/geom-dotplot/basic-dotplot-with-dot-density-binning-binwidth-4.svg
+Line Graph,19,Line Graph 19,LineGraph19.png,line,https://bookdown.org/max/FES/
+Line Graph,20,Line Graph 20,LineGraph20.png,line,https://bookdown.org/max/FES/
+Line Graph,21,Line Graph 21,LineGraph21.png,line,https://bookdown.org/max/FES/
 Marimekko Chart,1,Marimekko Chart 1,MarimekkoChart1.png,marimekko,http://jsfiddle.net/fusioncharts/bdmTg/?utm_source=visualisingdata&utm_medium=website
 Marimekko Chart,2,Marimekko Chart 2,MarimekkoChart2.png,marimekko,https://plotdb.com/chart/1118/
 Marimekko Chart,3,Marimekko Chart 3,MarimekkoChart3.png,marimekko,https://docs.anychart.com/Basic_Charts/Marimekko_Chart/Mekko_Chart
 Marimekko Chart,4,Marimekko Chart 4,MarimekkoChart4.png,marimekko,https://www.fusioncharts.com/resources/chart-primers/marimekko-chart
 Marimekko Chart,5,Marimekko Chart 5,MarimekkoChart5.png,marimekko,https://www.fusioncharts.com/charts/marimekko-charts/market-share-as-percent?framework=javascript
-Marimekko Chart,6,Marimekko Chart 6,MarimekkoChart6.png,marimekko,https://jscharting.com/examples/chart-types/variwide/marimekko/
+Marimekko Chart,6,Marimekko Chart 6,MarimekkoChart6.png,marimekko,https://mascot-vis.github.io/gallery.html#MosaicPlot
 Marimekko Chart,7,Marimekko Chart 7,MarimekkoChart7.png,marimekko,https://vega.github.io/vega-lite/examples/rect_mosaic_labelled_with_offset.html
-Marimekko Chart,8,Marimekko Chart 8,MarimekkoChart8.png,marimekko,https://plotdb.com/chart/1118/#
+Marimekko Chart,8,Marimekko Chart 8,MarimekkoChart8.png,marimekko,https://linking.plotly-r.com/bars-histograms
 Marimekko Chart,9,Marimekko Chart 9,MarimekkoChart9.png,marimekko,https://bl.ocks.org/mbostock/1005090
-Marimekko Chart,10,Marimekko Chart 10,MarimekkoChart10.png,marimekko,https://www.mekkographics.com/why-use-a-marimekko-chart/
-Gantt Chart,1,Gantt Chart 1,GanttChart1.png,gantt,https://www.edrawsoft.com/edraw-project/
-Gantt Chart,2,Gantt Chart 2,GanttChart2.png,gantt,https://jscharting.com/examples/chart-types/gantt/axis-details/
-Gantt Chart,3,Gantt Chart 3,GanttChart3.png,gantt,https://plotly.com/r/gantt/
-Gantt Chart,4,Gantt Chart 4,GanttChart4.png,gantt,http://bl.ocks.org/dk8996/5449641
-Gantt Chart,5,Gantt Chart 5,GanttChart5.png,gantt,http://jsfiddle.net/fusioncharts/fLqSL/?utm_source=visualisingdata&utm_medium=website
-Gantt Chart,6,Gantt Chart 6,GanttChart6.png,gantt,https://www.highcharts.com/demo/gantt/interactive-gantt
-Gantt Chart,7,Gantt Chart 7,GanttChart7.png,gantt,https://www.officetimeline.com/gantt-chart/templates/gantt
-Gantt Chart,8,Gantt Chart 8,GanttChart8.png,gantt,https://doc.cuba-platform.com/charts-6.4/gantt_chart.html
-Gantt Chart,9,Gantt Chart 9,GanttChart9.png,gantt,https://en.wikipedia.org/wiki/Gantt_chart
-Gantt Chart,10,Gantt Chart 10,GanttChart10.png,gantt,https://www.tibco.com/reference-center/what-is-a-gantt-chart
-Gouped Bar Chart,1,Gouped Bar Chart 1,GoupedBarChart1.png,gouped,https://mascot-vis.github.io/gallery.html#BarChartVert
-Gouped Bar Chart,2,Gouped Bar Chart 2,GoupedBarChart2.png,gouped,https://mascot-vis.github.io/gallery.html#BarChartHorz
-Gouped Bar Chart,3,Gouped Bar Chart 3,GoupedBarChart3.png,gouped,https://vega.github.io/vega/examples/grouped-bar-chart/
-Gouped Bar Chart,4,Gouped Bar Chart 4,GoupedBarChart4.png,gouped,https://plotly.com/javascript/bar-charts/#stacked-bar-chart
-Gouped Bar Chart,5,Gouped Bar Chart 5,GoupedBarChart5.png,gouped,https://commons.wikimedia.org/wiki/File:Charts_SVG_Example_6_-_Grouped_Bar_Chart.svg
-Gouped Bar Chart,6,Gouped Bar Chart 6,GoupedBarChart6.png,gouped,https://apexcharts.com/react-chart-demos/bar-charts/grouped/
-Gouped Bar Chart,7,Gouped Bar Chart 7,GoupedBarChart7.png,gouped,https://d3-graph-gallery.com/graph/barplot_grouped_basicWide.html
-Gouped Bar Chart,8,Gouped Bar Chart 8,GoupedBarChart8.png,gouped,https://developers.google.com/chart/interactive/docs/gallery/barchart#creating-material-bar-charts
-Gouped Bar Chart,9,Gouped Bar Chart 9,GoupedBarChart9.png,gouped,https://www.highcharts.com/demo/bar-basic
-Gouped Bar Chart,10,Gouped Bar Chart 10,GoupedBarChart10.png,gouped,https://nvd3.org/examples/multiBar.html
+Marimekko Chart,10,Marimekko Chart 10,MarimekkoChart10.png,marimekko,http://freerangestats.info/blog/2016/09/18/nzes1
+Marimekko Chart,11,Marimekko Chart 11,MarimekkoChart11.png,marimekko,https://www.diagrammm.com/marimekko_chart
+Marimekko Chart,12,Marimekko Chart 12,MarimekkoChart12.png,marimekko,https://www.spotfire.com/glossary/what-is-a-marimekko-chart
+Marimekko Chart,13,Marimekko Chart 13,MarimekkoChart13.png,marimekko,https://bookdown.org/max/FES/visualizations-for-categorical-data-exploring-the-okcupid-data.html
+Matrix Diagram,1,Matrix Diagram 1,MatrixDiagram1.png,matrix,https://observablehq.com/@bstaats/matrix-diagram
+Matrix Diagram,2,Matrix Diagram 2,MatrixDiagram2.png,matrix,https://insights.datylon.com/stories/kTQJkb9CukJtArIDROJO1w
+Matrix Diagram,3,Matrix Diagram 3,MatrixDiagram3.png,matrix,https://commons.wikimedia.org/wiki/File:Risk_Analysis_Chart.svg
+Matrix Diagram,4,Matrix Diagram 4,MatrixDiagram4.png,matrix,https://bookdown.org/max/FES/stroke-preprocessing.html
+Matrix Diagram,5,Matrix Diagram 5,MatrixDiagram5.png,matrix,https://observablehq.com/d/9dc0f30b60feeca0
+Matrix Diagram,6,Matrix Diagram 6,MatrixDiagram6.png,matrix,https://observablehq.com/@burrussmp/designing-a-customizable-confusion-matrix-in-d3
+Matrix Diagram,7,Matrix Diagram 7,MatrixDiagram7.png,matrix,https://observablehq.com/@arcayle/a-customizable-interactive-confusion-matrix
+Matrix Diagram,8,Matrix Diagram 8,MatrixDiagram8.png,matrix,https://www.datylon.com/blog/types-of-charts-graphs-examples-data-visualization#matrix-chart
+Matrix Diagram,9,Matrix Diagram 9,MatrixDiagram9.png,matrix,https://creately.com/diagram/example/ReutHhh4gus/confrontation-matrix-template
+Matrix Diagram,10,Matrix Diagram 10,MatrixDiagram10.png,matrix,https://pidnotebooks.org/pages/pidgraph-notebooks-python/user-story-3-impacts-of-organization/
+Parallel Coordinates Plot,1,Parallel Coordinates Plot 1,ParallelCoordinatesPlot1.png,parallel,https://mascot-vis.github.io/gallery.html#ParallelCoordinates
+Parallel Coordinates Plot,2,Parallel Coordinates Plot 2,ParallelCoordinatesPlot2.png,parallel,https://datavizcatalogue.com/methods/parallel_coordinates.html
+Parallel Coordinates Plot,3,Parallel Coordinates Plot 3,ParallelCoordinatesPlot3.png,parallel,https://www.datylon.com/blog/types-of-charts-graphs-examples-data-visualization
+Parallel Coordinates Plot,4,Parallel Coordinates Plot 4,ParallelCoordinatesPlot4.png,parallel,https://data-illustrator.cs.umd.edu/app/index.html?project=cars_parallel_coordinates
+Parallel Coordinates Plot,5,Parallel Coordinates Plot 5,ParallelCoordinatesPlot5.png,parallel,https://www.highcharts.com/demo/parallel-coordinates
+Parallel Coordinates Plot,6,Parallel Coordinates Plot 6,ParallelCoordinatesPlot6.png,parallel,https://datavizcatalogue.com/methods/parallel_coordinates.html
+Parallel Coordinates Plot,7,Parallel Coordinates Plot 7,ParallelCoordinatesPlot7.png,parallel,https://www.jaspersoft.com/articles/what-is-a-parallel-coordinate-plot
+Parallel Coordinates Plot,8,Parallel Coordinates Plot 8,ParallelCoordinatesPlot8.png,parallel,https://alandefreitas.github.io/matplotplusplus/plot-types/data-distribution/parallel-coordinates/
+Parallel Coordinates Plot,9,Parallel Coordinates Plot 9,ParallelCoordinatesPlot9.png,parallel,https://blog.jpl.design/info-design/raw/3.svg
+Parallel Coordinates Plot,10,Parallel Coordinates Plot 10,ParallelCoordinatesPlot10.png,parallel,https://ourworldindata.org/grapher/total-fertility-rate-slope-chart
 Pie Chart,1,Pie Chart 1,PieChart1.png,pie,https://www.datylon.com/product/chart-library/pie-chart
 Pie Chart,2,Pie Chart 2,PieChart2.png,pie,https://vega.github.io/editor/#/examples/vega-lite/arc_pie
-Pie Chart,12,Pie Chart 12,PieChart12.png,pie,https://observablehq.com/@jasper/pie-chart-starter
+Pie Chart,3,Pie Chart 3,PieChart3.png,pie,https://observablehq.com/@dagonar/pie-chart
 Pie Chart,4,Pie Chart 4,PieChart4.png,pie,https://mascot-vis.github.io/gallery.html#PieChart
-Pie Chart,13,Pie Chart 13,PieChart13.png,pie,https://observablehq.com/@rayelder/breakpoint-pie-chart
 Pie Chart,5,Pie Chart 5,PieChart5.png,pie,https://insights.datylon.com/stories/s4b8jB8WtRRDNbwylQxJTw
 Pie Chart,6,Pie Chart 6,PieChart6.png,pie,https://vega.github.io/vega-lite/examples/layer_arc_label.html
-Pie Chart,11,Pie Chart 11,PieChart11.png,pie,https://observablehq.com/d/f1afba96577cc72f
+Pie Chart,7,Pie Chart 7,PieChart7.png,pie,https://www.houseofmath.com/encyclopedia/statistics-and-probability/statistics/charts/what-does-pie-chart-mean
 Pie Chart,8,Pie Chart 8,PieChart8.png,pie,https://dash.gallery/dashr-svm/
 Pie Chart,9,Pie Chart 9,PieChart9.png,pie,https://apexcharts.com/javascript-chart-demos/pie-charts/monochrome-pie/
 Pie Chart,10,Pie Chart 10,PieChart10.png,pie,https://apexcharts.com/javascript-chart-demos/pie-charts/simple-pie-chart/
-Stacked Bar Chart,1,Stacked Bar Chart 1,StackedBarChart1.png,stacked,https://observablehq.com/@d3/stacked-horizontal-bar-chart
-Stacked Bar Chart,2,Stacked Bar Chart 2,StackedBarChart2.png,stacked,https://observablehq.com/@d3/stacked-normalized-horizontal-bar
-Stacked Bar Chart,12,Stacked Bar Chart 12,StackedBarChart12.png,stacked,https://apexcharts.com/javascript-chart-demos/bar-charts/stacked/
-Stacked Bar Chart,3,Stacked Bar Chart 3,StackedBarChart3.png,stacked,https://apexcharts.com/javascript-chart-demos/bar-charts/patterned/
-Stacked Bar Chart,13,Stacked Bar Chart 13,StackedBarChart13.png,stacked,https://apexcharts.com/javascript-chart-demos/column-charts/stacked/
-Stacked Bar Chart,4,Stacked Bar Chart 4,StackedBarChart4.png,stacked,https://vega.github.io/vega-lite/examples/stacked_bar_count_corner_radius_mark.html
-Stacked Bar Chart,5,Stacked Bar Chart 5,StackedBarChart5.png,stacked,https://vega.github.io/vega-lite/examples/stacked_bar_normalize.html
-Stacked Bar Chart,6,Stacked Bar Chart 6,StackedBarChart6.png,stacked,https://vega.github.io/vega-lite/examples/stacked_bar_h.html
-Stacked Bar Chart,7,Stacked Bar Chart 7,StackedBarChart7.png,stacked,https://vega.github.io/vega-lite/examples/stacked_bar_weather.html
-Stacked Bar Chart,8,Stacked Bar Chart 8,StackedBarChart8.png,stacked,https://vega.github.io/vega-lite/examples/stacked_bar_h_normalized_labeled.html
-Stacked Bar Chart,9,Stacked Bar Chart 9,StackedBarChart9.png,stacked,https://mascot-vis.github.io/gallery.html#StackedBarChart
-Stacked Bar Chart,10,Stacked Bar Chart 10,StackedBarChart10.png,stacked,https://observablehq.com/@d3/stacked-bar-chart
-Waterfall Chart,1,Waterfall Chart 1,WaterfallChart1.png,waterfall,https://mascot-vis.github.io/gallery.html#WaterfallChart
-Waterfall Chart,2,Waterfall Chart 2,WaterfallChart2.png,waterfall,https://www.telerik.com/kendo-angular-ui/components/charts/examples/svg/waterfall.svg
-Waterfall Chart,3,Waterfall Chart 3,WaterfallChart3.png,waterfall,https://docs.anychart.com/Basic_Charts/Waterfall_Chart
-Waterfall Chart,4,Waterfall Chart 4,WaterfallChart4.png,waterfall,https://docs.anychart.com/Basic_Charts/Waterfall_Chart
-Waterfall Chart,5,Waterfall Chart 5,WaterfallChart5.png,waterfall,https://docs.anychart.com/Basic_Charts/Waterfall_Chart
-Waterfall Chart,6,Waterfall Chart 6,WaterfallChart6.png,waterfall,https://docs.anychart.com/Basic_Charts/Waterfall_Chart
-Waterfall Chart,7,Waterfall Chart 7,WaterfallChart7.png,waterfall,fusioncharts.com/charts/waterfall-charts/waterfall-chart-without-cumulative-sum?framework=javascript
-Waterfall Chart,8,Waterfall Chart 8,WaterfallChart8.png,waterfall,https://commons.wikimedia.org/wiki/File:Diagramme_waterfall.svg
-Waterfall Chart,9,Waterfall Chart 9,WaterfallChart9.png,waterfall,https://dash.gallery/dash-shap-tips/
-Waterfall Chart,11,Waterfall Chart 11,WaterfallChart11.png,waterfall,https://www.tibco.com/reference-center/what-is-a-waterfall-chart
-Waterfall Chart,10,Waterfall Chart 10,WaterfallChart10.png,waterfall,https://vega.github.io/vega-lite/examples/waterfall_chart.html
-Scatterplot,2,Scatterplot 2,Scatterplot2.png,scatterplot,https://www.tibco.com/reference-center/what-is-a-scatter-chart
-Scatterplot,3,Scatterplot 3,Scatterplot3.png,scatterplot,https://insights.datylon.com/stories/oDHVikVxaCaCGWRFGMdPgA
-Scatterplot,4,Scatterplot 4,Scatterplot4.png,scatterplot,https://www.mathsisfun.com/data/scatter-xy-plots.html
-Scatterplot,6,Scatterplot 6,Scatterplot6.png,scatterplot,https://bookdown.org/a_shaker/STM1001_Topic_2/5-1-scatter-plots.html
-Scatterplot,7,Scatterplot 7,Scatterplot7.png,scatterplot,https://mascot-vis.github.io/gallery.html#Scatterplot
-Scatterplot,8,Scatterplot 8,Scatterplot8.png,scatterplot,https://apexcharts.com/javascript-chart-demos/scatter-charts/
-Scatterplot,9,Scatterplot 9,Scatterplot9.png,scatterplot,https://apexcharts.com/javascript-chart-demos/scatter-charts/datetime/
-Scatterplot,10,Scatterplot 10,Scatterplot10.png,scatterplot,https://dash.gallery/bball-player-explorer/
-Scatterplot,11,Scatterplot 11,Scatterplot11.png,scatterplot,https://vega.github.io/vega-lite/examples/interactive_splom.html
-Scatterplot,12,Scatterplot 12,Scatterplot12.png,scatterplot,https://observablehq.com/@d3/brushable-scatterplot-matrix
-Connected Scatterplot,1,Connected Scatterplot 1,ConnectedScatterplot1.png,connected,https://insights.datylon.com/stories/oqOJDl0RCVUMdGl2dJ1Kuw
-Connected Scatterplot,2,Connected Scatterplot 2,ConnectedScatterplot2.png,connected,https://mascot-vis.github.io/gallery.html#ConnectedScatterPlot
-Connected Scatterplot,3,Connected Scatterplot 3,ConnectedScatterplot3.png,connected,https://observablehq.com/@d3/connected-scatterplot
-Connected Scatterplot,4,Connected Scatterplot 4,ConnectedScatterplot4.png,connected,https://vega.github.io/vega-lite/examples/connected_scatterplot.html
-Connected Scatterplot,5,Connected Scatterplot 5,ConnectedScatterplot5.png,connected,https://medium.com/mlearning-ai/tableau-tutorial-how-to-create-a-connected-scatterplot-12a67f4a6855
-Connected Scatterplot,6,Connected Scatterplot 6,ConnectedScatterplot6.png,connected,https://d3-graph-gallery.com/graph/connectedscatter_multi.html
-Connected Scatterplot,7,Connected Scatterplot 7,ConnectedScatterplot7.png,connected,https://dataviz.unhcr.org/tools/r/r_scatterplot_connected.html
-Connected Scatterplot,8,Connected Scatterplot 8,ConnectedScatterplot8.png,connected,https://finnstats.com/index.php/2022/11/16/how-to-make-a-connected-scatter-plot-in-r/
-Connected Scatterplot,9,Connected Scatterplot 9,ConnectedScatterplot9.png,connected,http://steveharoz.com/research/connected_scatterplot/
-Connected Scatterplot,10,Connected Scatterplot 10,ConnectedScatterplot10.png,connected,http://steveharoz.com/research/connected_scatterplot/
-Diverging Stacked Bar Chart,1,Diverging Stacked Bar Chart 1,DivergingStackedBarChart1.png,diverging,https://observablehq.com/@d3/diverging-stacked-bar-chart
-Diverging Stacked Bar Chart,2,Diverging Stacked Bar Chart 2,DivergingStackedBarChart2.png,diverging,https://observablehq.com/@sura23manohar/diverging-stacked-bar-chart
-Diverging Stacked Bar Chart,3,Diverging Stacked Bar Chart 3,DivergingStackedBarChart3.png,diverging,https://vega.github.io/vega-lite/examples/bar_diverging_stack_population_pyramid.html
-Diverging Stacked Bar Chart,4,Diverging Stacked Bar Chart 4,DivergingStackedBarChart4.png,diverging,https://mascot-vis.github.io/gallery.html#DivergingBarChart
-Diverging Stacked Bar Chart,5,Diverging Stacked Bar Chart 5,DivergingStackedBarChart5.png,diverging,https://vega.github.io/vega-lite/examples/bar_diverging_stack_transform.html
-Diverging Stacked Bar Chart,6,Diverging Stacked Bar Chart 6,DivergingStackedBarChart6.png,diverging,https://insights.datylon.com/stories/vyl9HVKNAlSO7vbXR6pJCw
-Diverging Stacked Bar Chart,7,Diverging Stacked Bar Chart 7,DivergingStackedBarChart7.png,diverging,https://insights.datylon.com/stories/vlnwCk-K4g0kkrdtGSVC1Q
-Diverging Stacked Bar Chart,8,Diverging Stacked Bar Chart 8,DivergingStackedBarChart8.png,diverging,https://insights.datylon.com/stories/jxgTr06G-ndlbUbkbZpEtw
-Diverging Stacked Bar Chart,9,Diverging Stacked Bar Chart 9,DivergingStackedBarChart9.png,diverging,http://freerangestats.info/blog/2019/11/03/re-creating-microdata
-Diverging Stacked Bar Chart,10,Diverging Stacked Bar Chart 10,DivergingStackedBarChart10.png,diverging,https://package.elm-lang.org/packages/gampleman/elm-visualization/latest/Shape
-Diverging Stacked Bar Chart,11,Diverging Stacked Bar Chart 11,DivergingStackedBarChart11.png,diverging,https://suyiinang.netlify.app/posts/tableau_howto/03_likert/
-Waffle Chart,2,Waffle Chart 2,WaffleChart2.png,waffle,https://mascot-vis.github.io/gallery.html#MultipleWaffleCharts
-Waffle Chart,3,Waffle Chart 3,WaffleChart3.png,waffle,https://data-illustrator.cs.umd.edu/app/index.html?project=waffle
-Waffle Chart,4,Waffle Chart 4,WaffleChart4.png,waffle,https://www.kaggle.com/general/114798
-Waffle Chart,5,Waffle Chart 5,WaffleChart5.png,waffle,https://www.kaggle.com/general/114798
-Waffle Chart,6,Waffle Chart 6,WaffleChart6.png,waffle,https://nivo.rocks/waffle/
-Waffle Chart,7,Waffle Chart 7,WaffleChart7.png,waffle,https://pywaffle.readthedocs.io/en/latest/examples/formats_of_values.html
-Waffle Chart,8,Waffle Chart 8,WaffleChart8.png,waffle,http://bl.ocks.org/XavierGimenez/8070956
-Waffle Chart,9,Waffle Chart 9,WaffleChart9.png,waffle,https://www.datylon.com/blog/types-of-charts-graphs-examples-data-visualization
-Waffle Chart,10,Waffle Chart 10,WaffleChart10.png,waffle,https://github.com/gyli/PyWaffle/blob/master/docs/examples/block_colors.md
-Donut Chart,1,Donut Chart 1,DonutChart1.png,donut,https://insights.datylon.com/stories/sfoIRoAR3q-oB0eCyTFB0w
-Donut Chart,2,Donut Chart 2,DonutChart2.png,donut,https://insights.datylon.com/stories/sfoIRoAR3q-oB0eCyTFB0w
-Donut Chart,3,Donut Chart 3,DonutChart3.png,donut,https://bl.ocks.org/mbostock/3887193
-Donut Chart,4,Donut Chart 4,DonutChart4.png,donut,https://www.datylon.com/resources/chart-library/donut-chart
-Donut Chart,5,Donut Chart 5,DonutChart5.png,donut,https://apexcharts.com/javascript-chart-demos/pie-charts/
-Donut Chart,6,Donut Chart 6,DonutChart6.png,donut,https://commons.wikimedia.org/wiki/File:Donut-Chart.svg
-Donut Chart,7,Donut Chart 7,DonutChart7.png,donut,https://observablehq.com/@thetylerwolf/day-6-donut-chart
-Donut Chart,8,Donut Chart 8,DonutChart8.png,donut,https://developers.google.com/chart/interactive/docs/gallery/piechart#donut
-Donut Chart,9,Donut Chart 9,DonutChart9.png,donut,https://plotly.com/javascript/pie-charts/#donut-chart
-Donut Chart,10,Donut Chart 10,DonutChart10.png,donut,https://vega.github.io/vega/examples/donut-chart/
-Donut Chart,11,Donut Chart 11,DonutChart11.png,donut,https://www.datylon.com/blog/types-of-charts-graphs-examples-data-visualization#donut-chart
-Donut Chart,12,Donut Chart 12,DonutChart12.png,donut,https://accessibility.pearson.com/resources/dataviz/
-Treemap,1,Treemap 1,Treemap1.png,treemap,https://bl.ocks.org/mbostock/4063582
-Treemap,2,Treemap 2,Treemap2.png,treemap,https://insights.datylon.com/stories/vGS_pEulvCsEjQlCp5lB2w
-Treemap,3,Treemap 3,Treemap3.png,treemap,https://insights.datylon.com/stories/jmqYaDrvpjskFmwW_bFLmw
-Treemap,4,Treemap 4,Treemap4.png,treemap,https://www.tibco.com/reference-center/what-is-a-treemap-chart
-Treemap,5,Treemap 5,Treemap5.png,treemap,https://diagrammm.com/treemap
-Treemap,6,Treemap 6,Treemap6.png,treemap,https://help.macrobond.com/tutorials-training/4-charting/types-of-charts/outside-of-macrobond/charts-with-r/treemap/
-Treemap,7,Treemap 7,Treemap7.png,treemap,https://www.highcharts.com/demo/treemap-large-dataset
-Treemap,8,Treemap 8,Treemap8.png,treemap,https://plotdb.com/chart/1006/#
-Treemap,9,Treemap 9,Treemap9.png,treemap,https://plotly.com/javascript/treemaps/
-Treemap,10,Treemap 10,Treemap10.png,treemap,https://vega.github.io/vega/examples/treemap/
-Arc Diagram,1,Arc Diagram 1,ArcDiagram1.png,arc,https://en.wikipedia.org/wiki/Arc_diagram
-Arc Diagram,2,Arc Diagram 2,ArcDiagram2.png,arc,https://www.highcharts.com/docs/chart-and-series-types/arc-diagram
-Arc Diagram,3,Arc Diagram 3,ArcDiagram3.png,arc,https://www.highcharts.com/docs/chart-and-series-types/arc-diagram
-Arc Diagram,4,Arc Diagram 4,ArcDiagram4.png,arc,https://www.highcharts.com/docs/chart-and-series-types/arc-diagram
-Arc Diagram,5,Arc Diagram 5,ArcDiagram5.png,arc,https://sandeshkalantre.github.io/TopNum2/
-Arc Diagram,6,Arc Diagram 6,ArcDiagram6.png,arc,https://abjago.net/transit-patronage-visualiser/
-Arc Diagram,7,Arc Diagram 7,ArcDiagram7.png,arc,https://ganbatte.world/cities/what-is-the-circular-economy/
-Arc Diagram,8,Arc Diagram 8,ArcDiagram8.png,arc,https://www.data-to-viz.com/graph/arc.html
-Arc Diagram,9,Arc Diagram 9,ArcDiagram9.png,arc,https://observablehq.com/@stefanreifenberg/basic-arc-diagram
-Arc Diagram,10,Arc Diagram 10,ArcDiagram10.png,arc,https://observablehq.com/@lvngd/nyc-taxi-rides-d3-arc-diagram
-Area Chart,1,Area Chart 1,AreaChart1.png,area,https://vega.github.io/vega/examples/area-chart/
-Area Chart,2,Area Chart 2,AreaChart2.png,area,https://observablehq.com/@elishaterada/simple-area-chart-with-tooltip
-Area Chart,3,Area Chart 3,AreaChart3.png,area,https://apexcharts.com/docs/chart-types/area-chart/
-Area Chart,5,Area Chart 5,AreaChart5.png,area,https://observablehq.com/@valentinachaconbuitrago/area-chart-with-focus-context
-Area Chart,6,Area Chart 6,AreaChart6.png,area,https://observablehq.com/@bartok32/real-time-area-chart
-Area Chart,7,Area Chart 7,AreaChart7.png,area,https://observablehq.com/@d3/zoomable-area-chart
-Area Chart,8,Area Chart 8,AreaChart8.png,area,https://apexcharts.com/react-chart-demos/range-area-charts/
-Area Chart,9,Area Chart 9,AreaChart9.png,area,https://observablehq.com/@xianwu/area-chart-basic
-Area Chart,10,Area Chart 10,AreaChart10.png,area,https://docs.evidence.dev/features/charts/area-chart#area
-Bubble Chart,1,Bubble Chart 1,BubbleChart1.png,bubble,https://insights.datylon.com/stories/qS11V4CyLM1etV1Q925FOg
-Bubble Chart,2,Bubble Chart 2,BubbleChart2.png,bubble,https://insights.datylon.com/stories/jVPwg1Q_CeguvLAxY4VJKw
-Bubble Chart,3,Bubble Chart 3,BubbleChart3.png,bubble,https://apexcharts.com/javascript-chart-demos/bubble-charts/simple/
-Bubble Chart,4,Bubble Chart 4,BubbleChart4.png,bubble,https://insights.datylon.com/stories/sUH1REVrdrPZhjXbIOJABA
-Bubble Chart,5,Bubble Chart 5,BubbleChart5.png,bubble,https://insights.datylon.com/stories/jZ9edVDAp0wT6rQzn5FDng
-Bubble Chart,6,Bubble Chart 6,BubbleChart6.png,bubble,https://mascot-vis.github.io/gallery#BubblePlot
-Bubble Chart,7,Bubble Chart 7,BubbleChart7.png,bubble,https://www.datylon.com/product/chart-library/bubble-chart
-Bubble Chart,8,Bubble Chart 8,BubbleChart8.png,bubble,https://vega.github.io/vega-lite/examples/point_bubble.html
-Bubble Chart,9,Bubble Chart 9,BubbleChart9.png,bubble,https://vega.github.io/vega-lite/examples/circle_bubble_health_income.html
-Bubble Chart,10,Bubble Chart 10,BubbleChart10.png,bubble,https://vega.github.io/vega-lite/examples/circle_natural_disasters.html
-Stacked Area Chart,1,Stacked Area Chart 1,StackedAreaChart1.png,stacked,https://academy.datawrapper.de/article/106-how-to-create-an-area-chart
-Stacked Area Chart,12,Stacked Area Chart 12,StackedAreaChart12.png,stacked,https://apexcharts.com/javascript-chart-demos/area-charts/stacked/
-Stacked Area Chart,2,Stacked Area Chart 2,StackedAreaChart2.png,stacked,https://www.datawrapper.de/_/8Wwvx/
-Stacked Area Chart,3,Stacked Area Chart 3,StackedAreaChart3.png,stacked,https://observablehq.com/@marcsoh-smu/stacked-area-chart-of-tb-cases-in-africa-2000-to-2021
-Stacked Area Chart,4,Stacked Area Chart 4,StackedAreaChart4.png,stacked,https://insights.datylon.com/stories/t8_KLLekHtE6msHLYtlP4w
-Stacked Area Chart,5,Stacked Area Chart 5,StackedAreaChart5.png,stacked,https://www.data-to-viz.com/graph/stackedarea.html
-Stacked Area Chart,6,Stacked Area Chart 6,StackedAreaChart6.png,stacked,https://www.anychart.com/products/anychart/gallery/Area_Charts/Stacked_Area_Chart.php
-Stacked Area Chart,7,Stacked Area Chart 7,StackedAreaChart7.png,stacked,https://plotly.com/python/filled-area-plots/
-Stacked Area Chart,13,Stacked Area Chart 13,StackedAreaChart13.png,stacked,https://apexcharts.com/docs/chart-types/area-chart/
-Stacked Area Chart,8,Stacked Area Chart 8,StackedAreaChart8.png,stacked,https://observablehq.com/@miralemd/picasso-js-stacked-area-chart
-Stacked Area Chart,14,Stacked Area Chart 14,StackedAreaChart14.png,stacked,https://www.grunt.pro/product/charts
-Stacked Area Chart,9,Stacked Area Chart 9,StackedAreaChart9.png,stacked,https://observablehq.com/@bigshow/stacked-area-chart
-Stacked Area Chart,,Stacked Area Chart nan,StackedAreaChartnan.png,stacked,https://mathspace.co/textbooks/syllabuses/Syllabus-813/topics/Topic-18223/subtopics/Subtopic-279123/?activeTab=worksheet
-Stacked Area Chart,10,Stacked Area Chart 10,StackedAreaChart10.png,stacked,https://vega.github.io/vega/examples/stacked-area-chart/
-Calendar,1,Calendar 1,Calendar1.png,calendar,https://vega.github.io/vega/examples/calendar-view/
-Calendar,11,Calendar 11,Calendar11.png,calendar,https://apexcharts.com/javascript-chart-demos/heatmap-charts/color-range/
-Calendar,2,Calendar 2,Calendar2.png,calendar,https://www.zingchart.com/docs/chart-types/calendar
-Calendar,3,Calendar 3,Calendar3.png,calendar,https://observablehq.com/@ee2dev/plot-exploration-how-to-customize-the-calendar-visualizat
-Calendar,4,Calendar 4,Calendar4.png,calendar,https://observablehq.com/@ee2dev/plot-exploration-how-to-customize-the-calendar-visualizat
-Calendar,5,Calendar 5,Calendar5.png,calendar,https://www.wiards.com/orchard-info/calendar-and-hours
-Calendar,6,Calendar 6,Calendar6.png,calendar,https://www.anychart.com/products/anychart/gallery/Calendar_Chart/GitHub_Contributions.php
-Calendar,7,Calendar 7,Calendar7.png,calendar,https://www.anychart.com/products/anychart/gallery/Calendar_Chart/Mike_Bostock_GitHub_Contributions.php?theme=lightGlamour
-Calendar,8,Calendar 8,Calendar8.png,calendar,https://observablehq.com/@stvkas/streaking-calendar
-Calendar,12,Calendar 12,Calendar12.png,calendar,https://apexcharts.com/javascript-chart-demos/heatmap-charts/basic/
-Calendar,9,Calendar 9,Calendar9.png,calendar,https://observablehq.com/@josephg/calendar-generator
-Calendar,10,Calendar 10,Calendar10.png,calendar,https://observablehq.com/@nyem69/calendar
-Density plot,1,Density plot 1,Densityplot1.png,density,https://en.wikipedia.org/wiki/File:Rating_count_density_by_project_quality_assessment.svg
-Density plot,2,Density plot 2,Densityplot2.png,density,https://datavizcatalogue.com/methods/density_plot.html
-Density plot,3,Density plot 3,Densityplot3.png,density,https://d3-graph-gallery.com/graph/density_basic.html
-Density plot,4,Density plot 4,Densityplot4.png,density,https://commons.wikimedia.org/wiki/File:Reaction_time_density_plot.svg
-Density plot,5,Density plot 5,Densityplot5.png,density,https://vega.github.io/vega-lite/examples/area_density.html
-Density plot,6,Density plot 6,Densityplot6.png,density,https://mascot-vis.github.io/gallery.html#DensityPlot
-Density plot,7,Density plot 7,Densityplot7.png,density,https://insights.datylon.com/stories/r5Suw19BKP9CwiaV_xBLqA
-Density plot,8,Density plot 8,Densityplot8.png,density,https://insights.datylon.com/stories/nsmK7uWJ_-KayTsMLKBPbA
-Density plot,9,Density plot 9,Densityplot9.png,density,https://wilkelab.org/SDS375/slides/visualizing-distributions-2_files/figure-html/temps_densities_overlapping-1.svg
-Density plot,10,Density plot 10,Densityplot10.png,density,https://people.ohio.edu/ruhil/RBookNew/visualizing-data.html
-Circle Packing,1,Circle Packing 1,CirclePacking1.png,circle,https://www.d3indepth.com/introduction/
-Circle Packing,2,Circle Packing 2,CirclePacking2.png,circle,https://www.amcharts.com/demos-v4/packed-circle-chart-v4/
-Circle Packing,3,Circle Packing 3,CirclePacking3.png,circle,https://bl.ocks.org/mbostock/4063530
-Circle Packing,4,Circle Packing 4,CirclePacking4.png,circle,https://r-graph-gallery.com/circle-packing.html
-Circle Packing,5,Circle Packing 5,CirclePacking5.png,circle,https://vega.github.io/vega/examples/circle-packing/
-Circle Packing,6,Circle Packing 6,CirclePacking6.png,circle,https://www.zingchart.com/docs/chart-types/bubble-pack
-Circle Packing,7,Circle Packing 7,CirclePacking7.png,circle,https://observablehq.com/@d3/pack
-Circle Packing,8,Circle Packing 8,CirclePacking8.png,circle,https://observablehq.com/@d3/bubble-chart
-Circle Packing,9,Circle Packing 9,CirclePacking9.png,circle,https://observablehq.com/@didoesdigital/d3-circle-packing
-Circle Packing,10,Circle Packing 10,CirclePacking10.png,circle,https://observablehq.com/d/c5055cd545937e32
-Circle Packing,11,Circle Packing 11,CirclePacking11.png,circle,https://observablehq.com/@danyyyy89/force-simulation-to-visualize-word-cloud
-Circle Packing,12,Circle Packing 12,CirclePacking12.png,circle,https://observablehq.com/@danielefadda/force-simulation-to-visualize-word-cloud-with-split-versio 
-Circle Packing,13,Circle Packing 13,CirclePacking13.png,circle,https://commons.wikimedia.org/wiki/File:Bubble_chart_of_programming_paradigms_en.svg
-Connected Dot Plot,1,Connected Dot Plot 1,ConnectedDotPlot1.png,connected,https://bl.ocks.org/maartenzam/6235b42b9f9ec3851c492082957180d8
-Connected Dot Plot,3,Connected Dot Plot 3,ConnectedDotPlot3.png,connected,https://plotdb.com/chart/980/#
-Connected Dot Plot,4,Connected Dot Plot 4,ConnectedDotPlot4.png,connected,https://vega.github.io/vega-lite/examples/layer_ranged_dot.html
-Connected Dot Plot,5,Connected Dot Plot 5,ConnectedDotPlot5.png,connected,https://observablehq.com/@d3/dot-plot
-Connected Dot Plot,11,Connected Dot Plot 11,ConnectedDotPlot11.png,connected,https://www.datylon.com/blog/how-to-make-a-dot-plot-in-adobe-illustrator
-Connected Dot Plot,6,Connected Dot Plot 6,ConnectedDotPlot6.png,connected,https://observablehq.com/@lorenries/political-science-rankings-connected-dot-plot
-Connected Dot Plot,13,Connected Dot Plot 13,ConnectedDotPlot13.png,connected,https://www.datylon.com/resources/chart-library/dot-plot
-Connected Dot Plot,7,Connected Dot Plot 7,ConnectedDotPlot7.png,connected,https://observablehq.com/@didoesdigital/1-august-2020-d3-dumbbell-plot
-Connected Dot Plot,8,Connected Dot Plot 8,ConnectedDotPlot8.png,connected,https://mascot-vis.github.io/gallery.html#LollipopChart
-Connected Dot Plot,9,Connected Dot Plot 9,ConnectedDotPlot9.png,connected,https://mascot-vis.github.io/gallery.html#DumbbellChart
-Connected Dot Plot,11,Connected Dot Plot 11,ConnectedDotPlot11.png,connected,https://www.storytellingwithdata.com/blog/2021/8/12/creating-dot-plots
-Connected Dot Plot,12,Connected Dot Plot 12,ConnectedDotPlot12.png,connected,https://observablehq.com/@flekschas/range-chart
+Pie Chart,11,Pie Chart 11,PieChart11.png,pie,https://observablehq.com/d/f1afba96577cc72f
+Pie Chart,12,Pie Chart 12,PieChart12.png,pie,https://observablehq.com/@jasper/pie-chart-starter
+Pie Chart,13,Pie Chart 13,PieChart13.png,pie,https://diagrammm.com/pie_chart
+Pie Chart,14,Pie Chart 14,PieChart14.png,pie,https://www.highcharts.com/demo/highcharts/accessible-pie
 Polar Area Chart,1,Polar Area Chart 1,PolarAreaChart1.png,polar,https://online.visual-paradigm.com/community/share/100-stacked-rose-chart-art-m74ckhugo
 Polar Area Chart,2,Polar Area Chart 2,PolarAreaChart2.png,polar,https://www.highcharts.com/demo/polar-wind-rose
+Polar Area Chart,3,Polar Area Chart 3,PolarAreaChart3.png,polar,https://www.iodraw.com/en/template/bar-polar-stack-radial
 Polar Area Chart,4,Polar Area Chart 4,PolarAreaChart4.png,polar,https://datavizcatalogue.com/methods/nightingale_rose_chart.html
 Polar Area Chart,5,Polar Area Chart 5,PolarAreaChart5.png,polar,https://vega.github.io/vega/examples/radial-plot/
-Polar Area Chart,6,Polar Area Chart 6,PolarAreaChart6.png,polar,https://www.anychart.com/products/anychart/gallery/Polar_Charts/Polygon_Polar_Chart.php?theme=lightEarth
+Polar Area Chart,6,Polar Area Chart 6,PolarAreaChart6.png,polar,https://plotly.com/python/polar-chart/
 Polar Area Chart,7,Polar Area Chart 7,PolarAreaChart7.png,polar,https://observablehq.com/@asier/polar-area-chart
 Polar Area Chart,8,Polar Area Chart 8,PolarAreaChart8.png,polar,https://observablehq.com/@sophiamersmann/polar-area-chart
-Polar Area Chart,9,Polar Area Chart 9,PolarAreaChart9.png,polar,https://www.amcharts.com/demos-v4/polar-area-chart-v4/
-Polar Area Chart,11,Polar Area Chart 11,PolarAreaChart11.png,polar,https://plotly.com/python/polar-chart/
-Polar Area Chart,12,Polar Area Chart 12,PolarAreaChart12.png,polar,https://cran.r-project.org/web/packages/actel/readme/README.html
-Polar Area Chart,14,Polar Area Chart 14,PolarAreaChart14.png,polar,https://www.iodraw.com/en/template/bar-polar-stack-radial
-Radial Bar Chart,1,Radial Bar Chart 1,RadialBarChart1.png,radial,https://freetrade.io/stocks-and-shares-isa/isa-research
-Radial Bar Chart,2,Radial Bar Chart 2,RadialBarChart2.png,radial,https://stateofglobalexpansion.com/index.html
-Radial Bar Chart,3,Radial Bar Chart 3,RadialBarChart3.png,radial,https://www.technologyreview.com/2021/06/10/1026038/transforming-health-care-at-the-edge/
-Radial Bar Chart,4,Radial Bar Chart 4,RadialBarChart4.png,radial,https://hellofyllo.com/resources/blog/marketing-solutions/2022-the-most-diverse-420-ever
-Radial Bar Chart,5,Radial Bar Chart 5,RadialBarChart5.png,radial,https://www.highcharts.com/demo/ios/polar-radial-bar
-Radial Bar Chart,6*,Radial Bar Chart 6*,RadialBarChart6*.png,radial,https://www.iodraw.com/en/template/bar-polar-label-tangential
-Radial Bar Chart,7,Radial Bar Chart 7,RadialBarChart7.png,radial,https://report2020.gruppoiren.it/en/sustainability/customers-and-communities/customers-and-services
-Radial Bar Chart,8,Radial Bar Chart 8,RadialBarChart8.png,radial,https://www.predicthq.com/blog/top-ten-states-recovery
-Radial Bar Chart,9,Radial Bar Chart 9,RadialBarChart9.png,radial,https://apexcharts.com/javascript-chart-demos/radialbar-charts/custom-angle-circle/
-Radial Bar Chart,11,Radial Bar Chart 11,RadialBarChart11.png,radial,https://apexcharts.com/javascript-chart-demos/radialbar-charts/multiple-radialbars/
-Radial Bar Chart,10,Radial Bar Chart 10,RadialBarChart10.png,radial,https://www.dettol.co.nz/health-hygiene/personal/sanitising-hands-out-of-home/
-Bar Chart in Radial Layout,1,Bar Chart in Radial Layout 1,BarChartinRadialLayout1.png,bar,https://agill.xyz/research/haiku/analysis/colors
-Bar Chart in Radial Layout,2,Bar Chart in Radial Layout 2,BarChartinRadialLayout2.png,bar,https://observablehq.com/@d3/radial-stacked-bar-chart
-Bar Chart in Radial Layout,3,Bar Chart in Radial Layout 3,BarChartinRadialLayout3.png,bar,https://observablehq.com/@s0rta/radial-bar-chart-proof-of-conecpt
-TBD,4,TBD 4,TBD4.png,tbd,https://observablehq.com/@elleryyixin/d3-radial-stacked-bar-chart
-TBD,5,TBD 5,TBD5.png,tbd,https://observablehq.com/@johnfischbeck/radial-stacked-bar-chart-ii
-Bar Chart in Radial Layout,6,Bar Chart in Radial Layout 6,BarChartinRadialLayout6.png,bar,https://observablehq.com/@instancia/radial-stacked-bar-chart
-Bar Chart in Radial Layout,7,Bar Chart in Radial Layout 7,BarChartinRadialLayout7.png,bar,https://observablehq.com/@kclosu/radial-stacked-bar-chart
-Bar Chart in Radial Layout,8,Bar Chart in Radial Layout 8,BarChartinRadialLayout8.png,bar,https://datavizcatalogue.com/methods/radial_column_chart.html
-Bar Chart in Radial Layout,9,Bar Chart in Radial Layout 9,BarChartinRadialLayout9.png,bar,https://observablehq.com/@paulyiu/radial-stacked-bar-chart/2
-TBD,10,TBD 10,TBD10.png,tbd,https://observablehq.com/d/61c449251937e3d6
-Bar Chart in Radial Layout,11,Bar Chart in Radial Layout 11,BarChartinRadialLayout11.png,bar,https://www.predicthq.com/blog/ldi-july22
-Bar Chart in Radial Layout,12,Bar Chart in Radial Layout 12,BarChartinRadialLayout12.png,bar,https://www.commerce.ai/company/2020-ecommerce-report
-Bar Chart in Radial Layout,13,Bar Chart in Radial Layout 13,BarChartinRadialLayout13.png,bar,https://www.nhri.no/arsmelding/arsmelding2021/emd-og-norge-en-historisk-oversikt/emd-int-stat-2021-ferdig-copy/
+Polar Area Chart,9,Polar Area Chart 9,PolarAreaChart9.png,polar,https://mascot-vis.github.io/gallery.html#RoseChart
+Polar Area Chart,10,Polar Area Chart 10,PolarAreaChart10.png,polar,https://insights.datylon.com/datystore/api/v1/publications/jq3-PsyanmqDrB0HK0xHrQ/template
 Radar Chart,1,Radar Chart 1,RadarChart1.png,radar,https://creately.com/diagram/example/jlq2kb2u2/radar-chart-example
 Radar Chart,2,Radar Chart 2,RadarChart2.png,radar,https://observablehq.com/@avoits/polar-chart
 Radar Chart,3,Radar Chart 3,RadarChart3.png,radar,https://observablehq.com/@marit970/radar-plot
@@ -305,78 +309,41 @@ Radar Chart,7,Radar Chart 7,RadarChart7.png,radar,https://vega.github.io/vega/ex
 Radar Chart,8,Radar Chart 8,RadarChart8.png,radar,https://jscharting.com/examples/chart-types/radar-polar/area/
 Radar Chart,9,Radar Chart 9,RadarChart9.png,radar,https://doc.cuba-platform.com/charts-latest/radar_chart.html
 Radar Chart,10,Radar Chart 10,RadarChart10.png,radar,https://www.amcharts.com/demos-v4/radar-chart-v4/
-Matrix Diagram,1,Matrix Diagram 1,MatrixDiagram1.png,matrix,https://observablehq.com/@bstaats/matrix-diagram
-Matrix Diagram,2,Matrix Diagram 2,MatrixDiagram2.png,matrix,https://insights.datylon.com/stories/kTQJkb9CukJtArIDROJO1w
-Matrix Diagram,3,Matrix Diagram 3,MatrixDiagram3.png,matrix,https://commons.wikimedia.org/wiki/File:Risk_Analysis_Chart.svg
-Matrix Diagram,4,Matrix Diagram 4,MatrixDiagram4.png,matrix,https://observablehq.com/@fil/matrix-diagram
-Matrix Diagram,5,Matrix Diagram 5,MatrixDiagram5.png,matrix,https://observablehq.com/d/9dc0f30b60feeca0
-Matrix Diagram,6,Matrix Diagram 6,MatrixDiagram6.png,matrix,https://observablehq.com/@burrussmp/designing-a-customizable-confusion-matrix-in-d3
-Matrix Diagram,7,Matrix Diagram 7,MatrixDiagram7.png,matrix,https://observablehq.com/@arcayle/a-customizable-interactive-confusion-matrix
-Matrix Diagram,8,Matrix Diagram 8,MatrixDiagram8.png,matrix,https://www.datylon.com/blog/types-of-charts-graphs-examples-data-visualization#matrix-chart
-Matrix Diagram,9,Matrix Diagram 9,MatrixDiagram9.png,matrix,https://creately.com/diagram/example/ReutHhh4gus/confrontation-matrix-template
-Matrix Diagram,10,Matrix Diagram 10,MatrixDiagram10.png,matrix,https://pidnotebooks.org/pages/pidgraph-notebooks-python/user-story-3-impacts-of-organization/
-Box-and-whisker plot,1,Box-and-whisker plot 1,Box-and-whiskerplot1.png,box-and-whisker,https://www.nagwa.com/en/explainers/812192146073/
-Box-and-whisker plot,2,Box-and-whisker plot 2,Box-and-whiskerplot2.png,box-and-whisker,https://apexcharts.com/docs/chart-types/boxplot/
-Box-and-whisker plot,3,Box-and-whisker plot 3,Box-and-whiskerplot3.png,box-and-whisker,https://www.khanacademy.org/math/statistics-probability/summarizing-quantitative-data/box-whisker-plots/a/box-plot-review
-Box-and-whisker plot,4,Box-and-whisker plot 4,Box-and-whiskerplot4.png,box-and-whisker,https://www.codecademy.com/learn/stats-associations-between-variables/modules/stats-associations-between-variables/cheatsheet
-Box-and-whisker plot,5,Box-and-whisker plot 5,Box-and-whiskerplot5.png,box-and-whisker,https://apexcharts.com/docs/chart-types/boxplot/
-Box-and-whisker plot,6,Box-and-whisker plot 6,Box-and-whiskerplot6.png,box-and-whisker,https://alex-hhh.github.io/2021/04/box-and-whiskers-plot.html
-Box-and-whisker plot,7,Box-and-whisker plot 7,Box-and-whiskerplot7.png,box-and-whisker,https://observablehq.com/@d3/box-plot
-Box-and-whisker plot,8,Box-and-whisker plot 8,Box-and-whiskerplot8.png,box-and-whisker,https://observablehq.com/@mukhtyar/box-plot
-Box-and-whisker plot,9,Box-and-whisker plot 9,Box-and-whiskerplot9.png,box-and-whisker,https://vega.github.io/vega-lite/examples/boxplot_minmax_2D_vertical.html
-Box-and-whisker plot,10,Box-and-whisker plot 10,Box-and-whiskerplot10.png,box-and-whisker,https://data-illustrator.cs.umd.edu/app/index.html?project=few_box_plot
-Candlestick Chart,1,Candlestick Chart 1,CandlestickChart1.png,candlestick,https://codepen.io/frederickallen/pen/MZXNVY
-Candlestick Chart,2,Candlestick Chart 2,CandlestickChart2.png,candlestick,https://github.com/garys-io/garys-io-candlestick-chart-d3
-Candlestick Chart,3,Candlestick Chart 3,CandlestickChart3.png,candlestick,https://www.fusioncharts.com/dev/chart-guide/standard-charts/candlestick-chart
-Candlestick Chart,4,Candlestick Chart 4,CandlestickChart4.png,candlestick,https://www.tibco.com/reference-center/what-is-a-candlestick-chart
-Candlestick Chart,5,Candlestick Chart 5,CandlestickChart5.png,candlestick,https://juliastats.org/TimeSeries.jl/latest/plotting/
-Candlestick Chart,6,Candlestick Chart 6,CandlestickChart6.png,candlestick,https://diagrammm.com/candlestick_chart
-Candlestick Chart,7,Candlestick Chart 7,CandlestickChart7.png,candlestick,https://en.wikipedia.org/wiki/File:Candlestick_chart_scheme_02-en.svg
-Candlestick Chart,8,Candlestick Chart 8,CandlestickChart8.png,candlestick,https://observablehq.com/@d3/candlestick-chart
-Candlestick Chart,9,Candlestick Chart 9,CandlestickChart9.png,candlestick,https://www.forex.com/en-us/trading-academy/courses/technical-analysis/key-candlestick-patterns/
-Candlestick Chart,10,Candlestick Chart 10,CandlestickChart10.png,candlestick,https://enrichmoney.in/blog-article/top-5-candlestick-patterns-traders-must-know
-Venn Diagram,1,Venn Diagram 1,VennDiagram1.png,venn,https://commons.wikimedia.org/wiki/File:Venn_Diagram_of_Numbers.svg
-Venn Diagram,2,Venn Diagram 2,VennDiagram2.png,venn,https://mmerevise.co.uk/gcse-maths-revision/venn-diagrams/
-Venn Diagram,3,Venn Diagram 3,VennDiagram3.png,venn,https://commons.wikimedia.org/wiki/File:Venn_diagram_coloured.svg
-Venn Diagram,4,Venn Diagram 4,VennDiagram4.png,venn,https://diagrammm.com/venn_diagram
-Venn Diagram,5,Venn Diagram 5,VennDiagram5.png,venn,https://freesvg.org/venn-diagram
-Venn Diagram,6,Venn Diagram 6,VennDiagram6.png,venn,https://commons.wikimedia.org/wiki/File:Venn_diagram_cmyk.svg
-Venn Diagram,7,Venn Diagram 7,VennDiagram7.png,venn,"https://en.wikipedia.org/wiki/File:Venn_diagram_showing_Maximum_Greek,_Latin_and_Cyrillic_letters.svg"
-Venn Diagram,8,Venn Diagram 8,VennDiagram8.png,venn,https://www.nagwa.com/en/worksheets/815127423682/
-Venn Diagram,9,Venn Diagram 9,VennDiagram9.png,venn,https://www.lucidchart.com/pages/tutorial/venn-diagram
-Venn Diagram,10,Venn Diagram 10,VennDiagram10.png,venn,https://en.wikichip.org/wiki/File:x86_tme_virtualization_example_venn_diagram.svg
-Stream Graph,1,Stream Graph 1,StreamGraph1.png,stream,https://insights.datylon.com/stories/mYTOaOfgUWal7LFDN3VAlQ
-Stream Graph,2,Stream Graph 2,StreamGraph2.png,stream,https://insights.datylon.com/stories/ntmFCLHAVy454T6t8NFA-A
-Stream Graph,3,Stream Graph 3,StreamGraph3.png,stream,https://plotdb.com/chart/1038/
-Stream Graph,4,Stream Graph 4,StreamGraph4.png,stream,https://www.datylon.com/blog/types-of-charts-graphs-examples-data-visualization
-Stream Graph,5,Stream Graph 5,StreamGraph5.png,stream,https://datavizcatalogue.com/methods/stream_graph.html
-Stream Graph,6,Stream Graph 6,StreamGraph6.png,stream,https://www.highcharts.com/demo/streamgraph/dark-unica
-Stream Graph,7,Stream Graph 7,StreamGraph7.png,stream,https://www.data-to-viz.com/graph/streamgraph.html
-Stream Graph,8,Stream Graph 8,StreamGraph8.png,stream,https://streamgraphs.github.io/marketcap.html
-Stream Graph,9,Stream Graph 9,StreamGraph9.png,stream,https://en.wikipedia.org/wiki/Streamgraph#/media/File:LastGraph_example.svg
-Stream Graph,10,Stream Graph 10,StreamGraph10.png,stream,https://www.highcharts.com/blog/chartchooser/streamgraph-flow-continuous/
-Stream Graph,11,Stream Graph 11,StreamGraph11.png,stream,https://edgetheory.com/kudzu
-Parallel Coordinates Plot,1,Parallel Coordinates Plot 1,ParallelCoordinatesPlot1.png,parallel,https://mascot-vis.github.io/gallery.html#ParallelCoordinates
-Parallel Coordinates Plot,2,Parallel Coordinates Plot 2,ParallelCoordinatesPlot2.png,parallel,https://datavizcatalogue.com/methods/parallel_coordinates.html
-Parallel Coordinates Plot,3,Parallel Coordinates Plot 3,ParallelCoordinatesPlot3.png,parallel,https://www.datylon.com/blog/types-of-charts-graphs-examples-data-visualization
-Parallel Coordinates Plot,4,Parallel Coordinates Plot 4,ParallelCoordinatesPlot4.png,parallel,https://data-illustrator.cs.umd.edu/app/index.html?project=cars_parallel_coordinates
-Parallel Coordinates Plot,5,Parallel Coordinates Plot 5,ParallelCoordinatesPlot5.png,parallel,https://www.highcharts.com/demo/parallel-coordinates
-Parallel Coordinates Plot,6,Parallel Coordinates Plot 6,ParallelCoordinatesPlot6.png,parallel,https://alandefreitas.github.io/matplotplusplus/plot-types/data-distribution/parallel-coordinates/
-Parallel Coordinates Plot,7,Parallel Coordinates Plot 7,ParallelCoordinatesPlot7.png,parallel,https://dept.stat.lsa.umich.edu/~kshedden/introds/topics/graphical_summaries/
-Parallel Coordinates Plot,9,Parallel Coordinates Plot 9,ParallelCoordinatesPlot9.png,parallel,https://blog.jpl.design/posts/f20/info-design/raw/
-Parallel Coordinates Plot,10,Parallel Coordinates Plot 10,ParallelCoordinatesPlot10.png,parallel,https://ourworldindata.org/grapher/total-fertility-rate-slope-chart
-Kagi Chart,1,Kagi Chart 1,KagiChart1.png,kagi,https://arpitnarechania.github.io/d3-kagi/
-Kagi Chart,2,Kagi Chart 2,KagiChart2.png,kagi,https://datavizcatalogue.com/methods/kagi_chart.html
-Kagi Chart,3,Kagi Chart 3,KagiChart3.png,kagi,https://diagrammm.com/kagi_chart
-Kagi Chart,4,Kagi Chart 4,KagiChart4.png,kagi,https://diagrammm.com/kagi_chart
-Kagi Chart,5,Kagi Chart 5,KagiChart5.png,kagi,https://datavizcatalogue.com/methods/kagi_chart.html
-Kagi Chart,6,Kagi Chart 6,KagiChart6.png,kagi,https://arpitnarechania.github.io/d3-kagi/
-Kagi Chart,7,Kagi Chart 7,KagiChart7.png,kagi,https://arpitnarechania.github.io/d3-kagi/
-Kagi Chart,8,Kagi Chart 8,KagiChart8.png,kagi,https://arpitnarechania.github.io/d3-kagi/
-Kagi Chart,9,Kagi Chart 9,KagiChart9.png,kagi,https://arpitnarechania.github.io/d3-kagi/
-Kagi Chart,10,Kagi Chart 10,KagiChart10.png,kagi,https://arpitnarechania.github.io/d3-kagi/
-Kagi Chart,11,Kagi Chart 11,KagiChart11.png,kagi,https://arpitnarechania.github.io/d3-kagi/
-Kagi Chart,12,Kagi Chart 12,KagiChart12.png,kagi,https://arpitnarechania.github.io/d3-kagi/
+Radial Bar Chart,1,Radial Bar Chart 1,RadialBarChart1.png,radial,https://freetrade.io/stocks-and-shares-isa/isa-research
+Radial Bar Chart,2,Radial Bar Chart 2,RadialBarChart2.png,radial,https://stateofglobalexpansion.com/index.html
+Radial Bar Chart,3,Radial Bar Chart 3,RadialBarChart3.png,radial,https://www.technologyreview.com/2021/05/24/1025131/edge-computing-powering-the-future-of-manufacturing/
+Radial Bar Chart,4,Radial Bar Chart 4,RadialBarChart4.png,radial,https://www.semasio.com/articles/2022-the-most-diverse-420-ever
+Radial Bar Chart,5,Radial Bar Chart 5,RadialBarChart5.png,radial,https://www.highcharts.com/demo/ios/polar-radial-bar
+Radial Bar Chart,6,Radial Bar Chart 6,RadialBarChart6.png,radial,https://www.iodraw.com/en/template/bar-polar-label-tangential
+Radial Bar Chart,7,Radial Bar Chart 7,RadialBarChart7.png,radial,https://report2020.gruppoiren.it/en/sustainability/customers-and-communities/customers-and-services
+Radial Bar Chart,8,Radial Bar Chart 8,RadialBarChart8.png,radial,https://apexcharts.com/javascript-chart-demos/radialbar-charts/multiple-radialbars/
+Radial Bar Chart,9,Radial Bar Chart 9,RadialBarChart9.png,radial,https://apexcharts.com/javascript-chart-demos/radialbar-charts/custom-angle-circle/
+Radial Bar Chart,10,Radial Bar Chart 10,RadialBarChart10.png,radial,https://www.dettol.co.nz/health-hygiene/personal/sanitising-hands-out-of-home/
+Range Chart,1,Range Chart 1,RangeChart1.png,range,https://mascot-vis.github.io/gallery.html#RangeChart
+Range Chart,2,Range Chart 2,RangeChart2.png,range,https://www.anychart.com/products/anychart/gallery/Range_Charts/Climate_Data.php
+Range Chart,3,Range Chart 3,RangeChart3.png,range,https://apexcharts.com/react-chart-demos/range-area-charts/
+Range Chart,4,Range Chart 4,RangeChart4.png,range,https://www.zingchart.com/gallery/range-area-chart-with-crosshair
+Range Chart,5,Range Chart 5,RangeChart5.png,range,https://www.telerik.com/kendo-angular-ui/components/charts/
+Range Chart,6,Range Chart 6,RangeChart6.png,range,https://www.anychart.com/products/anychart/gallery/Range_Charts/Range_Column_Chart.php
+Range Chart,7,Range Chart 7,RangeChart7.png,range,https://www.anychart.com/products/anychart/gallery/Range_Charts/Range_Step-Area_Chart.php
+Range Chart,8,Range Chart 8,RangeChart8.png,range,https://www.eia.gov/todayinenergy/detail.php?id=51098
+Range Chart,9,Range Chart 9,RangeChart9.png,range,https://docs.anychart.com/Basic_Charts/Range_Bar_Chart
+Range Chart,10,Range Chart 10,RangeChart10.png,range,https://www.highcharts.com/demo/arearange-line
+Range Chart,11,Range Chart 11,RangeChart11.png,range,https://www.bofbulletin.fi/en/charts/chart/the-price-of-domestic-companies-market-based-funding-has-risen-in-2022/
+Scatterplot,1,Scatterplot 1,Scatterplot1.png,scatterplot,https://insights.datylon.com/stories/sUH1REVrdrPZhjXbIOJABA
+Scatterplot,2,Scatterplot 2,Scatterplot2.png,scatterplot,https://www.tibco.com/reference-center/what-is-a-scatter-chart
+Scatterplot,3,Scatterplot 3,Scatterplot3.png,scatterplot,https://insights.datylon.com/stories/oDHVikVxaCaCGWRFGMdPgA
+Scatterplot,4,Scatterplot 4,Scatterplot4.png,scatterplot,https://www.mathsisfun.com/data/scatter-xy-plots.html
+Scatterplot,5,Scatterplot 5,Scatterplot5.png,scatterplot,https://bookdown.org/max/FES/stroke-preprocessing.html
+Scatterplot,6,Scatterplot 6,Scatterplot6.png,scatterplot,https://bookdown.org/a_shaker/STM1001_Topic_2/5-1-scatter-plots.html
+Scatterplot,7,Scatterplot 7,Scatterplot7.png,scatterplot,https://mascot-vis.github.io/gallery#Scatterplot
+Scatterplot,8,Scatterplot 8,Scatterplot8.png,scatterplot,https://bookdown.org/max/FES/stroke-preprocessing.html
+Scatterplot,9,Scatterplot 9,Scatterplot9.png,scatterplot,https://apexcharts.com/javascript-chart-demos/scatter-charts/datetime/
+Scatterplot,10,Scatterplot 10,Scatterplot10.png,scatterplot,https://dash.gallery/bball-player-explorer/
+Scatterplot,11,Scatterplot 11,Scatterplot11.png,scatterplot,https://vega.github.io/vega-lite/examples/interactive_splom.html
+Scatterplot,12,Scatterplot 12,Scatterplot12.png,scatterplot,https://observablehq.com/@d3/brushable-scatterplot-matrix
+Scatterplot,13,Scatterplot 13,Scatterplot13.png,scatterplot,https://bookdown.org/max/FES/stroke-exploration.html
+Scatterplot,14,Scatterplot 14,Scatterplot14.png,scatterplot,https://bookdown.org/max/FES/numeric-many-to-many.html
 Spiral Plot,1,Spiral Plot 1,SpiralPlot1.png,spiral,https://community.storytellingwithdata.com/challenges/jan-2022-visualizing-cycles/global-surface-temperature
 Spiral Plot,2,Spiral Plot 2,SpiralPlot2.png,spiral,https://observablehq.com/@tomshanley/spiral-heatmap-northern-hemisphere-sea-ice-extent-1978-to-2
 Spiral Plot,3,Spiral Plot 3,SpiralPlot3.png,spiral,https://observablehq.com/@mwindson/spiral-calendar
@@ -387,99 +354,118 @@ Spiral Plot,7,Spiral Plot 7,SpiralPlot7.png,spiral,http://www.relevantmisc.com/r
 Spiral Plot,8,Spiral Plot 8,SpiralPlot8.png,spiral,https://charticulator.com/gallery/fitbit_activities.html
 Spiral Plot,9,Spiral Plot 9,SpiralPlot9.png,spiral,https://charticulator.com/gallery/fitbit_activities.html
 Spiral Plot,10,Spiral Plot 10,SpiralPlot10.png,spiral,https://charticulator.com/gallery/fitbit_activities.html
-Parallel Sets,1,Parallel Sets 1,ParallelSets1.png,parallel,https://www.jasondavies.com/parallel-sets/
-Parallel Sets,2,Parallel Sets 2,ParallelSets2.png,parallel,https://observablehq.com/@d3/parallel-sets
-Parallel Sets,3,Parallel Sets 3,ParallelSets3.png,parallel,https://datavizcatalogue.com/TR/yontemleri/paralel_setler.html
-Parallel Sets,4,Parallel Sets 4,ParallelSets4.png,parallel,https://observablehq.com/@john-guerra/parallel-sets
-Parallel Sets,5,Parallel Sets 5,ParallelSets5.png,parallel,https://datavizcatalogue.com/TR/yontemleri/paralel_setler.html
-Bullet Chart,1,Bullet Chart 1,BulletChart1.png,bullet,https://mascot-vis.github.io/gallery.html#BulletChart
-Bullet Chart,2,Bullet Chart 2,BulletChart2.png,bullet,https://gist.github.com/mbostock/4061961
-Bullet Chart,3,Bullet Chart 3,BulletChart3.png,bullet,https://www.datawrapper.de/_/h3Jz9/
-Bullet Chart,4,Bullet Chart 4,BulletChart4.png,bullet,https://academy.datawrapper.de/article/18-how-to-create-a-bullet-bar-chart
-Bullet Chart,5,Bullet Chart 5,BulletChart5.png,bullet,https://datavizcatalogue.com/methods/bullet_graph.html
-Bullet Chart,6,Bullet Chart 6,BulletChart6.png,bullet,https://gist.github.com/CodeXmonk/6112167
-Bullet Chart,7,Bullet Chart 7,BulletChart7.png,bullet,https://observablehq.com/@stroked/market-bullets
-Bullet Chart,8,Bullet Chart 8,BulletChart8.png,bullet,https://insights.datylon.com/stories/pdRiJv2a9qTzq2esUDJPDQ
-Bullet Chart,9,Bullet Chart 9,BulletChart9.png,bullet,https://insights.datylon.com/stories/sUH1REVrdrPZhjXbIOJABA
-Bullet Chart,10,Bullet Chart 10,BulletChart10.png,bullet,https://insights.datylon.com/stories/n6auc9_VCR7nUtwlhD5B_A
-Bullet Chart,11,Bullet Chart 11,BulletChart11.png,bullet,https://synergycodes.com/blog/top-types-of-charts-graphs-for-expert-data-visualization/
-Bullet Chart,12,Bullet Chart 12,BulletChart12.png,bullet,https://okviz.com/bullet-chart/
-Bullet Chart,13,Bullet Chart 13,BulletChart13.png,bullet,https://www.ibm.com/design/language/data-visualization/charts/
-Bullet Chart,14,Bullet Chart 14,BulletChart14.png,bullet,https://vis.zone/graph/bullet-graph/
-Bullet Chart,15,Bullet Chart 15,BulletChart15.png,bullet,https://commons.wikimedia.org/wiki/File:Labelled_Bullet_Graph_Example.svg
-Bullet Chart,16,Bullet Chart 16,BulletChart16.png,bullet,https://www.fusioncharts.com/charts
-Bullet Chart,17,Bullet Chart 17,BulletChart17.png,bullet,https://www.fusioncharts.com/charts/bullet-graphs/horizontal-bullet-graph?framework=javascript
-Range Chart,1,Range Chart 1,RangeChart1.png,range,https://mascot-vis.github.io/gallery.html#RangeChart
-Range Chart,2,Range Chart 2,RangeChart2.png,range,https://www.anychart.com/products/anychart/gallery/Range_Charts/Climate_Data.php
-,16,,,,https://www.bofbulletin.fi/en/charts/chart/the-price-of-domestic-companies-market-based-funding-has-risen-in-2022/
-,17,,,,https://www.zingchart.com/docs/chart-types/range
-Range Chart,5,Range Chart 5,RangeChart5.png,range,https://www.anychart.com/products/anychart/gallery/Range_Charts/Range_Spline-Area_Chart.php
-Range Chart,6,Range Chart 6,RangeChart6.png,range,https://www.anychart.com/products/anychart/gallery/Range_Charts/Range_Column_Chart.php
-Range Chart,7,Range Chart 7,RangeChart7.png,range,https://www.anychart.com/products/anychart/gallery/Range_Charts/Range_Step-Area_Chart.php
-Range Chart,8,Range Chart 8,RangeChart8.png,range,https://www.anychart.com/chartopedia/chart-type/range-area-chart/
-Range Chart,9,Range Chart 9,RangeChart9.png,range,https://docs.anychart.com/Basic_Charts/Range_Bar_Chart
-Range Chart,10,Range Chart 10,RangeChart10.png,range,https://docs.anychart.com/Basic_Charts/Range_Area_Chart
-Range Chart,11,Range Chart 11,RangeChart11.png,range,https://apexcharts.com/javascript-chart-demos/range-area-charts/
-Range Chart,12,Range Chart 12,RangeChart12.png,range,https://apexcharts.com/javascript-chart-demos/range-area-charts/combo/
-Range Chart,13,Range Chart 13,RangeChart13.png,range,https://www.telerik.com/kendo-angular-ui/components/charts/
-Range Chart,14,Range Chart 14,RangeChart14.png,range,https://www.eia.gov/todayinenergy/detail.php?id=51098
-Range Chart,15,Range Chart 15,RangeChart15.png,range,https://www.highcharts.com/demo/arearange-line
-Heatmap,1,Heatmap 1,Heatmap1.png,heatmap,http://graphics.wsj.com/infectious-diseases-and-vaccines/
-Heatmap,2,Heatmap 2,Heatmap2.png,heatmap,https://vega.github.io/vega/examples/heatmap/
-Heatmap,3,Heatmap 3,Heatmap3.png,heatmap,https://observablehq.com/@sjengle/zillow-affordability-heatmap
-Heatmap,4,Heatmap 4,Heatmap4.png,heatmap,https://observablehq.com/@nbremer/hexagon-grid-heatmap
-Heatmap,5,Heatmap 5,Heatmap5.png,heatmap,https://observablehq.com/@lorenries/political-science-rankings-heatmap
-Heatmap,6,Heatmap 6,Heatmap6.png,heatmap,https://observablehq.com/@palewire/california-coronavirus-reopening-heatmap
-Heatmap,7,Heatmap 7,Heatmap7.png,heatmap,https://observablehq.com/@eliaslevy/d3-heatmap
-Heatmap,8,Heatmap 8,Heatmap8.png,heatmap,https://observablehq.com/@marialuisacp/heatmap
-Heatmap,9,Heatmap 9,Heatmap9.png,heatmap,https://datavizcatalogue.com/methods/heatmap.html
-Heatmap,10,Heatmap 10,Heatmap10.png,heatmap,https://nivo.rocks/heatmap/
-Geo Heatmap,1,Geo Heatmap 1,GeoHeatmap1.png,geo,https://observablehq.com/@parkerziegler/choropleths-four-ways
-Geo Heatmap,2,Geo Heatmap 2,GeoHeatmap2.png,geo,https://observablehq.com/@lisilinhart/choropleth-map
-Geo Heatmap,3,Geo Heatmap 3,GeoHeatmap3.png,geo,https://www.tibco.com/reference-center/what-is-a-geographical-chart
-Geo Heatmap,4,Geo Heatmap 4,GeoHeatmap4.png,geo,https://aeturrell.github.io/coding-for-economists/geo-vis.html
-Geo Heatmap,5,Geo Heatmap 5,GeoHeatmap5.png,geo,https://vega.github.io/vega-lite/examples/geo_choropleth.html
-Geo Heatmap,6,Geo Heatmap 6,GeoHeatmap6.png,geo,https://vega.github.io/vega-lite/examples/geo_repeat.html
-Geo Heatmap,7,Geo Heatmap 7,GeoHeatmap7.png,geo,https://observablehq.com/@clhenrick/reusable-choropleth-map
-Geo Heatmap,8,Geo Heatmap 8,GeoHeatmap8.png,geo,https://observablehq.com/@gcmleon/choropleth-map-animation
-Geo Heatmap,9,Geo Heatmap 9,GeoHeatmap9.png,geo,https://observablehq.com/@z-richard/choropleth-map-of-the-covid-19-cases-in-china
-Geo Heatmap,10,Geo Heatmap 10,GeoHeatmap10.png,geo,https://observablehq.com/@parthmerchant/the-energy-viz-project
+Stacked Area Chart,1,Stacked Area Chart 1,StackedAreaChart1.png,stacked,https://academy.datawrapper.de/article/106-how-to-create-an-area-chart
+Stacked Area Chart,2,Stacked Area Chart 2,StackedAreaChart2.png,stacked,https://www.datawrapper.de/_/8Wwvx/
+Stacked Area Chart,3,Stacked Area Chart 3,StackedAreaChart3.png,stacked,https://observablehq.com/@marcsoh-smu/stacked-area-chart-of-tb-cases-in-africa-2000-to-2021
+Stacked Area Chart,4,Stacked Area Chart 4,StackedAreaChart4.png,stacked,https://insights.datylon.com/stories/t8_KLLekHtE6msHLYtlP4w
+Stacked Area Chart,5,Stacked Area Chart 5,StackedAreaChart5.png,stacked,https://www.data-to-viz.com/graph/stackedarea.html
+Stacked Area Chart,6,Stacked Area Chart 6,StackedAreaChart6.png,stacked,https://www.anychart.com/products/anychart/gallery/Area_Charts/Stacked_Area_Chart.php
+Stacked Area Chart,7,Stacked Area Chart 7,StackedAreaChart7.png,stacked,https://mathspace.co/textbooks/syllabuses/Syllabus-813/topics/Topic-18223/subtopics/Subtopic-279123/?activeTab=worksheet
+Stacked Area Chart,8,Stacked Area Chart 8,StackedAreaChart8.png,stacked,https://observablehq.com/@miralemd/picasso-js-stacked-area-chart
+Stacked Area Chart,9,Stacked Area Chart 9,StackedAreaChart9.png,stacked,https://observablehq.com/@bigshow/stacked-area-chart
+Stacked Area Chart,10,Stacked Area Chart 10,StackedAreaChart10.png,stacked,https://vega.github.io/vega/examples/stacked-area-chart/
+Stacked Area Chart,11,Stacked Area Chart 11,StackedAreaChart11.png,stacked,https://www.grunt.pro/hubfs/product/chart-area-stacked-b0.svg
+Stacked Area Chart,12,Stacked Area Chart 12,StackedAreaChart12.png,stacked,https://apexcharts.com/javascript-chart-demos/area-charts/stacked/
+Stacked Bar Chart,1,Stacked Bar Chart 1,StackedBarChart1.png,stacked,https://observablehq.com/@d3/stacked-horizontal-bar-chart
+Stacked Bar Chart,2,Stacked Bar Chart 2,StackedBarChart2.png,stacked,https://observablehq.com/@d3/stacked-normalized-horizontal-bar
+Stacked Bar Chart,3,Stacked Bar Chart 3,StackedBarChart3.png,stacked,https://apexcharts.com/javascript-chart-demos/bar-charts/patterned/
+Stacked Bar Chart,4,Stacked Bar Chart 4,StackedBarChart4.png,stacked,https://vega.github.io/vega-lite/examples/stacked_bar_count_corner_radius_mark.html
+Stacked Bar Chart,5,Stacked Bar Chart 5,StackedBarChart5.png,stacked,https://vega.github.io/vega-lite/examples/stacked_bar_normalize.html
+Stacked Bar Chart,6,Stacked Bar Chart 6,StackedBarChart6.png,stacked,https://vega.github.io/vega-lite/examples/stacked_bar_h.html
+Stacked Bar Chart,7,Stacked Bar Chart 7,StackedBarChart7.png,stacked,https://vega.github.io/vega-lite/examples/stacked_bar_weather.html
+Stacked Bar Chart,8,Stacked Bar Chart 8,StackedBarChart8.png,stacked,https://vega.github.io/vega-lite/examples/stacked_bar_h_normalized_labeled.html
+Stacked Bar Chart,9,Stacked Bar Chart 9,StackedBarChart9.png,stacked,https://mascot-vis.github.io/gallery#StackedBarChart
+Stacked Bar Chart,10,Stacked Bar Chart 10,StackedBarChart10.png,stacked,https://observablehq.com/@d3/stacked-bar-chart
+Stacked Bar Chart,11,Stacked Bar Chart 11,StackedBarChart11.png,stacked,https://apexcharts.com/javascript-chart-demos/column-charts/stacked/
+Stacked Bar Chart,12,Stacked Bar Chart 12,StackedBarChart12.png,stacked,https://apexcharts.com/javascript-chart-demos/bar-charts/stacked/
+Stream Graph,1,Stream Graph 1,StreamGraph1.png,stream,https://insights.datylon.com/stories/mYTOaOfgUWal7LFDN3VAlQ
+Stream Graph,2,Stream Graph 2,StreamGraph2.png,stream,https://insights.datylon.com/stories/ntmFCLHAVy454T6t8NFA-A
+Stream Graph,3,Stream Graph 3,StreamGraph3.png,stream,https://plotdb.com/chart/1038/
+Stream Graph,4,Stream Graph 4,StreamGraph4.png,stream,https://www.datylon.com/blog/types-of-charts-graphs-examples-data-visualization
+Stream Graph,5,Stream Graph 5,StreamGraph5.png,stream,https://datavizcatalogue.com/methods/stream_graph.html
+Stream Graph,6,Stream Graph 6,StreamGraph6.png,stream,https://edgetheory.com/wp-content/uploads/2021/10/streamgraph-by-day.svg
+Stream Graph,7,Stream Graph 7,StreamGraph7.png,stream,https://www.data-to-viz.com/graph/streamgraph.html
+Stream Graph,8,Stream Graph 8,StreamGraph8.png,stream,https://streamgraphs.github.io/marketcap.html
+Stream Graph,9,Stream Graph 9,StreamGraph9.png,stream,https://en.wikipedia.org/wiki/Streamgraph#/media/File:LastGraph_example.svg
+Stream Graph,10,Stream Graph 10,StreamGraph10.png,stream,https://www.highcharts.com/blog/chartchooser/streamgraph-flow-continuous/
+Treemap,1,Treemap 1,Treemap1.png,treemap,https://bl.ocks.org/mbostock/4063582
+Treemap,2,Treemap 2,Treemap2.png,treemap,https://insights.datylon.com/stories/vGS_pEulvCsEjQlCp5lB2w
+Treemap,3,Treemap 3,Treemap3.png,treemap,https://insights.datylon.com/stories/jmqYaDrvpjskFmwW_bFLmw
+Treemap,4,Treemap 4,Treemap4.png,treemap,https://www.tibco.com/reference-center/what-is-a-treemap-chart
+Treemap,5,Treemap 5,Treemap5.png,treemap,https://diagrammm.com/treemap
+Treemap,6,Treemap 6,Treemap6.png,treemap,https://help.macrobond.com/tutorials-training/4-charting/types-of-charts/outside-of-macrobond/charts-with-r/treemap/
+Treemap,7,Treemap 7,Treemap7.png,treemap,https://www.highcharts.com/demo/treemap-large-dataset
+Treemap,8,Treemap 8,Treemap8.png,treemap,https://plotdb.com/chart/1006/#
+Treemap,9,Treemap 9,Treemap9.png,treemap,https://plotly.com/javascript/treemaps/
+Treemap,10,Treemap 10,Treemap10.png,treemap,https://vega.github.io/vega/examples/treemap/
+Treemap,11,Treemap 11,Treemap11.png,treemap,https://mascot-vis.github.io/gallery.html#Treemap
+Treemap,12,Treemap 12,Treemap12.png,treemap,https://help.macrobond.com/tutorials-training/4-charting/types-of-charts/outside-of-macrobond/charts-with-r/treemap/
+Treemap,13,Treemap 13,Treemap13.png,treemap,https://www.highcharts.com/demo/highcharts/treemap-with-levels
 Violin Plot,1,Violin Plot 1,ViolinPlot1.png,violin,https://mascot-vis.github.io/gallery.html#ViolinPlot
 Violin Plot,2,Violin Plot 2,ViolinPlot2.png,violin,https://observablehq.com/@theodedeken/19-violin-plot
-Violin Plot,3,Violin Plot 3,ViolinPlot3.png,violin,https://observablehq.com/d/b6a48d1bd297c087
+Violin Plot,3,Violin Plot 3,ViolinPlot3.png,violin,https://www.jbe-platform.com/content/figure/10.1075/avt.00068.ros.fig3
 Violin Plot,4,Violin Plot 4,ViolinPlot4.png,violin,https://plotly.com/javascript/violin/
 Violin Plot,5,Violin Plot 5,ViolinPlot5.png,violin,https://d3-graph-gallery.com/graph/violin_basicHist.html
 Violin Plot,6,Violin Plot 6,ViolinPlot6.png,violin,https://vega.github.io/vega/examples/violin-plot/
 Violin Plot,7,Violin Plot 7,ViolinPlot7.png,violin,https://observablehq.com/d/1771ceff9a6022c3
 Violin Plot,8,Violin Plot 8,ViolinPlot8.png,violin,https://observablehq.com/@jonhelfman/plot-violin-chart-with-facet
-Violin Plot,9,Violin Plot 9,ViolinPlot9.png,violin,https://observablehq.com/@garrettvercoe/split-violin-plot
-,11,,,,https://biochempy.bb.iastate.edu/help_page/
+Violin Plot,9,Violin Plot 9,ViolinPlot9.png,violin,https://biochempy.bb.iastate.edu/static/images/help_page/plot_examples/violin_plot_example.svg
 Violin Plot,10,Violin Plot 10,ViolinPlot10.png,violin,https://observablehq.com/@vaibhav-rane/assignment-3
+Violin Plot,11,Violin Plot 11,ViolinPlot11.png,violin,https://lsj.readthedocs.io/en/latest/Ch05/Ch05_Graphics_2.html
+Violin Plot,12,Violin Plot 12,ViolinPlot12.png,violin,https://www.tvhahn.com/posts/beautiful-plots-violin/
+Violin Plot,13,Violin Plot 13,ViolinPlot13.png,violin,https://edu.iotc.org/tuning.html
+Waffle Chart,1,Waffle Chart 1,WaffleChart1.png,waffle,https://mascot-vis.github.io/gallery.html#WaffleChart
+Waffle Chart,2,Waffle Chart 2,WaffleChart2.png,waffle,https://mascot-vis.github.io/gallery#MultipleWaffleCharts
+Waffle Chart,3,Waffle Chart 3,WaffleChart3.png,waffle,https://data-illustrator.cs.umd.edu/app/index.html?project=waffle
+Waffle Chart,4,Waffle Chart 4,WaffleChart4.png,waffle,https://www.kaggle.com/general/114798
+Waffle Chart,5,Waffle Chart 5,WaffleChart5.png,waffle,https://www.kaggle.com/general/114798
+Waffle Chart,6,Waffle Chart 6,WaffleChart6.png,waffle,https://www.datylon.com/resources/chart-library/icon-array
+Waffle Chart,7,Waffle Chart 7,WaffleChart7.png,waffle,https://pywaffle.readthedocs.io/en/latest/examples/formats_of_values.html
+Waffle Chart,8,Waffle Chart 8,WaffleChart8.png,waffle,http://bl.ocks.org/XavierGimenez/8070956
+Waffle Chart,9,Waffle Chart 9,WaffleChart9.png,waffle,https://www.datylon.com/blog/types-of-charts-graphs-examples-data-visualization
+Waffle Chart,10,Waffle Chart 10,WaffleChart10.png,waffle,https://github.com/gyli/PyWaffle/blob/master/docs/examples/block_colors.md
+Waffle Chart,11,Waffle Chart 11,WaffleChart11.png,waffle,https://pywaffle.readthedocs.io/en/latest/examples/plot_with_characters_or_icons.html
+Waffle Chart,12,Waffle Chart 12,WaffleChart12.png,waffle,https://www.filipr.com/posts/waffle-chart/
+Waffle Chart,13,Waffle Chart 13,WaffleChart13.png,waffle,https://www.filipr.com/posts/waffle-chart/
+Waffle Chart,14,Waffle Chart 14,WaffleChart14.png,waffle,https://www.mckinsey.com/featured-insights/2020-year-in-review/a-tale-of-2020-in-20-mckinsey-charts
+Waterfall Chart,1,Waterfall Chart 1,WaterfallChart1.png,waterfall,https://mascot-vis.github.io/gallery#WaterfallChart
+Waterfall Chart,2,Waterfall Chart 2,WaterfallChart2.png,waterfall,https://navicat.com/en/navicat-16-highlights
+Waterfall Chart,3,Waterfall Chart 3,WaterfallChart3.png,waterfall,https://docs.anychart.com/Basic_Charts/Waterfall_Chart
+Waterfall Chart,4,Waterfall Chart 4,WaterfallChart4.png,waterfall,https://docs.anychart.com/Basic_Charts/Waterfall_Chart
+Waterfall Chart,5,Waterfall Chart 5,WaterfallChart5.png,waterfall,https://www.tibco.com/reference-center/what-is-a-waterfall-chart
+Waterfall Chart,6,Waterfall Chart 6,WaterfallChart6.png,waterfall,https://docs.anychart.com/Basic_Charts/Waterfall_Chart
+Waterfall Chart,7,Waterfall Chart 7,WaterfallChart7.png,waterfall,fusioncharts.com/charts/waterfall-charts/waterfall-chart-without-cumulative-sum?framework=javascript
+Waterfall Chart,8,Waterfall Chart 8,WaterfallChart8.png,waterfall,https://commons.wikimedia.org/wiki/File:Diagramme_waterfall.svg
+Waterfall Chart,9,Waterfall Chart 9,WaterfallChart9.png,waterfall,https://dash.gallery/dash-shap-tips/
+Waterfall Chart,10,Waterfall Chart 10,WaterfallChart10.png,waterfall,https://vega.github.io/vega-lite/examples/waterfall_chart.html
+Waterfall Chart,11,Waterfall Chart 11,WaterfallChart11.png,waterfall,https://www.highcharts.com/demo/highcharts/waterfall
+Waterfall Chart,12,Waterfall Chart 12,WaterfallChart12.png,waterfall,https://www.apptio.com/fr/products/cloudability/financial-planning/
+Waterfall Chart,13,Waterfall Chart 13,WaterfallChart13.png,waterfall,https://www.gov.uk/government/statistics/national-non-domestic-rates-collected-by-councils-in-england-forecast-2024-to-2025/national-non-domestic-rates-collected-by-councils-in-england-forecast-for-2024-to-2025
 Word Cloud,1,Word Cloud 1,WordCloud1.png,word,https://observablehq.com/@d3/word-cloud
 Word Cloud,2,Word Cloud 2,WordCloud2.png,word,https://observablehq.com/@randomfractals/nlp-word-cloud
 Word Cloud,3,Word Cloud 3,WordCloud3.png,word,https://vega.github.io/vega/examples/word-cloud/
 Word Cloud,4,Word Cloud 4,WordCloud4.png,word,https://www.anychart.com/products/anychart/gallery/Tag_Cloud/Alice_In_Wonderland.php
 Word Cloud,5,Word Cloud 5,WordCloud5.png,word,https://www.anychart.com/products/anychart/gallery/Tag_Cloud/World_Population.php
 Word Cloud,6,Word Cloud 6,WordCloud6.png,word,https://www.anychart.com/products/anychart/gallery/Tag_Cloud/State_of_the_Union_Address_Most_Used_Words.php
-,11,,,,https://d3-graph-gallery.com/graph/wordcloud_basic.html
+Word Cloud,7,Word Cloud 7,WordCloud7.png,word,https://d3-graph-gallery.com/graph/wordcloud_basic.html
 Word Cloud,8,Word Cloud 8,WordCloud8.png,word,https://observablehq.com/@soezen/word-cloud
 Word Cloud,9,Word Cloud 9,WordCloud9.png,word,https://observablehq.com/@cliffng/word-cloud
 Word Cloud,10,Word Cloud 10,WordCloud10.png,word,https://observablehq.com/d/115a62bd2a944ca6
-Bump Chart,1,Bump Chart 1,BumpChart1.png,bump,https://data-illustrator.cs.umd.edu/app/index.html?project=new_car_colors
-Bump Chart,2,Bump Chart 2,BumpChart2.png,bump,https://commons.wikimedia.org/wiki/File:Canada_Historical_Population_Bump_Chart_no_signature.svg
-Bump Chart,3,Bump Chart 3,BumpChart3.png,bump,https://placeless.net/blog/rawgraphs-intro
-Bump Chart,4,Bump Chart 4,BumpChart4.png,bump,https://observablehq.com/@analyzer2004/bump-chart
-Bump Chart,5,Bump Chart 5,BumpChart5.png,bump,https://observablehq.com/@fil/bump-chart
-Bump Chart,6,Bump Chart 6,BumpChart6.png,bump,https://nbremer.github.io/babynames/
-Bump Chart,7,Bump Chart 7,BumpChart7.png,bump,https://insights.datylon.com/stories/s6O9Mt4Za_2Per9-911JKQ
-Bump Chart,8,Bump Chart 8,BumpChart8.png,bump,https://observablehq.com/@imbottlebird/bump-chart
-Bump Chart,9,Bump Chart 9,BumpChart9.png,bump,https://nivo.rocks/bump/
-TBD,,TBD nan,TBDnan.png,tbd,https://observablehq.com/@stroked/gantt-calendar
-Tower Chart,,Tower Chart nan,TowerChartnan.png,tower,https://mascot-vis.github.io/gallery
-Composite,1,Composite 1,Composite1.png,composite,https://mascot-vis.github.io/gallery.html#MultipleBarCharts 
-Composite,2,Composite 2,Composite2.png,composite,https://gist.github.com/cmgiven/018fd027d443b177e18fffb9afcdb5bd
-Composite,3,Composite 3,Composite3.png,composite,https://www.urban.org/features/11-charts-about-social-security-disability-insurance-program
-Composite,4,Composite 4,Composite4.png,composite,"https://www.anychart.com/products/anystock/gallery/Stock_Chart_Types/Range_Area,_Range_Step_Area.php"
-Composite,5,Composite 5,Composite5.png,composite,https://www.zingchart.com/gallery/mixed-line-chart-with-range
-,,,,,https://www.zingchart.com/gallery/range-chart-ocean-temperature
-,,,,,https://www.zingchart.com/gallery/range-area-chart-with-crosshair
+others,1,others 1,others1.png,others,https://mascot-vis.github.io/gallery.html#MultipleBarCharts 
+others,2,others 2,others2.png,others,https://gist.github.com/cmgiven/018fd027d443b177e18fffb9afcdb5bd
+others,3,others 3,others3.png,others,https://www.urban.org/features/11-charts-about-social-security-disability-insurance-program
+others,4,others 4,others4.png,others,https://observablehq.com/@stroked/gantt-calendar
+others,5,others 5,others5.png,others,https://mascot-vis.github.io/gallery#TowerChart
+others,6,others 6,others6.png,others,https://www.highcharts.com/demo/highcharts/column-comparison
+others,7,others 7,others7.png,others,https://apexcharts.com/javascript-chart-demos/column-charts/grouped-stacked-columns/
+others,8,others 8,others8.png,others,https://www.highcharts.com/demo/highcharts/variwide
+others,9,others 9,others9.png,others,https://www.highcharts.com/demo/highcharts/stellar-chart
+others,10,others 10,others10.png,others,https://www.highcharts.com/demo/maps/map-pies
+others,11,others 11,others11.png,others,https://insights.datylon.com/stories/ixceXCfGRapMydRyuEZNJw
+others,12,others 12,others12.png,others,https://gist.github.com/michalskop/8016812
+others,13,others 13,others13.png,others,http://https//bl.ocks.org/fabiovalse/raw/4122230f56cbd9982ba0/?raw=true
+others,14,others 14,others14.png,others,https://jsfiddle.net/fusioncharts/G7hYq/
+others,15,others 15,others15.png,others,https://www.highcharts.com/demo/highcharts/error-bar
+others,16,others 16,others16.png,others,https://www.highcharts.com/demo/highcharts/combo
+others,17,others 17,others17.png,others,https://www.highcharts.com/demo/highcharts/column-placement
+others,18,others 18,others18.png,others,https://cuthchow.github.io/college-majors-visualisation/

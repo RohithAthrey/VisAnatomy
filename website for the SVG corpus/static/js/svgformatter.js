@@ -11,8 +11,8 @@ function displaySVG(text) {
   parent.innerHTML=text
   let vis = d3.select("#bkModalContentsvg").select("svg")
   vis.attr("id", "vis")
-  .attr("viewBox", "0 0 1200 780")
-//   .attr("preserveAspectRatio", "xMaxYMax")
+  .attr("viewBox", "0 0 700 680")
+  .attr("preserveAspectRatio", "xMidYMid meet")
   .attr("width", "100%")
   .style("position", "absolute")
   
