@@ -7,7 +7,7 @@
     <div class="content">
         <div class="row">
             <!-- faceted browsing navigation -->
-            <div class="col s3" style="position: fixed; top: 70px; left: 0px; bottom: 0px; overflow-y: auto;"> 
+            <div class="col s4" style="position: fixed; top: 70px; left: 0px; bottom: 0px; overflow-y: auto;"> 
               <div id="browserFrom">
                 <form action="#" id ="facetedbrowsingform">
                     <div class="criteriagroup">
@@ -288,15 +288,14 @@
               </div>
             </div>
             <!-- search result image cards go here -->
-            <div class="col s9" style="position: fixed; top: 75px; right: 0px; bottom: 0px; overflow-y: auto;">
+            <div class="col s8" style="position: fixed; top: 75px; right: 0px; bottom: 0px; overflow-y: auto;">
               <!-- <span>Search Results....</span> -->
               
               <!-- TODO: submit user data -->
-              <a href="{{url_for('submit')}}" style="float: right; display: none;" id="nextButton"><button class="btn waves-effect waves-light" type="submit" name="action">Next</button></a>
               <!-- Modal Trigger -->
-              <a class="waves-effect waves-light btn modal-trigger" href="#bookmarkModal" style="float: right; margin-right: 2px;">Bookmarks</a>
+              <!-- <a class="waves-effect waves-light btn modal-trigger" href="#bookmarkModal" style="float: right; margin-right: 2px;">Bookmarks</a> -->
               <!-- Modal Trigger -->
-              <a class="waves-effect waves-light btn modal-trigger" href="#modal1" style="float: right; margin-right: 2px;">Instructions</a>
+              <!-- <a class="waves-effect waves-light btn modal-trigger" href="#modal1" style="float: right; margin-right: 2px;">Instructions</a> -->
 
               <div id="selectedterms">
                   <div class="chips chips-initial"></div>
@@ -308,99 +307,36 @@
       </div>
 
      <!-- Instructions Modal Structure -->
-  <div id="modal1" class="modal modal-fixed-footer">
-    <div class="modal-content">
-      <!-- experiment task for the user -->
-      <div class="flow-text">
-        <h5>Instructions</h5>
-          <p>
-              Palm oil production has been at the forefront of climate talk as a major driver of deforestation. 
-              This has led to drastic changes in consumer behavior as companies and people move away from consuming/using palm oil-based products. 
-              But is this claim true? Is palm oil production any more destructive than other vegetable oil crops being produced? <br>
-              You have been selected to create a visualization that will be submitted to the Iron Viz competition and have been provided with a dataset on: <br>
-              <ol>
-                  <li>The amount of land used to produce various vegetable crops</li>
-                  <li>The expected yield for vegetable oil crops</li>
-                  <li>The drivers for deforestation in Indoesia</li>
-              </ol>
-          </p>
-          <p style="text-align: left;">Your task is to create a visualization that communicates two key insights: <br>
-            <ul style="text-align: left;">
-                <li style="list-style-type: disc !important">
-                    <b><i>Only a small percentage of direct deforestation was driven by palm oil plantations. 
-                        Infact most of the land replaced by palm oil plantations were previously logged forests or scrubland (land destroyed by fire or other natural elements)</i></b>
-                </li>
-                <li style="list-style-type: disc !important">
-                    <b><i>Compared to other vegetable oil crops, Palm oil has higher yield per hectare of land. Hence requiring less land use to meet global demand.</i></b>
-                </li>
-            </ul>
-          </p>
-              
-          Your visualization will be judged based on how novel your design is and how well you communicate the key insights to your audience.
-      </div>
-    </div>
-    <div class="modal-footer">
-      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
-    </div>
-  </div>
-
+ 
   <!-- Bookmarks Modal Structure -->
   <div id="bookmarkModal" class="modal modal-fixed-footer">
     <div class="modal-content">
       <!-- bookmarked views -->
-      <div id="bkModalContent">
+      <div class="row">
+        <h3>Annotations View</h3>
+        <div class="col s7 " id="bkModalContentsvg" style="position: relative; padding-bottom: 92%;">
+          <!-- <div >
         
+          </div> -->
+        </div>
+        <div class="col s5">
+          <!-- <div id="bkModalContentjson"> -->
+            <!-- <pre id="json-display" style="width: 100%; height: 100%; margin-left: 25px;"></pre> -->
+            <div id="json-display"></div>
+          <!-- </div> -->
+        </div>
       </div>
+            
     </div>
     <div class="modal-footer">
       <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
     </div>
   </div>
   
-  <script type="text/javascript">
+  <!-- <script type="text/javascript">
    
     //set user details for logging purposes
     var userdetails= {{data|tojson}}
-    
-    var time =0;
-    if ("{{ data.condition }}".includes('b')){
-        time = 20
-    }else{
-        time = 35
-    }
-    console.log(time)
-    //update timer clock
-    document.getElementById("counter").style.display = "inline"
-    //count down timer
-    var currDate = new Date()
-    var countDownDate = currDate.getTime() + time*60000
-    var x = setInterval(function() {
-
-    // Get today's date and time
-    var now = new Date().getTime();
-
-    // Find the distance between now and the count down date
-    var distance = countDownDate - now;
-
-    // Time calculations for hours, minutes and seconds
-    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-    // Display the result in the element with id="demo"
-    document.getElementById("timer").innerHTML =  minutes + ":" + seconds;
-
-    // If the count down is finished, write some text
-    if (distance < 0) {
-    clearInterval(x);
-        document.getElementById("timer").innerHTML = "00:00";
-        document.getElementById("timer").style.color ="red";
-        document.getElementById("counter").style.color ="red";
-        alert('You have exceeded the time for this section. Please click on the "Next" button')
-    }
-    }, 1000);
-    setTimeout((d) =>{
-        document.getElementById("nextButton").style.display = "inline"
-    }, time*60000)
-  </script>
+  </script> -->
 </div>
 {% endblock %}

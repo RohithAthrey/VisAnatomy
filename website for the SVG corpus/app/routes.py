@@ -41,45 +41,6 @@ def loadUsers():
         return True
     return False
 
-@app.route("/task")
-def task():
-    # randomize participant among four conditions. generate a random identifier for their logs
-    # availconditions = ['1a', '1b', '2a', '2b']
-    condition  = '1a' #comment this out if deploying on server.
-
-    #check usermaps.txt was loaded
-    # loadedFile = loadUsers()
-    # if loadedFile:
-    #     print('usermaps.txt successfully loaded...')
-    # else:
-    #     print('Unable to load usermaps.txt...')
-    # condition =''
-    # assigned = False
-    # while not assigned:
-    #     condition = random.SystemRandom().choice(availconditions)
-    #     if conditions[condition] < 8: #TODO: replace with 8 after pilot is complete
-    #         conditions[condition]+=1
-    #         assigned = True
-    id = int(random.randint(1000,9999))
-    usermaps[id] = condition
-    dd = {"id": id, "condition": condition}
-    print(dd)
-    print(conditions)
-    # data = ''
-    # if loadedFile:
-    #     with open('usermaps.txt', "r") as f:
-    #         data = json.loads(f.read())
-    #         data.append(dd)
-    # else:
-    data =[dd,]
-
-    with open('usermaps.txt', 'w') as f:
-            f.write(json.dumps(data))
-    with open("app/logs/"+str(id)+".txt", "w") as f:
-        d = [dd,]
-        f.write(json.dumps(d))
-    return render_template("task.html", data = {"condition":condition, "id":id})
-
 @app.route("/main")
 def main():
     id="logs"
@@ -90,13 +51,9 @@ def scratch(filename):
     image = examples.getImage(filename)
     return render_template("scratch.html", image = image.__dict__)
 
-@app.route("/demo/<int:id>/<condition>/")
-def demo(id, condition):
-    return render_template("demo.html", data = {"condition":condition, "id":id})
-
-@app.route('/submit')
+@app.route('/submit', methods=["GET"]) #don't know why removing this causes the entire thing to just break
 def submit():
-    return render_template("end.html")
+    return None
 
 @app.route('/tags', methods=["GET"])
 def tags():
@@ -119,14 +76,15 @@ def getExamples():
 
 @app.route('/log', methods=['POST', 'GET'])
 def log():
-    if request.method == "POST":
-        data = request.json
-        file =""
-        # # print(data['log'])
-        with open("app/logs/"+"logs.txt", "r") as f:
-            file = json.loads(f.read())
-            file.append(data['log'])
-        with open("app/logs/"+str(data['id'])+".txt", "w") as f:
-            f.write(json.dumps(file))
-        return json.dumps({'success':True}), 200, {'ContentType':'application/json'} 
-    return json.dumps({'success':False}), 400, {'ContentType':'application/json'} 
+    # if request.method == "POST":
+        # data = request.json
+        # file =""
+        # # # print(data['log'])
+        # with open("app/logs/"+"logs.txt", "r") as f:
+        #     file = json.loads(f.read())
+        #     file.append(data['log'])
+        # with open("app/logs/"+str(data['id'])+".txt", "w") as f:
+        #     f.write(json.dumps(file))
+        # return json.dumps({'success':True}), 200, {'ContentType':'application/json'} 
+    # return json.dumps({'success':False}), 400, {'ContentType':'application/json'} 
+    return json.dumps({'success':True}), 200, {'ContentType':'application/json'} 

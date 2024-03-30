@@ -2,25 +2,25 @@
 var bookmarks = new Set()
 var oldtags = []
  
-function log(userevent,data){
-  fetch('/log',{
-    method:'POST',
-    headers: {
-    'Content-Type': 'application/json',
-    },
-    body: JSON.stringify({
-      "id": userdetails.id ? userdetails.id: null,
-      'log':{
-        "time": Date.now(),
-        "event": userevent,
-        "data": data,
-        "id": userdetails.id ? userdetails.id: null
-      }
-    })
-  }).catch((error) => {
-    console.error("Error:", error)
-  })
-}
+// function log(userevent,data){
+//   fetch('/log',{
+//     method:'POST',
+//     headers: {
+//     'Content-Type': 'application/json',
+//     },
+//     body: JSON.stringify({
+//       "id": userdetails.id ? userdetails.id: null,
+//       'log':{
+//         "time": Date.now(),
+//         "event": userevent,
+//         "data": data,
+//         "id": userdetails.id ? userdetails.id: null
+//       }
+//     })
+//   }).catch((error) => {
+//     console.error("Error:", error)
+//   })
+// }
 //populate the div for the examples cards with the examples
 function createExampleCards(examples){
   var exampleCards = document.getElementById("examplecards")
@@ -38,40 +38,41 @@ function createExampleCards(examples){
   while (i < examples.length){
     shortDesc = examples[i].description.split(" ").slice(0,10).join(" ")
     tags = examples[i].tag
-    var tagdiv = ''
-    tags.forEach((d) =>{
-      tagdiv += '<div class="search-chip">'+
-        d
-        +'<i class=" material-icons"></i>'+
-      '</div>'
-    })
+    altimg = "/static/images/sample-1.jpeg"
+
     var subdiv = document.createElement('div')
     source = ""
-    subdiv.className = "col s12 m6 l3"
+    subdiv.className = "col s4"
     subdiv.innerHTML += '<div class="card sticky-action">'+
-          '<div class="card-image waves-effect waves-block waves-light">'+
-            '<img class="activator" id="'+examples[i].filename+'" src="/static/ExampleFiles/'+examples[i].filename+'">'+
+        '<div class="card-image-pop">'+
+          '<div class="card-image waves-effect waves-block waves-light"  id="wholeCard">'+
+            '<img class="activator" id="'+examples[i].filename+'" src="/static/examples_png/'+examples[i].filename+'" alt="missing image">'+
           '</div>'+
           '<div class="card-content">'+
-            '<span class="card-title activator grey-text text-darken-4"><i class="material-icons right extext" id="'+examples[i].filename+'">more_vert</i></span>'+
+            // '<span class="card-title activator grey-text text-darken-4"><i class="material-icons right extext" id="'+examples[i].filename+'">more_vert</i></span>'+
             // '<p><a id="'+examples[i].filename+'" href="/static/ExampleFiles/'+examples[i].filename+'" target="_blank">Example source</a></p>'+
             // '<p><a id="'+examples[i].filename+'" onclick=expandExample("'+String(examples[i].filename)+'") target="_blank">Example source</a></p>'+
-            '<p><a id="'+examples[i].filename+'" onclick=expandExample("'+String(examples[i].filename)+'","'+String(examples[i].source)+'") target="_blank">Example source</a></p>'+
+            '<p><a class ="modal-trigger" id="'+examples[i].filename+'" href="#bookmarkModal" data-id="'+examples[i].filename+'">'+examples[i].filename.slice(0, -4)+'</a></p>'+
+            // '<p><a id="'+examples[i].filename+'" onclick=expandExample("'+String(examples[i].filename)+'","'+String(examples[i].source)+'")>' +examples[i].filename.slice(0, -4)+ '</a></p>'+
           '</div>'+
-          '<div class="card-reveal">'+
-            '<span class="card-title grey-text text-darken-4"><i class="material-icons right extext">close</i></span>'+
-            '<p>'+examples[i].description+'</p>'+
-          '</div>'+
+        '</div>'+
+          // '<div class="card-reveal">'+
+          //   '<span class="card-title grey-text text-darken-4"><i class="material-icons right extext">close</i></span>'+
+          //   '<p>'+examples[i].description+'</p>'+
+          // '</div>'+
           '<div class="card-action">'+
-            '<a href="javascript:void(0)"><i class="material-icons bk" id="bk_'+examples[i].filename+'">bookmark_border</i></a>'+
-            tagdiv+
+            // '<a href="javascript:void(0)"><i class="material-icons bk" id="bk_'+examples[i].filename+'">bookmark_border</i></a>'+
+            '<div class="search-chip">'+
+                tags
+              +'<i class=" material-icons"></i>'+
+            '</div>'
           '</div>'+        
         '</div>'
       
     div.appendChild(subdiv)
   
     //if fourth element in div then append to examplecards div and then reset.
-    if (div.childElementCount == 4 || i==examples.length-1){
+    if (div.childElementCount == 3 || i==examples.length-1){
       exampleCards.appendChild(div)
       div = document.createElement('div')
       div.className ="row"
@@ -79,8 +80,9 @@ function createExampleCards(examples){
     i++;
   }
    //add logging for viewed examples
-   logImageViews()
+  //  logImageViews()
 }
+
 
 function clearEndContent(){
   document.getElementById("wiz").style.display = "block"
@@ -108,7 +110,7 @@ function readMore(element){
 }
 
 function expandExample(filename, link){
-  log("clicked on example source", filename);
+  // log("clicked on example source", filename);
   console.log('clicked on example source', filename)
   // window.open("/scratch/"+filename+"/", "_blank");
   window.open(link, "_blank")
@@ -131,7 +133,7 @@ function initiateChips(data){
         },
         onChipDelete: (e,d) =>{
           chip =d.childNodes[0].textContent
-          log("removing tag", chip)
+          // log("removing tag", chip)
           var selectedtags = Array()
           $("input:checkbox[type=checkbox]:checked").each(function(){
             selectedtags.push($(this).val());
@@ -161,7 +163,11 @@ function initiateChips(data){
               i++
             }
           oldtags = selectedtags
-          fetchExamples(selectedtags)
+          if(selectedtags.length ==0){
+            fetchExamples("all")
+          }else{
+            fetchExamples(selectedtags)
+          }
         },
         onChipAdd: (e,d) =>{
           var selectedtags = Array()
@@ -178,7 +184,7 @@ function initiateChips(data){
             
           });
           
-          log('adding tag', getDifference(oldtags, selectedtags)[0])
+          // log('adding tag', getDifference(oldtags, selectedtags)[0])
           
           oldtags = selectedtags
           fetchExamples(selectedtags)
@@ -190,7 +196,7 @@ function initiateChips(data){
     })
 }
 function fetchExamples(selectedtags){
-  log("fetching example set", Array(selectedtags).join(","))
+  // log("fetching example set", Array(selectedtags).join(","))
    //get images that match tags form backend
    fetch('/examples', {
     method:'POST',
@@ -223,12 +229,12 @@ function formSubmission(){
       deletedTag = getDifference(selectedtags, oldtags)[0]
     }
     if (oldtags.length < selectedtags.length){
-      log('adding tag', getDifference(oldtags, selectedtags)[0])
+      // log('adding tag', getDifference(oldtags, selectedtags)[0])
     }
     var chipsData = M.Chips.getInstance($('.chips')).chipsData;
     chipsData.forEach(e =>{ 
       if (e.tag == deletedTag){
-        log('removing tag', e.tag)
+        // log('removing tag', e.tag)
       }else{
         if (!selectedtags.includes(e.tag)){
           selectedtags.push(e.tag)
@@ -247,10 +253,14 @@ function formSubmission(){
         )
         i++
       }
-    console.log('selected chips', chips)
+    // console.log('selected chips', chips)
     oldtags = selectedtags
     initiateChips(chips)
-    fetchExamples(selectedtags)
+    if (selectedtags.length ==0){
+      fetchExamples('all')
+    }else{
+      fetchExamples(selectedtags)
+    }
   })
 }
 
@@ -265,53 +275,52 @@ function initializeModal(){
 
   $(document).ready(function(){
     $('#bookmarkModal').modal({
-      onOpenStart: function(){
-        log("opened bookmarks", "")
-        bookmarkModal()
+      onOpenStart: function(modal, trigger){
+        // log("opened bookmarks", "")
+        
+        bookmarkModal(trigger.id)
       }
     });
   });
        
 }
-function bookmarkModal(){
-  var exampleCards = document.getElementById("bkModalContent")
+function bookmarkModal(id){
+  var exampleCards = document.getElementById("bkModalContentsvg")
+  // clear previous  content
   while(exampleCards.firstChild){
     exampleCards.removeChild(exampleCards.firstChild);
   }
 
-  // console.log(bookmarks)
-  if (bookmarks.size ==0){
-    exampleCards.innerHTML = "No Bookmarked Examples"
-  }
-
-  i=0
-  bk= Array.from(bookmarks)
-  var div =div = document.createElement('div')
-  div.className ="row"
+  fetch("/static/examples/"+id.replace("png", "svg"))
+  .then(r=> r.text())
+  .then((text)=>{
+    displaySVG(text)
+    // console.log("svg retrieved")
+  } )
   
-  while (i<bk.length){
-    // console.log(bk)
-    var subdiv = document.createElement('div')
-    subdiv.className = "col s12 m6"
-    subdiv.innerHTML += '<div class="card">'+
-          '<div class="card-image">'+
-            '<img id="'+bk[i]+'" src="/static/ExampleFiles/'+bk[i]+'" width=250 height=200>'+
-          '</div>'+
-          '<div class="card-content">'+
-          '</div>'+
-          '<div class="card-action">'+
-            // '<a href="javascript:void(0)"><i class="material-icons bk" id="bk_'+bk[i]+'">bookmark</i></a>'+
-          '</div>'+
-        '</div>'
-    div.appendChild(subdiv)
-    //if fourth element in div then append to examplecards div and then reset.
-    if (div.childElementCount == 2 || i==bk.length-1){
-      exampleCards.appendChild(div)
-      div = document.createElement('div')
-      div.className ="row"
+  fetch("/static/annotations/"+id.replace("png", "json"))
+  .then(r=> r.text())
+  .then((text)=>{
+    try {
+      // viewer= documen.querySelector("#json-display")
+      new JsonViewer({
+        value: JSON.parse(text),
+        defaultInspectDepth: 2,
+        theme: 'light'
+      }).render('#json-display') //https://www.jsdelivr.com/package/npm/@textea/json-viewer
+      // viewer.data=JSON.parse(text) //https://github.com/alenaksu/json-viewer
+      // $("span:contains('annotations:')").collapse("toggle")
+      
+    } catch (error) {
+      console.log(error)
+      j = '{"file": "missing"}'
+      new JsonViewer({
+        value: JSON.parse(j),
+        defaultInspectDepth: 2
+      }).render('#json-display')
     }
-    i++;
-  }
+  } )
+
 }
 
 function addBookmark(d){
@@ -319,46 +328,48 @@ function addBookmark(d){
   if (bookmarks.has(id)){
     bookmarks.delete(id)
     document.getElementById(d).innerText="bookmark_border"
-    log("removing bookmark", id)
+    // log("removing bookmark", id)
   }else{
     bookmarks.add(id)
     document.getElementById(d).innerText="bookmark"
-    log("adding bookmark", id)
+    // log("adding bookmark", id)
   }
 }
 
-function logImageViews(){
-  //log hover over image
-  document.querySelectorAll(".activator").forEach(item =>{
-    item.addEventListener("mouseover", (d)=>{
-      log("hover over example", d.target.id)
-    })
-  })
+// function logImageViews(){
+//   //log hover over image
+//   document.querySelectorAll(".activator").forEach(item =>{
+//     item.addEventListener("mouseover", (d)=>{
+//       log("hover over example", d.target.id)
+//     })
+//   })
   
-  // //log click on example source
-  // document.addEventListener('click', e =>{
-  //   const origin = e.target.closest('a');
-  //   if (origin.id)
-  //     console.log("expand example", origin.id)
-  //     log("clicked on example source", origin.id);
-  // })
+//   // //log click on example source
+//   // document.addEventListener('click', e =>{
+//   //   const origin = e.target.closest('a');
+//   //   if (origin.id)
+//   //     console.log("expand example", origin.id)
+//   //     log("clicked on example source", origin.id);
+//   // })
 
-  //log click on example description
-  document.querySelectorAll(".extext").forEach(item =>{
-    item.addEventListener("click", (d)=>{
-      if (d.target.id)
-      log("viewed example description", d.target.id);
-    })
-  })
+//   //log click on example description
+//   document.querySelectorAll(".extext").forEach(item =>{
+//     item.addEventListener("click", (d)=>{
+//       if (d.target.id)
+//       log("viewed example description", d.target.id);
+//     })
+//   })
 
-  // add onclick for bookmarks
-  document.querySelectorAll('i[class*="bk"]').forEach(item =>{
-    item.addEventListener("click", (d)=>{
-      if (d.target.id)
-       addBookmark(d.target.id)
-    })
-  })
-}
+//   // add onclick for bookmarks
+//   document.querySelectorAll('i[class*="bk"]').forEach(item =>{
+//     item.addEventListener("click", (d)=>{
+//       if (d.target.id)
+//        addBookmark(d.target.id)
+//     })
+//   })
+// }
+
+//main function that initializes the main page. 
 function init (){
  
     // $(document).ready(function(){

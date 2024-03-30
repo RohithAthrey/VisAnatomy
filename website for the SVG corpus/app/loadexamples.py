@@ -1,8 +1,8 @@
 from collections import defaultdict
 from typing import List
 import pandas as pd
-import copy
-import random
+import copy, random, json
+
 
 class Image:
     def __init__(self, filename:str, description:str, source:str, tags:list):
@@ -24,13 +24,21 @@ class Examples:
         self.tags = defaultdict(list)
         self.readTags()
     def readTags(self):
-        self.df = pd.read_csv('app/examples_details.csv')
-        
+        self.svgJson = json.load(open("../SVG_NAMES.json"))
+        self.df = pd.read_csv('app/examples_collection_output.csv')
+        self.df = self.df.dropna()
         # I need some structure that stores a list of all tags and the example filenames, descriptions and source link for each file in that tag
-        for index, row in self.df.iterrows():
-            image = Image(row["Filename"], row["Description"], row["sourceLink"], [r.strip().lower() for r in row["Tags"].split(",")])
-            for tag in row["Tags"].split(","):
-                self.tags[tag.strip().lower()].append(image)
+        for k in self.svgJson:
+            row = self.df.loc[self.df['Filename']==k.replace(".svg", ".png")]
+            if row.empty:
+                print("Missing file:", k)
+                continue
+        # for index, row in self.df.iterrows():
+            row = row.iloc[0]
+            # print(row["Filename"])
+            image = Image(row["Filename"], row["Description"], row["Link"], row["Tag"]) #might switch out description with Type
+            # for tag in row["Tag"].split(","):
+            self.tags[row["Tag"].strip().lower()].append(image)
         #just sanity checking.
         # for t in self.tags:
         #     print(t)
@@ -38,6 +46,7 @@ class Examples:
     def getImages(self, tag) -> list:
         examples = []
         examples_ids =set()
+        print(tag)
         for t in tag:
             for image in self.tags[t]:
                 if image.filename in examples_ids:
@@ -45,10 +54,12 @@ class Examples:
                 else:
                     img = copy.deepcopy(image)
                     img = img.__dict__
-                    img["tag"] = list(image.getMatchingTags(tag))
+                    # img["tag"] = list(image.getMatchingTags(tag))
+                    img["tag"] = t
                     examples.append(img)
                     examples_ids.add(img["filename"])
         random.shuffle(examples)
+        print(examples)
         return examples
 
     def getAllImages(self) -> list:
@@ -61,7 +72,7 @@ class Examples:
                 else:
                     img = copy.deepcopy(image)
                     img = img.__dict__
-                    img["tag"] = []
+                    img["tag"] = [] #why do I have this here?
                     examples.append(img)
                     examples_ids.add(img["filename"])
         
