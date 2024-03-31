@@ -583,7 +583,7 @@ function dertermineChannelBasedBatchSelections(elementType) {
     case "rect":
     case "circle":
     case "ellipse":
-    case "ploygon":
+    case "polygon":
     case "path":
       typeBasedChannels = ["fill"];
       break;

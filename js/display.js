@@ -57,7 +57,7 @@ function setClassForSpecificElements(element) {
       "text",
       "line",
       "polyline",
-      "polygon", // Fixed typo 'ploygon' to 'polygon'
+      "polygon", // Fixed typo 'polygon' to 'polygon'
       "path",
       "image",
       "use",

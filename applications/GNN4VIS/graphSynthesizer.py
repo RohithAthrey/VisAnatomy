@@ -33,7 +33,7 @@ markTypeGroundtruths = [
   "Straight Line",
   "Polyline",
   "Rectangle",
-  "Ploygon",
+  "Polygon",
   "geoPolygon",
   "Circle",
   "Ellipse",

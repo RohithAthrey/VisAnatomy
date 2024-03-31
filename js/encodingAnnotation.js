@@ -54,7 +54,7 @@ const typeSpecificChannels = {
     "polarAngle",
     "polarRadius",
   ],
-  Ploygon: [
+  Polygon: [
     "x",
     "y",
     "vertices",
