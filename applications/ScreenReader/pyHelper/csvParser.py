@@ -21,7 +21,7 @@ def extract_province_city_info(csv_file):
 
 
 script_dir = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
-file_path = os.path.join(script_dir, "targeted SVGs with Annotations", "GeoHeatmap9_data.csv")
+file_path = os.path.join(script_dir, "fiveCharts", "GeoHeatmap9_data.csv")
 unique_provinces, province_city_dict = extract_province_city_info(file_path)
 # Print the unique provinces
 print("Unique Provinces:", unique_provinces)

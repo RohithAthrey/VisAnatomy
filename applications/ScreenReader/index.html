@@ -92,11 +92,7 @@
             document.getElementById("chart-svg").innerHTML = xhr.responseText;
           }
         };
-        xhr.open(
-          "GET",
-          "targeted SVGs with Annotations/" + chartName + ".svg",
-          true
-        );
+        xhr.open("GET", "fiveCharts/" + chartName + ".svg", true);
         xhr.send();
         console.clear();
         switch (chartName) {

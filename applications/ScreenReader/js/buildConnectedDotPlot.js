@@ -12,11 +12,7 @@ function initilizeConnectedDotPlot() {
       builtTree_connectedDotPlot(annotationData.annotations);
     }
   };
-  jsonXhr.open(
-    "GET",
-    "targeted SVGs with Annotations/" + chartName + ".json",
-    true
-  );
+  jsonXhr.open("GET", "fiveCharts/" + chartName + ".json", true);
   jsonXhr.send();
 }
 
