@@ -127,8 +127,9 @@ function builtTree_connectedDotPlot(annotation) {
     });
   });
 
-  console.log(annotation);
   console.log(treeRepresentation);
+  document.getElementById("navigation").innerHTML =
+    treeRepresentation["root"].name;
   addKeyBoardNavigation_connectedDotPlot(treeRepresentation, mainChartMarks);
 }
 
@@ -164,6 +165,8 @@ function addKeyBoardNavigation_connectedDotPlot(treeRepresentation, allMarks) {
           }
           lastKeyPressedDiv.textContent =
             "Last key pressed: ArrowRight + Shift";
+          document.getElementById("navigation").innerHTML =
+            ("Navigated to:", treeRepresentation[currentNode].name);
         } else {
           navigateRight_connectedDotPlot(treeRepresentation);
           lastKeyPressedDiv.textContent = "Last key pressed: ArrowRight";
@@ -195,6 +198,8 @@ function addKeyBoardNavigation_connectedDotPlot(treeRepresentation, allMarks) {
             }
           }
           lastKeyPressedDiv.textContent = "Last key pressed: ArrowLeft + Shift";
+          document.getElementById("navigation").innerHTML =
+            ("Navigated to:", treeRepresentation[currentNode].name);
         } else {
           navigateLeft_connectedDotPlot(treeRepresentation);
           lastKeyPressedDiv.textContent = "Last key pressed: ArrowLeft";
@@ -218,7 +223,8 @@ function navigateUp_connectedDotPlot(treeRepresentation) {
   // Navigate to the parent node
   if (treeRepresentation[currentNode].parent !== null) {
     currentNode = treeRepresentation[currentNode].parent;
-    console.log("Navigated to:", treeRepresentation[currentNode].name);
+    document.getElementById("navigation").innerHTML =
+      ("Navigated to:", treeRepresentation[currentNode].name);
   }
 }
 
@@ -230,7 +236,8 @@ function navigateRight_connectedDotPlot(treeRepresentation) {
   var currentIndex = siblings.indexOf(currentNode);
   if (currentIndex < siblings.length - 1) {
     currentNode = siblings[currentIndex + 1];
-    console.log("Navigated to:", treeRepresentation[currentNode].name);
+    document.getElementById("navigation").innerHTML =
+      ("Navigated to:", treeRepresentation[currentNode].name);
   }
 }
 
@@ -238,7 +245,8 @@ function navigateDown_connectedDotPlot(treeRepresentation) {
   // Navigate to the first child node
   if (treeRepresentation[currentNode].children !== null) {
     currentNode = treeRepresentation[currentNode].children[0];
-    console.log("Navigated to:", treeRepresentation[currentNode].name);
+    document.getElementById("navigation").innerHTML =
+      ("Navigated to:", treeRepresentation[currentNode].name);
   }
 }
 
@@ -250,6 +258,7 @@ function navigateLeft_connectedDotPlot(treeRepresentation) {
   var currentIndex = siblings.indexOf(currentNode);
   if (currentIndex > 0) {
     currentNode = siblings[currentIndex - 1];
-    console.log("Navigated to:", treeRepresentation[currentNode].name);
+    document.getElementById("navigation").innerHTML =
+      ("Navigated to:", treeRepresentation[currentNode].name);
   }
 }

@@ -500,7 +500,7 @@ function builtTree_geoHeatmap(annotation) {
     ProvinceCityMap[province].map((city) => {
       treeRepresentation[city] = {
         level: 3,
-        name: city,
+        name: province + "-" + city + " Cases: " + cityCases[city],
         marks: cityMarks[city],
         children: null,
         parent: "Province_" + province,
@@ -535,7 +535,11 @@ function builtTree_geoHeatmap(annotation) {
       .flat();
     treeRepresentation[interval] = {
       level: 2,
-      name: interval,
+      name:
+        "Case Number Between " +
+        caseIntervals[interval][0] +
+        " - " +
+        caseIntervals[interval][1],
       marks: cityInThisInterval,
       children: null,
       parent: "Legend",
@@ -543,6 +547,8 @@ function builtTree_geoHeatmap(annotation) {
   });
 
   console.log(treeRepresentation);
+  document.getElementById("navigation").innerHTML =
+    treeRepresentation["root"].name;
   addKeyBoardNavigation_geoHeatmap(treeRepresentation, mainChartMarks);
 }
 
@@ -585,7 +591,8 @@ function navigateUp_geoHeatmap(treeRepresentation) {
   // Navigate to the parent node
   if (treeRepresentation[currentNode].parent !== null) {
     currentNode = treeRepresentation[currentNode].parent;
-    console.log("Navigated to:", treeRepresentation[currentNode].name);
+    document.getElementById("navigation").innerHTML =
+      ("Navigated to:", treeRepresentation[currentNode].name);
   }
 }
 
@@ -597,7 +604,8 @@ function navigateRight_geoHeatmap(treeRepresentation) {
   var currentIndex = siblings.indexOf(currentNode);
   if (currentIndex < siblings.length - 1) {
     currentNode = siblings[currentIndex + 1];
-    console.log("Navigated to:", treeRepresentation[currentNode].name);
+    document.getElementById("navigation").innerHTML =
+      ("Navigated to:", treeRepresentation[currentNode].name);
   }
 }
 
@@ -605,7 +613,8 @@ function navigateDown_geoHeatmap(treeRepresentation) {
   // Navigate to the first child node
   if (treeRepresentation[currentNode].children !== null) {
     currentNode = treeRepresentation[currentNode].children[0];
-    console.log("Navigated to:", treeRepresentation[currentNode].name);
+    document.getElementById("navigation").innerHTML =
+      ("Navigated to:", treeRepresentation[currentNode].name);
   }
 }
 
@@ -617,6 +626,7 @@ function navigateLeft_geoHeatmap(treeRepresentation) {
   var currentIndex = siblings.indexOf(currentNode);
   if (currentIndex > 0) {
     currentNode = siblings[currentIndex - 1];
-    console.log("Navigated to:", treeRepresentation[currentNode].name);
+    document.getElementById("navigation").innerHTML =
+      ("Navigated to:", treeRepresentation[currentNode].name);
   }
 }

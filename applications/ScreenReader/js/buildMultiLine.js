@@ -47,7 +47,7 @@ function builtTree_multiLine(annotation) {
   // add the first half month
   treeRepresentation["1_half"] = {
     level: 1,
-    name: "The first half month",
+    name: "Daily sessions and users at www.highcharts.com for the first half month",
     marks: mainChartMarks.slice(0, Math.floor(length / 2)),
     children: ["1_forth", "2_forth"],
     parent: "root",
@@ -56,7 +56,7 @@ function builtTree_multiLine(annotation) {
   // add the first forth month
   treeRepresentation["1_forth"] = {
     level: 2,
-    name: "The first forth month",
+    name: "Daily sessions and users at www.highcharts.com for the first forth month",
     marks: mainChartMarks.slice(0, Math.floor(length / 4)),
     children: null,
     parent: "1_half",
@@ -65,7 +65,7 @@ function builtTree_multiLine(annotation) {
   // add the second forth month
   treeRepresentation["2_forth"] = {
     level: 2,
-    name: "The second forth month",
+    name: "Daily sessions and users at www.highcharts.com for the second forth month",
     marks: mainChartMarks.slice(Math.floor(length / 4), Math.floor(length / 2)),
     children: null,
     parent: "1_half",
@@ -74,7 +74,7 @@ function builtTree_multiLine(annotation) {
   // add the second half month
   treeRepresentation["2_half"] = {
     level: 1,
-    name: "The second half month",
+    name: "Daily sessions and users at www.highcharts.com for the second half month",
     marks: mainChartMarks.slice(Math.floor(length / 2), length),
     children: ["3_forth", "4_forth"],
     parent: "root",
@@ -83,7 +83,7 @@ function builtTree_multiLine(annotation) {
   // add the third forth month
   treeRepresentation["3_forth"] = {
     level: 2,
-    name: "The third forth month",
+    name: "Daily sessions and users at www.highcharts.com for the third forth month",
     marks: mainChartMarks.slice(
       Math.floor(length / 2),
       Math.floor(length / 2) + Math.floor(length / 4)
@@ -95,7 +95,7 @@ function builtTree_multiLine(annotation) {
   // add the fourth forth month
   treeRepresentation["4_forth"] = {
     level: 2,
-    name: "The fourth forth month",
+    name: "Daily sessions and users at www.highcharts.com for the fourth forth month",
     marks: mainChartMarks.slice(
       Math.floor(length / 2) + Math.floor(length / 4),
       length
@@ -113,22 +113,30 @@ function builtTree_multiLine(annotation) {
     .sort((a, b) => a.left - b.left);
   for (let i = 0; i < horiGridLines.length; i++) {
     for (let j = 0; j < vetiGridLines.length; j++) {
+      thisMarks = mainChartMarks.filter(
+        (mark) =>
+          parseFloat(mark.top) >= parseFloat(horiGridLines[i].top) &&
+          parseFloat(mark.left) >= parseFloat(vetiGridLines[j].left) &&
+          parseFloat(mark.top) <
+            (horiGridLines[i + 1]
+              ? parseFloat(horiGridLines[i + 1].top)
+              : 10000000) &&
+          parseFloat(mark.left) <
+            (vetiGridLines[j + 1]
+              ? parseFloat(vetiGridLines[j + 1].left)
+              : 10000000)
+      );
       treeRepresentation[i + "_" + j] = {
         level: 3,
-        name: "The grid view, now at " + i + "," + j,
-        marks: mainChartMarks.filter(
-          (mark) =>
-            parseFloat(mark.top) >= parseFloat(horiGridLines[i].top) &&
-            parseFloat(mark.left) >= parseFloat(vetiGridLines[j].left) &&
-            parseFloat(mark.top) <
-              (horiGridLines[i + 1]
-                ? parseFloat(horiGridLines[i + 1].top)
-                : 10000000) &&
-            parseFloat(mark.left) <
-              (vetiGridLines[j + 1]
-                ? parseFloat(vetiGridLines[j + 1].left)
-                : 10000000)
-        ),
+        name:
+          "The grid view, now at " +
+          i +
+          "," +
+          j +
+          ", contains " +
+          thisMarks.length +
+          " marks",
+        marks: thisMarks,
         children: null,
         parent: "root",
       };
@@ -136,6 +144,8 @@ function builtTree_multiLine(annotation) {
   }
 
   console.log(treeRepresentation);
+  document.getElementById("navigation").innerHTML =
+    treeRepresentation["root"].name;
   addKeyBoardNavigation_multiLine(treeRepresentation, mainChartMarks);
 }
 
@@ -170,11 +180,13 @@ function addKeyBoardNavigation_multiLine(treeRepresentation, allMarks) {
             parseInt(currentNode.split("_")[1]);
           if (treeRepresentation[nextNode] !== undefined) {
             currentNode = nextNode;
-            console.log("Navigated to:", treeRepresentation[currentNode].name);
+            document.getElementById("navigation").innerHTML =
+              ("Navigated to:", treeRepresentation[currentNode].name);
           }
         } else {
           currentNode = "0_0";
-          console.log("Navigated to: the grid view, now at 0,0");
+          document.getElementById("navigation").innerHTML =
+            ("Navigated to:", treeRepresentation[currentNode].name);
         }
         break;
       case "w":
@@ -186,7 +198,8 @@ function addKeyBoardNavigation_multiLine(treeRepresentation, allMarks) {
           parseInt(currentNode.split("_")[1]);
         if (treeRepresentation[nextNode] !== undefined) {
           currentNode = nextNode;
-          console.log("Navigated to:", treeRepresentation[currentNode].name);
+          document.getElementById("navigation").innerHTML =
+            ("Navigated to:", treeRepresentation[currentNode].name);
         }
         break;
       case "a":
@@ -197,7 +210,8 @@ function addKeyBoardNavigation_multiLine(treeRepresentation, allMarks) {
           (parseInt(currentNode.split("_")[1]) - 1);
         if (treeRepresentation[nextNode] !== undefined) {
           currentNode = nextNode;
-          console.log("Navigated to:", treeRepresentation[currentNode].name);
+          document.getElementById("navigation").innerHTML =
+            ("Navigated to:", treeRepresentation[currentNode].name);
         }
         break;
       case "d":
@@ -208,7 +222,8 @@ function addKeyBoardNavigation_multiLine(treeRepresentation, allMarks) {
           (parseInt(currentNode.split("_")[1]) + 1);
         if (treeRepresentation[nextNode] !== undefined) {
           currentNode = nextNode;
-          console.log("Navigated to:", treeRepresentation[currentNode].name);
+          document.getElementById("navigation").innerHTML =
+            ("Navigated to:", treeRepresentation[currentNode].name);
         }
         break;
       default:
@@ -229,7 +244,8 @@ function navigateUp_multiLine(treeRepresentation) {
   // Navigate to the parent node
   if (treeRepresentation[currentNode].parent !== null) {
     currentNode = treeRepresentation[currentNode].parent;
-    console.log("Navigated to:", treeRepresentation[currentNode].name);
+    document.getElementById("navigation").innerHTML =
+      ("Navigated to:", treeRepresentation[currentNode].name);
   }
 }
 
@@ -237,7 +253,8 @@ function navigateDown_multiLine(treeRepresentation) {
   // Navigate to the right node
   if (treeRepresentation[currentNode].children !== null) {
     currentNode = treeRepresentation[currentNode].children[0];
-    console.log("Navigated to:", treeRepresentation[currentNode].name);
+    document.getElementById("navigation").innerHTML =
+      ("Navigated to:", treeRepresentation[currentNode].name);
   }
 }
 
@@ -254,7 +271,8 @@ function navigateRight_multiLine(treeRepresentation) {
   var currentIndex = siblings.indexOf(currentNode);
   if (currentIndex < siblings.length - 1) {
     currentNode = siblings[currentIndex + 1];
-    console.log("Navigated to:", treeRepresentation[currentNode].name);
+    document.getElementById("navigation").innerHTML =
+      ("Navigated to:", treeRepresentation[currentNode].name);
   }
 }
 
@@ -270,6 +288,7 @@ function navigateLeft_multiLine(treeRepresentation) {
   var currentIndex = siblings.indexOf(currentNode);
   if (currentIndex > 0) {
     currentNode = siblings[currentIndex - 1];
-    console.log("Navigated to:", treeRepresentation[currentNode].name);
+    document.getElementById("navigation").innerHTML =
+      ("Navigated to:", treeRepresentation[currentNode].name);
   }
 }

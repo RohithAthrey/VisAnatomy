@@ -117,6 +117,8 @@ function builtTree_stackedBar(annotation) {
   });
 
   console.log(treeRepresentation);
+  document.getElementById("navigation").innerHTML =
+    treeRepresentation["root"].name;
   addKeyBoardNavigation_stackedBar(treeRepresentation, mainChartMarks);
 }
 
@@ -159,7 +161,8 @@ function navigateUp_stackedBar(treeRepresentation) {
   // Navigate to the parent node
   if (treeRepresentation[currentNode].parent !== null) {
     currentNode = treeRepresentation[currentNode].parent;
-    console.log("Navigated to:", treeRepresentation[currentNode].name);
+    document.getElementById("navigation").innerHTML =
+      ("Navigated to:", treeRepresentation[currentNode].name);
   }
 }
 
@@ -171,7 +174,8 @@ function navigateRight_stackedBar(treeRepresentation) {
   var currentIndex = siblings.indexOf(currentNode);
   if (currentIndex < siblings.length - 1) {
     currentNode = siblings[currentIndex + 1];
-    console.log("Navigated to:", treeRepresentation[currentNode].name);
+    document.getElementById("navigation").innerHTML =
+      ("Navigated to:", treeRepresentation[currentNode].name);
   }
 }
 
@@ -179,7 +183,8 @@ function navigateDown_stackedBar(treeRepresentation) {
   // Navigate to the first child node
   if (treeRepresentation[currentNode].children !== null) {
     currentNode = treeRepresentation[currentNode].children[0];
-    console.log("Navigated to:", treeRepresentation[currentNode].name);
+    document.getElementById("navigation").innerHTML =
+      ("Navigated to:", treeRepresentation[currentNode].name);
   }
 }
 
@@ -191,6 +196,7 @@ function navigateLeft_stackedBar(treeRepresentation) {
   var currentIndex = siblings.indexOf(currentNode);
   if (currentIndex > 0) {
     currentNode = siblings[currentIndex - 1];
-    console.log("Navigated to:", treeRepresentation[currentNode].name);
+    document.getElementById("navigation").innerHTML =
+      ("Navigated to:", treeRepresentation[currentNode].name);
   }
 }
