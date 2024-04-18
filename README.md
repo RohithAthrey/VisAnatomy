@@ -1,4 +1,4 @@
-# VisCorpus
+# VisAnatomy
 
 ## Launch the UI
 python server.py
