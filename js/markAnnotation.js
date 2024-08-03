@@ -99,6 +99,10 @@ function getSublistId(optionValue) {
 }
 
 function initilizeMarkAnnotation() {
+  // reset areaMarkBaselineSelection and markTypeSelection selections to none
+  document.getElementById("areaMarkBaselineSelection").value = "none";
+  document.getElementById("markTypeSelection").value = "none";
+
   referenceElements.forEach((rid) => {
     d3.select("#" + rid).style("opacity", "0.1");
   });
@@ -480,6 +484,11 @@ function markAnnotationChanged(attr) {
         "mark" + attr + "Selection"
       ).value;
       markInfo[selectedMarkID][attr] = thisValue;
+    } else if (attr === "areaMarkBaseline") {
+      let thisValue = document.getElementById(
+        "areaMarkBaselineSelection"
+      ).value;
+      markInfo[selectedMarkID][attr] = thisValue;
     } else {
       markInfo[selectedMarkID].Role = attr;
     }
@@ -502,6 +511,10 @@ function showMarkTypeRole(mark, markDiv) {
   markDiv.appendChild(typeTag);
   if (mark["Type"] !== "none") {
     typeTag.innerHTML = "&nbsp;(" + mark["Type"] + ", ";
+
+    if (mark["Type"] === "Area") {
+      typeTag.innerHTML += "baseline: " + mark["areaMarkBaseline"] + ", ";
+    }
   } else {
     typeTag.innerHTML = "&nbsp;(?, ";
   }
