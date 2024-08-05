@@ -1,58 +1,95 @@
-<svg width="641" height="368">
-  <clipPath id="a">
-    <path d="M-1-1h643v370H-1z"/>
-  </clipPath>
-  <g class="wj-header" clip-path="url(#a)">
-    <text x="223.5" y="20.5" fill="#666" class="wj-title">Climate of New York</text>
+<svg xmlns="http://www.w3.org/2000/svg" style="width:100%;height:1000;overflow:hidden">
+  <defs>
+    <clipPath clip-rule="evenodd" id="a">
+      <path d="M27.5 51.5h776v321h-776Z" stroke="#000" fill="none"/>
+    </clipPath>
+  </defs>
+  <path d="M0 0h809v400H0Z" fill="#FFF"/>
+  <path d="M27 51h776v321H27Z" fill="none"/>
+  <path d="M92.5 51.5v321m64-321v321m65-321v321m65-321v321m64-321v321m65-321v321m65-321v321m64-321v321m65-321v321m65-321v321m64-321v321m65-321v321m-776-46h776m-776-46h776m-776-46h776m-776-45h776m-776-46h776m-776-46h776m-776-46h776m-776 321h776m-776 0v4m65-4v4m64-4v4m65-4v4m65-4v4m64-4v4m65-4v4m65-4v4m64-4v4m65-4v4m65-4v4m64-4v4m65-4v4" stroke="color(srgb 0.258824 0.258824 0.258824 / 0.08)" fill="none"/>
+  <g clip-path="url(#a)">
+    <path d="M46.5 271.5h26v55h-26Z" stroke="#0e5d8a" fill="#1274AC" class="k-chart-point" aria-label="5 - 11" aria-roledescription="Point"/>
+    <path d="M111.5 253.5h26v73h-26Z" stroke="#0e5d8a" fill="#1274AC" class="k-chart-point" aria-label="5 - 13" aria-roledescription="Point"/>
+    <path d="M176.5 234.5h26v74h-26Z" stroke="#0e5d8a" fill="#1274AC" class="k-chart-point" aria-label="7 - 15" aria-roledescription="Point"/>
+    <path d="M240.5 198.5h26v82h-26Z" stroke="#0e5d8a" fill="#1274AC" class="k-chart-point" aria-label="10 - 19" aria-roledescription="Point"/>
+    <path d="M305.5 161.5h26v92h-26Z" stroke="#0e5d8a" fill="#1274AC" class="k-chart-point" aria-label="13 - 23" aria-roledescription="Point"/>
+    <path d="M370.5 115.5h26v101h-26Z" stroke="#0e5d8a" fill="#1274AC" class="k-chart-point" aria-label="17 - 28" aria-roledescription="Point"/>
+    <path d="M434.5 97.5h26v92h-26Z" stroke="#0e5d8a" fill="#1274AC" class="k-chart-point" aria-label="20 - 30" aria-roledescription="Point"/>
+    <path d="M 499 97.5h26v92h-26Z" stroke="#0e5d8a" fill="#1274AC" class="k-chart-point" aria-label="20 - 30" aria-roledescription="Point"/>
+    <path d="M564.5 134.5h26v82h-26Z" stroke="#0e5d8a" fill="#1274AC" class="k-chart-point" aria-label="17 - 26" aria-roledescription="Point"/>
+    <path d="M628.5 170.5h26v83h-26Z" stroke="#0e5d8a" fill="#1274AC" class="k-chart-point" aria-label="13 - 22" aria-roledescription="Point"/>
+    <path d="M693.5 225.5h26v64h-26Z" stroke="#0e5d8a" fill="#1274AC" class="k-chart-point" aria-label="9 - 16" aria-roledescription="Point"/>
+    <path d="M758.5 253.5h26v64h-26Z" stroke="#0e5d8a" fill="#1274AC" class="k-chart-point" aria-label="6 - 13" aria-roledescription="Point"/>
+    <path d="M46.4 330.143h25.867v22H46.4Z" fill="#FFF" fill-opacity=".6"/>
+    <text x="47.833" y="345.143" fill="#424242" style="font:400 11.998px sans-serif;white-space:pre">5 °C</text>
+    <path d="M46.4 245.114h25.867v22H46.4Z" fill="#FFF" fill-opacity=".6"/>
+    <text x="44.833" y="260.114" fill="#424242" style="font:400 11.998px sans-serif;white-space:pre">11 °C</text>
+    <path d="M111.067 330.143h25.866v22h-25.866Z" fill="#FFF" fill-opacity=".6"/>
+    <text x="112.5" y="345.143" fill="#424242" style="font:400 11.998px sans-serif;white-space:pre">5 °C</text>
+    <path d="M111.067 226.771h25.866v22h-25.866Z" fill="#FFF" fill-opacity=".6"/>
+    <text x="109" y="241.771" fill="#424242" style="font:400 11.998px sans-serif;white-space:pre">13 °C</text>
+    <path d="M175.733 311.8H201.6v22h-25.867Z" fill="#FFF" fill-opacity=".6"/>
+    <text x="177.167" y="326.8" fill="#424242" style="font:400 11.998px sans-serif;white-space:pre">7 °C</text>
+    <path d="M175.733 208.429H201.6v22h-25.867Z" fill="#FFF" fill-opacity=".6"/>
+    <text x="173.667" y="223.429" fill="#424242" style="font:400 11.998px sans-serif;white-space:pre">15 °C</text>
+    <path d="M240.4 284.286h25.867v22H240.4Z" fill="#FFF" fill-opacity=".6"/>
+    <text x="238.333" y="299.286" fill="#424242" style="font:400 11.998px sans-serif;white-space:pre">10 °C</text>
+    <path d="M240.4 171.743h25.867v22H240.4Z" fill="#FFF" fill-opacity=".6"/>
+    <text x="238.333" y="186.743" fill="#424242" style="font:400 11.998px sans-serif;white-space:pre">19 °C</text>
+    <path d="M305.067 256.771h25.866v22h-25.866Z" fill="#FFF" fill-opacity=".6"/>
+    <text x="303" y="271.771" fill="#424242" style="font:400 11.998px sans-serif;white-space:pre">13 °C</text>
+    <path d="M305.067 135.057h25.866v22h-25.866Z" fill="#FFF" fill-opacity=".6"/>
+    <text x="303" y="150.057" fill="#424242" style="font:400 11.998px sans-serif;white-space:pre">23 °C</text>
+    <path d="M369.733 220.086H395.6v22h-25.867Z" fill="#FFF" fill-opacity=".6"/>
+    <text x="367.667" y="235.086" fill="#424242" style="font:400 11.998px sans-serif;white-space:pre">17 °C</text>
+    <path d="M369.733 89.2H395.6v22h-25.867Z" fill="#FFF" fill-opacity=".6"/>
+    <text x="367.667" y="104.2" fill="#424242" style="font:400 11.998px sans-serif;white-space:pre">28 °C</text>
+    <path d="M434.4 192.571h25.867v22H434.4Z" fill="#FFF" fill-opacity=".6"/>
+    <text x="432.333" y="207.571" fill="#424242" style="font:400 11.998px sans-serif;white-space:pre">20 °C</text>
+    <path d="M434.4 70.857h25.867v22H434.4Z" fill="#FFF" fill-opacity=".6"/>
+    <text x="432.333" y="85.857" fill="#424242" style="font:400 11.998px sans-serif;white-space:pre">30 °C</text>
+    <path d="M499.067 192.571h25.866v22h-25.866Z" fill="#FFF" fill-opacity=".6"/>
+    <text x="497" y="207.571" fill="#424242" style="font:400 11.998px sans-serif;white-space:pre">20 °C</text>
+    <path d="M499.067 70.857h25.866v22h-25.866Z" fill="#FFF" fill-opacity=".6"/>
+    <text x="497" y="85.857" fill="#424242" style="font:400 11.998px sans-serif;white-space:pre">30 °C</text>
+    <path d="M563.733 220.086H589.6v22h-25.867Z" fill="#FFF" fill-opacity=".6"/>
+    <text x="561.667" y="235.086" fill="#424242" style="font:400 11.998px sans-serif;white-space:pre">17 °C</text>
+    <path d="M563.733 107.543H589.6v22h-25.867Z" fill="#FFF" fill-opacity=".6"/>
+    <text x="561.667" y="122.543" fill="#424242" style="font:400 11.998px sans-serif;white-space:pre">26 °C</text>
+    <path d="M628.4 256.771h25.867v22H628.4Z" fill="#FFF" fill-opacity=".6"/>
+    <text x="626.333" y="271.771" fill="#424242" style="font:400 11.998px sans-serif;white-space:pre">13 °C</text>
+    <path d="M628.4 144.229h25.867v22H628.4Z" fill="#FFF" fill-opacity=".6"/>
+    <text x="626.333" y="159.229" fill="#424242" style="font:400 11.998px sans-serif;white-space:pre">22 °C</text>
+    <path d="M693.067 293.457h25.866v22h-25.866Z" fill="#FFF" fill-opacity=".6"/>
+    <text x="694.5" y="308.457" fill="#424242" style="font:400 11.998px sans-serif;white-space:pre">9 °C</text>
+    <path d="M693.067 199.257h25.866v22h-25.866Z" fill="#FFF" fill-opacity=".6"/>
+    <text x="691" y="214.257" fill="#424242" style="font:400 11.998px sans-serif;white-space:pre">16 °C</text>
+    <path d="M757.733 320.971H783.6v22h-25.867Z" fill="#FFF" fill-opacity=".6"/>
+    <text x="759.167" y="335.971" fill="#424242" style="font:400 11.998px sans-serif;white-space:pre">6 °C</text>
+    <path d="M757.733 226.771H783.6v22h-25.867Z" fill="#FFF" fill-opacity=".6"/>
+    <text x="755.667" y="241.771" fill="#424242" style="font:400 11.998px sans-serif;white-space:pre">13 °C</text>
   </g>
-  <g class="wj-footer" clip-path="url(#a)"/>
-  <path fill="transparent" class="wj-plot-area" d="M67.5 41.5h560.1v296H67.5z"/>
-  <g class="wj-axis-x" clip-path="url(#a)">
-    <text x="79.6" y="360" fill="#666" class="wj-label">Jan</text>
-    <path stroke="#666" class="wj-tick" d="M90.9 337.5v4"/>
-    <text x="125.6" y="360" fill="#666" class="wj-label">Feb</text>
-    <path stroke="#666" class="wj-tick" d="M137.5 337.5v4"/>
-    <text x="172" y="360" fill="#666" class="wj-label">Mar</text>
-    <path stroke="#666" class="wj-tick" d="M184.2 337.5v4"/>
-    <text x="219.8" y="360" fill="#666" class="wj-label">Apr</text>
-    <path stroke="#666" class="wj-tick" d="M230.9 337.5v4"/>
-    <text x="264.2" y="360" fill="#666" class="wj-label">May</text>
-    <path stroke="#666" class="wj-tick" d="M277.6 337.5v4"/>
-    <text x="312.8" y="360" fill="#666" class="wj-label">Jun</text>
-    <path stroke="#666" class="wj-tick" d="M324.2 337.5v4"/>
-    <text x="361.8" y="360" fill="#666" class="wj-label">Jul</text>
-    <path stroke="#666" class="wj-tick" d="M370.9 337.5v4"/>
-    <text x="405.1" y="360" fill="#666" class="wj-label">Aug</text>
-    <path stroke="#666" class="wj-tick" d="M417.6 337.5v4"/>
-    <text x="451.8" y="360" fill="#666" class="wj-label">Sep</text>
-    <path stroke="#666" class="wj-tick" d="M464.3 337.5v4"/>
-    <text x="499.7" y="360" fill="#666" class="wj-label">Oct</text>
-    <path stroke="#666" class="wj-tick" d="M511 337.5v4"/>
-    <text x="545.1" y="360" fill="#666" class="wj-label">Nov</text>
-    <path stroke="#666" class="wj-tick" d="M557.6 337.5v4"/>
-    <text x="591.9" y="360" fill="#666" class="wj-label">Dec</text>
-    <path stroke="#666" class="wj-tick" d="M604.3 337.5v4"/>
-    <path stroke="#666" class="wj-line" d="M67.5 337.5h560.1"/>
-  </g>
-  <g class="wj-axis-y" clip-path="url(#a)">
-    <path stroke="#666" class="wj-gridline" d="M67.5 311.4h560.1"/>
-    <text x="46.7" y="316.6" fill="#666" class="wj-label">0</text>
-    <path stroke="#666" class="wj-gridline" d="M67.5 264.7h560.1"/>
-    <text x="46.7" y="269.9" fill="#666" class="wj-label">5</text>
-    <path stroke="#666" class="wj-gridline" d="M67.5 218h560.1"/>
-    <text x="39" y="223.2" fill="#666" class="wj-label">10</text>
-    <path stroke="#666" class="wj-gridline" d="M67.5 171.3h560.1"/>
-    <text x="39" y="176.5" fill="#666" class="wj-label">15</text>
-    <path stroke="#666" class="wj-gridline" d="M67.5 124.6h560.1"/>
-    <text x="39" y="129.9" fill="#666" class="wj-label">20</text>
-    <path stroke="#666" class="wj-gridline" d="M67.5 77.9h560.1"/>
-    <text x="39" y="83.2" fill="#666" class="wj-label">25</text>
-    <text x="-40.4" y="194.7" fill="#666" class="wj-title" transform="rotate(-90 8.3 189.5)">Temperature °C</text>
-  </g>
-  <g clip-path="url(#b)" fill="#88bde6" stroke="rgba(136,189,230,1)" class="wj-series-group">
-    <path d="M74.5 278.7h32.7v58.8H74.5zm46.7-16.8h32.7v65.4h-32.7zm46.7-42.1h32.7v74.7h-32.7zm46.7-59.7h32.7v85h-32.7zm46.6-50.4h32.7v87.8h-32.7zm46.7-43.9h32.7V147h-32.7zm46.7-24.3h32.7v79.4h-32.7zm46.7 7.5H434v76.6h-32.7zm46.6 38.3h32.7V162h-32.7zm46.7 58.8h32.7V218h-32.7zm46.7 52.3H574v63.5h-32.7zm46.7 56h32.7v57H588z"/>
-  </g>
-  <clipPath id="b">
-    <path d="M66.5 40.5h562.1v298H66.5z"/>
-  </clipPath>
+  <text x="37.834" y="392" fill="#424242" style="font:400 11.998px sans-serif;white-space:pre">January</text>
+  <text x="100" y="392" fill="#424242" style="font:400 11.998px sans-serif;white-space:pre">February</text>
+  <text x="172.166" y="392" fill="#424242" style="font:400 11.998px sans-serif;white-space:pre">March</text>
+  <text x="241.334" y="392" fill="#424242" style="font:400 11.998px sans-serif;white-space:pre">April</text>
+  <text x="306.5" y="392" fill="#424242" style="font:400 11.998px sans-serif;white-space:pre">May</text>
+  <text x="369.667" y="392" fill="#424242" style="font:400 11.998px sans-serif;white-space:pre">June</text>
+  <text x="436.833" y="392" fill="#424242" style="font:400 11.998px sans-serif;white-space:pre">July</text>
+  <text x="493.5" y="392" fill="#424242" style="font:400 11.998px sans-serif;white-space:pre">August</text>
+  <text x="547.167" y="392" fill="#424242" style="font:400 11.998px sans-serif;white-space:pre">September</text>
+  <text x="619.833" y="392" fill="#424242" style="font:400 11.998px sans-serif;white-space:pre">October</text>
+  <text x="678.5" y="392" fill="#424242" style="font:400 11.998px sans-serif;white-space:pre">November</text>
+  <text x="743.167" y="392" fill="#424242" style="font:400 11.998px sans-serif;white-space:pre">December</text>
+  <path d="M27.5 51.5v321m-4 0h4m-4-46h4m-4-46h4m-4-46h4m-4-45h4m-4-46h4m-4-46h4m-4-46h4" stroke="color(srgb 0.258824 0.258824 0.258824 / 0.08)" fill="none"/>
+  <text x="11" y="376" fill="#424242" style="font:400 11.998px sans-serif;white-space:pre">0</text>
+  <text x="11" y="330.143" fill="#424242" style="font:400 11.998px sans-serif;white-space:pre">5</text>
+  <text x="5" y="284.286" fill="#424242" style="font:400 11.998px sans-serif;white-space:pre">10</text>
+  <text x="5" y="238.429" fill="#424242" style="font:400 11.998px sans-serif;white-space:pre">15</text>
+  <text x="5" y="192.571" fill="#424242" style="font:400 11.998px sans-serif;white-space:pre">20</text>
+  <text x="5" y="146.714" fill="#424242" style="font:400 11.998px sans-serif;white-space:pre">25</text>
+  <text x="5" y="100.857" fill="#424242" style="font:400 11.998px sans-serif;white-space:pre">30</text>
+  <text x="5" y="55" fill="#424242" style="font:400 11.998px sans-serif;white-space:pre">35</text>
+  <text x="302.5" y="30" fill="#424242" style="font:400 16.002px sans-serif;white-space:pre">Average Weather Conditions</text>
+  <g/>
 </svg>
