@@ -1,7 +1,4 @@
-<svg shape-rendering="geometricPrecision" width="600" height="400" style="font-family:Lucida Grande,sans-serif;user-select:none;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;cursor:crosshair">
-  <style>
-    text{text-rendering:optimizeLegibility}#plGSHZ2 .axis-text-x,#plGSHZ2 .axis-text-y,#plGSHZ2 .plot-title{fill:#474747;font-family:Lucida Grande,sans-serif;font-weight:400;font-style:normal}#plGSHZ2 .plot-title{font-size:16px}#plGSHZ2 .axis-text-x,#plGSHZ2 .axis-text-y{font-size:13px}
-  </style>
+<svg shape-rendering="geometricPrecision" width="600" height="400" style="font-family:Lucida Grande,sans-serif;">
   <g id="plGSHZ2">
     <path fill-rule="evenodd" fill="#FFF" d="M0 0v400h600V0Z"/>
     <path stroke="#E9E9E9" fill="none" d="M145.22 354V50m84.146 304V50m84.146 304V50m84.146 304V50m84.146 304V50m84.147 304V50M60.922 86.463H590M60.922 104.849H590M60.922 123.234H590M60.922 141.62H590M60.922 160.005H590M60.922 178.39H590M60.922 196.776H590M60.922 215.161H590M60.922 233.547H590M60.922 251.932H590M60.922 270.317H590M60.922 288.703H590M60.922 307.088H590M60.922 325.473H590"/>
