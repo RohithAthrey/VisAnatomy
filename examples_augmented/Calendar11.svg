@@ -4272,9 +4272,6 @@
   <use xlink:href="#glyph3-5" x="24.800781" y="322.163086"/>
 </g>
 <path style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;" d="M 190.824219 706.015625 L 314.527344 706.015625 L 314.527344 662.398438 L 190.824219 662.398438 Z "/>
-<g clip-path="url(#clip302)" clip-rule="nonzero">
-<rect x="0" y="0" width="432" height="720" style="fill:url(#pattern0);stroke:none;"/>
-</g>
 <g style="fill:rgb(0%,0%,0%);fill-opacity:1;">
   <use xlink:href="#glyph0-6" x="213.917969" y="701.765625"/>
   <use xlink:href="#glyph0-2" x="218.810379" y="701.765625"/>
