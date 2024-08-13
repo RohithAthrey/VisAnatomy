@@ -145,6 +145,7 @@ const typeSpecificChannels = {
     "vertices",
     "strokeDash",
   ],
+  geoPolygon: ["fill"],
 };
 
 function initilizeEncodingAnnotation() {
