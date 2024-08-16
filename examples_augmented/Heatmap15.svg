@@ -1,1 +1,362 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="500"><rect width="900" height="500" fill="transparent"></rect><g transform="translate(236.25,60)"><g><line opacity="1" x1="23.75" x2="23.75" y1="0" y2="380" stroke="#dddddd" stroke-width="1"></line><line opacity="1" x1="71.25" x2="71.25" y1="0" y2="380" stroke="#dddddd" stroke-width="1"></line><line opacity="1" x1="118.75" x2="118.75" y1="0" y2="380" stroke="#dddddd" stroke-width="1"></line><line opacity="1" x1="166.25" x2="166.25" y1="0" y2="380" stroke="#dddddd" stroke-width="1"></line><line opacity="1" x1="213.75" x2="213.75" y1="0" y2="380" stroke="#dddddd" stroke-width="1"></line><line opacity="1" x1="261.25" x2="261.25" y1="0" y2="380" stroke="#dddddd" stroke-width="1"></line><line opacity="1" x1="308.75" x2="308.75" y1="0" y2="380" stroke="#dddddd" stroke-width="1"></line><line opacity="1" x1="356.25" x2="356.25" y1="0" y2="380" stroke="#dddddd" stroke-width="1"></line><line opacity="1" x1="403.75" x2="403.75" y1="0" y2="380" stroke="#dddddd" stroke-width="1"></line></g><g><line opacity="1" x1="0" x2="427.5" y1="23.75" y2="23.75" stroke="#dddddd" stroke-width="1"></line><line opacity="1" x1="0" x2="427.5" y1="71.25" y2="71.25" stroke="#dddddd" stroke-width="1"></line><line opacity="1" x1="0" x2="427.5" y1="118.75" y2="118.75" stroke="#dddddd" stroke-width="1"></line><line opacity="1" x1="0" x2="427.5" y1="166.25" y2="166.25" stroke="#dddddd" stroke-width="1"></line><line opacity="1" x1="0" x2="427.5" y1="213.75" y2="213.75" stroke="#dddddd" stroke-width="1"></line><line opacity="1" x1="0" x2="427.5" y1="261.25" y2="261.25" stroke="#dddddd" stroke-width="1"></line><line opacity="1" x1="0" x2="427.5" y1="308.75" y2="308.75" stroke="#dddddd" stroke-width="1"></line><line opacity="1" x1="0" x2="427.5" y1="356.25" y2="356.25" stroke="#dddddd" stroke-width="1"></line></g><g transform="translate(0,0)"><g transform="translate(23.75,0)" style="opacity: 1;"><line x1="0" x2="0" y1="0" y2="-5" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="alphabetic" text-anchor="middle" transform="translate(0,-10) rotate(0)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">Train</text></g><g transform="translate(71.25,0)" style="opacity: 1;"><line x1="0" x2="0" y1="0" y2="-5" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="alphabetic" text-anchor="middle" transform="translate(0,-10) rotate(0)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">Subway</text></g><g transform="translate(118.75,0)" style="opacity: 1;"><line x1="0" x2="0" y1="0" y2="-5" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="alphabetic" text-anchor="middle" transform="translate(0,-10) rotate(0)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">Bus</text></g><g transform="translate(166.25,0)" style="opacity: 1;"><line x1="0" x2="0" y1="0" y2="-5" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="alphabetic" text-anchor="middle" transform="translate(0,-10) rotate(0)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">Car</text></g><g transform="translate(213.75,0)" style="opacity: 1;"><line x1="0" x2="0" y1="0" y2="-5" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="alphabetic" text-anchor="middle" transform="translate(0,-10) rotate(0)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">Boat</text></g><g transform="translate(261.25,0)" style="opacity: 1;"><line x1="0" x2="0" y1="0" y2="-5" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="alphabetic" text-anchor="middle" transform="translate(0,-10) rotate(0)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">Moto</text></g><g transform="translate(308.75,0)" style="opacity: 1;"><line x1="0" x2="0" y1="0" y2="-5" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="alphabetic" text-anchor="middle" transform="translate(0,-10) rotate(0)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">Moped</text></g><g transform="translate(356.25,0)" style="opacity: 1;"><line x1="0" x2="0" y1="0" y2="-5" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="alphabetic" text-anchor="middle" transform="translate(0,-10) rotate(0)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">Bicycle</text></g><g transform="translate(403.75,0)" style="opacity: 1;"><line x1="0" x2="0" y1="0" y2="-5" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="alphabetic" text-anchor="middle" transform="translate(0,-10) rotate(0)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">Others</text></g><line x1="0" x2="427.5" y1="0" y2="0" style="stroke: transparent; stroke-width: 1;"></line></g><g transform="translate(0,0)"><g transform="translate(0,23.75)" style="opacity: 1;"><line x1="0" x2="-5" y1="0" y2="0" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="end" transform="translate(-10,0) rotate(0)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">Japan</text></g><g transform="translate(0,71.25)" style="opacity: 1;"><line x1="0" x2="-5" y1="0" y2="0" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="end" transform="translate(-10,0) rotate(0)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">France</text></g><g transform="translate(0,118.75)" style="opacity: 1;"><line x1="0" x2="-5" y1="0" y2="0" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="end" transform="translate(-10,0) rotate(0)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">US</text></g><g transform="translate(0,166.25)" style="opacity: 1;"><line x1="0" x2="-5" y1="0" y2="0" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="end" transform="translate(-10,0) rotate(0)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">Germany</text></g><g transform="translate(0,213.75)" style="opacity: 1;"><line x1="0" x2="-5" y1="0" y2="0" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="end" transform="translate(-10,0) rotate(0)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">Norway</text></g><g transform="translate(0,261.25)" style="opacity: 1;"><line x1="0" x2="-5" y1="0" y2="0" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="end" transform="translate(-10,0) rotate(0)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">Iceland</text></g><g transform="translate(0,308.75)" style="opacity: 1;"><line x1="0" x2="-5" y1="0" y2="0" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="end" transform="translate(-10,0) rotate(0)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">UK</text></g><g transform="translate(0,356.25)" style="opacity: 1;"><line x1="0" x2="-5" y1="0" y2="0" style="stroke: rgb(119, 119, 119); stroke-width: 1;"></line><text dominant-baseline="central" text-anchor="end" transform="translate(-10,0) rotate(0)" style="font-family: sans-serif; font-size: 11px; fill: rgb(51, 51, 51);">Vietnam</text></g><line x1="0" x2="0" y1="0" y2="380" style="stroke: transparent; stroke-width: 1;"></line></g><g data-testid="cell.Japan.Train" opacity="1" transform="translate(23.75, 23.75)" style="cursor: pointer;"><circle r="15.770386659573258" fill="rgb(170, 111, 33)" fill-opacity="1" stroke-width="0" stroke="rgb(128, 83, 25)"></circle><text dominant-baseline="central" text-anchor="middle" fill="rgb(83, 54, 16)" style="font-family: sans-serif; font-size: 11px; outline-width: 0px; outline-color: transparent;">-68k</text></g><g data-testid="cell.Japan.Subway" opacity="0.15" transform="translate(71.25, 23.75)" style="cursor: pointer;"><circle r="18.45531540698425" fill="rgb(244, 236, 215)" fill-opacity="0.15" stroke-width="0" stroke="rgb(183, 177, 162)"></circle><text dominant-baseline="central" text-anchor="middle" fill="rgb(120, 116, 105)" style="font-family: sans-serif; font-size: 11px; outline-width: 0px; outline-color: transparent;">-13k</text></g><g data-testid="cell.Japan.Bus" opacity="0.15" transform="translate(118.75, 23.75)" style="cursor: pointer;"><circle r="19.130006921237353" fill="rgb(234, 241, 236)" fill-opacity="0.15" stroke-width="0" stroke="rgb(176, 181, 177)"></circle><text dominant-baseline="central" text-anchor="middle" fill="rgb(115, 118, 116)" style="font-family: sans-serif; font-size: 11px; outline-width: 0px; outline-color: transparent;">670</text></g><g data-testid="cell.Japan.Car" opacity="0.15" transform="translate(166.25, 23.75)" style="cursor: pointer;"><circle r="18.634611610117403" fill="rgb(243, 239, 223)" fill-opacity="0.15" stroke-width="0" stroke="rgb(183, 180, 168)"></circle><text dominant-baseline="central" text-anchor="middle" fill="rgb(119, 117, 109)" style="font-family: sans-serif; font-size: 11px; outline-width: 0px; outline-color: transparent;">-9.4k</text></g><g data-testid="cell.Japan.Boat" opacity="0.15" transform="translate(213.75, 23.75)" style="cursor: pointer;"><circle r="17.326053551782735" fill="rgb(228, 201, 141)" fill-opacity="0.15" stroke-width="0" stroke="rgb(171, 151, 106)"></circle><text dominant-baseline="central" text-anchor="middle" fill="rgb(112, 98, 69)" style="font-family: sans-serif; font-size: 11px; outline-width: 0px; outline-color: transparent;">-36k</text></g><g data-testid="cell.Japan.Moto" opacity="0.15" transform="translate(261.25, 23.75)" style="cursor: pointer;"><circle r="21.142942920452256" fill="rgb(109, 189, 179)" fill-opacity="0.15" stroke-width="0" stroke="rgb(82, 142, 135)"></circle><text dominant-baseline="central" text-anchor="middle" fill="rgb(53, 93, 88)" style="font-family: sans-serif; font-size: 11px; outline-width: 0px; outline-color: transparent;">42k</text></g><g data-testid="cell.Japan.Moped" opacity="0.15" transform="translate(308.75, 23.75)" style="cursor: pointer;"><circle r="23.75" fill="rgb(0, 60, 48)" fill-opacity="0.15" stroke-width="0" stroke="rgb(0, 45, 36)"></circle><text dominant-baseline="central" text-anchor="middle" fill="rgb(0, 29, 24)" style="font-family: sans-serif; font-size: 11px; outline-width: 0px; outline-color: transparent;">95k</text></g><g data-testid="cell.Japan.Bicycle" opacity="0.15" transform="translate(356.25, 23.75)" style="cursor: pointer;"><circle r="19.634479900003615" fill="rgb(213, 237, 233)" fill-opacity="0.15" stroke-width="0" stroke="rgb(160, 178, 175)"></circle><text dominant-baseline="central" text-anchor="middle" fill="rgb(104, 116, 114)" style="font-family: sans-serif; font-size: 11px; outline-width: 0px; outline-color: transparent;">11k</text></g><g data-testid="cell.Japan.Others" opacity="0.15" transform="translate(403.75, 23.75)" style="cursor: pointer;"><circle r="22.796010733082998" fill="rgb(10, 103, 95)" fill-opacity="0.15" stroke-width="0" stroke="rgb(8, 77, 71)"></circle><text dominant-baseline="central" text-anchor="middle" fill="rgb(5, 50, 47)" style="font-family: sans-serif; font-size: 11px; outline-width: 0px; outline-color: transparent;">75k</text></g><g data-testid="cell.France.Train" opacity="1" transform="translate(23.75, 71.25)" style="cursor: pointer;"><circle r="19.53138703662574" fill="rgb(218, 238, 235)" fill-opacity="1" stroke-width="0" stroke="rgb(164, 179, 177)"></circle><text dominant-baseline="central" text-anchor="middle" fill="rgb(107, 117, 115)" style="font-family: sans-serif; font-size: 11px; outline-width: 0px; outline-color: transparent;">8.8k</text></g><g data-testid="cell.France.Subway" opacity="0.15" transform="translate(71.25, 71.25)" style="cursor: pointer;"><circle r="22.309251473345487" fill="rgb(29, 128, 119)" fill-opacity="0.15" stroke-width="0" stroke="rgb(22, 96, 89)"></circle><text dominant-baseline="central" text-anchor="middle" fill="rgb(14, 63, 58)" style="font-family: sans-serif; font-size: 11px; outline-width: 0px; outline-color: transparent;">65k</text></g><g data-testid="cell.France.Bus" opacity="0.15" transform="translate(118.75, 71.25)" style="cursor: pointer;"><circle r="16.25523224883398" fill="rgb(192, 138, 59)" fill-opacity="0.15" stroke-width="0" stroke="rgb(144, 104, 44)"></circle><text dominant-baseline="central" text-anchor="middle" fill="rgb(94, 68, 29)" style="font-family: sans-serif; font-size: 11px; outline-width: 0px; outline-color: transparent;">-58k</text></g><g data-testid="cell.France.Car" opacity="0.15" transform="translate(166.25, 71.25)" style="cursor: pointer;"><circle r="22.37534670750541" fill="rgb(26, 124, 116)" fill-opacity="0.15" stroke-width="0" stroke="rgb(20, 93, 87)"></circle><text dominant-baseline="central" text-anchor="middle" fill="rgb(13, 61, 57)" style="font-family: sans-serif; font-size: 11px; outline-width: 0px; outline-color: transparent;">67k</text></g><g data-testid="cell.France.Boat" opacity="0.15" transform="translate(213.75, 71.25)" style="cursor: pointer;"><circle r="21.487796154064675" fill="rgb(82, 172, 162)" fill-opacity="0.15" stroke-width="0" stroke="rgb(62, 129, 122)"></circle><text dominant-baseline="central" text-anchor="middle" fill="rgb(40, 84, 79)" style="font-family: sans-serif; font-size: 11px; outline-width: 0px; outline-color: transparent;">49k</text></g><g data-testid="cell.France.Moto" opacity="0.15" transform="translate(261.25, 71.25)" style="cursor: pointer;"><circle r="20.196313924599835" fill="rgb(179, 225, 218)" fill-opacity="0.15" stroke-width="0" stroke="rgb(135, 169, 164)"></circle><text dominant-baseline="central" text-anchor="middle" fill="rgb(88, 110, 107)" style="font-family: sans-serif; font-size: 11px; outline-width: 0px; outline-color: transparent;">22k</text></g><g data-testid="cell.France.Moped" opacity="0.15" transform="translate(308.75, 71.25)" style="cursor: pointer;"><circle r="20.962959758686413" fill="rgb(122, 198, 188)" fill-opacity="0.15" stroke-width="0" stroke="rgb(92, 149, 141)"></circle><text dominant-baseline="central" text-anchor="middle" fill="rgb(60, 97, 92)" style="font-family: sans-serif; font-size: 11px; outline-width: 0px; outline-color: transparent;">38k</text></g><g data-testid="cell.France.Bicycle" opacity="0.15" transform="translate(356.25, 71.25)" style="cursor: pointer;"><circle r="23.010930648168713" fill="rgb(5, 93, 84)" fill-opacity="0.15" stroke-width="0" stroke="rgb(4, 70, 63)"></circle><text dominant-baseline="central" text-anchor="middle" fill="rgb(2, 46, 41)" style="font-family: sans-serif; font-size: 11px; outline-width: 0px; outline-color: transparent;">80k</text></g><g data-testid="cell.France.Others" opacity="0.15" transform="translate(403.75, 71.25)" style="cursor: pointer;"><circle r="17.115844210178352" fill="rgb(222, 190, 125)" fill-opacity="0.15" stroke-width="0" stroke="rgb(167, 143, 94)"></circle><text dominant-baseline="central" text-anchor="middle" fill="rgb(109, 93, 61)" style="font-family: sans-serif; font-size: 11px; outline-width: 0px; outline-color: transparent;">-40k</text></g><g data-testid="cell.US.Train" opacity="1" transform="translate(23.75, 118.75)" style="cursor: pointer;"><circle r="21.358795136539484" fill="rgb(92, 178, 169)" fill-opacity="1" stroke-width="0" stroke="rgb(69, 134, 127)"></circle><text dominant-baseline="central" text-anchor="middle" fill="rgb(45, 87, 83)" style="font-family: sans-serif; font-size: 11px; outline-width: 0px; outline-color: transparent;">46k</text></g><g data-testid="cell.US.Subway" opacity="1" transform="translate(71.25, 118.75)" style="cursor: pointer;"><circle r="21.37906041620396" fill="rgb(91, 177, 168)" fill-opacity="1" stroke-width="0" stroke="rgb(68, 133, 126)"></circle><text dominant-baseline="central" text-anchor="middle" fill="rgb(45, 87, 82)" style="font-family: sans-serif; font-size: 11px; outline-width: 0px; outline-color: transparent;">47k</text></g><g data-testid="cell.US.Bus" opacity="1" transform="translate(118.75, 118.75)" style="cursor: pointer;"><circle r="14.967528291848952" fill="rgb(126, 74, 11)" fill-opacity="1" stroke-width="0" stroke="rgb(95, 56, 8)"></circle><text dominant-baseline="central" text-anchor="middle" fill="rgb(62, 36, 5)" style="font-family: sans-serif; font-size: 11px; outline-width: 0px; outline-color: transparent;">-84k</text></g><g data-testid="cell.US.Car" opacity="1" transform="translate(166.25, 118.75)" style="cursor: pointer;"><circle r="18.62950848884596" fill="rgb(243, 239, 223)" fill-opacity="1" stroke-width="0" stroke="rgb(183, 180, 168)"></circle><text dominant-baseline="central" text-anchor="middle" fill="rgb(119, 117, 109)" style="font-family: sans-serif; font-size: 11px; outline-width: 0px; outline-color: transparent;">-9.5k</text></g><g data-testid="cell.US.Boat" opacity="1" transform="translate(213.75, 118.75)" style="cursor: pointer;"><circle r="17.040475034477055" fill="rgb(220, 186, 119)" fill-opacity="1" stroke-width="0" stroke="rgb(165, 140, 89)"></circle><text dominant-baseline="central" text-anchor="middle" fill="rgb(108, 91, 58)" style="font-family: sans-serif; font-size: 11px; outline-width: 0px; outline-color: transparent;">-42k</text></g><g data-testid="cell.US.Moto" opacity="1" transform="translate(261.25, 118.75)" style="cursor: pointer;"><circle r="19.738799475225587" fill="rgb(207, 235, 231)" fill-opacity="1" stroke-width="0" stroke="rgb(156, 177, 174)"></circle><text dominant-baseline="central" text-anchor="middle" fill="rgb(101, 115, 113)" style="font-family: sans-serif; font-size: 11px; outline-width: 0px; outline-color: transparent;">13k</text></g><g data-testid="cell.US.Moped" opacity="1" transform="translate(308.75, 118.75)" style="cursor: pointer;"><circle r="21.970629935901076" fill="rgb(49, 145, 137)" fill-opacity="1" stroke-width="0" stroke="rgb(37, 109, 103)"></circle><text dominant-baseline="central" text-anchor="middle" fill="rgb(24, 71, 67)" style="font-family: sans-serif; font-size: 11px; outline-width: 0px; outline-color: transparent;">59k</text></g><g data-testid="cell.US.Bicycle" opacity="1" transform="translate(356.25, 118.75)" style="cursor: pointer;"><circle r="22.57623303909466" fill="rgb(17, 114, 106)" fill-opacity="1" stroke-width="0" stroke="rgb(13, 86, 80)"></circle><text dominant-baseline="central" text-anchor="middle" fill="rgb(8, 56, 52)" style="font-family: sans-serif; font-size: 11px; outline-width: 0px; outline-color: transparent;">71k</text></g><g data-testid="cell.US.Others" opacity="1" transform="translate(403.75, 118.75)" style="cursor: pointer;"><circle r="17.28164658302644" fill="rgb(227, 199, 137)" fill-opacity="1" stroke-width="0" stroke="rgb(171, 150, 103)"></circle><text dominant-baseline="central" text-anchor="middle" fill="rgb(111, 98, 67)" style="font-family: sans-serif; font-size: 11px; outline-width: 0px; outline-color: transparent;">-37k</text></g><g data-testid="cell.Germany.Train" opacity="1" transform="translate(23.75, 166.25)" style="cursor: pointer;"><circle r="21.273023444400255" fill="rgb(99, 183, 173)" fill-opacity="1" stroke-width="0" stroke="rgb(74, 138, 130)"></circle><text dominant-baseline="central" text-anchor="middle" fill="rgb(49, 90, 85)" style="font-family: sans-serif; font-size: 11px; outline-width: 0px; outline-color: transparent;">44k</text></g><g data-testid="cell.Germany.Subway" opacity="0.15" transform="translate(71.25, 166.25)" style="cursor: pointer;"><circle r="19.820253141673597" fill="rgb(203, 234, 229)" fill-opacity="0.15" stroke-width="0" stroke="rgb(153, 176, 172)"></circle><text dominant-baseline="central" text-anchor="middle" fill="rgb(99, 115, 112)" style="font-family: sans-serif; font-size: 11px; outline-width: 0px; outline-color: transparent;">15k</text></g><g data-testid="cell.Germany.Bus" opacity="0.15" transform="translate(118.75, 166.25)" style="cursor: pointer;"><circle r="18.203790410470692" fill="rgb(243, 232, 201)" fill-opacity="0.15" stroke-width="0" stroke="rgb(183, 174, 151)"></circle><text dominant-baseline="central" text-anchor="middle" fill="rgb(119, 114, 98)" style="font-family: sans-serif; font-size: 11px; outline-width: 0px; outline-color: transparent;">-18k</text></g><g data-testid="cell.Germany.Car" opacity="0.15" transform="translate(166.25, 166.25)" style="cursor: pointer;"><circle r="18.42759171930767" fill="rgb(244, 236, 213)" fill-opacity="0.15" stroke-width="0" stroke="rgb(183, 177, 160)"></circle><text dominant-baseline="central" text-anchor="middle" fill="rgb(120, 116, 104)" style="font-family: sans-serif; font-size: 11px; outline-width: 0px; outline-color: transparent;">-14k</text></g><g data-testid="cell.Germany.Boat" opacity="0.15" transform="translate(213.75, 166.25)" style="cursor: pointer;"><circle r="23.19562438341589" fill="rgb(2, 85, 75)" fill-opacity="0.15" stroke-width="0" stroke="rgb(2, 64, 56)"></circle><text dominant-baseline="central" text-anchor="middle" fill="rgb(1, 42, 37)" style="font-family: sans-serif; font-size: 11px; outline-width: 0px; outline-color: transparent;">84k</text></g><g data-testid="cell.Germany.Moto" opacity="0.15" transform="translate(261.25, 166.25)" style="cursor: pointer;"><circle r="14.765758727731951" fill="rgb(114, 66, 9)" fill-opacity="0.15" stroke-width="0" stroke="rgb(86, 50, 7)"></circle><text dominant-baseline="central" text-anchor="middle" fill="rgb(56, 32, 4)" style="font-family: sans-serif; font-size: 11px; outline-width: 0px; outline-color: transparent;">-88k</text></g><g data-testid="cell.Germany.Moped" opacity="0.15" transform="translate(308.75, 166.25)" style="cursor: pointer;"><circle r="18.850561963152156" fill="rgb(241, 241, 231)" fill-opacity="0.15" stroke-width="0" stroke="rgb(181, 181, 174)"></circle><text dominant-baseline="central" text-anchor="middle" fill="rgb(118, 118, 113)" style="font-family: sans-serif; font-size: 11px; outline-width: 0px; outline-color: transparent;">-5.0k</text></g><g data-testid="cell.Germany.Bicycle" opacity="0.15" transform="translate(356.25, 166.25)" style="cursor: pointer;"><circle r="22.879476206955328" fill="rgb(7, 99, 91)" fill-opacity="0.15" stroke-width="0" stroke="rgb(5, 74, 68)"></circle><text dominant-baseline="central" text-anchor="middle" fill="rgb(3, 49, 45)" style="font-family: sans-serif; font-size: 11px; outline-width: 0px; outline-color: transparent;">77k</text></g><g data-testid="cell.Germany.Others" opacity="0.15" transform="translate(403.75, 166.25)" style="cursor: pointer;"><circle r="23.006269143161145" fill="rgb(5, 93, 84)" fill-opacity="0.15" stroke-width="0" stroke="rgb(4, 70, 63)"></circle><text dominant-baseline="central" text-anchor="middle" fill="rgb(2, 46, 41)" style="font-family: sans-serif; font-size: 11px; outline-width: 0px; outline-color: transparent;">80k</text></g><g data-testid="cell.Norway.Train" opacity="1" transform="translate(23.75, 213.75)" style="cursor: pointer;"><circle r="16.989100342446296" fill="rgb(218, 183, 115)" fill-opacity="1" stroke-width="0" stroke="rgb(164, 138, 86)"></circle><text dominant-baseline="central" text-anchor="middle" fill="rgb(107, 90, 56)" style="font-family: sans-serif; font-size: 11px; outline-width: 0px; outline-color: transparent;">-43k</text></g><g data-testid="cell.Norway.Subway" opacity="0.15" transform="translate(71.25, 213.75)" style="cursor: pointer;"><circle r="16.60479605592773" fill="rgb(206, 160, 84)" fill-opacity="0.15" stroke-width="0" stroke="rgb(155, 120, 63)"></circle><text dominant-baseline="central" text-anchor="middle" fill="rgb(101, 78, 41)" style="font-family: sans-serif; font-size: 11px; outline-width: 0px; outline-color: transparent;">-51k</text></g><g data-testid="cell.Norway.Bus" opacity="0.15" transform="translate(118.75, 213.75)" style="cursor: pointer;"><circle r="18.628085503106806" fill="rgb(243, 239, 223)" fill-opacity="0.15" stroke-width="0" stroke="rgb(183, 180, 168)"></circle><text dominant-baseline="central" text-anchor="middle" fill="rgb(119, 117, 109)" style="font-family: sans-serif; font-size: 11px; outline-width: 0px; outline-color: transparent;">-9.6k</text></g><g data-testid="cell.Norway.Car" opacity="0.15" transform="translate(166.25, 213.75)" style="cursor: pointer;"><circle r="15.593936427918413" fill="rgb(161, 102, 26)" fill-opacity="0.15" stroke-width="0" stroke="rgb(121, 77, 20)"></circle><text dominant-baseline="central" text-anchor="middle" fill="rgb(79, 50, 13)" style="font-family: sans-serif; font-size: 11px; outline-width: 0px; outline-color: transparent;">-71k</text></g><g data-testid="cell.Norway.Boat" opacity="0.15" transform="translate(213.75, 213.75)" style="cursor: pointer;"><circle r="18.99384190654263" fill="rgb(238, 241, 234)" fill-opacity="0.15" stroke-width="0" stroke="rgb(179, 181, 176)"></circle><text dominant-baseline="central" text-anchor="middle" fill="rgb(117, 118, 115)" style="font-family: sans-serif; font-size: 11px; outline-width: 0px; outline-color: transparent;">-2.1k</text></g><g data-testid="cell.Norway.Moto" opacity="0.15" transform="translate(261.25, 213.75)" style="cursor: pointer;"><circle r="18.572638127753645" fill="rgb(244, 238, 220)" fill-opacity="0.15" stroke-width="0" stroke="rgb(183, 179, 165)"></circle><text dominant-baseline="central" text-anchor="middle" fill="rgb(120, 117, 108)" style="font-family: sans-serif; font-size: 11px; outline-width: 0px; outline-color: transparent;">-11k</text></g><g data-testid="cell.Norway.Moped" opacity="0.15" transform="translate(308.75, 213.75)" style="cursor: pointer;"><circle r="14.25" fill="rgb(84, 48, 5)" fill-opacity="0.15" stroke-width="0" stroke="rgb(63, 36, 4)"></circle><text dominant-baseline="central" text-anchor="middle" fill="rgb(41, 24, 2)" style="font-family: sans-serif; font-size: 11px; outline-width: 0px; outline-color: transparent;">-99k</text></g><g data-testid="cell.Norway.Bicycle" opacity="0.15" transform="translate(356.25, 213.75)" style="cursor: pointer;"><circle r="21.714099955063606" fill="rgb(66, 159, 150)" fill-opacity="0.15" stroke-width="0" stroke="rgb(50, 120, 113)"></circle><text dominant-baseline="central" text-anchor="middle" fill="rgb(32, 78, 73)" style="font-family: sans-serif; font-size: 11px; outline-width: 0px; outline-color: transparent;">53k</text></g><g data-testid="cell.Norway.Others" opacity="0.15" transform="translate(403.75, 213.75)" style="cursor: pointer;"><circle r="21.99977660931681" fill="rgb(47, 144, 135)" fill-opacity="0.15" stroke-width="0" stroke="rgb(35, 108, 101)"></circle><text dominant-baseline="central" text-anchor="middle" fill="rgb(23, 71, 66)" style="font-family: sans-serif; font-size: 11px; outline-width: 0px; outline-color: transparent;">59k</text></g><g data-testid="cell.Iceland.Train" opacity="1" transform="translate(23.75, 261.25)" style="cursor: pointer;"><circle r="19.78104743113627" fill="rgb(205, 234, 230)" fill-opacity="1" stroke-width="0" stroke="rgb(154, 176, 173)"></circle><text dominant-baseline="central" text-anchor="middle" fill="rgb(100, 115, 113)" style="font-family: sans-serif; font-size: 11px; outline-width: 0px; outline-color: transparent;">14k</text></g><g data-testid="cell.Iceland.Subway" opacity="0.15" transform="translate(71.25, 261.25)" style="cursor: pointer;"><circle r="22.698806086556786" fill="rgb(13, 108, 100)" fill-opacity="0.15" stroke-width="0" stroke="rgb(10, 81, 75)"></circle><text dominant-baseline="central" text-anchor="middle" fill="rgb(6, 53, 49)" style="font-family: sans-serif; font-size: 11px; outline-width: 0px; outline-color: transparent;">73k</text></g><g data-testid="cell.Iceland.Bus" opacity="0.15" transform="translate(118.75, 261.25)" style="cursor: pointer;"><circle r="19.088936608697" fill="rgb(235, 241, 235)" fill-opacity="0.15" stroke-width="0" stroke="rgb(177, 181, 177)"></circle><text dominant-baseline="central" text-anchor="middle" fill="rgb(115, 118, 115)" style="font-family: sans-serif; font-size: 11px; outline-width: 0px; outline-color: transparent;">-170</text></g><g data-testid="cell.Iceland.Car" opacity="0.15" transform="translate(166.25, 261.25)" style="cursor: pointer;"><circle r="15.700022468195879" fill="rgb(166, 107, 30)" fill-opacity="0.15" stroke-width="0" stroke="rgb(125, 80, 23)"></circle><text dominant-baseline="central" text-anchor="middle" fill="rgb(81, 52, 15)" style="font-family: sans-serif; font-size: 11px; outline-width: 0px; outline-color: transparent;">-69k</text></g><g data-testid="cell.Iceland.Boat" opacity="0.15" transform="translate(213.75, 261.25)" style="cursor: pointer;"><circle r="16.43658932786521" fill="rgb(200, 149, 72)" fill-opacity="0.15" stroke-width="0" stroke="rgb(150, 112, 54)"></circle><text dominant-baseline="central" text-anchor="middle" fill="rgb(98, 73, 35)" style="font-family: sans-serif; font-size: 11px; outline-width: 0px; outline-color: transparent;">-54k</text></g><g data-testid="cell.Iceland.Moto" opacity="0.15" transform="translate(261.25, 261.25)" style="cursor: pointer;"><circle r="19.25792843233974" fill="rgb(230, 240, 236)" fill-opacity="0.15" stroke-width="0" stroke="rgb(173, 180, 177)"></circle><text dominant-baseline="central" text-anchor="middle" fill="rgb(113, 118, 116)" style="font-family: sans-serif; font-size: 11px; outline-width: 0px; outline-color: transparent;">3.3k</text></g><g data-testid="cell.Iceland.Moped" opacity="0.15" transform="translate(308.75, 261.25)" style="cursor: pointer;"><circle r="17.633025923649456" fill="rgb(235, 214, 164)" fill-opacity="0.15" stroke-width="0" stroke="rgb(177, 161, 123)"></circle><text dominant-baseline="central" text-anchor="middle" fill="rgb(115, 105, 80)" style="font-family: sans-serif; font-size: 11px; outline-width: 0px; outline-color: transparent;">-30k</text></g><g data-testid="cell.Iceland.Bicycle" opacity="0.15" transform="translate(356.25, 261.25)" style="cursor: pointer;"><circle r="22.665881140661234" fill="rgb(14, 110, 101)" fill-opacity="0.15" stroke-width="0" stroke="rgb(11, 83, 76)"></circle><text dominant-baseline="central" text-anchor="middle" fill="rgb(7, 54, 49)" style="font-family: sans-serif; font-size: 11px; outline-width: 0px; outline-color: transparent;">73k</text></g><g data-testid="cell.Iceland.Others" opacity="0.15" transform="translate(403.75, 261.25)" style="cursor: pointer;"><circle r="16.686642270165848" fill="rgb(209, 165, 91)" fill-opacity="0.15" stroke-width="0" stroke="rgb(157, 124, 68)"></circle><text dominant-baseline="central" text-anchor="middle" fill="rgb(102, 81, 45)" style="font-family: sans-serif; font-size: 11px; outline-width: 0px; outline-color: transparent;">-49k</text></g><g data-testid="cell.UK.Train" opacity="1" transform="translate(23.75, 308.75)" style="cursor: pointer;"><circle r="16.86436828213856" fill="rgb(214, 176, 105)" fill-opacity="1" stroke-width="0" stroke="rgb(161, 132, 79)"></circle><text dominant-baseline="central" text-anchor="middle" fill="rgb(105, 86, 51)" style="font-family: sans-serif; font-size: 11px; outline-width: 0px; outline-color: transparent;">-46k</text></g><g data-testid="cell.UK.Subway" opacity="0.15" transform="translate(71.25, 308.75)" style="cursor: pointer;"><circle r="17.49548699168935" fill="rgb(232, 209, 154)" fill-opacity="0.15" stroke-width="0" stroke="rgb(174, 157, 116)"></circle><text dominant-baseline="central" text-anchor="middle" fill="rgb(114, 102, 75)" style="font-family: sans-serif; font-size: 11px; outline-width: 0px; outline-color: transparent;">-33k</text></g><g data-testid="cell.UK.Bus" opacity="0.15" transform="translate(118.75, 308.75)" style="cursor: pointer;"><circle r="23.29538059057782" fill="rgb(1, 80, 70)" fill-opacity="0.15" stroke-width="0" stroke="rgb(1, 60, 53)"></circle><text dominant-baseline="central" text-anchor="middle" fill="rgb(0, 39, 34)" style="font-family: sans-serif; font-size: 11px; outline-width: 0px; outline-color: transparent;">86k</text></g><g data-testid="cell.UK.Car" opacity="0.15" transform="translate(166.25, 308.75)" style="cursor: pointer;"><circle r="15.252272645100641" fill="rgb(142, 86, 16)" fill-opacity="0.15" stroke-width="0" stroke="rgb(107, 65, 12)"></circle><text dominant-baseline="central" text-anchor="middle" fill="rgb(70, 42, 8)" style="font-family: sans-serif; font-size: 11px; outline-width: 0px; outline-color: transparent;">-78k</text></g><g data-testid="cell.UK.Boat" opacity="0.15" transform="translate(213.75, 308.75)" style="cursor: pointer;"><circle r="18.745555429297493" fill="rgb(242, 240, 227)" fill-opacity="0.15" stroke-width="0" stroke="rgb(182, 180, 171)"></circle><text dominant-baseline="central" text-anchor="middle" fill="rgb(119, 118, 111)" style="font-family: sans-serif; font-size: 11px; outline-width: 0px; outline-color: transparent;">-7.2k</text></g><g data-testid="cell.UK.Moto" opacity="0.15" transform="translate(261.25, 308.75)" style="cursor: pointer;"><circle r="19.507932306166616" fill="rgb(219, 238, 235)" fill-opacity="0.15" stroke-width="0" stroke="rgb(165, 179, 177)"></circle><text dominant-baseline="central" text-anchor="middle" fill="rgb(107, 117, 115)" style="font-family: sans-serif; font-size: 11px; outline-width: 0px; outline-color: transparent;">8.4k</text></g><g data-testid="cell.UK.Moped" opacity="0.15" transform="translate(308.75, 308.75)" style="cursor: pointer;"><circle r="22.986445479760548" fill="rgb(5, 94, 85)" fill-opacity="0.15" stroke-width="0" stroke="rgb(4, 71, 64)"></circle><text dominant-baseline="central" text-anchor="middle" fill="rgb(2, 46, 42)" style="font-family: sans-serif; font-size: 11px; outline-width: 0px; outline-color: transparent;">79k</text></g><g data-testid="cell.UK.Bicycle" opacity="0.15" transform="translate(356.25, 308.75)" style="cursor: pointer;"><circle r="15.186619027204594" fill="rgb(138, 83, 15)" fill-opacity="0.15" stroke-width="0" stroke="rgb(104, 62, 11)"></circle><text dominant-baseline="central" text-anchor="middle" fill="rgb(68, 41, 7)" style="font-family: sans-serif; font-size: 11px; outline-width: 0px; outline-color: transparent;">-80k</text></g><g data-testid="cell.UK.Others" opacity="0.15" transform="translate(403.75, 308.75)" style="cursor: pointer;"><circle r="20.596810807460475" fill="rgb(150, 213, 204)" fill-opacity="0.15" stroke-width="0" stroke="rgb(113, 160, 153)"></circle><text dominant-baseline="central" text-anchor="middle" fill="rgb(73, 104, 100)" style="font-family: sans-serif; font-size: 11px; outline-width: 0px; outline-color: transparent;">31k</text></g><g data-testid="cell.Vietnam.Train" opacity="1" transform="translate(23.75, 356.25)" style="cursor: pointer;"><circle r="17.27281425774894" fill="rgb(226, 198, 137)" fill-opacity="1" stroke-width="0" stroke="rgb(170, 149, 103)"></circle><text dominant-baseline="central" text-anchor="middle" fill="rgb(111, 97, 67)" style="font-family: sans-serif; font-size: 11px; outline-width: 0px; outline-color: transparent;">-37k</text></g><g data-testid="cell.Vietnam.Subway" opacity="0.15" transform="translate(71.25, 356.25)" style="cursor: pointer;"><circle r="23.336254629223117" fill="rgb(1, 78, 68)" fill-opacity="0.15" stroke-width="0" stroke="rgb(1, 59, 51)"></circle><text dominant-baseline="central" text-anchor="middle" fill="rgb(0, 38, 33)" style="font-family: sans-serif; font-size: 11px; outline-width: 0px; outline-color: transparent;">86k</text></g><g data-testid="cell.Vietnam.Bus" opacity="0.15" transform="translate(118.75, 356.25)" style="cursor: pointer;"><circle r="16.502733630498895" fill="rgb(202, 154, 76)" fill-opacity="0.15" stroke-width="0" stroke="rgb(152, 116, 57)"></circle><text dominant-baseline="central" text-anchor="middle" fill="rgb(99, 75, 37)" style="font-family: sans-serif; font-size: 11px; outline-width: 0px; outline-color: transparent;">-53k</text></g><g data-testid="cell.Vietnam.Car" opacity="0.15" transform="translate(166.25, 356.25)" style="cursor: pointer;"><circle r="16.785073628536157" fill="rgb(212, 171, 98)" fill-opacity="0.15" stroke-width="0" stroke="rgb(159, 129, 74)"></circle><text dominant-baseline="central" text-anchor="middle" fill="rgb(104, 84, 48)" style="font-family: sans-serif; font-size: 11px; outline-width: 0px; outline-color: transparent;">-47k</text></g><g data-testid="cell.Vietnam.Boat" opacity="0.15" transform="translate(213.75, 356.25)" style="cursor: pointer;"><circle r="18.27631361469368" fill="rgb(244, 233, 205)" fill-opacity="0.15" stroke-width="0" stroke="rgb(183, 175, 154)"></circle><text dominant-baseline="central" text-anchor="middle" fill="rgb(120, 114, 100)" style="font-family: sans-serif; font-size: 11px; outline-width: 0px; outline-color: transparent;">-17k</text></g><g data-testid="cell.Vietnam.Moto" opacity="0.15" transform="translate(261.25, 356.25)" style="cursor: pointer;"><circle r="22.289280604523597" fill="rgb(30, 129, 120)" fill-opacity="0.15" stroke-width="0" stroke="rgb(23, 97, 90)"></circle><text dominant-baseline="central" text-anchor="middle" fill="rgb(15, 63, 59)" style="font-family: sans-serif; font-size: 11px; outline-width: 0px; outline-color: transparent;">65k</text></g><g data-testid="cell.Vietnam.Moped" opacity="0.15" transform="translate(308.75, 356.25)" style="cursor: pointer;"><circle r="19.30189378483216" fill="rgb(228, 240, 236)" fill-opacity="0.15" stroke-width="0" stroke="rgb(171, 180, 177)"></circle><text dominant-baseline="central" text-anchor="middle" fill="rgb(112, 118, 116)" style="font-family: sans-serif; font-size: 11px; outline-width: 0px; outline-color: transparent;">4.2k</text></g><g data-testid="cell.Vietnam.Bicycle" opacity="0.15" transform="translate(356.25, 356.25)" style="cursor: pointer;"><circle r="23.465451920643364" fill="rgb(1, 73, 62)" fill-opacity="0.15" stroke-width="0" stroke="rgb(1, 55, 47)"></circle><text dominant-baseline="central" text-anchor="middle" fill="rgb(0, 36, 30)" style="font-family: sans-serif; font-size: 11px; outline-width: 0px; outline-color: transparent;">89k</text></g><g data-testid="cell.Vietnam.Others" opacity="0.15" transform="translate(403.75, 356.25)" style="cursor: pointer;"><circle r="18.992811468593594" fill="rgb(238, 241, 234)" fill-opacity="0.15" stroke-width="0" stroke="rgb(179, 181, 176)"></circle><text dominant-baseline="central" text-anchor="middle" fill="rgb(117, 118, 115)" style="font-family: sans-serif; font-size: 11px; outline-width: 0px; outline-color: transparent;">-2.1k</text></g></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="500">
+  <path fill="transparent" d="M0 0h900v500H0z"/>
+  <path d="M260 60v380m47.5-380v380M355 60v380m47.5-380v380M450 60v380m47.5-380v380M545 60v380m47.5-380v380M640 60v380M236.25 83.75h427.5m-427.5 47.5h427.5m-427.5 47.5h427.5m-427.5 47.5h427.5m-427.5 47.5h427.5m-427.5 47.5h427.5m-427.5 47.5h427.5m-427.5 47.5h427.5" stroke="#ddd"/>
+  <g style="opacity:1">
+    <path style="stroke:#777;stroke-width:1" d="M0 0v-5" transform="translate(260 60)"/>
+    <text dominant-baseline="alphabetic" text-anchor="middle" transform="translate(260 50)" style="font-family:sans-serif;font-size:11px;fill:#333">Train</text>
+  </g>
+  <g style="opacity:1">
+    <path style="stroke:#777;stroke-width:1" d="M0 0v-5" transform="translate(307.5 60)"/>
+    <text dominant-baseline="alphabetic" text-anchor="middle" transform="translate(307.5 50)" style="font-family:sans-serif;font-size:11px;fill:#333">Subway</text>
+  </g>
+  <g style="opacity:1">
+    <path style="stroke:#777;stroke-width:1" d="M0 0v-5" transform="translate(355 60)"/>
+    <text dominant-baseline="alphabetic" text-anchor="middle" transform="translate(355 50)" style="font-family:sans-serif;font-size:11px;fill:#333">Bus</text>
+  </g>
+  <g style="opacity:1">
+    <path style="stroke:#777;stroke-width:1" d="M0 0v-5" transform="translate(402.5 60)"/>
+    <text dominant-baseline="alphabetic" text-anchor="middle" transform="translate(402.5 50)" style="font-family:sans-serif;font-size:11px;fill:#333">Car</text>
+  </g>
+  <g style="opacity:1">
+    <path style="stroke:#777;stroke-width:1" d="M0 0v-5" transform="translate(450 60)"/>
+    <text dominant-baseline="alphabetic" text-anchor="middle" transform="translate(450 50)" style="font-family:sans-serif;font-size:11px;fill:#333">Boat</text>
+  </g>
+  <g style="opacity:1">
+    <path style="stroke:#777;stroke-width:1" d="M0 0v-5" transform="translate(497.5 60)"/>
+    <text dominant-baseline="alphabetic" text-anchor="middle" transform="translate(497.5 50)" style="font-family:sans-serif;font-size:11px;fill:#333">Moto</text>
+  </g>
+  <g style="opacity:1">
+    <path style="stroke:#777;stroke-width:1" d="M0 0v-5" transform="translate(545 60)"/>
+    <text dominant-baseline="alphabetic" text-anchor="middle" transform="translate(545 50)" style="font-family:sans-serif;font-size:11px;fill:#333">Moped</text>
+  </g>
+  <g style="opacity:1">
+    <path style="stroke:#777;stroke-width:1" d="M0 0v-5" transform="translate(592.5 60)"/>
+    <text dominant-baseline="alphabetic" text-anchor="middle" transform="translate(592.5 50)" style="font-family:sans-serif;font-size:11px;fill:#333">Bicycle</text>
+  </g>
+  <g style="opacity:1">
+    <path style="stroke:#777;stroke-width:1" d="M0 0v-5" transform="translate(640 60)"/>
+    <text dominant-baseline="alphabetic" text-anchor="middle" transform="translate(640 50)" style="font-family:sans-serif;font-size:11px;fill:#333">Others</text>
+  </g>
+  <path style="stroke:transparent;stroke-width:1" d="M0 0h427.5" transform="translate(236.25 60)"/>
+  <g style="opacity:1">
+    <path style="stroke:#777;stroke-width:1" d="M0 0h-5" transform="translate(236.25 83.75)"/>
+    <text dominant-baseline="central" text-anchor="end" transform="translate(226.25 83.75)" style="font-family:sans-serif;font-size:11px;fill:#333">Japan</text>
+  </g>
+  <g style="opacity:1">
+    <path style="stroke:#777;stroke-width:1" d="M0 0h-5" transform="translate(236.25 131.25)"/>
+    <text dominant-baseline="central" text-anchor="end" transform="translate(226.25 131.25)" style="font-family:sans-serif;font-size:11px;fill:#333">France</text>
+  </g>
+  <g style="opacity:1">
+    <path style="stroke:#777;stroke-width:1" d="M0 0h-5" transform="translate(236.25 178.75)"/>
+    <text dominant-baseline="central" text-anchor="end" transform="translate(226.25 178.75)" style="font-family:sans-serif;font-size:11px;fill:#333">US</text>
+  </g>
+  <g style="opacity:1">
+    <path style="stroke:#777;stroke-width:1" d="M0 0h-5" transform="translate(236.25 226.25)"/>
+    <text dominant-baseline="central" text-anchor="end" transform="translate(226.25 226.25)" style="font-family:sans-serif;font-size:11px;fill:#333">Germany</text>
+  </g>
+  <g style="opacity:1">
+    <path style="stroke:#777;stroke-width:1" d="M0 0h-5" transform="translate(236.25 273.75)"/>
+    <text dominant-baseline="central" text-anchor="end" transform="translate(226.25 273.75)" style="font-family:sans-serif;font-size:11px;fill:#333">Norway</text>
+  </g>
+  <g style="opacity:1">
+    <path style="stroke:#777;stroke-width:1" d="M0 0h-5" transform="translate(236.25 321.25)"/>
+    <text dominant-baseline="central" text-anchor="end" transform="translate(226.25 321.25)" style="font-family:sans-serif;font-size:11px;fill:#333">Iceland</text>
+  </g>
+  <g style="opacity:1">
+    <path style="stroke:#777;stroke-width:1" d="M0 0h-5" transform="translate(236.25 368.75)"/>
+    <text dominant-baseline="central" text-anchor="end" transform="translate(226.25 368.75)" style="font-family:sans-serif;font-size:11px;fill:#333">UK</text>
+  </g>
+  <g style="opacity:1">
+    <path style="stroke:#777;stroke-width:1" d="M0 0h-5" transform="translate(236.25 416.25)"/>
+    <text dominant-baseline="central" text-anchor="end" transform="translate(226.25 416.25)" style="font-family:sans-serif;font-size:11px;fill:#333">Vietnam</text>
+  </g>
+  <path style="stroke:transparent;stroke-width:1" d="M0 0v380" transform="translate(236.25 60)"/>
+  <g data-testid="cell.Japan.Train" transform="translate(260 83.75)" style="cursor:pointer">
+    <circle r="14.753" fill="#724208"/>
+    <text dominant-baseline="central" text-anchor="middle" fill="#382004" style="font-family:sans-serif;font-size:11px;outline-width:0;outline-color:transparent">-86k</text>
+  </g>
+  <g data-testid="cell.Japan.Subway" transform="translate(307.5 83.75)" style="cursor:pointer">
+    <circle r="23.528" fill="#00463B"/>
+    <text dominant-baseline="central" text-anchor="middle" fill="#00221D" style="font-family:sans-serif;font-size:11px;outline-width:0;outline-color:transparent">88k</text>
+  </g>
+  <g data-testid="cell.Japan.Bus" transform="translate(355 83.75)" style="cursor:pointer">
+    <circle r="15.514" fill="#9D6217"/>
+    <text dominant-baseline="central" text-anchor="middle" fill="#4D300B" style="font-family:sans-serif;font-size:11px;outline-width:0;outline-color:transparent">-71k</text>
+  </g>
+  <g data-testid="cell.Japan.Car" transform="translate(402.5 83.75)" style="cursor:pointer">
+    <circle r="18.499" fill="#F4EDD9"/>
+    <text dominant-baseline="central" text-anchor="middle" fill="#78746A" style="font-family:sans-serif;font-size:11px;outline-width:0;outline-color:transparent">-12k</text>
+  </g>
+  <g data-testid="cell.Japan.Boat" transform="translate(450 83.75)" style="cursor:pointer">
+    <circle r="16.458" fill="#C89749"/>
+    <text dominant-baseline="central" text-anchor="middle" fill="#624A24" style="font-family:sans-serif;font-size:11px;outline-width:0;outline-color:transparent">-52k</text>
+  </g>
+  <g data-testid="cell.Japan.Moto" transform="translate(497.5 83.75)" style="cursor:pointer">
+    <circle r="23.557" fill="#004539"/>
+    <text dominant-baseline="central" text-anchor="middle" fill="#00221C" style="font-family:sans-serif;font-size:11px;outline-width:0;outline-color:transparent">88k</text>
+  </g>
+  <g data-testid="cell.Japan.Moped" transform="translate(545 83.75)" style="cursor:pointer">
+    <circle r="20.292" fill="#ACDFD7"/>
+    <text dominant-baseline="central" text-anchor="middle" fill="#546D69" style="font-family:sans-serif;font-size:11px;outline-width:0;outline-color:transparent">24k</text>
+  </g>
+  <g data-testid="cell.Japan.Bicycle" transform="translate(592.5 83.75)" style="cursor:pointer">
+    <circle r="15.177" fill="#8A530F"/>
+    <text dominant-baseline="central" text-anchor="middle" fill="#442907" style="font-family:sans-serif;font-size:11px;outline-width:0;outline-color:transparent">-77k</text>
+  </g>
+  <g data-testid="cell.Japan.Others" transform="translate(640 83.75)" style="cursor:pointer">
+    <circle r="18.603" fill="#F4EEDE"/>
+    <text dominant-baseline="central" text-anchor="middle" fill="#78756D" style="font-family:sans-serif;font-size:11px;outline-width:0;outline-color:transparent">-9.7k</text>
+  </g>
+  <g data-testid="cell.France.Train" transform="translate(260 131.25)" style="cursor:pointer">
+    <circle r="18.653" fill="#F3EFE0"/>
+    <text dominant-baseline="central" text-anchor="middle" fill="#77756E" style="font-family:sans-serif;font-size:11px;outline-width:0;outline-color:transparent">-8.7k</text>
+  </g>
+  <g data-testid="cell.France.Subway" transform="translate(307.5 131.25)" style="cursor:pointer">
+    <circle r="22.775" fill="#0A6860"/>
+    <text dominant-baseline="central" text-anchor="middle" fill="#05332F" style="font-family:sans-serif;font-size:11px;outline-width:0;outline-color:transparent">73k</text>
+  </g>
+  <g data-testid="cell.France.Bus" transform="translate(355 131.25)" style="cursor:pointer">
+    <circle r="22.871" fill="#08645B"/>
+    <text dominant-baseline="central" text-anchor="middle" fill="#04312D" style="font-family:sans-serif;font-size:11px;outline-width:0;outline-color:transparent">75k</text>
+  </g>
+  <g data-testid="cell.France.Car" transform="translate(402.5 131.25)" style="cursor:pointer">
+    <circle r="23.432" fill="#014A3F"/>
+    <text dominant-baseline="central" text-anchor="middle" fill="#00241F" style="font-family:sans-serif;font-size:11px;outline-width:0;outline-color:transparent">86k</text>
+  </g>
+  <g data-testid="cell.France.Boat" transform="translate(450 131.25)" style="cursor:pointer">
+    <circle r="19.637" fill="#D5EDE9"/>
+    <text dominant-baseline="central" text-anchor="middle" fill="#687472" style="font-family:sans-serif;font-size:11px;outline-width:0;outline-color:transparent">11k</text>
+  </g>
+  <g data-testid="cell.France.Moto" transform="translate(497.5 131.25)" style="cursor:pointer">
+    <circle r="21.817" fill="#3B9A91"/>
+    <text dominant-baseline="central" text-anchor="middle" fill="#1D4B47" style="font-family:sans-serif;font-size:11px;outline-width:0;outline-color:transparent">54k</text>
+  </g>
+  <g data-testid="cell.France.Moped" transform="translate(545 131.25)" style="cursor:pointer">
+    <circle r="23.706" fill="#003E32"/>
+    <text dominant-baseline="central" text-anchor="middle" fill="#001E18" style="font-family:sans-serif;font-size:11px;outline-width:0;outline-color:transparent">91k</text>
+  </g>
+  <g data-testid="cell.France.Bicycle" transform="translate(592.5 131.25)" style="cursor:pointer">
+    <circle r="16.072" fill="#B87F30"/>
+    <text dominant-baseline="central" text-anchor="middle" fill="#5A3E18" style="font-family:sans-serif;font-size:11px;outline-width:0;outline-color:transparent">-60k</text>
+  </g>
+  <g data-testid="cell.France.Others" transform="translate(640 131.25)" style="cursor:pointer">
+    <circle r="18.011" fill="#F2E3BD"/>
+    <text dominant-baseline="central" text-anchor="middle" fill="#776F5D" style="font-family:sans-serif;font-size:11px;outline-width:0;outline-color:transparent">-21k</text>
+  </g>
+  <g data-testid="cell.US.Train" transform="translate(260 178.75)" style="cursor:pointer">
+    <circle r="15.771" fill="#AA6F21"/>
+    <text dominant-baseline="central" text-anchor="middle" fill="#533610" style="font-family:sans-serif;font-size:11px;outline-width:0;outline-color:transparent">-66k</text>
+  </g>
+  <g data-testid="cell.US.Subway" transform="translate(307.5 178.75)" style="cursor:pointer">
+    <circle r="23.439" fill="#014A3F"/>
+    <text dominant-baseline="central" text-anchor="middle" fill="#00241F" style="font-family:sans-serif;font-size:11px;outline-width:0;outline-color:transparent">86k</text>
+  </g>
+  <g data-testid="cell.US.Bus" transform="translate(355 178.75)" style="cursor:pointer">
+    <circle r="16.793" fill="#D4AC63"/>
+    <text dominant-baseline="central" text-anchor="middle" fill="#685431" style="font-family:sans-serif;font-size:11px;outline-width:0;outline-color:transparent">-45k</text>
+  </g>
+  <g data-testid="cell.US.Car" transform="translate(402.5 178.75)" style="cursor:pointer">
+    <circle r="22.124" fill="#288981"/>
+    <text dominant-baseline="central" text-anchor="middle" fill="#14433F" style="font-family:sans-serif;font-size:11px;outline-width:0;outline-color:transparent">60k</text>
+  </g>
+  <g data-testid="cell.US.Boat" transform="translate(450 178.75)" style="cursor:pointer">
+    <circle r="19.348" fill="#E2F0EC"/>
+    <text dominant-baseline="central" text-anchor="middle" fill="#6F7674" style="font-family:sans-serif;font-size:11px;outline-width:0;outline-color:transparent">5.0k</text>
+  </g>
+  <g data-testid="cell.US.Moto" transform="translate(497.5 178.75)" style="cursor:pointer">
+    <circle r="20.284" fill="#ADDFD7"/>
+    <text dominant-baseline="central" text-anchor="middle" fill="#556D69" style="font-family:sans-serif;font-size:11px;outline-width:0;outline-color:transparent">24k</text>
+  </g>
+  <g data-testid="cell.US.Moped" transform="translate(545 178.75)" style="cursor:pointer">
+    <circle r="16.347" fill="#C49041"/>
+    <text dominant-baseline="central" text-anchor="middle" fill="#604720" style="font-family:sans-serif;font-size:11px;outline-width:0;outline-color:transparent">-54k</text>
+  </g>
+  <g data-testid="cell.US.Bicycle" transform="translate(592.5 178.75)" style="cursor:pointer">
+    <circle r="22.046" fill="#2C8D85"/>
+    <text dominant-baseline="central" text-anchor="middle" fill="#164541" style="font-family:sans-serif;font-size:11px;outline-width:0;outline-color:transparent">58k</text>
+  </g>
+  <g data-testid="cell.US.Others" transform="translate(640 178.75)" style="cursor:pointer">
+    <circle r="19.775" fill="#CDEAE6"/>
+    <text dominant-baseline="central" text-anchor="middle" fill="#647371" style="font-family:sans-serif;font-size:11px;outline-width:0;outline-color:transparent">13k</text>
+  </g>
+  <g data-testid="cell.Germany.Train" transform="translate(260 226.25)" style="cursor:pointer">
+    <circle r="15.921" fill="#B17728"/>
+    <text dominant-baseline="central" text-anchor="middle" fill="#573A14" style="font-family:sans-serif;font-size:11px;outline-width:0;outline-color:transparent">-63k</text>
+  </g>
+  <g data-testid="cell.Germany.Subway" transform="translate(307.5 226.25)" style="cursor:pointer">
+    <circle r="17.158" fill="#DFC180"/>
+    <text dominant-baseline="central" text-anchor="middle" fill="#6D5F3F" style="font-family:sans-serif;font-size:11px;outline-width:0;outline-color:transparent">-38k</text>
+  </g>
+  <g data-testid="cell.Germany.Bus" transform="translate(355 226.25)" style="cursor:pointer">
+    <circle r="18.264" fill="#F4E9CD"/>
+    <text dominant-baseline="central" text-anchor="middle" fill="#787264" style="font-family:sans-serif;font-size:11px;outline-width:0;outline-color:transparent">-16k</text>
+  </g>
+  <g data-testid="cell.Germany.Car" transform="translate(402.5 226.25)" style="cursor:pointer">
+    <circle r="23.08" fill="#045A51"/>
+    <text dominant-baseline="central" text-anchor="middle" fill="#022C28" style="font-family:sans-serif;font-size:11px;outline-width:0;outline-color:transparent">79k</text>
+  </g>
+  <g data-testid="cell.Germany.Boat" transform="translate(450 226.25)" style="cursor:pointer">
+    <circle r="22.094" fill="#298B82"/>
+    <text dominant-baseline="central" text-anchor="middle" fill="#144440" style="font-family:sans-serif;font-size:11px;outline-width:0;outline-color:transparent">59k</text>
+  </g>
+  <g data-testid="cell.Germany.Moto" transform="translate(497.5 226.25)" style="cursor:pointer">
+    <circle r="18.302" fill="#F4EACF"/>
+    <text dominant-baseline="central" text-anchor="middle" fill="#787365" style="font-family:sans-serif;font-size:11px;outline-width:0;outline-color:transparent">-16k</text>
+  </g>
+  <g data-testid="cell.Germany.Moped" transform="translate(545 226.25)" style="cursor:pointer">
+    <circle r="17.196" fill="#E0C383"/>
+    <text dominant-baseline="central" text-anchor="middle" fill="#6E6040" style="font-family:sans-serif;font-size:11px;outline-width:0;outline-color:transparent">-38k</text>
+  </g>
+  <g data-testid="cell.Germany.Bicycle" transform="translate(592.5 226.25)" style="cursor:pointer">
+    <circle r="18.832" fill="#F1F0E6"/>
+    <text dominant-baseline="central" text-anchor="middle" fill="#767671" style="font-family:sans-serif;font-size:11px;outline-width:0;outline-color:transparent">-5.2k</text>
+  </g>
+  <g data-testid="cell.Germany.Others" transform="translate(640 226.25)" style="cursor:pointer">
+    <circle r="23.727" fill="#003D31"/>
+    <text dominant-baseline="central" text-anchor="middle" fill="#001E18" style="font-family:sans-serif;font-size:11px;outline-width:0;outline-color:transparent">92k</text>
+  </g>
+  <g data-testid="cell.Norway.Train" transform="translate(260 273.75)" style="cursor:pointer">
+    <circle r="17.291" fill="#E3C78A"/>
+    <text dominant-baseline="central" text-anchor="middle" fill="#6F6244" style="font-family:sans-serif;font-size:11px;outline-width:0;outline-color:transparent">-36k</text>
+  </g>
+  <g data-testid="cell.Norway.Subway" transform="translate(307.5 273.75)" style="cursor:pointer">
+    <circle r="22.804" fill="#09675E"/>
+    <text dominant-baseline="central" text-anchor="middle" fill="#04322E" style="font-family:sans-serif;font-size:11px;outline-width:0;outline-color:transparent">73k</text>
+  </g>
+  <g data-testid="cell.Norway.Bus" transform="translate(355 273.75)" style="cursor:pointer">
+    <circle r="20.968" fill="#7AC6BC"/>
+    <text dominant-baseline="central" text-anchor="middle" fill="#3C615C" style="font-family:sans-serif;font-size:11px;outline-width:0;outline-color:transparent">37k</text>
+  </g>
+  <g data-testid="cell.Norway.Car" transform="translate(402.5 273.75)" style="cursor:pointer">
+    <circle r="18.822" fill="#F1F0E6"/>
+    <text dominant-baseline="central" text-anchor="middle" fill="#767671" style="font-family:sans-serif;font-size:11px;outline-width:0;outline-color:transparent">-5.4k</text>
+  </g>
+  <g data-testid="cell.Norway.Boat" transform="translate(450 273.75)" style="cursor:pointer">
+    <circle r="23.26" fill="#025248"/>
+    <text dominant-baseline="central" text-anchor="middle" fill="#012823" style="font-family:sans-serif;font-size:11px;outline-width:0;outline-color:transparent">82k</text>
+  </g>
+  <g data-testid="cell.Norway.Moto" transform="translate(497.5 273.75)" style="cursor:pointer">
+    <circle r="15.653" fill="#A4691C"/>
+    <text dominant-baseline="central" text-anchor="middle" fill="#50330E" style="font-family:sans-serif;font-size:11px;outline-width:0;outline-color:transparent">-68k</text>
+  </g>
+  <g data-testid="cell.Norway.Moped" transform="translate(545 273.75)" style="cursor:pointer">
+    <circle r="20.256" fill="#AFE0D8"/>
+    <text dominant-baseline="central" text-anchor="middle" fill="#566E6A" style="font-family:sans-serif;font-size:11px;outline-width:0;outline-color:transparent">23k</text>
+  </g>
+  <g data-testid="cell.Norway.Bicycle" transform="translate(592.5 273.75)" style="cursor:pointer">
+    <circle r="21.773" fill="#3E9C93"/>
+    <text dominant-baseline="central" text-anchor="middle" fill="#1E4C48" style="font-family:sans-serif;font-size:11px;outline-width:0;outline-color:transparent">53k</text>
+  </g>
+  <g data-testid="cell.Norway.Others" transform="translate(640 273.75)" style="cursor:pointer">
+    <circle r="17.209" fill="#E1C384"/>
+    <text dominant-baseline="central" text-anchor="middle" fill="#6E6041" style="font-family:sans-serif;font-size:11px;outline-width:0;outline-color:transparent">-37k</text>
+  </g>
+  <g data-testid="cell.Iceland.Train" transform="translate(260 321.25)" style="cursor:pointer">
+    <circle r="23.29" fill="#015046"/>
+    <text dominant-baseline="central" text-anchor="middle" fill="#002722" style="font-family:sans-serif;font-size:11px;outline-width:0;outline-color:transparent">83k</text>
+  </g>
+  <g data-testid="cell.Iceland.Subway" transform="translate(307.5 321.25)" style="cursor:pointer">
+    <circle r="21.749" fill="#409D94"/>
+    <text dominant-baseline="central" text-anchor="middle" fill="#1F4D49" style="font-family:sans-serif;font-size:11px;outline-width:0;outline-color:transparent">53k</text>
+  </g>
+  <g data-testid="cell.Iceland.Bus" transform="translate(355 321.25)" style="cursor:pointer">
+    <circle r="17.519" fill="#E9D29B"/>
+    <text dominant-baseline="central" text-anchor="middle" fill="#72674C" style="font-family:sans-serif;font-size:11px;outline-width:0;outline-color:transparent">-31k</text>
+  </g>
+  <g data-testid="cell.Iceland.Car" transform="translate(402.5 321.25)" style="cursor:pointer">
+    <circle r="22.782" fill="#0A685F"/>
+    <text dominant-baseline="central" text-anchor="middle" fill="#05332F" style="font-family:sans-serif;font-size:11px;outline-width:0;outline-color:transparent">73k</text>
+  </g>
+  <g data-testid="cell.Iceland.Boat" transform="translate(450 321.25)" style="cursor:pointer">
+    <circle r="15.889" fill="#B07526"/>
+    <text dominant-baseline="central" text-anchor="middle" fill="#563913" style="font-family:sans-serif;font-size:11px;outline-width:0;outline-color:transparent">-63k</text>
+  </g>
+  <g data-testid="cell.Iceland.Moto" transform="translate(497.5 321.25)" style="cursor:pointer">
+    <circle r="16.99" fill="#DAB773"/>
+    <text dominant-baseline="central" text-anchor="middle" fill="#6B5A38" style="font-family:sans-serif;font-size:11px;outline-width:0;outline-color:transparent">-42k</text>
+  </g>
+  <g data-testid="cell.Iceland.Moped" transform="translate(545 321.25)" style="cursor:pointer">
+    <circle r="22.393" fill="#197B73"/>
+    <text dominant-baseline="central" text-anchor="middle" fill="#0C3C38" style="font-family:sans-serif;font-size:11px;outline-width:0;outline-color:transparent">65k</text>
+  </g>
+  <g data-testid="cell.Iceland.Bicycle" transform="translate(592.5 321.25)" style="cursor:pointer">
+    <circle r="19.885" fill="#C7E8E3"/>
+    <text dominant-baseline="central" text-anchor="middle" fill="#62726F" style="font-family:sans-serif;font-size:11px;outline-width:0;outline-color:transparent">16k</text>
+  </g>
+  <g data-testid="cell.Iceland.Others" transform="translate(640 321.25)" style="cursor:pointer">
+    <circle r="22.381" fill="#1A7C74"/>
+    <text dominant-baseline="central" text-anchor="middle" fill="#0D3D39" style="font-family:sans-serif;font-size:11px;outline-width:0;outline-color:transparent">65k</text>
+  </g>
+  <g data-testid="cell.UK.Train" transform="translate(260 368.75)" style="cursor:pointer">
+    <circle r="22.419" fill="#187A72"/>
+    <text dominant-baseline="central" text-anchor="middle" fill="#0C3C38" style="font-family:sans-serif;font-size:11px;outline-width:0;outline-color:transparent">66k</text>
+  </g>
+  <g data-testid="cell.UK.Subway" transform="translate(307.5 368.75)" style="cursor:pointer">
+    <circle r="21.851" fill="#39988F"/>
+    <text dominant-baseline="central" text-anchor="middle" fill="#1C4A46" style="font-family:sans-serif;font-size:11px;outline-width:0;outline-color:transparent">55k</text>
+  </g>
+  <g data-testid="cell.UK.Bus" transform="translate(355 368.75)" style="cursor:pointer">
+    <circle r="15.579" fill="#A0651A"/>
+    <text dominant-baseline="central" text-anchor="middle" fill="#4E310D" style="font-family:sans-serif;font-size:11px;outline-width:0;outline-color:transparent">-69k</text>
+  </g>
+  <g data-testid="cell.UK.Car" transform="translate(402.5 368.75)" style="cursor:pointer">
+    <circle r="17.056" fill="#DCBB78"/>
+    <text dominant-baseline="central" text-anchor="middle" fill="#6C5C3B" style="font-family:sans-serif;font-size:11px;outline-width:0;outline-color:transparent">-40k</text>
+  </g>
+  <g data-testid="cell.UK.Boat" transform="translate(450 368.75)" style="cursor:pointer">
+    <circle r="15.252" fill="#8E5610"/>
+    <text dominant-baseline="central" text-anchor="middle" fill="#462A08" style="font-family:sans-serif;font-size:11px;outline-width:0;outline-color:transparent">-76k</text>
+  </g>
+  <g data-testid="cell.UK.Moto" transform="translate(497.5 368.75)" style="cursor:pointer">
+    <circle r="23.079" fill="#045A51"/>
+    <text dominant-baseline="central" text-anchor="middle" fill="#022C28" style="font-family:sans-serif;font-size:11px;outline-width:0;outline-color:transparent">79k</text>
+  </g>
+  <g data-testid="cell.UK.Moped" transform="translate(545 368.75)" style="cursor:pointer">
+    <circle r="20.229" fill="#B1E0D9"/>
+    <text dominant-baseline="central" text-anchor="middle" fill="#576E6A" style="font-family:sans-serif;font-size:11px;outline-width:0;outline-color:transparent">22k</text>
+  </g>
+  <g data-testid="cell.UK.Bicycle" transform="translate(592.5 368.75)" style="cursor:pointer">
+    <circle r="21.22" fill="#67BAAF"/>
+    <text dominant-baseline="central" text-anchor="middle" fill="#325B56" style="font-family:sans-serif;font-size:11px;outline-width:0;outline-color:transparent">42k</text>
+  </g>
+  <g data-testid="cell.UK.Others" transform="translate(640 368.75)" style="cursor:pointer">
+    <circle r="23.388" fill="#014C42"/>
+    <text dominant-baseline="central" text-anchor="middle" fill="#002520" style="font-family:sans-serif;font-size:11px;outline-width:0;outline-color:transparent">85k</text>
+  </g>
+  <g data-testid="cell.Vietnam.Train" transform="translate(260 416.25)" style="cursor:pointer">
+    <circle r="22.798" fill="#0A675F"/>
+    <text dominant-baseline="central" text-anchor="middle" fill="#05322F" style="font-family:sans-serif;font-size:11px;outline-width:0;outline-color:transparent">73k</text>
+  </g>
+  <g data-testid="cell.Vietnam.Subway" transform="translate(307.5 416.25)" style="cursor:pointer">
+    <circle r="14.25" fill="#543005"/>
+    <text dominant-baseline="central" text-anchor="middle" fill="#291802" style="font-family:sans-serif;font-size:11px;outline-width:0;outline-color:transparent">-96k</text>
+  </g>
+  <g data-testid="cell.Vietnam.Bus" transform="translate(355 416.25)" style="cursor:pointer">
+    <circle r="15.674" fill="#A56A1D"/>
+    <text dominant-baseline="central" text-anchor="middle" fill="#51340E" style="font-family:sans-serif;font-size:11px;outline-width:0;outline-color:transparent">-68k</text>
+  </g>
+  <g data-testid="cell.Vietnam.Car" transform="translate(402.5 416.25)" style="cursor:pointer">
+    <circle r="19.08" fill="#EBF1EB"/>
+    <text dominant-baseline="central" text-anchor="middle" fill="#737673" style="font-family:sans-serif;font-size:11px;outline-width:0;outline-color:transparent">-260</text>
+  </g>
+  <g data-testid="cell.Vietnam.Boat" transform="translate(450 416.25)" style="cursor:pointer">
+    <circle r="23.75" fill="#003C30"/>
+    <text dominant-baseline="central" text-anchor="middle" fill="#001D18" style="font-family:sans-serif;font-size:11px;outline-width:0;outline-color:transparent">92k</text>
+  </g>
+  <g data-testid="cell.Vietnam.Moto" transform="translate(497.5 416.25)" style="cursor:pointer">
+    <circle r="22.709" fill="#0C6C63"/>
+    <text dominant-baseline="central" text-anchor="middle" fill="#063531" style="font-family:sans-serif;font-size:11px;outline-width:0;outline-color:transparent">72k</text>
+  </g>
+  <g data-testid="cell.Vietnam.Moped" transform="translate(545 416.25)" style="cursor:pointer">
+    <circle r="23.631" fill="#004136"/>
+    <text dominant-baseline="central" text-anchor="middle" fill="#00201A" style="font-family:sans-serif;font-size:11px;outline-width:0;outline-color:transparent">90k</text>
+  </g>
+  <g data-testid="cell.Vietnam.Bicycle" transform="translate(592.5 416.25)" style="cursor:pointer">
+    <circle r="15.106" fill="#86500D"/>
+    <text dominant-baseline="central" text-anchor="middle" fill="#422706" style="font-family:sans-serif;font-size:11px;outline-width:0;outline-color:transparent">-79k</text>
+  </g>
+  <g data-testid="cell.Vietnam.Others" transform="translate(640 416.25)" style="cursor:pointer">
+    <circle r="17.257" fill="#E2C688"/>
+    <text dominant-baseline="central" text-anchor="middle" fill="#6F6143" style="font-family:sans-serif;font-size:11px;outline-width:0;outline-color:transparent">-36k</text>
+  </g>
+</svg>
