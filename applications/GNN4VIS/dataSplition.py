@@ -8,7 +8,8 @@ def getAllChartNames():
     chartNames = []
     files = os.listdir(annotations_folder)
     for file in files:
-        chartNames.append(file.split(".")[0])
+        if len(file.split(".")[0]) > 0 and not file.startswith("_bespoke"):
+            chartNames.append(file.split(".")[0])
     return chartNames
 
 def process_chart_array(chart_array, output_file):
@@ -57,15 +58,15 @@ def process_chart_array(chart_array, output_file):
         trainingNum += train_charts
         testNum += test_charts
     
-    # # Save the output as JSON file
-    # with open(output_file, 'w') as file:
-    #     # clear the file
-    #     file.write("")
-    #     config_str  = json.dumps(output, indent=4, sort_keys=True)
-    #     file.write(config_str)
+    # Save the output as JSON file
+    with open(output_file, 'w') as file:
+        # clear the file
+        file.write("")
+        config_str  = json.dumps(output, indent=4, sort_keys=True)
+        file.write(config_str)
     
-    # print(f"JSON file saved as {output_file}")
-    # print(f"Training charts: {trainingNum}", f"Test charts: {testNum}")
+    print(f"JSON file saved as {output_file}")
+    print(f"Training charts: {trainingNum}", f"Test charts: {testNum}")
 
 output_file = os.path.join(os.path.dirname(os.path.realpath(__file__)), "dataSplition.json")
 process_chart_array(getAllChartNames(), output_file)
