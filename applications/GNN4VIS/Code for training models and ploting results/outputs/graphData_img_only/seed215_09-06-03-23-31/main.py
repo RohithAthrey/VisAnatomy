@@ -84,7 +84,7 @@ for comb in combinations:
     date_time = datetime.datetime.now().strftime("%m-%d-%H-%M-%S")
     output_folder = f'{current_dir}/outputs/{data_name}/seed{seed}_{date_time}'
     if input_type == "img":
-        output_folder = f'{current_dir}/outputs/{data_name}_only/seed{seed}_{date_time}'
+        output_folder = f'outputs/{data_name}_img_only/seed{seed}_{date_time}'
     print(output_folder)
     os.makedirs(output_folder, exist_ok=True)
 

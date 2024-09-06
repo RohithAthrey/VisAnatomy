@@ -4,9 +4,11 @@ import numpy as np
 import glob
 import matplotlib.pyplot as plt
 import matplotlib
+import os
 
 
 def plot_results(res_dfs):
+    current_dir = os.path.dirname(os.path.realpath(__file__))
     matplotlib.rc('font', family='Times New Roman', size=14)
     acc_keys = ["train_acc_list", "test_acc_list", "train_acc_top5_list", "test_acc_top5_list", "acc_ratio", "acc_ratio_top5"]
     for acc_key in acc_keys:
@@ -25,19 +27,20 @@ def plot_results(res_dfs):
         legend = plt.legend(loc="lower right", ncol=3)
         for line in legend.get_lines():
             line.set_linewidth(3.0)
-        plt.savefig(f"{acc_key}.pdf", bbox_inches="tight")
+        plt.savefig(f"{current_dir}/figures/{acc_key}.pdf", bbox_inches="tight")
         plt.close()
 
 
 def load_data():
     path = "outputs"
-    datasets = ["graphData_v1", "graphData_v2", "graphData_v3", "graphData_v4"]
-    datasets_names = ["Model 1", "Model 2", "Model 3", "Model 4"]
+    datasets = ["graphData_v1", "graphData_v2", "graphData_v3", "graphData_v4", "graphData_img_only", "graphData_v4_wimg"]
+    datasets_names = ["Model 1", "Model 2", "Model 3", "Model 4", "Model5", "Model 6"]
+    current_dir = os.path.dirname(os.path.realpath(__file__))
     # orig_acc_keys = ["train_acc_list", "test_acc_list", "train_acc_top5_list", "test_acc_top5_list"]
     # acc_ratio_keys = ["acc_ratio", "acc_ratio_top5"]
     all_dfs = {}
     for i in range(len(datasets)):
-        files = glob.glob(f"{path}/{datasets[i]}/seed*/acc.npz")
+        files = glob.glob(f"{current_dir}/{path}/{datasets[i]}/seed*/acc.npz")
         dfs = []
         for j, f in enumerate(files):
             data = dict(np.load(f))
