@@ -31,8 +31,8 @@ def plot_results(res_dfs):
 
 def load_data():
     path = "outputs"
-    datasets = ["graphData_v0", "graphData_v1", "graphData_v2", "graphData_v3", "graphData_v3_wimg_img_only", "graphData_v3_wimg"]
-    datasets_names = ["Model 1", "Model 2", "Model 3", "Model 4", "Model 5", "Model 6"]
+    datasets = ["graphData_v1", "graphData_v2", "graphData_v3", "graphData_v4"]
+    datasets_names = ["Model 1", "Model 2", "Model 3", "Model 4"]
     # orig_acc_keys = ["train_acc_list", "test_acc_list", "train_acc_top5_list", "test_acc_top5_list"]
     # acc_ratio_keys = ["acc_ratio", "acc_ratio_top5"]
     all_dfs = {}

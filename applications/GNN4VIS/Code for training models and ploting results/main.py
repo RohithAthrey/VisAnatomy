@@ -58,8 +58,8 @@ def test(loader, topk=5, input_type="svg"):
 # get dataset
 current_dir = os.path.dirname(os.path.realpath(__file__))
 
-# datasets = ["graphData_v0", "graphData_v1", "graphData_v2", "graphData_v3"]
-datasets = ["graphData_v1"]
+datasets = ["graphData_v1", "graphData_v2", "graphData_v3", "graphData_v4"]
+# datasets = ["graphData_v1"]
 
 seeds = [12345, 215, 114514, 520, 630] 
 combinations = product(datasets, seeds)
@@ -78,7 +78,7 @@ for comb in combinations:
 
     # Define output folder
     date_time = datetime.datetime.now().strftime("%m-%d-%H-%M-%S")
-    output_folder = f'outputs/{data_name}/seed{seed}_{date_time}'
+    output_folder = f'{current_dir}/outputs/{data_name}/seed{seed}_{date_time}'
     if input_type == "img":
         output_folder = f'outputs/{data_name}_img_only/seed{seed}_{date_time}'
     print(output_folder)
