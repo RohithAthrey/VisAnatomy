@@ -27,6 +27,8 @@ def parseAnnotationFile():
         allStat[chartName] = {}
         script_dir = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
         annotation_file_path = os.path.join(script_dir, "annotations", chartName+".json")
+        if len(chartName) == 0:
+            continue
         print("Processing: ", annotation_file_path)
         with open(annotation_file_path, "r") as f:
             annotations = json.load(f)['annotations']
@@ -76,6 +78,8 @@ allStat = parseAnnotationFile()
 # save the result to a json file
 script_dir = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
 output_file_path = os.path.join(script_dir, "_data_analysis_scripts", "labelAnalysis.json")
+# sort allStat by the key values
+allStat = dict(sorted(allStat.items()))
 with open(output_file_path, "w") as f:
     json.dump(allStat, f, indent=4)
 
