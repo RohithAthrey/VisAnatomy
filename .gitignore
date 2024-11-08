@@ -28,3 +28,4 @@ npm-debug.log
 # annotations/*.json
 
 *img.pt
+/applications/GNN4VIS/Code for training models and ploting results/data/
