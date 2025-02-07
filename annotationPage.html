@@ -1364,7 +1364,7 @@
         axisCount++;
         axes[axisCount] = axes[axisCount]
           ? axes[axisCount]
-          : { labels: [], fieldType: "Null", title: [] };
+          : { labels: [], fieldType: "Null", title: [], type: "x", ticks: [], path: [] };
         const axisDiv = document.createElement("div");
         axisDiv.className = "axisDiv";
         axisDiv.id = `axis_${axisCount}`;

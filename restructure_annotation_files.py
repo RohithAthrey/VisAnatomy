@@ -18,7 +18,7 @@ def getObject(g):
         obj["children"] = [getObject(d) for d in obj["children"]]
         return obj
     
-if sys.argv[1]:
+if len(sys.argv) > 1:
     files = [sys.argv[1] + ".json"]
 else:
     files = os.listdir(annotations_folder)
@@ -75,8 +75,8 @@ for file in files:
                 data["grouping"] = parse_nested_groups(data["nestedGrouping"][0], current_index)
 
             # chart title
-            if "chartTitle" in data:
-                data["chartTitle"] = [d["id"] for d in data["chartTitle"] if d]
+            # if "chartTitle" in data:
+            #     data["chartTitle"] = [d["id"] for d in data["chartTitle"] if d]
             
             # change 'referenceElement' to 'referenceElements'
             data["referenceElements"] = data["referenceElement"]
@@ -97,7 +97,7 @@ for file in files:
                         axis["labels"] = [d["id"] for d in axis["labels"]]
 
                     if "title" in axis:
-                        axis["title"] = [d["id"] for d in axis["title"]]
+                        axis["title"] = [d["id"] if isinstance(d, dict) else d for d in axis["title"]]
                 data["referenceElements"]["axes"] = list(data["referenceElements"]["axes"].values())
             
             del data["groupInfo"]
@@ -106,8 +106,8 @@ for file in files:
 
             for m in data["markInfo"]:
                 mi = data["markInfo"][m]
-                elem = data["allElements"][m]
-                if elem:
+                if m in data["allElements"]:
+                    elem = data["allElements"][m]
                     elem["type"] = mi["Type"]
                     elem["role"] = mi["Role"]
                 else:
