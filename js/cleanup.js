@@ -91,6 +91,8 @@ function groupSVGElementsByTypeWithCoordinates() {
         stroke: element.attributes.stroke? element.attributes.stroke.value : 
           element.style.stroke ? element.style.stroke : "none",
         isReferenceElement: false,
+        strokeWidth: element.attributes["stroke-width"]? element.attributes["stroke-width"].value : 
+        element.style["stroke-width"] ? element.style["stroke-width"] : "none",
       };
       if (Object.keys(groupedGraphicsElement).includes(element.tagName + "s"))
         groupedGraphicsElement[element.tagName + "s"].push({
