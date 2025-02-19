@@ -88,6 +88,8 @@ function groupSVGElementsByTypeWithCoordinates() {
           : element.style.fill
           ? element.style.fill
           : getClosestAncestorColor(element.id),
+        stroke: element.attributes.stroke? element.attributes.stroke.value : 
+          element.style.stroke ? element.style.stroke : "none",
         isReferenceElement: false,
       };
       if (Object.keys(groupedGraphicsElement).includes(element.tagName + "s"))
