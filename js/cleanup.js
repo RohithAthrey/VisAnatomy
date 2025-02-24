@@ -88,6 +88,7 @@ function groupSVGElementsByTypeWithCoordinates() {
           : element.style.fill
           ? element.style.fill
           : getClosestAncestorStyle(element.id, "fill"),
+        d: element.attributes.d ? element.attributes.d.value : undefined,
         stroke: element.attributes.stroke? element.attributes.stroke.value : 
           element.style.stroke ? element.style.stroke : getClosestAncestorStyle(element.id, "stroke"),
         isReferenceElement: false,

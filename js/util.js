@@ -118,6 +118,21 @@ function tryLoadAnnotations(filename) {
   });
 }
 
+//for polyline elements
+function getNumVertices(d) {
+  // Regular expression to match numbers (handles decimals and negatives)
+  const regex = /-?\d*\.?\d+/g;
+  const numbers = d.match(regex)?.map(Number) || [];
+
+  // Convert to coordinate pairs
+  const vertices = [];
+  for (let i = 0; i < numbers.length; i += 2) {
+      vertices.push({ x: numbers[i], y: numbers[i + 1] });
+  }
+
+  return vertices.length;
+}
+
 function post() {
   let xhr = new XMLHttpRequest();
   xhr.open("POST", "/");
@@ -202,6 +217,16 @@ function post() {
   annotations.encodingInfo = objectEncodings;
   annotations.textObjectLinking = textObjectLinking;
   annotations.referenceElement = {};
+
+  let polylines = Object.keys(markInfo).filter(
+    (mark) => markInfo[mark].Role === "Main Chart Mark" && markInfo[mark].Type === "Polyline"
+  );
+  for (let pl of polylines) {
+    let d = annotations.allGraphicsElement[pl].d;
+    if (d) {
+      annotations.allGraphicsElement[pl].numVertices = getNumVertices(d);
+    }
+  }
 
   annotations.referenceElement["xGridlines"] = Object.keys(markInfo).filter(
     (mark) => markInfo[mark].Role === "Horizontal Gridline"
