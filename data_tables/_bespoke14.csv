@@ -1,0 +1,21 @@
+﻿Quarter,Subtype,Sales
+Q1,Processed Food,30
+Q2,Processed Food,26
+Q3,Processed Food,29
+Q4,Processed Food,31
+Q1,Un-Processed Food,21
+Q2,Un-Processed Food,28
+Q3,Un-Processed Food,39
+Q4,Un-Processed Food,41
+Q1,Electronics,27
+Q2,Electronics,25
+Q3,Electronics,28
+Q4,Electronics,26
+Q1,Apparels,17
+Q2,Apparels,15
+Q3,Apparels,18
+Q4,Apparels,16
+Q1,Others,12
+Q2,Others,17
+Q3,Others,16
+Q4,Others,15

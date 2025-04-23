@@ -1,0 +1,49 @@
+months,Attribute,Value
+Jan,earmarked,1.6
+Jan,softly_earmarked,0.6
+Jan,tightly_earmarked,19.2
+Jan,unearmarked,15.1
+Feb,earmarked,1.7
+Feb,softly_earmarked,3.9
+Feb,tightly_earmarked,21.9
+Feb,unearmarked,15.3
+Mar,earmarked,20.1
+Mar,softly_earmarked,7.6
+Mar,tightly_earmarked,22.8
+Mar,unearmarked,11.9
+Apr ,earmarked,41.8
+Apr ,softly_earmarked,9.8
+Apr ,tightly_earmarked,39.8
+Apr ,unearmarked,15.7
+May,earmarked,34
+May,softly_earmarked,14.8
+May,tightly_earmarked,51.3
+May,unearmarked,22.8
+Jun,earmarked,34.6
+Jun,softly_earmarked,18
+Jun,tightly_earmarked,53.7
+Jun,unearmarked,29.1
+Jul,earmarked,126.6
+Jul,softly_earmarked,61.9
+Jul,tightly_earmarked,63.7
+Jul,unearmarked,41.5
+Aug,earmarked,118.1
+Aug,softly_earmarked,61.6
+Aug,tightly_earmarked,92.9
+Aug,unearmarked,58
+Sep,earmarked,130.1
+Sep,softly_earmarked,78.2
+Sep,tightly_earmarked,86
+Sep,unearmarked,62.6
+Oct,earmarked,146.6
+Oct,softly_earmarked,81.3
+Oct,tightly_earmarked,88.8
+Oct,unearmarked,69.3
+Nov,earmarked,145.7
+Nov,softly_earmarked,83.5
+Nov,tightly_earmarked,95.8
+Nov,unearmarked,76.6
+Dec,earmarked,145.7
+Dec,softly_earmarked,102.1
+Dec,tightly_earmarked,107.3
+Dec,unearmarked,99.8

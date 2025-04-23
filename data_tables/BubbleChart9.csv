@@ -1,188 +1,188 @@
-country,income,health,population,region
-Afghanistan,1925,57.63,32526562,south_asia
-Albania,10620,76,2896679,europe_central_asia
-Algeria,13434,76.5,39666519,middle_east_north_africa
-Andorra,46577,84.1,70473,europe_central_asia
-Angola,7615,61,25021974,sub_saharan_africa
-Antigua and Barbuda,21049,75.2,91818,america
-Argentina,17344,76.2,43416755,america
-Armenia,7763,74.4,3017712,europe_central_asia
-Australia,44056,81.8,23968973,east_asia_pacific
-Austria,44401,81,8544586,europe_central_asia
-Azerbaijan,16986,72.9,9753968,europe_central_asia
-Bahamas,22818,72.3,388019,america
-Bahrain,44138,79.2,1377237,middle_east_north_africa
-Bangladesh,3161,70.1,160995642,south_asia
-Barbados,12984,75.8,284215,america
-Belarus,17415,70.4,9495826,europe_central_asia
-Belgium,41240,80.4,11299192,europe_central_asia
-Belize,8501,70,359287,america
-Benin,1830,65.5,10879829,sub_saharan_africa
-Bhutan,7983,70.2,774830,south_asia
-Bolivia,6295,72.3,10724705,america
-Bosnia and Herzegovina,9833,77.9,3810416,europe_central_asia
-Botswana,17196,66.4,2262485,sub_saharan_africa
-Brazil,15441,75.6,207847528,america
-Brunei,73003,78.7,423188,east_asia_pacific
-Bulgaria,16371,74.9,7149787,europe_central_asia
-Burkina Faso,1654,62.8,18105570,sub_saharan_africa
-Burundi,777,60.4,11178921,sub_saharan_africa
-Cambodia,3267,68.4,15577899,east_asia_pacific
-Cameroon,2897,59.5,23344179,sub_saharan_africa
-Canada,43294,81.7,35939927,america
-Cape Verde,6514,74.6,520502,sub_saharan_africa
-Central African Republic,599,53.8,4900274,sub_saharan_africa
-Chad,2191,57.7,14037472,sub_saharan_africa
-Chile,22465,79.3,17948141,america
-China,13334,76.9,1376048943,east_asia_pacific
-Colombia,12761,75.8,48228704,america
-Comoros,1472,64.1,788474,sub_saharan_africa
-"Congo, Dem. Rep.",809,58.3,77266814,sub_saharan_africa
-"Congo, Rep.",6220,61.9,4620330,sub_saharan_africa
-Costa Rica,14132,80,4807850,america
-Cote d'Ivoire,3491,60.33,22701556,sub_saharan_africa
-Croatia,20260,78,4240317,europe_central_asia
-Cuba,21291,78.5,11389562,america
-Cyprus,29797,82.6,1165300,europe_central_asia
-Czech Republic,29437,78.6,10543186,europe_central_asia
-Denmark,43495,80.1,5669081,europe_central_asia
-Djibouti,3139,64.63,887861,middle_east_north_africa
-Dominica,10503,74.6,72680,america
-Dominican Republic,12837,73.8,10528391,america
-Ecuador,10996,75.2,16144363,america
-Egypt,11031,71.3,91508084,middle_east_north_africa
-El Salvador,7776,74.1,6126583,america
-Equatorial Guinea,31087,60.63,845060,sub_saharan_africa
-Eritrea,1129,62.9,5227791,sub_saharan_africa
-Estonia,26812,76.8,1312558,europe_central_asia
-Ethiopia,1520,63.6,99390750,sub_saharan_africa
-Fiji,7925,66.3,892145,east_asia_pacific
-Finland,38923,80.8,5503457,europe_central_asia
-France,37599,81.9,64395345,europe_central_asia
-Gabon,18627,60.53,1725292,sub_saharan_africa
-Gambia,1644,65.1,1990924,sub_saharan_africa
-Georgia,7474,73.3,3999812,europe_central_asia
-Germany,44053,81.1,80688545,europe_central_asia
-Ghana,4099,65.5,27409893,sub_saharan_africa
-Greece,25430,79.8,10954617,europe_central_asia
-Grenada,11593,71.7,106825,america
-Guatemala,7279,73.1,16342897,america
-Guinea,1225,60.8,12608590,sub_saharan_africa
-Guinea-Bissau,1386,53.4,1844325,sub_saharan_africa
-Guyana,6816,64.4,767085,america
-Haiti,1710,65.3,10711067,america
-Honduras,4270,72.4,8075060,america
-Hungary,24200,76.2,9855023,europe_central_asia
-Iceland,42182,82.8,329425,europe_central_asia
-India,5903,66.8,1311050527,south_asia
-Indonesia,10504,70.9,257563815,east_asia_pacific
-Iran,15573,78.5,79109272,middle_east_north_africa
-Iraq,14646,72.1,36423395,middle_east_north_africa
-Ireland,47758,80.4,4688465,europe_central_asia
-Israel,31590,82.4,8064036,middle_east_north_africa
-Italy,33297,82.1,59797685,europe_central_asia
-Jamaica,8606,75.5,2793335,america
-Japan,36162,83.5,126573481,east_asia_pacific
-Jordan,11752,78.3,7594547,middle_east_north_africa
-Kazakhstan,23468,68.2,17625226,europe_central_asia
-Kenya,2898,66.63,46050302,sub_saharan_africa
-Kiribati,1824,62.4,112423,east_asia_pacific
-Kuwait,82633,80.7,3892115,middle_east_north_africa
-Kyrgyz Republic,3245,69,5939962,europe_central_asia
-Lao,5212,66.4,6802023,east_asia_pacific
-Latvia,23282,75.7,1970503,europe_central_asia
-Lebanon,17050,78.5,5850743,middle_east_north_africa
-Lesotho,2598,48.5,2135022,sub_saharan_africa
-Liberia,958,63.9,4503438,sub_saharan_africa
-Libya,17261,76.2,6278438,middle_east_north_africa
-Lithuania,26665,75.4,2878405,europe_central_asia
-Luxembourg,88314,81.1,567110,europe_central_asia
-"Macedonia, FYR",12547,77,2078453,europe_central_asia
-Madagascar,1400,64.7,24235390,sub_saharan_africa
-Malawi,799,60.22,17215232,sub_saharan_africa
-Malaysia,24320,75.1,30331007,east_asia_pacific
-Maldives,14408,79.5,363657,south_asia
-Mali,1684,57.6,17599694,sub_saharan_africa
-Malta,30265,82.1,418670,europe_central_asia
-Marshall Islands,3661,65.1,52993,east_asia_pacific
-Mauritania,3877,65.7,4067564,sub_saharan_africa
-Mauritius,18350,73.9,1273212,sub_saharan_africa
-Mexico,16850,74.5,127017224,america
-"Micronesia, Fed. Sts.",3510,67,104460,east_asia_pacific
-Moldova,4896,72.7,4068897,europe_central_asia
-Mongolia,11819,65.3,2959134,east_asia_pacific
-Montenegro,14833,75.8,625781,europe_central_asia
-Morocco,7319,74.7,34377511,middle_east_north_africa
-Mozambique,1176,56.4,27977863,sub_saharan_africa
-Myanmar,4012,67.9,53897154,east_asia_pacific
-Namibia,10040,61,2458830,sub_saharan_africa
-Nepal,2352,71.2,28513700,south_asia
-Netherlands,45784,80.6,16924929,europe_central_asia
-New Zealand,34186,80.6,4528526,east_asia_pacific
-Nicaragua,4712,76.8,6082032,america
-Niger,943,62.2,19899120,sub_saharan_africa
-Nigeria,5727,61.33,182201962,sub_saharan_africa
-North Korea,1390,71.4,25155317,east_asia_pacific
-Norway,64304,81.6,5210967,europe_central_asia
-Oman,48226,75.7,4490541,middle_east_north_africa
-Pakistan,4743,66.5,188924874,south_asia
-Panama,20485,78.2,3929141,america
-Papua New Guinea,2529,60.6,7619321,east_asia_pacific
-Paraguay,8219,73.9,6639123,america
-Peru,11903,77.5,31376670,america
-Philippines,6876,70.2,100699395,east_asia_pacific
-Poland,24787,77.3,38611794,europe_central_asia
-Portugal,26437,79.8,10349803,europe_central_asia
-Qatar,132877,82,2235355,middle_east_north_africa
-Romania,19203,76.8,19511324,europe_central_asia
-Russia,23038,73.13,143456918,europe_central_asia
-Rwanda,1549,66.53,11609666,sub_saharan_africa
-Samoa,5558,72.2,193228,east_asia_pacific
-Sao Tome and Principe,3003,68.8,190344,sub_saharan_africa
-Saudi Arabia,52469,78.1,31540372,middle_east_north_africa
-Senegal,2251,66.1,15129273,sub_saharan_africa
-Serbia,12908,78.1,8850975,europe_central_asia
-Seychelles,25684,73.7,96471,sub_saharan_africa
-Sierra Leone,2085,58.5,6453184,sub_saharan_africa
-Singapore,80794,82.1,5603740,east_asia_pacific
-Slovak Republic,27204,76.4,5426258,europe_central_asia
-Slovenia,28550,80.2,2067526,europe_central_asia
-Solomon Islands,2047,64.1,583591,east_asia_pacific
-Somalia,624,58.7,10787104,sub_saharan_africa
-South Africa,12509,63.72,54490406,sub_saharan_africa
-South Korea,34644,80.7,50293439,east_asia_pacific
-South Sudan,3047,58,12339812,sub_saharan_africa
-Spain,32979,81.7,46121699,europe_central_asia
-Sri Lanka,10624,76.5,20715010,south_asia
-St. Lucia,9997,74.5,184999,america
-St. Vincent and the Grenadines,10435,72.9,109462,america
-Sudan,3975,69.5,40234882,sub_saharan_africa
-Suriname,17125,70.5,542975,america
-Swaziland,6095,51.5,1286970,sub_saharan_africa
-Sweden,44892,82,9779426,europe_central_asia
-Switzerland,56118,82.9,8298663,europe_central_asia
-Syria,4637,70.26,18502413,middle_east_north_africa
-Tajikistan,2582,71,8481855,europe_central_asia
-Tanzania,2571,63.43,53470420,sub_saharan_africa
-Thailand,14512,75.1,67959359,east_asia_pacific
-Timor-Leste,2086,72.4,1184765,east_asia_pacific
-Togo,1433,64.23,7304578,sub_saharan_africa
-Tonga,5069,70.5,106170,east_asia_pacific
-Trinidad and Tobago,30113,71.4,1360088,america
-Tunisia,11126,77.3,11253554,middle_east_north_africa
-Turkey,19360,76.5,78665830,europe_central_asia
-Turkmenistan,15865,67.9,5373502,europe_central_asia
-Uganda,1680,60.8,39032383,sub_saharan_africa
-Ukraine,8449,72.1,44823765,europe_central_asia
-United Arab Emirates,60749,76.6,9156963,middle_east_north_africa
-United Kingdom,38225,81.4,64715810,europe_central_asia
-United States,53354,79.1,321773631,america
-Uruguay,20438,77.3,3431555,america
-Uzbekistan,5598,70.1,29893488,europe_central_asia
-Vanuatu,2912,65,264652,east_asia_pacific
-Venezuela,15753,75.8,31108083,america
-Vietnam,5623,76.5,93447601,east_asia_pacific
-West Bank and Gaza,4319,75.2,4668466,middle_east_north_africa
-Yemen,3887,67.6,26832215,middle_east_north_africa
-Zambia,4034,58.96,16211767,sub_saharan_africa
-Zimbabwe,1801,60.01,15602751,sub_saharan_africa
+population,income,health
+32526562,1925,57.63
+2896679,10620,76
+39666519,13434,76.5
+70473,46577,84.1
+25021974,7615,61
+91818,21049,75.2
+43416755,17344,76.2
+3017712,7763,74.4
+23968973,44056,81.8
+8544586,44401,81
+9753968,16986,72.9
+388019,22818,72.3
+1377237,44138,79.2
+160995642,3161,70.1
+284215,12984,75.8
+9495826,17415,70.4
+11299192,41240,80.4
+359287,8501,70
+10879829,1830,65.5
+774830,7983,70.2
+10724705,6295,72.3
+3810416,9833,77.9
+2262485,17196,66.4
+207847528,15441,75.6
+423188,73003,78.7
+7149787,16371,74.9
+18105570,1654,62.8
+11178921,777,60.4
+15577899,3267,68.4
+23344179,2897,59.5
+35939927,43294,81.7
+520502,6514,74.6
+4900274,599,53.8
+14037472,2191,57.7
+17948141,22465,79.3
+1376048943,13334,76.9
+48228704,12761,75.8
+788474,1472,64.1
+77266814,809,58.3
+4620330,6220,61.9
+4807850,14132,80
+22701556,3491,60.33
+4240317,20260,78
+11389562,21291,78.5
+1165300,29797,82.6
+10543186,29437,78.6
+5669081,43495,80.1
+887861,3139,64.63
+72680,10503,74.6
+10528391,12837,73.8
+16144363,10996,75.2
+91508084,11031,71.3
+6126583,7776,74.1
+845060,31087,60.63
+5227791,1129,62.9
+1312558,26812,76.8
+99390750,1520,63.6
+892145,7925,66.3
+5503457,38923,80.8
+64395345,37599,81.9
+1725292,18627,60.53
+1990924,1644,65.1
+3999812,7474,73.3
+80688545,44053,81.1
+27409893,4099,65.5
+10954617,25430,79.8
+106825,11593,71.7
+16342897,7279,73.1
+12608590,1225,60.8
+1844325,1386,53.4
+767085,6816,64.4
+10711067,1710,65.3
+8075060,4270,72.4
+9855023,24200,76.2
+329425,42182,82.8
+1311050527,5903,66.8
+257563815,10504,70.9
+79109272,15573,78.5
+36423395,14646,72.1
+4688465,47758,80.4
+8064036,31590,82.4
+59797685,33297,82.1
+2793335,8606,75.5
+126573481,36162,83.5
+7594547,11752,78.3
+17625226,23468,68.2
+46050302,2898,66.63
+112423,1824,62.4
+3892115,82633,80.7
+5939962,3245,69
+6802023,5212,66.4
+1970503,23282,75.7
+5850743,17050,78.5
+2135022,2598,48.5
+4503438,958,63.9
+6278438,17261,76.2
+2878405,26665,75.4
+567110,88314,81.1
+2078453,12547,77
+24235390,1400,64.7
+17215232,799,60.22
+30331007,24320,75.1
+363657,14408,79.5
+17599694,1684,57.6
+418670,30265,82.1
+52993,3661,65.1
+4067564,3877,65.7
+1273212,18350,73.9
+127017224,16850,74.5
+104460,3510,67
+4068897,4896,72.7
+2959134,11819,65.3
+625781,14833,75.8
+34377511,7319,74.7
+27977863,1176,56.4
+53897154,4012,67.9
+2458830,10040,61
+28513700,2352,71.2
+16924929,45784,80.6
+4528526,34186,80.6
+6082032,4712,76.8
+19899120,943,62.2
+182201962,5727,61.33
+25155317,1390,71.4
+5210967,64304,81.6
+4490541,48226,75.7
+188924874,4743,66.5
+3929141,20485,78.2
+7619321,2529,60.6
+6639123,8219,73.9
+31376670,11903,77.5
+100699395,6876,70.2
+38611794,24787,77.3
+10349803,26437,79.8
+2235355,132877,82
+19511324,19203,76.8
+143456918,23038,73.13
+11609666,1549,66.53
+193228,5558,72.2
+190344,3003,68.8
+31540372,52469,78.1
+15129273,2251,66.1
+8850975,12908,78.1
+96471,25684,73.7
+6453184,2085,58.5
+5603740,80794,82.1
+5426258,27204,76.4
+2067526,28550,80.2
+583591,2047,64.1
+10787104,624,58.7
+54490406,12509,63.72
+50293439,34644,80.7
+12339812,3047,58
+46121699,32979,81.7
+20715010,10624,76.5
+184999,9997,74.5
+109462,10435,72.9
+40234882,3975,69.5
+542975,17125,70.5
+1286970,6095,51.5
+9779426,44892,82
+8298663,56118,82.9
+18502413,4637,70.26
+8481855,2582,71
+53470420,2571,63.43
+67959359,14512,75.1
+1184765,2086,72.4
+7304578,1433,64.23
+106170,5069,70.5
+1360088,30113,71.4
+11253554,11126,77.3
+78665830,19360,76.5
+5373502,15865,67.9
+39032383,1680,60.8
+44823765,8449,72.1
+9156963,60749,76.6
+64715810,38225,81.4
+321773631,53354,79.1
+3431555,20438,77.3
+29893488,5598,70.1
+264652,2912,65
+31108083,15753,75.8
+93447601,5623,76.5
+4668466,4319,75.2
+26832215,3887,67.6
+16211767,4034,58.96
+15602751,1801,60.01

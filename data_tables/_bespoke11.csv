@@ -1,0 +1,21 @@
+﻿Genre,Attribute,Value
+Pop,Performed,62
+Pop,Scheduled,97
+Pop Rock,Performed,52
+Pop Rock,Scheduled,78
+Rock ,Performed,42
+Rock ,Scheduled,65
+EDM,Performed,35
+EDM,Scheduled,80
+Techno,Performed,32
+Techno,Scheduled,77
+Cubstep,Performed,30
+Cubstep,Scheduled,45
+Metal,Performed,27
+Metal,Scheduled,63
+Punk,Performed,27
+Punk,Scheduled,41
+Hip-Hop,Performed,23
+Hip-Hop,Scheduled,36
+Reggae,Performed,20
+Reggae,Scheduled,30
