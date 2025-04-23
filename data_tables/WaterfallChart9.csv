@@ -1,0 +1,9 @@
+﻿Category,Value
+Base value,16.08
+total_bill = 20.4,-0.484
+sex = Male,-0.0694
+smoker = No,-0.613
+day = Salt,-0.177
+time = Dinner,0.0131
+size = 4,0.129
+Model output,14.67

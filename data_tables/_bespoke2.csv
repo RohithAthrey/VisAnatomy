@@ -1,0 +1,1547 @@
+country,category,value
+Greenland,Imports,7.6
+Canada,Imports,144369.9
+St Pierre and Miquelon,Imports,3.4
+Mexico,Imports,62100.4
+Guatemala,Imports,1526.8
+Belize,Imports,52.1
+El Salvador,Imports,812.2
+Honduras,Imports,1441.2
+Nicaragua,Imports,238.8
+Costa Rica,Imports,1843.2
+Panama,Imports,307.1
+Bermuda,Imports,10.4
+Bahamas,Imports,156.7
+Cuba,Imports,0.0
+Jamaica,Imports,846.9
+Turks and Caicos Islands,Imports,5.0
+Cayman Islands,Imports,18.2
+Haiti,Imports,129.9
+Dominican Republic,Imports,3398.9
+Anguilla,Imports,0.0
+British Virgin Islands,Imports,11.2
+St Kitts and Nevis,Imports,22.3
+Antigua and Barbuda,Imports,2.8
+Montserrat,Imports,2.0
+Dominica,Imports,6.6
+St Lucia,Imports,35.1
+St Vincent and the Grenadines,Imports,7.9
+Grenada,Imports,5.3
+Barbados,Imports,37.7
+Trinidad and Tobago,Imports,1089.2
+Netherlands Antilles,Imports,289.8
+Aruba,Imports,420.7
+Guadeloupe,Imports,1.2
+Martinique,Imports,1.9
+Colombia,Imports,3791.0
+Venezuela,Imports,9764.0
+Guyana,Imports,107.4
+Suriname,Imports,100.0
+French Guiana,Imports,5.2
+Ecuador,Imports,1939.7
+Peru,Imports,1034.4
+Bolivia,Imports,262.5
+Chile,Imports,1930.8
+Brazil,Imports,8832.9
+Paraguay,Imports,55.0
+Uruguay,Imports,167.2
+Argentina,Imports,1760.8
+Falkland Islands(Islas Malvin,Imports,0.5
+Iceland,Imports,232.8
+Sweden,Imports,6256.4
+"Svalbard, Jan Mayen Island",Imports,0.2
+Norway,Imports,3086.7
+Finland,Imports,2269.9
+Faroe Islands,Imports,8.4
+Denmark,Imports,1944.9
+United Kingdom,Imports,26929.7
+Ireland,Imports,4078.7
+Netherlands,Imports,6404.9
+Belgium,Imports,6053.9
+Luxembourg,Imports,233.8
+Andorra,Imports,0.2
+Monaco,Imports,12.2
+France,Imports,17209.4
+Germany,Imports,36843.9
+Austria,Imports,1963.2
+Czechoslovakia,Imports,0.0
+Czech Republic,Imports,363.3
+Slovakia,Imports,129.5
+Hungary,Imports,547.0
+Liechtenstein,Imports,126.2
+Switzerland,Imports,7593.9
+Estonia,Imports,62.1
+Latvia,Imports,82.0
+Lithuania,Imports,26.5
+Poland,Imports,663.6
+USSR,Imports,0.0
+Russia,Imports,4030.1
+Belarus,Imports,45.0
+Ukraine,Imports,405.7
+Armenia,Imports,16.3
+Azerbaijan,Imports,0.7
+Georgia,Imports,10.7
+Kazakhstan,Imports,122.9
+Kyrgyzstan,Imports,8.4
+Moldova,Imports,24.8
+Tajikistan,Imports,40.9
+Turkmenistan,Imports,1.3
+Uzbekistan,Imports,18.8
+Spain,Imports,3879.7
+Portugal,Imports,1056.7
+Gibraltar,Imports,4.8
+Malta,Imports,132.5
+San Marino,Imports,1.0
+Vatican City,Imports,0.7
+Italy,Imports,16348.4
+Yugoslavia (former),Imports,0.0
+Croatia,Imports,93.8
+Slovenia,Imports,289.5
+Bosnia and Herzegovina,Imports,3.5
+Macedonia,Imports,88.8
+Serbia and Montenegro,Imports,0.0
+Albania,Imports,9.4
+Greece,Imports,397.1
+Romania,Imports,222.3
+Bulgaria,Imports,188.5
+Turkey,Imports,1797.9
+Cyprus,Imports,13.1
+Syria,Imports,61.1
+Lebanon,Imports,35.0
+Iraq,Imports,0.0
+Iran,Imports,0.2
+Israel,Imports,0.0
+Israel,Imports,5708.7
+Gaza Strip admin. by Israel,Imports,0.0
+West Bank admin. by Israel,Imports,0.0
+Jordan,Imports,28.9
+Kuwait,Imports,1335.5
+Iraq-Saudi Arabia Neutral Zone,Imports,0.0
+Saudi Arabia,Imports,8376.6
+Qatar,Imports,90.9
+United Arab Emirates,Imports,459.1
+Republic of Yemen,Imports,41.5
+Oman,Imports,294.9
+Bahrain,Imports,134.3
+Afghanistan,Imports,5.4
+India,Imports,5726.3
+Pakistan,Imports,1197.0
+Nepal,Imports,96.1
+Bangladesh,Imports,1257.2
+Sri Lanka,Imports,1259.7
+Burma,Imports,81.0
+Thailand,Imports,11348.1
+Vietnam,Imports,199.0
+Laos,Imports,10.2
+Cambodia,Imports,5.1
+Malaysia,Imports,17454.9
+Singapore,Imports,18560.4
+Indonesia,Imports,7435.3
+Brunei,Imports,38.4
+Philippines,Imports,7006.5
+Macau,Imports,895.3
+Bhutan,Imports,0.1
+Maldives,Imports,12.0
+China,Imports,45543.2
+Mongolia,Imports,23.2
+"Korea, North",Imports,0.0
+"Korea, South",Imports,24184.0
+Hong Kong,Imports,10291.3
+Taiwan,Imports,28971.9
+Japan,Imports,123479.3
+Australia,Imports,3323.0
+Norfolk Island,Imports,78.6
+Cocos (Keeling) Islands,Imports,0.0
+Christmas Island,Imports,0.0
+Heard and McDonald Islands,Imports,0.3
+Papua New Guinea,Imports,50.2
+New Zealand,Imports,1451.8
+Cook Islands,Imports,0.8
+Tokelau,Imports,6.1
+Niue,Imports,0.1
+Samoa,Imports,0.3
+Solomon Islands,Imports,4.3
+Vanuatu,Imports,0.0
+Pitcairn Islands,Imports,0.0
+Kiribati,Imports,1.4
+Tuvalu,Imports,0.0
+New Caledonia,Imports,40.2
+Wallis and Futuna,Imports,0.0
+French Polynesia,Imports,14.4
+Marshall Islands,Imports,11.1
+Micronesia,Imports,13.2
+Palau,Imports,5.8
+Nauru,Imports,0.0
+Fiji,Imports,78.1
+Tonga,Imports,6.2
+Morocco,Imports,239.4
+Algeria,Imports,1749.5
+Tunisia,Imports,70.4
+Libya,Imports,0.0
+Egypt,Imports,606.3
+Sudan,Imports,22.6
+Western Sahara,Imports,0.0
+Equatorial Guinea,Imports,31.0
+Mauritania,Imports,5.4
+Cameroon,Imports,57.3
+Senegal,Imports,4.9
+Mali,Imports,3.6
+Guinea,Imports,98.8
+Sierra Leone,Imports,28.4
+Cote d'Ivoire,Imports,214.1
+Ghana,Imports,196.1
+Gambia,Imports,2.2
+Niger,Imports,1.4
+Togo,Imports,3.3
+Nigeria,Imports,4930.5
+Central African Republic,Imports,0.4
+Gabon,Imports,1463.9
+Chad,Imports,3.3
+St Helena,Imports,0.0
+Burkina Faso,Imports,0.4
+Benin,Imports,10.0
+Angola,Imports,2232.3
+Congo (Brazzaville),Imports,206.8
+Guinea-Bissau,Imports,0.0
+Cabo Verde,Imports,0.2
+Sao Tome and Principe,Imports,0.1
+Liberia,Imports,9.9
+Congo (Kinshasa),Imports,267.0
+Burundi,Imports,20.5
+Rwanda,Imports,1.8
+Somalia,Imports,0.0
+Ethiopia,Imports,0.0
+Eritrea,Imports,0.4
+Ethiopia,Imports,32.9
+Djibouti,Imports,0.0
+Uganda,Imports,13.4
+Kenya,Imports,101.5
+Seychelles,Imports,2.5
+British Indian Ocean Terr.,Imports,1.9
+Tanzania,Imports,22.4
+Mauritius,Imports,229.5
+Mozambique,Imports,27.5
+Madagascar,Imports,57.4
+Comoros,Imports,2.2
+Reunion,Imports,0.4
+French Southern and Antarctic,Imports,0.4
+South Africa,Imports,2208.0
+Namibia,Imports,11.5
+Botswana,Imports,21.3
+Zambia,Imports,32.8
+Swaziland,Imports,32.4
+Zimbabwe,Imports,97.5
+Malawi,Imports,41.1
+Lesotho,Imports,62.3
+Greenland,Exports,2.4
+Canada,Exports,127226.0
+St Pierre and Miquelon,Exports,0.5
+Mexico,Exports,46292.1
+Guatemala,Exports,1646.6
+Belize,Exports,99.7
+El Salvador,Exports,1110.4
+Honduras,Exports,1278.9
+Nicaragua,Exports,249.8
+Costa Rica,Exports,1736.6
+Panama,Exports,1389.6
+Bermuda,Exports,298.5
+Bahamas,Exports,661.2
+Cuba,Exports,5.4
+Jamaica,Exports,1420.2
+Turks and Caicos Islands,Exports,33.6
+Cayman Islands,Exports,180.1
+Haiti,Exports,550.1
+Dominican Republic,Exports,3014.9
+Anguilla,Exports,14.6
+British Virgin Islands,Exports,49.2
+St Kitts and Nevis,Exports,43.6
+Antigua and Barbuda,Exports,97.0
+Montserrat,Exports,4.4
+Dominica,Exports,26.6
+St Lucia,Exports,80.8
+St Vincent and the Grenadines,Exports,42.2
+Grenada,Exports,26.9
+Barbados,Exports,185.6
+Trinidad and Tobago,Exports,689.2
+Netherlands Antilles,Exports,503.9
+Aruba,Exports,247.6
+Guadeloupe,Exports,69.1
+Martinique,Exports,38.5
+Colombia,Exports,4624.4
+Venezuela,Exports,4640.4
+Guyana,Exports,141.3
+Suriname,Exports,189.7
+French Guiana,Exports,441.8
+Ecuador,Exports,1538.3
+Peru,Exports,1775.4
+Bolivia,Exports,213.5
+Chile,Exports,3614.7
+Brazil,Exports,11439.4
+Paraguay,Exports,992.4
+Uruguay,Exports,395.8
+Argentina,Exports,4189.2
+Falkland Islands(Islas Malvin,Exports,0.3
+Iceland,Exports,170.5
+Sweden,Exports,3079.7
+"Svalbard, Jan Mayen Island",Exports,1.1
+Norway,Exports,1292.9
+Finland,Exports,1249.7
+Faroe Islands,Exports,0.4
+Denmark,Exports,1517.7
+United Kingdom,Exports,28856.5
+Ireland,Exports,4108.7
+Netherlands,Exports,16557.6
+Belgium,Exports,12465.6
+Luxembourg,Exports,374.2
+Andorra,Exports,16.5
+Monaco,Exports,9.6
+France,Exports,14245.2
+Germany,Exports,22394.3
+Austria,Exports,2017.0
+Czechoslovakia,Exports,0.0
+Czech Republic,Exports,362.8
+Slovakia,Exports,61.0
+Hungary,Exports,295.2
+Liechtenstein,Exports,15.1
+Switzerland,Exports,6227.4
+Estonia,Exports,139.1
+Latvia,Exports,89.5
+Lithuania,Exports,52.2
+Poland,Exports,776.1
+USSR,Exports,0.0
+Russia,Exports,2823.4
+Belarus,Exports,47.9
+Ukraine,Exports,223.4
+Armenia,Exports,70.3
+Azerbaijan,Exports,35.6
+Georgia,Exports,95.2
+Kazakhstan,Exports,80.9
+Kyrgyzstan,Exports,24.6
+Moldova,Exports,10.2
+Tajikistan,Exports,17.6
+Turkmenistan,Exports,34.3
+Uzbekistan,Exports,63.4
+Spain,Exports,5526.0
+Portugal,Exports,898.1
+Gibraltar,Exports,18.4
+Malta,Exports,106.7
+San Marino,Exports,5.7
+Vatican City,Exports,0.3
+Italy,Exports,8861.6
+Yugoslavia (former),Exports,0.0
+Croatia,Exports,140.0
+Slovenia,Exports,109.6
+Bosnia and Herzegovina,Exports,28.3
+Macedonia,Exports,21.2
+Serbia and Montenegro,Exports,2.1
+Albania,Exports,13.5
+Greece,Exports,1518.7
+Romania,Exports,253.2
+Bulgaria,Exports,131.8
+Turkey,Exports,2768.0
+Cyprus,Exports,257.8
+Syria,Exports,223.4
+Lebanon,Exports,592.2
+Iraq,Exports,0.2
+Iran,Exports,277.4
+Israel,Exports,0.0
+Israel,Exports,5621.0
+Gaza Strip admin. by Israel,Exports,0.1
+West Bank admin. by Israel,Exports,0.3
+Jordan,Exports,335.3
+Kuwait,Exports,1437.4
+Iraq-Saudi Arabia Neutral Zone,Exports,0.0
+Saudi Arabia,Exports,6155.0
+Qatar,Exports,226.0
+United Arab Emirates,Exports,2006.3
+Republic of Yemen,Exports,185.3
+Oman,Exports,222.0
+Bahrain,Exports,255.1
+Afghanistan,Exports,4.0
+India,Exports,3295.8
+Pakistan,Exports,941.3
+Nepal,Exports,9.8
+Bangladesh,Exports,325.0
+Sri Lanka,Exports,279.1
+Burma,Exports,16.2
+Thailand,Exports,6665.0
+Vietnam,Exports,252.3
+Laos,Exports,1.6
+Cambodia,Exports,26.9
+Malaysia,Exports,8816.1
+Singapore,Exports,15333.0
+Indonesia,Exports,3359.6
+Brunei,Exports,190.1
+Philippines,Exports,5294.8
+Macau,Exports,29.9
+Bhutan,Exports,0.5
+Maldives,Exports,1.1
+China,Exports,11753.7
+Mongolia,Exports,13.9
+"Korea, North",Exports,11.6
+"Korea, South",Exports,25379.9
+Hong Kong,Exports,14231.5
+Taiwan,Exports,19289.6
+Japan,Exports,64342.7
+Australia,Exports,10789.1
+Norfolk Island,Exports,1.2
+Cocos (Keeling) Islands,Exports,0.5
+Christmas Island,Exports,4.5
+Heard and McDonald Islands,Exports,0.0
+Papua New Guinea,Exports,50.8
+New Zealand,Exports,1691.3
+Cook Islands,Exports,0.9
+Tokelau,Exports,0.1
+Niue,Exports,31.5
+Samoa,Exports,7.3
+Solomon Islands,Exports,2.7
+Vanuatu,Exports,1.1
+Pitcairn Islands,Exports,2.2
+Kiribati,Exports,2.3
+Tuvalu,Exports,0.3
+New Caledonia,Exports,22.3
+Wallis and Futuna,Exports,0.0
+French Polynesia,Exports,82.3
+Marshall Islands,Exports,31.8
+Micronesia,Exports,23.3
+Palau,Exports,8.3
+Nauru,Exports,0.5
+Fiji,Exports,31.8
+Tonga,Exports,7.5
+Morocco,Exports,517.4
+Algeria,Exports,774.1
+Tunisia,Exports,214.9
+Libya,Exports,0.0
+Egypt,Exports,2985.1
+Sudan,Exports,43.5
+Western Sahara,Exports,0.0
+Equatorial Guinea,Exports,5.2
+Mauritania,Exports,43.2
+Cameroon,Exports,45.6
+Senegal,Exports,67.9
+Mali,Exports,23.1
+Guinea,Exports,66.5
+Sierra Leone,Exports,18.1
+Cote d'Ivoire,Exports,173.3
+Ghana,Exports,167.2
+Gambia,Exports,6.1
+Niger,Exports,39.6
+Togo,Exports,18.5
+Nigeria,Exports,602.9
+Central African Republic,Exports,6.3
+Gabon,Exports,54.5
+Chad,Exports,10.8
+St Helena,Exports,0.3
+Burkina Faso,Exports,14.7
+Benin,Exports,34.0
+Angola,Exports,259.7
+Congo (Brazzaville),Exports,54.8
+Guinea-Bissau,Exports,0.8
+Cabo Verde,Exports,7.5
+Sao Tome and Principe,Exports,1.8
+Liberia,Exports,41.7
+Congo (Kinshasa),Exports,77.1
+Burundi,Exports,2.9
+Rwanda,Exports,38.3
+Somalia,Exports,8.1
+Ethiopia,Exports,0.0
+Eritrea,Exports,16.5
+Ethiopia,Exports,147.7
+Djibouti,Exports,8.5
+Uganda,Exports,22.1
+Kenya,Exports,114.0
+Seychelles,Exports,7.2
+British Indian Ocean Terr.,Exports,1.8
+Tanzania,Exports,66.2
+Mauritius,Exports,24.6
+Mozambique,Exports,49.3
+Madagascar,Exports,9.8
+Comoros,Exports,0.6
+Reunion,Exports,3.7
+French Southern and Antarctic,Exports,0.0
+South Africa,Exports,2750.5
+Namibia,Exports,26.5
+Botswana,Exports,35.7
+Zambia,Exports,48.9
+Swaziland,Exports,3.2
+Zimbabwe,Exports,122.1
+Malawi,Exports,17.8
+Lesotho,Exports,1.8
+Greenland,Imports,17.255599
+Canada,Imports,290384.2932
+St Pierre and Miquelon,Imports,1.094378
+Mexico,Imports,170108.6141
+Guatemala,Imports,3137.382263
+Belize,Imports,98.265102
+El Salvador,Imports,1988.765718
+Honduras,Imports,3749.243099
+Nicaragua,Imports,1180.787602
+Costa Rica,Imports,3415.279262
+Panama,Imports,327.060069
+Bermuda,Imports,87.276753
+Bahamas,Imports,699.936003
+Cuba,Imports,0.009079
+Jamaica,Imports,375.57236
+Turks and Caicos Islands,Imports,9.434412
+Cayman Islands,Imports,53.497875
+Haiti,Imports,447.217315
+Dominican Republic,Imports,4603.684143
+Anguilla,Imports,3.754737
+British Virgin Islands,Imports,33.579607
+St Kitts and Nevis,Imports,49.718541
+Antigua and Barbuda,Imports,4.414365
+Montserrat,Imports,0.953906
+Dominica,Imports,3.344243
+St Lucia,Imports,32.396909
+St Vincent and the Grenadines,Imports,15.650342
+Grenada,Imports,5.852881
+Barbados,Imports,31.903789
+Trinidad and Tobago,Imports,7890.88378
+Netherlands Antilles,Imports,922.413941
+Aruba,Imports,2919.735672
+Guadeloupe,Imports,2.128806
+Martinique,Imports,22.236488
+Colombia,Imports,8849.380048
+Venezuela,Imports,33978.13481
+Guyana,Imports,119.931261
+Suriname,Imports,165.346376
+French Guiana,Imports,0.121285
+Ecuador,Imports,5758.679346
+Peru,Imports,5119.15577
+Bolivia,Imports,293.216045
+Chile,Imports,6664.333836
+Brazil,Imports,24435.51938
+Paraguay,Imports,51.645596
+Uruguay,Imports,732.311644
+Argentina,Imports,4583.613305
+Falkland Islands(Islas Malvin,Imports,9.261546
+Iceland,Imports,268.97508
+Sweden,Imports,13820.97724
+"Svalbard, Jan Mayen Island",Imports,0.039576
+Norway,Imports,6776.30892
+Finland,Imports,4341.679942
+Faroe Islands,Imports,4.276273
+Denmark,Imports,5144.20165
+United Kingdom,Imports,51032.62111
+Ireland,Imports,28733.08026
+Netherlands,Imports,14862.04151
+Belgium,Imports,13022.90274
+Luxembourg,Imports,388.834493
+Andorra,Imports,0.673148
+Monaco,Imports,37.485881
+France,Imports,33842.05751
+Germany,Imports,84750.87138
+Austria,Imports,6102.944725
+Czech Republic,Imports,2192.863031
+Slovakia,Imports,960.730063
+Hungary,Imports,2561.172978
+Liechtenstein,Imports,295.705721
+Switzerland,Imports,12999.88108
+Estonia,Imports,511.379949
+Latvia,Imports,362.159252
+Lithuania,Imports,633.912046
+Poland,Imports,1948.58625
+Russia,Imports,15306.67384
+Belarus,Imports,345.161433
+Ukraine,Imports,1098.029235
+Armenia,Imports,46.191425
+Azerbaijan,Imports,45.361225
+Georgia,Imports,194.384289
+Kazakhstan,Imports,1101.145431
+Kyrgyzstan,Imports,4.618689
+Moldova,Imports,50.224656
+Tajikistan,Imports,241.029155
+Turkmenistan,Imports,135.325351
+Uzbekistan,Imports,95.627811
+Spain,Imports,8614.64214
+Portugal,Imports,2328.674933
+Gibraltar,Imports,4.637081
+Malta,Imports,282.653662
+San Marino,Imports,1.389972
+Vatican City,Imports,0.282286
+Italy,Imports,31009.26008
+Croatia,Imports,364.277603
+Slovenia,Imports,413.019469
+Bosnia and Herzegovina,Imports,70.462111
+Macedonia,Imports,48.149502
+Serbia and Montenegro,Imports,54.632827
+Albania,Imports,37.18875
+Greece,Imports,883.73016
+Romania,Imports,1207.584718
+Bulgaria,Imports,454.262612
+Turkey,Imports,5182.052179
+Cyprus,Imports,30.536194
+Syria,Imports,323.599119
+Lebanon,Imports,86.370988
+Iraq,Imports,9053.695686
+Iran,Imports,174.457417
+Israel,Imports,16830.46608
+Gaza Strip admin. by Israel,Imports,1.443661
+West Bank admin. by Israel,Imports,1.604198
+Jordan,Imports,1266.84986
+Kuwait,Imports,4334.781445
+Saudi Arabia,Imports,27192.64204
+Qatar,Imports,447.861094
+United Arab Emirates,Imports,1468.316627
+Republic of Yemen,Imports,278.635079
+Oman,Imports,555.043525
+Bahrain,Imports,431.61192
+Afghanistan,Imports,67.310191
+India,Imports,18804.16965
+Pakistan,Imports,3253.181975
+Nepal,Imports,111.212077
+Bangladesh,Imports,2693.035035
+Sri Lanka,Imports,2082.938898
+Burma,Imports,0.0615
+Thailand,Imports,19889.75578
+Vietnam,Imports,6631.158734
+Laos,Imports,4.166156
+Cambodia,Imports,1766.956953
+Malaysia,Imports,33685.15957
+Singapore,Imports,15110.08962
+Indonesia,Imports,12014.34419
+East Timor,Imports,0.084963
+Brunei,Imports,562.742346
+Philippines,Imports,9250.433389
+Macau,Imports,1249.02212
+Bhutan,Imports,0.615516
+Maldives,Imports,5.496456
+China,Imports,243470.1048
+Mongolia,Imports,143.645404
+"Korea, North",Imports,0.003252
+"Korea, South",Imports,43781.44106
+Hong Kong,Imports,8891.705575
+Taiwan,Imports,34825.82882
+Japan,Imports,138003.6962
+Australia,Imports,7342.17895
+Norfolk Island,Imports,0.17315
+Cocos (Keeling) Islands,Imports,0.484315
+Christmas Island,Imports,0.417613
+Heard and McDonald Islands,Imports,0.016396
+Papua New Guinea,Imports,58.451246
+New Zealand,Imports,3155.239797
+Cook Islands,Imports,1.744825
+Tokelau,Imports,10.800762
+Niue,Imports,0.138878
+Samoa,Imports,7.937575
+Solomon Islands,Imports,1.351564
+Vanuatu,Imports,2.489141
+Pitcairn Islands,Imports,1.040512
+Kiribati,Imports,1.104581
+Tuvalu,Imports,0.056868
+New Caledonia,Imports,27.174251
+Wallis and Futuna,Imports,0.022469
+French Polynesia,Imports,60.124235
+Marshall Islands,Imports,17.205126
+Micronesia,Imports,1.557731
+Palau,Imports,0.484544
+Nauru,Imports,0.148786
+Fiji,Imports,169.460711
+Tonga,Imports,5.350431
+Morocco,Imports,445.793996
+Algeria,Imports,10446.43785
+Tunisia,Imports,263.768113
+Libya,Imports,1590.341099
+Egypt,Imports,2091.236887
+Sudan,Imports,13.574271
+Western Sahara,Imports,0.0
+Equatorial Guinea,Imports,1561.137497
+Mauritania,Imports,0.825319
+Cameroon,Imports,158.161864
+Senegal,Imports,3.662962
+Mali,Imports,3.649953
+Guinea,Imports,74.733573
+Sierra Leone,Imports,9.312822
+Cote d'Ivoire,Imports,1197.97516
+Ghana,Imports,158.409617
+Gambia,Imports,0.427153
+Niger,Imports,65.51339
+Togo,Imports,6.439273
+Nigeria,Imports,24239.35673
+Central African Republic,Imports,5.696947
+Gabon,Imports,2815.602273
+Chad,Imports,1498.086294
+St Helena,Imports,3.269267
+Burkina Faso,Imports,2.084203
+Benin,Imports,0.513184
+Angola,Imports,8484.361601
+Congo (Brazzaville),Imports,1622.90154
+Guinea-Bissau,Imports,0.120677
+Cabo Verde,Imports,2.62425
+Sao Tome and Principe,Imports,0.216017
+Liberia,Imports,90.827263
+Congo (Kinshasa),Imports,263.558216
+Burundi,Imports,4.423229
+Rwanda,Imports,6.301468
+Somalia,Imports,0.307638
+Eritrea,Imports,1.269401
+Ethiopia,Imports,61.802253
+Djibouti,Imports,1.101206
+Uganda,Imports,25.769069
+Kenya,Imports,348.019269
+Seychelles,Imports,5.883749
+British Indian Ocean Terr.,Imports,0.432984
+Tanzania,Imports,33.695475
+Mauritius,Imports,221.85071
+Mozambique,Imports,11.905754
+Madagascar,Imports,323.631165
+Comoros,Imports,1.447044
+Reunion,Imports,5.835528
+French Southern and Antarctic,Imports,0.05164
+South Africa,Imports,5885.639948
+Namibia,Imports,129.590672
+Botswana,Imports,178.164424
+Zambia,Imports,31.70289
+Swaziland,Imports,198.886296
+Zimbabwe,Imports,94.328983
+Malawi,Imports,115.50192
+Lesotho,Imports,403.608048
+Greenland,Exports,5.085009
+Canada,Exports,211898.6894
+St Pierre and Miquelon,Exports,0.980031
+Mexico,Exports,120247.5801
+Guatemala,Exports,2835.38039
+Belize,Exports,217.562773
+El Salvador,Exports,1854.286657
+Honduras,Exports,3253.813808
+Nicaragua,Exports,625.460463
+Costa Rica,Exports,3598.560177
+Panama,Exports,2162.020485
+Bermuda,Exports,490.497944
+Bahamas,Exports,1786.740047
+Cuba,Exports,369.034678
+Jamaica,Exports,1700.769277
+Turks and Caicos Islands,Exports,237.752693
+Cayman Islands,Exports,680.670387
+Haiti,Exports,709.620597
+Dominican Republic,Exports,4718.733392
+Anguilla,Exports,32.186758
+British Virgin Islands,Exports,124.856685
+St Kitts and Nevis,Exports,94.069439
+Antigua and Barbuda,Exports,190.447421
+Montserrat,Exports,4.848606
+Dominica,Exports,61.540001
+St Lucia,Exports,135.389135
+St Vincent and the Grenadines,Exports,45.411401
+Grenada,Exports,82.440305
+Barbados,Exports,394.92009
+Trinidad and Tobago,Exports,1416.748479
+Netherlands Antilles,Exports,1137.633614
+Aruba,Exports,558.924451
+Guadeloupe,Exports,54.512655
+Martinique,Exports,34.95999
+Colombia,Exports,5462.357164
+Venezuela,Exports,6420.897723
+Guyana,Exports,176.704601
+Suriname,Exports,245.701079
+French Guiana,Exports,26.993942
+Ecuador,Exports,1963.825872
+Peru,Exports,2309.446378
+Bolivia,Exports,219.479092
+Chile,Exports,5133.523351
+Brazil,Exports,15371.71785
+Paraguay,Exports,895.819607
+Uruguay,Exports,356.676188
+Argentina,Exports,4121.861182
+Falkland Islands(Islas Malvin,Exports,9.049418
+Iceland,Exports,512.019513
+Sweden,Exports,3715.36862
+"Svalbard, Jan Mayen Island",Exports,5.677609
+Norway,Exports,1941.882004
+Finland,Exports,2254.052992
+Faroe Islands,Exports,2.528152
+Denmark,Exports,1918.423705
+United Kingdom,Exports,38568.08305
+Ireland,Exports,8446.771993
+Netherlands,Exports,26467.74458
+Belgium,Exports,18690.60657
+Luxembourg,Exports,711.38307
+Andorra,Exports,10.549473
+Monaco,Exports,16.776668
+France,Exports,22258.62805
+Germany,Exports,34183.65627
+Austria,Exports,2544.481273
+Czech Republic,Exports,1053.557481
+Slovakia,Exports,149.800634
+Hungary,Exports,1023.258213
+Liechtenstein,Exports,19.7165
+Switzerland,Exports,10717.52806
+Estonia,Exports,145.425805
+Latvia,Exports,177.537085
+Lithuania,Exports,390.027824
+Poland,Exports,1267.748385
+Russia,Exports,3962.270261
+Belarus,Exports,34.942759
+Ukraine,Exports,532.954308
+Armenia,Exports,65.483218
+Azerbaijan,Exports,132.462798
+Georgia,Exports,213.886826
+Kazakhstan,Exports,538.286932
+Kyrgyzstan,Exports,31.140901
+Moldova,Exports,40.069837
+Tajikistan,Exports,28.7867
+Turkmenistan,Exports,215.170092
+Uzbekistan,Exports,73.826609
+Spain,Exports,6839.116578
+Portugal,Exports,1131.865366
+Gibraltar,Exports,163.257568
+Malta,Exports,193.709217
+San Marino,Exports,4.676009
+Vatican City,Exports,24.181227
+Italy,Exports,11524.32529
+Croatia,Exports,158.621993
+Slovenia,Exports,233.830317
+Bosnia and Herzegovina,Exports,17.573793
+Macedonia,Exports,31.556267
+Serbia and Montenegro,Exports,132.49633
+Albania,Exports,18.513925
+Greece,Exports,1192.248494
+Romania,Exports,608.858767
+Bulgaria,Exports,267.93442
+Turkey,Exports,4238.966194
+Cyprus,Exports,84.179247
+Syria,Exports,155.049379
+Lebanon,Exports,465.688546
+Iraq,Exports,1373.986265
+Iran,Exports,95.773068
+Israel,Exports,9737.340849
+Gaza Strip admin. by Israel,Exports,0.23112
+West Bank admin. by Israel,Exports,3.720993
+Jordan,Exports,644.195347
+Kuwait,Exports,1974.875551
+Saudi Arabia,Exports,6805.402418
+Qatar,Exports,986.642413
+United Arab Emirates,Exports,8119.527357
+Republic of Yemen,Exports,219.04852
+Oman,Exports,570.72512
+Bahrain,Exports,350.78451
+Afghanistan,Exports,262.153213
+India,Exports,7918.602428
+Pakistan,Exports,1251.63194
+Nepal,Exports,24.704668
+Bangladesh,Exports,319.769758
+Sri Lanka,Exports,197.631294
+Burma,Exports,5.464172
+Thailand,Exports,7256.616259
+Vietnam,Exports,1193.152202
+Laos,Exports,9.807849
+Cambodia,Exports,69.652929
+Malaysia,Exports,10460.83317
+Singapore,Exports,20466.07346
+Indonesia,Exports,3053.913961
+East Timor,Exports,8.685474
+Brunei,Exports,49.614155
+Philippines,Exports,6895.406023
+Macau,Exports,101.575899
+Bhutan,Exports,3.05218
+Maldives,Exports,9.25555
+China,Exports,41192.01012
+Mongolia,Exports,21.879286
+"Korea, North",Exports,5.757048
+"Korea, South",Exports,27571.60598
+Hong Kong,Exports,16351.02861
+Taiwan,Exports,21614.49693
+Japan,Exports,54680.57985
+Australia,Exports,15588.51968
+Norfolk Island,Exports,0.391532
+Cocos (Keeling) Islands,Exports,1.048051
+Christmas Island,Exports,2.00592
+Heard and McDonald Islands,Exports,0.160607
+Papua New Guinea,Exports,55.347872
+New Zealand,Exports,2592.076963
+Cook Islands,Exports,1.372809
+Tokelau,Exports,79.822527
+Niue,Exports,0.607643
+Samoa,Exports,14.538961
+Solomon Islands,Exports,2.297431
+Vanuatu,Exports,9.138578
+Pitcairn Islands,Exports,0.45629
+Kiribati,Exports,2.411608
+Tuvalu,Exports,0.04246
+New Caledonia,Exports,38.403106
+Wallis and Futuna,Exports,0.408737
+French Polynesia,Exports,111.838384
+Marshall Islands,Exports,75.48435
+Micronesia,Exports,25.349268
+Palau,Exports,12.22524
+Nauru,Exports,1.62475
+Fiji,Exports,28.177593
+Tonga,Exports,9.685131
+Morocco,Exports,480.792527
+Algeria,Exports,1106.190448
+Tunisia,Exports,261.16652
+Libya,Exports,83.841985
+Egypt,Exports,3159.259288
+Sudan,Exports,108.105454
+Western Sahara,Exports,0.028656
+Equatorial Guinea,Exports,281.472431
+Mauritania,Exports,86.135221
+Cameroon,Exports,117.313887
+Senegal,Exports,141.499953
+Mali,Exports,32.421928
+Guinea,Exports,93.59706
+Sierra Leone,Exports,37.829353
+Cote d'Ivoire,Exports,124.242832
+Ghana,Exports,337.389713
+Gambia,Exports,30.604418
+Niger,Exports,78.511944
+Togo,Exports,27.928388
+Nigeria,Exports,1619.788459
+Central African Republic,Exports,14.781003
+Gabon,Exports,99.105857
+Chad,Exports,53.752155
+St Helena,Exports,2.732629
+Burkina Faso,Exports,25.11081
+Benin,Exports,72.278749
+Angola,Exports,929.046776
+Congo (Brazzaville),Exports,104.056096
+Guinea-Bissau,Exports,2.100355
+Cabo Verde,Exports,9.871825
+Sao Tome and Principe,Exports,10.153283
+Liberia,Exports,69.32032
+Congo (Kinshasa),Exports,64.968131
+Burundi,Exports,8.121178
+Rwanda,Exports,10.534162
+Somalia,Exports,8.831504
+Eritrea,Exports,31.058711
+Ethiopia,Exports,455.635812
+Djibouti,Exports,47.571125
+Uganda,Exports,62.573652
+Kenya,Exports,573.365497
+Seychelles,Exports,17.912292
+British Indian Ocean Terr.,Exports,0.806112
+Tanzania,Exports,96.44391
+Mauritius,Exports,30.860179
+Mozambique,Exports,62.825299
+Madagascar,Exports,28.205237
+Comoros,Exports,0.295219
+Reunion,Exports,3.78591
+French Southern and Antarctic,Exports,0.273678
+South Africa,Exports,3906.946741
+Namibia,Exports,112.249178
+Botswana,Exports,67.272144
+Zambia,Exports,29.113109
+Swaziland,Exports,11.856893
+Zimbabwe,Exports,45.540976
+Malawi,Exports,28.049237
+Lesotho,Exports,4.015033
+Greenland,Imports,3.800273
+Canada,Imports,296155.599
+St Pierre and Miquelon,Imports,0.18562
+Mexico,Imports,296407.9011
+Guatemala,Imports,4120.351959
+Belize,Imports,75.287339
+El Salvador,Imports,2531.699424
+Honduras,Imports,4755.934545
+Nicaragua,Imports,3188.301535
+Costa Rica,Imports,4488.341429
+Panama,Imports,408.293396
+Bermuda,Imports,108.704684
+Bahamas,Imports,452.744256
+Cuba,Imports,0.0
+Jamaica,Imports,305.978402
+Turks and Caicos Islands,Imports,14.710225
+Cayman Islands,Imports,97.496341
+Haiti,Imports,950.091535
+Dominican Republic,Imports,4665.266745
+Anguilla,Imports,5.583883
+British Virgin Islands,Imports,16.491398
+St Kitts and Nevis,Imports,56.753359
+Antigua and Barbuda,Imports,6.856395
+Montserrat,Imports,2.271534
+Dominica,Imports,1.683203
+St Lucia,Imports,29.00446
+St Vincent and the Grenadines,Imports,1.768076
+Grenada,Imports,9.215032
+Barbados,Imports,68.174291
+Trinidad and Tobago,Imports,4314.344265
+Sint Maarten,Imports,51.873445
+Curacao,Imports,335.229109
+Aruba,Imports,54.90185
+Guadeloupe,Imports,4.123528
+Martinique,Imports,37.46278
+Colombia,Imports,14074.81661
+Venezuela,Imports,15564.23275
+Guyana,Imports,431.099884
+Suriname,Imports,146.224404
+French Guiana,Imports,0.042924
+Ecuador,Imports,7467.258698
+Peru,Imports,5053.337195
+Bolivia,Imports,1006.481438
+Chile,Imports,8772.414027
+Brazil,Imports,27468.23032
+Paraguay,Imports,162.023098
+Uruguay,Imports,604.746068
+Argentina,Imports,3950.849545
+Falkland Islands(Islas Malvin,Imports,14.273948
+Iceland,Imports,316.534176
+Sweden,Imports,9878.966413
+"Svalbard, Jan Mayen Island",Imports,0.028231
+Norway,Imports,4760.200206
+Finland,Imports,4506.071121
+Faroe Islands,Imports,97.897991
+Denmark,Imports,7760.022813
+United Kingdom,Imports,57962.25131
+Ireland,Imports,39336.18067
+Netherlands,Imports,16835.61486
+Belgium,Imports,19482.27263
+Luxembourg,Imports,639.038795
+Andorra,Imports,4.863157
+Monaco,Imports,58.818337
+France,Imports,47815.32286
+Germany,Imports,124820.4692
+Austria,Imports,11311.97506
+Czech Republic,Imports,4497.634904
+Slovakia,Imports,2299.822999
+Hungary,Imports,5721.266311
+Liechtenstein,Imports,310.294941
+Switzerland,Imports,31396.66041
+Estonia,Imports,503.50072
+Latvia,Imports,302.969587
+Lithuania,Imports,1059.366349
+Poland,Imports,5637.927607
+Russia,Imports,16366.16158
+Belarus,Imports,158.249733
+Ukraine,Imports,850.788858
+Armenia,Imports,62.46349
+Azerbaijan,Imports,507.148173
+Georgia,Imports,181.150349
+Kazakhstan,Imports,816.099815
+Kyrgyzstan,Imports,15.803561
+Moldova,Imports,43.920552
+Tajikistan,Imports,31.123801
+Turkmenistan,Imports,55.976778
+Uzbekistan,Imports,9.715446
+Spain,Imports,14129.84151
+Portugal,Imports,3271.009123
+Gibraltar,Imports,1.82442
+Malta,Imports,241.219869
+San Marino,Imports,8.517198
+Vatican City,Imports,1.218395
+Italy,Imports,44159.01154
+Croatia,Imports,576.891578
+Slovenia,Imports,678.110689
+Bosnia and Herzegovina,Imports,78.282267
+Macedonia,Imports,203.357353
+Serbia,Imports,272.617662
+Kosovo,Imports,2.38298
+Montenegro,Imports,2.108687
+Albania,Imports,160.081219
+Greece,Imports,1356.447796
+Romania,Imports,2148.841567
+Bulgaria,Imports,597.694693
+Turkey,Imports,7880.91386
+Cyprus,Imports,31.98822
+Syria,Imports,6.544106
+Lebanon,Imports,93.219618
+Iraq,Imports,4353.472677
+Iran,Imports,10.766314
+Israel,Imports,24477.02161
+Gaza Strip admin. by Israel,Imports,0.012534
+West Bank admin. by Israel,Imports,5.435229
+Jordan,Imports,1491.618691
+Kuwait,Imports,4684.750276
+Saudi Arabia,Imports,22080.78482
+Qatar,Imports,1354.237789
+United Arab Emirates,Imports,2468.033306
+Republic of Yemen,Imports,48.270876
+Oman,Imports,906.993161
+Bahrain,Imports,902.425581
+Afghanistan,Imports,23.454045
+India,Imports,44791.64405
+Pakistan,Imports,3701.018609
+Nepal,Imports,86.959805
+Bangladesh,Imports,5991.251839
+Sri Lanka,Imports,2889.92219
+Burma,Imports,143.796881
+Thailand,Imports,28631.93281
+Vietnam,Imports,38019.69623
+Laos,Imports,45.189001
+Cambodia,Imports,3025.433126
+Malaysia,Imports,33970.67872
+Singapore,Imports,18267.48494
+Indonesia,Imports,19601.54814
+East Timor,Imports,3.302038
+Brunei,Imports,19.402766
+Philippines,Imports,10233.69067
+Macau,Imports,121.919528
+Bhutan,Imports,3.398158
+Maldives,Imports,21.737873
+China,Imports,483244.7019
+Mongolia,Imports,17.222375
+"Korea, North",Imports,0.0
+"Korea, South",Imports,71758.69672
+Hong Kong,Imports,6795.630644
+Taiwan,Imports,40907.5936
+Japan,Imports,131364.1476
+Australia,Imports,10894.02186
+Norfolk Island,Imports,1.217241
+Cocos (Keeling) Islands,Imports,3.809085
+Christmas Island,Imports,2.12084
+Heard and McDonald Islands,Imports,0.006734
+Papua New Guinea,Imports,90.809528
+New Zealand,Imports,4292.770709
+Cook Islands,Imports,0.84788
+Tokelau,Imports,1.848379
+Niue,Imports,0.531806
+Samoa,Imports,4.220542
+Solomon Islands,Imports,3.521953
+Vanuatu,Imports,3.67132
+Pitcairn Islands,Imports,0.012162
+Kiribati,Imports,2.728752
+Tuvalu,Imports,0.228118
+New Caledonia,Imports,47.038156
+Wallis and Futuna,Imports,0.093303
+French Polynesia,Imports,43.030557
+Marshall Islands,Imports,29.067047
+Micronesia,Imports,0.717108
+Palau,Imports,0.544832
+Nauru,Imports,0.52087
+Fiji,Imports,202.639037
+Tonga,Imports,2.442895
+Morocco,Imports,1011.85636
+Algeria,Imports,3371.552526
+Tunisia,Imports,546.271256
+Libya,Imports,155.103895
+Egypt,Imports,1405.853699
+Sudan,Imports,8.973253
+South Sudan,Imports,0.192583
+Western Sahara,Imports,0.044063
+Equatorial Guinea,Imports,163.14305
+Mauritania,Imports,1.173847
+Cameroon,Imports,132.053379
+Senegal,Imports,71.965108
+Mali,Imports,4.504283
+Guinea,Imports,79.616516
+Sierra Leone,Imports,39.58921
+Cote d'Ivoire,Imports,1027.88557
+Ghana,Imports,309.36766
+Gambia,Imports,0.896754
+Niger,Imports,4.184625
+Togo,Imports,14.211452
+Nigeria,Imports,1915.80016
+Central African Republic,Imports,3.12467
+Gabon,Imports,337.024529
+Chad,Imports,1303.322183
+St Helena,Imports,15.340188
+Burkina Faso,Imports,3.592979
+Benin,Imports,4.94488
+Angola,Imports,2806.494883
+Congo (Brazzaville),Imports,304.303884
+Guinea-Bissau,Imports,0.05184
+Cabo Verde,Imports,2.21905
+Sao Tome and Principe,Imports,0.773369
+Liberia,Imports,44.940717
+Congo (Kinshasa),Imports,153.738045
+Burundi,Imports,8.427001
+Rwanda,Imports,45.643909
+Somalia,Imports,0.896112
+Eritrea,Imports,0.106871
+Ethiopia,Imports,310.269077
+Djibouti,Imports,35.463684
+Uganda,Imports,64.123855
+Kenya,Imports,573.095415
+Seychelles,Imports,5.83899
+British Indian Ocean Terr.,Imports,15.818366
+Tanzania,Imports,104.93518
+Mauritius,Imports,395.664813
+Mozambique,Imports,96.026702
+Madagascar,Imports,319.783011
+Mayotte,Imports,0.095927
+Comoros,Imports,1.211821
+Reunion,Imports,16.967288
+French Southern and Antarctic,Imports,0.013953
+South Africa,Imports,7314.612701
+Namibia,Imports,85.353831
+Botswana,Imports,211.913954
+Zambia,Imports,47.114386
+Swaziland,Imports,21.49843
+Zimbabwe,Imports,67.166669
+Malawi,Imports,61.395881
+Lesotho,Imports,331.955607
+Greenland,Exports,8.076839
+Canada,Exports,280609.0056
+St Pierre and Miquelon,Exports,0.227459
+Mexico,Exports,235745.1375
+Guatemala,Exports,5806.713895
+Belize,Exports,285.240264
+El Salvador,Exports,3240.284878
+Honduras,Exports,5214.668234
+Nicaragua,Exports,1267.532561
+Costa Rica,Exports,6079.415736
+Panama,Exports,7663.548283
+Bermuda,Exports,600.945255
+Bahamas,Exports,2386.461864
+Cuba,Exports,180.215206
+Jamaica,Exports,1716.030814
+Turks and Caicos Islands,Exports,279.728597
+Cayman Islands,Exports,684.947958
+Haiti,Exports,1140.574185
+Dominican Republic,Exports,7113.829302
+Anguilla,Exports,47.602633
+British Virgin Islands,Exports,259.758571
+St Kitts and Nevis,Exports,149.707108
+Antigua and Barbuda,Exports,677.657633
+Montserrat,Exports,6.640011
+Dominica,Exports,67.312046
+St Lucia,Exports,510.811024
+St Vincent and the Grenadines,Exports,84.722498
+Grenada,Exports,90.420149
+Barbados,Exports,595.966307
+Trinidad and Tobago,Exports,2511.195111
+Sint Maarten,Exports,741.201231
+Curacao,Exports,522.079698
+Aruba,Exports,1167.632524
+Guadeloupe,Exports,100.959536
+Martinique,Exports,119.577165
+Colombia,Exports,16286.7799
+Venezuela,Exports,8345.880233
+Guyana,Exports,368.129666
+Suriname,Exports,443.643313
+French Guiana,Exports,1073.642767
+Ecuador,Exports,5794.812688
+Peru,Exports,8725.607473
+Bolivia,Exports,931.431709
+Chile,Exports,15445.13797
+Brazil,Exports,31650.62387
+Paraguay,Exports,1514.300292
+Uruguay,Exports,1295.148749
+Argentina,Exports,9341.210651
+Falkland Islands(Islas Malvin,Exports,2.917708
+Iceland,Exports,415.45785
+Sweden,Exports,3940.8105
+"Svalbard, Jan Mayen Island",Exports,0.380164
+Norway,Exports,3570.63315
+Finland,Exports,1558.146898
+Faroe Islands,Exports,2.336863
+Denmark,Exports,2202.093582
+United Kingdom,Exports,56114.61886
+Ireland,Exports,8930.773509
+Netherlands,Exports,40196.15629
+Belgium,Exports,34159.97966
+Luxembourg,Exports,1394.17473
+Andorra,Exports,3.336817
+Monaco,Exports,71.128048
+France,Exports,30103.5212
+Germany,Exports,49970.80411
+Austria,Exports,4024.435888
+Czech Republic,Exports,1976.037865
+Slovakia,Exports,379.469169
+Hungary,Exports,1715.278037
+Liechtenstein,Exports,35.930552
+Switzerland,Exports,22185.27991
+Estonia,Exports,288.143789
+Latvia,Exports,294.787977
+Lithuania,Exports,527.67763
+Poland,Exports,3715.441301
+Russia,Exports,7087.111574
+Belarus,Exports,59.235752
+Ukraine,Exports,862.088348
+Armenia,Exports,50.24617
+Azerbaijan,Exports,477.316108
+Georgia,Exports,340.502111
+Kazakhstan,Exports,510.479071
+Kyrgyzstan,Exports,32.003481
+Moldova,Exports,16.163682
+Tajikistan,Exports,18.985373
+Turkmenistan,Exports,80.839805
+Uzbekistan,Exports,137.962928
+Spain,Exports,10310.27052
+Portugal,Exports,942.466275
+Gibraltar,Exports,1972.99261
+Malta,Exports,490.660579
+San Marino,Exports,5.011879
+Vatican City,Exports,2.226547
+Italy,Exports,16204.22609
+Croatia,Exports,331.976272
+Slovenia,Exports,346.040192
+Bosnia and Herzegovina,Exports,27.586061
+Macedonia,Exports,30.678977
+Serbia,Exports,126.25142
+Kosovo,Exports,19.743318
+Montenegro,Exports,11.133957
+Albania,Exports,30.952665
+Greece,Exports,725.699147
+Romania,Exports,753.718827
+Bulgaria,Exports,289.09201
+Turkey,Exports,9502.498123
+Cyprus,Exports,101.831614
+Syria,Exports,3.072304
+Lebanon,Exports,1272.487166
+Iraq,Exports,1971.478767
+Iran,Exports,281.512074
+Israel,Exports,13538.69482
+Gaza Strip admin. by Israel,Exports,0.183934
+West Bank admin. by Israel,Exports,0.903282
+Jordan,Exports,1358.977191
+Kuwait,Exports,2739.289578
+Saudi Arabia,Exports,19738.98459
+Qatar,Exports,4222.426394
+United Arab Emirates,Exports,23003.59562
+Republic of Yemen,Exports,158.039977
+Oman,Exports,2355.271013
+Bahrain,Exports,1270.662445
+Afghanistan,Exports,478.851271
+India,Exports,21451.87992
+Pakistan,Exports,1837.506933
+Nepal,Exports,36.405446
+Bangladesh,Exports,942.540067
+Sri Lanka,Exports,361.920786
+Burma,Exports,227.140755
+Thailand,Exports,11230.56974
+Vietnam,Exports,7087.524038
+Laos,Exports,24.584007
+Cambodia,Exports,391.045876
+Malaysia,Exports,12277.22614
+Singapore,Exports,28472.07098
+Indonesia,Exports,7120.940688
+East Timor,Exports,2.690584
+Brunei,Exports,133.449998
+Philippines,Exports,7907.893167
+Macau,Exports,542.354584
+Bhutan,Exports,2.64104
+Maldives,Exports,35.143208
+China,Exports,116071.7696
+Mongolia,Exports,69.161103
+"Korea, North",Exports,4.751721
+"Korea, South",Exports,43445.54748
+Hong Kong,Exports,37167.02295
+Taiwan,Exports,25860.08634
+Japan,Exports,62442.64646
+Australia,Exports,25035.79015
+Norfolk Island,Exports,0.350312
+Cocos (Keeling) Islands,Exports,0.55762
+Christmas Island,Exports,1.551179
+Heard and McDonald Islands,Exports,0.913419
+Papua New Guinea,Exports,207.793894
+New Zealand,Exports,3631.061903
+Cook Islands,Exports,4.249826
+Tokelau,Exports,0.341222
+Niue,Exports,0.071371
+Samoa,Exports,22.71966
+Solomon Islands,Exports,5.861309
+Vanuatu,Exports,5.867876
+Pitcairn Islands,Exports,0.017405
+Kiribati,Exports,7.320835
+Tuvalu,Exports,0.625636
+New Caledonia,Exports,88.651277
+Wallis and Futuna,Exports,0.376841
+French Polynesia,Exports,120.047865
+Marshall Islands,Exports,53.912135
+Micronesia,Exports,40.032614
+Palau,Exports,25.693198
+Nauru,Exports,1.73365
+Fiji,Exports,56.904585
+Tonga,Exports,13.817538
+Morocco,Exports,1625.204959
+Algeria,Exports,1875.734479
+Tunisia,Exports,602.412017
+Libya,Exports,242.951645
+Egypt,Exports,4752.983685
+Sudan,Exports,59.514997
+South Sudan,Exports,19.613532
+Western Sahara,Exports,0.032113
+Equatorial Guinea,Exports,161.964373
+Mauritania,Exports,126.280667
+Cameroon,Exports,224.961698
+Senegal,Exports,196.428411
+Mali,Exports,72.426079
+Guinea,Exports,135.350114
+Sierra Leone,Exports,77.325724
+Cote d'Ivoire,Exports,266.335569
+Ghana,Exports,949.913963
+Gambia,Exports,37.899622
+Niger,Exports,71.493157
+Togo,Exports,311.819809
+Nigeria,Exports,3437.952784
+Central African Republic,Exports,34.309874
+Gabon,Exports,203.872443
+Chad,Exports,56.591528
+St Helena,Exports,3.720487
+Burkina Faso,Exports,53.875343
+Benin,Exports,631.462518
+Angola,Exports,1166.161667
+Congo (Brazzaville),Exports,249.220232
+Guinea-Bissau,Exports,2.13532
+Cabo Verde,Exports,7.32166
+Sao Tome and Principe,Exports,0.853963
+Liberia,Exports,135.807551
+Congo (Kinshasa),Exports,136.189374
+Burundi,Exports,5.650192
+Rwanda,Exports,14.28771
+Somalia,Exports,45.026584
+Eritrea,Exports,3.497538
+Ethiopia,Exports,1555.249376
+Djibouti,Exports,144.711021
+Uganda,Exports,88.315069
+Kenya,Exports,943.436657
+Seychelles,Exports,18.542809
+British Indian Ocean Terr.,Exports,0.581016
+Tanzania,Exports,172.803054
+Mauritius,Exports,58.435311
+Mozambique,Exports,264.203995
+Madagascar,Exports,54.553731
+Mayotte,Exports,5.697333
+Comoros,Exports,1.507078
+Reunion,Exports,6.905271
+French Southern and Antarctic,Exports,8.026602
+South Africa,Exports,5458.29362
+Namibia,Exports,127.603603
+Botswana,Exports,39.04197
+Zambia,Exports,84.170835
+Swaziland,Exports,28.521751
+Zimbabwe,Exports,37.834783
+Malawi,Exports,37.201602
+Lesotho,Exports,0.881897
+Canada,Imports,69006.4
+Mexico,Imports,19131.7
+Guatemala,Imports,409.0
+El Salvador,Imports,395.6
+Honduras,Imports,375.4
+Costa Rica,Imports,501.3
+Panama,Imports,410.6
+Bahamas,Imports,626.3
+Jamaica,Imports,272.7
+Haiti,Imports,389.6
+Dominican Republic,Imports,982.3
+Trinidad and Tobago,Imports,1258.4
+Netherlands Antilles,Imports,808.0
+Colombia,Imports,1330.7
+Venezuela,Imports,6537.1
+Ecuador,Imports,1836.5
+Peru,Imports,1086.6
+Chile,Imports,745.2
+Brazil,Imports,7526.2
+Paraguay,Imports,23.6
+Uruguay,Imports,556.6
+Argentina,Imports,1069.3
+Iceland,Imports,247.8
+Sweden,Imports,4123.7
+Norway,Imports,1164.3
+Finland,Imports,895.2
+Denmark,Imports,1664.4
+United Kingdom,Imports,14937.2
+Ireland,Imports,901.1
+Netherlands,Imports,4081.3
+Belgium,Imports,3355.2
+France,Imports,9482.0
+Germany,Imports,20239.2
+Austria,Imports,833.7
+Hungary,Imports,218.3
+Switzerland,Imports,3476.1
+Poland,Imports,220.2
+USSR,Imports,408.5
+Spain,Imports,2515.2
+Portugal,Imports,546.0
+Italy,Imports,9673.8
+Yugoslavia (former),Imports,542.2
+Greece,Imports,394.7
+Turkey,Imports,601.9
+Iran,Imports,725.1
+Israel,Imports,2122.5
+Kuwait,Imports,184.0
+Saudi Arabia,Imports,1907.1
+United Arab Emirates,Imports,671.0
+Bahrain,Imports,83.3
+India,Imports,2294.7
+Pakistan,Imports,273.9
+Bangladesh,Imports,196.0
+Sri Lanka,Imports,281.9
+Thailand,Imports,1428.3
+Malaysia,Imports,2299.9
+Singapore,Imports,4259.9
+Indonesia,Imports,4568.9
+Philippines,Imports,2145.0
+Macau,Imports,341.9
+China,Imports,3861.7
+"Korea, South",Imports,10013.3
+Hong Kong,Imports,8396.4
+Taiwan,Imports,16396.3
+Japan,Imports,68782.9
+Australia,Imports,2836.3
+New Zealand,Imports,857.0
+Algeria,Imports,2333.0
+Egypt,Imports,79.1
+Cote d'Ivoire,Imports,524.8
+Nigeria,Imports,3001.9
+Gabon,Imports,501.9
+Angola,Imports,1053.6
+Congo (Brazzaville),Imports,609.3
+Congo (Kinshasa),Imports,400.7
+South Africa,Imports,2070.9
+Canada,Exports,47251.0
+Mexico,Exports,13634.7
+Guatemala,Exports,404.6
+El Salvador,Exports,445.5
+Honduras,Exports,307.9
+Costa Rica,Exports,421.7
+Panama,Exports,674.8
+Bahamas,Exports,786.3
+Jamaica,Exports,404.3
+Haiti,Exports,395.9
+Dominican Republic,Exports,742.0
+Trinidad and Tobago,Exports,503.7
+Netherlands Antilles,Exports,427.5
+Colombia,Exports,1467.7
+Venezuela,Exports,3399.4
+Ecuador,Exports,591.1
+Peru,Exports,495.9
+Chile,Exports,682.2
+Brazil,Exports,3139.6
+Paraguay,Exports,98.9
+Uruguay,Exports,64.3
+Argentina,Exports,721.3
+Iceland,Exports,38.0
+Sweden,Exports,1924.9
+Norway,Exports,665.9
+Finland,Exports,437.7
+Denmark,Exports,705.7
+United Kingdom,Exports,11272.8
+Ireland,Exports,1341.8
+Netherlands,Exports,7269.0
+Belgium,Exports,4917.7
+France,Exports,6095.6
+Germany,Exports,9050.2
+Austria,Exports,441.2
+Hungary,Exports,94.5
+Switzerland,Exports,2287.7
+Poland,Exports,237.9
+USSR,Exports,2422.8
+Spain,Exports,2524.1
+Portugal,Exports,694.5
+Italy,Exports,4625.2
+Yugoslavia (former),Exports,594.7
+Greece,Exports,497.8
+Turkey,Exports,1294.6
+Iran,Exports,73.9
+Israel,Exports,2579.6
+Kuwait,Exports,550.6
+Saudi Arabia,Exports,4474.3
+United Arab Emirates,Exports,596.5
+Bahrain,Exports,107.0
+India,Exports,1641.9
+Pakistan,Exports,1041.7
+Bangladesh,Exports,218.9
+Sri Lanka,Exports,72.8
+Thailand,Exports,849.1
+Malaysia,Exports,1539.2
+Singapore,Exports,3475.6
+Indonesia,Exports,795.0
+Philippines,Exports,1379.3
+Macau,Exports,1.1
+China,Exports,3855.7
+"Korea, South",Exports,5956.3
+Hong Kong,Exports,2785.9
+Taiwan,Exports,4700.0
+Japan,Exports,22630.9
+Australia,Exports,5440.4
+New Zealand,Exports,727.5
+Algeria,Exports,430.1
+Egypt,Exports,2322.6
+Cote d'Ivoire,Exports,69.7
+Nigeria,Exports,675.7
+Gabon,Exports,91.2
+Angola,Exports,136.9
+Congo (Brazzaville),Exports,19.4
+Congo (Kinshasa),Exports,101.5
+South Africa,Exports,1205.0

@@ -1,0 +1,21 @@
+Category,Category2,Category3,Value
+Ages 31-49,D1,Lowest,47
+Ages 31-49,D1,Second,26
+Ages 31-49,D1,Middle,14
+Ages 31-49,D1,Fourth,9
+Ages 31-49,D1,Highest,4
+Ages 31-49,non-D1,Lowest,19
+Ages 31-49,non-D1,Second,20
+Ages 31-49,non-D1,Middle,20
+Ages 31-49,non-D1,Fourth,20
+Ages 31-49,non-D1,Highest,20
+Ages 60-64,D1,Lowest,33
+Ages 60-64,D1,Second,27
+Ages 60-64,D1,Middle,18
+Ages 60-64,D1,Fourth,14
+Ages 60-64,D1,Highest,7
+Ages 60-64,non-D1,Lowest,18
+Ages 60-64,non-D1,Second,19
+Ages 60-64,non-D1,Middle,20
+Ages 60-64,non-D1,Fourth,21
+Ages 60-64,non-D1,Highest,22

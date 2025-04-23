@@ -1,0 +1,1057 @@
+country,venue,medals
+Finland,1924 Chamonix,0
+Finland,1928 St. Moritz,11
+Finland,1932 Lake Placid,4
+Finland,1935 Garmisch-Partenkirchen,3
+Finland,1940 Cancelled (Sapporo),6
+Finland,1944 Cancelled (Cortina d'Ampezzo),0
+Finland,1948 St. Moritz,0
+Finland,1952 Oslo,6
+Finland,1056 Cortina d'Ampezzo,9
+Finland,1960 Squaw Valley,7
+Finland,1964 Innsbruck,8
+Finland,1968 Grenoble,10
+Finland,1972 Sapporo,5
+Finland,1976 Innsbruck,5
+Finland,1980 Lake Placid,7
+Finland,1984 Sarajevo,9
+Finland,1988 Calgary,13
+Finland,1992 Albertville,7
+Finland,1994 Lillehammer,7
+Finland,1998 Nagano,6
+Finland,2002 Salt Lake City,12
+Finland,2006 Turin,7
+Finland,2010 Vancouver,9
+Finland,2014 Sochi,5
+Austria,1924 Chamonix,0
+Austria,1928 St. Moritz,3
+Austria,1932 Lake Placid,4
+Austria,1935 Garmisch-Partenkirchen,2
+Austria,1940 Cancelled (Sapporo),4
+Austria,1944 Cancelled (Cortina d'Ampezzo),0
+Austria,1948 St. Moritz,0
+Austria,1952 Oslo,8
+Austria,1056 Cortina d'Ampezzo,8
+Austria,1960 Squaw Valley,11
+Austria,1964 Innsbruck,6
+Austria,1968 Grenoble,12
+Austria,1972 Sapporo,11
+Austria,1976 Innsbruck,5
+Austria,1980 Lake Placid,6
+Austria,1984 Sarajevo,7
+Austria,1988 Calgary,1
+Austria,1992 Albertville,10
+Austria,1994 Lillehammer,21
+Austria,1998 Nagano,9
+Austria,2002 Salt Lake City,17
+Austria,2006 Turin,17
+Austria,2010 Vancouver,23
+Austria,2014 Sochi,16
+Sweden,1924 Chamonix,0
+Sweden,1928 St. Moritz,2
+Sweden,1932 Lake Placid,5
+Sweden,1935 Garmisch-Partenkirchen,3
+Sweden,1940 Cancelled (Sapporo),7
+Sweden,1944 Cancelled (Cortina d'Ampezzo),0
+Sweden,1948 St. Moritz,0
+Sweden,1952 Oslo,10
+Sweden,1056 Cortina d'Ampezzo,4
+Sweden,1960 Squaw Valley,10
+Sweden,1964 Innsbruck,7
+Sweden,1968 Grenoble,7
+Sweden,1972 Sapporo,8
+Sweden,1976 Innsbruck,4
+Sweden,1980 Lake Placid,2
+Sweden,1984 Sarajevo,4
+Sweden,1988 Calgary,8
+Sweden,1992 Albertville,6
+Sweden,1994 Lillehammer,4
+Sweden,1998 Nagano,3
+Sweden,2002 Salt Lake City,3
+Sweden,2006 Turin,7
+Sweden,2010 Vancouver,14
+Sweden,2014 Sochi,11
+Norway,1924 Chamonix,0
+Norway,1928 St. Moritz,17
+Norway,1932 Lake Placid,15
+Norway,1935 Garmisch-Partenkirchen,10
+Norway,1940 Cancelled (Sapporo),15
+Norway,1944 Cancelled (Cortina d'Ampezzo),0
+Norway,1948 St. Moritz,0
+Norway,1952 Oslo,10
+Norway,1056 Cortina d'Ampezzo,16
+Norway,1960 Squaw Valley,4
+Norway,1964 Innsbruck,6
+Norway,1968 Grenoble,15
+Norway,1972 Sapporo,14
+Norway,1976 Innsbruck,12
+Norway,1980 Lake Placid,7
+Norway,1984 Sarajevo,10
+Norway,1988 Calgary,9
+Norway,1992 Albertville,5
+Norway,1994 Lillehammer,20
+Norway,1998 Nagano,26
+Norway,2002 Salt Lake City,25
+Norway,2006 Turin,25
+Norway,2010 Vancouver,19
+Norway,2014 Sochi,23
+U.S.,1924 Chamonix,0
+U.S.,1928 St. Moritz,4
+U.S.,1932 Lake Placid,6
+U.S.,1935 Garmisch-Partenkirchen,12
+U.S.,1940 Cancelled (Sapporo),4
+U.S.,1944 Cancelled (Cortina d'Ampezzo),0
+U.S.,1948 St. Moritz,0
+U.S.,1952 Oslo,9
+U.S.,1056 Cortina d'Ampezzo,11
+U.S.,1960 Squaw Valley,7
+U.S.,1964 Innsbruck,10
+U.S.,1968 Grenoble,7
+U.S.,1972 Sapporo,7
+U.S.,1976 Innsbruck,8
+U.S.,1980 Lake Placid,10
+U.S.,1984 Sarajevo,12
+U.S.,1988 Calgary,8
+U.S.,1992 Albertville,6
+U.S.,1994 Lillehammer,11
+U.S.,1998 Nagano,13
+U.S.,2002 Salt Lake City,13
+U.S.,2006 Turin,34
+U.S.,2010 Vancouver,25
+U.S.,2014 Sochi,37
+East Germany,1924 Chamonix,0
+East Germany,1928 St. Moritz,0
+East Germany,1932 Lake Placid,0
+East Germany,1935 Garmisch-Partenkirchen,0
+East Germany,1940 Cancelled (Sapporo),0
+East Germany,1944 Cancelled (Cortina d'Ampezzo),0
+East Germany,1948 St. Moritz,0
+East Germany,1952 Oslo,0
+East Germany,1056 Cortina d'Ampezzo,0
+East Germany,1960 Squaw Valley,0
+East Germany,1964 Innsbruck,0
+East Germany,1968 Grenoble,0
+East Germany,1972 Sapporo,5
+East Germany,1976 Innsbruck,14
+East Germany,1980 Lake Placid,19
+East Germany,1984 Sarajevo,23
+East Germany,1988 Calgary,24
+East Germany,1992 Albertville,25
+East Germany,1994 Lillehammer,0
+East Germany,1998 Nagano,0
+East Germany,2002 Salt Lake City,0
+East Germany,2006 Turin,0
+East Germany,2010 Vancouver,0
+East Germany,2014 Sochi,0
+West Germany,1924 Chamonix,0
+West Germany,1928 St. Moritz,0
+West Germany,1932 Lake Placid,0
+West Germany,1935 Garmisch-Partenkirchen,0
+West Germany,1940 Cancelled (Sapporo),0
+West Germany,1944 Cancelled (Cortina d'Ampezzo),0
+West Germany,1948 St. Moritz,0
+West Germany,1952 Oslo,0
+West Germany,1056 Cortina d'Ampezzo,0
+West Germany,1960 Squaw Valley,0
+West Germany,1964 Innsbruck,0
+West Germany,1968 Grenoble,0
+West Germany,1972 Sapporo,7
+West Germany,1976 Innsbruck,5
+West Germany,1980 Lake Placid,10
+West Germany,1984 Sarajevo,5
+West Germany,1988 Calgary,4
+West Germany,1992 Albertville,8
+West Germany,1994 Lillehammer,0
+West Germany,1998 Nagano,0
+West Germany,2002 Salt Lake City,0
+West Germany,2006 Turin,0
+West Germany,2010 Vancouver,0
+West Germany,2014 Sochi,0
+Germany,1924 Chamonix,0
+Germany,1928 St. Moritz,0
+Germany,1932 Lake Placid,1
+Germany,1935 Garmisch-Partenkirchen,2
+Germany,1940 Cancelled (Sapporo),6
+Germany,1944 Cancelled (Cortina d'Ampezzo),0
+Germany,1948 St. Moritz,0
+Germany,1952 Oslo,0
+Germany,1056 Cortina d'Ampezzo,7
+Germany,1960 Squaw Valley,2
+Germany,1964 Innsbruck,8
+Germany,1968 Grenoble,9
+Germany,1972 Sapporo,0
+Germany,1976 Innsbruck,0
+Germany,1980 Lake Placid,0
+Germany,1984 Sarajevo,0
+Germany,1988 Calgary,0
+Germany,1992 Albertville,0
+Germany,1994 Lillehammer,26
+Germany,1998 Nagano,24
+Germany,2002 Salt Lake City,29
+Germany,2006 Turin,36
+Germany,2010 Vancouver,29
+Germany,2014 Sochi,30
+Netherlands,1924 Chamonix,0
+Netherlands,1928 St. Moritz,0
+Netherlands,1932 Lake Placid,0
+Netherlands,1935 Garmisch-Partenkirchen,0
+Netherlands,1940 Cancelled (Sapporo),0
+Netherlands,1944 Cancelled (Cortina d'Ampezzo),0
+Netherlands,1948 St. Moritz,0
+Netherlands,1952 Oslo,0
+Netherlands,1056 Cortina d'Ampezzo,3
+Netherlands,1960 Squaw Valley,0
+Netherlands,1964 Innsbruck,2
+Netherlands,1968 Grenoble,2
+Netherlands,1972 Sapporo,9
+Netherlands,1976 Innsbruck,9
+Netherlands,1980 Lake Placid,6
+Netherlands,1984 Sarajevo,4
+Netherlands,1988 Calgary,0
+Netherlands,1992 Albertville,7
+Netherlands,1994 Lillehammer,4
+Netherlands,1998 Nagano,4
+Netherlands,2002 Salt Lake City,11
+Netherlands,2006 Turin,8
+Netherlands,2010 Vancouver,9
+Netherlands,2014 Sochi,8
+Italy,1924 Chamonix,0
+Italy,1928 St. Moritz,0
+Italy,1932 Lake Placid,0
+Italy,1935 Garmisch-Partenkirchen,0
+Italy,1940 Cancelled (Sapporo),0
+Italy,1944 Cancelled (Cortina d'Ampezzo),0
+Italy,1948 St. Moritz,0
+Italy,1952 Oslo,1
+Italy,1056 Cortina d'Ampezzo,2
+Italy,1960 Squaw Valley,3
+Italy,1964 Innsbruck,1
+Italy,1968 Grenoble,4
+Italy,1972 Sapporo,4
+Italy,1976 Innsbruck,5
+Italy,1980 Lake Placid,4
+Italy,1984 Sarajevo,2
+Italy,1988 Calgary,2
+Italy,1992 Albertville,5
+Italy,1994 Lillehammer,14
+Italy,1998 Nagano,20
+Italy,2002 Salt Lake City,10
+Italy,2006 Turin,13
+Italy,2010 Vancouver,11
+Italy,2014 Sochi,5
+Canada,1924 Chamonix,0
+Canada,1928 St. Moritz,1
+Canada,1932 Lake Placid,1
+Canada,1935 Garmisch-Partenkirchen,7
+Canada,1940 Cancelled (Sapporo),1
+Canada,1944 Cancelled (Cortina d'Ampezzo),0
+Canada,1948 St. Moritz,0
+Canada,1952 Oslo,3
+Canada,1056 Cortina d'Ampezzo,2
+Canada,1960 Squaw Valley,3
+Canada,1964 Innsbruck,4
+Canada,1968 Grenoble,3
+Canada,1972 Sapporo,3
+Canada,1976 Innsbruck,1
+Canada,1980 Lake Placid,3
+Canada,1984 Sarajevo,2
+Canada,1988 Calgary,4
+Canada,1992 Albertville,5
+Canada,1994 Lillehammer,7
+Canada,1998 Nagano,13
+Canada,2002 Salt Lake City,15
+Canada,2006 Turin,17
+Canada,2010 Vancouver,24
+Canada,2014 Sochi,26
+Switzerland,1924 Chamonix,0
+Switzerland,1928 St. Moritz,3
+Switzerland,1932 Lake Placid,1
+Switzerland,1935 Garmisch-Partenkirchen,1
+Switzerland,1940 Cancelled (Sapporo),3
+Switzerland,1944 Cancelled (Cortina d'Ampezzo),0
+Switzerland,1948 St. Moritz,0
+Switzerland,1952 Oslo,10
+Switzerland,1056 Cortina d'Ampezzo,2
+Switzerland,1960 Squaw Valley,6
+Switzerland,1964 Innsbruck,2
+Switzerland,1968 Grenoble,0
+Switzerland,1972 Sapporo,6
+Switzerland,1976 Innsbruck,10
+Switzerland,1980 Lake Placid,5
+Switzerland,1984 Sarajevo,5
+Switzerland,1988 Calgary,5
+Switzerland,1992 Albertville,15
+Switzerland,1994 Lillehammer,3
+Switzerland,1998 Nagano,9
+Switzerland,2002 Salt Lake City,7
+Switzerland,2006 Turin,11
+Switzerland,2010 Vancouver,14
+Switzerland,2014 Sochi,9
+Great Britain,1924 Chamonix,0
+Great Britain,1928 St. Moritz,4
+Great Britain,1932 Lake Placid,1
+Great Britain,1935 Garmisch-Partenkirchen,0
+Great Britain,1940 Cancelled (Sapporo),3
+Great Britain,1944 Cancelled (Cortina d'Ampezzo),0
+Great Britain,1948 St. Moritz,0
+Great Britain,1952 Oslo,2
+Great Britain,1056 Cortina d'Ampezzo,1
+Great Britain,1960 Squaw Valley,0
+Great Britain,1964 Innsbruck,0
+Great Britain,1968 Grenoble,1
+Great Britain,1972 Sapporo,0
+Great Britain,1976 Innsbruck,0
+Great Britain,1980 Lake Placid,1
+Great Britain,1984 Sarajevo,1
+Great Britain,1988 Calgary,1
+Great Britain,1992 Albertville,0
+Great Britain,1994 Lillehammer,0
+Great Britain,1998 Nagano,2
+Great Britain,2002 Salt Lake City,1
+Great Britain,2006 Turin,2
+Great Britain,2010 Vancouver,1
+Great Britain,2014 Sochi,1
+France,1924 Chamonix,0
+France,1928 St. Moritz,3
+France,1932 Lake Placid,1
+France,1935 Garmisch-Partenkirchen,1
+France,1940 Cancelled (Sapporo),1
+France,1944 Cancelled (Cortina d'Ampezzo),0
+France,1948 St. Moritz,0
+France,1952 Oslo,5
+France,1056 Cortina d'Ampezzo,1
+France,1960 Squaw Valley,0
+France,1964 Innsbruck,3
+France,1968 Grenoble,7
+France,1972 Sapporo,9
+France,1976 Innsbruck,3
+France,1980 Lake Placid,1
+France,1984 Sarajevo,1
+France,1988 Calgary,3
+France,1992 Albertville,2
+France,1994 Lillehammer,9
+France,1998 Nagano,5
+France,2002 Salt Lake City,8
+France,2006 Turin,11
+France,2010 Vancouver,9
+France,2014 Sochi,11
+Hungary,1924 Chamonix,0
+Hungary,1928 St. Moritz,0
+Hungary,1932 Lake Placid,0
+Hungary,1935 Garmisch-Partenkirchen,1
+Hungary,1940 Cancelled (Sapporo),1
+Hungary,1944 Cancelled (Cortina d'Ampezzo),0
+Hungary,1948 St. Moritz,0
+Hungary,1952 Oslo,1
+Hungary,1056 Cortina d'Ampezzo,1
+Hungary,1960 Squaw Valley,1
+Hungary,1964 Innsbruck,0
+Hungary,1968 Grenoble,0
+Hungary,1972 Sapporo,0
+Hungary,1976 Innsbruck,0
+Hungary,1980 Lake Placid,0
+Hungary,1984 Sarajevo,1
+Hungary,1988 Calgary,0
+Hungary,1992 Albertville,0
+Hungary,1994 Lillehammer,0
+Hungary,1998 Nagano,0
+Hungary,2002 Salt Lake City,0
+Hungary,2006 Turin,0
+Hungary,2010 Vancouver,0
+Hungary,2014 Sochi,0
+Unified Team,1924 Chamonix,0
+Unified Team,1928 St. Moritz,0
+Unified Team,1932 Lake Placid,0
+Unified Team,1935 Garmisch-Partenkirchen,0
+Unified Team,1940 Cancelled (Sapporo),0
+Unified Team,1944 Cancelled (Cortina d'Ampezzo),0
+Unified Team,1948 St. Moritz,0
+Unified Team,1952 Oslo,0
+Unified Team,1056 Cortina d'Ampezzo,0
+Unified Team,1960 Squaw Valley,0
+Unified Team,1964 Innsbruck,0
+Unified Team,1968 Grenoble,0
+Unified Team,1972 Sapporo,0
+Unified Team,1976 Innsbruck,0
+Unified Team,1980 Lake Placid,0
+Unified Team,1984 Sarajevo,0
+Unified Team,1988 Calgary,0
+Unified Team,1992 Albertville,0
+Unified Team,1994 Lillehammer,23
+Unified Team,1998 Nagano,0
+Unified Team,2002 Salt Lake City,0
+Unified Team,2006 Turin,0
+Unified Team,2010 Vancouver,0
+Unified Team,2014 Sochi,0
+Soviet Union,1924 Chamonix,0
+Soviet Union,1928 St. Moritz,0
+Soviet Union,1932 Lake Placid,0
+Soviet Union,1935 Garmisch-Partenkirchen,0
+Soviet Union,1940 Cancelled (Sapporo),0
+Soviet Union,1944 Cancelled (Cortina d'Ampezzo),0
+Soviet Union,1948 St. Moritz,0
+Soviet Union,1952 Oslo,0
+Soviet Union,1056 Cortina d'Ampezzo,0
+Soviet Union,1960 Squaw Valley,16
+Soviet Union,1964 Innsbruck,21
+Soviet Union,1968 Grenoble,25
+Soviet Union,1972 Sapporo,13
+Soviet Union,1976 Innsbruck,16
+Soviet Union,1980 Lake Placid,27
+Soviet Union,1984 Sarajevo,22
+Soviet Union,1988 Calgary,25
+Soviet Union,1992 Albertville,29
+Soviet Union,1994 Lillehammer,0
+Soviet Union,1998 Nagano,0
+Soviet Union,2002 Salt Lake City,0
+Soviet Union,2006 Turin,0
+Soviet Union,2010 Vancouver,0
+Soviet Union,2014 Sochi,0
+Russia,1924 Chamonix,0
+Russia,1928 St. Moritz,0
+Russia,1932 Lake Placid,0
+Russia,1935 Garmisch-Partenkirchen,0
+Russia,1940 Cancelled (Sapporo),0
+Russia,1944 Cancelled (Cortina d'Ampezzo),0
+Russia,1948 St. Moritz,0
+Russia,1952 Oslo,0
+Russia,1056 Cortina d'Ampezzo,0
+Russia,1960 Squaw Valley,0
+Russia,1964 Innsbruck,0
+Russia,1968 Grenoble,0
+Russia,1972 Sapporo,0
+Russia,1976 Innsbruck,0
+Russia,1980 Lake Placid,0
+Russia,1984 Sarajevo,0
+Russia,1988 Calgary,0
+Russia,1992 Albertville,0
+Russia,1994 Lillehammer,0
+Russia,1998 Nagano,23
+Russia,2002 Salt Lake City,18
+Russia,2006 Turin,13
+Russia,2010 Vancouver,22
+Russia,2014 Sochi,15
+Japan,1924 Chamonix,0
+Japan,1928 St. Moritz,0
+Japan,1932 Lake Placid,0
+Japan,1935 Garmisch-Partenkirchen,0
+Japan,1940 Cancelled (Sapporo),0
+Japan,1944 Cancelled (Cortina d'Ampezzo),0
+Japan,1948 St. Moritz,0
+Japan,1952 Oslo,0
+Japan,1056 Cortina d'Ampezzo,0
+Japan,1960 Squaw Valley,1
+Japan,1964 Innsbruck,0
+Japan,1968 Grenoble,0
+Japan,1972 Sapporo,0
+Japan,1976 Innsbruck,3
+Japan,1980 Lake Placid,0
+Japan,1984 Sarajevo,1
+Japan,1988 Calgary,1
+Japan,1992 Albertville,1
+Japan,1994 Lillehammer,7
+Japan,1998 Nagano,5
+Japan,2002 Salt Lake City,10
+Japan,2006 Turin,2
+Japan,2010 Vancouver,1
+Japan,2014 Sochi,5
+Czechoslovakia,1924 Chamonix,0
+Czechoslovakia,1928 St. Moritz,0
+Czechoslovakia,1932 Lake Placid,1
+Czechoslovakia,1935 Garmisch-Partenkirchen,0
+Czechoslovakia,1940 Cancelled (Sapporo),0
+Czechoslovakia,1944 Cancelled (Cortina d'Ampezzo),0
+Czechoslovakia,1948 St. Moritz,0
+Czechoslovakia,1952 Oslo,1
+Czechoslovakia,1056 Cortina d'Ampezzo,0
+Czechoslovakia,1960 Squaw Valley,0
+Czechoslovakia,1964 Innsbruck,1
+Czechoslovakia,1968 Grenoble,1
+Czechoslovakia,1972 Sapporo,4
+Czechoslovakia,1976 Innsbruck,3
+Czechoslovakia,1980 Lake Placid,1
+Czechoslovakia,1984 Sarajevo,1
+Czechoslovakia,1988 Calgary,6
+Czechoslovakia,1992 Albertville,3
+Czechoslovakia,1994 Lillehammer,3
+Czechoslovakia,1998 Nagano,0
+Czechoslovakia,2002 Salt Lake City,0
+Czechoslovakia,2006 Turin,0
+Czechoslovakia,2010 Vancouver,0
+Czechoslovakia,2014 Sochi,0
+Poland,1924 Chamonix,0
+Poland,1928 St. Moritz,0
+Poland,1932 Lake Placid,0
+Poland,1935 Garmisch-Partenkirchen,0
+Poland,1940 Cancelled (Sapporo),0
+Poland,1944 Cancelled (Cortina d'Ampezzo),0
+Poland,1948 St. Moritz,0
+Poland,1952 Oslo,0
+Poland,1056 Cortina d'Ampezzo,0
+Poland,1960 Squaw Valley,1
+Poland,1964 Innsbruck,2
+Poland,1968 Grenoble,0
+Poland,1972 Sapporo,0
+Poland,1976 Innsbruck,1
+Poland,1980 Lake Placid,0
+Poland,1984 Sarajevo,0
+Poland,1988 Calgary,0
+Poland,1992 Albertville,0
+Poland,1994 Lillehammer,0
+Poland,1998 Nagano,0
+Poland,2002 Salt Lake City,0
+Poland,2006 Turin,2
+Poland,2010 Vancouver,2
+Poland,2014 Sochi,6
+Spain,1924 Chamonix,0
+Spain,1928 St. Moritz,0
+Spain,1932 Lake Placid,0
+Spain,1935 Garmisch-Partenkirchen,0
+Spain,1940 Cancelled (Sapporo),0
+Spain,1944 Cancelled (Cortina d'Ampezzo),0
+Spain,1948 St. Moritz,0
+Spain,1952 Oslo,0
+Spain,1056 Cortina d'Ampezzo,0
+Spain,1960 Squaw Valley,0
+Spain,1964 Innsbruck,0
+Spain,1968 Grenoble,0
+Spain,1972 Sapporo,0
+Spain,1976 Innsbruck,1
+Spain,1980 Lake Placid,0
+Spain,1984 Sarajevo,0
+Spain,1988 Calgary,0
+Spain,1992 Albertville,0
+Spain,1994 Lillehammer,1
+Spain,1998 Nagano,0
+Spain,2002 Salt Lake City,0
+Spain,2006 Turin,0
+Spain,2010 Vancouver,0
+Spain,2014 Sochi,0
+China,1924 Chamonix,0
+China,1928 St. Moritz,0
+China,1932 Lake Placid,0
+China,1935 Garmisch-Partenkirchen,0
+China,1940 Cancelled (Sapporo),0
+China,1944 Cancelled (Cortina d'Ampezzo),0
+China,1948 St. Moritz,0
+China,1952 Oslo,0
+China,1056 Cortina d'Ampezzo,0
+China,1960 Squaw Valley,0
+China,1964 Innsbruck,0
+China,1968 Grenoble,0
+China,1972 Sapporo,0
+China,1976 Innsbruck,0
+China,1980 Lake Placid,0
+China,1984 Sarajevo,0
+China,1988 Calgary,0
+China,1992 Albertville,0
+China,1994 Lillehammer,3
+China,1998 Nagano,3
+China,2002 Salt Lake City,8
+China,2006 Turin,8
+China,2010 Vancouver,11
+China,2014 Sochi,11
+South Korea,1924 Chamonix,0
+South Korea,1928 St. Moritz,0
+South Korea,1932 Lake Placid,0
+South Korea,1935 Garmisch-Partenkirchen,0
+South Korea,1940 Cancelled (Sapporo),0
+South Korea,1944 Cancelled (Cortina d'Ampezzo),0
+South Korea,1948 St. Moritz,0
+South Korea,1952 Oslo,0
+South Korea,1056 Cortina d'Ampezzo,0
+South Korea,1960 Squaw Valley,0
+South Korea,1964 Innsbruck,0
+South Korea,1968 Grenoble,0
+South Korea,1972 Sapporo,0
+South Korea,1976 Innsbruck,0
+South Korea,1980 Lake Placid,0
+South Korea,1984 Sarajevo,0
+South Korea,1988 Calgary,0
+South Korea,1992 Albertville,0
+South Korea,1994 Lillehammer,4
+South Korea,1998 Nagano,6
+South Korea,2002 Salt Lake City,6
+South Korea,2006 Turin,4
+South Korea,2010 Vancouver,11
+South Korea,2014 Sochi,14
+Czech Republic,1924 Chamonix,0
+Czech Republic,1928 St. Moritz,0
+Czech Republic,1932 Lake Placid,0
+Czech Republic,1935 Garmisch-Partenkirchen,0
+Czech Republic,1940 Cancelled (Sapporo),0
+Czech Republic,1944 Cancelled (Cortina d'Ampezzo),0
+Czech Republic,1948 St. Moritz,0
+Czech Republic,1952 Oslo,0
+Czech Republic,1056 Cortina d'Ampezzo,0
+Czech Republic,1960 Squaw Valley,0
+Czech Republic,1964 Innsbruck,0
+Czech Republic,1968 Grenoble,0
+Czech Republic,1972 Sapporo,0
+Czech Republic,1976 Innsbruck,0
+Czech Republic,1980 Lake Placid,0
+Czech Republic,1984 Sarajevo,0
+Czech Republic,1988 Calgary,0
+Czech Republic,1992 Albertville,0
+Czech Republic,1994 Lillehammer,0
+Czech Republic,1998 Nagano,0
+Czech Republic,2002 Salt Lake City,3
+Czech Republic,2006 Turin,3
+Czech Republic,2010 Vancouver,4
+Czech Republic,2014 Sochi,6
+Belarus,1924 Chamonix,0
+Belarus,1928 St. Moritz,0
+Belarus,1932 Lake Placid,0
+Belarus,1935 Garmisch-Partenkirchen,0
+Belarus,1940 Cancelled (Sapporo),0
+Belarus,1944 Cancelled (Cortina d'Ampezzo),0
+Belarus,1948 St. Moritz,0
+Belarus,1952 Oslo,0
+Belarus,1056 Cortina d'Ampezzo,0
+Belarus,1960 Squaw Valley,0
+Belarus,1964 Innsbruck,0
+Belarus,1968 Grenoble,0
+Belarus,1972 Sapporo,0
+Belarus,1976 Innsbruck,0
+Belarus,1980 Lake Placid,0
+Belarus,1984 Sarajevo,0
+Belarus,1988 Calgary,0
+Belarus,1992 Albertville,0
+Belarus,1994 Lillehammer,0
+Belarus,1998 Nagano,2
+Belarus,2002 Salt Lake City,2
+Belarus,2006 Turin,1
+Belarus,2010 Vancouver,1
+Belarus,2014 Sochi,3
+Kazakhstan,1924 Chamonix,0
+Kazakhstan,1928 St. Moritz,0
+Kazakhstan,1932 Lake Placid,0
+Kazakhstan,1935 Garmisch-Partenkirchen,0
+Kazakhstan,1940 Cancelled (Sapporo),0
+Kazakhstan,1944 Cancelled (Cortina d'Ampezzo),0
+Kazakhstan,1948 St. Moritz,0
+Kazakhstan,1952 Oslo,0
+Kazakhstan,1056 Cortina d'Ampezzo,0
+Kazakhstan,1960 Squaw Valley,0
+Kazakhstan,1964 Innsbruck,0
+Kazakhstan,1968 Grenoble,0
+Kazakhstan,1972 Sapporo,0
+Kazakhstan,1976 Innsbruck,0
+Kazakhstan,1980 Lake Placid,0
+Kazakhstan,1984 Sarajevo,0
+Kazakhstan,1988 Calgary,0
+Kazakhstan,1992 Albertville,0
+Kazakhstan,1994 Lillehammer,0
+Kazakhstan,1998 Nagano,3
+Kazakhstan,2002 Salt Lake City,2
+Kazakhstan,2006 Turin,0
+Kazakhstan,2010 Vancouver,0
+Kazakhstan,2014 Sochi,1
+Bulgaria,1924 Chamonix,0
+Bulgaria,1928 St. Moritz,0
+Bulgaria,1932 Lake Placid,0
+Bulgaria,1935 Garmisch-Partenkirchen,0
+Bulgaria,1940 Cancelled (Sapporo),0
+Bulgaria,1944 Cancelled (Cortina d'Ampezzo),0
+Bulgaria,1948 St. Moritz,0
+Bulgaria,1952 Oslo,0
+Bulgaria,1056 Cortina d'Ampezzo,0
+Bulgaria,1960 Squaw Valley,0
+Bulgaria,1964 Innsbruck,0
+Bulgaria,1968 Grenoble,0
+Bulgaria,1972 Sapporo,0
+Bulgaria,1976 Innsbruck,0
+Bulgaria,1980 Lake Placid,0
+Bulgaria,1984 Sarajevo,1
+Bulgaria,1988 Calgary,0
+Bulgaria,1992 Albertville,0
+Bulgaria,1994 Lillehammer,0
+Bulgaria,1998 Nagano,0
+Bulgaria,2002 Salt Lake City,1
+Bulgaria,2006 Turin,3
+Bulgaria,2010 Vancouver,1
+Bulgaria,2014 Sochi,0
+Denmark,1924 Chamonix,0
+Denmark,1928 St. Moritz,0
+Denmark,1932 Lake Placid,0
+Denmark,1935 Garmisch-Partenkirchen,0
+Denmark,1940 Cancelled (Sapporo),0
+Denmark,1944 Cancelled (Cortina d'Ampezzo),0
+Denmark,1948 St. Moritz,0
+Denmark,1952 Oslo,0
+Denmark,1056 Cortina d'Ampezzo,0
+Denmark,1960 Squaw Valley,0
+Denmark,1964 Innsbruck,0
+Denmark,1968 Grenoble,0
+Denmark,1972 Sapporo,0
+Denmark,1976 Innsbruck,0
+Denmark,1980 Lake Placid,0
+Denmark,1984 Sarajevo,0
+Denmark,1988 Calgary,0
+Denmark,1992 Albertville,0
+Denmark,1994 Lillehammer,0
+Denmark,1998 Nagano,0
+Denmark,2002 Salt Lake City,1
+Denmark,2006 Turin,0
+Denmark,2010 Vancouver,0
+Denmark,2014 Sochi,0
+Ukraine,1924 Chamonix,0
+Ukraine,1928 St. Moritz,0
+Ukraine,1932 Lake Placid,0
+Ukraine,1935 Garmisch-Partenkirchen,0
+Ukraine,1940 Cancelled (Sapporo),0
+Ukraine,1944 Cancelled (Cortina d'Ampezzo),0
+Ukraine,1948 St. Moritz,0
+Ukraine,1952 Oslo,0
+Ukraine,1056 Cortina d'Ampezzo,0
+Ukraine,1960 Squaw Valley,0
+Ukraine,1964 Innsbruck,0
+Ukraine,1968 Grenoble,0
+Ukraine,1972 Sapporo,0
+Ukraine,1976 Innsbruck,0
+Ukraine,1980 Lake Placid,0
+Ukraine,1984 Sarajevo,0
+Ukraine,1988 Calgary,0
+Ukraine,1992 Albertville,0
+Ukraine,1994 Lillehammer,0
+Ukraine,1998 Nagano,2
+Ukraine,2002 Salt Lake City,1
+Ukraine,2006 Turin,0
+Ukraine,2010 Vancouver,2
+Ukraine,2014 Sochi,0
+Australia,1924 Chamonix,0
+Australia,1928 St. Moritz,0
+Australia,1932 Lake Placid,0
+Australia,1935 Garmisch-Partenkirchen,0
+Australia,1940 Cancelled (Sapporo),0
+Australia,1944 Cancelled (Cortina d'Ampezzo),0
+Australia,1948 St. Moritz,0
+Australia,1952 Oslo,0
+Australia,1056 Cortina d'Ampezzo,0
+Australia,1960 Squaw Valley,0
+Australia,1964 Innsbruck,0
+Australia,1968 Grenoble,0
+Australia,1972 Sapporo,0
+Australia,1976 Innsbruck,0
+Australia,1980 Lake Placid,0
+Australia,1984 Sarajevo,0
+Australia,1988 Calgary,0
+Australia,1992 Albertville,0
+Australia,1994 Lillehammer,0
+Australia,1998 Nagano,1
+Australia,2002 Salt Lake City,1
+Australia,2006 Turin,2
+Australia,2010 Vancouver,2
+Australia,2014 Sochi,3
+Belgium,1924 Chamonix,0
+Belgium,1928 St. Moritz,1
+Belgium,1932 Lake Placid,1
+Belgium,1935 Garmisch-Partenkirchen,0
+Belgium,1940 Cancelled (Sapporo),0
+Belgium,1944 Cancelled (Cortina d'Ampezzo),0
+Belgium,1948 St. Moritz,0
+Belgium,1952 Oslo,2
+Belgium,1056 Cortina d'Ampezzo,0
+Belgium,1960 Squaw Valley,0
+Belgium,1964 Innsbruck,0
+Belgium,1968 Grenoble,0
+Belgium,1972 Sapporo,0
+Belgium,1976 Innsbruck,0
+Belgium,1980 Lake Placid,0
+Belgium,1984 Sarajevo,0
+Belgium,1988 Calgary,0
+Belgium,1992 Albertville,0
+Belgium,1994 Lillehammer,0
+Belgium,1998 Nagano,0
+Belgium,2002 Salt Lake City,1
+Belgium,2006 Turin,0
+Belgium,2010 Vancouver,0
+Belgium,2014 Sochi,0
+Romania,1924 Chamonix,0
+Romania,1928 St. Moritz,0
+Romania,1932 Lake Placid,0
+Romania,1935 Garmisch-Partenkirchen,0
+Romania,1940 Cancelled (Sapporo),0
+Romania,1944 Cancelled (Cortina d'Ampezzo),0
+Romania,1948 St. Moritz,0
+Romania,1952 Oslo,0
+Romania,1056 Cortina d'Ampezzo,0
+Romania,1960 Squaw Valley,0
+Romania,1964 Innsbruck,0
+Romania,1968 Grenoble,0
+Romania,1972 Sapporo,1
+Romania,1976 Innsbruck,0
+Romania,1980 Lake Placid,0
+Romania,1984 Sarajevo,0
+Romania,1988 Calgary,0
+Romania,1992 Albertville,0
+Romania,1994 Lillehammer,0
+Romania,1998 Nagano,0
+Romania,2002 Salt Lake City,0
+Romania,2006 Turin,0
+Romania,2010 Vancouver,0
+Romania,2014 Sochi,0
+Liechtenstein,1924 Chamonix,0
+Liechtenstein,1928 St. Moritz,0
+Liechtenstein,1932 Lake Placid,0
+Liechtenstein,1935 Garmisch-Partenkirchen,0
+Liechtenstein,1940 Cancelled (Sapporo),0
+Liechtenstein,1944 Cancelled (Cortina d'Ampezzo),0
+Liechtenstein,1948 St. Moritz,0
+Liechtenstein,1952 Oslo,0
+Liechtenstein,1056 Cortina d'Ampezzo,0
+Liechtenstein,1960 Squaw Valley,0
+Liechtenstein,1964 Innsbruck,0
+Liechtenstein,1968 Grenoble,0
+Liechtenstein,1972 Sapporo,0
+Liechtenstein,1976 Innsbruck,0
+Liechtenstein,1980 Lake Placid,2
+Liechtenstein,1984 Sarajevo,4
+Liechtenstein,1988 Calgary,2
+Liechtenstein,1992 Albertville,1
+Liechtenstein,1994 Lillehammer,0
+Liechtenstein,1998 Nagano,0
+Liechtenstein,2002 Salt Lake City,0
+Liechtenstein,2006 Turin,0
+Liechtenstein,2010 Vancouver,0
+Liechtenstein,2014 Sochi,0
+Yugoslavia,1924 Chamonix,0
+Yugoslavia,1928 St. Moritz,0
+Yugoslavia,1932 Lake Placid,0
+Yugoslavia,1935 Garmisch-Partenkirchen,0
+Yugoslavia,1940 Cancelled (Sapporo),0
+Yugoslavia,1944 Cancelled (Cortina d'Ampezzo),0
+Yugoslavia,1948 St. Moritz,0
+Yugoslavia,1952 Oslo,0
+Yugoslavia,1056 Cortina d'Ampezzo,0
+Yugoslavia,1960 Squaw Valley,0
+Yugoslavia,1964 Innsbruck,0
+Yugoslavia,1968 Grenoble,0
+Yugoslavia,1972 Sapporo,0
+Yugoslavia,1976 Innsbruck,0
+Yugoslavia,1980 Lake Placid,0
+Yugoslavia,1984 Sarajevo,0
+Yugoslavia,1988 Calgary,1
+Yugoslavia,1992 Albertville,3
+Yugoslavia,1994 Lillehammer,0
+Yugoslavia,1998 Nagano,0
+Yugoslavia,2002 Salt Lake City,0
+Yugoslavia,2006 Turin,0
+Yugoslavia,2010 Vancouver,0
+Yugoslavia,2014 Sochi,0
+Luxembourg,1924 Chamonix,0
+Luxembourg,1928 St. Moritz,0
+Luxembourg,1932 Lake Placid,0
+Luxembourg,1935 Garmisch-Partenkirchen,0
+Luxembourg,1940 Cancelled (Sapporo),0
+Luxembourg,1944 Cancelled (Cortina d'Ampezzo),0
+Luxembourg,1948 St. Moritz,0
+Luxembourg,1952 Oslo,0
+Luxembourg,1056 Cortina d'Ampezzo,0
+Luxembourg,1960 Squaw Valley,0
+Luxembourg,1964 Innsbruck,0
+Luxembourg,1968 Grenoble,0
+Luxembourg,1972 Sapporo,0
+Luxembourg,1976 Innsbruck,0
+Luxembourg,1980 Lake Placid,0
+Luxembourg,1984 Sarajevo,0
+Luxembourg,1988 Calgary,0
+Luxembourg,1992 Albertville,0
+Luxembourg,1994 Lillehammer,2
+Luxembourg,1998 Nagano,0
+Luxembourg,2002 Salt Lake City,0
+Luxembourg,2006 Turin,0
+Luxembourg,2010 Vancouver,0
+Luxembourg,2014 Sochi,0
+New Zealand,1924 Chamonix,0
+New Zealand,1928 St. Moritz,0
+New Zealand,1932 Lake Placid,0
+New Zealand,1935 Garmisch-Partenkirchen,0
+New Zealand,1940 Cancelled (Sapporo),0
+New Zealand,1944 Cancelled (Cortina d'Ampezzo),0
+New Zealand,1948 St. Moritz,0
+New Zealand,1952 Oslo,0
+New Zealand,1056 Cortina d'Ampezzo,0
+New Zealand,1960 Squaw Valley,0
+New Zealand,1964 Innsbruck,0
+New Zealand,1968 Grenoble,0
+New Zealand,1972 Sapporo,0
+New Zealand,1976 Innsbruck,0
+New Zealand,1980 Lake Placid,0
+New Zealand,1984 Sarajevo,0
+New Zealand,1988 Calgary,0
+New Zealand,1992 Albertville,0
+New Zealand,1994 Lillehammer,1
+New Zealand,1998 Nagano,0
+New Zealand,2002 Salt Lake City,0
+New Zealand,2006 Turin,0
+New Zealand,2010 Vancouver,0
+New Zealand,2014 Sochi,0
+North Korea,1924 Chamonix,0
+North Korea,1928 St. Moritz,0
+North Korea,1932 Lake Placid,0
+North Korea,1935 Garmisch-Partenkirchen,0
+North Korea,1940 Cancelled (Sapporo),0
+North Korea,1944 Cancelled (Cortina d'Ampezzo),0
+North Korea,1948 St. Moritz,0
+North Korea,1952 Oslo,0
+North Korea,1056 Cortina d'Ampezzo,0
+North Korea,1960 Squaw Valley,0
+North Korea,1964 Innsbruck,0
+North Korea,1968 Grenoble,1
+North Korea,1972 Sapporo,0
+North Korea,1976 Innsbruck,0
+North Korea,1980 Lake Placid,0
+North Korea,1984 Sarajevo,0
+North Korea,1988 Calgary,0
+North Korea,1992 Albertville,0
+North Korea,1994 Lillehammer,1
+North Korea,1998 Nagano,0
+North Korea,2002 Salt Lake City,0
+North Korea,2006 Turin,0
+North Korea,2010 Vancouver,0
+North Korea,2014 Sochi,0
+Slovakia,1924 Chamonix,0
+Slovakia,1928 St. Moritz,0
+Slovakia,1932 Lake Placid,0
+Slovakia,1935 Garmisch-Partenkirchen,0
+Slovakia,1940 Cancelled (Sapporo),0
+Slovakia,1944 Cancelled (Cortina d'Ampezzo),0
+Slovakia,1948 St. Moritz,0
+Slovakia,1952 Oslo,0
+Slovakia,1056 Cortina d'Ampezzo,0
+Slovakia,1960 Squaw Valley,0
+Slovakia,1964 Innsbruck,0
+Slovakia,1968 Grenoble,0
+Slovakia,1972 Sapporo,0
+Slovakia,1976 Innsbruck,0
+Slovakia,1980 Lake Placid,0
+Slovakia,1984 Sarajevo,0
+Slovakia,1988 Calgary,0
+Slovakia,1992 Albertville,0
+Slovakia,1994 Lillehammer,0
+Slovakia,1998 Nagano,0
+Slovakia,2002 Salt Lake City,0
+Slovakia,2006 Turin,0
+Slovakia,2010 Vancouver,1
+Slovakia,2014 Sochi,3
+Croatia,1924 Chamonix,0
+Croatia,1928 St. Moritz,0
+Croatia,1932 Lake Placid,0
+Croatia,1935 Garmisch-Partenkirchen,0
+Croatia,1940 Cancelled (Sapporo),0
+Croatia,1944 Cancelled (Cortina d'Ampezzo),0
+Croatia,1948 St. Moritz,0
+Croatia,1952 Oslo,0
+Croatia,1056 Cortina d'Ampezzo,0
+Croatia,1960 Squaw Valley,0
+Croatia,1964 Innsbruck,0
+Croatia,1968 Grenoble,0
+Croatia,1972 Sapporo,0
+Croatia,1976 Innsbruck,0
+Croatia,1980 Lake Placid,0
+Croatia,1984 Sarajevo,0
+Croatia,1988 Calgary,0
+Croatia,1992 Albertville,0
+Croatia,1994 Lillehammer,0
+Croatia,1998 Nagano,0
+Croatia,2002 Salt Lake City,0
+Croatia,2006 Turin,4
+Croatia,2010 Vancouver,3
+Croatia,2014 Sochi,3
+Slovenia,1924 Chamonix,0
+Slovenia,1928 St. Moritz,0
+Slovenia,1932 Lake Placid,0
+Slovenia,1935 Garmisch-Partenkirchen,0
+Slovenia,1940 Cancelled (Sapporo),0
+Slovenia,1944 Cancelled (Cortina d'Ampezzo),0
+Slovenia,1948 St. Moritz,0
+Slovenia,1952 Oslo,0
+Slovenia,1056 Cortina d'Ampezzo,0
+Slovenia,1960 Squaw Valley,0
+Slovenia,1964 Innsbruck,0
+Slovenia,1968 Grenoble,0
+Slovenia,1972 Sapporo,0
+Slovenia,1976 Innsbruck,0
+Slovenia,1980 Lake Placid,0
+Slovenia,1984 Sarajevo,0
+Slovenia,1988 Calgary,0
+Slovenia,1992 Albertville,0
+Slovenia,1994 Lillehammer,0
+Slovenia,1998 Nagano,3
+Slovenia,2002 Salt Lake City,0
+Slovenia,2006 Turin,1
+Slovenia,2010 Vancouver,0
+Slovenia,2014 Sochi,3
+Latvia,1924 Chamonix,0
+Latvia,1928 St. Moritz,0
+Latvia,1932 Lake Placid,0
+Latvia,1935 Garmisch-Partenkirchen,0
+Latvia,1940 Cancelled (Sapporo),0
+Latvia,1944 Cancelled (Cortina d'Ampezzo),0
+Latvia,1948 St. Moritz,0
+Latvia,1952 Oslo,0
+Latvia,1056 Cortina d'Ampezzo,0
+Latvia,1960 Squaw Valley,0
+Latvia,1964 Innsbruck,0
+Latvia,1968 Grenoble,0
+Latvia,1972 Sapporo,0
+Latvia,1976 Innsbruck,0
+Latvia,1980 Lake Placid,0
+Latvia,1984 Sarajevo,0
+Latvia,1988 Calgary,0
+Latvia,1992 Albertville,0
+Latvia,1994 Lillehammer,0
+Latvia,1998 Nagano,0
+Latvia,2002 Salt Lake City,0
+Latvia,2006 Turin,0
+Latvia,2010 Vancouver,1
+Latvia,2014 Sochi,2
+Estonia,1924 Chamonix,0
+Estonia,1928 St. Moritz,0
+Estonia,1932 Lake Placid,0
+Estonia,1935 Garmisch-Partenkirchen,0
+Estonia,1940 Cancelled (Sapporo),0
+Estonia,1944 Cancelled (Cortina d'Ampezzo),0
+Estonia,1948 St. Moritz,0
+Estonia,1952 Oslo,0
+Estonia,1056 Cortina d'Ampezzo,0
+Estonia,1960 Squaw Valley,0
+Estonia,1964 Innsbruck,0
+Estonia,1968 Grenoble,0
+Estonia,1972 Sapporo,0
+Estonia,1976 Innsbruck,0
+Estonia,1980 Lake Placid,0
+Estonia,1984 Sarajevo,0
+Estonia,1988 Calgary,0
+Estonia,1992 Albertville,0
+Estonia,1994 Lillehammer,0
+Estonia,1998 Nagano,0
+Estonia,2002 Salt Lake City,0
+Estonia,2006 Turin,3
+Estonia,2010 Vancouver,3
+Estonia,2014 Sochi,1
+Uzbekistan,1924 Chamonix,0
+Uzbekistan,1928 St. Moritz,0
+Uzbekistan,1932 Lake Placid,0
+Uzbekistan,1935 Garmisch-Partenkirchen,0
+Uzbekistan,1940 Cancelled (Sapporo),0
+Uzbekistan,1944 Cancelled (Cortina d'Ampezzo),0
+Uzbekistan,1948 St. Moritz,0
+Uzbekistan,1952 Oslo,0
+Uzbekistan,1056 Cortina d'Ampezzo,0
+Uzbekistan,1960 Squaw Valley,0
+Uzbekistan,1964 Innsbruck,0
+Uzbekistan,1968 Grenoble,0
+Uzbekistan,1972 Sapporo,0
+Uzbekistan,1976 Innsbruck,0
+Uzbekistan,1980 Lake Placid,0
+Uzbekistan,1984 Sarajevo,0
+Uzbekistan,1988 Calgary,0
+Uzbekistan,1992 Albertville,0
+Uzbekistan,1994 Lillehammer,0
+Uzbekistan,1998 Nagano,1
+Uzbekistan,2002 Salt Lake City,0
+Uzbekistan,2006 Turin,0
+Uzbekistan,2010 Vancouver,0
+Uzbekistan,2014 Sochi,0

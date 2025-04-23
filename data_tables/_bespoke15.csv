@@ -1,0 +1,73 @@
+﻿Category,Attribute,Value
+Jan,Rainfall,49.9
+Jan,Rainfall error (low),48
+Jan,Rainfall error (high),51
+Jan,Temperature,7
+Jan,Temperature error (low),6
+Jan,Temperature error (high),8
+Feb,Rainfall,71.5
+Feb,Rainfall error (low),68
+Feb,Rainfall error (high),73
+Feb,Temperature,6.9
+Feb,Temperature error (low),5.9
+Feb,Temperature error (high),7.6
+Mar,Rainfall,106.4
+Mar,Rainfall error (low),92
+Mar,Rainfall error (high),110
+Mar,Temperature,9.5
+Mar,Temperature error (low),9.4
+Mar,Temperature error (high),10.4
+Apr,Rainfall,129.2
+Apr,Rainfall error (low),128
+Apr,Rainfall error (high),136
+Apr,Temperature,14.5
+Apr,Temperature error (low),14.1
+Apr,Temperature error (high),15.9
+May,Rainfall,144
+May,Rainfall error (low),140
+May,Rainfall error (high),150
+May,Temperature,18.2
+May,Temperature error (low),18
+May,Temperature error (high),20.1
+Jun,Rainfall,176
+Jun,Rainfall error (low),171
+Jun,Rainfall error (high),179
+Jun,Temperature,21.5
+Jun,Temperature error (low),21
+Jun,Temperature error (high),24
+Jul,Rainfall,135.6
+Jul,Rainfall error (low),135
+Jul,Rainfall error (high),143
+Jul,Temperature,25.2
+Jul,Temperature error (low),23.2
+Jul,Temperature error (high),25.3
+Aug,Rainfall,148.5
+Aug,Rainfall error (low),142
+Aug,Rainfall error (high),149
+Aug,Temperature,26.5
+Aug,Temperature error (low),26.1
+Aug,Temperature error (high),27.8
+Sep,Rainfall,216.4
+Sep,Rainfall error (low),204
+Sep,Rainfall error (high),220
+Sep,Temperature,23.3
+Sep,Temperature error (low),23.2
+Sep,Temperature error (high),23.9
+Oct,Rainfall,194.1
+Oct,Rainfall error (low),189
+Oct,Rainfall error (high),199
+Oct,Temperature,18.3
+Oct,Temperature error (low),18
+Oct,Temperature error (high),21.1
+Nov,Rainfall,95.6
+Nov,Rainfall error (low),95
+Nov,Rainfall error (high),110
+Nov,Temperature,13.9
+Nov,Temperature error (low),12.9
+Nov,Temperature error (high),14
+Dec,Rainfall,54.4
+Dec,Rainfall error (low),52
+Dec,Rainfall error (high),56
+Dec,Temperature,9.6
+Dec,Temperature error (low),7.6
+Dec,Temperature error (high),10
