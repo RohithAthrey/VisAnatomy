@@ -11,7 +11,7 @@ class MyHTTPRequestHandler(SimpleHTTPRequestHandler):
     def do_GET(self):
         print(self.path)
         if (self.path == "/"):#root path
-            self.path = "/annotationPage.html"
+            self.path = "/labeling_tool/annotationPage.html"
         elif self.path.startswith("/check_file_exists/"):
             filename = self.path.split('/')[-1]
             folder_path = "examples"

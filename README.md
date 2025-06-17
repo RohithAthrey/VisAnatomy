@@ -1,8 +1,8 @@
 # VisAnatomy
 
-## Launch the UI
+## Launch the Interactive Chart Labeling Tool
 
-python server.py, then you should be able to see the annotation tool live at http://localhost:5200/.
+python labeling_tool/server.py, the labeling tool can be accessed at http://localhost:5200/.
 
 ## How to use
 

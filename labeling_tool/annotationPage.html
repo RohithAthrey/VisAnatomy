@@ -24,7 +24,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
 
-    <link rel="stylesheet" href="./annotationPage.css" />
+    <link rel="stylesheet" href="./labeling_tool/annotationPage.css" />
     <title> </title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
@@ -38,23 +38,23 @@
       charset="utf8"
       src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.js"
     ></script>
-    <script type="text/javascript" src="js/html2canvas.min.js"></script>
-    <script type="text/javascript" src="js/cleanup.js"></script>
-    <script type="text/javascript" src="js/display.js"></script>
-    <script type="text/javascript" src="js/extract.js"></script>
-    <script type="text/javascript" src="js/util.js"></script>
-    <script type="text/javascript" src="js/preprocess-interaction.js"></script>
-    <script type="text/javascript" src="js/markAnnotation.js"></script>
-    <script type="text/javascript" src="js/groupAnnotation.js"></script>
-    <script type="text/javascript" src="js/layoutAnnotation.js"></script>
-    <script type="text/javascript" src="js/encodingAnnotation.js"></script>
-    <script type="text/javascript" src="js/constraintAnnotation.js"></script>
+    <script type="text/javascript" src="labeling_tool/js/html2canvas.min.js"></script>
+    <script type="text/javascript" src="labeling_tool/js/cleanup.js"></script>
+    <script type="text/javascript" src="labeling_tool/js/display.js"></script>
+    <script type="text/javascript" src="labeling_tool/js/extract.js"></script>
+    <script type="text/javascript" src="labeling_tool/js/util.js"></script>
+    <script type="text/javascript" src="labeling_tool/js/preprocess-interaction.js"></script>
+    <script type="text/javascript" src="labeling_tool/js/markAnnotation.js"></script>
+    <script type="text/javascript" src="labeling_tool/js/groupAnnotation.js"></script>
+    <script type="text/javascript" src="labeling_tool/js/layoutAnnotation.js"></script>
+    <script type="text/javascript" src="labeling_tool/js/encodingAnnotation.js"></script>
+    <script type="text/javascript" src="labeling_tool/js/constraintAnnotation.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/1.3.8/FileSaver.js"></script>
     <script type="text/javascript">
       // has to be placed here to be able to called the KeyPress function in process.js
       document.onkeydown = KeyPress;
     </script>
-    <script src="js/atlas.js"></script>
+    <script src="labeling_tool/js/atlas.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-GLhlTQ8iRABdZLl6O5oZ8gneFt8B0ZxyZxcfJlF+OwzIbh0C2pZsSq8p0yZ6Jizo"
@@ -247,7 +247,7 @@
                     </select>
                     <input
                       type="image"
-                      src="img/select-area.png"
+                      src="labeling_tool/img/select-area.png"
                       onclick="activateAreaSelect(1);"
                       id="axis1Area"
                       width="16px"
@@ -320,7 +320,7 @@
                     </select>
                     <input
                       type="image"
-                      src="img/select-area.png"
+                      src="labeling_tool/img/select-area.png"
                       onclick="activateAreaSelect(2);"
                       id="axis2Area"
                       width="16px"
@@ -367,7 +367,7 @@
                   </select>
                   <input
                     type="image"
-                    src="img/select-area.png"
+                    src="labeling_tool/img/select-area.png"
                     id="legendArea"
                     onclick="activateAreaSelect('legend');"
                     width="16px"
@@ -1399,7 +1399,7 @@
                   <option value="number">numbers</option>
                   <option value="date">dates</option>
                 </select>
-                <input type="image" src="img/select-area.png" onclick="activateAreaSelect(${axisCount});" id="axis${axisCount}Area" width="16px" height="16px" class="selectAreaBtn" style="margin-left: 0px; margin-top: 5px"/>
+                <input type="image" src="labeling_tool/img/select-area.png" onclick="activateAreaSelect(${axisCount});" id="axis${axisCount}Area" width="16px" height="16px" class="selectAreaBtn" style="margin-left: 0px; margin-top: 5px"/>
               </div>
             </div>
             <div class="axisTitle" id="axisTitle_${axisCount}" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
@@ -1418,7 +1418,7 @@
         sessionStorage.setItem("fileName", demo.split(".")[0]);
         await tryLoadAnnotations(demo.split(".")[0]);
 
-        fetch("./examples_augmented/" + demo)
+        fetch("../examples_augmented/" + demo)
           .then((resp) => {
             return resp.text();
           })
@@ -1455,14 +1455,14 @@
       });
 
       $(document).ready(() => {
-        fetch("./SVG_Names.json")
+        fetch("./labeling_tool/SVG_Names.json")
           .then((response) => response.json())
           .then((files) => {
             const fileGroups = {};
             const ulElement = document.getElementById("demoList");
 
             files.forEach((file) => {
-              console.log(file);
+              //console.log(file);
               // Extract base name (e.g., "barChart" from "barChart1")
               const baseName = file.replace(/\d+\.svg$/, "");
 
@@ -1566,7 +1566,7 @@
           });
 
         initilizeVariables();
-        loadDemo("SeattleGraph.svg");
+        //loadDemo("SeattleGraph.svg");
       });
     </script>
   </body>
