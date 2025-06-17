@@ -135,7 +135,7 @@ def add_id_to_leaves(element, indices, all_svg_element_id, id_mappings, currentV
 def generateGraphData(chartName, folderName):
     script_dir = os.path.dirname(os.path.dirname(os.path.dirname(os.path.realpath(__file__))))
 
-    svg_file_path = os.path.join(script_dir, "examples_augmented", chartName+".svg")
+    svg_file_path = os.path.join(script_dir, "charts_svg", chartName+".svg")
     tree = ET.parse(svg_file_path)
     root = tree.getroot()
 
