@@ -1,0 +1,4725 @@
+{
+  "started_at": "2025-06-22T22:10:50.302039",
+  "total_files": 943,
+  "completed": 943,
+  "successful": 772,
+  "failed": 171,
+  "results": {
+    "MatrixDiagram18.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-22T22:10:51.859221"
+    },
+    "Treemap20.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-22T22:10:53.506266"
+    },
+    "StackedBarChart14.svg": {
+      "status": "success",
+      "output_file": "results/StackedBarChart14_llm_annotation.json",
+      "processed_at": "2025-06-22T22:11:08.883130"
+    },
+    "ViolinPlot1.svg": {
+      "status": "success",
+      "output_file": "results/ViolinPlot1_llm_annotation.json",
+      "processed_at": "2025-06-22T22:11:15.587875"
+    },
+    "BulletChart12.svg": {
+      "status": "success",
+      "output_file": "results/BulletChart12_llm_annotation.json",
+      "processed_at": "2025-06-22T22:11:28.285764"
+    },
+    "GroupedBarChart17.svg": {
+      "status": "success",
+      "output_file": "results/GroupedBarChart17_llm_annotation.json",
+      "processed_at": "2025-06-22T22:11:47.561244"
+    },
+    "_bespoke15.svg": {
+      "status": "success",
+      "output_file": "results/_bespoke15_llm_annotation.json",
+      "processed_at": "2025-06-22T22:12:04.110253"
+    },
+    "WaterfallChart7.svg": {
+      "status": "success",
+      "output_file": "results/WaterfallChart7_llm_annotation.json",
+      "processed_at": "2025-06-22T22:12:13.063994"
+    },
+    "BumpChart7.svg": {
+      "status": "success",
+      "output_file": "results/BumpChart7_llm_annotation.json",
+      "processed_at": "2025-06-22T22:13:00.062107"
+    },
+    "GeoHeatmap14.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-22T22:13:03.287855"
+    },
+    "Scatterplot14.svg": {
+      "status": "success",
+      "output_file": "results/Scatterplot14_llm_annotation.json",
+      "processed_at": "2025-06-22T22:13:25.216992"
+    },
+    "_bespoke2.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-22T22:13:27.505176"
+    },
+    "StackedAreaChart11.svg": {
+      "status": "success",
+      "output_file": "results/StackedAreaChart11_llm_annotation.json",
+      "processed_at": "2025-06-22T22:13:48.996376"
+    },
+    "WordCloud19.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-22T22:13:53.317096"
+    },
+    "DivergingStackedBarChart7.svg": {
+      "status": "success",
+      "output_file": "results/DivergingStackedBarChart7_llm_annotation.json",
+      "processed_at": "2025-06-22T22:14:13.279264"
+    },
+    "BarChart23.svg": {
+      "status": "success",
+      "output_file": "results/BarChart23_llm_annotation.json",
+      "processed_at": "2025-06-22T22:14:20.669339"
+    },
+    "PolarAreaChart6.svg": {
+      "status": "success",
+      "output_file": "results/PolarAreaChart6_llm_annotation.json",
+      "processed_at": "2025-06-22T22:14:26.283072"
+    },
+    "ConnectedScatterPlot12.svg": {
+      "status": "success",
+      "output_file": "results/ConnectedScatterPlot12_llm_annotation.json",
+      "processed_at": "2025-06-22T22:14:38.167320"
+    },
+    "RadarChart17.svg": {
+      "status": "success",
+      "output_file": "results/RadarChart17_llm_annotation.json",
+      "processed_at": "2025-06-22T22:14:45.842057"
+    },
+    "DensityPlot22.svg": {
+      "status": "success",
+      "output_file": "results/DensityPlot22_llm_annotation.json",
+      "processed_at": "2025-06-22T22:14:56.084918"
+    },
+    "GanttChart16.svg": {
+      "status": "success",
+      "output_file": "results/GanttChart16_llm_annotation.json",
+      "processed_at": "2025-06-22T22:15:17.248958"
+    },
+    "DonutChart6.svg": {
+      "status": "success",
+      "output_file": "results/DonutChart6_llm_annotation.json",
+      "processed_at": "2025-06-22T22:15:23.433489"
+    },
+    "LineGraph9.svg": {
+      "status": "success",
+      "output_file": "results/LineGraph9_llm_annotation.json",
+      "processed_at": "2025-06-22T22:15:31.010682"
+    },
+    "LineGraph8.svg": {
+      "status": "success",
+      "output_file": "results/LineGraph8_llm_annotation.json",
+      "processed_at": "2025-06-22T22:15:44.217555"
+    },
+    "DonutChart7.svg": {
+      "status": "success",
+      "output_file": "results/DonutChart7_llm_annotation.json",
+      "processed_at": "2025-06-22T22:15:50.148599"
+    },
+    "RadarChart16.svg": {
+      "status": "success",
+      "output_file": "results/RadarChart16_llm_annotation.json",
+      "processed_at": "2025-06-22T22:15:57.322492"
+    },
+    "GanttChart17.svg": {
+      "status": "success",
+      "output_file": "results/GanttChart17_llm_annotation.json",
+      "processed_at": "2025-06-22T22:16:05.035832"
+    },
+    "ConnectedScatterPlot13.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-22T22:16:07.748589"
+    },
+    "PolarAreaChart7.svg": {
+      "status": "success",
+      "output_file": "results/PolarAreaChart7_llm_annotation.json",
+      "processed_at": "2025-06-22T22:16:18.858615"
+    },
+    "GanttChart1.svg": {
+      "status": "success",
+      "output_file": "results/GanttChart1_llm_annotation.json",
+      "processed_at": "2025-06-22T22:16:25.579525"
+    },
+    "BarChart22.svg": {
+      "status": "success",
+      "output_file": "results/BarChart22_llm_annotation.json",
+      "processed_at": "2025-06-22T22:16:51.691769"
+    },
+    "DivergingStackedBarChart6.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-22T22:16:52.814997"
+    },
+    "WordCloud18.svg": {
+      "status": "success",
+      "output_file": "results/WordCloud18_llm_annotation.json",
+      "processed_at": "2025-06-22T22:16:58.654048"
+    },
+    "StackedAreaChart10.svg": {
+      "status": "success",
+      "output_file": "results/StackedAreaChart10_llm_annotation.json",
+      "processed_at": "2025-06-22T22:17:05.928495"
+    },
+    "_bespoke3.svg": {
+      "status": "success",
+      "output_file": "results/_bespoke3_llm_annotation.json",
+      "processed_at": "2025-06-22T22:17:20.559554"
+    },
+    "Scatterplot15.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-22T22:17:21.651017"
+    },
+    "GeoHeatmap15.svg": {
+      "status": "success",
+      "output_file": "results/GeoHeatmap15_llm_annotation.json",
+      "processed_at": "2025-06-22T22:18:06.553550"
+    },
+    "BumpChart6.svg": {
+      "status": "success",
+      "output_file": "results/BumpChart6_llm_annotation.json",
+      "processed_at": "2025-06-22T22:18:16.219321"
+    },
+    "WaterfallChart6.svg": {
+      "status": "success",
+      "output_file": "results/WaterfallChart6_llm_annotation.json",
+      "processed_at": "2025-06-22T22:18:27.340091"
+    },
+    "_bespoke14.svg": {
+      "status": "success",
+      "output_file": "results/_bespoke14_llm_annotation.json",
+      "processed_at": "2025-06-22T22:18:40.754739"
+    },
+    "_bespoke28.svg": {
+      "status": "success",
+      "output_file": "results/_bespoke28_llm_annotation.json",
+      "processed_at": "2025-06-22T22:18:49.996956"
+    },
+    "GroupedBarChart16.svg": {
+      "status": "success",
+      "output_file": "results/GroupedBarChart16_llm_annotation.json",
+      "processed_at": "2025-06-22T22:18:58.605776"
+    },
+    "BulletChart13.svg": {
+      "status": "success",
+      "output_file": "results/BulletChart13_llm_annotation.json",
+      "processed_at": "2025-06-22T22:19:08.297262"
+    },
+    "DotPlot20.svg": {
+      "status": "success",
+      "output_file": "results/DotPlot20_llm_annotation.json",
+      "processed_at": "2025-06-22T22:19:24.641829"
+    },
+    "StackedBarChart15.svg": {
+      "status": "success",
+      "output_file": "results/StackedBarChart15_llm_annotation.json",
+      "processed_at": "2025-06-22T22:20:08.339637"
+    },
+    "Treemap21.svg": {
+      "status": "success",
+      "output_file": "results/Treemap21_llm_annotation.json",
+      "processed_at": "2025-06-22T22:20:39.171890"
+    },
+    "MatrixDiagram19.svg": {
+      "status": "success",
+      "output_file": "results/MatrixDiagram19_llm_annotation.json",
+      "processed_at": "2025-06-22T22:21:32.684625"
+    },
+    "ViolinPlot2.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-22T22:21:33.681216"
+    },
+    "StackedBarChart17.svg": {
+      "status": "success",
+      "output_file": "results/StackedBarChart17_llm_annotation.json",
+      "processed_at": "2025-06-22T22:21:46.768092"
+    },
+    "GroupedBarChart14.svg": {
+      "status": "success",
+      "output_file": "results/GroupedBarChart14_llm_annotation.json",
+      "processed_at": "2025-06-22T22:22:09.025741"
+    },
+    "BulletChart11.svg": {
+      "status": "success",
+      "output_file": "results/BulletChart11_llm_annotation.json",
+      "processed_at": "2025-06-22T22:22:20.148910"
+    },
+    "_bespoke16.svg": {
+      "status": "success",
+      "output_file": "results/_bespoke16_llm_annotation.json",
+      "processed_at": "2025-06-22T22:22:30.952479"
+    },
+    "WaterfallChart4.svg": {
+      "status": "success",
+      "output_file": "results/WaterfallChart4_llm_annotation.json",
+      "processed_at": "2025-06-22T22:22:46.444058"
+    },
+    "BumpChart4.svg": {
+      "status": "success",
+      "output_file": "results/BumpChart4_llm_annotation.json",
+      "processed_at": "2025-06-22T22:23:13.852511"
+    },
+    "GeoHeatmap17.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-22T22:23:15.282229"
+    },
+    "_bespoke1.svg": {
+      "status": "success",
+      "output_file": "results/_bespoke1_llm_annotation.json",
+      "processed_at": "2025-06-22T22:24:39.980321"
+    },
+    "Scatterplot17.svg": {
+      "status": "success",
+      "output_file": "results/Scatterplot17_llm_annotation.json",
+      "processed_at": "2025-06-22T22:25:02.297888"
+    },
+    "StackedAreaChart12.svg": {
+      "status": "success",
+      "output_file": "results/StackedAreaChart12_llm_annotation.json",
+      "processed_at": "2025-06-22T22:25:18.095930"
+    },
+    "DivergingStackedBarChart18.svg": {
+      "status": "success",
+      "output_file": "results/DivergingStackedBarChart18_llm_annotation.json",
+      "processed_at": "2025-06-22T22:25:37.288797"
+    },
+    "BarChart20.svg": {
+      "status": "success",
+      "output_file": "results/BarChart20_llm_annotation.json",
+      "processed_at": "2025-06-22T22:25:47.624929"
+    },
+    "DivergingStackedBarChart4.svg": {
+      "status": "success",
+      "output_file": "results/DivergingStackedBarChart4_llm_annotation.json",
+      "processed_at": "2025-06-22T22:25:56.266024"
+    },
+    "GanttChart3.svg": {
+      "status": "success",
+      "output_file": "results/GanttChart3_llm_annotation.json",
+      "processed_at": "2025-06-22T22:26:03.543872"
+    },
+    "SpiralPlot9.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-22T22:26:08.749209"
+    },
+    "PolarAreaChart5.svg": {
+      "status": "success",
+      "output_file": "results/PolarAreaChart5_llm_annotation.json",
+      "processed_at": "2025-06-22T22:26:18.382620"
+    },
+    "GanttChart15.svg": {
+      "status": "success",
+      "output_file": "results/GanttChart15_llm_annotation.json",
+      "processed_at": "2025-06-22T22:26:31.793335"
+    },
+    "RadarChart14.svg": {
+      "status": "success",
+      "output_file": "results/RadarChart14_llm_annotation.json",
+      "processed_at": "2025-06-22T22:26:40.722642"
+    },
+    "DensityPlot21.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-22T22:26:42.118749"
+    },
+    "ConnectedScatterPlot11.svg": {
+      "status": "success",
+      "output_file": "results/ConnectedScatterPlot11_llm_annotation.json",
+      "processed_at": "2025-06-22T22:26:59.217549"
+    },
+    "DonutChart5.svg": {
+      "status": "success",
+      "output_file": "results/DonutChart5_llm_annotation.json",
+      "processed_at": "2025-06-22T22:27:05.845968"
+    },
+    "DonutChart4.svg": {
+      "status": "success",
+      "output_file": "results/DonutChart4_llm_annotation.json",
+      "processed_at": "2025-06-22T22:27:16.644178"
+    },
+    "ConnectedScatterPlot10.svg": {
+      "status": "success",
+      "output_file": "results/ConnectedScatterPlot10_llm_annotation.json",
+      "processed_at": "2025-06-22T22:27:33.081941"
+    },
+    "GanttChart14.svg": {
+      "status": "success",
+      "output_file": "results/GanttChart14_llm_annotation.json",
+      "processed_at": "2025-06-22T22:27:42.316451"
+    },
+    "DensityPlot20.svg": {
+      "status": "success",
+      "output_file": "results/DensityPlot20_llm_annotation.json",
+      "processed_at": "2025-06-22T22:27:56.278390"
+    },
+    "RadarChart15.svg": {
+      "status": "success",
+      "output_file": "results/RadarChart15_llm_annotation.json",
+      "processed_at": "2025-06-22T22:28:06.001377"
+    },
+    "GanttChart2.svg": {
+      "status": "success",
+      "output_file": "results/GanttChart2_llm_annotation.json",
+      "processed_at": "2025-06-22T22:28:13.070766"
+    },
+    "PolarAreaChart4.svg": {
+      "status": "success",
+      "output_file": "results/PolarAreaChart4_llm_annotation.json",
+      "processed_at": "2025-06-22T22:28:27.437939"
+    },
+    "SpiralPlot8.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-22T22:28:33.448336"
+    },
+    "DivergingStackedBarChart5.svg": {
+      "status": "success",
+      "output_file": "results/DivergingStackedBarChart5_llm_annotation.json",
+      "processed_at": "2025-06-22T22:28:47.080536"
+    },
+    "BarChart21.svg": {
+      "status": "success",
+      "output_file": "results/BarChart21_llm_annotation.json",
+      "processed_at": "2025-06-22T22:28:58.433429"
+    },
+    "DivergingStackedBarChart19.svg": {
+      "status": "success",
+      "output_file": "results/DivergingStackedBarChart19_llm_annotation.json",
+      "processed_at": "2025-06-22T22:29:10.727562"
+    },
+    "ParallelCoordinatesPlot20.svg": {
+      "status": "success",
+      "output_file": "results/ParallelCoordinatesPlot20_llm_annotation.json",
+      "processed_at": "2025-06-22T22:30:31.924251"
+    },
+    "StackedAreaChart13.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-22T22:30:33.458332"
+    },
+    "Scatterplot16.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-22T22:34:50.619822"
+    },
+    "GeoHeatmap16.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-22T22:34:51.736256"
+    },
+    "BumpChart5.svg": {
+      "status": "success",
+      "output_file": "results/BumpChart5_llm_annotation.json",
+      "processed_at": "2025-06-22T22:35:15.876540"
+    },
+    "WaterfallChart5.svg": {
+      "status": "success",
+      "output_file": "results/WaterfallChart5_llm_annotation.json",
+      "processed_at": "2025-06-22T22:35:30.241250"
+    },
+    "_bespoke17.svg": {
+      "status": "success",
+      "output_file": "results/_bespoke17_llm_annotation.json",
+      "processed_at": "2025-06-22T22:35:40.070287"
+    },
+    "BulletChart10.svg": {
+      "status": "success",
+      "output_file": "results/BulletChart10_llm_annotation.json",
+      "processed_at": "2025-06-22T22:35:48.160063"
+    },
+    "GroupedBarChart15.svg": {
+      "status": "success",
+      "output_file": "results/GroupedBarChart15_llm_annotation.json",
+      "processed_at": "2025-06-22T22:35:57.888649"
+    },
+    "StackedBarChart16.svg": {
+      "status": "success",
+      "output_file": "results/StackedBarChart16_llm_annotation.json",
+      "processed_at": "2025-06-22T22:36:52.675027"
+    },
+    "ViolinPlot3.svg": {
+      "status": "success",
+      "output_file": "results/ViolinPlot3_llm_annotation.json",
+      "processed_at": "2025-06-22T22:37:12.805706"
+    },
+    "Treemap22.svg": {
+      "status": "success",
+      "output_file": "results/Treemap22_llm_annotation.json",
+      "processed_at": "2025-06-22T22:37:22.164433"
+    },
+    "WaffleChart9.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-22T22:37:24.568859"
+    },
+    "BoxAndWhisker8.svg": {
+      "status": "success",
+      "output_file": "results/BoxAndWhisker8_llm_annotation.json",
+      "processed_at": "2025-06-22T22:38:32.930767"
+    },
+    "GroupedBarChart11.svg": {
+      "status": "success",
+      "output_file": "results/GroupedBarChart11_llm_annotation.json",
+      "processed_at": "2025-06-22T22:38:41.569150"
+    },
+    "BulletChart14.svg": {
+      "status": "success",
+      "output_file": "results/BulletChart14_llm_annotation.json",
+      "processed_at": "2025-06-22T22:38:50.401958"
+    },
+    "ViolinPlot7.svg": {
+      "status": "success",
+      "output_file": "results/ViolinPlot7_llm_annotation.json",
+      "processed_at": "2025-06-22T22:39:00.471804"
+    },
+    "StackedBarChart12.svg": {
+      "status": "success",
+      "output_file": "results/StackedBarChart12_llm_annotation.json",
+      "processed_at": "2025-06-22T22:39:17.267620"
+    },
+    "WaterfallChart1.svg": {
+      "status": "success",
+      "output_file": "results/WaterfallChart1_llm_annotation.json",
+      "processed_at": "2025-06-22T22:39:28.632254"
+    },
+    "_bespoke13.svg": {
+      "status": "success",
+      "output_file": "results/_bespoke13_llm_annotation.json",
+      "processed_at": "2025-06-22T22:39:44.413498"
+    },
+    "_bespoke4.svg": {
+      "status": "success",
+      "output_file": "results/_bespoke4_llm_annotation.json",
+      "processed_at": "2025-06-22T22:40:05.701301"
+    },
+    "Scatterplot12.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-22T22:40:07.851076"
+    },
+    "BumpChart1.svg": {
+      "status": "success",
+      "output_file": "results/BumpChart1_llm_annotation.json",
+      "processed_at": "2025-06-22T22:40:47.663320"
+    },
+    "GeoHeatmap12.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-22T22:40:49.629264"
+    },
+    "ParallelCoordinatesPlot18.svg": {
+      "status": "success",
+      "output_file": "results/ParallelCoordinatesPlot18_llm_annotation.json",
+      "processed_at": "2025-06-22T22:41:03.155534"
+    },
+    "StackedAreaChart17.svg": {
+      "status": "success",
+      "output_file": "results/StackedAreaChart17_llm_annotation.json",
+      "processed_at": "2025-06-22T22:41:11.036521"
+    },
+    "DivergingStackedBarChart21.svg": {
+      "status": "success",
+      "output_file": "results/DivergingStackedBarChart21_llm_annotation.json",
+      "processed_at": "2025-06-22T22:41:24.216035"
+    },
+    "BarChart19.svg": {
+      "status": "success",
+      "output_file": "results/BarChart19_llm_annotation.json",
+      "processed_at": "2025-06-22T22:41:32.686843"
+    },
+    "GanttChart6.svg": {
+      "status": "success",
+      "output_file": "results/GanttChart6_llm_annotation.json",
+      "processed_at": "2025-06-22T22:41:41.052293"
+    },
+    "BarChart25.svg": {
+      "status": "success",
+      "output_file": "results/BarChart25_llm_annotation.json",
+      "processed_at": "2025-06-22T22:41:47.860508"
+    },
+    "DivergingStackedBarChart1.svg": {
+      "status": "success",
+      "output_file": "results/DivergingStackedBarChart1_llm_annotation.json",
+      "processed_at": "2025-06-22T22:42:04.751652"
+    },
+    "RadarChart11.svg": {
+      "status": "success",
+      "output_file": "results/RadarChart11_llm_annotation.json",
+      "processed_at": "2025-06-22T22:42:12.686196"
+    },
+    "DensityPlot9.svg": {
+      "status": "success",
+      "output_file": "results/DensityPlot9_llm_annotation.json",
+      "processed_at": "2025-06-22T22:42:50.056394"
+    },
+    "GanttChart10.svg": {
+      "status": "success",
+      "output_file": "results/GanttChart10_llm_annotation.json",
+      "processed_at": "2025-06-22T22:42:57.302975"
+    },
+    "ConnectedScatterPlot14.svg": {
+      "status": "success",
+      "output_file": "results/ConnectedScatterPlot14_llm_annotation.json",
+      "processed_at": "2025-06-22T22:43:13.097552"
+    },
+    "DensityPlot18.svg": {
+      "status": "success",
+      "output_file": "results/DensityPlot18_llm_annotation.json",
+      "processed_at": "2025-06-22T22:43:23.068590"
+    },
+    "BulletChart9.svg": {
+      "status": "success",
+      "output_file": "results/BulletChart9_llm_annotation.json",
+      "processed_at": "2025-06-22T22:43:31.769652"
+    },
+    "DonutChart1.svg": {
+      "status": "success",
+      "output_file": "results/DonutChart1_llm_annotation.json",
+      "processed_at": "2025-06-22T22:43:38.007107"
+    },
+    "BulletChart8.svg": {
+      "status": "success",
+      "output_file": "results/BulletChart8_llm_annotation.json",
+      "processed_at": "2025-06-22T22:43:50.748136"
+    },
+    "DensityPlot19.svg": {
+      "status": "success",
+      "output_file": "results/DensityPlot19_llm_annotation.json",
+      "processed_at": "2025-06-22T22:44:10.246525"
+    },
+    "ConnectedScatterPlot15.svg": {
+      "status": "success",
+      "output_file": "results/ConnectedScatterPlot15_llm_annotation.json",
+      "processed_at": "2025-06-22T22:44:28.160711"
+    },
+    "DensityPlot8.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-22T22:44:29.383064"
+    },
+    "RadarChart10.svg": {
+      "status": "success",
+      "output_file": "results/RadarChart10_llm_annotation.json",
+      "processed_at": "2025-06-22T22:44:36.950487"
+    },
+    "GanttChart11.svg": {
+      "status": "success",
+      "output_file": "results/GanttChart11_llm_annotation.json",
+      "processed_at": "2025-06-22T22:44:42.803009"
+    },
+    "BarChart24.svg": {
+      "status": "success",
+      "output_file": "results/BarChart24_llm_annotation.json",
+      "processed_at": "2025-06-22T22:45:24.167600"
+    },
+    "PolarAreaChart1.svg": {
+      "status": "success",
+      "output_file": "results/PolarAreaChart1_llm_annotation.json",
+      "processed_at": "2025-06-22T22:45:48.917004"
+    },
+    "GanttChart7.svg": {
+      "status": "success",
+      "output_file": "results/GanttChart7_llm_annotation.json",
+      "processed_at": "2025-06-22T22:46:13.402324"
+    },
+    "BarChart18.svg": {
+      "status": "success",
+      "output_file": "results/BarChart18_llm_annotation.json",
+      "processed_at": "2025-06-22T22:46:23.934816"
+    },
+    "DivergingStackedBarChart20.svg": {
+      "status": "success",
+      "output_file": "results/DivergingStackedBarChart20_llm_annotation.json",
+      "processed_at": "2025-06-22T22:46:40.048932"
+    },
+    "StackedAreaChart16.svg": {
+      "status": "success",
+      "output_file": "results/StackedAreaChart16_llm_annotation.json",
+      "processed_at": "2025-06-22T22:46:48.334281"
+    },
+    "ParallelCoordinatesPlot19.svg": {
+      "status": "success",
+      "output_file": "results/ParallelCoordinatesPlot19_llm_annotation.json",
+      "processed_at": "2025-06-22T22:47:02.475488"
+    },
+    "GeoHeatmap13.svg": {
+      "status": "success",
+      "output_file": "results/GeoHeatmap13_llm_annotation.json",
+      "processed_at": "2025-06-22T22:47:29.067962"
+    },
+    "Scatterplot13.svg": {
+      "status": "success",
+      "output_file": "results/Scatterplot13_llm_annotation.json",
+      "processed_at": "2025-06-22T22:47:50.515812"
+    },
+    "_bespoke5.svg": {
+      "status": "success",
+      "output_file": "results/_bespoke5_llm_annotation.json",
+      "processed_at": "2025-06-22T22:48:04.636457"
+    },
+    "_bespoke12.svg": {
+      "status": "success",
+      "output_file": "results/_bespoke12_llm_annotation.json",
+      "processed_at": "2025-06-22T22:48:14.535332"
+    },
+    "StackedBarChart13.svg": {
+      "status": "success",
+      "output_file": "results/StackedBarChart13_llm_annotation.json",
+      "processed_at": "2025-06-22T22:48:28.191378"
+    },
+    "ViolinPlot6.svg": {
+      "status": "success",
+      "output_file": "results/ViolinPlot6_llm_annotation.json",
+      "processed_at": "2025-06-22T22:48:35.866393"
+    },
+    "BulletChart15.svg": {
+      "status": "success",
+      "output_file": "results/BulletChart15_llm_annotation.json",
+      "processed_at": "2025-06-22T22:48:44.787652"
+    },
+    "GroupedBarChart10.svg": {
+      "status": "success",
+      "output_file": "results/GroupedBarChart10_llm_annotation.json",
+      "processed_at": "2025-06-22T22:48:58.297046"
+    },
+    "BoxAndWhisker9.svg": {
+      "status": "success",
+      "output_file": "results/BoxAndWhisker9_llm_annotation.json",
+      "processed_at": "2025-06-22T22:49:04.952623"
+    },
+    "WaffleChart8.svg": {
+      "status": "success",
+      "output_file": "results/WaffleChart8_llm_annotation.json",
+      "processed_at": "2025-06-22T22:49:23.730586"
+    },
+    "MatrixDiagram21.svg": {
+      "status": "success",
+      "output_file": "results/MatrixDiagram21_llm_annotation.json",
+      "processed_at": "2025-06-22T22:49:52.353676"
+    },
+    "Treemap19.svg": {
+      "status": "success",
+      "output_file": "results/Treemap19_llm_annotation.json",
+      "processed_at": "2025-06-22T22:49:59.000466"
+    },
+    "BulletChart17.svg": {
+      "status": "success",
+      "output_file": "results/BulletChart17_llm_annotation.json",
+      "processed_at": "2025-06-22T22:50:29.271422"
+    },
+    "DotPlot18.svg": {
+      "status": "success",
+      "output_file": "results/DotPlot18_llm_annotation.json",
+      "processed_at": "2025-06-22T22:50:54.099864"
+    },
+    "GroupedBarChart12.svg": {
+      "status": "success",
+      "output_file": "results/GroupedBarChart12_llm_annotation.json",
+      "processed_at": "2025-06-22T22:51:02.524782"
+    },
+    "StackedBarChart11.svg": {
+      "status": "success",
+      "output_file": "results/StackedBarChart11_llm_annotation.json",
+      "processed_at": "2025-06-22T22:51:16.741017"
+    },
+    "ViolinPlot4.svg": {
+      "status": "success",
+      "output_file": "results/ViolinPlot4_llm_annotation.json",
+      "processed_at": "2025-06-22T22:51:25.224424"
+    },
+    "WaterfallChart2.svg": {
+      "status": "success",
+      "output_file": "results/WaterfallChart2_llm_annotation.json",
+      "processed_at": "2025-06-22T22:51:32.421161"
+    },
+    "_bespoke10.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-22T22:51:33.827668"
+    },
+    "StackedBarChart9.svg": {
+      "status": "success",
+      "output_file": "results/StackedBarChart9_llm_annotation.json",
+      "processed_at": "2025-06-22T22:51:52.585027"
+    },
+    "Scatterplot11.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-22T22:51:56.063747"
+    },
+    "_bespoke7.svg": {
+      "status": "success",
+      "output_file": "results/_bespoke7_llm_annotation.json",
+      "processed_at": "2025-06-22T22:52:14.780566"
+    },
+    "BumpChart2.svg": {
+      "status": "success",
+      "output_file": "results/BumpChart2_llm_annotation.json",
+      "processed_at": "2025-06-22T22:52:49.085045"
+    },
+    "GeoHeatmap11.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-22T22:52:50.534897"
+    },
+    "DivergingStackedBarChart22.svg": {
+      "status": "success",
+      "output_file": "results/DivergingStackedBarChart22_llm_annotation.json",
+      "processed_at": "2025-06-22T22:54:12.101899"
+    },
+    "WordCloud20.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-22T22:54:15.023111"
+    },
+    "StackedAreaChart14.svg": {
+      "status": "success",
+      "output_file": "results/StackedAreaChart14_llm_annotation.json",
+      "processed_at": "2025-06-22T22:54:23.454527"
+    },
+    "GanttChart5.svg": {
+      "status": "success",
+      "output_file": "results/GanttChart5_llm_annotation.json",
+      "processed_at": "2025-06-22T22:54:41.201147"
+    },
+    "PolarAreaChart3.svg": {
+      "status": "success",
+      "output_file": "results/PolarAreaChart3_llm_annotation.json",
+      "processed_at": "2025-06-22T22:54:50.704165"
+    },
+    "DivergingStackedBarChart2.svg": {
+      "status": "success",
+      "output_file": "results/DivergingStackedBarChart2_llm_annotation.json",
+      "processed_at": "2025-06-22T22:54:58.439059"
+    },
+    "BarChart26.svg": {
+      "status": "success",
+      "output_file": "results/BarChart26_llm_annotation.json",
+      "processed_at": "2025-06-22T22:55:08.532169"
+    },
+    "ConnectedScatterPlot17.svg": {
+      "status": "success",
+      "output_file": "results/ConnectedScatterPlot17_llm_annotation.json",
+      "processed_at": "2025-06-22T22:55:44.113819"
+    },
+    "GanttChart13.svg": {
+      "status": "success",
+      "output_file": "results/GanttChart13_llm_annotation.json",
+      "processed_at": "2025-06-22T22:55:51.387275"
+    },
+    "RadarChart12.svg": {
+      "status": "success",
+      "output_file": "results/RadarChart12_llm_annotation.json",
+      "processed_at": "2025-06-22T22:56:00.186961"
+    },
+    "DonutChart3.svg": {
+      "status": "success",
+      "output_file": "results/DonutChart3_llm_annotation.json",
+      "processed_at": "2025-06-22T22:56:07.884835"
+    },
+    "DonutChart2.svg": {
+      "status": "success",
+      "output_file": "results/DonutChart2_llm_annotation.json",
+      "processed_at": "2025-06-22T22:56:14.735816"
+    },
+    "GanttChart12.svg": {
+      "status": "success",
+      "output_file": "results/GanttChart12_llm_annotation.json",
+      "processed_at": "2025-06-22T22:56:22.613206"
+    },
+    "RadarChart13.svg": {
+      "status": "success",
+      "output_file": "results/RadarChart13_llm_annotation.json",
+      "processed_at": "2025-06-22T22:56:33.369648"
+    },
+    "ConnectedScatterPlot16.svg": {
+      "status": "success",
+      "output_file": "results/ConnectedScatterPlot16_llm_annotation.json",
+      "processed_at": "2025-06-22T22:56:41.712457"
+    },
+    "BarChart27.svg": {
+      "status": "success",
+      "output_file": "results/BarChart27_llm_annotation.json",
+      "processed_at": "2025-06-22T22:56:53.438308"
+    },
+    "DivergingStackedBarChart3.svg": {
+      "status": "success",
+      "output_file": "results/DivergingStackedBarChart3_llm_annotation.json",
+      "processed_at": "2025-06-22T22:57:05.528771"
+    },
+    "GanttChart4.svg": {
+      "status": "success",
+      "output_file": "results/GanttChart4_llm_annotation.json",
+      "processed_at": "2025-06-22T22:57:12.893564"
+    },
+    "PolarAreaChart2.svg": {
+      "status": "success",
+      "output_file": "results/PolarAreaChart2_llm_annotation.json",
+      "processed_at": "2025-06-22T22:57:45.047330"
+    },
+    "StackedAreaChart15.svg": {
+      "status": "success",
+      "output_file": "results/StackedAreaChart15_llm_annotation.json",
+      "processed_at": "2025-06-22T22:57:59.422482"
+    },
+    "WordCloud21.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-22T22:58:05.121947"
+    },
+    "DivergingStackedBarChart23.svg": {
+      "status": "success",
+      "output_file": "results/DivergingStackedBarChart23_llm_annotation.json",
+      "processed_at": "2025-06-22T22:58:12.387747"
+    },
+    "GeoHeatmap10.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-22T22:58:15.766406"
+    },
+    "BumpChart3.svg": {
+      "status": "success",
+      "output_file": "results/BumpChart3_llm_annotation.json",
+      "processed_at": "2025-06-22T22:58:22.008001"
+    },
+    "_bespoke6.svg": {
+      "status": "success",
+      "output_file": "results/_bespoke6_llm_annotation.json",
+      "processed_at": "2025-06-22T22:58:31.544484"
+    },
+    "Scatterplot10.svg": {
+      "status": "success",
+      "output_file": "results/Scatterplot10_llm_annotation.json",
+      "processed_at": "2025-06-22T22:59:18.512863"
+    },
+    "StackedBarChart8.svg": {
+      "status": "success",
+      "output_file": "results/StackedBarChart8_llm_annotation.json",
+      "processed_at": "2025-06-22T22:59:33.079546"
+    },
+    "_bespoke11.svg": {
+      "status": "success",
+      "output_file": "results/_bespoke11_llm_annotation.json",
+      "processed_at": "2025-06-22T22:59:51.411781"
+    },
+    "WaterfallChart3.svg": {
+      "status": "success",
+      "output_file": "results/WaterfallChart3_llm_annotation.json",
+      "processed_at": "2025-06-22T23:00:02.722668"
+    },
+    "ViolinPlot5.svg": {
+      "status": "success",
+      "output_file": "results/ViolinPlot5_llm_annotation.json",
+      "processed_at": "2025-06-22T23:00:10.818315"
+    },
+    "StackedBarChart10.svg": {
+      "status": "success",
+      "output_file": "results/StackedBarChart10_llm_annotation.json",
+      "processed_at": "2025-06-22T23:01:33.197450"
+    },
+    "DotPlot19.svg": {
+      "status": "success",
+      "output_file": "results/DotPlot19_llm_annotation.json",
+      "processed_at": "2025-06-22T23:01:47.283787"
+    },
+    "GroupedBarChart13.svg": {
+      "status": "success",
+      "output_file": "results/GroupedBarChart13_llm_annotation.json",
+      "processed_at": "2025-06-22T23:01:55.524982"
+    },
+    "BulletChart16.svg": {
+      "status": "success",
+      "output_file": "results/BulletChart16_llm_annotation.json",
+      "processed_at": "2025-06-22T23:02:10.166806"
+    },
+    "Treemap18.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-22T23:02:11.347255"
+    },
+    "MatrixDiagram20.svg": {
+      "status": "success",
+      "output_file": "results/MatrixDiagram20_llm_annotation.json",
+      "processed_at": "2025-06-22T23:02:18.552023"
+    },
+    "AreaChart27.svg": {
+      "status": "success",
+      "output_file": "results/AreaChart27_llm_annotation.json",
+      "processed_at": "2025-06-22T23:02:29.722324"
+    },
+    "GeoHeatmap6.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-22T23:02:31.262457"
+    },
+    "RadialBarChart15.svg": {
+      "status": "success",
+      "output_file": "results/RadialBarChart15_llm_annotation.json",
+      "processed_at": "2025-06-22T23:02:41.752398"
+    },
+    "CandlestickChart17.svg": {
+      "status": "success",
+      "output_file": "results/CandlestickChart17_llm_annotation.json",
+      "processed_at": "2025-06-22T23:02:51.088877"
+    },
+    "WaterfallChart15.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-22T23:02:52.329105"
+    },
+    "DotPlot8.svg": {
+      "status": "success",
+      "output_file": "results/DotPlot8_llm_annotation.json",
+      "processed_at": "2025-06-22T23:03:17.958784"
+    },
+    "Heatmap13.svg": {
+      "status": "success",
+      "output_file": "results/Heatmap13_llm_annotation.json",
+      "processed_at": "2025-06-22T23:03:49.180833"
+    },
+    "BoxAndWhisker15.svg": {
+      "status": "success",
+      "output_file": "results/BoxAndWhisker15_llm_annotation.json",
+      "processed_at": "2025-06-22T23:04:03.521771"
+    },
+    "MarimekkoChart19.svg": {
+      "status": "success",
+      "output_file": "results/MarimekkoChart19_llm_annotation.json",
+      "processed_at": "2025-06-22T23:04:17.298961"
+    },
+    "KagiChart5.svg": {
+      "status": "success",
+      "output_file": "results/KagiChart5_llm_annotation.json",
+      "processed_at": "2025-06-22T23:04:32.193524"
+    },
+    "StreamGraph15.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-22T23:04:33.730707"
+    },
+    "LineGraph39.svg": {
+      "status": "success",
+      "output_file": "results/LineGraph39_llm_annotation.json",
+      "processed_at": "2025-06-22T23:04:43.953952"
+    },
+    "ConnectedDotPlot22.svg": {
+      "status": "success",
+      "output_file": "results/ConnectedDotPlot22_llm_annotation.json",
+      "processed_at": "2025-06-22T23:04:54.319174"
+    },
+    "LineGraph11.svg": {
+      "status": "success",
+      "output_file": "results/LineGraph11_llm_annotation.json",
+      "processed_at": "2025-06-22T23:05:03.973962"
+    },
+    "CirclePacking18.svg": {
+      "status": "success",
+      "output_file": "results/CirclePacking18_llm_annotation.json",
+      "processed_at": "2025-06-22T23:05:22.986871"
+    },
+    "BumpChart13.svg": {
+      "status": "success",
+      "output_file": "results/BumpChart13_llm_annotation.json",
+      "processed_at": "2025-06-22T23:06:22.175093"
+    },
+    "ParallelCoordinatesPlot6.svg": {
+      "status": "success",
+      "output_file": "results/ParallelCoordinatesPlot6_llm_annotation.json",
+      "processed_at": "2025-06-22T23:06:34.733268"
+    },
+    "ConnectedDotPlot6.svg": {
+      "status": "success",
+      "output_file": "results/ConnectedDotPlot6_llm_annotation.json",
+      "processed_at": "2025-06-22T23:07:11.430060"
+    },
+    "KagiChart10.svg": {
+      "status": "success",
+      "output_file": "results/KagiChart10_llm_annotation.json",
+      "processed_at": "2025-06-22T23:07:19.621312"
+    },
+    "PieChart22.svg": {
+      "status": "success",
+      "output_file": "results/PieChart22_llm_annotation.json",
+      "processed_at": "2025-06-22T23:07:26.597330"
+    },
+    "BarChart9.svg": {
+      "status": "success",
+      "output_file": "results/BarChart9_llm_annotation.json",
+      "processed_at": "2025-06-22T23:07:41.125565"
+    },
+    "RadialBarChart4.svg": {
+      "status": "success",
+      "output_file": "results/RadialBarChart4_llm_annotation.json",
+      "processed_at": "2025-06-22T23:08:10.108134"
+    },
+    "MarimekkoChart7.svg": {
+      "status": "success",
+      "output_file": "results/MarimekkoChart7_llm_annotation.json",
+      "processed_at": "2025-06-22T23:08:18.198100"
+    },
+    "PolarAreaChart12.svg": {
+      "status": "success",
+      "output_file": "results/PolarAreaChart12_llm_annotation.json",
+      "processed_at": "2025-06-22T23:08:45.928302"
+    },
+    "MatrixDiagram4.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-22T23:08:47.068500"
+    },
+    "CandlestickChart1.svg": {
+      "status": "success",
+      "output_file": "results/CandlestickChart1_llm_annotation.json",
+      "processed_at": "2025-06-22T23:08:59.668120"
+    },
+    "ViolinPlot11.svg": {
+      "status": "success",
+      "output_file": "results/ViolinPlot11_llm_annotation.json",
+      "processed_at": "2025-06-22T23:09:45.032232"
+    },
+    "ViolinPlot10.svg": {
+      "status": "success",
+      "output_file": "results/ViolinPlot10_llm_annotation.json",
+      "processed_at": "2025-06-22T23:09:52.112576"
+    },
+    "MatrixDiagram5.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-22T23:09:54.862995"
+    },
+    "PolarAreaChart13.svg": {
+      "status": "success",
+      "output_file": "results/PolarAreaChart13_llm_annotation.json",
+      "processed_at": "2025-06-22T23:10:06.870837"
+    },
+    "MarimekkoChart6.svg": {
+      "status": "success",
+      "output_file": "results/MarimekkoChart6_llm_annotation.json",
+      "processed_at": "2025-06-22T23:10:19.176893"
+    },
+    "PieChart23.svg": {
+      "status": "success",
+      "output_file": "results/PieChart23_llm_annotation.json",
+      "processed_at": "2025-06-22T23:10:27.240901"
+    },
+    "RadialBarChart5.svg": {
+      "status": "success",
+      "output_file": "results/RadialBarChart5_llm_annotation.json",
+      "processed_at": "2025-06-22T23:10:38.917596"
+    },
+    "BarChart8.svg": {
+      "status": "success",
+      "output_file": "results/BarChart8_llm_annotation.json",
+      "processed_at": "2025-06-22T23:10:51.490321"
+    },
+    "ConnectedDotPlot7.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-22T23:10:54.666271"
+    },
+    "KagiChart11.svg": {
+      "status": "success",
+      "output_file": "results/KagiChart11_llm_annotation.json",
+      "processed_at": "2025-06-22T23:11:06.461216"
+    },
+    "BubbleChart26.svg": {
+      "status": "success",
+      "output_file": "results/BubbleChart26_llm_annotation.json",
+      "processed_at": "2025-06-22T23:11:53.446585"
+    },
+    "ParallelCoordinatesPlot7.svg": {
+      "status": "success",
+      "output_file": "results/ParallelCoordinatesPlot7_llm_annotation.json",
+      "processed_at": "2025-06-22T23:12:06.196091"
+    },
+    "CirclePacking19.svg": {
+      "status": "success",
+      "output_file": "results/CirclePacking19_llm_annotation.json",
+      "processed_at": "2025-06-22T23:12:39.937153"
+    },
+    "BumpChart12.svg": {
+      "status": "success",
+      "output_file": "results/BumpChart12_llm_annotation.json",
+      "processed_at": "2025-06-22T23:14:48.796763"
+    },
+    "LineGraph10.svg": {
+      "status": "success",
+      "output_file": "results/LineGraph10_llm_annotation.json",
+      "processed_at": "2025-06-22T23:15:02.324686"
+    },
+    "Heatmap1.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-22T23:15:04.174726"
+    },
+    "StreamGraph14.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-22T23:15:08.110850"
+    },
+    "KagiChart4.svg": {
+      "status": "success",
+      "output_file": "results/KagiChart4_llm_annotation.json",
+      "processed_at": "2025-06-22T23:15:20.969520"
+    },
+    "LineGraph38.svg": {
+      "status": "success",
+      "output_file": "results/LineGraph38_llm_annotation.json",
+      "processed_at": "2025-06-22T23:15:31.972508"
+    },
+    "MarimekkoChart18.svg": {
+      "status": "success",
+      "output_file": "results/MarimekkoChart18_llm_annotation.json",
+      "processed_at": "2025-06-22T23:15:50.415565"
+    },
+    "BoxAndWhisker14.svg": {
+      "status": "success",
+      "output_file": "results/BoxAndWhisker14_llm_annotation.json",
+      "processed_at": "2025-06-22T23:16:00.538893"
+    },
+    "DonutChart22.svg": {
+      "status": "success",
+      "output_file": "results/DonutChart22_llm_annotation.json",
+      "processed_at": "2025-06-22T23:16:14.383229"
+    },
+    "Heatmap12.svg": {
+      "status": "success",
+      "output_file": "results/Heatmap12_llm_annotation.json",
+      "processed_at": "2025-06-22T23:16:53.903854"
+    },
+    "DotPlot9.svg": {
+      "status": "success",
+      "output_file": "results/DotPlot9_llm_annotation.json",
+      "processed_at": "2025-06-22T23:17:05.047403"
+    },
+    "WaterfallChart14.svg": {
+      "status": "success",
+      "output_file": "results/WaterfallChart14_llm_annotation.json",
+      "processed_at": "2025-06-22T23:17:13.991687"
+    },
+    "CandlestickChart16.svg": {
+      "status": "success",
+      "output_file": "results/CandlestickChart16_llm_annotation.json",
+      "processed_at": "2025-06-22T23:17:40.527490"
+    },
+    "RadialBarChart14.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-22T23:17:41.253690"
+    },
+    "GeoHeatmap7.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-22T23:17:48.610638"
+    },
+    "AreaChart26.svg": {
+      "status": "success",
+      "output_file": "results/AreaChart26_llm_annotation.json",
+      "processed_at": "2025-06-22T23:17:56.588479"
+    },
+    "WaffleChart22.svg": {
+      "status": "success",
+      "output_file": "results/WaffleChart22_llm_annotation.json",
+      "processed_at": "2025-06-22T23:19:50.330230"
+    },
+    "StackedAreaChart1.svg": {
+      "status": "success",
+      "output_file": "results/StackedAreaChart1_llm_annotation.json",
+      "processed_at": "2025-06-22T23:20:07.531523"
+    },
+    "StackedAreaChart3.svg": {
+      "status": "success",
+      "output_file": "results/StackedAreaChart3_llm_annotation.json",
+      "processed_at": "2025-06-22T23:20:16.333847"
+    },
+    "WaffleChart20.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-22T23:20:18.432836"
+    },
+    "AreaChart18.svg": {
+      "status": "success",
+      "output_file": "results/AreaChart18_llm_annotation.json",
+      "processed_at": "2025-06-22T23:20:28.875439"
+    },
+    "BubbleChart8.svg": {
+      "status": "success",
+      "output_file": "results/BubbleChart8_llm_annotation.json",
+      "processed_at": "2025-06-22T23:21:46.345736"
+    },
+    "RadialBarChart16.svg": {
+      "status": "success",
+      "output_file": "results/RadialBarChart16_llm_annotation.json",
+      "processed_at": "2025-06-22T23:21:57.762371"
+    },
+    "AreaChart24.svg": {
+      "status": "success",
+      "output_file": "results/AreaChart24_llm_annotation.json",
+      "processed_at": "2025-06-22T23:22:12.969673"
+    },
+    "GeoHeatmap5.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-22T23:22:16.361942"
+    },
+    "Calendar18.svg": {
+      "status": "success",
+      "output_file": "results/Calendar18_llm_annotation.json",
+      "processed_at": "2025-06-22T23:22:44.436415"
+    },
+    "BarChartInRadialLayout18.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-22T23:22:45.460054"
+    },
+    "CandlestickChart14.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-22T23:22:46.445574"
+    },
+    "WaterfallChart16.svg": {
+      "status": "success",
+      "output_file": "results/WaterfallChart16_llm_annotation.json",
+      "processed_at": "2025-06-22T23:23:07.120623"
+    },
+    "Heatmap10.svg": {
+      "status": "success",
+      "output_file": "results/Heatmap10_llm_annotation.json",
+      "processed_at": "2025-06-22T23:23:29.608624"
+    },
+    "DonutChart20.svg": {
+      "status": "success",
+      "output_file": "results/DonutChart20_llm_annotation.json",
+      "processed_at": "2025-06-22T23:23:39.438226"
+    },
+    "BoxAndWhisker16.svg": {
+      "status": "success",
+      "output_file": "results/BoxAndWhisker16_llm_annotation.json",
+      "processed_at": "2025-06-22T23:24:01.211562"
+    },
+    "KagiChart6.svg": {
+      "status": "success",
+      "output_file": "results/KagiChart6_llm_annotation.json",
+      "processed_at": "2025-06-22T23:24:15.296705"
+    },
+    "GroupedBarChart9.svg": {
+      "status": "success",
+      "output_file": "results/GroupedBarChart9_llm_annotation.json",
+      "processed_at": "2025-06-22T23:24:26.453775"
+    },
+    "StreamGraph16.svg": {
+      "status": "success",
+      "output_file": "results/StreamGraph16_llm_annotation.json",
+      "processed_at": "2025-06-22T23:24:57.402868"
+    },
+    "RangeChart19.svg": {
+      "status": "success",
+      "output_file": "results/RangeChart19_llm_annotation.json",
+      "processed_at": "2025-06-22T23:25:04.978191"
+    },
+    "Heatmap3.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-22T23:25:09.648501"
+    },
+    "ConnectedDotPlot21.svg": {
+      "status": "success",
+      "output_file": "results/ConnectedDotPlot21_llm_annotation.json",
+      "processed_at": "2025-06-22T23:25:19.852524"
+    },
+    "LineGraph12.svg": {
+      "status": "success",
+      "output_file": "results/LineGraph12_llm_annotation.json",
+      "processed_at": "2025-06-22T23:25:29.012224"
+    },
+    "BumpChart10.svg": {
+      "status": "success",
+      "output_file": "results/BumpChart10_llm_annotation.json",
+      "processed_at": "2025-06-22T23:26:11.671254"
+    },
+    "RadarChart8.svg": {
+      "status": "success",
+      "output_file": "results/RadarChart8_llm_annotation.json",
+      "processed_at": "2025-06-22T23:26:23.350557"
+    },
+    "AreaChart8.svg": {
+      "status": "success",
+      "output_file": "results/AreaChart8_llm_annotation.json",
+      "processed_at": "2025-06-22T23:26:29.901245"
+    },
+    "ParallelCoordinatesPlot5.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-22T23:26:32.465333"
+    },
+    "KagiChart13.svg": {
+      "status": "success",
+      "output_file": "results/KagiChart13_llm_annotation.json",
+      "processed_at": "2025-06-22T23:26:43.827275"
+    },
+    "ConnectedDotPlot5.svg": {
+      "status": "success",
+      "output_file": "results/ConnectedDotPlot5_llm_annotation.json",
+      "processed_at": "2025-06-22T23:27:51.526345"
+    },
+    "BubbleChart24.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-22T23:27:53.016919"
+    },
+    "BubbleChart18.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-22T23:27:53.763337"
+    },
+    "MarimekkoChart4.svg": {
+      "status": "success",
+      "output_file": "results/MarimekkoChart4_llm_annotation.json",
+      "processed_at": "2025-06-22T23:28:02.674567"
+    },
+    "RadialBarChart7.svg": {
+      "status": "success",
+      "output_file": "results/RadialBarChart7_llm_annotation.json",
+      "processed_at": "2025-06-22T23:28:23.452071"
+    },
+    "PieChart21.svg": {
+      "status": "success",
+      "output_file": "results/PieChart21_llm_annotation.json",
+      "processed_at": "2025-06-22T23:28:31.556457"
+    },
+    "PolarAreaChart11.svg": {
+      "status": "success",
+      "output_file": "results/PolarAreaChart11_llm_annotation.json",
+      "processed_at": "2025-06-22T23:28:52.289346"
+    },
+    "MatrixDiagram7.svg": {
+      "status": "success",
+      "output_file": "results/MatrixDiagram7_llm_annotation.json",
+      "processed_at": "2025-06-22T23:29:13.691976"
+    },
+    "Treemap8.svg": {
+      "status": "success",
+      "output_file": "results/Treemap8_llm_annotation.json",
+      "processed_at": "2025-06-22T23:29:24.612933"
+    },
+    "CandlestickChart2.svg": {
+      "status": "success",
+      "output_file": "results/CandlestickChart2_llm_annotation.json",
+      "processed_at": "2025-06-22T23:29:41.055525"
+    },
+    "ViolinPlot12.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-22T23:29:42.112411"
+    },
+    "ConnectedScatterPlot8.svg": {
+      "status": "success",
+      "output_file": "results/ConnectedScatterPlot8_llm_annotation.json",
+      "processed_at": "2025-06-22T23:29:50.301443"
+    },
+    "ConnectedScatterPlot9.svg": {
+      "status": "success",
+      "output_file": "results/ConnectedScatterPlot9_llm_annotation.json",
+      "processed_at": "2025-06-22T23:30:14.944801"
+    },
+    "ViolinPlot13.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-22T23:30:16.176861"
+    },
+    "CandlestickChart3.svg": {
+      "status": "success",
+      "output_file": "results/CandlestickChart3_llm_annotation.json",
+      "processed_at": "2025-06-22T23:30:33.312004"
+    },
+    "Treemap9.svg": {
+      "status": "success",
+      "output_file": "results/Treemap9_llm_annotation.json",
+      "processed_at": "2025-06-22T23:30:39.152224"
+    },
+    "MatrixDiagram6.svg": {
+      "status": "success",
+      "output_file": "results/MatrixDiagram6_llm_annotation.json",
+      "processed_at": "2025-06-22T23:31:05.970693"
+    },
+    "PolarAreaChart10.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-22T23:31:07.202856"
+    },
+    "RadialBarChart6.svg": {
+      "status": "success",
+      "output_file": "results/RadialBarChart6_llm_annotation.json",
+      "processed_at": "2025-06-22T23:31:17.135542"
+    },
+    "PieChart20.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-22T23:31:20.012265"
+    },
+    "SpiralPlot20.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-22T23:31:24.633763"
+    },
+    "MarimekkoChart5.svg": {
+      "status": "success",
+      "output_file": "results/MarimekkoChart5_llm_annotation.json",
+      "processed_at": "2025-06-22T23:31:36.093030"
+    },
+    "BubbleChart19.svg": {
+      "status": "success",
+      "output_file": "results/BubbleChart19_llm_annotation.json",
+      "processed_at": "2025-06-22T23:31:46.120550"
+    },
+    "BubbleChart25.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-22T23:31:47.199942"
+    },
+    "KagiChart12.svg": {
+      "status": "success",
+      "output_file": "results/KagiChart12_llm_annotation.json",
+      "processed_at": "2025-06-22T23:31:57.293371"
+    },
+    "ConnectedDotPlot4.svg": {
+      "status": "success",
+      "output_file": "results/ConnectedDotPlot4_llm_annotation.json",
+      "processed_at": "2025-06-22T23:32:05.874855"
+    },
+    "AreaChart9.svg": {
+      "status": "success",
+      "output_file": "results/AreaChart9_llm_annotation.json",
+      "processed_at": "2025-06-22T23:32:14.035393"
+    },
+    "ParallelCoordinatesPlot4.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-22T23:32:15.500857"
+    },
+    "RadarChart9.svg": {
+      "status": "success",
+      "output_file": "results/RadarChart9_llm_annotation.json",
+      "processed_at": "2025-06-22T23:32:25.478123"
+    },
+    "BumpChart11.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-22T23:32:27.031892"
+    },
+    "Heatmap2.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-22T23:32:29.185778"
+    },
+    "LineGraph13.svg": {
+      "status": "success",
+      "output_file": "results/LineGraph13_llm_annotation.json",
+      "processed_at": "2025-06-22T23:32:37.515392"
+    },
+    "ConnectedDotPlot20.svg": {
+      "status": "success",
+      "output_file": "results/ConnectedDotPlot20_llm_annotation.json",
+      "processed_at": "2025-06-22T23:33:15.998373"
+    },
+    "RangeChart18.svg": {
+      "status": "success",
+      "output_file": "results/RangeChart18_llm_annotation.json",
+      "processed_at": "2025-06-22T23:34:18.567241"
+    },
+    "StreamGraph17.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-22T23:34:20.098753"
+    },
+    "GroupedBarChart8.svg": {
+      "status": "success",
+      "output_file": "results/GroupedBarChart8_llm_annotation.json",
+      "processed_at": "2025-06-22T23:34:28.669204"
+    },
+    "KagiChart7.svg": {
+      "status": "success",
+      "output_file": "results/KagiChart7_llm_annotation.json",
+      "processed_at": "2025-06-22T23:34:41.447867"
+    },
+    "BoxAndWhisker17.svg": {
+      "status": "success",
+      "output_file": "results/BoxAndWhisker17_llm_annotation.json",
+      "processed_at": "2025-06-22T23:34:53.324926"
+    },
+    "DonutChart21.svg": {
+      "status": "success",
+      "output_file": "results/DonutChart21_llm_annotation.json",
+      "processed_at": "2025-06-22T23:35:03.257324"
+    },
+    "Heatmap11.svg": {
+      "status": "success",
+      "output_file": "results/Heatmap11_llm_annotation.json",
+      "processed_at": "2025-06-22T23:35:45.153843"
+    },
+    "BarChartInRadialLayout19.svg": {
+      "status": "success",
+      "output_file": "results/BarChartInRadialLayout19_llm_annotation.json",
+      "processed_at": "2025-06-22T23:36:50.115560"
+    },
+    "WaterfallChart17.svg": {
+      "status": "success",
+      "output_file": "results/WaterfallChart17_llm_annotation.json",
+      "processed_at": "2025-06-22T23:36:57.042159"
+    },
+    "CandlestickChart15.svg": {
+      "status": "success",
+      "output_file": "results/CandlestickChart15_llm_annotation.json",
+      "processed_at": "2025-06-22T23:37:06.732187"
+    },
+    "Calendar19.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-22T23:37:08.203518"
+    },
+    "GeoHeatmap4.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-22T23:37:11.360686"
+    },
+    "AreaChart25.svg": {
+      "status": "success",
+      "output_file": "results/AreaChart25_llm_annotation.json",
+      "processed_at": "2025-06-22T23:37:19.340857"
+    },
+    "BubbleChart9.svg": {
+      "status": "success",
+      "output_file": "results/BubbleChart9_llm_annotation.json",
+      "processed_at": "2025-06-22T23:38:01.022929"
+    },
+    "RadialBarChart17.svg": {
+      "status": "success",
+      "output_file": "results/RadialBarChart17_llm_annotation.json",
+      "processed_at": "2025-06-22T23:38:07.063597"
+    },
+    "AreaChart19.svg": {
+      "status": "success",
+      "output_file": "results/AreaChart19_llm_annotation.json",
+      "processed_at": "2025-06-22T23:38:20.176510"
+    },
+    "StackedAreaChart2.svg": {
+      "status": "success",
+      "output_file": "results/StackedAreaChart2_llm_annotation.json",
+      "processed_at": "2025-06-22T23:38:32.028835"
+    },
+    "WaffleChart21.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-22T23:38:37.234639"
+    },
+    "RadialBarChart13.svg": {
+      "status": "success",
+      "output_file": "results/RadialBarChart13_llm_annotation.json",
+      "processed_at": "2025-06-22T23:38:47.123013"
+    },
+    "WaffleChart19.svg": {
+      "status": "success",
+      "output_file": "results/WaffleChart19_llm_annotation.json",
+      "processed_at": "2025-06-22T23:38:59.370400"
+    },
+    "AreaChart21.svg": {
+      "status": "success",
+      "output_file": "results/AreaChart21_llm_annotation.json",
+      "processed_at": "2025-06-22T23:39:07.709520"
+    },
+    "RangeChart8.svg": {
+      "status": "success",
+      "output_file": "results/RangeChart8_llm_annotation.json",
+      "processed_at": "2025-06-22T23:39:21.720603"
+    },
+    "StackedAreaChart6.svg": {
+      "status": "success",
+      "output_file": "results/StackedAreaChart6_llm_annotation.json",
+      "processed_at": "2025-06-22T23:39:29.724795"
+    },
+    "BarChartInRadialLayout8.svg": {
+      "status": "success",
+      "output_file": "results/BarChartInRadialLayout8_llm_annotation.json",
+      "processed_at": "2025-06-22T23:39:40.463635"
+    },
+    "Heatmap15.svg": {
+      "status": "success",
+      "output_file": "results/Heatmap15_llm_annotation.json",
+      "processed_at": "2025-06-22T23:39:57.689630"
+    },
+    "DonutChart19.svg": {
+      "status": "success",
+      "output_file": "results/DonutChart19_llm_annotation.json",
+      "processed_at": "2025-06-22T23:40:05.943777"
+    },
+    "WaterfallChart13.svg": {
+      "status": "success",
+      "output_file": "results/WaterfallChart13_llm_annotation.json",
+      "processed_at": "2025-06-22T23:40:16.914969"
+    },
+    "CandlestickChart11.svg": {
+      "status": "success",
+      "output_file": "results/CandlestickChart11_llm_annotation.json",
+      "processed_at": "2025-06-22T23:40:35.584224"
+    },
+    "Calendar9.svg": {
+      "status": "success",
+      "output_file": "results/Calendar9_llm_annotation.json",
+      "processed_at": "2025-06-22T23:40:48.415150"
+    },
+    "BoxAndWhisker13.svg": {
+      "status": "success",
+      "output_file": "results/BoxAndWhisker13_llm_annotation.json",
+      "processed_at": "2025-06-22T23:40:56.132124"
+    },
+    "LineGraph17.svg": {
+      "status": "success",
+      "output_file": "results/LineGraph17_llm_annotation.json",
+      "processed_at": "2025-06-22T23:41:14.688660"
+    },
+    "Heatmap6.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-22T23:41:16.401816"
+    },
+    "KagiChart3.svg": {
+      "status": "success",
+      "output_file": "results/KagiChart3_llm_annotation.json",
+      "processed_at": "2025-06-22T23:41:27.570284"
+    },
+    "StreamGraph13.svg": {
+      "status": "success",
+      "output_file": "results/StreamGraph13_llm_annotation.json",
+      "processed_at": "2025-06-22T23:41:39.307978"
+    },
+    "RangeChart20.svg": {
+      "status": "success",
+      "output_file": "results/RangeChart20_llm_annotation.json",
+      "processed_at": "2025-06-22T23:41:48.839065"
+    },
+    "ConnectedDotPlot18.svg": {
+      "status": "success",
+      "output_file": "results/ConnectedDotPlot18_llm_annotation.json",
+      "processed_at": "2025-06-22T23:42:03.898306"
+    },
+    "BumpChart15.svg": {
+      "status": "success",
+      "output_file": "results/BumpChart15_llm_annotation.json",
+      "processed_at": "2025-06-22T23:42:17.265762"
+    },
+    "KagiChart16.svg": {
+      "status": "success",
+      "output_file": "results/KagiChart16_llm_annotation.json",
+      "processed_at": "2025-06-22T23:42:32.263269"
+    },
+    "BubbleChart21.svg": {
+      "status": "success",
+      "output_file": "results/BubbleChart21_llm_annotation.json",
+      "processed_at": "2025-06-22T23:43:02.316860"
+    },
+    "PieChart18.svg": {
+      "status": "success",
+      "output_file": "results/PieChart18_llm_annotation.json",
+      "processed_at": "2025-06-22T23:43:13.144045"
+    },
+    "SpiralPlot18.svg": {
+      "status": "success",
+      "output_file": "results/SpiralPlot18_llm_annotation.json",
+      "processed_at": "2025-06-22T23:44:25.847051"
+    },
+    "PolarAreaChart14.svg": {
+      "status": "success",
+      "output_file": "results/PolarAreaChart14_llm_annotation.json",
+      "processed_at": "2025-06-22T23:44:52.570754"
+    },
+    "MatrixDiagram2.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-22T23:44:54.291894"
+    },
+    "MarimekkoChart1.svg": {
+      "status": "success",
+      "output_file": "results/MarimekkoChart1_llm_annotation.json",
+      "processed_at": "2025-06-22T23:45:03.012347"
+    },
+    "PieChart24.svg": {
+      "status": "success",
+      "output_file": "results/PieChart24_llm_annotation.json",
+      "processed_at": "2025-06-22T23:45:11.003487"
+    },
+    "RadialBarChart2.svg": {
+      "status": "success",
+      "output_file": "results/RadialBarChart2_llm_annotation.json",
+      "processed_at": "2025-06-22T23:45:18.973351"
+    },
+    "CandlestickChart7.svg": {
+      "status": "success",
+      "output_file": "results/CandlestickChart7_llm_annotation.json",
+      "processed_at": "2025-06-22T23:45:46.639159"
+    },
+    "ViolinPlot17.svg": {
+      "status": "success",
+      "output_file": "results/ViolinPlot17_llm_annotation.json",
+      "processed_at": "2025-06-22T23:46:03.696091"
+    },
+    "ViolinPlot16.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-22T23:46:05.115509"
+    },
+    "CandlestickChart6.svg": {
+      "status": "success",
+      "output_file": "results/CandlestickChart6_llm_annotation.json",
+      "processed_at": "2025-06-22T23:46:16.848879"
+    },
+    "RadialBarChart3.svg": {
+      "status": "success",
+      "output_file": "results/RadialBarChart3_llm_annotation.json",
+      "processed_at": "2025-06-22T23:46:23.656025"
+    },
+    "SpiralPlot19.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-22T23:46:25.132868"
+    },
+    "PieChart19.svg": {
+      "status": "success",
+      "output_file": "results/PieChart19_llm_annotation.json",
+      "processed_at": "2025-06-22T23:46:31.651824"
+    },
+    "MatrixDiagram3.svg": {
+      "status": "success",
+      "output_file": "results/MatrixDiagram3_llm_annotation.json",
+      "processed_at": "2025-06-22T23:46:45.043765"
+    },
+    "PolarAreaChart15.svg": {
+      "status": "success",
+      "output_file": "results/PolarAreaChart15_llm_annotation.json",
+      "processed_at": "2025-06-22T23:46:53.871506"
+    },
+    "BubbleChart20.svg": {
+      "status": "success",
+      "output_file": "results/BubbleChart20_llm_annotation.json",
+      "processed_at": "2025-06-22T23:47:20.950057"
+    },
+    "ConnectedDotPlot1.svg": {
+      "status": "success",
+      "output_file": "results/ConnectedDotPlot1_llm_annotation.json",
+      "processed_at": "2025-06-22T23:47:33.936834"
+    },
+    "KagiChart17.svg": {
+      "status": "success",
+      "output_file": "results/KagiChart17_llm_annotation.json",
+      "processed_at": "2025-06-22T23:47:45.093487"
+    },
+    "BumpChart14.svg": {
+      "status": "success",
+      "output_file": "results/BumpChart14_llm_annotation.json",
+      "processed_at": "2025-06-22T23:48:18.191898"
+    },
+    "ParallelCoordinatesPlot1.svg": {
+      "status": "success",
+      "output_file": "results/ParallelCoordinatesPlot1_llm_annotation.json",
+      "processed_at": "2025-06-22T23:49:24.549502"
+    },
+    "ConnectedDotplot19.svg": {
+      "status": "success",
+      "output_file": "results/ConnectedDotplot19_llm_annotation.json",
+      "processed_at": "2025-06-22T23:49:47.159716"
+    },
+    "StreamGraph12.svg": {
+      "status": "success",
+      "output_file": "results/StreamGraph12_llm_annotation.json",
+      "processed_at": "2025-06-22T23:49:56.499043"
+    },
+    "KagiChart2.svg": {
+      "status": "success",
+      "output_file": "results/KagiChart2_llm_annotation.json",
+      "processed_at": "2025-06-22T23:50:04.486709"
+    },
+    "RangeChart21.svg": {
+      "status": "success",
+      "output_file": "results/RangeChart21_llm_annotation.json",
+      "processed_at": "2025-06-22T23:50:13.503197"
+    },
+    "LineGraph16.svg": {
+      "status": "success",
+      "output_file": "results/LineGraph16_llm_annotation.json",
+      "processed_at": "2025-06-22T23:50:19.840709"
+    },
+    "Heatmap7.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-22T23:50:21.229242"
+    },
+    "BoxAndWhisker12.svg": {
+      "status": "success",
+      "output_file": "results/BoxAndWhisker12_llm_annotation.json",
+      "processed_at": "2025-06-22T23:50:32.844740"
+    },
+    "Calendar8.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-22T23:50:34.892475"
+    },
+    "CandlestickChart10.svg": {
+      "status": "success",
+      "output_file": "results/CandlestickChart10_llm_annotation.json",
+      "processed_at": "2025-06-22T23:50:54.396934"
+    },
+    "WaterfallChart12.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-22T23:50:55.719202"
+    },
+    "DonutChart18.svg": {
+      "status": "success",
+      "output_file": "results/DonutChart18_llm_annotation.json",
+      "processed_at": "2025-06-22T23:51:01.325460"
+    },
+    "BarChartInRadialLayout20.svg": {
+      "status": "success",
+      "output_file": "results/BarChartInRadialLayout20_llm_annotation.json",
+      "processed_at": "2025-06-22T23:52:00.834507"
+    },
+    "Heatmap14.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-22T23:52:03.554945"
+    },
+    "Calendar20.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-22T23:52:04.692367"
+    },
+    "BarChartInRadialLayout9.svg": {
+      "status": "success",
+      "output_file": "results/BarChartInRadialLayout9_llm_annotation.json",
+      "processed_at": "2025-06-22T23:53:23.140025"
+    },
+    "RangeChart9.svg": {
+      "status": "success",
+      "output_file": "results/RangeChart9_llm_annotation.json",
+      "processed_at": "2025-06-22T23:53:29.597660"
+    },
+    "StackedAreaChart7.svg": {
+      "status": "success",
+      "output_file": "results/StackedAreaChart7_llm_annotation.json",
+      "processed_at": "2025-06-22T23:53:40.209988"
+    },
+    "GeoHeatmap1.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-22T23:53:43.216565"
+    },
+    "AreaChart20.svg": {
+      "status": "success",
+      "output_file": "results/AreaChart20_llm_annotation.json",
+      "processed_at": "2025-06-22T23:53:56.644565"
+    },
+    "RadialBarChart12.svg": {
+      "status": "success",
+      "output_file": "results/RadialBarChart12_llm_annotation.json",
+      "processed_at": "2025-06-22T23:54:03.063181"
+    },
+    "WaffleChart18.svg": {
+      "status": "success",
+      "output_file": "results/WaffleChart18_llm_annotation.json",
+      "processed_at": "2025-06-22T23:54:46.194713"
+    },
+    "AreaChart22.svg": {
+      "status": "success",
+      "output_file": "results/AreaChart22_llm_annotation.json",
+      "processed_at": "2025-06-22T23:54:54.984913"
+    },
+    "GeoHeatmap3.svg": {
+      "status": "success",
+      "output_file": "results/GeoHeatmap3_llm_annotation.json",
+      "processed_at": "2025-06-22T23:55:07.298188"
+    },
+    "PieChart9.svg": {
+      "status": "success",
+      "output_file": "results/PieChart9_llm_annotation.json",
+      "processed_at": "2025-06-22T23:55:13.417966"
+    },
+    "RadialBarChart10.svg": {
+      "status": "success",
+      "output_file": "results/RadialBarChart10_llm_annotation.json",
+      "processed_at": "2025-06-22T23:55:34.567627"
+    },
+    "StackedAreaChart5.svg": {
+      "status": "success",
+      "output_file": "results/StackedAreaChart5_llm_annotation.json",
+      "processed_at": "2025-06-22T23:55:47.544599"
+    },
+    "WordCloud8.svg": {
+      "status": "success",
+      "output_file": "results/WordCloud8_llm_annotation.json",
+      "processed_at": "2025-06-22T23:55:54.744824"
+    },
+    "StreamGraph9.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-22T23:55:58.286558"
+    },
+    "Heatmap16.svg": {
+      "status": "success",
+      "output_file": "results/Heatmap16_llm_annotation.json",
+      "processed_at": "2025-06-22T23:56:14.227293"
+    },
+    "WaterfallChart10.svg": {
+      "status": "success",
+      "output_file": "results/WaterfallChart10_llm_annotation.json",
+      "processed_at": "2025-06-22T23:56:25.989838"
+    },
+    "CandlestickChart12.svg": {
+      "status": "success",
+      "output_file": "results/CandlestickChart12_llm_annotation.json",
+      "processed_at": "2025-06-22T23:56:45.843254"
+    },
+    "BoxAndWhisker10.svg": {
+      "status": "success",
+      "output_file": "results/BoxAndWhisker10_llm_annotation.json",
+      "processed_at": "2025-06-22T23:57:10.624385"
+    },
+    "Heatmap5.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-22T23:57:12.451807"
+    },
+    "MarimekkoChart20.svg": {
+      "status": "success",
+      "output_file": "results/MarimekkoChart20_llm_annotation.json",
+      "processed_at": "2025-06-22T23:57:22.472985"
+    },
+    "LineGraph14.svg": {
+      "status": "success",
+      "output_file": "results/LineGraph14_llm_annotation.json",
+      "processed_at": "2025-06-22T23:57:33.018787"
+    },
+    "Scatterplot8.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-22T23:57:34.478300"
+    },
+    "LineGraph28.svg": {
+      "status": "success",
+      "output_file": "results/LineGraph28_llm_annotation.json",
+      "processed_at": "2025-06-22T23:57:54.543732"
+    },
+    "StreamGraph10.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-22T23:57:56.814943"
+    },
+    "ParallelCoordinatesPlot3.svg": {
+      "status": "success",
+      "output_file": "results/ParallelCoordinatesPlot3_llm_annotation.json",
+      "processed_at": "2025-06-22T23:58:25.261854"
+    },
+    "CirclePacking21.svg": {
+      "status": "success",
+      "output_file": "results/CirclePacking21_llm_annotation.json",
+      "processed_at": "2025-06-22T23:59:21.869164"
+    },
+    "BumpChart16.svg": {
+      "status": "success",
+      "output_file": "results/BumpChart16_llm_annotation.json",
+      "processed_at": "2025-06-22T23:59:46.903454"
+    },
+    "BubbleChart22.svg": {
+      "status": "success",
+      "output_file": "results/BubbleChart22_llm_annotation.json",
+      "processed_at": "2025-06-23T00:00:40.391503"
+    },
+    "KagiChart15.svg": {
+      "status": "success",
+      "output_file": "results/KagiChart15_llm_annotation.json",
+      "processed_at": "2025-06-23T00:00:52.392194"
+    },
+    "ConnectedDotPlot3.svg": {
+      "status": "success",
+      "output_file": "results/ConnectedDotPlot3_llm_annotation.json",
+      "processed_at": "2025-06-23T00:01:06.484807"
+    },
+    "PolarAreaChart17.svg": {
+      "status": "success",
+      "output_file": "results/PolarAreaChart17_llm_annotation.json",
+      "processed_at": "2025-06-23T00:01:14.660516"
+    },
+    "MatrixDiagram1.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-23T00:01:17.005709"
+    },
+    "RadialBarChart1.svg": {
+      "status": "success",
+      "output_file": "results/RadialBarChart1_llm_annotation.json",
+      "processed_at": "2025-06-23T00:01:39.737378"
+    },
+    "MarimekkoChart2.svg": {
+      "status": "success",
+      "output_file": "results/MarimekkoChart2_llm_annotation.json",
+      "processed_at": "2025-06-23T00:01:51.179842"
+    },
+    "CandlestickChart4.svg": {
+      "status": "success",
+      "output_file": "results/CandlestickChart4_llm_annotation.json",
+      "processed_at": "2025-06-23T00:01:58.270186"
+    },
+    "ViolinPlot14.svg": {
+      "status": "success",
+      "output_file": "results/ViolinPlot14_llm_annotation.json",
+      "processed_at": "2025-06-23T00:02:09.433562"
+    },
+    "CirclePacking9.svg": {
+      "status": "success",
+      "output_file": "results/CirclePacking9_llm_annotation.json",
+      "processed_at": "2025-06-23T00:02:15.220504"
+    },
+    "CirclePacking8.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-23T00:02:16.198814"
+    },
+    "ViolinPlot15.svg": {
+      "status": "success",
+      "output_file": "results/ViolinPlot15_llm_annotation.json",
+      "processed_at": "2025-06-23T00:02:23.766757"
+    },
+    "CandlestickChart5.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-23T00:02:25.230217"
+    },
+    "MarimekkoChart3.svg": {
+      "status": "success",
+      "output_file": "results/MarimekkoChart3_llm_annotation.json",
+      "processed_at": "2025-06-23T00:02:32.783853"
+    },
+    "PolarAreaChart16.svg": {
+      "status": "success",
+      "output_file": "results/PolarAreaChart16_llm_annotation.json",
+      "processed_at": "2025-06-23T00:02:44.756957"
+    },
+    "KagiChart14.svg": {
+      "status": "success",
+      "output_file": "results/KagiChart14_llm_annotation.json",
+      "processed_at": "2025-06-23T00:02:55.703725"
+    },
+    "ConnectedDotPlot2.svg": {
+      "status": "success",
+      "output_file": "results/ConnectedDotPlot2_llm_annotation.json",
+      "processed_at": "2025-06-23T00:03:20.914332"
+    },
+    "BubbleChart23.svg": {
+      "status": "success",
+      "output_file": "results/BubbleChart23_llm_annotation.json",
+      "processed_at": "2025-06-23T00:04:25.418914"
+    },
+    "BumpChart17.svg": {
+      "status": "success",
+      "output_file": "results/BumpChart17_llm_annotation.json",
+      "processed_at": "2025-06-23T00:04:33.302056"
+    },
+    "CirclePacking20.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-23T00:04:34.353177"
+    },
+    "ParallelCoordinatesPlot2.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-23T00:04:35.342018"
+    },
+    "StreamGraph11.svg": {
+      "status": "success",
+      "output_file": "results/StreamGraph11_llm_annotation.json",
+      "processed_at": "2025-06-23T00:04:45.184951"
+    },
+    "KagiChart1.svg": {
+      "status": "success",
+      "output_file": "results/KagiChart1_llm_annotation.json",
+      "processed_at": "2025-06-23T00:04:56.443024"
+    },
+    "LineGraph29.svg": {
+      "status": "success",
+      "output_file": "results/LineGraph29_llm_annotation.json",
+      "processed_at": "2025-06-23T00:05:18.040587"
+    },
+    "Scatterplot9.svg": {
+      "status": "success",
+      "output_file": "results/Scatterplot9_llm_annotation.json",
+      "processed_at": "2025-06-23T00:05:43.651390"
+    },
+    "Heatmap4.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-23T00:05:44.667575"
+    },
+    "LineGraph15.svg": {
+      "status": "success",
+      "output_file": "results/LineGraph15_llm_annotation.json",
+      "processed_at": "2025-06-23T00:05:50.879740"
+    },
+    "MarimekkoChart21.svg": {
+      "status": "success",
+      "output_file": "results/MarimekkoChart21_llm_annotation.json",
+      "processed_at": "2025-06-23T00:06:33.831357"
+    },
+    "BoxAndWhisker11.svg": {
+      "status": "success",
+      "output_file": "results/BoxAndWhisker11_llm_annotation.json",
+      "processed_at": "2025-06-23T00:06:52.740687"
+    },
+    "CandlestickChart13.svg": {
+      "status": "success",
+      "output_file": "results/CandlestickChart13_llm_annotation.json",
+      "processed_at": "2025-06-23T00:07:03.050066"
+    },
+    "WaterfallChart11.svg": {
+      "status": "success",
+      "output_file": "results/WaterfallChart11_llm_annotation.json",
+      "processed_at": "2025-06-23T00:07:10.659530"
+    },
+    "StreamGraph8.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-23T00:07:16.797907"
+    },
+    "Heatmap17.svg": {
+      "status": "success",
+      "output_file": "results/Heatmap17_llm_annotation.json",
+      "processed_at": "2025-06-23T00:07:45.410008"
+    },
+    "WordCloud9.svg": {
+      "status": "success",
+      "output_file": "results/WordCloud9_llm_annotation.json",
+      "processed_at": "2025-06-23T00:07:50.566037"
+    },
+    "StackedAreaChart4.svg": {
+      "status": "success",
+      "output_file": "results/StackedAreaChart4_llm_annotation.json",
+      "processed_at": "2025-06-23T00:07:59.534252"
+    },
+    "PieChart8.svg": {
+      "status": "success",
+      "output_file": "results/PieChart8_llm_annotation.json",
+      "processed_at": "2025-06-23T00:08:05.100014"
+    },
+    "RadialBarChart11.svg": {
+      "status": "success",
+      "output_file": "results/RadialBarChart11_llm_annotation.json",
+      "processed_at": "2025-06-23T00:08:14.408419"
+    },
+    "GeoHeatmap2.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-23T00:08:19.288123"
+    },
+    "AreaChart23.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-23T00:08:20.494567"
+    },
+    "PieChart5.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-23T00:08:21.663092"
+    },
+    "BubbleChart2.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-23T00:08:23.506887"
+    },
+    "WaffleChart16.svg": {
+      "status": "success",
+      "output_file": "results/WaffleChart16_llm_annotation.json",
+      "processed_at": "2025-06-23T00:08:41.604460"
+    },
+    "StackedAreaChart9.svg": {
+      "status": "success",
+      "output_file": "results/StackedAreaChart9_llm_annotation.json",
+      "processed_at": "2025-06-23T00:08:55.767300"
+    },
+    "RadialBarChart20.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-23T00:08:56.488231"
+    },
+    "RangeChart7.svg": {
+      "status": "success",
+      "output_file": "results/RangeChart7_llm_annotation.json",
+      "processed_at": "2025-06-23T00:09:06.467427"
+    },
+    "BarChartInRadialLayout7.svg": {
+      "status": "success",
+      "output_file": "results/BarChartInRadialLayout7_llm_annotation.json",
+      "processed_at": "2025-06-23T00:09:51.978813"
+    },
+    "AreaChart12.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-23T00:09:53.493537"
+    },
+    "StreamGraph5.svg": {
+      "status": "success",
+      "output_file": "results/StreamGraph5_llm_annotation.json",
+      "processed_at": "2025-06-23T00:10:06.408984"
+    },
+    "WordCloud4.svg": {
+      "status": "success",
+      "output_file": "results/WordCloud4_llm_annotation.json",
+      "processed_at": "2025-06-23T00:10:37.277798"
+    },
+    "WaterfallChart20.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-23T00:10:38.623608"
+    },
+    "DotPlot1.svg": {
+      "status": "success",
+      "output_file": "results/DotPlot1_llm_annotation.json",
+      "processed_at": "2025-06-23T00:10:44.096182"
+    },
+    "Calendar12.svg": {
+      "status": "success",
+      "output_file": "results/Calendar12_llm_annotation.json",
+      "processed_at": "2025-06-23T00:10:58.259662"
+    },
+    "DonutChart16.svg": {
+      "status": "success",
+      "output_file": "results/DonutChart16_llm_annotation.json",
+      "processed_at": "2025-06-23T00:11:02.664523"
+    },
+    "BarChartInRadialLayout12.svg": {
+      "status": "success",
+      "output_file": "results/BarChartInRadialLayout12_llm_annotation.json",
+      "processed_at": "2025-06-23T00:11:34.586213"
+    },
+    "BoxAndWhisker20.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-23T00:11:36.020399"
+    },
+    "Calendar6.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-23T00:11:37.309661"
+    },
+    "RangeChart13.svg": {
+      "status": "success",
+      "output_file": "results/RangeChart13_llm_annotation.json",
+      "processed_at": "2025-06-23T00:11:44.094253"
+    },
+    "Scatterplot4.svg": {
+      "status": "success",
+      "output_file": "results/Scatterplot4_llm_annotation.json",
+      "processed_at": "2025-06-23T00:11:54.227923"
+    },
+    "StreamGraph20.svg": {
+      "status": "success",
+      "output_file": "results/StreamGraph20_llm_annotation.json",
+      "processed_at": "2025-06-23T00:12:15.728886"
+    },
+    "Heatmap9.svg": {
+      "status": "success",
+      "output_file": "results/Heatmap9_llm_annotation.json",
+      "processed_at": "2025-06-23T00:12:38.376803"
+    },
+    "LineGraph18.svg": {
+      "status": "success",
+      "output_file": "results/LineGraph18_llm_annotation.json",
+      "processed_at": "2025-06-23T00:12:55.474453"
+    },
+    "LineGraph30.svg": {
+      "status": "success",
+      "output_file": "results/LineGraph30_llm_annotation.json",
+      "processed_at": "2025-06-23T00:13:02.148412"
+    },
+    "GroupedBarChart3.svg": {
+      "status": "success",
+      "output_file": "results/GroupedBarChart3_llm_annotation.json",
+      "processed_at": "2025-06-23T00:13:10.939727"
+    },
+    "MarimekkoChart10.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-23T00:13:12.578170"
+    },
+    "ConnectedDotPlot17.svg": {
+      "status": "success",
+      "output_file": "results/ConnectedDotPlot17_llm_annotation.json",
+      "processed_at": "2025-06-23T00:13:28.382791"
+    },
+    "LineGraph24.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-23T00:13:30.000354"
+    },
+    "AreaChart2.svg": {
+      "status": "success",
+      "output_file": "results/AreaChart2_llm_annotation.json",
+      "processed_at": "2025-06-23T00:13:38.379679"
+    },
+    "RadarChart2.svg": {
+      "status": "success",
+      "output_file": "results/RadarChart2_llm_annotation.json",
+      "processed_at": "2025-06-23T00:13:45.198568"
+    },
+    "CirclePacking11.svg": {
+      "status": "success",
+      "output_file": "results/CirclePacking11_llm_annotation.json",
+      "processed_at": "2025-06-23T00:14:00.194941"
+    },
+    "BubbleChart12.svg": {
+      "status": "success",
+      "output_file": "results/BubbleChart12_llm_annotation.json",
+      "processed_at": "2025-06-23T00:14:35.943241"
+    },
+    "KagiChart19.svg": {
+      "status": "success",
+      "output_file": "results/KagiChart19_llm_annotation.json",
+      "processed_at": "2025-06-23T00:14:42.895195"
+    },
+    "Treemap2.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-23T00:14:43.712254"
+    },
+    "SpiralPlot17.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-23T00:14:44.641915"
+    },
+    "PieChart17.svg": {
+      "status": "success",
+      "output_file": "results/PieChart17_llm_annotation.json",
+      "processed_at": "2025-06-23T00:14:51.907315"
+    },
+    "CirclePacking5.svg": {
+      "status": "success",
+      "output_file": "results/CirclePacking5_llm_annotation.json",
+      "processed_at": "2025-06-23T00:15:30.137951"
+    },
+    "CandlestickChart8.svg": {
+      "status": "success",
+      "output_file": "results/CandlestickChart8_llm_annotation.json",
+      "processed_at": "2025-06-23T00:16:09.326176"
+    },
+    "ViolinPlot18.svg": {
+      "status": "success",
+      "output_file": "results/ViolinPlot18_llm_annotation.json",
+      "processed_at": "2025-06-23T00:16:30.421086"
+    },
+    "ConnectedScatterPlot2.svg": {
+      "status": "success",
+      "output_file": "results/ConnectedScatterPlot2_llm_annotation.json",
+      "processed_at": "2025-06-23T00:16:46.296865"
+    },
+    "ConnectedScatterPlot3.svg": {
+      "status": "success",
+      "output_file": "results/ConnectedScatterPlot3_llm_annotation.json",
+      "processed_at": "2025-06-23T00:17:03.297696"
+    },
+    "ViolinPlot19.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-23T00:17:04.360351"
+    },
+    "CandlestickChart9.svg": {
+      "status": "success",
+      "output_file": "results/CandlestickChart9_llm_annotation.json",
+      "processed_at": "2025-06-23T00:17:15.984689"
+    },
+    "CirclePacking4.svg": {
+      "status": "success",
+      "output_file": "results/CirclePacking4_llm_annotation.json",
+      "processed_at": "2025-06-23T00:17:42.593554"
+    },
+    "BarChart1.svg": {
+      "status": "success",
+      "output_file": "results/BarChart1_llm_annotation.json",
+      "processed_at": "2025-06-23T00:17:51.726316"
+    },
+    "Treemap3.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-23T00:17:58.791046"
+    },
+    "PieChart16.svg": {
+      "status": "success",
+      "output_file": "results/PieChart16_llm_annotation.json",
+      "processed_at": "2025-06-23T00:18:12.547089"
+    },
+    "SpiralPlot16.svg": {
+      "status": "success",
+      "output_file": "results/SpiralPlot16_llm_annotation.json",
+      "processed_at": "2025-06-23T00:20:00.427381"
+    },
+    "KagiChart18.svg": {
+      "status": "success",
+      "output_file": "results/KagiChart18_llm_annotation.json",
+      "processed_at": "2025-06-23T00:20:13.347549"
+    },
+    "BubbleChart13.svg": {
+      "status": "success",
+      "output_file": "results/BubbleChart13_llm_annotation.json",
+      "processed_at": "2025-06-23T00:20:22.561140"
+    },
+    "RadarChart3.svg": {
+      "status": "success",
+      "output_file": "results/RadarChart3_llm_annotation.json",
+      "processed_at": "2025-06-23T00:20:45.508712"
+    },
+    "CirclePacking10.svg": {
+      "status": "success",
+      "output_file": "results/CirclePacking10_llm_annotation.json",
+      "processed_at": "2025-06-23T00:20:54.644252"
+    },
+    "AreaChart3.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-23T00:20:55.940119"
+    },
+    "LineGraph25.svg": {
+      "status": "success",
+      "output_file": "results/LineGraph25_llm_annotation.json",
+      "processed_at": "2025-06-23T00:21:16.838797"
+    },
+    "ConnectedDotPlot16.svg": {
+      "status": "success",
+      "output_file": "results/ConnectedDotPlot16_llm_annotation.json",
+      "processed_at": "2025-06-23T00:21:30.958692"
+    },
+    "MarimekkoChart11.svg": {
+      "status": "success",
+      "output_file": "results/MarimekkoChart11_llm_annotation.json",
+      "processed_at": "2025-06-23T00:21:41.206886"
+    },
+    "LineGraph31.svg": {
+      "status": "success",
+      "output_file": "results/LineGraph31_llm_annotation.json",
+      "processed_at": "2025-06-23T00:21:49.909916"
+    },
+    "GroupedBarChart2.svg": {
+      "status": "success",
+      "output_file": "results/GroupedBarChart2_llm_annotation.json",
+      "processed_at": "2025-06-23T00:22:00.354236"
+    },
+    "Heatmap8.svg": {
+      "status": "success",
+      "output_file": "results/Heatmap8_llm_annotation.json",
+      "processed_at": "2025-06-23T00:22:19.308780"
+    },
+    "LineGraph19.svg": {
+      "status": "success",
+      "output_file": "results/LineGraph19_llm_annotation.json",
+      "processed_at": "2025-06-23T00:22:34.350786"
+    },
+    "RangeChart12.svg": {
+      "status": "success",
+      "output_file": "results/RangeChart12_llm_annotation.json",
+      "processed_at": "2025-06-23T00:22:42.168815"
+    },
+    "StreamGraph21.svg": {
+      "status": "success",
+      "output_file": "results/StreamGraph21_llm_annotation.json",
+      "processed_at": "2025-06-23T00:22:59.642772"
+    },
+    "Scatterplot5.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-23T00:23:02.922981"
+    },
+    "Calendar7.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-23T00:23:05.627577"
+    },
+    "BoxAndWhisker21.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-23T00:23:51.256046"
+    },
+    "BarChartInRadialLayout13.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-23T00:23:52.647058"
+    },
+    "DonutChart17.svg": {
+      "status": "success",
+      "output_file": "results/DonutChart17_llm_annotation.json",
+      "processed_at": "2025-06-23T00:24:02.247666"
+    },
+    "Calendar13.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-23T00:24:17.457965"
+    },
+    "WaterfallChart21.svg": {
+      "status": "success",
+      "output_file": "results/WaterfallChart21_llm_annotation.json",
+      "processed_at": "2025-06-23T00:24:25.330632"
+    },
+    "WordCloud5.svg": {
+      "status": "success",
+      "output_file": "results/WordCloud5_llm_annotation.json",
+      "processed_at": "2025-06-23T00:24:43.642334"
+    },
+    "StreamGraph4.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-23T00:24:45.041443"
+    },
+    "BarChartInRadialLayout6.svg": {
+      "status": "success",
+      "output_file": "results/BarChartInRadialLayout6_llm_annotation.json",
+      "processed_at": "2025-06-23T00:25:08.151888"
+    },
+    "AreaChart13.svg": {
+      "status": "success",
+      "output_file": "results/AreaChart13_llm_annotation.json",
+      "processed_at": "2025-06-23T00:25:14.868888"
+    },
+    "StackedAreaChart8.svg": {
+      "status": "success",
+      "output_file": "results/StackedAreaChart8_llm_annotation.json",
+      "processed_at": "2025-06-23T00:25:43.289404"
+    },
+    "RangeChart6.svg": {
+      "status": "success",
+      "output_file": "results/RangeChart6_llm_annotation.json",
+      "processed_at": "2025-06-23T00:25:55.521100"
+    },
+    "WaffleChart17.svg": {
+      "status": "success",
+      "output_file": "results/WaffleChart17_llm_annotation.json",
+      "processed_at": "2025-06-23T00:26:17.131242"
+    },
+    "BubbleChart3.svg": {
+      "status": "success",
+      "output_file": "results/BubbleChart3_llm_annotation.json",
+      "processed_at": "2025-06-23T00:26:34.292706"
+    },
+    "PieChart4.svg": {
+      "status": "success",
+      "output_file": "results/PieChart4_llm_annotation.json",
+      "processed_at": "2025-06-23T00:26:43.672147"
+    },
+    "PieChart6.svg": {
+      "status": "success",
+      "output_file": "results/PieChart6_llm_annotation.json",
+      "processed_at": "2025-06-23T00:26:49.994767"
+    },
+    "BubbleChart1.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-23T00:26:51.535920"
+    },
+    "WaffleChart15.svg": {
+      "status": "success",
+      "output_file": "results/WaffleChart15_llm_annotation.json",
+      "processed_at": "2025-06-23T00:27:51.036604"
+    },
+    "AreaChart11.svg": {
+      "status": "success",
+      "output_file": "results/AreaChart11_llm_annotation.json",
+      "processed_at": "2025-06-23T00:27:58.708351"
+    },
+    "BarChartInRadialLayout4.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-23T00:28:00.656723"
+    },
+    "RangeChart4.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-23T00:28:01.990678"
+    },
+    "WordCloud7.svg": {
+      "status": "success",
+      "output_file": "results/WordCloud7_llm_annotation.json",
+      "processed_at": "2025-06-23T00:28:06.797557"
+    },
+    "CandlestickChart21.svg": {
+      "status": "success",
+      "output_file": "results/CandlestickChart21_llm_annotation.json",
+      "processed_at": "2025-06-23T00:28:22.576848"
+    },
+    "Heatmap19.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-23T00:28:24.206940"
+    },
+    "StreamGraph6.svg": {
+      "status": "success",
+      "output_file": "results/StreamGraph6_llm_annotation.json",
+      "processed_at": "2025-06-23T00:28:32.287530"
+    },
+    "BarChartInRadialLayout11.svg": {
+      "status": "success",
+      "output_file": "results/BarChartInRadialLayout11_llm_annotation.json",
+      "processed_at": "2025-06-23T00:29:41.622443"
+    },
+    "DotPlot2.svg": {
+      "status": "success",
+      "output_file": "results/DotPlot2_llm_annotation.json",
+      "processed_at": "2025-06-23T00:29:56.126657"
+    },
+    "Calendar11.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-23T00:29:57.400997"
+    },
+    "Heatmap25.svg": {
+      "status": "success",
+      "output_file": "results/Heatmap25_llm_annotation.json",
+      "processed_at": "2025-06-23T00:30:12.389419"
+    },
+    "DonutChart15.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-23T00:30:14.708329"
+    },
+    "Calendar5.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-23T00:30:16.407077"
+    },
+    "BoxAndWhisker23.svg": {
+      "status": "success",
+      "output_file": "results/BoxAndWhisker23_llm_annotation.json",
+      "processed_at": "2025-06-23T00:30:29.557157"
+    },
+    "Scatterplot7.svg": {
+      "status": "success",
+      "output_file": "results/Scatterplot7_llm_annotation.json",
+      "processed_at": "2025-06-23T00:31:06.513908"
+    },
+    "RangeChart10.svg": {
+      "status": "success",
+      "output_file": "results/RangeChart10_llm_annotation.json",
+      "processed_at": "2025-06-23T00:31:17.736211"
+    },
+    "MarimekkoChart13.svg": {
+      "status": "success",
+      "output_file": "results/MarimekkoChart13_llm_annotation.json",
+      "processed_at": "2025-06-23T00:31:28.041060"
+    },
+    "ConnectedDotPlot14.svg": {
+      "status": "success",
+      "output_file": "results/ConnectedDotPlot14_llm_annotation.json",
+      "processed_at": "2025-06-23T00:31:38.570136"
+    },
+    "LineGraph27.svg": {
+      "status": "success",
+      "output_file": "results/LineGraph27_llm_annotation.json",
+      "processed_at": "2025-06-23T00:31:59.486622"
+    },
+    "LineGraph33.svg": {
+      "status": "success",
+      "output_file": "results/LineGraph33_llm_annotation.json",
+      "processed_at": "2025-06-23T00:32:13.454921"
+    },
+    "AreaChart1.svg": {
+      "status": "success",
+      "output_file": "results/AreaChart1_llm_annotation.json",
+      "processed_at": "2025-06-23T00:32:22.801817"
+    },
+    "CirclePacking12.svg": {
+      "status": "success",
+      "output_file": "results/CirclePacking12_llm_annotation.json",
+      "processed_at": "2025-06-23T00:32:40.307639"
+    },
+    "RadarChart1.svg": {
+      "status": "success",
+      "output_file": "results/RadarChart1_llm_annotation.json",
+      "processed_at": "2025-06-23T00:32:53.522854"
+    },
+    "BumpChart19.svg": {
+      "status": "success",
+      "output_file": "results/BumpChart19_llm_annotation.json",
+      "processed_at": "2025-06-23T00:33:07.140092"
+    },
+    "BubbleChart11.svg": {
+      "status": "success",
+      "output_file": "results/BubbleChart11_llm_annotation.json",
+      "processed_at": "2025-06-23T00:33:24.391548"
+    },
+    "SpiralPlot14.svg": {
+      "status": "success",
+      "output_file": "results/SpiralPlot14_llm_annotation.json",
+      "processed_at": "2025-06-23T00:33:33.564205"
+    },
+    "PieChart14.svg": {
+      "status": "success",
+      "output_file": "results/PieChart14_llm_annotation.json",
+      "processed_at": "2025-06-23T00:33:40.023755"
+    },
+    "Treemap1.svg": {
+      "status": "success",
+      "output_file": "results/Treemap1_llm_annotation.json",
+      "processed_at": "2025-06-23T00:34:19.852659"
+    },
+    "PolarAreaChart18.svg": {
+      "status": "success",
+      "output_file": "results/PolarAreaChart18_llm_annotation.json",
+      "processed_at": "2025-06-23T00:34:37.555611"
+    },
+    "PolarAreaChart24.svg": {
+      "status": "success",
+      "output_file": "results/PolarAreaChart24_llm_annotation.json",
+      "processed_at": "2025-06-23T00:34:46.874513"
+    },
+    "BarChart3.svg": {
+      "status": "success",
+      "output_file": "results/BarChart3_llm_annotation.json",
+      "processed_at": "2025-06-23T00:34:55.063756"
+    },
+    "ConnectedScatterPlot1.svg": {
+      "status": "success",
+      "output_file": "results/ConnectedScatterPlot1_llm_annotation.json",
+      "processed_at": "2025-06-23T00:35:25.787826"
+    },
+    "CirclePacking6.svg": {
+      "status": "success",
+      "output_file": "results/CirclePacking6_llm_annotation.json",
+      "processed_at": "2025-06-23T00:35:47.655955"
+    },
+    "CirclePacking7.svg": {
+      "status": "success",
+      "output_file": "results/CirclePacking7_llm_annotation.json",
+      "processed_at": "2025-06-23T00:37:58.999151"
+    },
+    "BarChart2.svg": {
+      "status": "success",
+      "output_file": "results/BarChart2_llm_annotation.json",
+      "processed_at": "2025-06-23T00:38:07.985217"
+    },
+    "PolarAreaChart25.svg": {
+      "status": "success",
+      "output_file": "results/PolarAreaChart25_llm_annotation.json",
+      "processed_at": "2025-06-23T00:38:21.113434"
+    },
+    "PieChart15.svg": {
+      "status": "success",
+      "output_file": "results/PieChart15_llm_annotation.json",
+      "processed_at": "2025-06-23T00:38:27.031536"
+    },
+    "SpiralPlot15.svg": {
+      "status": "success",
+      "output_file": "results/SpiralPlot15_llm_annotation.json",
+      "processed_at": "2025-06-23T00:38:47.003635"
+    },
+    "PolarAreaChart19.svg": {
+      "status": "success",
+      "output_file": "results/PolarAreaChart19_llm_annotation.json",
+      "processed_at": "2025-06-23T00:39:05.557213"
+    },
+    "BubbleChart10.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-23T00:39:06.869153"
+    },
+    "CirclePacking13.svg": {
+      "status": "success",
+      "output_file": "results/CirclePacking13_llm_annotation.json",
+      "processed_at": "2025-06-23T00:39:16.899065"
+    },
+    "BumpChart18.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-23T00:39:18.461061"
+    },
+    "GroupedBarChart1.svg": {
+      "status": "success",
+      "output_file": "results/GroupedBarChart1_llm_annotation.json",
+      "processed_at": "2025-06-23T00:39:30.009275"
+    },
+    "LineGraph32.svg": {
+      "status": "success",
+      "output_file": "results/LineGraph32_llm_annotation.json",
+      "processed_at": "2025-06-23T00:39:41.168443"
+    },
+    "LineGraph26.svg": {
+      "status": "success",
+      "output_file": "results/LineGraph26_llm_annotation.json",
+      "processed_at": "2025-06-23T00:39:52.264102"
+    },
+    "ConnectedDotPlot15.svg": {
+      "status": "success",
+      "output_file": "results/ConnectedDotPlot15_llm_annotation.json",
+      "processed_at": "2025-06-23T00:40:05.138097"
+    },
+    "MarimekkoChart12.svg": {
+      "status": "success",
+      "output_file": "results/MarimekkoChart12_llm_annotation.json",
+      "processed_at": "2025-06-23T00:40:24.286264"
+    },
+    "Scatterplot6.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-23T00:40:25.098241"
+    },
+    "RangeChart11.svg": {
+      "status": "success",
+      "output_file": "results/RangeChart11_llm_annotation.json",
+      "processed_at": "2025-06-23T00:40:33.499414"
+    },
+    "BoxAndWhisker22.svg": {
+      "status": "success",
+      "output_file": "results/BoxAndWhisker22_llm_annotation.json",
+      "processed_at": "2025-06-23T00:40:43.427524"
+    },
+    "Calendar4.svg": {
+      "status": "success",
+      "output_file": "results/Calendar4_llm_annotation.json",
+      "processed_at": "2025-06-23T00:44:28.674244"
+    },
+    "DonutChart14.svg": {
+      "status": "success",
+      "output_file": "results/DonutChart14_llm_annotation.json",
+      "processed_at": "2025-06-23T00:44:34.800036"
+    },
+    "Heatmap24.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-23T00:44:35.983923"
+    },
+    "Calendar10.svg": {
+      "status": "success",
+      "output_file": "results/Calendar10_llm_annotation.json",
+      "processed_at": "2025-06-23T00:45:37.328027"
+    },
+    "DotPlot3.svg": {
+      "status": "success",
+      "output_file": "results/DotPlot3_llm_annotation.json",
+      "processed_at": "2025-06-23T00:45:47.322344"
+    },
+    "BarChartInRadialLayout10.svg": {
+      "status": "success",
+      "output_file": "results/BarChartInRadialLayout10_llm_annotation.json",
+      "processed_at": "2025-06-23T00:45:57.077100"
+    },
+    "Heatmap18.svg": {
+      "status": "success",
+      "output_file": "results/Heatmap18_llm_annotation.json",
+      "processed_at": "2025-06-23T00:46:22.165940"
+    },
+    "StreamGraph7.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-23T00:46:23.601552"
+    },
+    "CandlestickChart20.svg": {
+      "status": "success",
+      "output_file": "results/CandlestickChart20_llm_annotation.json",
+      "processed_at": "2025-06-23T00:46:36.340309"
+    },
+    "WordCloud6.svg": {
+      "status": "success",
+      "output_file": "results/WordCloud6_llm_annotation.json",
+      "processed_at": "2025-06-23T00:46:57.903165"
+    },
+    "RangeChart5.svg": {
+      "status": "success",
+      "output_file": "results/RangeChart5_llm_annotation.json",
+      "processed_at": "2025-06-23T00:47:05.951232"
+    },
+    "AreaChart10.svg": {
+      "status": "success",
+      "output_file": "results/AreaChart10_llm_annotation.json",
+      "processed_at": "2025-06-23T00:47:17.771901"
+    },
+    "BarChartInRadialLayout5.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-23T00:47:19.207644"
+    },
+    "WaffleChart14.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-23T00:47:21.459904"
+    },
+    "PieChart7.svg": {
+      "status": "success",
+      "output_file": "results/PieChart7_llm_annotation.json",
+      "processed_at": "2025-06-23T00:47:39.789791"
+    },
+    "BarChartInRadialLayout1.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-23T00:47:46.865189"
+    },
+    "AreaChart14.svg": {
+      "status": "success",
+      "output_file": "results/AreaChart14_llm_annotation.json",
+      "processed_at": "2025-06-23T00:48:00.516352"
+    },
+    "RangeChart1.svg": {
+      "status": "success",
+      "output_file": "results/RangeChart1_llm_annotation.json",
+      "processed_at": "2025-06-23T00:49:03.240715"
+    },
+    "GeoHeatmap9.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-23T00:49:07.158712"
+    },
+    "AreaChart28.svg": {
+      "status": "success",
+      "output_file": "results/AreaChart28_llm_annotation.json",
+      "processed_at": "2025-06-23T00:49:14.402034"
+    },
+    "PieChart3.svg": {
+      "status": "success",
+      "output_file": "results/PieChart3_llm_annotation.json",
+      "processed_at": "2025-06-23T00:49:21.579735"
+    },
+    "WaffleChart10.svg": {
+      "status": "success",
+      "output_file": "results/WaffleChart10_llm_annotation.json",
+      "processed_at": "2025-06-23T00:49:33.387941"
+    },
+    "BubbleChart4.svg": {
+      "status": "success",
+      "output_file": "results/BubbleChart4_llm_annotation.json",
+      "processed_at": "2025-06-23T00:49:42.286104"
+    },
+    "BarChartInRadialLayout14.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-23T00:49:43.181779"
+    },
+    "CandlestickChart18.svg": {
+      "status": "success",
+      "output_file": "results/CandlestickChart18_llm_annotation.json",
+      "processed_at": "2025-06-23T00:49:50.453572"
+    },
+    "Calendar14.svg": {
+      "status": "success",
+      "output_file": "results/Calendar14_llm_annotation.json",
+      "processed_at": "2025-06-23T00:51:06.845634"
+    },
+    "Heatmap20.svg": {
+      "status": "success",
+      "output_file": "results/Heatmap20_llm_annotation.json",
+      "processed_at": "2025-06-23T00:51:32.464178"
+    },
+    "DotPlot7.svg": {
+      "status": "success",
+      "output_file": "results/DotPlot7_llm_annotation.json",
+      "processed_at": "2025-06-23T00:52:39.281180"
+    },
+    "DonutChart10.svg": {
+      "status": "success",
+      "output_file": "results/DonutChart10_llm_annotation.json",
+      "processed_at": "2025-06-23T00:52:45.485460"
+    },
+    "WordCloud2.svg": {
+      "status": "success",
+      "output_file": "results/WordCloud2_llm_annotation.json",
+      "processed_at": "2025-06-23T00:52:54.415769"
+    },
+    "StreamGraph3.svg": {
+      "status": "success",
+      "output_file": "results/StreamGraph3_llm_annotation.json",
+      "processed_at": "2025-06-23T00:53:06.677207"
+    },
+    "MarimekkoChart16.svg": {
+      "status": "success",
+      "output_file": "results/MarimekkoChart16_llm_annotation.json",
+      "processed_at": "2025-06-23T00:53:16.507986"
+    },
+    "ConnectedDotPlot11.svg": {
+      "status": "success",
+      "output_file": "results/ConnectedDotPlot11_llm_annotation.json",
+      "processed_at": "2025-06-23T00:53:28.787856"
+    },
+    "LineGraph22.svg": {
+      "status": "success",
+      "output_file": "results/LineGraph22_llm_annotation.json",
+      "processed_at": "2025-06-23T00:53:36.096821"
+    },
+    "LineGraph36.svg": {
+      "status": "success",
+      "output_file": "results/LineGraph36_llm_annotation.json",
+      "processed_at": "2025-06-23T00:53:47.312666"
+    },
+    "GroupedBarChart5.svg": {
+      "status": "success",
+      "output_file": "results/GroupedBarChart5_llm_annotation.json",
+      "processed_at": "2025-06-23T00:53:58.610230"
+    },
+    "RangeChart15.svg": {
+      "status": "success",
+      "output_file": "results/RangeChart15_llm_annotation.json",
+      "processed_at": "2025-06-23T00:54:09.253873"
+    },
+    "Scatterplot2.svg": {
+      "status": "success",
+      "output_file": "results/Scatterplot2_llm_annotation.json",
+      "processed_at": "2025-06-23T00:54:24.731077"
+    },
+    "RadarChart4.svg": {
+      "status": "success",
+      "output_file": "results/RadarChart4_llm_annotation.json",
+      "processed_at": "2025-06-23T00:54:32.084824"
+    },
+    "CirclePacking17.svg": {
+      "status": "success",
+      "output_file": "results/CirclePacking17_llm_annotation.json",
+      "processed_at": "2025-06-23T00:54:39.865037"
+    },
+    "AreaChart4.svg": {
+      "status": "success",
+      "output_file": "results/AreaChart4_llm_annotation.json",
+      "processed_at": "2025-06-23T00:55:03.028862"
+    },
+    "ParallelCoordinatesPlot9.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-23T00:55:05.193314"
+    },
+    "BumpChart20.svg": {
+      "status": "success",
+      "output_file": "results/BumpChart20_llm_annotation.json",
+      "processed_at": "2025-06-23T00:55:29.264906"
+    },
+    "ConnectedDotPlot9.svg": {
+      "status": "success",
+      "output_file": "results/ConnectedDotPlot9_llm_annotation.json",
+      "processed_at": "2025-06-23T00:55:43.264094"
+    },
+    "BubbleChart14.svg": {
+      "status": "success",
+      "output_file": "results/BubbleChart14_llm_annotation.json",
+      "processed_at": "2025-06-23T00:55:52.794241"
+    },
+    "PolarAreaChart21.svg": {
+      "status": "success",
+      "output_file": "results/PolarAreaChart21_llm_annotation.json",
+      "processed_at": "2025-06-23T00:56:01.907758"
+    },
+    "BarChart6.svg": {
+      "status": "success",
+      "output_file": "results/BarChart6_llm_annotation.json",
+      "processed_at": "2025-06-23T00:56:17.886899"
+    },
+    "MarimekkoChart8.svg": {
+      "status": "success",
+      "output_file": "results/MarimekkoChart8_llm_annotation.json",
+      "processed_at": "2025-06-23T00:56:34.171866"
+    },
+    "Treemap4.svg": {
+      "status": "success",
+      "output_file": "results/Treemap4_llm_annotation.json",
+      "processed_at": "2025-06-23T00:56:45.157664"
+    },
+    "SpiralPlot11.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-23T00:56:47.890035"
+    },
+    "PieChart11.svg": {
+      "status": "success",
+      "output_file": "results/PieChart11_llm_annotation.json",
+      "processed_at": "2025-06-23T00:56:56.693949"
+    },
+    "ConnectedScatterPlot4.svg": {
+      "status": "success",
+      "output_file": "results/ConnectedScatterPlot4_llm_annotation.json",
+      "processed_at": "2025-06-23T00:57:11.337270"
+    },
+    "CirclePacking3.svg": {
+      "status": "success",
+      "output_file": "results/CirclePacking3_llm_annotation.json",
+      "processed_at": "2025-06-23T00:57:26.023414"
+    },
+    "CirclePacking2.svg": {
+      "status": "success",
+      "output_file": "results/CirclePacking2_llm_annotation.json",
+      "processed_at": "2025-06-23T00:58:30.596952"
+    },
+    "ConnectedScatterPlot5.svg": {
+      "status": "success",
+      "output_file": "results/ConnectedScatterPlot5_llm_annotation.json",
+      "processed_at": "2025-06-23T00:58:48.721037"
+    },
+    "Treemap5.svg": {
+      "status": "success",
+      "output_file": "results/Treemap5_llm_annotation.json",
+      "processed_at": "2025-06-23T00:58:57.303784"
+    },
+    "PieChart10.svg": {
+      "status": "success",
+      "output_file": "results/PieChart10_llm_annotation.json",
+      "processed_at": "2025-06-23T00:59:04.279507"
+    },
+    "SpiralPlot10.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-23T00:59:09.311653"
+    },
+    "MarimekkoChart9.svg": {
+      "status": "success",
+      "output_file": "results/MarimekkoChart9_llm_annotation.json",
+      "processed_at": "2025-06-23T00:59:19.849667"
+    },
+    "BarChart7.svg": {
+      "status": "success",
+      "output_file": "results/BarChart7_llm_annotation.json",
+      "processed_at": "2025-06-23T00:59:28.144007"
+    },
+    "PolarAreaChart20.svg": {
+      "status": "success",
+      "output_file": "results/PolarAreaChart20_llm_annotation.json",
+      "processed_at": "2025-06-23T01:00:00.188996"
+    },
+    "BubbleChart15.svg": {
+      "status": "success",
+      "output_file": "results/BubbleChart15_llm_annotation.json",
+      "processed_at": "2025-06-23T01:00:12.590523"
+    },
+    "ConnectedDotPlot8.svg": {
+      "status": "success",
+      "output_file": "results/ConnectedDotPlot8_llm_annotation.json",
+      "processed_at": "2025-06-23T01:00:31.801528"
+    },
+    "BumpChart21.svg": {
+      "status": "success",
+      "output_file": "results/BumpChart21_llm_annotation.json",
+      "processed_at": "2025-06-23T01:00:56.934425"
+    },
+    "AreaChart5.svg": {
+      "status": "success",
+      "output_file": "results/AreaChart5_llm_annotation.json",
+      "processed_at": "2025-06-23T01:01:12.515303"
+    },
+    "ParallelCoordinatesPlot8.svg": {
+      "status": "success",
+      "output_file": "results/ParallelCoordinatesPlot8_llm_annotation.json",
+      "processed_at": "2025-06-23T01:01:29.532540"
+    },
+    "RadarChart5.svg": {
+      "status": "success",
+      "output_file": "results/RadarChart5_llm_annotation.json",
+      "processed_at": "2025-06-23T01:01:37.386284"
+    },
+    "CirclePacking16.svg": {
+      "status": "success",
+      "output_file": "results/CirclePacking16_llm_annotation.json",
+      "processed_at": "2025-06-23T01:01:43.017608"
+    },
+    "RangeChart14.svg": {
+      "status": "success",
+      "output_file": "results/RangeChart14_llm_annotation.json",
+      "processed_at": "2025-06-23T01:02:09.017921"
+    },
+    "Scatterplot3.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-23T01:02:11.070900"
+    },
+    "LineGraph37.svg": {
+      "status": "success",
+      "output_file": "results/LineGraph37_llm_annotation.json",
+      "processed_at": "2025-06-23T01:02:30.275645"
+    },
+    "GroupedBarChart4.svg": {
+      "status": "success",
+      "output_file": "results/GroupedBarChart4_llm_annotation.json",
+      "processed_at": "2025-06-23T01:03:12.101992"
+    },
+    "LineGraph23.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-23T01:03:13.321258"
+    },
+    "ConnectedDotPlot10.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-23T01:03:15.791843"
+    },
+    "MarimekkoChart17.svg": {
+      "status": "success",
+      "output_file": "results/MarimekkoChart17_llm_annotation.json",
+      "processed_at": "2025-06-23T01:03:54.701087"
+    },
+    "Calendar1.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-23T01:03:58.492712"
+    },
+    "StreamGraph2.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-23T01:04:00.304543"
+    },
+    "WordCloud3.svg": {
+      "status": "success",
+      "output_file": "results/WordCloud3_llm_annotation.json",
+      "processed_at": "2025-06-23T01:04:08.520087"
+    },
+    "DonutChart11.svg": {
+      "status": "success",
+      "output_file": "results/DonutChart11_llm_annotation.json",
+      "processed_at": "2025-06-23T01:04:15.043767"
+    },
+    "DotPlot6.svg": {
+      "status": "success",
+      "output_file": "results/DotPlot6_llm_annotation.json",
+      "processed_at": "2025-06-23T01:04:25.211564"
+    },
+    "Heatmap21.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-23T01:04:26.747655"
+    },
+    "Calendar15.svg": {
+      "status": "success",
+      "output_file": "results/Calendar15_llm_annotation.json",
+      "processed_at": "2025-06-23T01:04:56.442727"
+    },
+    "BarChartInRadialLayout15.svg": {
+      "status": "success",
+      "output_file": "results/BarChartInRadialLayout15_llm_annotation.json",
+      "processed_at": "2025-06-23T01:05:07.612226"
+    },
+    "CandlestickChart19.svg": {
+      "status": "success",
+      "output_file": "results/CandlestickChart19_llm_annotation.json",
+      "processed_at": "2025-06-23T01:05:21.429453"
+    },
+    "BubbleChart5.svg": {
+      "status": "success",
+      "output_file": "results/BubbleChart5_llm_annotation.json",
+      "processed_at": "2025-06-23T01:05:53.316560"
+    },
+    "WaffleChart11.svg": {
+      "status": "success",
+      "output_file": "results/WaffleChart11_llm_annotation.json",
+      "processed_at": "2025-06-23T01:06:06.756619"
+    },
+    "PieChart2.svg": {
+      "status": "success",
+      "output_file": "results/PieChart2_llm_annotation.json",
+      "processed_at": "2025-06-23T01:06:15.875007"
+    },
+    "GeoHeatmap8.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-23T01:06:22.062945"
+    },
+    "AreaChart15.svg": {
+      "status": "success",
+      "output_file": "results/AreaChart15_llm_annotation.json",
+      "processed_at": "2025-06-23T01:06:29.047308"
+    },
+    "RangeChart2.svg": {
+      "status": "success",
+      "output_file": "results/RangeChart2_llm_annotation.json",
+      "processed_at": "2025-06-23T01:06:37.200702"
+    },
+    "AreaChart17.svg": {
+      "status": "success",
+      "output_file": "results/AreaChart17_llm_annotation.json",
+      "processed_at": "2025-06-23T01:06:42.792919"
+    },
+    "BarChartInRadialLayout2.svg": {
+      "status": "success",
+      "output_file": "results/BarChartInRadialLayout2_llm_annotation.json",
+      "processed_at": "2025-06-23T01:07:48.083123"
+    },
+    "RadialBarChart19.svg": {
+      "status": "success",
+      "output_file": "results/RadialBarChart19_llm_annotation.json",
+      "processed_at": "2025-06-23T01:08:05.312098"
+    },
+    "WaffleChart13.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-23T01:08:08.040556"
+    },
+    "BubbleChart7.svg": {
+      "status": "success",
+      "output_file": "results/BubbleChart7_llm_annotation.json",
+      "processed_at": "2025-06-23T01:08:38.905249"
+    },
+    "Heatmap23.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-23T01:08:40.606240"
+    },
+    "Calendar17.svg": {
+      "status": "success",
+      "output_file": "results/Calendar17_llm_annotation.json",
+      "processed_at": "2025-06-23T01:09:02.826687"
+    },
+    "DotPlot4.svg": {
+      "status": "success",
+      "output_file": "results/DotPlot4_llm_annotation.json",
+      "processed_at": "2025-06-23T01:09:13.161116"
+    },
+    "DonutChart13.svg": {
+      "status": "success",
+      "output_file": "results/DonutChart13_llm_annotation.json",
+      "processed_at": "2025-06-23T01:09:24.787532"
+    },
+    "WaterfallChart19.svg": {
+      "status": "success",
+      "output_file": "results/WaterfallChart19_llm_annotation.json",
+      "processed_at": "2025-06-23T01:09:31.919699"
+    },
+    "BarChartInRadialLayout17.svg": {
+      "status": "success",
+      "output_file": "results/BarChartInRadialLayout17_llm_annotation.json",
+      "processed_at": "2025-06-23T01:09:52.491479"
+    },
+    "WordCloud1.svg": {
+      "status": "success",
+      "output_file": "results/WordCloud1_llm_annotation.json",
+      "processed_at": "2025-06-23T01:09:58.309461"
+    },
+    "BoxAndWhisker19.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-23T01:10:00.783485"
+    },
+    "BoxAndWhisker25.svg": {
+      "status": "success",
+      "output_file": "results/BoxAndWhisker25_llm_annotation.json",
+      "processed_at": "2025-06-23T01:10:14.775876"
+    },
+    "Calendar3.svg": {
+      "status": "success",
+      "output_file": "results/Calendar3_llm_annotation.json",
+      "processed_at": "2025-06-23T01:13:54.181405"
+    },
+    "GroupedBarChart6.svg": {
+      "status": "success",
+      "output_file": "results/GroupedBarChart6_llm_annotation.json",
+      "processed_at": "2025-06-23T01:14:04.047592"
+    },
+    "StreamGraph19.svg": {
+      "status": "success",
+      "output_file": "results/StreamGraph19_llm_annotation.json",
+      "processed_at": "2025-06-23T01:14:12.075237"
+    },
+    "KagiChart9.svg": {
+      "status": "success",
+      "output_file": "results/KagiChart9_llm_annotation.json",
+      "processed_at": "2025-06-23T01:14:27.741561"
+    },
+    "LineGraph35.svg": {
+      "status": "success",
+      "output_file": "results/LineGraph35_llm_annotation.json",
+      "processed_at": "2025-06-23T01:14:41.159308"
+    },
+    "MarimekkoChart15.svg": {
+      "status": "success",
+      "output_file": "results/MarimekkoChart15_llm_annotation.json",
+      "processed_at": "2025-06-23T01:14:51.396572"
+    },
+    "ConnectedDotPlot12.svg": {
+      "status": "success",
+      "output_file": "results/ConnectedDotPlot12_llm_annotation.json",
+      "processed_at": "2025-06-23T01:15:11.472865"
+    },
+    "LineGraph21.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-23T01:15:13.740217"
+    },
+    "Scatterplot1.svg": {
+      "status": "success",
+      "output_file": "results/Scatterplot1_llm_annotation.json",
+      "processed_at": "2025-06-23T01:15:28.270910"
+    },
+    "RangeChart16.svg": {
+      "status": "success",
+      "output_file": "results/RangeChart16_llm_annotation.json",
+      "processed_at": "2025-06-23T01:15:38.197684"
+    },
+    "CirclePacking14.svg": {
+      "status": "success",
+      "output_file": "results/CirclePacking14_llm_annotation.json",
+      "processed_at": "2025-06-23T01:16:23.153140"
+    },
+    "RadarChart7.svg": {
+      "status": "success",
+      "output_file": "results/RadarChart7_llm_annotation.json",
+      "processed_at": "2025-06-23T01:16:29.773862"
+    },
+    "AreaChart7.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-23T01:16:32.983945"
+    },
+    "KagiChart20.svg": {
+      "status": "success",
+      "output_file": "results/KagiChart20_llm_annotation.json",
+      "processed_at": "2025-06-23T01:16:44.238993"
+    },
+    "BubbleChart17.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-23T01:16:44.986468"
+    },
+    "PolarAreaChart22.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-23T01:16:45.828804"
+    },
+    "BarChart5.svg": {
+      "status": "success",
+      "output_file": "results/BarChart5_llm_annotation.json",
+      "processed_at": "2025-06-23T01:17:07.530447"
+    },
+    "RadialBarChart8.svg": {
+      "status": "success",
+      "output_file": "results/RadialBarChart8_llm_annotation.json",
+      "processed_at": "2025-06-23T01:17:13.019169"
+    },
+    "SpiralPlot12.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-23T01:17:14.590668"
+    },
+    "PieChart12.svg": {
+      "status": "success",
+      "output_file": "results/PieChart12_llm_annotation.json",
+      "processed_at": "2025-06-23T01:17:22.949275"
+    },
+    "Treemap7.svg": {
+      "status": "success",
+      "output_file": "results/Treemap7_llm_annotation.json",
+      "processed_at": "2025-06-23T01:18:48.413944"
+    },
+    "MatrixDiagram8.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-23T01:18:49.647459"
+    },
+    "ConnectedScatterPlot7.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-23T01:18:52.867340"
+    },
+    "ViolinPlot21.svg": {
+      "status": "success",
+      "output_file": "results/ViolinPlot21_llm_annotation.json",
+      "processed_at": "2025-06-23T01:19:06.340125"
+    },
+    "ViolinPlot20.svg": {
+      "status": "success",
+      "output_file": "results/ViolinPlot20_llm_annotation.json",
+      "processed_at": "2025-06-23T01:19:15.461336"
+    },
+    "ConnectedScatterPlot6.svg": {
+      "status": "success",
+      "output_file": "results/ConnectedScatterPlot6_llm_annotation.json",
+      "processed_at": "2025-06-23T01:19:29.488410"
+    },
+    "CirclePacking1.svg": {
+      "status": "success",
+      "output_file": "results/CirclePacking1_llm_annotation.json",
+      "processed_at": "2025-06-23T01:19:55.231006"
+    },
+    "PieChart13.svg": {
+      "status": "success",
+      "output_file": "results/PieChart13_llm_annotation.json",
+      "processed_at": "2025-06-23T01:20:04.318857"
+    },
+    "SpiralPlot13.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-23T01:20:13.056078"
+    },
+    "MatrixDiagram9.svg": {
+      "status": "success",
+      "output_file": "results/MatrixDiagram9_llm_annotation.json",
+      "processed_at": "2025-06-23T01:20:38.697690"
+    },
+    "Treemap6.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-23T01:20:40.088819"
+    },
+    "RadialBarChart9.svg": {
+      "status": "success",
+      "output_file": "results/RadialBarChart9_llm_annotation.json",
+      "processed_at": "2025-06-23T01:20:47.044616"
+    },
+    "BarChart4.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-23T01:20:47.966510"
+    },
+    "PolarAreaChart23.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-23T01:20:49.599470"
+    },
+    "BubbleChart16.svg": {
+      "status": "success",
+      "output_file": "results/BubbleChart16_llm_annotation.json",
+      "processed_at": "2025-06-23T01:21:03.019770"
+    },
+    "AreaChart6.svg": {
+      "status": "success",
+      "output_file": "results/AreaChart6_llm_annotation.json",
+      "processed_at": "2025-06-23T01:21:10.391798"
+    },
+    "CirclePacking15.svg": {
+      "status": "success",
+      "output_file": "results/CirclePacking15_llm_annotation.json",
+      "processed_at": "2025-06-23T01:21:27.034086"
+    },
+    "RadarChart6.svg": {
+      "status": "success",
+      "output_file": "results/RadarChart6_llm_annotation.json",
+      "processed_at": "2025-06-23T01:21:35.657276"
+    },
+    "RangeChart17.svg": {
+      "status": "success",
+      "output_file": "results/RangeChart17_llm_annotation.json",
+      "processed_at": "2025-06-23T01:21:48.281417"
+    },
+    "LineGraph20.svg": {
+      "status": "success",
+      "output_file": "results/LineGraph20_llm_annotation.json",
+      "processed_at": "2025-06-23T01:22:04.741808"
+    },
+    "ConnectedDotPlot13.svg": {
+      "status": "success",
+      "output_file": "results/ConnectedDotPlot13_llm_annotation.json",
+      "processed_at": "2025-06-23T01:22:12.614656"
+    },
+    "MarimekkoChart14.svg": {
+      "status": "success",
+      "output_file": "results/MarimekkoChart14_llm_annotation.json",
+      "processed_at": "2025-06-23T01:22:26.318693"
+    },
+    "KagiChart8.svg": {
+      "status": "success",
+      "output_file": "results/KagiChart8_llm_annotation.json",
+      "processed_at": "2025-06-23T01:22:35.800488"
+    },
+    "StreamGraph18.svg": {
+      "status": "success",
+      "output_file": "results/StreamGraph18_llm_annotation.json",
+      "processed_at": "2025-06-23T01:22:48.871694"
+    },
+    "GroupedBarChart7.svg": {
+      "status": "success",
+      "output_file": "results/GroupedBarChart7_llm_annotation.json",
+      "processed_at": "2025-06-23T01:22:57.591978"
+    },
+    "LineGraph34.svg": {
+      "status": "success",
+      "output_file": "results/LineGraph34_llm_annotation.json",
+      "processed_at": "2025-06-23T01:23:10.424802"
+    },
+    "Calendar2.svg": {
+      "status": "success",
+      "output_file": "results/Calendar2_llm_annotation.json",
+      "processed_at": "2025-06-23T01:23:46.244930"
+    },
+    "BoxAndWhisker24.svg": {
+      "status": "success",
+      "output_file": "results/BoxAndWhisker24_llm_annotation.json",
+      "processed_at": "2025-06-23T01:24:12.222992"
+    },
+    "BoxAndWhisker18.svg": {
+      "status": "success",
+      "output_file": "results/BoxAndWhisker18_llm_annotation.json",
+      "processed_at": "2025-06-23T01:24:27.312837"
+    },
+    "StreamGraph1.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-23T01:24:30.180455"
+    },
+    "WaterfallChart18.svg": {
+      "status": "success",
+      "output_file": "results/WaterfallChart18_llm_annotation.json",
+      "processed_at": "2025-06-23T01:24:38.476723"
+    },
+    "BarChartInRadialLayout16.svg": {
+      "status": "success",
+      "output_file": "results/BarChartInRadialLayout16_llm_annotation.json",
+      "processed_at": "2025-06-23T01:25:08.243973"
+    },
+    "DonutChart12.svg": {
+      "status": "success",
+      "output_file": "results/DonutChart12_llm_annotation.json",
+      "processed_at": "2025-06-23T01:25:14.153240"
+    },
+    "DotPlot5.svg": {
+      "status": "success",
+      "output_file": "results/DotPlot5_llm_annotation.json",
+      "processed_at": "2025-06-23T01:25:36.228056"
+    },
+    "Calendar16.svg": {
+      "status": "success",
+      "output_file": "results/Calendar16_llm_annotation.json",
+      "processed_at": "2025-06-23T01:25:59.377316"
+    },
+    "Heatmap22.svg": {
+      "status": "success",
+      "output_file": "results/Heatmap22_llm_annotation.json",
+      "processed_at": "2025-06-23T01:26:25.381509"
+    },
+    "RadialBarChart18.svg": {
+      "status": "success",
+      "output_file": "results/RadialBarChart18_llm_annotation.json",
+      "processed_at": "2025-06-23T01:26:33.678263"
+    },
+    "BubbleChart6.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-23T01:26:35.210520"
+    },
+    "WaffleChart12.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-23T01:26:36.470166"
+    },
+    "PieChart1.svg": {
+      "status": "success",
+      "output_file": "results/PieChart1_llm_annotation.json",
+      "processed_at": "2025-06-23T01:26:45.080099"
+    },
+    "AreaChart16.svg": {
+      "status": "success",
+      "output_file": "results/AreaChart16_llm_annotation.json",
+      "processed_at": "2025-06-23T01:26:53.607564"
+    },
+    "BarChartInRadialLayout3.svg": {
+      "status": "success",
+      "output_file": "results/BarChartInRadialLayout3_llm_annotation.json",
+      "processed_at": "2025-06-23T01:27:14.983535"
+    },
+    "RangeChart3.svg": {
+      "status": "success",
+      "output_file": "results/RangeChart3_llm_annotation.json",
+      "processed_at": "2025-06-23T01:27:25.080349"
+    },
+    "WaffleChart6.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-23T01:27:27.429360"
+    },
+    "Treemap15.svg": {
+      "status": "success",
+      "output_file": "results/Treemap15_llm_annotation.json",
+      "processed_at": "2025-06-23T01:27:53.857919"
+    },
+    "BoxAndWhisker7.svg": {
+      "status": "success",
+      "output_file": "results/BoxAndWhisker7_llm_annotation.json",
+      "processed_at": "2025-06-23T01:28:22.235319"
+    },
+    "MatrixDiagram11.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-23T01:28:23.369985"
+    },
+    "DotPlot14.svg": {
+      "status": "success",
+      "output_file": "results/DotPlot14_llm_annotation.json",
+      "processed_at": "2025-06-23T01:28:35.838713"
+    },
+    "StackedBarChart21.svg": {
+      "status": "success",
+      "output_file": "results/StackedBarChart21_llm_annotation.json",
+      "processed_at": "2025-06-23T01:28:58.633367"
+    },
+    "GroupedBarChart22.svg": {
+      "status": "success",
+      "output_file": "results/GroupedBarChart22_llm_annotation.json",
+      "processed_at": "2025-06-23T01:29:13.215396"
+    },
+    "ViolinPlot8.svg": {
+      "status": "success",
+      "output_file": "results/ViolinPlot8_llm_annotation.json",
+      "processed_at": "2025-06-23T01:29:39.127911"
+    },
+    "_bespoke20.svg": {
+      "status": "success",
+      "output_file": "results/_bespoke20_llm_annotation.json",
+      "processed_at": "2025-06-23T01:29:53.809162"
+    },
+    "StackedBarChart5.svg": {
+      "status": "success",
+      "output_file": "results/StackedBarChart5_llm_annotation.json",
+      "processed_at": "2025-06-23T01:30:07.701545"
+    },
+    "GeoHeatmap21.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-23T01:30:10.156791"
+    },
+    "Scatterplot21.svg": {
+      "status": "success",
+      "output_file": "results/Scatterplot21_llm_annotation.json",
+      "processed_at": "2025-06-23T01:30:18.347005"
+    },
+    "DivergingStackedBarChart12.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-23T01:30:20.087967"
+    },
+    "WordCloud10.svg": {
+      "status": "success",
+      "output_file": "results/WordCloud10_llm_annotation.json",
+      "processed_at": "2025-06-23T01:30:28.430279"
+    },
+    "ParallelCoordinatesPlot17.svg": {
+      "status": "success",
+      "output_file": "results/ParallelCoordinatesPlot17_llm_annotation.json",
+      "processed_at": "2025-06-23T01:30:54.810006"
+    },
+    "StackedAreaChart18.svg": {
+      "status": "success",
+      "output_file": "results/StackedAreaChart18_llm_annotation.json",
+      "processed_at": "2025-06-23T01:31:10.263956"
+    },
+    "GanttChart9.svg": {
+      "status": "success",
+      "output_file": "results/GanttChart9_llm_annotation.json",
+      "processed_at": "2025-06-23T01:31:27.058598"
+    },
+    "BarChart16.svg": {
+      "status": "success",
+      "output_file": "results/BarChart16_llm_annotation.json",
+      "processed_at": "2025-06-23T01:31:41.088647"
+    },
+    "SpiralPlot3.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-23T01:31:42.015728"
+    },
+    "DensityPlot6.svg": {
+      "status": "success",
+      "output_file": "results/DensityPlot6_llm_annotation.json",
+      "processed_at": "2025-06-23T01:31:52.424664"
+    },
+    "GanttChart23.svg": {
+      "status": "success",
+      "output_file": "results/GanttChart23_llm_annotation.json",
+      "processed_at": "2025-06-23T01:32:06.660897"
+    },
+    "RadarChart22.svg": {
+      "status": "success",
+      "output_file": "results/RadarChart22_llm_annotation.json",
+      "processed_at": "2025-06-23T01:32:16.278192"
+    },
+    "DensityPlot17.svg": {
+      "status": "success",
+      "output_file": "results/DensityPlot17_llm_annotation.json",
+      "processed_at": "2025-06-23T01:32:26.142861"
+    },
+    "BulletChart6.svg": {
+      "status": "success",
+      "output_file": "results/BulletChart6_llm_annotation.json",
+      "processed_at": "2025-06-23T01:32:40.609197"
+    },
+    "LineGraph1.svg": {
+      "status": "success",
+      "output_file": "results/LineGraph1_llm_annotation.json",
+      "processed_at": "2025-06-23T01:32:47.941265"
+    },
+    "BulletChart7.svg": {
+      "status": "success",
+      "output_file": "results/BulletChart7_llm_annotation.json",
+      "processed_at": "2025-06-23T01:32:54.420020"
+    },
+    "GanttChart22.svg": {
+      "status": "success",
+      "output_file": "results/GanttChart22_llm_annotation.json",
+      "processed_at": "2025-06-23T01:33:05.582439"
+    },
+    "DensityPlot16.svg": {
+      "status": "success",
+      "output_file": "results/DensityPlot16_llm_annotation.json",
+      "processed_at": "2025-06-23T01:33:15.486992"
+    },
+    "RadarChart23.svg": {
+      "status": "success",
+      "output_file": "results/RadarChart23_llm_annotation.json",
+      "processed_at": "2025-06-23T01:33:22.077016"
+    },
+    "DensityPlot7.svg": {
+      "status": "success",
+      "output_file": "results/DensityPlot7_llm_annotation.json",
+      "processed_at": "2025-06-23T01:33:33.317561"
+    },
+    "BarChart17.svg": {
+      "status": "success",
+      "output_file": "results/BarChart17_llm_annotation.json",
+      "processed_at": "2025-06-23T01:33:43.658260"
+    },
+    "GanttChart8.svg": {
+      "status": "success",
+      "output_file": "results/GanttChart8_llm_annotation.json",
+      "processed_at": "2025-06-23T01:33:59.941245"
+    },
+    "SpiralPlot2.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-23T01:34:08.039565"
+    },
+    "StackedAreaChart19.svg": {
+      "status": "success",
+      "output_file": "results/StackedAreaChart19_llm_annotation.json",
+      "processed_at": "2025-06-23T01:34:17.168067"
+    },
+    "ParallelCoordinatesPlot16.svg": {
+      "status": "success",
+      "output_file": "results/ParallelCoordinatesPlot16_llm_annotation.json",
+      "processed_at": "2025-06-23T01:34:31.782425"
+    },
+    "WordCloud11.svg": {
+      "status": "success",
+      "output_file": "results/WordCloud11_llm_annotation.json",
+      "processed_at": "2025-06-23T01:34:49.431418"
+    },
+    "DivergingStackedBarChart13.svg": {
+      "status": "success",
+      "output_file": "results/DivergingStackedBarChart13_llm_annotation.json",
+      "processed_at": "2025-06-23T01:35:04.251189"
+    },
+    "Scatterplot20.svg": {
+      "status": "success",
+      "output_file": "results/Scatterplot20_llm_annotation.json",
+      "processed_at": "2025-06-23T01:35:32.578363"
+    },
+    "GeoHeatmap20.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-23T01:35:34.253891"
+    },
+    "StackedBarChart4.svg": {
+      "status": "success",
+      "output_file": "results/StackedBarChart4_llm_annotation.json",
+      "processed_at": "2025-06-23T01:35:50.352126"
+    },
+    "_bespoke21.svg": {
+      "status": "success",
+      "output_file": "results/_bespoke21_llm_annotation.json",
+      "processed_at": "2025-06-23T01:36:17.605012"
+    },
+    "ViolinPlot9.svg": {
+      "status": "success",
+      "output_file": "results/ViolinPlot9_llm_annotation.json",
+      "processed_at": "2025-06-23T01:36:33.526450"
+    },
+    "GroupedBarChart23.svg": {
+      "status": "success",
+      "output_file": "results/GroupedBarChart23_llm_annotation.json",
+      "processed_at": "2025-06-23T01:36:50.747473"
+    },
+    "StackedBarChart20.svg": {
+      "status": "success",
+      "output_file": "results/StackedBarChart20_llm_annotation.json",
+      "processed_at": "2025-06-23T01:37:27.930385"
+    },
+    "DotPlot15.svg": {
+      "status": "success",
+      "output_file": "results/DotPlot15_llm_annotation.json",
+      "processed_at": "2025-06-23T01:39:10.570463"
+    },
+    "MatrixDiagram10.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-23T01:39:14.935877"
+    },
+    "BoxAndWhisker6.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-23T01:39:15.960189"
+    },
+    "Treemap14.svg": {
+      "status": "success",
+      "output_file": "results/Treemap14_llm_annotation.json",
+      "processed_at": "2025-06-23T01:39:23.328138"
+    },
+    "WaffleChart7.svg": {
+      "status": "success",
+      "output_file": "results/WaffleChart7_llm_annotation.json",
+      "processed_at": "2025-06-23T01:39:36.640374"
+    },
+    "WaffleChart5.svg": {
+      "status": "success",
+      "output_file": "results/WaffleChart5_llm_annotation.json",
+      "processed_at": "2025-06-23T01:40:00.325217"
+    },
+    "BoxAndWhisker4.svg": {
+      "status": "success",
+      "output_file": "results/BoxAndWhisker4_llm_annotation.json",
+      "processed_at": "2025-06-23T01:40:10.362625"
+    },
+    "MatrixDiagram12.svg": {
+      "status": "success",
+      "output_file": "results/MatrixDiagram12_llm_annotation.json",
+      "processed_at": "2025-06-23T01:40:58.841032"
+    },
+    "Treemap16.svg": {
+      "status": "success",
+      "output_file": "results/Treemap16_llm_annotation.json",
+      "processed_at": "2025-06-23T01:41:05.386293"
+    },
+    "StackedBarChart22.svg": {
+      "status": "success",
+      "output_file": "results/StackedBarChart22_llm_annotation.json",
+      "processed_at": "2025-06-23T01:41:21.907451"
+    },
+    "BulletChart18.svg": {
+      "status": "success",
+      "output_file": "results/BulletChart18_llm_annotation.json",
+      "processed_at": "2025-06-23T01:41:39.111227"
+    },
+    "DotPlot17.svg": {
+      "status": "success",
+      "output_file": "results/DotPlot17_llm_annotation.json",
+      "processed_at": "2025-06-23T01:42:05.233539"
+    },
+    "GroupedBarChart21.svg": {
+      "status": "success",
+      "output_file": "results/GroupedBarChart21_llm_annotation.json",
+      "processed_at": "2025-06-23T01:42:18.518392"
+    },
+    "_bespoke23.svg": {
+      "status": "success",
+      "output_file": "results/_bespoke23_llm_annotation.json",
+      "processed_at": "2025-06-23T01:42:36.432819"
+    },
+    "StackedBarChart6.svg": {
+      "status": "success",
+      "output_file": "results/StackedBarChart6_llm_annotation.json",
+      "processed_at": "2025-06-23T01:42:53.493239"
+    },
+    "_bespoke8.svg": {
+      "status": "success",
+      "output_file": "results/_bespoke8_llm_annotation.json",
+      "processed_at": "2025-06-23T01:43:06.870628"
+    },
+    "Scatterplot22.svg": {
+      "status": "success",
+      "output_file": "results/Scatterplot22_llm_annotation.json",
+      "processed_at": "2025-06-23T01:44:03.576585"
+    },
+    "DivergingStackedBarChart11.svg": {
+      "status": "success",
+      "output_file": "results/DivergingStackedBarChart11_llm_annotation.json",
+      "processed_at": "2025-06-23T01:44:15.232607"
+    },
+    "ParallelCoordinatesPlot14.svg": {
+      "status": "success",
+      "output_file": "results/ParallelCoordinatesPlot14_llm_annotation.json",
+      "processed_at": "2025-06-23T01:44:38.480212"
+    },
+    "WordCloud13.svg": {
+      "status": "success",
+      "output_file": "results/WordCloud13_llm_annotation.json",
+      "processed_at": "2025-06-23T01:44:57.323860"
+    },
+    "BarChart15.svg": {
+      "status": "success",
+      "output_file": "results/BarChart15_llm_annotation.json",
+      "processed_at": "2025-06-23T01:45:07.097890"
+    },
+    "ConnectedScatterPlot18.svg": {
+      "status": "success",
+      "output_file": "results/ConnectedScatterPlot18_llm_annotation.json",
+      "processed_at": "2025-06-23T01:45:59.727758"
+    },
+    "DensityPlot5.svg": {
+      "status": "success",
+      "output_file": "results/DensityPlot5_llm_annotation.json",
+      "processed_at": "2025-06-23T01:46:07.915283"
+    },
+    "BulletChart5.svg": {
+      "status": "success",
+      "output_file": "results/BulletChart5_llm_annotation.json",
+      "processed_at": "2025-06-23T01:46:25.633989"
+    },
+    "RadarChart21.svg": {
+      "status": "success",
+      "output_file": "results/RadarChart21_llm_annotation.json",
+      "processed_at": "2025-06-23T01:46:39.659121"
+    },
+    "DensityPlot14.svg": {
+      "status": "success",
+      "output_file": "results/DensityPlot14_llm_annotation.json",
+      "processed_at": "2025-06-23T01:46:52.358940"
+    },
+    "GanttChart20.svg": {
+      "status": "success",
+      "output_file": "results/GanttChart20_llm_annotation.json",
+      "processed_at": "2025-06-23T01:47:07.455365"
+    },
+    "LineGraph3.svg": {
+      "status": "success",
+      "output_file": "results/LineGraph3_llm_annotation.json",
+      "processed_at": "2025-06-23T01:47:32.970977"
+    },
+    "LineGraph2.svg": {
+      "status": "success",
+      "output_file": "results/LineGraph2_llm_annotation.json",
+      "processed_at": "2025-06-23T01:47:45.504801"
+    },
+    "DensityPlot15.svg": {
+      "status": "success",
+      "output_file": "results/DensityPlot15_llm_annotation.json",
+      "processed_at": "2025-06-23T01:47:58.380712"
+    },
+    "RadarChart20.svg": {
+      "status": "success",
+      "output_file": "results/RadarChart20_llm_annotation.json",
+      "processed_at": "2025-06-23T01:48:11.107278"
+    },
+    "GanttChart21.svg": {
+      "status": "success",
+      "output_file": "results/GanttChart21_llm_annotation.json",
+      "processed_at": "2025-06-23T01:49:14.592941"
+    },
+    "BulletChart4.svg": {
+      "status": "success",
+      "output_file": "results/BulletChart4_llm_annotation.json",
+      "processed_at": "2025-06-23T01:49:25.859168"
+    },
+    "DensityPlot4.svg": {
+      "status": "success",
+      "output_file": "results/DensityPlot4_llm_annotation.json",
+      "processed_at": "2025-06-23T01:49:34.126243"
+    },
+    "ConnectedScatterPlot19.svg": {
+      "status": "success",
+      "output_file": "results/ConnectedScatterPlot19_llm_annotation.json",
+      "processed_at": "2025-06-23T01:50:10.330521"
+    },
+    "SpiralPlot1.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-23T01:50:11.807057"
+    },
+    "BarChart14.svg": {
+      "status": "success",
+      "output_file": "results/BarChart14_llm_annotation.json",
+      "processed_at": "2025-06-23T01:50:20.234752"
+    },
+    "WordCloud12.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-23T01:50:21.156106"
+    },
+    "ParallelCoordinatesPlot15.svg": {
+      "status": "success",
+      "output_file": "results/ParallelCoordinatesPlot15_llm_annotation.json",
+      "processed_at": "2025-06-23T01:50:29.960734"
+    },
+    "DivergingStackedBarChart10.svg": {
+      "status": "success",
+      "output_file": "results/DivergingStackedBarChart10_llm_annotation.json",
+      "processed_at": "2025-06-23T01:50:41.974906"
+    },
+    "Scatterplot23.svg": {
+      "status": "success",
+      "output_file": "results/Scatterplot23_llm_annotation.json",
+      "processed_at": "2025-06-23T01:52:00.075220"
+    },
+    "_bespoke9.svg": {
+      "status": "success",
+      "output_file": "results/_bespoke9_llm_annotation.json",
+      "processed_at": "2025-06-23T01:52:45.022446"
+    },
+    "StackedBarChart7.svg": {
+      "status": "success",
+      "output_file": "results/StackedBarChart7_llm_annotation.json",
+      "processed_at": "2025-06-23T01:53:02.027162"
+    },
+    "_bespoke22.svg": {
+      "status": "success",
+      "output_file": "results/_bespoke22_llm_annotation.json",
+      "processed_at": "2025-06-23T01:53:18.203822"
+    },
+    "GroupedBarChart20.svg": {
+      "status": "success",
+      "output_file": "results/GroupedBarChart20_llm_annotation.json",
+      "processed_at": "2025-06-23T01:53:35.102843"
+    },
+    "DotPlot16.svg": {
+      "status": "success",
+      "output_file": "results/DotPlot16_llm_annotation.json",
+      "processed_at": "2025-06-23T01:53:56.494400"
+    },
+    "BulletChart19.svg": {
+      "status": "success",
+      "output_file": "results/BulletChart19_llm_annotation.json",
+      "processed_at": "2025-06-23T01:54:04.802939"
+    },
+    "StackedBarChart23.svg": {
+      "status": "success",
+      "output_file": "results/StackedBarChart23_llm_annotation.json",
+      "processed_at": "2025-06-23T01:54:21.903108"
+    },
+    "Treemap17.svg": {
+      "status": "success",
+      "output_file": "results/Treemap17_llm_annotation.json",
+      "processed_at": "2025-06-23T01:54:43.739719"
+    },
+    "MatrixDiagram13.svg": {
+      "status": "success",
+      "output_file": "results/MatrixDiagram13_llm_annotation.json",
+      "processed_at": "2025-06-23T01:55:31.260712"
+    },
+    "BoxAndWhisker5.svg": {
+      "status": "success",
+      "output_file": "results/BoxAndWhisker5_llm_annotation.json",
+      "processed_at": "2025-06-23T01:55:42.800416"
+    },
+    "WaffleChart4.svg": {
+      "status": "success",
+      "output_file": "results/WaffleChart4_llm_annotation.json",
+      "processed_at": "2025-06-23T01:56:25.787160"
+    },
+    "BoxAndWhisker1.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-23T01:56:26.828817"
+    },
+    "MatrixDiagram17.svg": {
+      "status": "success",
+      "output_file": "results/MatrixDiagram17_llm_annotation.json",
+      "processed_at": "2025-06-23T01:56:52.943228"
+    },
+    "Treemap13.svg": {
+      "status": "success",
+      "output_file": "results/Treemap13_llm_annotation.json",
+      "processed_at": "2025-06-23T01:57:01.945341"
+    },
+    "BulletChart21.svg": {
+      "status": "success",
+      "output_file": "results/BulletChart21_llm_annotation.json",
+      "processed_at": "2025-06-23T01:57:08.920761"
+    },
+    "GroupedBarChart24.svg": {
+      "status": "success",
+      "output_file": "results/GroupedBarChart24_llm_annotation.json",
+      "processed_at": "2025-06-23T01:57:19.875019"
+    },
+    "DotPlot12.svg": {
+      "status": "success",
+      "output_file": "results/DotPlot12_llm_annotation.json",
+      "processed_at": "2025-06-23T01:57:32.898780"
+    },
+    "GroupedBarChart18.svg": {
+      "status": "success",
+      "output_file": "results/GroupedBarChart18_llm_annotation.json",
+      "processed_at": "2025-06-23T01:57:44.584264"
+    },
+    "_bespoke26.svg": {
+      "status": "success",
+      "output_file": "results/_bespoke26_llm_annotation.json",
+      "processed_at": "2025-06-23T01:57:56.394894"
+    },
+    "StackedBarChart3.svg": {
+      "status": "success",
+      "output_file": "results/StackedBarChart3_llm_annotation.json",
+      "processed_at": "2025-06-23T01:58:14.970928"
+    },
+    "WaterfallChart8.svg": {
+      "status": "success",
+      "output_file": "results/WaterfallChart8_llm_annotation.json",
+      "processed_at": "2025-06-23T01:58:27.976980"
+    },
+    "BumpChart8.svg": {
+      "status": "success",
+      "output_file": "results/BumpChart8_llm_annotation.json",
+      "processed_at": "2025-06-23T01:58:39.534246"
+    },
+    "DivergingStackedBarChart14.svg": {
+      "status": "success",
+      "output_file": "results/DivergingStackedBarChart14_llm_annotation.json",
+      "processed_at": "2025-06-23T01:58:56.651246"
+    },
+    "ParallelCoordinatesPlot11.svg": {
+      "status": "success",
+      "output_file": "results/ParallelCoordinatesPlot11_llm_annotation.json",
+      "processed_at": "2025-06-23T01:59:17.842221"
+    },
+    "WordCloud16.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-23T01:59:19.177931"
+    },
+    "StackedAreaChart22.svg": {
+      "status": "success",
+      "output_file": "results/StackedAreaChart22_llm_annotation.json",
+      "processed_at": "2025-06-23T01:59:35.252480"
+    },
+    "DivergingStackedBarChart8.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-23T01:59:36.996587"
+    },
+    "BarChart10.svg": {
+      "status": "success",
+      "output_file": "results/BarChart10_llm_annotation.json",
+      "processed_at": "2025-06-23T01:59:51.668491"
+    },
+    "PolarAreaChart9.svg": {
+      "status": "success",
+      "output_file": "results/PolarAreaChart9_llm_annotation.json",
+      "processed_at": "2025-06-23T02:00:03.102917"
+    },
+    "SpiralPlot5.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-23T02:00:06.079163"
+    },
+    "ConnectedScatterPlot21.svg": {
+      "status": "success",
+      "output_file": "results/ConnectedScatterPlot21_llm_annotation.json",
+      "processed_at": "2025-06-23T02:00:24.094994"
+    },
+    "RadarChart24.svg": {
+      "status": "success",
+      "output_file": "results/RadarChart24_llm_annotation.json",
+      "processed_at": "2025-06-23T02:00:30.839967"
+    },
+    "DensityPlot11.svg": {
+      "status": "success",
+      "output_file": "results/DensityPlot11_llm_annotation.json",
+      "processed_at": "2025-06-23T02:00:42.301393"
+    },
+    "GanttChart19.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-23T02:00:43.837491"
+    },
+    "RadarChart18.svg": {
+      "status": "success",
+      "output_file": "results/RadarChart18_llm_annotation.json",
+      "processed_at": "2025-06-23T02:01:04.725154"
+    },
+    "DonutChart9.svg": {
+      "status": "success",
+      "output_file": "results/DonutChart9_llm_annotation.json",
+      "processed_at": "2025-06-23T02:01:11.784406"
+    },
+    "LineGraph6.svg": {
+      "status": "success",
+      "output_file": "results/LineGraph6_llm_annotation.json",
+      "processed_at": "2025-06-23T02:01:23.021942"
+    },
+    "LineGraph7.svg": {
+      "status": "success",
+      "output_file": "results/LineGraph7_llm_annotation.json",
+      "processed_at": "2025-06-23T02:01:31.441859"
+    },
+    "DonutChart8.svg": {
+      "status": "success",
+      "output_file": "results/DonutChart8_llm_annotation.json",
+      "processed_at": "2025-06-23T02:01:39.296742"
+    },
+    "GanttChart18.svg": {
+      "status": "success",
+      "output_file": "results/GanttChart18_llm_annotation.json",
+      "processed_at": "2025-06-23T02:01:53.396633"
+    },
+    "RadarChart19.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-23T02:01:54.285163"
+    },
+    "DensityPlot1.svg": {
+      "status": "success",
+      "output_file": "results/DensityPlot1_llm_annotation.json",
+      "processed_at": "2025-06-23T02:02:15.397646"
+    },
+    "DensityPlot10.svg": {
+      "status": "success",
+      "output_file": "results/DensityPlot10_llm_annotation.json",
+      "processed_at": "2025-06-23T02:02:38.132363"
+    },
+    "BulletChart1.svg": {
+      "status": "success",
+      "output_file": "results/BulletChart1_llm_annotation.json",
+      "processed_at": "2025-06-23T02:02:49.673054"
+    },
+    "ConnectedScatterPlot20.svg": {
+      "status": "success",
+      "output_file": "results/ConnectedScatterPlot20_llm_annotation.json",
+      "processed_at": "2025-06-23T02:03:02.251581"
+    },
+    "BarChart11.svg": {
+      "status": "success",
+      "output_file": "results/BarChart11_llm_annotation.json",
+      "processed_at": "2025-06-23T02:03:11.289634"
+    },
+    "SpiralPlot4.svg": {
+      "status": "success",
+      "output_file": "results/SpiralPlot4_llm_annotation.json",
+      "processed_at": "2025-06-23T02:03:35.655218"
+    },
+    "PolarAreaChart8.svg": {
+      "status": "success",
+      "output_file": "results/PolarAreaChart8_llm_annotation.json",
+      "processed_at": "2025-06-23T02:03:48.006874"
+    },
+    "DivergingStackedBarChart9.svg": {
+      "status": "success",
+      "output_file": "results/DivergingStackedBarChart9_llm_annotation.json",
+      "processed_at": "2025-06-23T02:04:01.095549"
+    },
+    "StackedAreaChart23.svg": {
+      "status": "success",
+      "output_file": "results/StackedAreaChart23_llm_annotation.json",
+      "processed_at": "2025-06-23T02:04:15.999145"
+    },
+    "WordCloud17.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-23T02:04:21.330454"
+    },
+    "ParallelCoordinatesPlot10.svg": {
+      "status": "success",
+      "output_file": "results/ParallelCoordinatesPlot10_llm_annotation.json",
+      "processed_at": "2025-06-23T02:05:48.060863"
+    },
+    "DivergingStackedBarChart15.svg": {
+      "status": "success",
+      "output_file": "results/DivergingStackedBarChart15_llm_annotation.json",
+      "processed_at": "2025-06-23T02:06:09.258736"
+    },
+    "Scatterplot26.svg": {
+      "status": "success",
+      "output_file": "results/Scatterplot26_llm_annotation.json",
+      "processed_at": "2025-06-23T02:06:20.886026"
+    },
+    "LineGraph40.svg": {
+      "status": "success",
+      "output_file": "results/LineGraph40_llm_annotation.json",
+      "processed_at": "2025-06-23T02:06:44.827751"
+    },
+    "BumpChart9.svg": {
+      "status": "success",
+      "output_file": "results/BumpChart9_llm_annotation.json",
+      "processed_at": "2025-06-23T02:07:07.247648"
+    },
+    "WaterfallChart9.svg": {
+      "status": "success",
+      "output_file": "results/WaterfallChart9_llm_annotation.json",
+      "processed_at": "2025-06-23T02:07:16.425065"
+    },
+    "StackedBarChart2.svg": {
+      "status": "success",
+      "output_file": "results/StackedBarChart2_llm_annotation.json",
+      "processed_at": "2025-06-23T02:08:47.785355"
+    },
+    "_bespoke27.svg": {
+      "status": "success",
+      "output_file": "results/_bespoke27_llm_annotation.json",
+      "processed_at": "2025-06-23T02:10:03.562769"
+    },
+    "DotPlot13.svg": {
+      "status": "success",
+      "output_file": "results/DotPlot13_llm_annotation.json",
+      "processed_at": "2025-06-23T02:10:15.324455"
+    },
+    "GroupedBarChart19.svg": {
+      "status": "success",
+      "output_file": "results/GroupedBarChart19_llm_annotation.json",
+      "processed_at": "2025-06-23T02:10:27.921803"
+    },
+    "GroupedBarChart25.svg": {
+      "status": "success",
+      "output_file": "results/GroupedBarChart25_llm_annotation.json",
+      "processed_at": "2025-06-23T02:10:40.464255"
+    },
+    "BulletChart20.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-23T02:10:42.516467"
+    },
+    "WaffleChart1.svg": {
+      "status": "success",
+      "output_file": "results/WaffleChart1_llm_annotation.json",
+      "processed_at": "2025-06-23T02:11:06.024754"
+    },
+    "Treemap12.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-23T02:11:07.856599"
+    },
+    "MatrixDiagram16.svg": {
+      "status": "success",
+      "output_file": "results/MatrixDiagram16_llm_annotation.json",
+      "processed_at": "2025-06-23T02:11:32.296891"
+    },
+    "Treemap10.svg": {
+      "status": "success",
+      "output_file": "results/Treemap10_llm_annotation.json",
+      "processed_at": "2025-06-23T02:11:42.340474"
+    },
+    "BoxAndWhisker2.svg": {
+      "status": "success",
+      "output_file": "results/BoxAndWhisker2_llm_annotation.json",
+      "processed_at": "2025-06-23T02:11:53.635942"
+    },
+    "MatrixDiagram14.svg": {
+      "status": "success",
+      "output_file": "results/MatrixDiagram14_llm_annotation.json",
+      "processed_at": "2025-06-23T02:13:47.073064"
+    },
+    "WaffleChart3.svg": {
+      "status": "success",
+      "output_file": "results/WaffleChart3_llm_annotation.json",
+      "processed_at": "2025-06-23T02:14:09.106041"
+    },
+    "GroupedBarChart27.svg": {
+      "status": "success",
+      "output_file": "results/GroupedBarChart27_llm_annotation.json",
+      "processed_at": "2025-06-23T02:14:42.182876"
+    },
+    "StackedBarChart18.svg": {
+      "status": "success",
+      "output_file": "results/StackedBarChart18_llm_annotation.json",
+      "processed_at": "2025-06-23T02:14:55.185697"
+    },
+    "DotPlot11.svg": {
+      "status": "success",
+      "output_file": "results/DotPlot11_llm_annotation.json",
+      "processed_at": "2025-06-23T02:15:06.592779"
+    },
+    "StackedBarChart24.svg": {
+      "status": "success",
+      "output_file": "results/StackedBarChart24_llm_annotation.json",
+      "processed_at": "2025-06-23T02:16:14.335224"
+    },
+    "_bespoke25.svg": {
+      "status": "success",
+      "output_file": "results/_bespoke25_llm_annotation.json",
+      "processed_at": "2025-06-23T02:16:24.169292"
+    },
+    "_bespoke19.svg": {
+      "status": "success",
+      "output_file": "results/_bespoke19_llm_annotation.json",
+      "processed_at": "2025-06-23T02:16:50.274028"
+    },
+    "Scatterplot30.svg": {
+      "status": "success",
+      "output_file": "results/Scatterplot30_llm_annotation.json",
+      "processed_at": "2025-06-23T02:18:13.877112"
+    },
+    "GeoHeatmap18.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-23T02:18:15.625786"
+    },
+    "Scatterplot24.svg": {
+      "status": "success",
+      "output_file": "results/Scatterplot24_llm_annotation.json",
+      "processed_at": "2025-06-23T02:18:51.428132"
+    },
+    "Scatterplot18.svg": {
+      "status": "success",
+      "output_file": "results/Scatterplot18_llm_annotation.json",
+      "processed_at": "2025-06-23T02:19:05.145883"
+    },
+    "StackedAreaChart21.svg": {
+      "status": "success",
+      "output_file": "results/StackedAreaChart21_llm_annotation.json",
+      "processed_at": "2025-06-23T02:19:16.103292"
+    },
+    "DivergingStackedBarChart17.svg": {
+      "status": "success",
+      "output_file": "results/DivergingStackedBarChart17_llm_annotation.json",
+      "processed_at": "2025-06-23T02:19:34.738235"
+    },
+    "WordCloud15.svg": {
+      "status": "success",
+      "output_file": "results/WordCloud15_llm_annotation.json",
+      "processed_at": "2025-06-23T02:19:42.732649"
+    },
+    "ParallelCoordinatesPlot12.svg": {
+      "status": "success",
+      "output_file": "results/ParallelCoordinatesPlot12_llm_annotation.json",
+      "processed_at": "2025-06-23T02:20:16.115931"
+    },
+    "SpiralPlot6.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-23T02:20:17.750754"
+    },
+    "BarChart13.svg": {
+      "status": "success",
+      "output_file": "results/BarChart13_llm_annotation.json",
+      "processed_at": "2025-06-23T02:20:35.394856"
+    },
+    "DensityPlot12.svg": {
+      "status": "success",
+      "output_file": "results/DensityPlot12_llm_annotation.json",
+      "processed_at": "2025-06-23T02:21:00.961698"
+    },
+    "BulletChart3.svg": {
+      "status": "success",
+      "output_file": "results/BulletChart3_llm_annotation.json",
+      "processed_at": "2025-06-23T02:21:10.995324"
+    },
+    "DensityPlot3.svg": {
+      "status": "success",
+      "output_file": "results/DensityPlot3_llm_annotation.json",
+      "processed_at": "2025-06-23T02:21:21.799993"
+    },
+    "LineGraph5.svg": {
+      "status": "success",
+      "output_file": "results/LineGraph5_llm_annotation.json",
+      "processed_at": "2025-06-23T02:21:36.141006"
+    },
+    "LineGraph4.svg": {
+      "status": "success",
+      "output_file": "results/LineGraph4_llm_annotation.json",
+      "processed_at": "2025-06-23T02:21:54.208572"
+    },
+    "DensityPlot2.svg": {
+      "status": "success",
+      "output_file": "results/DensityPlot2_llm_annotation.json",
+      "processed_at": "2025-06-23T02:22:03.852610"
+    },
+    "BulletChart2.svg": {
+      "status": "success",
+      "output_file": "results/BulletChart2_llm_annotation.json",
+      "processed_at": "2025-06-23T02:22:15.303472"
+    },
+    "DensityPlot13.svg": {
+      "status": "success",
+      "output_file": "results/DensityPlot13_llm_annotation.json",
+      "processed_at": "2025-06-23T02:22:38.207002"
+    },
+    "SpiralPlot7.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-23T02:22:40.646402"
+    },
+    "BarChart12.svg": {
+      "status": "success",
+      "output_file": "results/BarChart12_llm_annotation.json",
+      "processed_at": "2025-06-23T02:22:59.949613"
+    },
+    "ParallelCoordinatesPlot13.svg": {
+      "status": "success",
+      "output_file": "results/ParallelCoordinatesPlot13_llm_annotation.json",
+      "processed_at": "2025-06-23T02:23:39.646499"
+    },
+    "WordCloud14.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-23T02:23:42.743859"
+    },
+    "DivergingStackedBarChart16.svg": {
+      "status": "success",
+      "output_file": "results/DivergingStackedBarChart16_llm_annotation.json",
+      "processed_at": "2025-06-23T02:24:07.676736"
+    },
+    "StackedAreaChart20.svg": {
+      "status": "success",
+      "output_file": "results/StackedAreaChart20_llm_annotation.json",
+      "processed_at": "2025-06-23T02:24:14.874964"
+    },
+    "Scatterplot19.svg": {
+      "status": "success",
+      "output_file": "results/Scatterplot19_llm_annotation.json",
+      "processed_at": "2025-06-23T02:24:59.760781"
+    },
+    "GeoHeatmap19.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-23T02:25:01.685443"
+    },
+    "Scatterplot25.svg": {
+      "status": "success",
+      "output_file": "results/Scatterplot25_llm_annotation.json",
+      "processed_at": "2025-06-23T02:25:59.668986"
+    },
+    "_bespoke18.svg": {
+      "status": "success",
+      "output_file": "results/_bespoke18_llm_annotation.json",
+      "processed_at": "2025-06-23T02:26:45.798995"
+    },
+    "StackedBarChart1.svg": {
+      "status": "success",
+      "output_file": "results/StackedBarChart1_llm_annotation.json",
+      "processed_at": "2025-06-23T02:28:31.134533"
+    },
+    "_bespoke24.svg": {
+      "status": "success",
+      "output_file": "results/_bespoke24_llm_annotation.json",
+      "processed_at": "2025-06-23T02:29:17.922414"
+    },
+    "StackedBarChart25.svg": {
+      "status": "success",
+      "output_file": "results/StackedBarChart25_llm_annotation.json",
+      "processed_at": "2025-06-23T02:30:13.020131"
+    },
+    "DotPlot10.svg": {
+      "status": "success",
+      "output_file": "results/DotPlot10_llm_annotation.json",
+      "processed_at": "2025-06-23T02:30:48.858912"
+    },
+    "StackedBarChart19.svg": {
+      "status": "success",
+      "output_file": "results/StackedBarChart19_llm_annotation.json",
+      "processed_at": "2025-06-23T02:31:04.113604"
+    },
+    "GroupedBarChart26.svg": {
+      "status": "failed",
+      "error": "API call failed or returned None",
+      "processed_at": "2025-06-23T02:31:05.136166"
+    },
+    "WaffleChart2.svg": {
+      "status": "success",
+      "output_file": "results/WaffleChart2_llm_annotation.json",
+      "processed_at": "2025-06-23T02:31:46.109063"
+    },
+    "MatrixDiagram15.svg": {
+      "status": "success",
+      "output_file": "results/MatrixDiagram15_llm_annotation.json",
+      "processed_at": "2025-06-23T02:32:21.318298"
+    },
+    "BoxAndWhisker3.svg": {
+      "status": "success",
+      "output_file": "results/BoxAndWhisker3_llm_annotation.json",
+      "processed_at": "2025-06-23T02:32:32.694952"
+    },
+    "Treemap11.svg": {
+      "status": "success",
+      "output_file": "results/Treemap11_llm_annotation.json",
+      "processed_at": "2025-06-23T02:32:46.208846"
+    }
+  },
+  "updated_at": "2025-06-23T02:32:46.210019"
+}

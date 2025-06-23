@@ -1,0 +1,50 @@
+{
+  "main_chart_marks": [
+    "polygon0",
+    "polygon1",
+    "polygon2",
+    "polygon3",
+    "polygon4",
+    "polygon5",
+    "polygon6",
+    "polygon7",
+    "polygon8",
+    "polygon9",
+    "polygon10",
+    "polygon11",
+    "polygon12",
+    "polygon13",
+    "polygon14",
+    "polygon15",
+    "polygon16",
+    "polygon17",
+    "polygon18",
+    "polygon19",
+    "polygon20",
+    "polygon21",
+    "polygon22",
+    "polygon23",
+    "polygon24",
+    "polygon25"
+  ],
+  "legend": {
+    "title": [],
+    "marks": [],
+    "labels": []
+  },
+  "axis_labels": [
+    "path0",
+    "path1",
+    "path2",
+    "path3",
+    "path4",
+    "path5",
+    "path6",
+    "path7",
+    "path8",
+    "path9",
+    "path10",
+    "path11"
+  ],
+  "axis_titles": []
+}

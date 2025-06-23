@@ -1,0 +1,63 @@
+{
+  "main_chart_marks": [
+    "circle0",
+    "circle1",
+    "circle2",
+    "circle3",
+    "circle4",
+    "circle5",
+    "circle6",
+    "circle7",
+    "circle8",
+    "circle9",
+    "circle10",
+    "circle11",
+    "circle12",
+    "circle13",
+    "circle14",
+    "circle15",
+    "circle16",
+    "circle17",
+    "circle18",
+    "circle19",
+    "circle20",
+    "circle21",
+    "circle22",
+    "circle23",
+    "circle24",
+    "circle25",
+    "circle26",
+    "circle27"
+  ],
+  "legend": {
+    "title": [
+      "text11"
+    ],
+    "marks": [
+      "tspan0",
+      "tspan2",
+      "tspan3",
+      "tspan5"
+    ],
+    "labels": [
+      "tspan0",
+      "tspan2",
+      "tspan3",
+      "tspan5"
+    ]
+  },
+  "axis_labels": [
+    "text0",
+    "text1",
+    "text2",
+    "text3",
+    "text4",
+    "text5",
+    "text6",
+    "text7",
+    "text8",
+    "text9",
+    "text10"
+  ],
+  "axis_titles": []
+}

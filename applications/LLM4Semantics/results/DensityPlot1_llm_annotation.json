@@ -1,0 +1,39 @@
+{
+  "main_chart_marks": [
+    "path85",
+    "path86",
+    "path87",
+    "path88",
+    "path89",
+    "path90"
+  ],
+  "legend": {
+    "title": [],
+    "marks": [
+      "use105",
+      "use106",
+      "use107",
+      "use108",
+      "use109",
+      "use110",
+      "use111",
+      "use112",
+      "use113",
+      "use114",
+      "use115",
+      "use116",
+      "use117",
+      "use118",
+      "use119",
+      "use120",
+      "use121",
+      "use122",
+      "use123",
+      "use124",
+      "use125"
+    ],
+    "labels": []
+  },
+  "axis_labels": [],
+  "axis_titles": []
+}

@@ -1,0 +1,30 @@
+{
+  "main_chart_marks": [
+    "polyline16",
+    "polyline17",
+    "polyline18"
+  ],
+  "legend": {
+    "title": [],
+    "marks": [],
+    "labels": [
+      "text0",
+      "text1",
+      "text2"
+    ]
+  },
+  "axis_labels": [
+    "text3",
+    "text4",
+    "text5",
+    "text6",
+    "text7",
+    "text8",
+    "text9",
+    "text10"
+  ],
+  "axis_titles": [
+    "text11",
+    "text12"
+  ]
+}

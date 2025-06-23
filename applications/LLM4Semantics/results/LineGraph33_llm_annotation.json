@@ -1,0 +1,38 @@
+{
+  "main_chart_marks": [
+    "circle0",
+    "circle1",
+    "circle2",
+    "circle3",
+    "circle4",
+    "circle5",
+    "circle6",
+    "circle7",
+    "circle8",
+    "circle9",
+    "circle10",
+    "circle11",
+    "circle12",
+    "circle13",
+    "circle14",
+    "circle15",
+    "circle16",
+    "circle17",
+    "path2",
+    "path3",
+    "path4"
+  ],
+  "legend": {
+    "title": [],
+    "marks": [
+      "rect0",
+      "rect1",
+      "rect2"
+    ],
+    "labels": []
+  },
+  "axis_labels": [
+    "path1"
+  ],
+  "axis_titles": []
+}

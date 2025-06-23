@@ -1,0 +1,93 @@
+{
+  "main_chart_marks": [
+    "rect89",
+    "rect90",
+    "rect91",
+    "rect92",
+    "rect93",
+    "rect94",
+    "rect95",
+    "rect96",
+    "rect97",
+    "rect98",
+    "rect99",
+    "rect100",
+    "rect101",
+    "rect102",
+    "rect103",
+    "rect104",
+    "rect105",
+    "rect106",
+    "rect107",
+    "rect108",
+    "rect109",
+    "rect110",
+    "rect111",
+    "rect112",
+    "rect113",
+    "rect114",
+    "rect115",
+    "rect116",
+    "rect117",
+    "rect118",
+    "rect119",
+    "rect120",
+    "rect121",
+    "rect122",
+    "rect123",
+    "rect124",
+    "rect125",
+    "rect126",
+    "rect127",
+    "rect128",
+    "rect129",
+    "rect130",
+    "rect131",
+    "rect132",
+    "rect133",
+    "rect134",
+    "rect135",
+    "rect136",
+    "rect137",
+    "rect138",
+    "rect139"
+  ],
+  "legend": {
+    "title": [
+      "text88",
+      "text89",
+      "text90"
+    ],
+    "marks": [
+      "path49",
+      "path50",
+      "path51"
+    ],
+    "labels": [
+      "text88",
+      "text89",
+      "text90"
+    ]
+  },
+  "axis_labels": [
+    "text4",
+    "text5",
+    "text6",
+    "text7",
+    "text8",
+    "text9",
+    "text10",
+    "text11",
+    "text12",
+    "text13",
+    "text14",
+    "text15",
+    "text16"
+  ],
+  "axis_titles": [
+    "text0",
+    "text1",
+    "text2",
+    "text3"
+  ]
+}

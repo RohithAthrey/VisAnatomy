@@ -1,0 +1,35 @@
+{
+  "main_chart_marks": [
+    "polygon0",
+    "polygon1"
+  ],
+  "legend": {
+    "title": [],
+    "marks": [
+      "line12",
+      "line13"
+    ],
+    "labels": [
+      "text14",
+      "text15"
+    ]
+  },
+  "axis_labels": [
+    "text8",
+    "text9",
+    "text10",
+    "text11",
+    "text12",
+    "text13"
+  ],
+  "axis_titles": [
+    "text0",
+    "text1",
+    "text2",
+    "text3",
+    "text4",
+    "text5",
+    "text6",
+    "text7"
+  ]
+}

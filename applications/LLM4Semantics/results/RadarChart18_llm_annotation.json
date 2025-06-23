@@ -1,0 +1,36 @@
+{
+  "main_chart_marks": [
+    "polygon0",
+    "polygon1",
+    "polygon2",
+    "polygon3",
+    "polygon4",
+    "polygon5",
+    "polygon6",
+    "polygon7",
+    "polygon8",
+    "polygon9",
+    "polygon10",
+    "polygon11"
+  ],
+  "legend": {
+    "title": [],
+    "marks": [
+      "rect1",
+      "rect2",
+      "rect3",
+      "rect4",
+      "rect5",
+      "rect6",
+      "rect7",
+      "rect8",
+      "rect9",
+      "rect10",
+      "rect11",
+      "rect12"
+    ],
+    "labels": []
+  },
+  "axis_labels": [],
+  "axis_titles": []
+}

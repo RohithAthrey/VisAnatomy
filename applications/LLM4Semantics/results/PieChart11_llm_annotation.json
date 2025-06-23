@@ -1,0 +1,38 @@
+{
+  "main_chart_marks": [
+    "path0",
+    "path1",
+    "path2",
+    "path3",
+    "path4",
+    "path5",
+    "path6"
+  ],
+  "legend": {
+    "title": [
+      "title0",
+      "title1",
+      "title2",
+      "title3",
+      "title4",
+      "title5",
+      "title6"
+    ],
+    "marks": [],
+    "labels": [
+      "tspan0",
+      "tspan1",
+      "tspan2",
+      "tspan3",
+      "tspan4",
+      "tspan5",
+      "tspan6",
+      "tspan7",
+      "tspan8",
+      "tspan9",
+      "tspan10"
+    ]
+  },
+  "axis_labels": [],
+  "axis_titles": []
+}

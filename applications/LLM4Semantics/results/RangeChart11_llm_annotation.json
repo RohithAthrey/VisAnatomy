@@ -1,0 +1,39 @@
+{
+  "main_chart_marks": [
+    "polygon0",
+    "polyline0"
+  ],
+  "legend": {
+    "title": [
+      "text6"
+    ],
+    "marks": [
+      "line0",
+      "line1"
+    ],
+    "labels": [
+      "tspan14",
+      "tspan16",
+      "tspan18",
+      "tspan20"
+    ]
+  },
+  "axis_labels": [
+    "tspan0",
+    "tspan1",
+    "tspan2",
+    "tspan3",
+    "tspan4",
+    "tspan5",
+    "tspan21",
+    "tspan22",
+    "tspan24",
+    "tspan26",
+    "tspan28",
+    "tspan30"
+  ],
+  "axis_titles": [
+    "text2",
+    "text8"
+  ]
+}

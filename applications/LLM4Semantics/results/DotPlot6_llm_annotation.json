@@ -1,0 +1,37 @@
+{
+  "main_chart_marks": [
+    "ellipse0",
+    "ellipse1",
+    "ellipse2",
+    "ellipse3",
+    "ellipse4",
+    "ellipse5",
+    "ellipse6",
+    "ellipse7",
+    "ellipse8",
+    "ellipse9",
+    "ellipse10",
+    "ellipse11",
+    "ellipse12",
+    "ellipse13",
+    "ellipse14",
+    "ellipse15",
+    "ellipse16"
+  ],
+  "legend": {
+    "title": [],
+    "marks": [],
+    "labels": []
+  },
+  "axis_labels": [
+    "path1",
+    "path2",
+    "path3",
+    "path4",
+    "path5",
+    "path6",
+    "path7",
+    "path8"
+  ],
+  "axis_titles": []
+}

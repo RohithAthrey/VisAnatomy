@@ -1,0 +1,701 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Chart Type Distribution by Primary Mark",
+  "data": {
+    "values": [
+      {
+        "primaryMark": "Line",
+        "chartType": "Line Graph",
+        "count": 40,
+        "percentage": 4.25
+      },
+      {
+        "primaryMark": "Line",
+        "chartType": "Bump Chart",
+        "count": 21,
+        "percentage": 2.23
+      },
+      {
+        "primaryMark": "Line",
+        "chartType": "Range Chart",
+        "count": 21,
+        "percentage": 2.23
+      },
+      {
+        "primaryMark": "Line",
+        "chartType": "Parallel Coordinates Plot",
+        "count": 20,
+        "percentage": 2.12
+      },
+      {
+        "primaryMark": "Line",
+        "chartType": "Kagi Chart",
+        "count": 20,
+        "percentage": 2.12
+      },
+      {
+        "primaryMark": "Area",
+        "chartType": "Area Chart",
+        "count": 28,
+        "percentage": 2.97
+      },
+      {
+        "primaryMark": "Area",
+        "chartType": "Stacked Area Chart",
+        "count": 23,
+        "percentage": 2.44
+      },
+      {
+        "primaryMark": "Area",
+        "chartType": "Stream Graph",
+        "count": 21,
+        "percentage": 2.23
+      },
+      {
+        "primaryMark": "Area",
+        "chartType": "Polar Area Chart",
+        "count": 25,
+        "percentage": 2.65
+      },
+      {
+        "primaryMark": "Area",
+        "chartType": "Radar Chart",
+        "count": 24,
+        "percentage": 2.55
+      },
+      {
+        "primaryMark": "Bar/Rectangle",
+        "chartType": "Bar Chart",
+        "count": 27,
+        "percentage": 2.87
+      },
+      {
+        "primaryMark": "Bar/Rectangle",
+        "chartType": "Grouped Bar Chart",
+        "count": 27,
+        "percentage": 2.87
+      },
+      {
+        "primaryMark": "Bar/Rectangle",
+        "chartType": "Stacked Bar Chart",
+        "count": 25,
+        "percentage": 2.65
+      },
+      {
+        "primaryMark": "Bar/Rectangle",
+        "chartType": "Diverging Stacked Bar Chart",
+        "count": 23,
+        "percentage": 2.44
+      },
+      {
+        "primaryMark": "Bar/Rectangle",
+        "chartType": "Radial Bar Chart",
+        "count": 20,
+        "percentage": 2.12
+      },
+      {
+        "primaryMark": "Bar/Rectangle",
+        "chartType": "Bar Chart in Radial Layout",
+        "count": 20,
+        "percentage": 2.12
+      },
+      {
+        "primaryMark": "Bar/Rectangle",
+        "chartType": "Marimekko Chart",
+        "count": 21,
+        "percentage": 2.23
+      },
+      {
+        "primaryMark": "Bar/Rectangle",
+        "chartType": "Treemap",
+        "count": 22,
+        "percentage": 2.34
+      },
+      {
+        "primaryMark": "Bar/Rectangle",
+        "chartType": "Waterfall Chart",
+        "count": 21,
+        "percentage": 2.23
+      },
+      {
+        "primaryMark": "Bar/Rectangle",
+        "chartType": "Gantt Chart",
+        "count": 23,
+        "percentage": 2.44
+      },
+      {
+        "primaryMark": "Bar/Rectangle",
+        "chartType": "Spiral Plot",
+        "count": 20,
+        "percentage": 2.12
+      },
+      {
+        "primaryMark": "Circle/Pie/Arc",
+        "chartType": "Bubble Chart",
+        "count": 26,
+        "percentage": 2.76
+      },
+      {
+        "primaryMark": "Circle/Pie/Arc",
+        "chartType": "Pie Chart",
+        "count": 24,
+        "percentage": 2.55
+      },
+      {
+        "primaryMark": "Circle/Pie/Arc",
+        "chartType": "Donut Chart",
+        "count": 22,
+        "percentage": 2.34
+      },
+      {
+        "primaryMark": "Circle/Pie/Arc",
+        "chartType": "Circle Packing",
+        "count": 21,
+        "percentage": 2.23
+      },
+      {
+        "primaryMark": "Point/Dot",
+        "chartType": "Scatterplot",
+        "count": 26,
+        "percentage": 2.76
+      },
+      {
+        "primaryMark": "Point/Dot",
+        "chartType": "Connected Scatterplot",
+        "count": 21,
+        "percentage": 2.23
+      },
+      {
+        "primaryMark": "Point/Dot",
+        "chartType": "Connected Dot Plot",
+        "count": 22,
+        "percentage": 2.34
+      },
+      {
+        "primaryMark": "Point/Dot",
+        "chartType": "Dot Plot",
+        "count": 20,
+        "percentage": 2.12
+      },
+      {
+        "primaryMark": "Statistical",
+        "chartType": "Box-and-whisker plot",
+        "count": 25,
+        "percentage": 2.65
+      },
+      {
+        "primaryMark": "Statistical",
+        "chartType": "Density plot",
+        "count": 22,
+        "percentage": 2.34
+      },
+      {
+        "primaryMark": "Statistical",
+        "chartType": "Violin Plot",
+        "count": 21,
+        "percentage": 2.23
+      },
+      {
+        "primaryMark": "Statistical",
+        "chartType": "Bullet Chart",
+        "count": 21,
+        "percentage": 2.23
+      },
+      {
+        "primaryMark": "Statistical",
+        "chartType": "Candlestick Chart",
+        "count": 21,
+        "percentage": 2.23
+      },
+      {
+        "primaryMark": "Grid/Matrix",
+        "chartType": "Heatmap",
+        "count": 25,
+        "percentage": 2.65
+      },
+      {
+        "primaryMark": "Grid/Matrix",
+        "chartType": "Geo Heatmap",
+        "count": 21,
+        "percentage": 2.23
+      },
+      {
+        "primaryMark": "Grid/Matrix",
+        "chartType": "Matrix Diagram",
+        "count": 21,
+        "percentage": 2.23
+      },
+      {
+        "primaryMark": "Grid/Matrix",
+        "chartType": "Waffle Chart",
+        "count": 22,
+        "percentage": 2.34
+      },
+      {
+        "primaryMark": "Grid/Matrix",
+        "chartType": "Calendar",
+        "count": 20,
+        "percentage": 2.12
+      },
+      {
+        "primaryMark": "Specialized",
+        "chartType": "Word Cloud",
+        "count": 21,
+        "percentage": 2.23
+      },
+      {
+        "primaryMark": "Specialized",
+        "chartType": "Others",
+        "count": 28,
+        "percentage": 2.97
+      }
+    ]
+  },
+  "columns": 8,
+  "spacing": 20,
+  "concat": [
+    {
+      "title": {
+        "text": "Bar/Rectangle",
+        "fontSize": 18,
+        "font": "Arial",
+        "fontWeight": "bold"
+      },
+      "data": {
+        "values": [
+          { "chartType": "Bar Chart", "count": 27, "percentage": 2.87 },
+          { "chartType": "Grouped Bar Chart", "count": 27, "percentage": 2.87 },
+          { "chartType": "Stacked Bar Chart", "count": 25, "percentage": 2.65 },
+          {
+            "chartType": "Diverging Stacked Bar Chart",
+            "count": 23,
+            "percentage": 2.44
+          },
+          { "chartType": "Gantt Chart", "count": 23, "percentage": 2.44 },
+          { "chartType": "Treemap", "count": 22, "percentage": 2.34 },
+          { "chartType": "Marimekko Chart", "count": 21, "percentage": 2.23 },
+          { "chartType": "Waterfall Chart", "count": 21, "percentage": 2.23 },
+          { "chartType": "Radial Bar Chart", "count": 20, "percentage": 2.12 },
+          {
+            "chartType": "Bar Chart in Radial Layout",
+            "count": 20,
+            "percentage": 2.12
+          },
+          { "chartType": "Spiral Plot", "count": 20, "percentage": 2.12 }
+        ]
+      },
+      "width": 250,
+      "height": 210,
+      "mark": { "type": "bar", "size": 16 },
+      "encoding": {
+        "x": {
+          "field": "chartType",
+          "type": "nominal",
+          "sort": { "field": "count", "order": "descending" },
+          "axis": {
+            "labelAngle": 45,
+            "labelFontSize": 14,
+            "title": null
+          },
+          "scale": { "paddingInner": 0.3 }
+        },
+        "y": {
+          "field": "count",
+          "type": "quantitative",
+          "scale": { "domain": [0, 45] },
+          "axis": {
+            "title": "count",
+            "titleFontSize": 18,
+            "labelFontSize": 14,
+            "grid": false,
+            "domain": true
+          }
+        },
+        "color": { "value": "#e15759" },
+        "tooltip": [
+          { "field": "chartType", "type": "nominal" },
+          { "field": "count", "type": "quantitative" },
+          { "field": "percentage", "type": "quantitative", "format": ".2f" }
+        ]
+      }
+    },
+    {
+      "title": {
+        "text": "Line",
+        "fontSize": 18,
+        "font": "Arial",
+        "fontWeight": "bold"
+      },
+      "data": {
+        "values": [
+          { "chartType": "Line Graph", "count": 40, "percentage": 4.25 },
+          { "chartType": "Bump Chart", "count": 21, "percentage": 2.23 },
+          { "chartType": "Range Chart", "count": 21, "percentage": 2.23 },
+          {
+            "chartType": "Parallel Coordinates Plot",
+            "count": 20,
+            "percentage": 2.12
+          },
+          { "chartType": "Kagi Chart", "count": 20, "percentage": 2.12 }
+        ]
+      },
+      "width": 120,
+      "height": 210,
+      "mark": { "type": "bar", "size": 16 },
+      "encoding": {
+        "x": {
+          "field": "chartType",
+          "type": "nominal",
+          "sort": { "field": "count", "order": "descending" },
+          "axis": {
+            "labelAngle": 45,
+            "labelFontSize": 14,
+            "title": null
+          },
+          "scale": { "paddingInner": 0.3 }
+        },
+        "y": {
+          "field": "count",
+          "type": "quantitative",
+          "scale": { "domain": [0, 45] },
+          "axis": {
+            "title": null,
+            "labelFontSize": 14,
+            "grid": false,
+            "domain": false,
+            "labels": false
+          }
+        },
+        "color": { "value": "#4e79a7" },
+        "tooltip": [
+          { "field": "chartType", "type": "nominal" },
+          { "field": "count", "type": "quantitative" },
+          { "field": "percentage", "type": "quantitative", "format": ".2f" }
+        ]
+      }
+    },
+    {
+      "title": {
+        "text": "Area",
+        "fontSize": 18,
+        "font": "Arial",
+        "fontWeight": "bold"
+      },
+      "data": {
+        "values": [
+          { "chartType": "Area Chart", "count": 28, "percentage": 2.97 },
+          { "chartType": "Polar Area Chart", "count": 25, "percentage": 2.65 },
+          { "chartType": "Radar Chart", "count": 24, "percentage": 2.55 },
+          {
+            "chartType": "Stacked Area Chart",
+            "count": 23,
+            "percentage": 2.44
+          },
+          { "chartType": "Stream Graph", "count": 21, "percentage": 2.23 }
+        ]
+      },
+      "width": 120,
+      "height": 210,
+      "mark": { "type": "bar", "size": 16 },
+      "encoding": {
+        "x": {
+          "field": "chartType",
+          "type": "nominal",
+          "sort": { "field": "count", "order": "descending" },
+          "axis": {
+            "labelAngle": 45,
+            "labelFontSize": 14,
+            "title": null
+          },
+          "scale": { "paddingInner": 0.3 }
+        },
+        "y": {
+          "field": "count",
+          "type": "quantitative",
+          "scale": { "domain": [0, 45] },
+          "axis": {
+            "title": null,
+            "labelFontSize": 14,
+            "grid": false,
+            "domain": false,
+            "labels": false
+          }
+        },
+        "color": { "value": "#f28e2c" },
+        "tooltip": [
+          { "field": "chartType", "type": "nominal" },
+          { "field": "count", "type": "quantitative" },
+          { "field": "percentage", "type": "quantitative", "format": ".2f" }
+        ]
+      }
+    },
+    {
+      "title": {
+        "text": "Statistical",
+        "fontSize": 18,
+        "font": "Arial",
+        "fontWeight": "bold"
+      },
+      "data": {
+        "values": [
+          {
+            "chartType": "Box-and-whisker Plot",
+            "count": 25,
+            "percentage": 2.65
+          },
+          { "chartType": "Density plot", "count": 22, "percentage": 2.34 },
+          { "chartType": "Violin Plot", "count": 21, "percentage": 2.23 },
+          { "chartType": "Bullet Chart", "count": 21, "percentage": 2.23 },
+          { "chartType": "Candlestick Chart", "count": 21, "percentage": 2.23 }
+        ]
+      },
+      "width": 120,
+      "height": 210,
+      "mark": { "type": "bar", "size": 16 },
+      "encoding": {
+        "x": {
+          "field": "chartType",
+          "type": "nominal",
+          "sort": { "field": "count", "order": "descending" },
+          "axis": {
+            "labelAngle": 45,
+            "labelFontSize": 14,
+            "title": null
+          },
+          "scale": { "paddingInner": 0.3 }
+        },
+        "y": {
+          "field": "count",
+          "type": "quantitative",
+          "scale": { "domain": [0, 45] },
+          "axis": {
+            "title": null,
+            "labelFontSize": 14,
+            "grid": false,
+            "domain": false,
+            "labels": false
+          }
+        },
+        "color": { "value": "#edc949" },
+        "tooltip": [
+          { "field": "chartType", "type": "nominal" },
+          { "field": "count", "type": "quantitative" },
+          { "field": "percentage", "type": "quantitative", "format": ".2f" }
+        ]
+      }
+    },
+    {
+      "title": {
+        "text": "Grid/Matrix",
+        "fontSize": 18,
+        "font": "Arial",
+        "fontWeight": "bold"
+      },
+      "data": {
+        "values": [
+          { "chartType": "Heatmap", "count": 25, "percentage": 2.65 },
+          { "chartType": "Waffle Chart", "count": 22, "percentage": 2.34 },
+          { "chartType": "Geo Heatmap", "count": 21, "percentage": 2.23 },
+          { "chartType": "Matrix Diagram", "count": 21, "percentage": 2.23 },
+          { "chartType": "Calendar", "count": 20, "percentage": 2.12 }
+        ]
+      },
+      "width": 120,
+      "height": 210,
+      "mark": { "type": "bar", "size": 16 },
+      "encoding": {
+        "x": {
+          "field": "chartType",
+          "type": "nominal",
+          "sort": { "field": "count", "order": "descending" },
+          "axis": {
+            "labelAngle": 45,
+            "labelFontSize": 14,
+            "title": null
+          },
+          "scale": { "paddingInner": 0.3 }
+        },
+        "y": {
+          "field": "count",
+          "type": "quantitative",
+          "scale": { "domain": [0, 45] },
+          "axis": {
+            "title": null,
+            "labelFontSize": 14,
+            "grid": false,
+            "domain": false,
+            "labels": false
+          }
+        },
+        "color": { "value": "#af7aa1" },
+        "tooltip": [
+          { "field": "chartType", "type": "nominal" },
+          { "field": "count", "type": "quantitative" },
+          { "field": "percentage", "type": "quantitative", "format": ".2f" }
+        ]
+      }
+    },
+    {
+      "title": {
+        "text": "Circle/Pie/Arc",
+        "fontSize": 18,
+        "font": "Arial",
+        "fontWeight": "bold"
+      },
+      "data": {
+        "values": [
+          { "chartType": "Bubble Chart", "count": 26, "percentage": 2.76 },
+          { "chartType": "Pie Chart", "count": 24, "percentage": 2.55 },
+          { "chartType": "Donut Chart", "count": 22, "percentage": 2.34 },
+          { "chartType": "Circle Packing", "count": 21, "percentage": 2.23 }
+        ]
+      },
+      "width": 120,
+      "height": 210,
+      "mark": { "type": "bar", "size": 16 },
+      "encoding": {
+        "x": {
+          "field": "chartType",
+          "type": "nominal",
+          "sort": { "field": "count", "order": "descending" },
+          "axis": {
+            "labelAngle": 45,
+            "labelFontSize": 14,
+            "title": null
+          },
+          "scale": { "paddingInner": 0.3 }
+        },
+        "y": {
+          "field": "count",
+          "type": "quantitative",
+          "scale": { "domain": [0, 45] },
+          "axis": {
+            "title": null,
+            "labelFontSize": 14,
+            "grid": false,
+            "domain": false,
+            "labels": false
+          }
+        },
+        "color": { "value": "#76b7b2" },
+        "tooltip": [
+          { "field": "chartType", "type": "nominal" },
+          { "field": "count", "type": "quantitative" },
+          { "field": "percentage", "type": "quantitative", "format": ".2f" }
+        ]
+      }
+    },
+    {
+      "title": {
+        "text": "Point/Dot",
+        "fontSize": 18,
+        "font": "Arial",
+        "fontWeight": "bold"
+      },
+      "data": {
+        "values": [
+          { "chartType": "Scatterplot", "count": 26, "percentage": 2.76 },
+          {
+            "chartType": "Connected Dot Plot",
+            "count": 22,
+            "percentage": 2.34
+          },
+          {
+            "chartType": "Connected Scatterplot",
+            "count": 21,
+            "percentage": 2.23
+          },
+          { "chartType": "Dot Plot", "count": 20, "percentage": 2.12 }
+        ]
+      },
+      "width": 120,
+      "height": 210,
+      "mark": { "type": "bar", "size": 16 },
+      "encoding": {
+        "x": {
+          "field": "chartType",
+          "type": "nominal",
+          "sort": { "field": "count", "order": "descending" },
+          "axis": {
+            "labelAngle": 45,
+            "labelFontSize": 14,
+            "title": null
+          },
+          "scale": { "paddingInner": 0.3 }
+        },
+        "y": {
+          "field": "count",
+          "type": "quantitative",
+          "scale": { "domain": [0, 45] },
+          "axis": {
+            "title": null,
+            "labelFontSize": 14,
+            "grid": false,
+            "domain": false,
+            "labels": false
+          }
+        },
+        "color": { "value": "#59a14f" },
+        "tooltip": [
+          { "field": "chartType", "type": "nominal" },
+          { "field": "count", "type": "quantitative" },
+          { "field": "percentage", "type": "quantitative", "format": ".2f" }
+        ]
+      }
+    },
+    {
+      "title": {
+        "text": "Specialized",
+        "fontSize": 18,
+        "font": "Arial",
+        "fontWeight": "bold"
+      },
+      "data": {
+        "values": [
+          { "chartType": "Others", "count": 28, "percentage": 2.97 },
+          { "chartType": "Word Cloud", "count": 21, "percentage": 2.23 }
+        ]
+      },
+      "width": 80,
+      "height": 210,
+      "mark": { "type": "bar", "size": 16 },
+      "encoding": {
+        "x": {
+          "field": "chartType",
+          "type": "nominal",
+          "sort": { "field": "count", "order": "descending" },
+          "axis": {
+            "labelAngle": 45,
+            "labelFontSize": 14,
+            "title": null
+          },
+          "scale": { "paddingInner": 0.3 }
+        },
+        "y": {
+          "field": "count",
+          "type": "quantitative",
+          "scale": { "domain": [0, 45] },
+          "axis": {
+            "title": null,
+            "labelFontSize": 14,
+            "grid": false,
+            "domain": false,
+            "labels": false
+          }
+        },
+        "color": { "value": "#82b0d2" },
+        "tooltip": [
+          { "field": "chartType", "type": "nominal" },
+          { "field": "count", "type": "quantitative" },
+          { "field": "percentage", "type": "quantitative", "format": ".2f" }
+        ]
+      }
+    }
+  ],
+  "config": {
+    "view": { "stroke": "transparent" },
+    "axis": { "grid": false },
+    "axisX": { "domain": true },
+    "axisY": { "domain": true }
+  }
+}
