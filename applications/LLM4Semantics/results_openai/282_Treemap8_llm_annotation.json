@@ -1,0 +1,53 @@
+{
+  "main_chart_marks": [
+    "rect0",
+    "rect1",
+    "rect2",
+    "rect3",
+    "rect4",
+    "rect5",
+    "rect6",
+    "rect7",
+    "rect8",
+    "rect9",
+    "rect10",
+    "rect11",
+    "rect12",
+    "rect13",
+    "rect14",
+    "rect15",
+    "rect16",
+    "rect17",
+    "rect18",
+    "rect19",
+    "rect20",
+    "rect21"
+  ],
+  "legend": {
+    "title": [
+      "text96"
+    ],
+    "marks": [
+      "path0",
+      "path1",
+      "path2",
+      "path3",
+      "path4",
+      "path5",
+      "path6",
+      "path7"
+    ],
+    "labels": [
+      "text88",
+      "text89",
+      "text90",
+      "text91",
+      "text92",
+      "text93",
+      "text94",
+      "text95"
+    ]
+  },
+  "axis_labels": [],
+  "axis_titles": []
+}

@@ -1,0 +1,51 @@
+{
+  "main_chart_marks": [
+    "path13",
+    "path14",
+    "path15",
+    "path16",
+    "path17",
+    "path18",
+    "path19",
+    "path20",
+    "path21"
+  ],
+  "legend": {
+    "title": [],
+    "marks": [
+      "path51",
+      "path53",
+      "path55",
+      "path57",
+      "path59",
+      "path61",
+      "path63",
+      "path65",
+      "path67"
+    ],
+    "labels": [
+      "path52",
+      "path54",
+      "path56",
+      "path58",
+      "path60",
+      "path62",
+      "path64",
+      "path66",
+      "path68"
+    ]
+  },
+  "axis_labels": [
+    "path41",
+    "path42",
+    "path43",
+    "path44",
+    "path45",
+    "path46",
+    "path47",
+    "path48",
+    "path49",
+    "path50"
+  ],
+  "axis_titles": []
+}

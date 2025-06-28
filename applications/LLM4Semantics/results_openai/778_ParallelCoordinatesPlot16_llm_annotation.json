@@ -1,0 +1,27 @@
+{
+  "main_chart_marks": [
+    "path26",
+    "path28",
+    "path29",
+    "path31",
+    "path32"
+  ],
+  "legend": {
+    "title": [],
+    "marks": [],
+    "labels": []
+  },
+  "axis_labels": [
+    "text_1",
+    "text_2",
+    "text_3",
+    "text_4",
+    "text_5",
+    "text_6",
+    "text_7"
+  ],
+  "axis_titles": [
+    "text_8",
+    "text_9"
+  ]
+}

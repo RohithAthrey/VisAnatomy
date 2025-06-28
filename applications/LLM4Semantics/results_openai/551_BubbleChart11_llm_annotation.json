@@ -1,0 +1,47 @@
+{
+  "main_chart_marks": [
+    "circle0",
+    "circle1",
+    "circle2",
+    "circle3",
+    "circle4",
+    "circle5",
+    "circle6",
+    "circle7",
+    "circle8",
+    "circle9"
+  ],
+  "legend": {
+    "title": [],
+    "marks": [
+      "rect5",
+      "rect7",
+      "rect9"
+    ],
+    "labels": [
+      "text2",
+      "text3",
+      "text4"
+    ]
+  },
+  "axis_labels": [
+    "text21",
+    "text22",
+    "text23",
+    "text24",
+    "text25",
+    "text26",
+    "text27",
+    "text28",
+    "text29",
+    "text30",
+    "text31",
+    "text32",
+    "text33",
+    "text34"
+  ],
+  "axis_titles": [
+    "text35",
+    "text36"
+  ]
+}

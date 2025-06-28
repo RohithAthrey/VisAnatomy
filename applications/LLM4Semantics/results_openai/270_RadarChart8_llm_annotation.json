@@ -1,0 +1,46 @@
+{
+  "main_chart_marks": [
+    "path64",
+    "path65",
+    "path66",
+    "path67",
+    "path68",
+    "path69",
+    "path70",
+    "path71",
+    "path72",
+    "path73",
+    "path74",
+    "path75",
+    "path76",
+    "path77"
+  ],
+  "legend": {
+    "title": [
+      "text0"
+    ],
+    "marks": [],
+    "labels": []
+  },
+  "axis_labels": [
+    "text1",
+    "text2",
+    "text3",
+    "text4",
+    "text5",
+    "text6",
+    "text7",
+    "text8",
+    "text9",
+    "text10",
+    "text11",
+    "text12",
+    "text13",
+    "text14",
+    "text15",
+    "text16",
+    "text17",
+    "text18"
+  ],
+  "axis_titles": []
+}

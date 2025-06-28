@@ -1,0 +1,23 @@
+{
+  "main_chart_marks": [],
+  "legend": {
+    "title": [],
+    "marks": [
+      "use97",
+      "use101",
+      "use108",
+      "use114"
+    ],
+    "labels": [
+      "use98",
+      "use99",
+      "use100",
+      "use102",
+      "use103",
+      "use104",
+      "use105"
+    ]
+  },
+  "axis_labels": [],
+  "axis_titles": []
+}

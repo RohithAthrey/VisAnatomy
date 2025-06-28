@@ -1,0 +1,36 @@
+{
+  "main_chart_marks": [
+    "polygon0",
+    "polygon1",
+    "polygon2",
+    "polygon3",
+    "polygon4",
+    "polygon5",
+    "polygon6",
+    "polygon7",
+    "polygon8"
+  ],
+  "legend": {
+    "title": [],
+    "marks": [],
+    "labels": []
+  },
+  "axis_labels": [
+    "path142",
+    "path143",
+    "path144",
+    "path145",
+    "path146",
+    "path147",
+    "path148",
+    "path149",
+    "path150",
+    "path151",
+    "path152",
+    "path153",
+    "path154",
+    "path155",
+    "path156"
+  ],
+  "axis_titles": []
+}

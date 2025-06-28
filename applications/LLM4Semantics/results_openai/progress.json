@@ -1,0 +1,4215 @@
+{
+  "started_at": "2025-06-27T21:38:14.294020",
+  "total_files": 943,
+  "completed": 841,
+  "successful": 835,
+  "failed": 6,
+  "results": {
+    "0_MatrixDiagram18.svg": {
+      "status": "success",
+      "output_file": "results_openai/0_MatrixDiagram18_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.296071"
+    },
+    "2_StackedBarChart14.svg": {
+      "status": "success",
+      "output_file": "results_openai/2_StackedBarChart14_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.296207"
+    },
+    "3_ViolinPlot1.svg": {
+      "status": "success",
+      "output_file": "results_openai/3_ViolinPlot1_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.296312"
+    },
+    "4_BulletChart12.svg": {
+      "status": "success",
+      "output_file": "results_openai/4_BulletChart12_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.296415"
+    },
+    "5_GroupedBarChart17.svg": {
+      "status": "success",
+      "output_file": "results_openai/5_GroupedBarChart17_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.296528"
+    },
+    "6__bespoke15.svg": {
+      "status": "success",
+      "output_file": "results_openai/6__bespoke15_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.296633"
+    },
+    "7_WaterfallChart7.svg": {
+      "status": "success",
+      "output_file": "results_openai/7_WaterfallChart7_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.296830"
+    },
+    "8_BumpChart7.svg": {
+      "status": "success",
+      "output_file": "results_openai/8_BumpChart7_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.296970"
+    },
+    "10_Scatterplot14.svg": {
+      "status": "success",
+      "output_file": "results_openai/10_Scatterplot14_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.297099"
+    },
+    "12_StackedAreaChart11.svg": {
+      "status": "success",
+      "output_file": "results_openai/12_StackedAreaChart11_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.297195"
+    },
+    "14_DivergingStackedBarChart7.svg": {
+      "status": "success",
+      "output_file": "results_openai/14_DivergingStackedBarChart7_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.297410"
+    },
+    "15_BarChart23.svg": {
+      "status": "success",
+      "output_file": "results_openai/15_BarChart23_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.297604"
+    },
+    "16_PolarAreaChart6.svg": {
+      "status": "success",
+      "output_file": "results_openai/16_PolarAreaChart6_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.297710"
+    },
+    "17_ConnectedScatterPlot12.svg": {
+      "status": "success",
+      "output_file": "results_openai/17_ConnectedScatterPlot12_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.297817"
+    },
+    "18_RadarChart17.svg": {
+      "status": "success",
+      "output_file": "results_openai/18_RadarChart17_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.297914"
+    },
+    "19_DensityPlot22.svg": {
+      "status": "success",
+      "output_file": "results_openai/19_DensityPlot22_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.298017"
+    },
+    "20_GanttChart16.svg": {
+      "status": "success",
+      "output_file": "results_openai/20_GanttChart16_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.298114"
+    },
+    "21_DonutChart6.svg": {
+      "status": "success",
+      "output_file": "results_openai/21_DonutChart6_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.298203"
+    },
+    "22_LineGraph9.svg": {
+      "status": "success",
+      "output_file": "results_openai/22_LineGraph9_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.298295"
+    },
+    "23_LineGraph8.svg": {
+      "status": "success",
+      "output_file": "results_openai/23_LineGraph8_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.298385"
+    },
+    "24_DonutChart7.svg": {
+      "status": "success",
+      "output_file": "results_openai/24_DonutChart7_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.298467"
+    },
+    "25_RadarChart16.svg": {
+      "status": "success",
+      "output_file": "results_openai/25_RadarChart16_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.298554"
+    },
+    "26_GanttChart17.svg": {
+      "status": "success",
+      "output_file": "results_openai/26_GanttChart17_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.298641"
+    },
+    "28_PolarAreaChart7.svg": {
+      "status": "success",
+      "output_file": "results_openai/28_PolarAreaChart7_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.298726"
+    },
+    "29_GanttChart1.svg": {
+      "status": "success",
+      "output_file": "results_openai/29_GanttChart1_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.298905"
+    },
+    "30_BarChart22.svg": {
+      "status": "success",
+      "output_file": "results_openai/30_BarChart22_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.299028"
+    },
+    "31_DivergingStackedBarChart6.svg": {
+      "status": "success",
+      "output_file": "results_openai/31_DivergingStackedBarChart6_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.299169"
+    },
+    "32_WordCloud18.svg": {
+      "status": "success",
+      "output_file": "results_openai/32_WordCloud18_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.299257"
+    },
+    "33_StackedAreaChart10.svg": {
+      "status": "success",
+      "output_file": "results_openai/33_StackedAreaChart10_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.299348"
+    },
+    "34__bespoke3.svg": {
+      "status": "success",
+      "output_file": "results_openai/34__bespoke3_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.299449"
+    },
+    "35_Scatterplot15.svg": {
+      "status": "success",
+      "output_file": "results_openai/35_Scatterplot15_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.299550"
+    },
+    "36_GeoHeatmap15.svg": {
+      "status": "success",
+      "output_file": "results_openai/36_GeoHeatmap15_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.299675"
+    },
+    "37_BumpChart6.svg": {
+      "status": "success",
+      "output_file": "results_openai/37_BumpChart6_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.299797"
+    },
+    "38_WaterfallChart6.svg": {
+      "status": "success",
+      "output_file": "results_openai/38_WaterfallChart6_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.299890"
+    },
+    "39__bespoke14.svg": {
+      "status": "success",
+      "output_file": "results_openai/39__bespoke14_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.299979"
+    },
+    "40__bespoke28.svg": {
+      "status": "success",
+      "output_file": "results_openai/40__bespoke28_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.300067"
+    },
+    "41_GroupedBarChart16.svg": {
+      "status": "success",
+      "output_file": "results_openai/41_GroupedBarChart16_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.300161"
+    },
+    "42_BulletChart13.svg": {
+      "status": "success",
+      "output_file": "results_openai/42_BulletChart13_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.300247"
+    },
+    "43_DotPlot20.svg": {
+      "status": "success",
+      "output_file": "results_openai/43_DotPlot20_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.300343"
+    },
+    "44_StackedBarChart15.svg": {
+      "status": "success",
+      "output_file": "results_openai/44_StackedBarChart15_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.300538"
+    },
+    "45_Treemap21.svg": {
+      "status": "success",
+      "output_file": "results_openai/45_Treemap21_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.300675"
+    },
+    "46_MatrixDiagram19.svg": {
+      "status": "success",
+      "output_file": "results_openai/46_MatrixDiagram19_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.300903"
+    },
+    "47_ViolinPlot2.svg": {
+      "status": "success",
+      "output_file": "results_openai/47_ViolinPlot2_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.301010"
+    },
+    "48_StackedBarChart17.svg": {
+      "status": "success",
+      "output_file": "results_openai/48_StackedBarChart17_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.301113"
+    },
+    "49_GroupedBarChart14.svg": {
+      "status": "success",
+      "output_file": "results_openai/49_GroupedBarChart14_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.301220"
+    },
+    "50_BulletChart11.svg": {
+      "status": "success",
+      "output_file": "results_openai/50_BulletChart11_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.301314"
+    },
+    "51__bespoke16.svg": {
+      "status": "success",
+      "output_file": "results_openai/51__bespoke16_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.301438"
+    },
+    "52_WaterfallChart4.svg": {
+      "status": "success",
+      "output_file": "results_openai/52_WaterfallChart4_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.301556"
+    },
+    "53_BumpChart4.svg": {
+      "status": "success",
+      "output_file": "results_openai/53_BumpChart4_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.301700"
+    },
+    "55__bespoke1.svg": {
+      "status": "success",
+      "output_file": "results_openai/55__bespoke1_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.301933"
+    },
+    "56_Scatterplot17.svg": {
+      "status": "success",
+      "output_file": "results_openai/56_Scatterplot17_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.302046"
+    },
+    "57_StackedAreaChart12.svg": {
+      "status": "success",
+      "output_file": "results_openai/57_StackedAreaChart12_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.302156"
+    },
+    "58_DivergingStackedBarChart18.svg": {
+      "status": "success",
+      "output_file": "results_openai/58_DivergingStackedBarChart18_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.302371"
+    },
+    "59_BarChart20.svg": {
+      "status": "success",
+      "output_file": "results_openai/59_BarChart20_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.302480"
+    },
+    "60_DivergingStackedBarChart4.svg": {
+      "status": "success",
+      "output_file": "results_openai/60_DivergingStackedBarChart4_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.302598"
+    },
+    "61_GanttChart3.svg": {
+      "status": "success",
+      "output_file": "results_openai/61_GanttChart3_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.302739"
+    },
+    "63_PolarAreaChart5.svg": {
+      "status": "success",
+      "output_file": "results_openai/63_PolarAreaChart5_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.302839"
+    },
+    "64_GanttChart15.svg": {
+      "status": "success",
+      "output_file": "results_openai/64_GanttChart15_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.302936"
+    },
+    "65_RadarChart14.svg": {
+      "status": "success",
+      "output_file": "results_openai/65_RadarChart14_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.303036"
+    },
+    "67_ConnectedScatterPlot11.svg": {
+      "status": "success",
+      "output_file": "results_openai/67_ConnectedScatterPlot11_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.303164"
+    },
+    "68_DonutChart5.svg": {
+      "status": "success",
+      "output_file": "results_openai/68_DonutChart5_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.303259"
+    },
+    "69_DonutChart4.svg": {
+      "status": "success",
+      "output_file": "results_openai/69_DonutChart4_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.303466"
+    },
+    "70_ConnectedScatterPlot10.svg": {
+      "status": "success",
+      "output_file": "results_openai/70_ConnectedScatterPlot10_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.303593"
+    },
+    "71_GanttChart14.svg": {
+      "status": "success",
+      "output_file": "results_openai/71_GanttChart14_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.303713"
+    },
+    "72_DensityPlot20.svg": {
+      "status": "success",
+      "output_file": "results_openai/72_DensityPlot20_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.303862"
+    },
+    "73_RadarChart15.svg": {
+      "status": "success",
+      "output_file": "results_openai/73_RadarChart15_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.304158"
+    },
+    "74_GanttChart2.svg": {
+      "status": "success",
+      "output_file": "results_openai/74_GanttChart2_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.304363"
+    },
+    "75_PolarAreaChart4.svg": {
+      "status": "success",
+      "output_file": "results_openai/75_PolarAreaChart4_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.304505"
+    },
+    "77_DivergingStackedBarChart5.svg": {
+      "status": "success",
+      "output_file": "results_openai/77_DivergingStackedBarChart5_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.304620"
+    },
+    "78_BarChart21.svg": {
+      "status": "success",
+      "output_file": "results_openai/78_BarChart21_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.304720"
+    },
+    "79_DivergingStackedBarChart19.svg": {
+      "status": "success",
+      "output_file": "results_openai/79_DivergingStackedBarChart19_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.304819"
+    },
+    "80_ParallelCoordinatesPlot20.svg": {
+      "status": "success",
+      "output_file": "results_openai/80_ParallelCoordinatesPlot20_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.305057"
+    },
+    "81_StackedAreaChart13.svg": {
+      "status": "success",
+      "output_file": "results_openai/81_StackedAreaChart13_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.305164"
+    },
+    "82_Scatterplot16.svg": {
+      "status": "error",
+      "error": "Unterminated string starting at: line 2 column 13152 (char 13153)",
+      "processed_at": "2025-06-27T21:38:14.305292"
+    },
+    "83_GeoHeatmap16.svg": {
+      "status": "success",
+      "output_file": "results_openai/83_GeoHeatmap16_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.305548"
+    },
+    "84_BumpChart5.svg": {
+      "status": "success",
+      "output_file": "results_openai/84_BumpChart5_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.305709"
+    },
+    "85_WaterfallChart5.svg": {
+      "status": "success",
+      "output_file": "results_openai/85_WaterfallChart5_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.305835"
+    },
+    "86__bespoke17.svg": {
+      "status": "success",
+      "output_file": "results_openai/86__bespoke17_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.305943"
+    },
+    "87_BulletChart10.svg": {
+      "status": "success",
+      "output_file": "results_openai/87_BulletChart10_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.306042"
+    },
+    "88_GroupedBarChart15.svg": {
+      "status": "success",
+      "output_file": "results_openai/88_GroupedBarChart15_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.306192"
+    },
+    "89_StackedBarChart16.svg": {
+      "status": "success",
+      "output_file": "results_openai/89_StackedBarChart16_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.306317"
+    },
+    "90_ViolinPlot3.svg": {
+      "status": "success",
+      "output_file": "results_openai/90_ViolinPlot3_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.306429"
+    },
+    "91_Treemap22.svg": {
+      "status": "success",
+      "output_file": "results_openai/91_Treemap22_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.306535"
+    },
+    "93_BoxAndWhisker8.svg": {
+      "status": "success",
+      "output_file": "results_openai/93_BoxAndWhisker8_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.306758"
+    },
+    "94_GroupedBarChart11.svg": {
+      "status": "success",
+      "output_file": "results_openai/94_GroupedBarChart11_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.306857"
+    },
+    "95_BulletChart14.svg": {
+      "status": "success",
+      "output_file": "results_openai/95_BulletChart14_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.306944"
+    },
+    "96_ViolinPlot7.svg": {
+      "status": "success",
+      "output_file": "results_openai/96_ViolinPlot7_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.307036"
+    },
+    "97_StackedBarChart12.svg": {
+      "status": "success",
+      "output_file": "results_openai/97_StackedBarChart12_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.307139"
+    },
+    "98_WaterfallChart1.svg": {
+      "status": "success",
+      "output_file": "results_openai/98_WaterfallChart1_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.307252"
+    },
+    "99__bespoke13.svg": {
+      "status": "success",
+      "output_file": "results_openai/99__bespoke13_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.307356"
+    },
+    "100__bespoke4.svg": {
+      "status": "success",
+      "output_file": "results_openai/100__bespoke4_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.307462"
+    },
+    "102_BumpChart1.svg": {
+      "status": "success",
+      "output_file": "results_openai/102_BumpChart1_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.307590"
+    },
+    "104_ParallelCoordinatesPlot18.svg": {
+      "status": "success",
+      "output_file": "results_openai/104_ParallelCoordinatesPlot18_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.307702"
+    },
+    "105_StackedAreaChart17.svg": {
+      "status": "success",
+      "output_file": "results_openai/105_StackedAreaChart17_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.307805"
+    },
+    "106_DivergingStackedBarChart21.svg": {
+      "status": "success",
+      "output_file": "results_openai/106_DivergingStackedBarChart21_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.307912"
+    },
+    "107_BarChart19.svg": {
+      "status": "success",
+      "output_file": "results_openai/107_BarChart19_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.308006"
+    },
+    "108_GanttChart6.svg": {
+      "status": "success",
+      "output_file": "results_openai/108_GanttChart6_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.308093"
+    },
+    "109_BarChart25.svg": {
+      "status": "success",
+      "output_file": "results_openai/109_BarChart25_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.308175"
+    },
+    "110_DivergingStackedBarChart1.svg": {
+      "status": "success",
+      "output_file": "results_openai/110_DivergingStackedBarChart1_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.308274"
+    },
+    "111_RadarChart11.svg": {
+      "status": "success",
+      "output_file": "results_openai/111_RadarChart11_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.308357"
+    },
+    "112_DensityPlot9.svg": {
+      "status": "success",
+      "output_file": "results_openai/112_DensityPlot9_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.308471"
+    },
+    "113_GanttChart10.svg": {
+      "status": "success",
+      "output_file": "results_openai/113_GanttChart10_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.308563"
+    },
+    "114_ConnectedScatterPlot14.svg": {
+      "status": "success",
+      "output_file": "results_openai/114_ConnectedScatterPlot14_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.308699"
+    },
+    "115_DensityPlot18.svg": {
+      "status": "success",
+      "output_file": "results_openai/115_DensityPlot18_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.308781"
+    },
+    "116_BulletChart9.svg": {
+      "status": "success",
+      "output_file": "results_openai/116_BulletChart9_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.308874"
+    },
+    "117_DonutChart1.svg": {
+      "status": "success",
+      "output_file": "results_openai/117_DonutChart1_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.308970"
+    },
+    "118_BulletChart8.svg": {
+      "status": "success",
+      "output_file": "results_openai/118_BulletChart8_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.309070"
+    },
+    "119_DensityPlot19.svg": {
+      "status": "success",
+      "output_file": "results_openai/119_DensityPlot19_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.309174"
+    },
+    "120_ConnectedScatterPlot15.svg": {
+      "status": "success",
+      "output_file": "results_openai/120_ConnectedScatterPlot15_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.309282"
+    },
+    "121_DensityPlot8.svg": {
+      "status": "success",
+      "output_file": "results_openai/121_DensityPlot8_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.309384"
+    },
+    "122_RadarChart10.svg": {
+      "status": "success",
+      "output_file": "results_openai/122_RadarChart10_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.309469"
+    },
+    "123_GanttChart11.svg": {
+      "status": "success",
+      "output_file": "results_openai/123_GanttChart11_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.309559"
+    },
+    "124_BarChart24.svg": {
+      "status": "success",
+      "output_file": "results_openai/124_BarChart24_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.309700"
+    },
+    "125_PolarAreaChart1.svg": {
+      "status": "success",
+      "output_file": "results_openai/125_PolarAreaChart1_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.309821"
+    },
+    "126_GanttChart7.svg": {
+      "status": "success",
+      "output_file": "results_openai/126_GanttChart7_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.309919"
+    },
+    "127_BarChart18.svg": {
+      "status": "success",
+      "output_file": "results_openai/127_BarChart18_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.310007"
+    },
+    "128_DivergingStackedBarChart20.svg": {
+      "status": "success",
+      "output_file": "results_openai/128_DivergingStackedBarChart20_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.310105"
+    },
+    "129_StackedAreaChart16.svg": {
+      "status": "success",
+      "output_file": "results_openai/129_StackedAreaChart16_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.310205"
+    },
+    "130_ParallelCoordinatesPlot19.svg": {
+      "status": "success",
+      "output_file": "results_openai/130_ParallelCoordinatesPlot19_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.310322"
+    },
+    "131_GeoHeatmap13.svg": {
+      "status": "success",
+      "output_file": "results_openai/131_GeoHeatmap13_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.310459"
+    },
+    "132_Scatterplot13.svg": {
+      "status": "success",
+      "output_file": "results_openai/132_Scatterplot13_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.310576"
+    },
+    "133__bespoke5.svg": {
+      "status": "success",
+      "output_file": "results_openai/133__bespoke5_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.310672"
+    },
+    "134__bespoke12.svg": {
+      "status": "success",
+      "output_file": "results_openai/134__bespoke12_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.310767"
+    },
+    "135_StackedBarChart13.svg": {
+      "status": "success",
+      "output_file": "results_openai/135_StackedBarChart13_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.310872"
+    },
+    "136_ViolinPlot6.svg": {
+      "status": "success",
+      "output_file": "results_openai/136_ViolinPlot6_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.310963"
+    },
+    "137_BulletChart15.svg": {
+      "status": "success",
+      "output_file": "results_openai/137_BulletChart15_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.311097"
+    },
+    "138_GroupedBarChart10.svg": {
+      "status": "success",
+      "output_file": "results_openai/138_GroupedBarChart10_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.311194"
+    },
+    "139_BoxAndWhisker9.svg": {
+      "status": "success",
+      "output_file": "results_openai/139_BoxAndWhisker9_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.311291"
+    },
+    "140_WaffleChart8.svg": {
+      "status": "success",
+      "output_file": "results_openai/140_WaffleChart8_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.311404"
+    },
+    "141_MatrixDiagram21.svg": {
+      "status": "success",
+      "output_file": "results_openai/141_MatrixDiagram21_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.311545"
+    },
+    "142_Treemap19.svg": {
+      "status": "success",
+      "output_file": "results_openai/142_Treemap19_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.311638"
+    },
+    "143_BulletChart17.svg": {
+      "status": "success",
+      "output_file": "results_openai/143_BulletChart17_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.311744"
+    },
+    "144_DotPlot18.svg": {
+      "status": "success",
+      "output_file": "results_openai/144_DotPlot18_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.311864"
+    },
+    "145_GroupedBarChart12.svg": {
+      "status": "success",
+      "output_file": "results_openai/145_GroupedBarChart12_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.311960"
+    },
+    "146_StackedBarChart11.svg": {
+      "status": "success",
+      "output_file": "results_openai/146_StackedBarChart11_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.312054"
+    },
+    "147_ViolinPlot4.svg": {
+      "status": "success",
+      "output_file": "results_openai/147_ViolinPlot4_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.312139"
+    },
+    "148_WaterfallChart2.svg": {
+      "status": "success",
+      "output_file": "results_openai/148_WaterfallChart2_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.312222"
+    },
+    "150_StackedBarChart9.svg": {
+      "status": "success",
+      "output_file": "results_openai/150_StackedBarChart9_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.312331"
+    },
+    "152__bespoke7.svg": {
+      "status": "success",
+      "output_file": "results_openai/152__bespoke7_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.312422"
+    },
+    "153_BumpChart2.svg": {
+      "status": "success",
+      "output_file": "results_openai/153_BumpChart2_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.312519"
+    },
+    "154_GeoHeatmap11.svg": {
+      "status": "success",
+      "output_file": "results_openai/154_GeoHeatmap11_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.312642"
+    },
+    "155_DivergingStackedBarChart22.svg": {
+      "status": "success",
+      "output_file": "results_openai/155_DivergingStackedBarChart22_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.312754"
+    },
+    "157_StackedAreaChart14.svg": {
+      "status": "success",
+      "output_file": "results_openai/157_StackedAreaChart14_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.312844"
+    },
+    "158_GanttChart5.svg": {
+      "status": "success",
+      "output_file": "results_openai/158_GanttChart5_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.312950"
+    },
+    "159_PolarAreaChart3.svg": {
+      "status": "success",
+      "output_file": "results_openai/159_PolarAreaChart3_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.313044"
+    },
+    "160_DivergingStackedBarChart2.svg": {
+      "status": "success",
+      "output_file": "results_openai/160_DivergingStackedBarChart2_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.313127"
+    },
+    "161_BarChart26.svg": {
+      "status": "success",
+      "output_file": "results_openai/161_BarChart26_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.313213"
+    },
+    "162_ConnectedScatterPlot17.svg": {
+      "status": "success",
+      "output_file": "results_openai/162_ConnectedScatterPlot17_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.313332"
+    },
+    "163_GanttChart13.svg": {
+      "status": "success",
+      "output_file": "results_openai/163_GanttChart13_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.313867"
+    },
+    "164_RadarChart12.svg": {
+      "status": "success",
+      "output_file": "results_openai/164_RadarChart12_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.313975"
+    },
+    "165_DonutChart3.svg": {
+      "status": "success",
+      "output_file": "results_openai/165_DonutChart3_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.314071"
+    },
+    "166_DonutChart2.svg": {
+      "status": "success",
+      "output_file": "results_openai/166_DonutChart2_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.314157"
+    },
+    "167_GanttChart12.svg": {
+      "status": "success",
+      "output_file": "results_openai/167_GanttChart12_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.314241"
+    },
+    "168_RadarChart13.svg": {
+      "status": "success",
+      "output_file": "results_openai/168_RadarChart13_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.314328"
+    },
+    "169_ConnectedScatterPlot16.svg": {
+      "status": "success",
+      "output_file": "results_openai/169_ConnectedScatterPlot16_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.314486"
+    },
+    "170_BarChart27.svg": {
+      "status": "success",
+      "output_file": "results_openai/170_BarChart27_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.314629"
+    },
+    "171_DivergingStackedBarChart3.svg": {
+      "status": "success",
+      "output_file": "results_openai/171_DivergingStackedBarChart3_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.314740"
+    },
+    "172_GanttChart4.svg": {
+      "status": "success",
+      "output_file": "results_openai/172_GanttChart4_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.314828"
+    },
+    "173_PolarAreaChart2.svg": {
+      "status": "success",
+      "output_file": "results_openai/173_PolarAreaChart2_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.314956"
+    },
+    "174_StackedAreaChart15.svg": {
+      "status": "success",
+      "output_file": "results_openai/174_StackedAreaChart15_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.315069"
+    },
+    "176_DivergingStackedBarChart23.svg": {
+      "status": "success",
+      "output_file": "results_openai/176_DivergingStackedBarChart23_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.315178"
+    },
+    "178_BumpChart3.svg": {
+      "status": "success",
+      "output_file": "results_openai/178_BumpChart3_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.315293"
+    },
+    "179__bespoke6.svg": {
+      "status": "success",
+      "output_file": "results_openai/179__bespoke6_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.315387"
+    },
+    "180_Scatterplot10.svg": {
+      "status": "success",
+      "output_file": "results_openai/180_Scatterplot10_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.315573"
+    },
+    "181_StackedBarChart8.svg": {
+      "status": "success",
+      "output_file": "results_openai/181_StackedBarChart8_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.315684"
+    },
+    "182__bespoke11.svg": {
+      "status": "success",
+      "output_file": "results_openai/182__bespoke11_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.315781"
+    },
+    "183_WaterfallChart3.svg": {
+      "status": "success",
+      "output_file": "results_openai/183_WaterfallChart3_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.315885"
+    },
+    "184_ViolinPlot5.svg": {
+      "status": "success",
+      "output_file": "results_openai/184_ViolinPlot5_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.315989"
+    },
+    "185_StackedBarChart10.svg": {
+      "status": "success",
+      "output_file": "results_openai/185_StackedBarChart10_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.316240"
+    },
+    "186_DotPlot19.svg": {
+      "status": "success",
+      "output_file": "results_openai/186_DotPlot19_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.316374"
+    },
+    "187_GroupedBarChart13.svg": {
+      "status": "success",
+      "output_file": "results_openai/187_GroupedBarChart13_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.316522"
+    },
+    "188_BulletChart16.svg": {
+      "status": "success",
+      "output_file": "results_openai/188_BulletChart16_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.316668"
+    },
+    "190_MatrixDiagram20.svg": {
+      "status": "success",
+      "output_file": "results_openai/190_MatrixDiagram20_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.316823"
+    },
+    "191_AreaChart27.svg": {
+      "status": "success",
+      "output_file": "results_openai/191_AreaChart27_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.316953"
+    },
+    "193_RadialBarChart15.svg": {
+      "status": "success",
+      "output_file": "results_openai/193_RadialBarChart15_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.317045"
+    },
+    "194_CandlestickChart17.svg": {
+      "status": "success",
+      "output_file": "results_openai/194_CandlestickChart17_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.317159"
+    },
+    "195_WaterfallChart15.svg": {
+      "status": "success",
+      "output_file": "results_openai/195_WaterfallChart15_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.317262"
+    },
+    "196_DotPlot8.svg": {
+      "status": "success",
+      "output_file": "results_openai/196_DotPlot8_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.317382"
+    },
+    "197_Heatmap13.svg": {
+      "status": "success",
+      "output_file": "results_openai/197_Heatmap13_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.317527"
+    },
+    "198_BoxAndWhisker15.svg": {
+      "status": "success",
+      "output_file": "results_openai/198_BoxAndWhisker15_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.317709"
+    },
+    "199_MarimekkoChart19.svg": {
+      "status": "success",
+      "output_file": "results_openai/199_MarimekkoChart19_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.317814"
+    },
+    "200_KagiChart5.svg": {
+      "status": "success",
+      "output_file": "results_openai/200_KagiChart5_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.317908"
+    },
+    "202_LineGraph39.svg": {
+      "status": "success",
+      "output_file": "results_openai/202_LineGraph39_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.318005"
+    },
+    "203_ConnectedDotPlot22.svg": {
+      "status": "success",
+      "output_file": "results_openai/203_ConnectedDotPlot22_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.318096"
+    },
+    "204_LineGraph11.svg": {
+      "status": "success",
+      "output_file": "results_openai/204_LineGraph11_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.318192"
+    },
+    "205_CirclePacking18.svg": {
+      "status": "success",
+      "output_file": "results_openai/205_CirclePacking18_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.318305"
+    },
+    "206_BumpChart13.svg": {
+      "status": "success",
+      "output_file": "results_openai/206_BumpChart13_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.318497"
+    },
+    "207_ParallelCoordinatesPlot6.svg": {
+      "status": "success",
+      "output_file": "results_openai/207_ParallelCoordinatesPlot6_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.318587"
+    },
+    "208_ConnectedDotPlot6.svg": {
+      "status": "success",
+      "output_file": "results_openai/208_ConnectedDotPlot6_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.318714"
+    },
+    "209_KagiChart10.svg": {
+      "status": "success",
+      "output_file": "results_openai/209_KagiChart10_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.318809"
+    },
+    "210_PieChart22.svg": {
+      "status": "success",
+      "output_file": "results_openai/210_PieChart22_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.318894"
+    },
+    "211_BarChart9.svg": {
+      "status": "success",
+      "output_file": "results_openai/211_BarChart9_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.319136"
+    },
+    "212_RadialBarChart4.svg": {
+      "status": "success",
+      "output_file": "results_openai/212_RadialBarChart4_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.319305"
+    },
+    "213_MarimekkoChart7.svg": {
+      "status": "success",
+      "output_file": "results_openai/213_MarimekkoChart7_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.319420"
+    },
+    "214_PolarAreaChart12.svg": {
+      "status": "success",
+      "output_file": "results_openai/214_PolarAreaChart12_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.319597"
+    },
+    "215_MatrixDiagram4.svg": {
+      "status": "success",
+      "output_file": "results_openai/215_MatrixDiagram4_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.319945"
+    },
+    "216_CandlestickChart1.svg": {
+      "status": "success",
+      "output_file": "results_openai/216_CandlestickChart1_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.320083"
+    },
+    "217_ViolinPlot11.svg": {
+      "status": "success",
+      "output_file": "results_openai/217_ViolinPlot11_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.320225"
+    },
+    "218_ViolinPlot10.svg": {
+      "status": "success",
+      "output_file": "results_openai/218_ViolinPlot10_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.320322"
+    },
+    "220_PolarAreaChart13.svg": {
+      "status": "success",
+      "output_file": "results_openai/220_PolarAreaChart13_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.320419"
+    },
+    "221_MarimekkoChart6.svg": {
+      "status": "success",
+      "output_file": "results_openai/221_MarimekkoChart6_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.320520"
+    },
+    "222_PieChart23.svg": {
+      "status": "success",
+      "output_file": "results_openai/222_PieChart23_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.320611"
+    },
+    "223_RadialBarChart5.svg": {
+      "status": "success",
+      "output_file": "results_openai/223_RadialBarChart5_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.320707"
+    },
+    "224_BarChart8.svg": {
+      "status": "success",
+      "output_file": "results_openai/224_BarChart8_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.320808"
+    },
+    "226_KagiChart11.svg": {
+      "status": "success",
+      "output_file": "results_openai/226_KagiChart11_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.320900"
+    },
+    "227_BubbleChart26.svg": {
+      "status": "success",
+      "output_file": "results_openai/227_BubbleChart26_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.321072"
+    },
+    "228_ParallelCoordinatesPlot7.svg": {
+      "status": "success",
+      "output_file": "results_openai/228_ParallelCoordinatesPlot7_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.321173"
+    },
+    "229_CirclePacking19.svg": {
+      "status": "success",
+      "output_file": "results_openai/229_CirclePacking19_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.321301"
+    },
+    "230_BumpChart12.svg": {
+      "status": "success",
+      "output_file": "results_openai/230_BumpChart12_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.321404"
+    },
+    "231_LineGraph10.svg": {
+      "status": "success",
+      "output_file": "results_openai/231_LineGraph10_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.321512"
+    },
+    "234_KagiChart4.svg": {
+      "status": "success",
+      "output_file": "results_openai/234_KagiChart4_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.321606"
+    },
+    "235_LineGraph38.svg": {
+      "status": "success",
+      "output_file": "results_openai/235_LineGraph38_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.321686"
+    },
+    "236_MarimekkoChart18.svg": {
+      "status": "success",
+      "output_file": "results_openai/236_MarimekkoChart18_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.321770"
+    },
+    "237_BoxAndWhisker14.svg": {
+      "status": "success",
+      "output_file": "results_openai/237_BoxAndWhisker14_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.321855"
+    },
+    "238_DonutChart22.svg": {
+      "status": "success",
+      "output_file": "results_openai/238_DonutChart22_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.321942"
+    },
+    "239_Heatmap12.svg": {
+      "status": "success",
+      "output_file": "results_openai/239_Heatmap12_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.322071"
+    },
+    "240_DotPlot9.svg": {
+      "status": "success",
+      "output_file": "results_openai/240_DotPlot9_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.322151"
+    },
+    "241_WaterfallChart14.svg": {
+      "status": "success",
+      "output_file": "results_openai/241_WaterfallChart14_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.322238"
+    },
+    "242_CandlestickChart16.svg": {
+      "status": "success",
+      "output_file": "results_openai/242_CandlestickChart16_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.322393"
+    },
+    "243_RadialBarChart14.svg": {
+      "status": "success",
+      "output_file": "results_openai/243_RadialBarChart14_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.322487"
+    },
+    "245_AreaChart26.svg": {
+      "status": "success",
+      "output_file": "results_openai/245_AreaChart26_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.322581"
+    },
+    "246_WaffleChart22.svg": {
+      "status": "success",
+      "output_file": "results_openai/246_WaffleChart22_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.322877"
+    },
+    "247_StackedAreaChart1.svg": {
+      "status": "success",
+      "output_file": "results_openai/247_StackedAreaChart1_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.322978"
+    },
+    "248_StackedAreaChart3.svg": {
+      "status": "success",
+      "output_file": "results_openai/248_StackedAreaChart3_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.323066"
+    },
+    "250_AreaChart18.svg": {
+      "status": "success",
+      "output_file": "results_openai/250_AreaChart18_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.323159"
+    },
+    "251_BubbleChart8.svg": {
+      "status": "success",
+      "output_file": "results_openai/251_BubbleChart8_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.323361"
+    },
+    "252_RadialBarChart16.svg": {
+      "status": "success",
+      "output_file": "results_openai/252_RadialBarChart16_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.323458"
+    },
+    "253_AreaChart24.svg": {
+      "status": "success",
+      "output_file": "results_openai/253_AreaChart24_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.323556"
+    },
+    "255_Calendar18.svg": {
+      "status": "success",
+      "output_file": "results_openai/255_Calendar18_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.323650"
+    },
+    "256_BarChartInRadialLayout18.svg": {
+      "status": "success",
+      "output_file": "results_openai/256_BarChartInRadialLayout18_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.323849"
+    },
+    "257_CandlestickChart14.svg": {
+      "status": "success",
+      "output_file": "results_openai/257_CandlestickChart14_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.324079"
+    },
+    "258_WaterfallChart16.svg": {
+      "status": "success",
+      "output_file": "results_openai/258_WaterfallChart16_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.324180"
+    },
+    "259_Heatmap10.svg": {
+      "status": "success",
+      "output_file": "results_openai/259_Heatmap10_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.324297"
+    },
+    "260_DonutChart20.svg": {
+      "status": "success",
+      "output_file": "results_openai/260_DonutChart20_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.324403"
+    },
+    "261_BoxAndWhisker16.svg": {
+      "status": "success",
+      "output_file": "results_openai/261_BoxAndWhisker16_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.324700"
+    },
+    "262_KagiChart6.svg": {
+      "status": "success",
+      "output_file": "results_openai/262_KagiChart6_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.324864"
+    },
+    "263_GroupedBarChart9.svg": {
+      "status": "success",
+      "output_file": "results_openai/263_GroupedBarChart9_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.324997"
+    },
+    "264_StreamGraph16.svg": {
+      "status": "success",
+      "output_file": "results_openai/264_StreamGraph16_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.325104"
+    },
+    "265_RangeChart19.svg": {
+      "status": "success",
+      "output_file": "results_openai/265_RangeChart19_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.325209"
+    },
+    "267_ConnectedDotPlot21.svg": {
+      "status": "success",
+      "output_file": "results_openai/267_ConnectedDotPlot21_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.325324"
+    },
+    "268_LineGraph12.svg": {
+      "status": "success",
+      "output_file": "results_openai/268_LineGraph12_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.325424"
+    },
+    "269_BumpChart10.svg": {
+      "status": "success",
+      "output_file": "results_openai/269_BumpChart10_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.325606"
+    },
+    "270_RadarChart8.svg": {
+      "status": "success",
+      "output_file": "results_openai/270_RadarChart8_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.325712"
+    },
+    "271_AreaChart8.svg": {
+      "status": "success",
+      "output_file": "results_openai/271_AreaChart8_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.325810"
+    },
+    "273_KagiChart13.svg": {
+      "status": "success",
+      "output_file": "results_openai/273_KagiChart13_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.325913"
+    },
+    "274_ConnectedDotPlot5.svg": {
+      "status": "success",
+      "output_file": "results_openai/274_ConnectedDotPlot5_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.326205"
+    },
+    "276_BubbleChart18.svg": {
+      "status": "success",
+      "output_file": "results_openai/276_BubbleChart18_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.326326"
+    },
+    "277_MarimekkoChart4.svg": {
+      "status": "success",
+      "output_file": "results_openai/277_MarimekkoChart4_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.326432"
+    },
+    "278_RadialBarChart7.svg": {
+      "status": "success",
+      "output_file": "results_openai/278_RadialBarChart7_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.326532"
+    },
+    "279_PieChart21.svg": {
+      "status": "success",
+      "output_file": "results_openai/279_PieChart21_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.326634"
+    },
+    "280_PolarAreaChart11.svg": {
+      "status": "success",
+      "output_file": "results_openai/280_PolarAreaChart11_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.326742"
+    },
+    "281_MatrixDiagram7.svg": {
+      "status": "success",
+      "output_file": "results_openai/281_MatrixDiagram7_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.326876"
+    },
+    "282_Treemap8.svg": {
+      "status": "success",
+      "output_file": "results_openai/282_Treemap8_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.326978"
+    },
+    "283_CandlestickChart2.svg": {
+      "status": "success",
+      "output_file": "results_openai/283_CandlestickChart2_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.327094"
+    },
+    "284_ViolinPlot12.svg": {
+      "status": "success",
+      "output_file": "results_openai/284_ViolinPlot12_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.327192"
+    },
+    "285_ConnectedScatterPlot8.svg": {
+      "status": "success",
+      "output_file": "results_openai/285_ConnectedScatterPlot8_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.327300"
+    },
+    "286_ConnectedScatterPlot9.svg": {
+      "status": "success",
+      "output_file": "results_openai/286_ConnectedScatterPlot9_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.327438"
+    },
+    "288_CandlestickChart3.svg": {
+      "status": "success",
+      "output_file": "results_openai/288_CandlestickChart3_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.327560"
+    },
+    "289_Treemap9.svg": {
+      "status": "success",
+      "output_file": "results_openai/289_Treemap9_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.327650"
+    },
+    "290_MatrixDiagram6.svg": {
+      "status": "success",
+      "output_file": "results_openai/290_MatrixDiagram6_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.327771"
+    },
+    "291_PolarAreaChart10.svg": {
+      "status": "success",
+      "output_file": "results_openai/291_PolarAreaChart10_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.327873"
+    },
+    "292_RadialBarChart6.svg": {
+      "status": "success",
+      "output_file": "results_openai/292_RadialBarChart6_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.327973"
+    },
+    "295_MarimekkoChart5.svg": {
+      "status": "success",
+      "output_file": "results_openai/295_MarimekkoChart5_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.328093"
+    },
+    "296_BubbleChart19.svg": {
+      "status": "success",
+      "output_file": "results_openai/296_BubbleChart19_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.328212"
+    },
+    "297_BubbleChart25.svg": {
+      "status": "success",
+      "output_file": "results_openai/297_BubbleChart25_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.328497"
+    },
+    "298_KagiChart12.svg": {
+      "status": "success",
+      "output_file": "results_openai/298_KagiChart12_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.328602"
+    },
+    "299_ConnectedDotPlot4.svg": {
+      "status": "success",
+      "output_file": "results_openai/299_ConnectedDotPlot4_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.328710"
+    },
+    "300_AreaChart9.svg": {
+      "status": "success",
+      "output_file": "results_openai/300_AreaChart9_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.328805"
+    },
+    "301_ParallelCoordinatesPlot4.svg": {
+      "status": "success",
+      "output_file": "results_openai/301_ParallelCoordinatesPlot4_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.329066"
+    },
+    "302_RadarChart9.svg": {
+      "status": "success",
+      "output_file": "results_openai/302_RadarChart9_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.329182"
+    },
+    "303_BumpChart11.svg": {
+      "status": "success",
+      "output_file": "results_openai/303_BumpChart11_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.329298"
+    },
+    "305_LineGraph13.svg": {
+      "status": "success",
+      "output_file": "results_openai/305_LineGraph13_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.329398"
+    },
+    "306_ConnectedDotPlot20.svg": {
+      "status": "success",
+      "output_file": "results_openai/306_ConnectedDotPlot20_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.329521"
+    },
+    "307_RangeChart18.svg": {
+      "status": "success",
+      "output_file": "results_openai/307_RangeChart18_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.329794"
+    },
+    "308_StreamGraph17.svg": {
+      "status": "success",
+      "output_file": "results_openai/308_StreamGraph17_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.329970"
+    },
+    "309_GroupedBarChart8.svg": {
+      "status": "success",
+      "output_file": "results_openai/309_GroupedBarChart8_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.330131"
+    },
+    "310_KagiChart7.svg": {
+      "status": "success",
+      "output_file": "results_openai/310_KagiChart7_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.330257"
+    },
+    "311_BoxAndWhisker17.svg": {
+      "status": "success",
+      "output_file": "results_openai/311_BoxAndWhisker17_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.330368"
+    },
+    "312_DonutChart21.svg": {
+      "status": "success",
+      "output_file": "results_openai/312_DonutChart21_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.330475"
+    },
+    "313_Heatmap11.svg": {
+      "status": "success",
+      "output_file": "results_openai/313_Heatmap11_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.330610"
+    },
+    "314_BarChartInRadialLayout19.svg": {
+      "status": "success",
+      "output_file": "results_openai/314_BarChartInRadialLayout19_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.330749"
+    },
+    "315_WaterfallChart17.svg": {
+      "status": "success",
+      "output_file": "results_openai/315_WaterfallChart17_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.330849"
+    },
+    "316_CandlestickChart15.svg": {
+      "status": "success",
+      "output_file": "results_openai/316_CandlestickChart15_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.330954"
+    },
+    "319_AreaChart25.svg": {
+      "status": "success",
+      "output_file": "results_openai/319_AreaChart25_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.331058"
+    },
+    "320_BubbleChart9.svg": {
+      "status": "success",
+      "output_file": "results_openai/320_BubbleChart9_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.331197"
+    },
+    "321_RadialBarChart17.svg": {
+      "status": "success",
+      "output_file": "results_openai/321_RadialBarChart17_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.331292"
+    },
+    "322_AreaChart19.svg": {
+      "status": "success",
+      "output_file": "results_openai/322_AreaChart19_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.331389"
+    },
+    "323_StackedAreaChart2.svg": {
+      "status": "success",
+      "output_file": "results_openai/323_StackedAreaChart2_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.331531"
+    },
+    "325_RadialBarChart13.svg": {
+      "status": "success",
+      "output_file": "results_openai/325_RadialBarChart13_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.331634"
+    },
+    "326_WaffleChart19.svg": {
+      "status": "success",
+      "output_file": "results_openai/326_WaffleChart19_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.331742"
+    },
+    "327_AreaChart21.svg": {
+      "status": "success",
+      "output_file": "results_openai/327_AreaChart21_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.331843"
+    },
+    "328_RangeChart8.svg": {
+      "status": "success",
+      "output_file": "results_openai/328_RangeChart8_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.331940"
+    },
+    "329_StackedAreaChart6.svg": {
+      "status": "success",
+      "output_file": "results_openai/329_StackedAreaChart6_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.332038"
+    },
+    "330_BarChartInRadialLayout8.svg": {
+      "status": "success",
+      "output_file": "results_openai/330_BarChartInRadialLayout8_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.332132"
+    },
+    "331_Heatmap15.svg": {
+      "status": "success",
+      "output_file": "results_openai/331_Heatmap15_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.332234"
+    },
+    "332_DonutChart19.svg": {
+      "status": "success",
+      "output_file": "results_openai/332_DonutChart19_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.332326"
+    },
+    "333_WaterfallChart13.svg": {
+      "status": "success",
+      "output_file": "results_openai/333_WaterfallChart13_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.332442"
+    },
+    "334_CandlestickChart11.svg": {
+      "status": "success",
+      "output_file": "results_openai/334_CandlestickChart11_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.332567"
+    },
+    "335_Calendar9.svg": {
+      "status": "success",
+      "output_file": "results_openai/335_Calendar9_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.332955"
+    },
+    "336_BoxAndWhisker13.svg": {
+      "status": "success",
+      "output_file": "results_openai/336_BoxAndWhisker13_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.333108"
+    },
+    "337_LineGraph17.svg": {
+      "status": "success",
+      "output_file": "results_openai/337_LineGraph17_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.333248"
+    },
+    "338_Heatmap6.svg": {
+      "status": "success",
+      "output_file": "results_openai/338_Heatmap6_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.333699"
+    },
+    "339_KagiChart3.svg": {
+      "status": "success",
+      "output_file": "results_openai/339_KagiChart3_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.333829"
+    },
+    "340_StreamGraph13.svg": {
+      "status": "success",
+      "output_file": "results_openai/340_StreamGraph13_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.333943"
+    },
+    "341_RangeChart20.svg": {
+      "status": "success",
+      "output_file": "results_openai/341_RangeChart20_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.334047"
+    },
+    "342_ConnectedDotPlot18.svg": {
+      "status": "success",
+      "output_file": "results_openai/342_ConnectedDotPlot18_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.334155"
+    },
+    "343_BumpChart15.svg": {
+      "status": "success",
+      "output_file": "results_openai/343_BumpChart15_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.334262"
+    },
+    "344_KagiChart16.svg": {
+      "status": "success",
+      "output_file": "results_openai/344_KagiChart16_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.334385"
+    },
+    "345_BubbleChart21.svg": {
+      "status": "success",
+      "output_file": "results_openai/345_BubbleChart21_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.334524"
+    },
+    "346_PieChart18.svg": {
+      "status": "success",
+      "output_file": "results_openai/346_PieChart18_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.334629"
+    },
+    "347_SpiralPlot18.svg": {
+      "status": "success",
+      "output_file": "results_openai/347_SpiralPlot18_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.334919"
+    },
+    "348_PolarAreaChart14.svg": {
+      "status": "success",
+      "output_file": "results_openai/348_PolarAreaChart14_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.335048"
+    },
+    "349_MatrixDiagram2.svg": {
+      "status": "success",
+      "output_file": "results_openai/349_MatrixDiagram2_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.335191"
+    },
+    "350_MarimekkoChart1.svg": {
+      "status": "success",
+      "output_file": "results_openai/350_MarimekkoChart1_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.335300"
+    },
+    "351_PieChart24.svg": {
+      "status": "success",
+      "output_file": "results_openai/351_PieChart24_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.335406"
+    },
+    "352_RadialBarChart2.svg": {
+      "status": "success",
+      "output_file": "results_openai/352_RadialBarChart2_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.335504"
+    },
+    "353_CandlestickChart7.svg": {
+      "status": "success",
+      "output_file": "results_openai/353_CandlestickChart7_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.335630"
+    },
+    "354_ViolinPlot17.svg": {
+      "status": "success",
+      "output_file": "results_openai/354_ViolinPlot17_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.335753"
+    },
+    "355_ViolinPlot16.svg": {
+      "status": "success",
+      "output_file": "results_openai/355_ViolinPlot16_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.335860"
+    },
+    "356_CandlestickChart6.svg": {
+      "status": "success",
+      "output_file": "results_openai/356_CandlestickChart6_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.335951"
+    },
+    "357_RadialBarChart3.svg": {
+      "status": "success",
+      "output_file": "results_openai/357_RadialBarChart3_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.336056"
+    },
+    "359_PieChart19.svg": {
+      "status": "success",
+      "output_file": "results_openai/359_PieChart19_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.336151"
+    },
+    "360_MatrixDiagram3.svg": {
+      "status": "success",
+      "output_file": "results_openai/360_MatrixDiagram3_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.336253"
+    },
+    "361_PolarAreaChart15.svg": {
+      "status": "success",
+      "output_file": "results_openai/361_PolarAreaChart15_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.336362"
+    },
+    "362_BubbleChart20.svg": {
+      "status": "success",
+      "output_file": "results_openai/362_BubbleChart20_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.336466"
+    },
+    "363_ConnectedDotPlot1.svg": {
+      "status": "success",
+      "output_file": "results_openai/363_ConnectedDotPlot1_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.336574"
+    },
+    "364_KagiChart17.svg": {
+      "status": "success",
+      "output_file": "results_openai/364_KagiChart17_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.336678"
+    },
+    "365_BumpChart14.svg": {
+      "status": "success",
+      "output_file": "results_openai/365_BumpChart14_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.336808"
+    },
+    "366_ParallelCoordinatesPlot1.svg": {
+      "status": "success",
+      "output_file": "results_openai/366_ParallelCoordinatesPlot1_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.337058"
+    },
+    "367_ConnectedDotPlot19.svg": {
+      "status": "success",
+      "output_file": "results_openai/367_ConnectedDotPlot19_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.337184"
+    },
+    "368_StreamGraph12.svg": {
+      "status": "success",
+      "output_file": "results_openai/368_StreamGraph12_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.337276"
+    },
+    "369_KagiChart2.svg": {
+      "status": "success",
+      "output_file": "results_openai/369_KagiChart2_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.337366"
+    },
+    "370_RangeChart21.svg": {
+      "status": "success",
+      "output_file": "results_openai/370_RangeChart21_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.337461"
+    },
+    "371_LineGraph16.svg": {
+      "status": "success",
+      "output_file": "results_openai/371_LineGraph16_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.337588"
+    },
+    "372_Heatmap7.svg": {
+      "status": "error",
+      "error": "Unterminated string starting at: line 2 column 11118 (char 11119)",
+      "processed_at": "2025-06-27T21:38:14.337649"
+    },
+    "373_BoxAndWhisker12.svg": {
+      "status": "success",
+      "output_file": "results_openai/373_BoxAndWhisker12_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.337793"
+    },
+    "375_CandlestickChart10.svg": {
+      "status": "success",
+      "output_file": "results_openai/375_CandlestickChart10_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.337926"
+    },
+    "376_WaterfallChart12.svg": {
+      "status": "success",
+      "output_file": "results_openai/376_WaterfallChart12_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.338059"
+    },
+    "377_DonutChart18.svg": {
+      "status": "success",
+      "output_file": "results_openai/377_DonutChart18_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.338175"
+    },
+    "378_BarChartInRadialLayout20.svg": {
+      "status": "success",
+      "output_file": "results_openai/378_BarChartInRadialLayout20_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.338419"
+    },
+    "380_Calendar20.svg": {
+      "status": "success",
+      "output_file": "results_openai/380_Calendar20_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.338662"
+    },
+    "381_BarChartInRadialLayout9.svg": {
+      "status": "success",
+      "output_file": "results_openai/381_BarChartInRadialLayout9_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.339053"
+    },
+    "382_RangeChart9.svg": {
+      "status": "success",
+      "output_file": "results_openai/382_RangeChart9_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.339153"
+    },
+    "383_StackedAreaChart7.svg": {
+      "status": "success",
+      "output_file": "results_openai/383_StackedAreaChart7_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.339260"
+    },
+    "385_AreaChart20.svg": {
+      "status": "success",
+      "output_file": "results_openai/385_AreaChart20_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.339359"
+    },
+    "386_RadialBarChart12.svg": {
+      "status": "success",
+      "output_file": "results_openai/386_RadialBarChart12_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.339447"
+    },
+    "387_WaffleChart18.svg": {
+      "status": "success",
+      "output_file": "results_openai/387_WaffleChart18_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.339603"
+    },
+    "388_AreaChart22.svg": {
+      "status": "success",
+      "output_file": "results_openai/388_AreaChart22_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.339708"
+    },
+    "389_GeoHeatmap3.svg": {
+      "status": "success",
+      "output_file": "results_openai/389_GeoHeatmap3_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.339801"
+    },
+    "390_PieChart9.svg": {
+      "status": "success",
+      "output_file": "results_openai/390_PieChart9_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.339883"
+    },
+    "391_RadialBarChart10.svg": {
+      "status": "success",
+      "output_file": "results_openai/391_RadialBarChart10_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.339968"
+    },
+    "392_StackedAreaChart5.svg": {
+      "status": "success",
+      "output_file": "results_openai/392_StackedAreaChart5_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.340054"
+    },
+    "393_WordCloud8.svg": {
+      "status": "success",
+      "output_file": "results_openai/393_WordCloud8_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.340140"
+    },
+    "395_Heatmap16.svg": {
+      "status": "success",
+      "output_file": "results_openai/395_Heatmap16_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.340272"
+    },
+    "396_WaterfallChart10.svg": {
+      "status": "success",
+      "output_file": "results_openai/396_WaterfallChart10_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.340375"
+    },
+    "397_CandlestickChart12.svg": {
+      "status": "success",
+      "output_file": "results_openai/397_CandlestickChart12_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.340468"
+    },
+    "398_BoxAndWhisker10.svg": {
+      "status": "success",
+      "output_file": "results_openai/398_BoxAndWhisker10_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.340591"
+    },
+    "399_Heatmap5.svg": {
+      "status": "error",
+      "error": "Unterminated string starting at: line 2 column 11118 (char 11119)",
+      "processed_at": "2025-06-27T21:38:14.340642"
+    },
+    "400_MarimekkoChart20.svg": {
+      "status": "success",
+      "output_file": "results_openai/400_MarimekkoChart20_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.340796"
+    },
+    "401_LineGraph14.svg": {
+      "status": "success",
+      "output_file": "results_openai/401_LineGraph14_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.340887"
+    },
+    "403_LineGraph28.svg": {
+      "status": "success",
+      "output_file": "results_openai/403_LineGraph28_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.340983"
+    },
+    "405_ParallelCoordinatesPlot3.svg": {
+      "status": "success",
+      "output_file": "results_openai/405_ParallelCoordinatesPlot3_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.341097"
+    },
+    "406_CirclePacking21.svg": {
+      "status": "success",
+      "output_file": "results_openai/406_CirclePacking21_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.341214"
+    },
+    "407_BumpChart16.svg": {
+      "status": "success",
+      "output_file": "results_openai/407_BumpChart16_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.341335"
+    },
+    "408_BubbleChart22.svg": {
+      "status": "success",
+      "output_file": "results_openai/408_BubbleChart22_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.341661"
+    },
+    "409_KagiChart15.svg": {
+      "status": "success",
+      "output_file": "results_openai/409_KagiChart15_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.341766"
+    },
+    "410_ConnectedDotPlot3.svg": {
+      "status": "success",
+      "output_file": "results_openai/410_ConnectedDotPlot3_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.341893"
+    },
+    "411_PolarAreaChart17.svg": {
+      "status": "success",
+      "output_file": "results_openai/411_PolarAreaChart17_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.341988"
+    },
+    "413_RadialBarChart1.svg": {
+      "status": "success",
+      "output_file": "results_openai/413_RadialBarChart1_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.342085"
+    },
+    "414_MarimekkoChart2.svg": {
+      "status": "success",
+      "output_file": "results_openai/414_MarimekkoChart2_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.342182"
+    },
+    "415_CandlestickChart4.svg": {
+      "status": "success",
+      "output_file": "results_openai/415_CandlestickChart4_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.342278"
+    },
+    "416_ViolinPlot14.svg": {
+      "status": "success",
+      "output_file": "results_openai/416_ViolinPlot14_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.342375"
+    },
+    "417_CirclePacking9.svg": {
+      "status": "success",
+      "output_file": "results_openai/417_CirclePacking9_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.342463"
+    },
+    "418_CirclePacking8.svg": {
+      "status": "success",
+      "output_file": "results_openai/418_CirclePacking8_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.342594"
+    },
+    "419_ViolinPlot15.svg": {
+      "status": "success",
+      "output_file": "results_openai/419_ViolinPlot15_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.342690"
+    },
+    "420_CandlestickChart5.svg": {
+      "status": "success",
+      "output_file": "results_openai/420_CandlestickChart5_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.342781"
+    },
+    "421_MarimekkoChart3.svg": {
+      "status": "success",
+      "output_file": "results_openai/421_MarimekkoChart3_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.342882"
+    },
+    "422_PolarAreaChart16.svg": {
+      "status": "success",
+      "output_file": "results_openai/422_PolarAreaChart16_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.342983"
+    },
+    "423_KagiChart14.svg": {
+      "status": "success",
+      "output_file": "results_openai/423_KagiChart14_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.343089"
+    },
+    "424_ConnectedDotPlot2.svg": {
+      "status": "success",
+      "output_file": "results_openai/424_ConnectedDotPlot2_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.343180"
+    },
+    "425_BubbleChart23.svg": {
+      "status": "success",
+      "output_file": "results_openai/425_BubbleChart23_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.343428"
+    },
+    "426_BumpChart17.svg": {
+      "status": "success",
+      "output_file": "results_openai/426_BumpChart17_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.343616"
+    },
+    "427_CirclePacking20.svg": {
+      "status": "success",
+      "output_file": "results_openai/427_CirclePacking20_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.343821"
+    },
+    "428_ParallelCoordinatesPlot2.svg": {
+      "status": "success",
+      "output_file": "results_openai/428_ParallelCoordinatesPlot2_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.343930"
+    },
+    "429_StreamGraph11.svg": {
+      "status": "success",
+      "output_file": "results_openai/429_StreamGraph11_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.344043"
+    },
+    "430_KagiChart1.svg": {
+      "status": "success",
+      "output_file": "results_openai/430_KagiChart1_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.344148"
+    },
+    "431_LineGraph29.svg": {
+      "status": "success",
+      "output_file": "results_openai/431_LineGraph29_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.344278"
+    },
+    "432_Scatterplot9.svg": {
+      "status": "success",
+      "output_file": "results_openai/432_Scatterplot9_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.344390"
+    },
+    "433_Heatmap4.svg": {
+      "status": "success",
+      "output_file": "results_openai/433_Heatmap4_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.344912"
+    },
+    "434_LineGraph15.svg": {
+      "status": "success",
+      "output_file": "results_openai/434_LineGraph15_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.345080"
+    },
+    "435_MarimekkoChart21.svg": {
+      "status": "success",
+      "output_file": "results_openai/435_MarimekkoChart21_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.345254"
+    },
+    "436_BoxAndWhisker11.svg": {
+      "status": "success",
+      "output_file": "results_openai/436_BoxAndWhisker11_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.345377"
+    },
+    "437_CandlestickChart13.svg": {
+      "status": "success",
+      "output_file": "results_openai/437_CandlestickChart13_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.345476"
+    },
+    "438_WaterfallChart11.svg": {
+      "status": "success",
+      "output_file": "results_openai/438_WaterfallChart11_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.345573"
+    },
+    "440_Heatmap17.svg": {
+      "status": "success",
+      "output_file": "results_openai/440_Heatmap17_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.345704"
+    },
+    "441_WordCloud9.svg": {
+      "status": "success",
+      "output_file": "results_openai/441_WordCloud9_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.345793"
+    },
+    "442_StackedAreaChart4.svg": {
+      "status": "success",
+      "output_file": "results_openai/442_StackedAreaChart4_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.345901"
+    },
+    "443_PieChart8.svg": {
+      "status": "success",
+      "output_file": "results_openai/443_PieChart8_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.345992"
+    },
+    "444_RadialBarChart11.svg": {
+      "status": "success",
+      "output_file": "results_openai/444_RadialBarChart11_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.346086"
+    },
+    "449_WaffleChart16.svg": {
+      "status": "success",
+      "output_file": "results_openai/449_WaffleChart16_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.346193"
+    },
+    "450_StackedAreaChart9.svg": {
+      "status": "success",
+      "output_file": "results_openai/450_StackedAreaChart9_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.346299"
+    },
+    "451_RadialBarChart20.svg": {
+      "status": "success",
+      "output_file": "results_openai/451_RadialBarChart20_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.346389"
+    },
+    "452_RangeChart7.svg": {
+      "status": "success",
+      "output_file": "results_openai/452_RangeChart7_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.346482"
+    },
+    "453_BarChartInRadialLayout7.svg": {
+      "status": "success",
+      "output_file": "results_openai/453_BarChartInRadialLayout7_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.346683"
+    },
+    "454_AreaChart12.svg": {
+      "status": "success",
+      "output_file": "results_openai/454_AreaChart12_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.346821"
+    },
+    "455_StreamGraph5.svg": {
+      "status": "success",
+      "output_file": "results_openai/455_StreamGraph5_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.346915"
+    },
+    "456_WordCloud4.svg": {
+      "status": "success",
+      "output_file": "results_openai/456_WordCloud4_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.347042"
+    },
+    "457_WaterfallChart20.svg": {
+      "status": "success",
+      "output_file": "results_openai/457_WaterfallChart20_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.347142"
+    },
+    "458_DotPlot1.svg": {
+      "status": "success",
+      "output_file": "results_openai/458_DotPlot1_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.347230"
+    },
+    "459_Calendar12.svg": {
+      "status": "success",
+      "output_file": "results_openai/459_Calendar12_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.347330"
+    },
+    "460_DonutChart16.svg": {
+      "status": "success",
+      "output_file": "results_openai/460_DonutChart16_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.347409"
+    },
+    "461_BarChartInRadialLayout12.svg": {
+      "status": "success",
+      "output_file": "results_openai/461_BarChartInRadialLayout12_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.347532"
+    },
+    "464_RangeChart13.svg": {
+      "status": "success",
+      "output_file": "results_openai/464_RangeChart13_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.347622"
+    },
+    "465_Scatterplot4.svg": {
+      "status": "success",
+      "output_file": "results_openai/465_Scatterplot4_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.347710"
+    },
+    "466_StreamGraph20.svg": {
+      "status": "success",
+      "output_file": "results_openai/466_StreamGraph20_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.347803"
+    },
+    "467_Heatmap9.svg": {
+      "status": "success",
+      "output_file": "results_openai/467_Heatmap9_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.347925"
+    },
+    "468_LineGraph18.svg": {
+      "status": "success",
+      "output_file": "results_openai/468_LineGraph18_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.348025"
+    },
+    "469_LineGraph30.svg": {
+      "status": "success",
+      "output_file": "results_openai/469_LineGraph30_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.348112"
+    },
+    "470_GroupedBarChart3.svg": {
+      "status": "success",
+      "output_file": "results_openai/470_GroupedBarChart3_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.348230"
+    },
+    "472_ConnectedDotPlot17.svg": {
+      "status": "success",
+      "output_file": "results_openai/472_ConnectedDotPlot17_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.348354"
+    },
+    "474_AreaChart2.svg": {
+      "status": "success",
+      "output_file": "results_openai/474_AreaChart2_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.348449"
+    },
+    "475_RadarChart2.svg": {
+      "status": "success",
+      "output_file": "results_openai/475_RadarChart2_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.348544"
+    },
+    "476_CirclePacking11.svg": {
+      "status": "success",
+      "output_file": "results_openai/476_CirclePacking11_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.348647"
+    },
+    "477_BubbleChart12.svg": {
+      "status": "success",
+      "output_file": "results_openai/477_BubbleChart12_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.348778"
+    },
+    "478_KagiChart19.svg": {
+      "status": "success",
+      "output_file": "results_openai/478_KagiChart19_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.348873"
+    },
+    "479_Treemap2.svg": {
+      "status": "success",
+      "output_file": "results_openai/479_Treemap2_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.348957"
+    },
+    "480_SpiralPlot17.svg": {
+      "status": "success",
+      "output_file": "results_openai/480_SpiralPlot17_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.349485"
+    },
+    "481_PieChart17.svg": {
+      "status": "success",
+      "output_file": "results_openai/481_PieChart17_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.349835"
+    },
+    "482_CirclePacking5.svg": {
+      "status": "success",
+      "output_file": "results_openai/482_CirclePacking5_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.350011"
+    },
+    "483_CandlestickChart8.svg": {
+      "status": "success",
+      "output_file": "results_openai/483_CandlestickChart8_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.350187"
+    },
+    "484_ViolinPlot18.svg": {
+      "status": "success",
+      "output_file": "results_openai/484_ViolinPlot18_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.350310"
+    },
+    "485_ConnectedScatterPlot2.svg": {
+      "status": "success",
+      "output_file": "results_openai/485_ConnectedScatterPlot2_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.350419"
+    },
+    "486_ConnectedScatterPlot3.svg": {
+      "status": "success",
+      "output_file": "results_openai/486_ConnectedScatterPlot3_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.350537"
+    },
+    "487_ViolinPlot19.svg": {
+      "status": "success",
+      "output_file": "results_openai/487_ViolinPlot19_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.350641"
+    },
+    "488_CandlestickChart9.svg": {
+      "status": "success",
+      "output_file": "results_openai/488_CandlestickChart9_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.350728"
+    },
+    "489_CirclePacking4.svg": {
+      "status": "success",
+      "output_file": "results_openai/489_CirclePacking4_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.350819"
+    },
+    "490_BarChart1.svg": {
+      "status": "success",
+      "output_file": "results_openai/490_BarChart1_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.350907"
+    },
+    "491_Treemap3.svg": {
+      "status": "success",
+      "output_file": "results_openai/491_Treemap3_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.350995"
+    },
+    "492_PieChart16.svg": {
+      "status": "success",
+      "output_file": "results_openai/492_PieChart16_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.351079"
+    },
+    "493_SpiralPlot16.svg": {
+      "status": "success",
+      "output_file": "results_openai/493_SpiralPlot16_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.351608"
+    },
+    "494_KagiChart18.svg": {
+      "status": "success",
+      "output_file": "results_openai/494_KagiChart18_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.351761"
+    },
+    "495_BubbleChart13.svg": {
+      "status": "success",
+      "output_file": "results_openai/495_BubbleChart13_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.351880"
+    },
+    "496_RadarChart3.svg": {
+      "status": "success",
+      "output_file": "results_openai/496_RadarChart3_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.352006"
+    },
+    "497_CirclePacking10.svg": {
+      "status": "success",
+      "output_file": "results_openai/497_CirclePacking10_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.352107"
+    },
+    "498_AreaChart3.svg": {
+      "status": "success",
+      "output_file": "results_openai/498_AreaChart3_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.352205"
+    },
+    "499_LineGraph25.svg": {
+      "status": "success",
+      "output_file": "results_openai/499_LineGraph25_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.352323"
+    },
+    "500_ConnectedDotPlot16.svg": {
+      "status": "success",
+      "output_file": "results_openai/500_ConnectedDotPlot16_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.352426"
+    },
+    "501_MarimekkoChart11.svg": {
+      "status": "success",
+      "output_file": "results_openai/501_MarimekkoChart11_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.352533"
+    },
+    "502_LineGraph31.svg": {
+      "status": "success",
+      "output_file": "results_openai/502_LineGraph31_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.352640"
+    },
+    "503_GroupedBarChart2.svg": {
+      "status": "success",
+      "output_file": "results_openai/503_GroupedBarChart2_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.352752"
+    },
+    "504_Heatmap8.svg": {
+      "status": "success",
+      "output_file": "results_openai/504_Heatmap8_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.352871"
+    },
+    "505_LineGraph19.svg": {
+      "status": "success",
+      "output_file": "results_openai/505_LineGraph19_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.353043"
+    },
+    "506_RangeChart12.svg": {
+      "status": "success",
+      "output_file": "results_openai/506_RangeChart12_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.353143"
+    },
+    "507_StreamGraph21.svg": {
+      "status": "success",
+      "output_file": "results_openai/507_StreamGraph21_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.353259"
+    },
+    "510_BoxAndWhisker21.svg": {
+      "status": "success",
+      "output_file": "results_openai/510_BoxAndWhisker21_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.353362"
+    },
+    "512_DonutChart17.svg": {
+      "status": "success",
+      "output_file": "results_openai/512_DonutChart17_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.353468"
+    },
+    "513_Calendar13.svg": {
+      "status": "success",
+      "output_file": "results_openai/513_Calendar13_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.353566"
+    },
+    "514_WaterfallChart21.svg": {
+      "status": "success",
+      "output_file": "results_openai/514_WaterfallChart21_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.353661"
+    },
+    "515_WordCloud5.svg": {
+      "status": "success",
+      "output_file": "results_openai/515_WordCloud5_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.353773"
+    },
+    "516_StreamGraph4.svg": {
+      "status": "success",
+      "output_file": "results_openai/516_StreamGraph4_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.353860"
+    },
+    "517_BarChartInRadialLayout6.svg": {
+      "status": "success",
+      "output_file": "results_openai/517_BarChartInRadialLayout6_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.353990"
+    },
+    "518_AreaChart13.svg": {
+      "status": "success",
+      "output_file": "results_openai/518_AreaChart13_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.354120"
+    },
+    "519_StackedAreaChart8.svg": {
+      "status": "success",
+      "output_file": "results_openai/519_StackedAreaChart8_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.354231"
+    },
+    "520_RangeChart6.svg": {
+      "status": "success",
+      "output_file": "results_openai/520_RangeChart6_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.354353"
+    },
+    "521_WaffleChart17.svg": {
+      "status": "success",
+      "output_file": "results_openai/521_WaffleChart17_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.354498"
+    },
+    "522_BubbleChart3.svg": {
+      "status": "success",
+      "output_file": "results_openai/522_BubbleChart3_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.354613"
+    },
+    "523_PieChart4.svg": {
+      "status": "success",
+      "output_file": "results_openai/523_PieChart4_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.354732"
+    },
+    "524_PieChart6.svg": {
+      "status": "success",
+      "output_file": "results_openai/524_PieChart6_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.354870"
+    },
+    "526_WaffleChart15.svg": {
+      "status": "success",
+      "output_file": "results_openai/526_WaffleChart15_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.355135"
+    },
+    "527_AreaChart11.svg": {
+      "status": "success",
+      "output_file": "results_openai/527_AreaChart11_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.355238"
+    },
+    "530_WordCloud7.svg": {
+      "status": "success",
+      "output_file": "results_openai/530_WordCloud7_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.355397"
+    },
+    "531_CandlestickChart21.svg": {
+      "status": "success",
+      "output_file": "results_openai/531_CandlestickChart21_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.355550"
+    },
+    "532_Heatmap19.svg": {
+      "status": "success",
+      "output_file": "results_openai/532_Heatmap19_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.355939"
+    },
+    "533_StreamGraph6.svg": {
+      "status": "success",
+      "output_file": "results_openai/533_StreamGraph6_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.356094"
+    },
+    "534_BarChartInRadialLayout11.svg": {
+      "status": "success",
+      "output_file": "results_openai/534_BarChartInRadialLayout11_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.356457"
+    },
+    "535_DotPlot2.svg": {
+      "status": "success",
+      "output_file": "results_openai/535_DotPlot2_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.356589"
+    },
+    "536_Calendar11.svg": {
+      "status": "error",
+      "error": "Unterminated string starting at: line 2 column 11118 (char 11119)",
+      "processed_at": "2025-06-27T21:38:14.356647"
+    },
+    "537_Heatmap25.svg": {
+      "status": "success",
+      "output_file": "results_openai/537_Heatmap25_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.356781"
+    },
+    "540_BoxAndWhisker23.svg": {
+      "status": "success",
+      "output_file": "results_openai/540_BoxAndWhisker23_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.356926"
+    },
+    "541_Scatterplot7.svg": {
+      "status": "success",
+      "output_file": "results_openai/541_Scatterplot7_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.357071"
+    },
+    "542_RangeChart10.svg": {
+      "status": "success",
+      "output_file": "results_openai/542_RangeChart10_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.357183"
+    },
+    "543_MarimekkoChart13.svg": {
+      "status": "success",
+      "output_file": "results_openai/543_MarimekkoChart13_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.357295"
+    },
+    "544_ConnectedDotPlot14.svg": {
+      "status": "success",
+      "output_file": "results_openai/544_ConnectedDotPlot14_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.357398"
+    },
+    "545_LineGraph27.svg": {
+      "status": "success",
+      "output_file": "results_openai/545_LineGraph27_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.357497"
+    },
+    "546_LineGraph33.svg": {
+      "status": "success",
+      "output_file": "results_openai/546_LineGraph33_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.357595"
+    },
+    "547_AreaChart1.svg": {
+      "status": "success",
+      "output_file": "results_openai/547_AreaChart1_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.357689"
+    },
+    "548_CirclePacking12.svg": {
+      "status": "success",
+      "output_file": "results_openai/548_CirclePacking12_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.357804"
+    },
+    "549_RadarChart1.svg": {
+      "status": "success",
+      "output_file": "results_openai/549_RadarChart1_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.357912"
+    },
+    "550_BumpChart19.svg": {
+      "status": "success",
+      "output_file": "results_openai/550_BumpChart19_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.358017"
+    },
+    "551_BubbleChart11.svg": {
+      "status": "success",
+      "output_file": "results_openai/551_BubbleChart11_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.358105"
+    },
+    "552_SpiralPlot14.svg": {
+      "status": "success",
+      "output_file": "results_openai/552_SpiralPlot14_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.358189"
+    },
+    "553_PieChart14.svg": {
+      "status": "success",
+      "output_file": "results_openai/553_PieChart14_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.358267"
+    },
+    "554_Treemap1.svg": {
+      "status": "success",
+      "output_file": "results_openai/554_Treemap1_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.358395"
+    },
+    "555_PolarAreaChart18.svg": {
+      "status": "success",
+      "output_file": "results_openai/555_PolarAreaChart18_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.358504"
+    },
+    "556_PolarAreaChart24.svg": {
+      "status": "success",
+      "output_file": "results_openai/556_PolarAreaChart24_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.358595"
+    },
+    "557_BarChart3.svg": {
+      "status": "success",
+      "output_file": "results_openai/557_BarChart3_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.358679"
+    },
+    "558_ConnectedScatterPlot1.svg": {
+      "status": "success",
+      "output_file": "results_openai/558_ConnectedScatterPlot1_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.358809"
+    },
+    "559_CirclePacking6.svg": {
+      "status": "success",
+      "output_file": "results_openai/559_CirclePacking6_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.358916"
+    },
+    "560_CirclePacking7.svg": {
+      "status": "success",
+      "output_file": "results_openai/560_CirclePacking7_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.359052"
+    },
+    "561_BarChart2.svg": {
+      "status": "success",
+      "output_file": "results_openai/561_BarChart2_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.359143"
+    },
+    "562_PolarAreaChart25.svg": {
+      "status": "success",
+      "output_file": "results_openai/562_PolarAreaChart25_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.359239"
+    },
+    "563_PieChart15.svg": {
+      "status": "success",
+      "output_file": "results_openai/563_PieChart15_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.359323"
+    },
+    "564_SpiralPlot15.svg": {
+      "status": "success",
+      "output_file": "results_openai/564_SpiralPlot15_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.359437"
+    },
+    "565_PolarAreaChart19.svg": {
+      "status": "success",
+      "output_file": "results_openai/565_PolarAreaChart19_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.359525"
+    },
+    "566_BubbleChart10.svg": {
+      "status": "success",
+      "output_file": "results_openai/566_BubbleChart10_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.359848"
+    },
+    "567_CirclePacking13.svg": {
+      "status": "success",
+      "output_file": "results_openai/567_CirclePacking13_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.359943"
+    },
+    "569_GroupedBarChart1.svg": {
+      "status": "success",
+      "output_file": "results_openai/569_GroupedBarChart1_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.360037"
+    },
+    "570_LineGraph32.svg": {
+      "status": "success",
+      "output_file": "results_openai/570_LineGraph32_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.360130"
+    },
+    "571_LineGraph26.svg": {
+      "status": "success",
+      "output_file": "results_openai/571_LineGraph26_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.360224"
+    },
+    "572_ConnectedDotPlot15.svg": {
+      "status": "success",
+      "output_file": "results_openai/572_ConnectedDotPlot15_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.360324"
+    },
+    "573_MarimekkoChart12.svg": {
+      "status": "success",
+      "output_file": "results_openai/573_MarimekkoChart12_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.360418"
+    },
+    "574_Scatterplot6.svg": {
+      "status": "success",
+      "output_file": "results_openai/574_Scatterplot6_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.360553"
+    },
+    "575_RangeChart11.svg": {
+      "status": "success",
+      "output_file": "results_openai/575_RangeChart11_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.360659"
+    },
+    "576_BoxAndWhisker22.svg": {
+      "status": "success",
+      "output_file": "results_openai/576_BoxAndWhisker22_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.360752"
+    },
+    "577_Calendar4.svg": {
+      "status": "error",
+      "error": "Unterminated string starting at: line 2 column 11118 (char 11119)",
+      "processed_at": "2025-06-27T21:38:14.360799"
+    },
+    "578_DonutChart14.svg": {
+      "status": "success",
+      "output_file": "results_openai/578_DonutChart14_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.360900"
+    },
+    "579_Heatmap24.svg": {
+      "status": "success",
+      "output_file": "results_openai/579_Heatmap24_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.361141"
+    },
+    "580_Calendar10.svg": {
+      "status": "success",
+      "output_file": "results_openai/580_Calendar10_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.361242"
+    },
+    "581_DotPlot3.svg": {
+      "status": "success",
+      "output_file": "results_openai/581_DotPlot3_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.361340"
+    },
+    "582_BarChartInRadialLayout10.svg": {
+      "status": "success",
+      "output_file": "results_openai/582_BarChartInRadialLayout10_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.361436"
+    },
+    "583_Heatmap18.svg": {
+      "status": "success",
+      "output_file": "results_openai/583_Heatmap18_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.361546"
+    },
+    "584_StreamGraph7.svg": {
+      "status": "success",
+      "output_file": "results_openai/584_StreamGraph7_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.361635"
+    },
+    "585_CandlestickChart20.svg": {
+      "status": "success",
+      "output_file": "results_openai/585_CandlestickChart20_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.361783"
+    },
+    "586_WordCloud6.svg": {
+      "status": "success",
+      "output_file": "results_openai/586_WordCloud6_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.361896"
+    },
+    "587_RangeChart5.svg": {
+      "status": "success",
+      "output_file": "results_openai/587_RangeChart5_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.361996"
+    },
+    "588_AreaChart10.svg": {
+      "status": "success",
+      "output_file": "results_openai/588_AreaChart10_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.362085"
+    },
+    "589_BarChartInRadialLayout5.svg": {
+      "status": "success",
+      "output_file": "results_openai/589_BarChartInRadialLayout5_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.362193"
+    },
+    "591_PieChart7.svg": {
+      "status": "success",
+      "output_file": "results_openai/591_PieChart7_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.362282"
+    },
+    "593_AreaChart14.svg": {
+      "status": "success",
+      "output_file": "results_openai/593_AreaChart14_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.362373"
+    },
+    "594_RangeChart1.svg": {
+      "status": "success",
+      "output_file": "results_openai/594_RangeChart1_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.362605"
+    },
+    "596_AreaChart28.svg": {
+      "status": "success",
+      "output_file": "results_openai/596_AreaChart28_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.362695"
+    },
+    "597_PieChart3.svg": {
+      "status": "success",
+      "output_file": "results_openai/597_PieChart3_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.362782"
+    },
+    "598_WaffleChart10.svg": {
+      "status": "success",
+      "output_file": "results_openai/598_WaffleChart10_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.362875"
+    },
+    "599_BubbleChart4.svg": {
+      "status": "success",
+      "output_file": "results_openai/599_BubbleChart4_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.362963"
+    },
+    "600_BarChartInRadialLayout14.svg": {
+      "status": "success",
+      "output_file": "results_openai/600_BarChartInRadialLayout14_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.363254"
+    },
+    "601_CandlestickChart18.svg": {
+      "status": "success",
+      "output_file": "results_openai/601_CandlestickChart18_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.363348"
+    },
+    "602_Calendar14.svg": {
+      "status": "success",
+      "output_file": "results_openai/602_Calendar14_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.363576"
+    },
+    "603_Heatmap20.svg": {
+      "status": "success",
+      "output_file": "results_openai/603_Heatmap20_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.363699"
+    },
+    "604_DotPlot7.svg": {
+      "status": "success",
+      "output_file": "results_openai/604_DotPlot7_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.364272"
+    },
+    "605_DonutChart10.svg": {
+      "status": "success",
+      "output_file": "results_openai/605_DonutChart10_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.364416"
+    },
+    "606_WordCloud2.svg": {
+      "status": "success",
+      "output_file": "results_openai/606_WordCloud2_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.364517"
+    },
+    "607_StreamGraph3.svg": {
+      "status": "success",
+      "output_file": "results_openai/607_StreamGraph3_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.364620"
+    },
+    "608_MarimekkoChart16.svg": {
+      "status": "success",
+      "output_file": "results_openai/608_MarimekkoChart16_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.364721"
+    },
+    "609_ConnectedDotPlot11.svg": {
+      "status": "success",
+      "output_file": "results_openai/609_ConnectedDotPlot11_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.364818"
+    },
+    "610_LineGraph22.svg": {
+      "status": "success",
+      "output_file": "results_openai/610_LineGraph22_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.364911"
+    },
+    "611_LineGraph36.svg": {
+      "status": "success",
+      "output_file": "results_openai/611_LineGraph36_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.365050"
+    },
+    "612_GroupedBarChart5.svg": {
+      "status": "success",
+      "output_file": "results_openai/612_GroupedBarChart5_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.365141"
+    },
+    "613_RangeChart15.svg": {
+      "status": "success",
+      "output_file": "results_openai/613_RangeChart15_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.365229"
+    },
+    "614_Scatterplot2.svg": {
+      "status": "success",
+      "output_file": "results_openai/614_Scatterplot2_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.365337"
+    },
+    "615_RadarChart4.svg": {
+      "status": "success",
+      "output_file": "results_openai/615_RadarChart4_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.365433"
+    },
+    "616_CirclePacking17.svg": {
+      "status": "success",
+      "output_file": "results_openai/616_CirclePacking17_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.365522"
+    },
+    "617_AreaChart4.svg": {
+      "status": "success",
+      "output_file": "results_openai/617_AreaChart4_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.365613"
+    },
+    "619_BumpChart20.svg": {
+      "status": "success",
+      "output_file": "results_openai/619_BumpChart20_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.365719"
+    },
+    "620_ConnectedDotPlot9.svg": {
+      "status": "success",
+      "output_file": "results_openai/620_ConnectedDotPlot9_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.365817"
+    },
+    "621_BubbleChart14.svg": {
+      "status": "success",
+      "output_file": "results_openai/621_BubbleChart14_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.365919"
+    },
+    "622_PolarAreaChart21.svg": {
+      "status": "success",
+      "output_file": "results_openai/622_PolarAreaChart21_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.366017"
+    },
+    "623_BarChart6.svg": {
+      "status": "success",
+      "output_file": "results_openai/623_BarChart6_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.366102"
+    },
+    "624_MarimekkoChart8.svg": {
+      "status": "success",
+      "output_file": "results_openai/624_MarimekkoChart8_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.366193"
+    },
+    "625_Treemap4.svg": {
+      "status": "success",
+      "output_file": "results_openai/625_Treemap4_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.366273"
+    },
+    "627_PieChart11.svg": {
+      "status": "success",
+      "output_file": "results_openai/627_PieChart11_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.366355"
+    },
+    "628_ConnectedScatterPlot4.svg": {
+      "status": "success",
+      "output_file": "results_openai/628_ConnectedScatterPlot4_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.366452"
+    },
+    "629_CirclePacking3.svg": {
+      "status": "success",
+      "output_file": "results_openai/629_CirclePacking3_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.366547"
+    },
+    "630_CirclePacking2.svg": {
+      "status": "success",
+      "output_file": "results_openai/630_CirclePacking2_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.366643"
+    },
+    "631_ConnectedScatterPlot5.svg": {
+      "status": "success",
+      "output_file": "results_openai/631_ConnectedScatterPlot5_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.366753"
+    },
+    "632_Treemap5.svg": {
+      "status": "success",
+      "output_file": "results_openai/632_Treemap5_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.366854"
+    },
+    "633_PieChart10.svg": {
+      "status": "success",
+      "output_file": "results_openai/633_PieChart10_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.366954"
+    },
+    "635_MarimekkoChart9.svg": {
+      "status": "success",
+      "output_file": "results_openai/635_MarimekkoChart9_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.367065"
+    },
+    "636_BarChart7.svg": {
+      "status": "success",
+      "output_file": "results_openai/636_BarChart7_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.367173"
+    },
+    "637_PolarAreaChart20.svg": {
+      "status": "success",
+      "output_file": "results_openai/637_PolarAreaChart20_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.367345"
+    },
+    "638_BubbleChart15.svg": {
+      "status": "success",
+      "output_file": "results_openai/638_BubbleChart15_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.367459"
+    },
+    "639_ConnectedDotPlot8.svg": {
+      "status": "success",
+      "output_file": "results_openai/639_ConnectedDotPlot8_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.367595"
+    },
+    "640_BumpChart21.svg": {
+      "status": "success",
+      "output_file": "results_openai/640_BumpChart21_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.367698"
+    },
+    "641_AreaChart5.svg": {
+      "status": "success",
+      "output_file": "results_openai/641_AreaChart5_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.367808"
+    },
+    "642_ParallelCoordinatesPlot8.svg": {
+      "status": "success",
+      "output_file": "results_openai/642_ParallelCoordinatesPlot8_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.367929"
+    },
+    "643_RadarChart5.svg": {
+      "status": "success",
+      "output_file": "results_openai/643_RadarChart5_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.368044"
+    },
+    "644_CirclePacking16.svg": {
+      "status": "success",
+      "output_file": "results_openai/644_CirclePacking16_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.368142"
+    },
+    "645_RangeChart14.svg": {
+      "status": "success",
+      "output_file": "results_openai/645_RangeChart14_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.368266"
+    },
+    "647_LineGraph37.svg": {
+      "status": "success",
+      "output_file": "results_openai/647_LineGraph37_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.368379"
+    },
+    "648_GroupedBarChart4.svg": {
+      "status": "success",
+      "output_file": "results_openai/648_GroupedBarChart4_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.368528"
+    },
+    "649_LineGraph23.svg": {
+      "status": "success",
+      "output_file": "results_openai/649_LineGraph23_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.368625"
+    },
+    "651_MarimekkoChart17.svg": {
+      "status": "success",
+      "output_file": "results_openai/651_MarimekkoChart17_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.368751"
+    },
+    "654_WordCloud3.svg": {
+      "status": "success",
+      "output_file": "results_openai/654_WordCloud3_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.368840"
+    },
+    "655_DonutChart11.svg": {
+      "status": "success",
+      "output_file": "results_openai/655_DonutChart11_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.368947"
+    },
+    "656_DotPlot6.svg": {
+      "status": "success",
+      "output_file": "results_openai/656_DotPlot6_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.369050"
+    },
+    "657_Heatmap21.svg": {
+      "status": "success",
+      "output_file": "results_openai/657_Heatmap21_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.369363"
+    },
+    "658_Calendar15.svg": {
+      "status": "success",
+      "output_file": "results_openai/658_Calendar15_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.369490"
+    },
+    "659_BarChartInRadialLayout15.svg": {
+      "status": "success",
+      "output_file": "results_openai/659_BarChartInRadialLayout15_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.369600"
+    },
+    "660_CandlestickChart19.svg": {
+      "status": "success",
+      "output_file": "results_openai/660_CandlestickChart19_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.369707"
+    },
+    "661_BubbleChart5.svg": {
+      "status": "success",
+      "output_file": "results_openai/661_BubbleChart5_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.369825"
+    },
+    "662_WaffleChart11.svg": {
+      "status": "success",
+      "output_file": "results_openai/662_WaffleChart11_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.369926"
+    },
+    "663_PieChart2.svg": {
+      "status": "success",
+      "output_file": "results_openai/663_PieChart2_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.370027"
+    },
+    "665_AreaChart15.svg": {
+      "status": "success",
+      "output_file": "results_openai/665_AreaChart15_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.370170"
+    },
+    "666_RangeChart2.svg": {
+      "status": "success",
+      "output_file": "results_openai/666_RangeChart2_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.370263"
+    },
+    "667_AreaChart17.svg": {
+      "status": "success",
+      "output_file": "results_openai/667_AreaChart17_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.370351"
+    },
+    "668_BarChartInRadialLayout2.svg": {
+      "status": "success",
+      "output_file": "results_openai/668_BarChartInRadialLayout2_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.370613"
+    },
+    "669_RadialBarChart19.svg": {
+      "status": "success",
+      "output_file": "results_openai/669_RadialBarChart19_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.370711"
+    },
+    "671_BubbleChart7.svg": {
+      "status": "success",
+      "output_file": "results_openai/671_BubbleChart7_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.370821"
+    },
+    "672_Heatmap23.svg": {
+      "status": "success",
+      "output_file": "results_openai/672_Heatmap23_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.371243"
+    },
+    "673_Calendar17.svg": {
+      "status": "success",
+      "output_file": "results_openai/673_Calendar17_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.371360"
+    },
+    "674_DotPlot4.svg": {
+      "status": "success",
+      "output_file": "results_openai/674_DotPlot4_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.371450"
+    },
+    "675_DonutChart13.svg": {
+      "status": "success",
+      "output_file": "results_openai/675_DonutChart13_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.371546"
+    },
+    "676_WaterfallChart19.svg": {
+      "status": "success",
+      "output_file": "results_openai/676_WaterfallChart19_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.371648"
+    },
+    "677_BarChartInRadialLayout17.svg": {
+      "status": "success",
+      "output_file": "results_openai/677_BarChartInRadialLayout17_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.371768"
+    },
+    "678_WordCloud1.svg": {
+      "status": "success",
+      "output_file": "results_openai/678_WordCloud1_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.371853"
+    },
+    "680_BoxAndWhisker25.svg": {
+      "status": "success",
+      "output_file": "results_openai/680_BoxAndWhisker25_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.371954"
+    },
+    "681_Calendar3.svg": {
+      "status": "error",
+      "error": "Unterminated string starting at: line 2 column 11123 (char 11124)",
+      "processed_at": "2025-06-27T21:38:14.372001"
+    },
+    "682_GroupedBarChart6.svg": {
+      "status": "success",
+      "output_file": "results_openai/682_GroupedBarChart6_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.372108"
+    },
+    "683_StreamGraph19.svg": {
+      "status": "success",
+      "output_file": "results_openai/683_StreamGraph19_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.372205"
+    },
+    "684_KagiChart9.svg": {
+      "status": "success",
+      "output_file": "results_openai/684_KagiChart9_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.372309"
+    },
+    "685_LineGraph35.svg": {
+      "status": "success",
+      "output_file": "results_openai/685_LineGraph35_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.372408"
+    },
+    "686_MarimekkoChart15.svg": {
+      "status": "success",
+      "output_file": "results_openai/686_MarimekkoChart15_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.372499"
+    },
+    "687_ConnectedDotPlot12.svg": {
+      "status": "success",
+      "output_file": "results_openai/687_ConnectedDotPlot12_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.372598"
+    },
+    "689_Scatterplot1.svg": {
+      "status": "success",
+      "output_file": "results_openai/689_Scatterplot1_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.372698"
+    },
+    "690_RangeChart16.svg": {
+      "status": "success",
+      "output_file": "results_openai/690_RangeChart16_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.372795"
+    },
+    "691_CirclePacking14.svg": {
+      "status": "success",
+      "output_file": "results_openai/691_CirclePacking14_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.373011"
+    },
+    "692_RadarChart7.svg": {
+      "status": "success",
+      "output_file": "results_openai/692_RadarChart7_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.373135"
+    },
+    "694_KagiChart20.svg": {
+      "status": "success",
+      "output_file": "results_openai/694_KagiChart20_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.373227"
+    },
+    "695_BubbleChart17.svg": {
+      "status": "success",
+      "output_file": "results_openai/695_BubbleChart17_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.373337"
+    },
+    "696_PolarAreaChart22.svg": {
+      "status": "success",
+      "output_file": "results_openai/696_PolarAreaChart22_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.373427"
+    },
+    "697_BarChart5.svg": {
+      "status": "success",
+      "output_file": "results_openai/697_BarChart5_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.373541"
+    },
+    "698_RadialBarChart8.svg": {
+      "status": "success",
+      "output_file": "results_openai/698_RadialBarChart8_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.373635"
+    },
+    "700_PieChart12.svg": {
+      "status": "success",
+      "output_file": "results_openai/700_PieChart12_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.373737"
+    },
+    "701_Treemap7.svg": {
+      "status": "success",
+      "output_file": "results_openai/701_Treemap7_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.374009"
+    },
+    "702_MatrixDiagram8.svg": {
+      "status": "success",
+      "output_file": "results_openai/702_MatrixDiagram8_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.374149"
+    },
+    "704_ViolinPlot21.svg": {
+      "status": "success",
+      "output_file": "results_openai/704_ViolinPlot21_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.374248"
+    },
+    "705_ViolinPlot20.svg": {
+      "status": "success",
+      "output_file": "results_openai/705_ViolinPlot20_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.374340"
+    },
+    "706_ConnectedScatterPlot6.svg": {
+      "status": "success",
+      "output_file": "results_openai/706_ConnectedScatterPlot6_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.374440"
+    },
+    "707_CirclePacking1.svg": {
+      "status": "success",
+      "output_file": "results_openai/707_CirclePacking1_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.374558"
+    },
+    "708_PieChart13.svg": {
+      "status": "success",
+      "output_file": "results_openai/708_PieChart13_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.374642"
+    },
+    "710_MatrixDiagram9.svg": {
+      "status": "success",
+      "output_file": "results_openai/710_MatrixDiagram9_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.374733"
+    },
+    "711_Treemap6.svg": {
+      "status": "success",
+      "output_file": "results_openai/711_Treemap6_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.374837"
+    },
+    "712_RadialBarChart9.svg": {
+      "status": "success",
+      "output_file": "results_openai/712_RadialBarChart9_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.374931"
+    },
+    "713_BarChart4.svg": {
+      "status": "success",
+      "output_file": "results_openai/713_BarChart4_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.375032"
+    },
+    "715_BubbleChart16.svg": {
+      "status": "success",
+      "output_file": "results_openai/715_BubbleChart16_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.375133"
+    },
+    "716_AreaChart6.svg": {
+      "status": "success",
+      "output_file": "results_openai/716_AreaChart6_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.375220"
+    },
+    "717_CirclePacking15.svg": {
+      "status": "success",
+      "output_file": "results_openai/717_CirclePacking15_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.375326"
+    },
+    "718_RadarChart6.svg": {
+      "status": "success",
+      "output_file": "results_openai/718_RadarChart6_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.375410"
+    },
+    "719_RangeChart17.svg": {
+      "status": "success",
+      "output_file": "results_openai/719_RangeChart17_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.375499"
+    },
+    "720_LineGraph20.svg": {
+      "status": "success",
+      "output_file": "results_openai/720_LineGraph20_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.375641"
+    },
+    "721_ConnectedDotPlot13.svg": {
+      "status": "success",
+      "output_file": "results_openai/721_ConnectedDotPlot13_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.375736"
+    },
+    "722_MarimekkoChart14.svg": {
+      "status": "success",
+      "output_file": "results_openai/722_MarimekkoChart14_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.375834"
+    },
+    "723_KagiChart8.svg": {
+      "status": "success",
+      "output_file": "results_openai/723_KagiChart8_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.375930"
+    },
+    "724_StreamGraph18.svg": {
+      "status": "success",
+      "output_file": "results_openai/724_StreamGraph18_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.376016"
+    },
+    "725_GroupedBarChart7.svg": {
+      "status": "success",
+      "output_file": "results_openai/725_GroupedBarChart7_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.376107"
+    },
+    "726_LineGraph34.svg": {
+      "status": "success",
+      "output_file": "results_openai/726_LineGraph34_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.376205"
+    },
+    "727_Calendar2.svg": {
+      "status": "success",
+      "output_file": "results_openai/727_Calendar2_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.376335"
+    },
+    "728_BoxAndWhisker24.svg": {
+      "status": "success",
+      "output_file": "results_openai/728_BoxAndWhisker24_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.376427"
+    },
+    "729_BoxAndWhisker18.svg": {
+      "status": "success",
+      "output_file": "results_openai/729_BoxAndWhisker18_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.376523"
+    },
+    "731_WaterfallChart18.svg": {
+      "status": "success",
+      "output_file": "results_openai/731_WaterfallChart18_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.376616"
+    },
+    "732_BarChartInRadialLayout16.svg": {
+      "status": "success",
+      "output_file": "results_openai/732_BarChartInRadialLayout16_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.376736"
+    },
+    "733_DonutChart12.svg": {
+      "status": "success",
+      "output_file": "results_openai/733_DonutChart12_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.376829"
+    },
+    "734_DotPlot5.svg": {
+      "status": "success",
+      "output_file": "results_openai/734_DotPlot5_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.376935"
+    },
+    "735_Calendar16.svg": {
+      "status": "success",
+      "output_file": "results_openai/735_Calendar16_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.377034"
+    },
+    "736_Heatmap22.svg": {
+      "status": "success",
+      "output_file": "results_openai/736_Heatmap22_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.377146"
+    },
+    "737_RadialBarChart18.svg": {
+      "status": "success",
+      "output_file": "results_openai/737_RadialBarChart18_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.377236"
+    },
+    "740_PieChart1.svg": {
+      "status": "success",
+      "output_file": "results_openai/740_PieChart1_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.377323"
+    },
+    "741_AreaChart16.svg": {
+      "status": "success",
+      "output_file": "results_openai/741_AreaChart16_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.377411"
+    },
+    "742_BarChartInRadialLayout3.svg": {
+      "status": "success",
+      "output_file": "results_openai/742_BarChartInRadialLayout3_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.377524"
+    },
+    "743_RangeChart3.svg": {
+      "status": "success",
+      "output_file": "results_openai/743_RangeChart3_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.377611"
+    },
+    "745_Treemap15.svg": {
+      "status": "success",
+      "output_file": "results_openai/745_Treemap15_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.377709"
+    },
+    "746_BoxAndWhisker7.svg": {
+      "status": "success",
+      "output_file": "results_openai/746_BoxAndWhisker7_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.377806"
+    },
+    "747_MatrixDiagram11.svg": {
+      "status": "success",
+      "output_file": "results_openai/747_MatrixDiagram11_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.378317"
+    },
+    "748_DotPlot14.svg": {
+      "status": "success",
+      "output_file": "results_openai/748_DotPlot14_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.378567"
+    },
+    "749_StackedBarChart21.svg": {
+      "status": "success",
+      "output_file": "results_openai/749_StackedBarChart21_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.378713"
+    },
+    "750_GroupedBarChart22.svg": {
+      "status": "success",
+      "output_file": "results_openai/750_GroupedBarChart22_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.378826"
+    },
+    "751_ViolinPlot8.svg": {
+      "status": "success",
+      "output_file": "results_openai/751_ViolinPlot8_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.378920"
+    },
+    "752__bespoke20.svg": {
+      "status": "success",
+      "output_file": "results_openai/752__bespoke20_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.379024"
+    },
+    "753_StackedBarChart5.svg": {
+      "status": "success",
+      "output_file": "results_openai/753_StackedBarChart5_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.379141"
+    },
+    "755_Scatterplot21.svg": {
+      "status": "success",
+      "output_file": "results_openai/755_Scatterplot21_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.379237"
+    },
+    "757_WordCloud10.svg": {
+      "status": "success",
+      "output_file": "results_openai/757_WordCloud10_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.379328"
+    },
+    "758_ParallelCoordinatesPlot17.svg": {
+      "status": "success",
+      "output_file": "results_openai/758_ParallelCoordinatesPlot17_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.379450"
+    },
+    "759_StackedAreaChart18.svg": {
+      "status": "success",
+      "output_file": "results_openai/759_StackedAreaChart18_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.379542"
+    },
+    "760_GanttChart9.svg": {
+      "status": "success",
+      "output_file": "results_openai/760_GanttChart9_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.379633"
+    },
+    "761_BarChart16.svg": {
+      "status": "success",
+      "output_file": "results_openai/761_BarChart16_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.379730"
+    },
+    "762_SpiralPlot3.svg": {
+      "status": "success",
+      "output_file": "results_openai/762_SpiralPlot3_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.380076"
+    },
+    "763_DensityPlot6.svg": {
+      "status": "success",
+      "output_file": "results_openai/763_DensityPlot6_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.380172"
+    },
+    "764_GanttChart23.svg": {
+      "status": "success",
+      "output_file": "results_openai/764_GanttChart23_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.380268"
+    },
+    "765_RadarChart22.svg": {
+      "status": "success",
+      "output_file": "results_openai/765_RadarChart22_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.380360"
+    },
+    "766_DensityPlot17.svg": {
+      "status": "success",
+      "output_file": "results_openai/766_DensityPlot17_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.380452"
+    },
+    "767_BulletChart6.svg": {
+      "status": "success",
+      "output_file": "results_openai/767_BulletChart6_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.380546"
+    },
+    "768_LineGraph1.svg": {
+      "status": "success",
+      "output_file": "results_openai/768_LineGraph1_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.380664"
+    },
+    "769_BulletChart7.svg": {
+      "status": "success",
+      "output_file": "results_openai/769_BulletChart7_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.380761"
+    },
+    "770_GanttChart22.svg": {
+      "status": "success",
+      "output_file": "results_openai/770_GanttChart22_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.380858"
+    },
+    "771_DensityPlot16.svg": {
+      "status": "success",
+      "output_file": "results_openai/771_DensityPlot16_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.380957"
+    },
+    "772_RadarChart23.svg": {
+      "status": "success",
+      "output_file": "results_openai/772_RadarChart23_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.381192"
+    },
+    "773_DensityPlot7.svg": {
+      "status": "success",
+      "output_file": "results_openai/773_DensityPlot7_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.381318"
+    },
+    "774_BarChart17.svg": {
+      "status": "success",
+      "output_file": "results_openai/774_BarChart17_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.381424"
+    },
+    "775_GanttChart8.svg": {
+      "status": "success",
+      "output_file": "results_openai/775_GanttChart8_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.381531"
+    },
+    "777_StackedAreaChart19.svg": {
+      "status": "success",
+      "output_file": "results_openai/777_StackedAreaChart19_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.381631"
+    },
+    "778_ParallelCoordinatesPlot16.svg": {
+      "status": "success",
+      "output_file": "results_openai/778_ParallelCoordinatesPlot16_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.381739"
+    },
+    "779_WordCloud11.svg": {
+      "status": "success",
+      "output_file": "results_openai/779_WordCloud11_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.381847"
+    },
+    "780_DivergingStackedBarChart13.svg": {
+      "status": "success",
+      "output_file": "results_openai/780_DivergingStackedBarChart13_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.381953"
+    },
+    "781_Scatterplot20.svg": {
+      "status": "success",
+      "output_file": "results_openai/781_Scatterplot20_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.382057"
+    },
+    "783_StackedBarChart4.svg": {
+      "status": "success",
+      "output_file": "results_openai/783_StackedBarChart4_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.382175"
+    },
+    "784__bespoke21.svg": {
+      "status": "success",
+      "output_file": "results_openai/784__bespoke21_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.382289"
+    },
+    "785_ViolinPlot9.svg": {
+      "status": "success",
+      "output_file": "results_openai/785_ViolinPlot9_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.382391"
+    },
+    "786_GroupedBarChart23.svg": {
+      "status": "success",
+      "output_file": "results_openai/786_GroupedBarChart23_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.382492"
+    },
+    "787_StackedBarChart20.svg": {
+      "status": "success",
+      "output_file": "results_openai/787_StackedBarChart20_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.382625"
+    },
+    "788_DotPlot15.svg": {
+      "status": "success",
+      "output_file": "results_openai/788_DotPlot15_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.382933"
+    },
+    "790_BoxAndWhisker6.svg": {
+      "status": "success",
+      "output_file": "results_openai/790_BoxAndWhisker6_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.383030"
+    },
+    "791_Treemap14.svg": {
+      "status": "success",
+      "output_file": "results_openai/791_Treemap14_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.383113"
+    },
+    "792_WaffleChart7.svg": {
+      "status": "success",
+      "output_file": "results_openai/792_WaffleChart7_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.383213"
+    },
+    "793_WaffleChart5.svg": {
+      "status": "success",
+      "output_file": "results_openai/793_WaffleChart5_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.383294"
+    },
+    "794_BoxAndWhisker4.svg": {
+      "status": "success",
+      "output_file": "results_openai/794_BoxAndWhisker4_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.383379"
+    },
+    "795_MatrixDiagram12.svg": {
+      "status": "success",
+      "output_file": "results_openai/795_MatrixDiagram12_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.383701"
+    },
+    "796_Treemap16.svg": {
+      "status": "success",
+      "output_file": "results_openai/796_Treemap16_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.383792"
+    },
+    "797_StackedBarChart22.svg": {
+      "status": "success",
+      "output_file": "results_openai/797_StackedBarChart22_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.383888"
+    },
+    "798_BulletChart18.svg": {
+      "status": "success",
+      "output_file": "results_openai/798_BulletChart18_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.384063"
+    },
+    "799_DotPlot17.svg": {
+      "status": "success",
+      "output_file": "results_openai/799_DotPlot17_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.384169"
+    },
+    "800_GroupedBarChart21.svg": {
+      "status": "success",
+      "output_file": "results_openai/800_GroupedBarChart21_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.384271"
+    },
+    "801__bespoke23.svg": {
+      "status": "success",
+      "output_file": "results_openai/801__bespoke23_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.384384"
+    },
+    "802_StackedBarChart6.svg": {
+      "status": "success",
+      "output_file": "results_openai/802_StackedBarChart6_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.384503"
+    },
+    "803__bespoke8.svg": {
+      "status": "success",
+      "output_file": "results_openai/803__bespoke8_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.384612"
+    },
+    "804_Scatterplot22.svg": {
+      "status": "success",
+      "output_file": "results_openai/804_Scatterplot22_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.384843"
+    },
+    "805_DivergingStackedBarChart11.svg": {
+      "status": "success",
+      "output_file": "results_openai/805_DivergingStackedBarChart11_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.384945"
+    },
+    "806_ParallelCoordinatesPlot14.svg": {
+      "status": "success",
+      "output_file": "results_openai/806_ParallelCoordinatesPlot14_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.385064"
+    },
+    "807_WordCloud13.svg": {
+      "status": "success",
+      "output_file": "results_openai/807_WordCloud13_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.385169"
+    },
+    "808_BarChart15.svg": {
+      "status": "success",
+      "output_file": "results_openai/808_BarChart15_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.385268"
+    },
+    "809_ConnectedScatterPlot18.svg": {
+      "status": "success",
+      "output_file": "results_openai/809_ConnectedScatterPlot18_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.385491"
+    },
+    "810_DensityPlot5.svg": {
+      "status": "success",
+      "output_file": "results_openai/810_DensityPlot5_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.385587"
+    },
+    "811_BulletChart5.svg": {
+      "status": "success",
+      "output_file": "results_openai/811_BulletChart5_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.385681"
+    },
+    "812_RadarChart21.svg": {
+      "status": "success",
+      "output_file": "results_openai/812_RadarChart21_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.385781"
+    },
+    "813_DensityPlot14.svg": {
+      "status": "success",
+      "output_file": "results_openai/813_DensityPlot14_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.385873"
+    },
+    "814_GanttChart20.svg": {
+      "status": "success",
+      "output_file": "results_openai/814_GanttChart20_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.385967"
+    },
+    "815_LineGraph3.svg": {
+      "status": "success",
+      "output_file": "results_openai/815_LineGraph3_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.386071"
+    },
+    "816_LineGraph2.svg": {
+      "status": "success",
+      "output_file": "results_openai/816_LineGraph2_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.386271"
+    },
+    "817_DensityPlot15.svg": {
+      "status": "success",
+      "output_file": "results_openai/817_DensityPlot15_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.386668"
+    },
+    "818_RadarChart20.svg": {
+      "status": "success",
+      "output_file": "results_openai/818_RadarChart20_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.387221"
+    },
+    "819_GanttChart21.svg": {
+      "status": "success",
+      "output_file": "results_openai/819_GanttChart21_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.387472"
+    },
+    "820_BulletChart4.svg": {
+      "status": "success",
+      "output_file": "results_openai/820_BulletChart4_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.387573"
+    },
+    "821_DensityPlot4.svg": {
+      "status": "success",
+      "output_file": "results_openai/821_DensityPlot4_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.387674"
+    },
+    "822_ConnectedScatterPlot19.svg": {
+      "status": "success",
+      "output_file": "results_openai/822_ConnectedScatterPlot19_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.388148"
+    },
+    "823_SpiralPlot1.svg": {
+      "status": "success",
+      "output_file": "results_openai/823_SpiralPlot1_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.388280"
+    },
+    "824_BarChart14.svg": {
+      "status": "success",
+      "output_file": "results_openai/824_BarChart14_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.388388"
+    },
+    "825_WordCloud12.svg": {
+      "status": "success",
+      "output_file": "results_openai/825_WordCloud12_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.388491"
+    },
+    "826_ParallelCoordinatesPlot15.svg": {
+      "status": "success",
+      "output_file": "results_openai/826_ParallelCoordinatesPlot15_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.388598"
+    },
+    "827_DivergingStackedBarChart10.svg": {
+      "status": "success",
+      "output_file": "results_openai/827_DivergingStackedBarChart10_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.388861"
+    },
+    "828_Scatterplot23.svg": {
+      "status": "success",
+      "output_file": "results_openai/828_Scatterplot23_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.389208"
+    },
+    "829__bespoke9.svg": {
+      "status": "success",
+      "output_file": "results_openai/829__bespoke9_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.389379"
+    },
+    "830_StackedBarChart7.svg": {
+      "status": "success",
+      "output_file": "results_openai/830_StackedBarChart7_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.389505"
+    },
+    "831__bespoke22.svg": {
+      "status": "success",
+      "output_file": "results_openai/831__bespoke22_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.389637"
+    },
+    "832_GroupedBarChart20.svg": {
+      "status": "success",
+      "output_file": "results_openai/832_GroupedBarChart20_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.389757"
+    },
+    "833_DotPlot16.svg": {
+      "status": "success",
+      "output_file": "results_openai/833_DotPlot16_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.389877"
+    },
+    "834_BulletChart19.svg": {
+      "status": "success",
+      "output_file": "results_openai/834_BulletChart19_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.390060"
+    },
+    "835_StackedBarChart23.svg": {
+      "status": "success",
+      "output_file": "results_openai/835_StackedBarChart23_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.390297"
+    },
+    "836_Treemap17.svg": {
+      "status": "success",
+      "output_file": "results_openai/836_Treemap17_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.390419"
+    },
+    "837_MatrixDiagram13.svg": {
+      "status": "success",
+      "output_file": "results_openai/837_MatrixDiagram13_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.390549"
+    },
+    "838_BoxAndWhisker5.svg": {
+      "status": "success",
+      "output_file": "results_openai/838_BoxAndWhisker5_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.390648"
+    },
+    "839_WaffleChart4.svg": {
+      "status": "success",
+      "output_file": "results_openai/839_WaffleChart4_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.390764"
+    },
+    "840_BoxAndWhisker1.svg": {
+      "status": "success",
+      "output_file": "results_openai/840_BoxAndWhisker1_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.390936"
+    },
+    "841_MatrixDiagram17.svg": {
+      "status": "success",
+      "output_file": "results_openai/841_MatrixDiagram17_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.391141"
+    },
+    "842_Treemap13.svg": {
+      "status": "success",
+      "output_file": "results_openai/842_Treemap13_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.391267"
+    },
+    "843_BulletChart21.svg": {
+      "status": "success",
+      "output_file": "results_openai/843_BulletChart21_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.391388"
+    },
+    "844_GroupedBarChart24.svg": {
+      "status": "success",
+      "output_file": "results_openai/844_GroupedBarChart24_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.391532"
+    },
+    "845_DotPlot12.svg": {
+      "status": "success",
+      "output_file": "results_openai/845_DotPlot12_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.391703"
+    },
+    "846_GroupedBarChart18.svg": {
+      "status": "success",
+      "output_file": "results_openai/846_GroupedBarChart18_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.391836"
+    },
+    "847__bespoke26.svg": {
+      "status": "success",
+      "output_file": "results_openai/847__bespoke26_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.391938"
+    },
+    "848_StackedBarChart3.svg": {
+      "status": "success",
+      "output_file": "results_openai/848_StackedBarChart3_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.392047"
+    },
+    "849_WaterfallChart8.svg": {
+      "status": "success",
+      "output_file": "results_openai/849_WaterfallChart8_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.392141"
+    },
+    "850_BumpChart8.svg": {
+      "status": "success",
+      "output_file": "results_openai/850_BumpChart8_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.392241"
+    },
+    "851_DivergingStackedBarChart14.svg": {
+      "status": "success",
+      "output_file": "results_openai/851_DivergingStackedBarChart14_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.392385"
+    },
+    "852_ParallelCoordinatesPlot11.svg": {
+      "status": "success",
+      "output_file": "results_openai/852_ParallelCoordinatesPlot11_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.392569"
+    },
+    "854_StackedAreaChart22.svg": {
+      "status": "success",
+      "output_file": "results_openai/854_StackedAreaChart22_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.392703"
+    },
+    "856_BarChart10.svg": {
+      "status": "success",
+      "output_file": "results_openai/856_BarChart10_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.392814"
+    },
+    "857_PolarAreaChart9.svg": {
+      "status": "success",
+      "output_file": "results_openai/857_PolarAreaChart9_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.392926"
+    },
+    "859_ConnectedScatterPlot21.svg": {
+      "status": "success",
+      "output_file": "results_openai/859_ConnectedScatterPlot21_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.393046"
+    },
+    "860_RadarChart24.svg": {
+      "status": "success",
+      "output_file": "results_openai/860_RadarChart24_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.393148"
+    },
+    "861_DensityPlot11.svg": {
+      "status": "success",
+      "output_file": "results_openai/861_DensityPlot11_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.393259"
+    },
+    "862_GanttChart19.svg": {
+      "status": "success",
+      "output_file": "results_openai/862_GanttChart19_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.393358"
+    },
+    "863_RadarChart18.svg": {
+      "status": "success",
+      "output_file": "results_openai/863_RadarChart18_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.393478"
+    },
+    "864_DonutChart9.svg": {
+      "status": "success",
+      "output_file": "results_openai/864_DonutChart9_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.393580"
+    },
+    "865_LineGraph6.svg": {
+      "status": "success",
+      "output_file": "results_openai/865_LineGraph6_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.393686"
+    },
+    "866_LineGraph7.svg": {
+      "status": "success",
+      "output_file": "results_openai/866_LineGraph7_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.393790"
+    },
+    "867_DonutChart8.svg": {
+      "status": "success",
+      "output_file": "results_openai/867_DonutChart8_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.393881"
+    },
+    "868_GanttChart18.svg": {
+      "status": "success",
+      "output_file": "results_openai/868_GanttChart18_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.393991"
+    },
+    "869_RadarChart19.svg": {
+      "status": "success",
+      "output_file": "results_openai/869_RadarChart19_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.394128"
+    },
+    "870_DensityPlot1.svg": {
+      "status": "success",
+      "output_file": "results_openai/870_DensityPlot1_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.394232"
+    },
+    "871_DensityPlot10.svg": {
+      "status": "success",
+      "output_file": "results_openai/871_DensityPlot10_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.394389"
+    },
+    "872_BulletChart1.svg": {
+      "status": "success",
+      "output_file": "results_openai/872_BulletChart1_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.394496"
+    },
+    "873_ConnectedScatterPlot20.svg": {
+      "status": "success",
+      "output_file": "results_openai/873_ConnectedScatterPlot20_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.394603"
+    },
+    "874_BarChart11.svg": {
+      "status": "success",
+      "output_file": "results_openai/874_BarChart11_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.394707"
+    },
+    "875_SpiralPlot4.svg": {
+      "status": "success",
+      "output_file": "results_openai/875_SpiralPlot4_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.394837"
+    },
+    "876_PolarAreaChart8.svg": {
+      "status": "success",
+      "output_file": "results_openai/876_PolarAreaChart8_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.394941"
+    },
+    "877_DivergingStackedBarChart9.svg": {
+      "status": "success",
+      "output_file": "results_openai/877_DivergingStackedBarChart9_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.395042"
+    },
+    "878_StackedAreaChart23.svg": {
+      "status": "success",
+      "output_file": "results_openai/878_StackedAreaChart23_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.395141"
+    },
+    "880_ParallelCoordinatesPlot10.svg": {
+      "status": "success",
+      "output_file": "results_openai/880_ParallelCoordinatesPlot10_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.395373"
+    },
+    "881_DivergingStackedBarChart15.svg": {
+      "status": "success",
+      "output_file": "results_openai/881_DivergingStackedBarChart15_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.395599"
+    },
+    "882_Scatterplot26.svg": {
+      "status": "success",
+      "output_file": "results_openai/882_Scatterplot26_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.395701"
+    },
+    "883_LineGraph40.svg": {
+      "status": "success",
+      "output_file": "results_openai/883_LineGraph40_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.395869"
+    },
+    "884_BumpChart9.svg": {
+      "status": "success",
+      "output_file": "results_openai/884_BumpChart9_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.395979"
+    },
+    "885_WaterfallChart9.svg": {
+      "status": "success",
+      "output_file": "results_openai/885_WaterfallChart9_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.396071"
+    },
+    "886_StackedBarChart2.svg": {
+      "status": "success",
+      "output_file": "results_openai/886_StackedBarChart2_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.396367"
+    },
+    "887__bespoke27.svg": {
+      "status": "success",
+      "output_file": "results_openai/887__bespoke27_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.396603"
+    },
+    "888_DotPlot13.svg": {
+      "status": "success",
+      "output_file": "results_openai/888_DotPlot13_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.396696"
+    },
+    "889_GroupedBarChart19.svg": {
+      "status": "success",
+      "output_file": "results_openai/889_GroupedBarChart19_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.396799"
+    },
+    "890_GroupedBarChart25.svg": {
+      "status": "success",
+      "output_file": "results_openai/890_GroupedBarChart25_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.396910"
+    },
+    "892_WaffleChart1.svg": {
+      "status": "success",
+      "output_file": "results_openai/892_WaffleChart1_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.397020"
+    },
+    "894_MatrixDiagram16.svg": {
+      "status": "success",
+      "output_file": "results_openai/894_MatrixDiagram16_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.397133"
+    },
+    "895_Treemap10.svg": {
+      "status": "success",
+      "output_file": "results_openai/895_Treemap10_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.397221"
+    },
+    "896_BoxAndWhisker2.svg": {
+      "status": "success",
+      "output_file": "results_openai/896_BoxAndWhisker2_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.397314"
+    },
+    "897_MatrixDiagram14.svg": {
+      "status": "success",
+      "output_file": "results_openai/897_MatrixDiagram14_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.397677"
+    },
+    "898_WaffleChart3.svg": {
+      "status": "success",
+      "output_file": "results_openai/898_WaffleChart3_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.397796"
+    },
+    "899_GroupedBarChart27.svg": {
+      "status": "success",
+      "output_file": "results_openai/899_GroupedBarChart27_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.397919"
+    },
+    "900_StackedBarChart18.svg": {
+      "status": "success",
+      "output_file": "results_openai/900_StackedBarChart18_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.398020"
+    },
+    "901_DotPlot11.svg": {
+      "status": "success",
+      "output_file": "results_openai/901_DotPlot11_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.398117"
+    },
+    "902_StackedBarChart24.svg": {
+      "status": "success",
+      "output_file": "results_openai/902_StackedBarChart24_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.398238"
+    },
+    "903__bespoke25.svg": {
+      "status": "success",
+      "output_file": "results_openai/903__bespoke25_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.398339"
+    },
+    "904__bespoke19.svg": {
+      "status": "success",
+      "output_file": "results_openai/904__bespoke19_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.398441"
+    },
+    "905_Scatterplot30.svg": {
+      "status": "success",
+      "output_file": "results_openai/905_Scatterplot30_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.398682"
+    },
+    "907_Scatterplot24.svg": {
+      "status": "success",
+      "output_file": "results_openai/907_Scatterplot24_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.398801"
+    },
+    "908_Scatterplot18.svg": {
+      "status": "success",
+      "output_file": "results_openai/908_Scatterplot18_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.398903"
+    },
+    "909_StackedAreaChart21.svg": {
+      "status": "success",
+      "output_file": "results_openai/909_StackedAreaChart21_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.399004"
+    },
+    "910_DivergingStackedBarChart17.svg": {
+      "status": "success",
+      "output_file": "results_openai/910_DivergingStackedBarChart17_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.399131"
+    },
+    "911_WordCloud15.svg": {
+      "status": "success",
+      "output_file": "results_openai/911_WordCloud15_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.399223"
+    },
+    "912_ParallelCoordinatesPlot12.svg": {
+      "status": "success",
+      "output_file": "results_openai/912_ParallelCoordinatesPlot12_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.399348"
+    },
+    "914_BarChart13.svg": {
+      "status": "success",
+      "output_file": "results_openai/914_BarChart13_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.399448"
+    },
+    "915_DensityPlot12.svg": {
+      "status": "success",
+      "output_file": "results_openai/915_DensityPlot12_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.399542"
+    },
+    "916_BulletChart3.svg": {
+      "status": "success",
+      "output_file": "results_openai/916_BulletChart3_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.399629"
+    },
+    "917_DensityPlot3.svg": {
+      "status": "success",
+      "output_file": "results_openai/917_DensityPlot3_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.399721"
+    },
+    "918_LineGraph5.svg": {
+      "status": "success",
+      "output_file": "results_openai/918_LineGraph5_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.399921"
+    },
+    "919_LineGraph4.svg": {
+      "status": "success",
+      "output_file": "results_openai/919_LineGraph4_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.400055"
+    },
+    "920_DensityPlot2.svg": {
+      "status": "success",
+      "output_file": "results_openai/920_DensityPlot2_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.400153"
+    },
+    "921_BulletChart2.svg": {
+      "status": "success",
+      "output_file": "results_openai/921_BulletChart2_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.400249"
+    },
+    "922_DensityPlot13.svg": {
+      "status": "success",
+      "output_file": "results_openai/922_DensityPlot13_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.400423"
+    },
+    "924_BarChart12.svg": {
+      "status": "success",
+      "output_file": "results_openai/924_BarChart12_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.400533"
+    },
+    "925_ParallelCoordinatesPlot13.svg": {
+      "status": "success",
+      "output_file": "results_openai/925_ParallelCoordinatesPlot13_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.400680"
+    },
+    "927_DivergingStackedBarChart16.svg": {
+      "status": "success",
+      "output_file": "results_openai/927_DivergingStackedBarChart16_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.400790"
+    },
+    "928_StackedAreaChart20.svg": {
+      "status": "success",
+      "output_file": "results_openai/928_StackedAreaChart20_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.400894"
+    },
+    "929_Scatterplot19.svg": {
+      "status": "success",
+      "output_file": "results_openai/929_Scatterplot19_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.401026"
+    },
+    "931_Scatterplot25.svg": {
+      "status": "success",
+      "output_file": "results_openai/931_Scatterplot25_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.401270"
+    },
+    "932__bespoke18.svg": {
+      "status": "success",
+      "output_file": "results_openai/932__bespoke18_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.401416"
+    },
+    "933_StackedBarChart1.svg": {
+      "status": "success",
+      "output_file": "results_openai/933_StackedBarChart1_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.401742"
+    },
+    "934__bespoke24.svg": {
+      "status": "success",
+      "output_file": "results_openai/934__bespoke24_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.401866"
+    },
+    "935_StackedBarChart25.svg": {
+      "status": "success",
+      "output_file": "results_openai/935_StackedBarChart25_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.402123"
+    },
+    "936_DotPlot10.svg": {
+      "status": "success",
+      "output_file": "results_openai/936_DotPlot10_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.402272"
+    },
+    "937_StackedBarChart19.svg": {
+      "status": "success",
+      "output_file": "results_openai/937_StackedBarChart19_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.402398"
+    },
+    "938_GroupedBarChart26.svg": {
+      "status": "success",
+      "output_file": "results_openai/938_GroupedBarChart26_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.402506"
+    },
+    "939_WaffleChart2.svg": {
+      "status": "success",
+      "output_file": "results_openai/939_WaffleChart2_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.402641"
+    },
+    "940_MatrixDiagram15.svg": {
+      "status": "success",
+      "output_file": "results_openai/940_MatrixDiagram15_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.402766"
+    },
+    "941_BoxAndWhisker3.svg": {
+      "status": "success",
+      "output_file": "results_openai/941_BoxAndWhisker3_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.402862"
+    },
+    "942_Treemap11.svg": {
+      "status": "success",
+      "output_file": "results_openai/942_Treemap11_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.402955"
+    }
+  },
+  "completed_at": "2025-06-27T21:38:14.403070"
+}

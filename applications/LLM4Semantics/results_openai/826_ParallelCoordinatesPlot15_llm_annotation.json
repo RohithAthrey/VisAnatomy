@@ -1,0 +1,33 @@
+{
+  "main_chart_marks": [
+    "line2d_18",
+    "line2d_19",
+    "line2d_20",
+    "line2d_21",
+    "line2d_22",
+    "line2d_23",
+    "line2d_24",
+    "line2d_25",
+    "line2d_26",
+    "line2d_27"
+  ],
+  "legend": {
+    "title": [],
+    "marks": [],
+    "labels": []
+  },
+  "axis_labels": [
+    "text_5",
+    "text_6",
+    "text_7",
+    "text_8",
+    "text_9",
+    "text_10",
+    "text_11",
+    "text_12",
+    "text_13"
+  ],
+  "axis_titles": [
+    "text_14"
+  ]
+}

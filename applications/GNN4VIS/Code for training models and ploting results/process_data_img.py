@@ -9,6 +9,7 @@ from torch_geometric.utils import to_undirected
 import torchvision.transforms as transforms
 import torchvision.models as models
 from PIL import Image
+import gc  # for garbage collection
 
 
 # Define transforms for preprocessing the images
@@ -21,40 +22,81 @@ transform = transforms.Compose([
     )
 ])
 
+# Load ResNet model
 resnet = models.resnet50(pretrained=True)
 # Remove the fully connected layer
 modules = list(resnet.children())[:-1]
 resnet = nn.Sequential(*modules)
+resnet.eval()  # Set to evaluation mode
+
+# Move model to GPU if available
+device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+resnet = resnet.to(device)
 
 # get the current directory
 current_dir = os.path.dirname(os.path.realpath(__file__))
 
-data_dir = current_dir + "/data/GNN Dataset/graphData_v4"
+# Updated paths to use graphData_v4_updated and charts_png
+data_dir = current_dir + "/data/GNN Dataset/graphData_v3_06272025"
 json_files = sorted(glob.glob(f'{data_dir}/*.json'))
-img_dir = current_dir + "/data/GNN Dataset/examples_png"
+img_dir = current_dir + "/../../../charts_png"
 
+# Process in batches to avoid memory issues
+batch_size = 16  # Adjust this based on your available memory
 data_list = []
-for json_file in json_files:
-    with open(json_file) as file:
-        raw_data = json.load(file)
+
+print(f"Processing {len(json_files)} files in batches of {batch_size}")
+
+for i in range(0, len(json_files), batch_size):
+    batch_files = json_files[i:i+batch_size]
+    print(f'Processing batch {i//batch_size + 1}/{(len(json_files)-1)//batch_size + 1}')
+    
+    batch_data = []
+    
+    for json_file in batch_files:
+        with open(json_file) as file:
+            raw_data = json.load(file)
+            
+        fname = os.path.basename(json_file).split('.')[0]
+        img_path = os.path.join(img_dir, f'{fname}.png')
         
-    print(f'Processing {json_file}')
-    fname = os.path.basename(json_file).split('.')[0]
-    img_path = os.path.join(img_dir, f'{fname}.png')
-    img = transform(Image.open(img_path).convert("RGB")).unsqueeze(0)
-    img_feature = resnet(img)
-    img_feature = img_feature.view(img_feature.size(0), -1)
+        # Load and preprocess image
+        img = transform(Image.open(img_path).convert("RGB")).unsqueeze(0)
+        img = img.to(device)
+        
+        # Extract features without storing gradients
+        with torch.no_grad():
+            img_feature = resnet(img)
+            img_feature = img_feature.view(img_feature.size(0), -1)
+            # Move back to CPU to save GPU memory
+            img_feature = img_feature.cpu()
+            img = img.cpu()
 
-    # create Data object
-    data = Data()
+        # create Data object
+        data = Data()
+        data.y = torch.tensor([raw_data["label"]])
+        data.train = torch.tensor(raw_data["splition"]=="training", dtype=torch.bool)
+        data.img = img
+        data.img_feature = img_feature
 
-    data.y = torch.tensor([raw_data["label"]])
-    data.train = torch.tensor(raw_data["splition"]=="training", dtype=torch.bool)
+        batch_data.append(data)
+        
+        # Clear variables to free memory
+        del img, img_feature
+    
+    # Add batch to main list
+    data_list.extend(batch_data)
+    
+    # Force garbage collection
+    gc.collect()
+    if torch.cuda.is_available():
+        torch.cuda.empty_cache()
+    
+    print(f'Batch {i//batch_size + 1} completed. Total processed: {len(data_list)}')
 
-    data.img = img
-    data.img_feature = img_feature
-
-    data_list.append(data)
+print("All batches processed. Saving data...")
 
 # save processed data
-torch.save(data_list, f'{data_dir}_img.pt')
+torch.save(data_list, f'{data_dir}_img_updated.pt')
+
+print(f"Data saved to {data_dir}_img_updated.pt")

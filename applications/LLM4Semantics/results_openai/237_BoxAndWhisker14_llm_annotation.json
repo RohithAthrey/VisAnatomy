@@ -1,0 +1,29 @@
+{
+  "main_chart_marks": [
+    "rect2",
+    "rect3",
+    "rect5",
+    "rect6",
+    "rect8",
+    "rect9",
+    "rect11",
+    "rect12",
+    "rect14",
+    "rect15"
+  ],
+  "legend": {
+    "title": [],
+    "marks": [],
+    "labels": []
+  },
+  "axis_labels": [
+    "path0",
+    "path1",
+    "path2",
+    "path3",
+    "path4",
+    "path5",
+    "path6"
+  ],
+  "axis_titles": []
+}

@@ -1,0 +1,72 @@
+{
+  "main_chart_marks": [
+    "path16",
+    "path17",
+    "path18",
+    "path19"
+  ],
+  "legend": {
+    "title": [],
+    "marks": [
+      "path23",
+      "path25",
+      "path27",
+      "path29"
+    ],
+    "labels": [
+      "use87",
+      "use88",
+      "use89",
+      "use90"
+    ]
+  },
+  "axis_labels": [
+    "use1",
+    "use2",
+    "use3",
+    "use4",
+    "use5",
+    "use6",
+    "use7",
+    "use9",
+    "use10",
+    "use11",
+    "use12",
+    "use13",
+    "use14",
+    "use15",
+    "use17",
+    "use18",
+    "use19",
+    "use20",
+    "use21",
+    "use22",
+    "use23",
+    "use31",
+    "use32",
+    "use33",
+    "use45",
+    "use46",
+    "use47",
+    "use59",
+    "use60",
+    "use61",
+    "use65",
+    "use66",
+    "use67",
+    "use69",
+    "use70",
+    "use71",
+    "use73",
+    "use74",
+    "use75",
+    "use77",
+    "use79",
+    "use80",
+    "use82",
+    "use83",
+    "use85",
+    "use86"
+  ],
+  "axis_titles": []
+}

@@ -1,0 +1,33 @@
+{
+  "main_chart_marks": [
+    "path38",
+    "path39",
+    "path40",
+    "path41"
+  ],
+  "legend": {
+    "title": [],
+    "marks": [],
+    "labels": []
+  },
+  "axis_labels": [
+    "use0",
+    "use1",
+    "use2",
+    "use3",
+    "use4",
+    "use5",
+    "use6",
+    "use7",
+    "use8",
+    "use9",
+    "use10",
+    "use11"
+  ],
+  "axis_titles": [
+    "use12",
+    "use13",
+    "use14",
+    "use15"
+  ]
+}

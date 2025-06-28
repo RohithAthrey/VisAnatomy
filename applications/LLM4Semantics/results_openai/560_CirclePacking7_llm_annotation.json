@@ -1,0 +1,31 @@
+{
+  "main_chart_marks": [
+    "circle0",
+    "circle1",
+    "circle2",
+    "circle3",
+    "circle4",
+    "circle5",
+    "circle6",
+    "circle7",
+    "circle8",
+    "circle9",
+    "circle10"
+  ],
+  "legend": {
+    "title": [],
+    "marks": [
+      "circle180",
+      "circle334",
+      "circle336",
+      "circle338"
+    ],
+    "labels": [
+      "text129",
+      "text130",
+      "text131"
+    ]
+  },
+  "axis_labels": [],
+  "axis_titles": []
+}

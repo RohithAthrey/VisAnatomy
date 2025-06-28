@@ -1,0 +1,58 @@
+{
+  "main_chart_marks": [
+    "polyline33",
+    "polyline34",
+    "polyline35",
+    "polyline36",
+    "polygon0",
+    "polygon1",
+    "polygon2",
+    "polygon3",
+    "polygon4",
+    "polygon5",
+    "polygon6",
+    "polygon7",
+    "polygon8",
+    "polygon9",
+    "polygon10",
+    "polygon11",
+    "polygon12",
+    "polygon13",
+    "polygon14",
+    "polygon15",
+    "polygon16",
+    "polygon17",
+    "polygon18",
+    "polygon19",
+    "polygon20",
+    "polygon21",
+    "polygon22",
+    "polygon23",
+    "polygon24",
+    "polygon25",
+    "polygon26",
+    "polygon27",
+    "polygon28",
+    "polygon29",
+    "polygon30",
+    "polygon31"
+  ],
+  "legend": {
+    "title": [],
+    "marks": [],
+    "labels": []
+  },
+  "axis_labels": [
+    "text32",
+    "text33",
+    "text34",
+    "text35",
+    "text36",
+    "text37",
+    "text38",
+    "text39"
+  ],
+  "axis_titles": [
+    "text40"
+  ]
+}

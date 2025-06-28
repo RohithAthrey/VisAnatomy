@@ -1,0 +1,54 @@
+{
+  "main_chart_marks": [
+    "path165"
+  ],
+  "legend": {
+    "title": [],
+    "marks": [],
+    "labels": []
+  },
+  "axis_labels": [
+    "use0",
+    "use5",
+    "use10",
+    "use15",
+    "use20",
+    "use25",
+    "use30"
+  ],
+  "axis_titles": [
+    "use187",
+    "use188",
+    "use189",
+    "use190",
+    "use191",
+    "use192",
+    "use193",
+    "use194",
+    "use195",
+    "use196",
+    "use197",
+    "use198",
+    "use199",
+    "use200",
+    "use201",
+    "use202",
+    "use203",
+    "use204",
+    "use205",
+    "use206",
+    "use207",
+    "use208",
+    "use209",
+    "use210",
+    "use211",
+    "use212",
+    "use213",
+    "use214",
+    "use215",
+    "use216",
+    "use217",
+    "use218",
+    "use219"
+  ]
+}
