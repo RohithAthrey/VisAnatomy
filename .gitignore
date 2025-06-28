@@ -29,3 +29,7 @@ npm-debug.log
 
 *img.pt
 /applications/GNN4VIS/Code for training models and ploting results/data/
+
+# OpenAI Batch API files
+batch_input.jsonl
+**/batch_input.jsonl
