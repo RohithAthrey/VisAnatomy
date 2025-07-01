@@ -1,58 +1,58 @@
 {
-  "generated_at": "2025-06-27T22:14:04.911374",
+  "generated_at": "2025-06-29T00:53:16.525696",
   "evaluation_overview": {
-    "total_files": 835,
-    "successful": 835,
+    "total_files": 837,
+    "successful": 837,
     "failed": 0,
     "skipped": 0
   },
   "performance_summary": {
     "main_chart_marks": {
-      "f1_mean": 0.841144275043973,
-      "f1_std": 0.311090754663186,
-      "precision_mean": 0.8905635101351439,
-      "recall_mean": 0.846072510776188,
-      "count": 835
+      "f1_mean": 0.8407599322121829,
+      "f1_std": 0.3108192710278362,
+      "precision_mean": 0.8908250071240682,
+      "recall_mean": 0.845283235396212,
+      "count": 837
     },
     "axis_labels": {
-      "f1_mean": 0.7812155946005825,
-      "f1_std": 0.3787270056397235,
-      "precision_mean": 0.807803652753682,
-      "recall_mean": 0.7837247753851726,
-      "count": 835
+      "f1_mean": 0.7812722252337782,
+      "f1_std": 0.3782846383445439,
+      "precision_mean": 0.8082629032847365,
+      "recall_mean": 0.7834690988321164,
+      "count": 837
     },
     "axis_titles": {
-      "f1_mean": 0.8265464675045513,
-      "f1_std": 0.37397458423492824,
-      "precision_mean": 0.8261077844311376,
-      "recall_mean": 0.829820359281437,
-      "count": 835
+      "f1_mean": 0.8269609323372764,
+      "f1_std": 0.3736235028832036,
+      "precision_mean": 0.8265232974910394,
+      "recall_mean": 0.8302270011947431,
+      "count": 837
     },
     "legend_labels": {
-      "f1_mean": 0.8101750830257626,
-      "f1_std": 0.38978700127772,
-      "precision_mean": 0.8129057037440272,
-      "recall_mean": 0.8101863167643846,
-      "count": 835
+      "f1_mean": 0.8106286670567643,
+      "f1_std": 0.3894313266750293,
+      "precision_mean": 0.8133527629943401,
+      "recall_mean": 0.8106398739525222,
+      "count": 837
     },
     "legend_marks": {
-      "f1_mean": 0.7895438779219934,
-      "f1_std": 0.4017025107821895,
-      "precision_mean": 0.788356620093147,
-      "recall_mean": 0.7945690545423552,
-      "count": 835
+      "f1_mean": 0.7900467599341272,
+      "f1_std": 0.40135384593639345,
+      "precision_mean": 0.7888623390415505,
+      "recall_mean": 0.7950599289639982,
+      "count": 837
     },
     "legend_titles": {
-      "f1_mean": 0.943313373253493,
-      "f1_std": 0.23066668310949948,
-      "precision_mean": 0.9431137724550899,
-      "recall_mean": 0.9437125748502994,
-      "count": 835
+      "f1_mean": 0.9434488251692552,
+      "f1_std": 0.23040755409192534,
+      "precision_mean": 0.9432497013142175,
+      "recall_mean": 0.9438470728793309,
+      "count": 837
     },
     "overall": {
-      "f1_mean": 0.8319897785583927,
-      "f1_std": 0.21236787155664752,
-      "count": 835
+      "f1_mean": 0.8321862236572308,
+      "f1_std": 0.2121527319600913,
+      "count": 837
     }
   },
   "chart_type_analysis": {
@@ -69,6 +69,20 @@
       "legend_labels_f1_mean": 0.7222222222222222,
       "legend_marks_f1_mean": 0.7222222222222222,
       "legend_titles_f1_mean": 0.9444444444444444
+    },
+    "Calendar": {
+      "count": 13,
+      "f1_mean": 0.8085150391939719,
+      "f1_std": 0.1447806090941095,
+      "f1_median": 0.7956989247311829,
+      "f1_min": 0.611111111111111,
+      "f1_max": 1.0,
+      "main_chart_marks_f1_mean": 0.6136094363927096,
+      "axis_labels_f1_mean": 0.699019260309583,
+      "axis_titles_f1_mean": 0.6153846153846154,
+      "legend_labels_f1_mean": 1.0,
+      "legend_marks_f1_mean": 0.9230769230769231,
+      "legend_titles_f1_mean": 1.0
     },
     "StackedBarChart": {
       "count": 25,
@@ -560,20 +574,6 @@
       "legend_marks_f1_mean": 0.6692223439211391,
       "legend_titles_f1_mean": 0.9090909090909091
     },
-    "Calendar": {
-      "count": 11,
-      "f1_mean": 0.7892992186070354,
-      "f1_std": 0.1499550863844948,
-      "f1_median": 0.7660256410256411,
-      "f1_min": 0.611111111111111,
-      "f1_max": 1.0,
-      "main_chart_marks_f1_mean": 0.6014844612023296,
-      "axis_labels_f1_mean": 0.6797653958944282,
-      "axis_titles_f1_mean": 0.5454545454545454,
-      "legend_labels_f1_mean": 1.0,
-      "legend_marks_f1_mean": 0.9090909090909091,
-      "legend_titles_f1_mean": 1.0
-    },
     "BarChartInRadialLayout": {
       "count": 17,
       "f1_mean": 0.8353785108380088,
@@ -633,12 +633,12 @@
   },
   "openai_source_info": {
     "total_processed": 841,
-    "successful_openai": 835,
+    "successful_openai": 837,
     "failed_openai": 6,
     "openai_started_at": "2025-06-27T21:38:14.294020"
   },
   "evaluation_period": {
-    "started_at": "2025-06-27T22:14:03.624142",
-    "completed_at": "2025-06-27T22:14:04.911381"
+    "started_at": "2025-06-29T00:53:15.245030",
+    "completed_at": "2025-06-29T00:53:16.525704"
   }
 }

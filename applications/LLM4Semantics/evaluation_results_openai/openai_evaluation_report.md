@@ -1,6 +1,6 @@
 ---
 title: OpenAI LLM Chart Element Identification - Evaluation Report  
-date: 2025-06-27 22:14:04
+date: 2025-06-29 00:53:16
 model: GPT-4o
 api: OpenAI Batch API
 ---
@@ -11,13 +11,13 @@ api: OpenAI Batch API
 
 
 📊 EVALUATION OVERVIEW:
-   • Evaluation started: 2025-06-27T22:14:03.624142
+   • Evaluation started: 2025-06-29T00:53:15.245030
    • OpenAI batch started: 2025-06-27T21:38:14.294020
    • OpenAI total processed: 841
-   • OpenAI successful: 835
+   • OpenAI successful: 837
    • OpenAI failed: 6
-   • Available for evaluation: 835
-   • Successfully evaluated: 835
+   • Available for evaluation: 837
+   • Successfully evaluated: 837
    • Failed evaluations: 0
    • Skipped (no ground truth): 0
    • Coverage: 100.0%
@@ -27,38 +27,38 @@ api: OpenAI Batch API
 MAIN CHART MARKS:
    F1 Score:  0.841 ± 0.311
    Precision: 0.891
-   Recall:    0.846
-   Charts:    835
+   Recall:    0.845
+   Charts:    837
 
 AXIS LABELS:
-   F1 Score:  0.781 ± 0.379
+   F1 Score:  0.781 ± 0.378
    Precision: 0.808
-   Recall:    0.784
-   Charts:    835
+   Recall:    0.783
+   Charts:    837
 
 AXIS TITLES:
    F1 Score:  0.827 ± 0.374
-   Precision: 0.826
+   Precision: 0.827
    Recall:    0.830
-   Charts:    835
+   Charts:    837
 
 LEGEND LABELS:
-   F1 Score:  0.810 ± 0.390
+   F1 Score:  0.811 ± 0.389
    Precision: 0.813
-   Recall:    0.810
-   Charts:    835
+   Recall:    0.811
+   Charts:    837
 
 LEGEND MARKS:
-   F1 Score:  0.790 ± 0.402
-   Precision: 0.788
+   F1 Score:  0.790 ± 0.401
+   Precision: 0.789
    Recall:    0.795
-   Charts:    835
+   Charts:    837
 
 LEGEND TITLES:
-   F1 Score:  0.943 ± 0.231
+   F1 Score:  0.943 ± 0.230
    Precision: 0.943
    Recall:    0.944
-   Charts:    835
+   Charts:    837
 
 🎯 OVERALL PERFORMANCE:
    Mean F1 Score: 0.832 ± 0.212
@@ -79,12 +79,12 @@ LEGEND TITLES:
    5. DotPlot8: 0.035
 
 🎯 CATEGORY PERFORMANCE INSIGHTS:
-   Main Chart Marks: 🟢 Excellent (F1: 0.841, n=835)
-   Axis Labels: 🟡 Good (F1: 0.781, n=835)
-   Axis Titles: 🟢 Excellent (F1: 0.827, n=835)
-   Legend Labels: 🟢 Excellent (F1: 0.810, n=835)
-   Legend Marks: 🟡 Good (F1: 0.790, n=835)
-   Legend Titles: 🟢 Excellent (F1: 0.943, n=835)
+   Main Chart Marks: 🟢 Excellent (F1: 0.841, n=837)
+   Axis Labels: 🟡 Good (F1: 0.781, n=837)
+   Axis Titles: 🟢 Excellent (F1: 0.827, n=837)
+   Legend Labels: 🟢 Excellent (F1: 0.811, n=837)
+   Legend Marks: 🟡 Good (F1: 0.790, n=837)
+   Legend Titles: 🟢 Excellent (F1: 0.943, n=837)
 
 📈 CHART TYPE PERFORMANCE ANALYSIS:
 | Chart Type | Count | F1 Mean | F1 Range | Performance |
@@ -117,10 +117,10 @@ LEGEND TITLES:
 | RadialBarChart | 20 | 0.814 | 0.500-1.000 | 🟢 |
 | DivergingStackedBarChart | 21 | 0.812 | 0.333-1.000 | 🟢 |
 | SpiralPlot | 8 | 0.810 | 0.489-1.000 | 🟢 |
+| Calendar | 13 | 0.809 | 0.611-1.000 | 🟢 |
 | ViolinPlot | 20 | 0.803 | 0.222-1.000 | 🟢 |
 | BoxAndWhisker | 23 | 0.799 | 0.470-1.000 | 🟡 |
 | GanttChart | 23 | 0.792 | 0.385-1.000 | 🟡 |
-| Calendar | 11 | 0.789 | 0.611-1.000 | 🟡 |
 | MatrixDiagram | 18 | 0.786 | 0.333-1.000 | 🟡 |
 | DensityPlot | 21 | 0.783 | 0.167-1.000 | 🟡 |
 | GroupedBarChart | 27 | 0.776 | 0.333-1.000 | 🟡 |

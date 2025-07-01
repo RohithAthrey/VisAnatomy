@@ -37,7 +37,7 @@ resnet = resnet.to(device)
 current_dir = os.path.dirname(os.path.realpath(__file__))
 
 # Updated paths
-data_dir = current_dir + "/data/GNN Dataset/graphData_v4_06272025"
+data_dir = current_dir + "/data/GNN Dataset/graphData_v4_filtered_06292025"
 json_files = sorted(glob.glob(f'{data_dir}/*.json'))
 img_dir = current_dir + "/../../../charts_png"
 

@@ -1,0 +1,943 @@
+Type,ID,charting tool
+Area Chart,1,Vega 
+Area Chart,2,D3.js
+Area Chart,3,ApexCharts
+Area Chart,4,Mascot.js
+Area Chart,5,D3.js
+Area Chart,6,D3.js
+Area Chart,7,D3.js
+Area Chart,8,Mascot.js
+Area Chart,9,D3.js
+Area Chart,10,Evidence 
+Area Chart,11,ApexCharts
+Area Chart,12,
+Area Chart,13,D3.js
+Area Chart,14,
+Area Chart,15,VictoryChart
+Area Chart,16,GoogleChart
+Area Chart,17,SvelteKit
+Area Chart,18,HighChart
+Area Chart,19,
+Area Chart,20,HighChart
+Area Chart,21,WowChart
+Area Chart,22,
+Area Chart,23,
+Area Chart,24,Lets-Plot
+Area Chart,25,Lets-Plot
+Area Chart,26,FlexChart
+Area Chart,27,
+Area Chart,28,AngularChart
+Bar Chart,1,AnyChart
+Bar Chart,2,ApexCharts
+Bar Chart,3,Vega Lite
+Bar Chart,4,
+Bar Chart,5,D3.js
+Bar Chart,6,Datylon
+Bar Chart,7,Diagrammm
+Bar Chart,8,
+Bar Chart,9,Observable
+Bar Chart,10,D3.js
+Bar Chart,11,R
+Bar Chart,12,R
+Bar Chart,13,
+Bar Chart,14,Evidence 
+Bar Chart,15,R
+Bar Chart,16,Evidence 
+Bar Chart,17,
+Bar Chart,18,
+Bar Chart,19,Plotly
+Bar Chart,20,
+Bar Chart,21,R
+Bar Chart,22,
+Bar Chart,23,WowChart
+Bar Chart,24,Lets-Plot
+Bar Chart,25,
+Bar Chart,26,
+Bar Chart,27,
+Bar Chart in Radial Layout,1,Matplotlib
+Bar Chart in Radial Layout,2,D3.js
+Bar Chart in Radial Layout,3,D3.js
+Bar Chart in Radial Layout,4,
+Bar Chart in Radial Layout,5,
+Bar Chart in Radial Layout,6,D3.js
+Bar Chart in Radial Layout,7,D3.js
+Bar Chart in Radial Layout,8,
+Bar Chart in Radial Layout,9,D3.js
+Bar Chart in Radial Layout,10,
+Bar Chart in Radial Layout,11,
+Bar Chart in Radial Layout,12,D3.js
+Bar Chart in Radial Layout,13,D3.js
+Bar Chart in Radial Layout,14,D3.js
+Bar Chart in Radial Layout,15,D3.js
+Bar Chart in Radial Layout,16,D3.js
+Bar Chart in Radial Layout,17,D3.js
+Bar Chart in Radial Layout,18,D3.js
+Bar Chart in Radial Layout,19,D3.js
+Bar Chart in Radial Layout,20,D3.js
+Box-and-whisker plot,1,nagwa
+Box-and-whisker plot,2,ApexCharts
+Box-and-whisker plot,3,
+Box-and-whisker plot,4,
+Box-and-whisker plot,5,ApexCharts
+Box-and-whisker plot,6,Racket Plot
+Box-and-whisker plot,7,D3.js
+Box-and-whisker plot,8,D3.js
+Box-and-whisker plot,9,Vega Lite
+Box-and-whisker plot,10,Data Illustrator
+Box-and-whisker plot,11,R
+Box-and-whisker plot,12,
+Box-and-whisker plot,13,
+Box-and-whisker plot,14,
+Box-and-whisker plot,15,
+Box-and-whisker plot,16,Jamovi
+Box-and-whisker plot,17,ApexCharts
+Box-and-whisker plot,18,
+Box-and-whisker plot,19,
+Box-and-whisker plot,20,
+Box-and-whisker plot,21,NIVO
+Box-and-whisker plot,22,NIVO
+Box-and-whisker plot,23,FlexChart
+Box-and-whisker plot,24,R
+Box-and-whisker plot,25,Semiotic
+Bubble Chart,1,Datylon
+Bubble Chart,2,Datylon
+Bubble Chart,3,ApexCharts
+Bubble Chart,4,HighCharts
+Bubble Chart,5,Datylon
+Bubble Chart,6,Mascot.js
+Bubble Chart,7,Datylon
+Bubble Chart,8,Vega Lite
+Bubble Chart,9,Vega Lite
+Bubble Chart,10,Vega Lite
+Bubble Chart,11,ZingChart
+Bubble Chart,12,GoogleChart
+Bubble Chart,13,
+Bubble Chart,14,Diagrammm
+Bubble Chart,15,
+Bubble Chart,16,Diagrammm
+Bubble Chart,17,Plotly
+Bubble Chart,18,
+Bubble Chart,19,
+Bubble Chart,20,
+Bubble Chart,21,
+Bubble Chart,22,Lets-Plot
+Bubble Chart,23,Plotly
+Bubble Chart,24,ObservablePlot
+Bubble Chart,25,Plotly
+Bubble Chart,26,
+Bullet Chart,1,Mascot.js
+Bullet Chart,2,OKVIZ
+Bullet Chart,3,
+Bullet Chart,4,
+Bullet Chart,5,
+Bullet Chart,6,FusionCharts
+Bullet Chart,7,FusionCharts
+Bullet Chart,8,Datylon
+Bullet Chart,9,Datylon
+Bullet Chart,10,
+Bullet Chart,11,
+Bullet Chart,12,NIVO
+Bullet Chart,13,VictoryChart
+Bullet Chart,14,VictoryChart
+Bullet Chart,15,VictoryChart
+Bullet Chart,16,VictoryChart
+Bullet Chart,17,D3.js
+Bullet Chart,18,Vega Lite
+Bullet Chart,19,GoogleChart
+Bullet Chart,20,Datylon
+Bullet Chart,21,AngularChart
+Bump Chart,1,Data Illustrator
+Bump Chart,2,
+Bump Chart,3,Rawgraphs
+Bump Chart,4,D3.js
+Bump Chart,5,ObservablePlot
+Bump Chart,6,Vega Lite
+Bump Chart,7,Datylon
+Bump Chart,8,
+Bump Chart,9,NIVO
+Bump Chart,10,JSCharting
+Bump Chart,11,
+Bump Chart,12,
+Bump Chart,13,
+Bump Chart,14,
+Bump Chart,15,NIVO
+Bump Chart,16,Vega Lite
+Bump Chart,17,NIVO
+Bump Chart,18,D3.js
+Bump Chart,19,
+Bump Chart,20,
+Bump Chart,21,D3.js
+Calendar,1,Vega 
+Calendar,2,ZingChart
+Calendar,3,ObservablePlot
+Calendar,4,ObservablePlot
+Calendar,5,Mascot.js
+Calendar,6,AnyChart
+Calendar,7,AnyChart
+Calendar,8,D3.js
+Calendar,9,Cal-Heatmap
+Calendar,10,D3.js
+Calendar,11,ObservablePlot
+Calendar,12,HighCharts
+Calendar,13,ObservablePlot
+Calendar,14,R
+Calendar,15,NIVO
+Calendar,16,NIVO
+Calendar,17,
+Calendar,18,D3.js
+Calendar,19,Matplotlib
+Calendar,20,Matplotlib
+Candlestick Chart,1,
+Candlestick Chart,2,D3.js
+Candlestick Chart,3,FusionCharts
+Candlestick Chart,4,
+Candlestick Chart,5,TimeSeries.jl
+Candlestick Chart,6,Diagrammm
+Candlestick Chart,7,
+Candlestick Chart,8,D3.js
+Candlestick Chart,9,
+Candlestick Chart,10,
+Candlestick Chart,11,
+Candlestick Chart,12,AMCharts
+Candlestick Chart,13,Plotly
+Candlestick Chart,14,Plotly
+Candlestick Chart,15,Plotly
+Candlestick Chart,16,D3.js
+Candlestick Chart,17,ApexCharts
+Candlestick Chart,18,Plotly
+Candlestick Chart,19,HighCharts
+Candlestick Chart,20,
+Candlestick Chart,21,Semiotic
+Circle Packing,1,D3.js
+Circle Packing,2,AMCharts
+Circle Packing,3,
+Circle Packing,4,R
+Circle Packing,5,Vega
+Circle Packing,6,ZingChart
+Circle Packing,7,D3.js
+Circle Packing,8,D3.js
+Circle Packing,9,D3.js
+Circle Packing,10,D3.js
+Circle Packing,11,
+Circle Packing,12,NIVO
+Circle Packing,13,
+Circle Packing,14,R
+Circle Packing,15,D3.js
+Circle Packing,16,D3.js
+Circle Packing,17,D3.js
+Circle Packing,18,D3.js
+Circle Packing,19,
+Circle Packing,20,
+Circle Packing,21,
+Connected Dot Plot,1,D3.js
+Connected Dot Plot,2,Datylon
+Connected Dot Plot,3,PlotDB
+Connected Dot Plot,4,Vega Lite
+Connected Dot Plot,5,D3.js
+Connected Dot Plot,6,D3.js
+Connected Dot Plot,7,R
+Connected Dot Plot,8,Mascot.js
+Connected Dot Plot,9,Mascot.js
+Connected Dot Plot,10,Datylon
+Connected Dot Plot,11,
+Connected Dot Plot,12,Flourish
+Connected Dot Plot,13,ObservablePlot
+Connected Dot Plot,14,ApexCharts
+Connected Dot Plot,15,ApexCharts
+Connected Dot Plot,16,HighCharts
+Connected Dot Plot,17,D3.js
+Connected Dot Plot,18,JSCharting
+Connected Dot Plot,19,Plotly
+Connected Dot Plot,20,Plotly
+Connected Dot Plot,21,JSCharting
+Connected Dot Plot,22,JSCharting
+Connected Scatterplot,1,Datylon
+Connected Scatterplot,2,Mascot.js
+Connected Scatterplot,3,D3.js
+Connected Scatterplot,4,Vega Lite
+Connected Scatterplot,5,Tableau
+Connected Scatterplot,6,Lets-Plot
+Connected Scatterplot,7,R
+Connected Scatterplot,8,R
+Connected Scatterplot,9,
+Connected Scatterplot,10,
+Connected Scatterplot,11,D3.js
+Connected Scatterplot,12,D3.js
+Connected Scatterplot,13,
+Connected Scatterplot,14,D3.js
+Connected Scatterplot,15,D3.js
+Connected Scatterplot,16,D3.js
+Connected Scatterplot,17,R
+Connected Scatterplot,18,
+Connected Scatterplot,19,D3.js
+Connected Scatterplot,20,D3.js
+Connected Scatterplot,21,
+Density plot,1,
+Density plot,2,
+Density plot,3,D3.js
+Density plot,4,
+Density plot,5,Vega Lite
+Density plot,6,Mascot.js
+Density plot,7,Datylon
+Density plot,8,Mascot.js
+Density plot,9,R
+Density plot,10,R
+Density plot,11,R
+Density plot,12,
+Density plot,13,Kandy
+Density plot,14,Kandy
+Density plot,15,R
+Density plot,16,Jamovi
+Density plot,17,AlgebraOfGraphics.jl
+Density plot,18,
+Density plot,19,
+Density plot,20,
+Density plot,21,Lets-Plot
+Density plot,22,Kandy
+Diverging Stacked Bar Chart,1,D3.js
+Diverging Stacked Bar Chart,2,Plotly
+Diverging Stacked Bar Chart,3,Vega Lite
+Diverging Stacked Bar Chart,4,Mascot.js
+Diverging Stacked Bar Chart,5,Vega Lite
+Diverging Stacked Bar Chart,6,Datylon
+Diverging Stacked Bar Chart,7,Datylon
+Diverging Stacked Bar Chart,8,Datylon
+Diverging Stacked Bar Chart,9,AnyChart
+Diverging Stacked Bar Chart,10,ElmPackage
+Diverging Stacked Bar Chart,11,C3.js
+Diverging Stacked Bar Chart,12,
+Diverging Stacked Bar Chart,13,Datylon
+Diverging Stacked Bar Chart,14,Matplotlib
+Diverging Stacked Bar Chart,15,ApexCharts
+Diverging Stacked Bar Chart,16,Matplotlib
+Diverging Stacked Bar Chart,17,
+Diverging Stacked Bar Chart,18,
+Diverging Stacked Bar Chart,19,
+Diverging Stacked Bar Chart,20,ObservablePlot
+Diverging Stacked Bar Chart,21,NIVO
+Diverging Stacked Bar Chart,22,D3.js
+Diverging Stacked Bar Chart,23,AngularChart
+Donut Chart,1,Datylon
+Donut Chart,2,FlexChart
+Donut Chart,3,D3.js
+Donut Chart,4,Datylon
+Donut Chart,5,ApexCharts
+Donut Chart,6,
+Donut Chart,7,D3.js
+Donut Chart,8,GoogleChart
+Donut Chart,9,ApexCharts
+Donut Chart,10,Vega Lite
+Donut Chart,11,Datylon
+Donut Chart,12,
+Donut Chart,13,HighCharts
+Donut Chart,14,HighCharts
+Donut Chart,15,R
+Donut Chart,16,
+Donut Chart,17,Mascot.js
+Donut Chart,18,HighCharts
+Donut Chart,19,
+Donut Chart,20,Lets-Plot
+Donut Chart,21,AngularChart
+Donut Chart,22,
+Dot Plot,1,Plotly
+Dot Plot,2,Flourish
+Dot Plot,3,Plotly
+Dot Plot,4,R
+Dot Plot,5,
+Dot Plot,6,
+Dot Plot,7,D3.js
+Dot Plot,8,Plotly
+Dot Plot,9,R
+Dot Plot,10,
+Dot Plot,11,
+Dot Plot,12,
+Dot Plot,13,
+Dot Plot,14,
+Dot Plot,15,R
+Dot Plot,16,Mascot.js
+Dot Plot,17,
+Dot Plot,18,NIVO
+Dot Plot,19,Lets-Plot
+Dot Plot,20,Lets-Plot
+Gantt Chart,1,Vega Lite
+Gantt Chart,2,Lib.rs
+Gantt Chart,3,Plotly
+Gantt Chart,4,Mascot.js
+Gantt Chart,5,FusionCharts
+Gantt Chart,6,HighCharts
+Gantt Chart,7,OfficeTimeline
+Gantt Chart,8,CUBA Platform
+Gantt Chart,9,SmartSheet
+Gantt Chart,10,
+Gantt Chart,11,
+Gantt Chart,12,GoogleChart
+Gantt Chart,13,GoogleChart
+Gantt Chart,14,
+Gantt Chart,15,
+Gantt Chart,16,
+Gantt Chart,17,
+Gantt Chart,18,
+Gantt Chart,19,
+Gantt Chart,20,
+Gantt Chart,21,FlexChart
+Gantt Chart,22,AngularChart
+Gantt Chart,23,Semiotic
+Geo Heatmap,1,D3.js
+Geo Heatmap,2,D3.js
+Geo Heatmap,3,
+Geo Heatmap,4,GeoPandas
+Geo Heatmap,5,Vega Lite
+Geo Heatmap,6,Vega Lite
+Geo Heatmap,7,D3.js
+Geo Heatmap,8,D3.js
+Geo Heatmap,9,D3.js
+Geo Heatmap,10,D3.js
+Geo Heatmap,11,
+Geo Heatmap,12,HighCharts
+Geo Heatmap,13,Plotly
+Geo Heatmap,14,
+Geo Heatmap,15,
+Geo Heatmap,16,
+Geo Heatmap,17,GoogleChart
+Geo Heatmap,18,GoogleChart
+Geo Heatmap,19,
+Geo Heatmap,20,Plotly
+Geo Heatmap,21,
+Grouped Bar Chart,1,Mascot.js
+Grouped Bar Chart,2,Mascot.js
+Grouped Bar Chart,3,Vega
+Grouped Bar Chart,4,D3.js
+Grouped Bar Chart,5,
+Grouped Bar Chart,6,ApexCharts
+Grouped Bar Chart,7,D3.js
+Grouped Bar Chart,8,GoogleChart
+Grouped Bar Chart,9,HighCharts
+Grouped Bar Chart,10,NVD3.js
+Grouped Bar Chart,11,HighCharts
+Grouped Bar Chart,12,R
+Grouped Bar Chart,13,R
+Grouped Bar Chart,14,
+Grouped Bar Chart,15,
+Grouped Bar Chart,16,AngularChart
+Grouped Bar Chart,17,
+Grouped Bar Chart,18,Evidence
+Grouped Bar Chart,19,
+Grouped Bar Chart,20,Plotly
+Grouped Bar Chart,21,NIVO
+Grouped Bar Chart,22,NIVO
+Grouped Bar Chart,23,Mascot.js
+Grouped Bar Chart,24,WowChart
+Grouped Bar Chart,25,WowChart
+Grouped Bar Chart,26,
+Grouped Bar Chart,27,Matplotlib
+Heatmap,1,
+Heatmap,2,Vega
+Heatmap,3,D3.js
+Heatmap,4,D3.js
+Heatmap,5,D3.js
+Heatmap,6,D3.js
+Heatmap,7,D3.js
+Heatmap,8,D3.js
+Heatmap,9,
+Heatmap,10,NIVO
+Heatmap,11,ApexCharts
+Heatmap,12,ApexCharts
+Heatmap,13,R
+Heatmap,14,
+Heatmap,15,NIVO
+Heatmap,16,NIVO
+Heatmap,17,
+Heatmap,18,
+Heatmap,19,
+Heatmap,20,
+Heatmap,21,
+Heatmap,22,
+Heatmap,23,R
+Heatmap,24,Seaborn
+Heatmap,25,HighCharts
+Kagi Chart,1,D3.js
+Kagi Chart,2,
+Kagi Chart,3,Diagrammm
+Kagi Chart,4,Diagrammm
+Kagi Chart,5,
+Kagi Chart,6,D3.js
+Kagi Chart,7,D3.js
+Kagi Chart,8,D3.js
+Kagi Chart,9,D3.js
+Kagi Chart,10,D3.js
+Kagi Chart,11,
+Kagi Chart,12,FusionCharts
+Kagi Chart,13,FusionCharts
+Kagi Chart,14,FlexChart
+Kagi Chart,15,Diagrammm
+Kagi Chart,16,FlexChart
+Kagi Chart,17,FlexChart
+Kagi Chart,18,FlexChart
+Kagi Chart,19,FlexChart
+Kagi Chart,20,FlexChart
+Line Graph,1,D3.js
+Line Graph,2,Datawrapper
+Line Graph,3,Datawrapper
+Line Graph,4,Datawrapper
+Line Graph,5,Datylon
+Line Graph,6,Flourish
+Line Graph,7,Plotly
+Line Graph,8,Quadrigram
+Line Graph,9,Vega
+Line Graph,10,Mascot.js
+Line Graph,11,
+Line Graph,12,ApexCharts
+Line Graph,13,ApexCharts
+Line Graph,14,DataGraph
+Line Graph,15,Diagrammm
+Line Graph,16,Diagrammm
+Line Graph,17,HighCharts
+Line Graph,18,HighCharts
+Line Graph,19,R
+Line Graph,20,R
+Line Graph,21,R
+Line Graph,22,R
+Line Graph,23,
+Line Graph,24,
+Line Graph,25,
+Line Graph,26,
+Line Graph,27,
+Line Graph,28,NIVO
+Line Graph,29,NIVO
+Line Graph,30,VictoryChart
+Line Graph,31,
+Line Graph,32,WowChart
+Line Graph,33,
+Line Graph,34,Matplotlib
+Line Graph,35,
+Line Graph,36,FlexChart
+Line Graph,37,FlexChart
+Line Graph,38,
+Line Graph,39,AngularChart
+Line Graph,40,
+Marimekko Chart,1,FusionCharts
+Marimekko Chart,2,PlotDB
+Marimekko Chart,3,AnyChart
+Marimekko Chart,4,FusionCharts
+Marimekko Chart,5,FusionCharts
+Marimekko Chart,6,Mascot.js
+Marimekko Chart,7,Vega Lite
+Marimekko Chart,8,Plotly
+Marimekko Chart,9,D3.js
+Marimekko Chart,10,R
+Marimekko Chart,11,Diagrammm
+Marimekko Chart,12,
+Marimekko Chart,13,R
+Marimekko Chart,14,R
+Marimekko Chart,15,NIVO
+Marimekko Chart,16,NIVO
+Marimekko Chart,17,
+Marimekko Chart,18,
+Marimekko Chart,19,D3.js
+Marimekko Chart,20,Semiotic
+Marimekko Chart,21,
+Matrix Diagram,1,D3.js
+Matrix Diagram,2,Datylon
+Matrix Diagram,3,
+Matrix Diagram,4,R
+Matrix Diagram,5,D3.js
+Matrix Diagram,6,D3.js
+Matrix Diagram,7,D3.js
+Matrix Diagram,8,Datylon
+Matrix Diagram,9,Creately
+Matrix Diagram,10,Plotly
+Matrix Diagram,11,Semiotic
+Matrix Diagram,12,
+Matrix Diagram,13,Matplotlib
+Matrix Diagram,14,
+Matrix Diagram,15,Matplotlib
+Matrix Diagram,16,ObservablePlot
+Matrix Diagram,17,ObservablePlot
+Matrix Diagram,18,D3.js
+Matrix Diagram,19,
+Matrix Diagram,20,R
+Matrix Diagram,21,R
+Parallel Coordinates Plot,1,Mascot.js
+Parallel Coordinates Plot,2,
+Parallel Coordinates Plot,3,Datylon
+Parallel Coordinates Plot,4,Data Illustrator
+Parallel Coordinates Plot,5,HighCharts
+Parallel Coordinates Plot,6,
+Parallel Coordinates Plot,7,
+Parallel Coordinates Plot,8,Matplotlib
+Parallel Coordinates Plot,9,Rawgraphs
+Parallel Coordinates Plot,10,
+Parallel Coordinates Plot,11,NIVO
+Parallel Coordinates Plot,12,NIVO
+Parallel Coordinates Plot,13,D3.js
+Parallel Coordinates Plot,14,Matplotlib
+Parallel Coordinates Plot,15,
+Parallel Coordinates Plot,16,Matplotlib
+Parallel Coordinates Plot,17,
+Parallel Coordinates Plot,18,
+Parallel Coordinates Plot,19,Lets-Plot
+Parallel Coordinates Plot,20,D3.js
+Pie Chart,1,Datylon
+Pie Chart,2,Vega Lite
+Pie Chart,3,D3.js
+Pie Chart,4,Mascot.js
+Pie Chart,5,Datylon
+Pie Chart,6,Vega Lite
+Pie Chart,7,
+Pie Chart,8,Plotly
+Pie Chart,9,ApexCharts
+Pie Chart,10,ApexCharts
+Pie Chart,11,D3.js
+Pie Chart,12,D3.js
+Pie Chart,13,Diagrammm
+Pie Chart,14,HighCharts
+Pie Chart,15,
+Pie Chart,16,
+Pie Chart,17,
+Pie Chart,18,Matplotlib
+Pie Chart,19,
+Pie Chart,20,Lets-Plot
+Pie Chart,21,NIVO
+Pie Chart,22,FlexChart
+Pie Chart,23,Kandy
+Pie Chart,24,FlexChart
+Polar Area Chart,1,Visual Paradigm
+Polar Area Chart,2,HighCharts
+Polar Area Chart,3,ioDraw
+Polar Area Chart,4,
+Polar Area Chart,5,Vega
+Polar Area Chart,6,Plotly
+Polar Area Chart,7,D3.js
+Polar Area Chart,8,D3.js
+Polar Area Chart,9,Mascot.js
+Polar Area Chart,10,Datylon
+Polar Area Chart,11,R
+Polar Area Chart,12,Plotly
+Polar Area Chart,13,Plotly
+Polar Area Chart,14,D3.js
+Polar Area Chart,15,D3.js
+Polar Area Chart,16,D3.js
+Polar Area Chart,17,ioDraw
+Polar Area Chart,18,D3.js
+Polar Area Chart,19,
+Polar Area Chart,20,
+Polar Area Chart,21,WowChart
+Polar Area Chart,22,
+Polar Area Chart,23,
+Polar Area Chart,24,
+Polar Area Chart,25,
+Radar Chart,1,Creately
+Radar Chart,2,D3.js
+Radar Chart,3,D3.js
+Radar Chart,4,D3.js
+Radar Chart,5,AngularChart
+Radar Chart,6,
+Radar Chart,7,Vega
+Radar Chart,8,JSCharting
+Radar Chart,9,Semiotic
+Radar Chart,10,AMCharts
+Radar Chart,11,
+Radar Chart,12,NIVO
+Radar Chart,13,NIVO
+Radar Chart,14,NIVO
+Radar Chart,15,
+Radar Chart,16,
+Radar Chart,17,
+Radar Chart,18,
+Radar Chart,19,Lets-Plot
+Radar Chart,20,
+Radar Chart,21,WowChart
+Radar Chart,22,Plotly
+Radar Chart,23,FlexChart
+Radar Chart,24,FlexChart
+Radial Bar Chart,1,
+Radial Bar Chart,2,
+Radial Bar Chart,3,
+Radial Bar Chart,4,
+Radial Bar Chart,5,HighCharts
+Radial Bar Chart,6,ioDraw
+Radial Bar Chart,7,
+Radial Bar Chart,8,ApexCharts
+Radial Bar Chart,9,ApexCharts
+Radial Bar Chart,10,
+Radial Bar Chart,11,NIVO
+Radial Bar Chart,12,
+Radial Bar Chart,13,
+Radial Bar Chart,14,
+Radial Bar Chart,15,
+Radial Bar Chart,16,
+Radial Bar Chart,17,
+Radial Bar Chart,18,
+Radial Bar Chart,19,
+Radial Bar Chart,20,
+Range Chart,1,Mascot.js
+Range Chart,2,AnyChart
+Range Chart,3,ApexCharts
+Range Chart,4,ZingChart
+Range Chart,5,AngularChart
+Range Chart,6,AnyChart
+Range Chart,7,AnyChart
+Range Chart,8,
+Range Chart,9,AnyChart
+Range Chart,10,HighCharts
+Range Chart,11,
+Range Chart,12,AngularChart
+Range Chart,13,Kandy
+Range Chart,14,FlexChart
+Range Chart,15,AngularChart
+Range Chart,16,ObservablePlot
+Range Chart,17,ObservablePlot
+Range Chart,18,ObservablePlot
+Range Chart,19,AMCharts
+Range Chart,20,Semiotic
+Range Chart,21,Mascot.js
+Scatterplot,1,Datylon
+Scatterplot,2,
+Scatterplot,3,Datylon
+Scatterplot,4,
+Scatterplot,5,R
+Scatterplot,6,R
+Scatterplot,7,Mascot.js
+Scatterplot,8,R
+Scatterplot,9,ApexCharts
+Scatterplot,10,
+Scatterplot,11,Vega Lite
+Scatterplot,12,D3.js
+Scatterplot,13,R
+Scatterplot,14,R
+Scatterplot,15,
+Scatterplot,16,ObservablePlot
+Scatterplot,17,NIVO
+Scatterplot,18,NIVO
+Scatterplot,19,ConX
+Scatterplot,20,
+Scatterplot,21,VictoryChart
+Scatterplot,22,
+Scatterplot,23,FlexChart
+Scatterplot,24,
+Scatterplot,25,Semiotic
+Scatterplot,26,Semiotic
+Spiral Plot,1,
+Spiral Plot,2,D3.js
+Spiral Plot,3,D3.js
+Spiral Plot,4,D3.js
+Spiral Plot,5,D3.js
+Spiral Plot,6,Charticulator
+Spiral Plot,7,R
+Spiral Plot,8,Charticulator
+Spiral Plot,9,Charticulator
+Spiral Plot,10,Charticulator
+Spiral Plot,11,D3.js
+Spiral Plot,12,D3.js
+Spiral Plot,13,D3.js
+Spiral Plot,14,ObservablePlot
+Spiral Plot,15,
+Spiral Plot,16,
+Spiral Plot,17,
+Spiral Plot,18,D3.js
+Spiral Plot,19,D3.js
+Spiral Plot,20,R
+Stacked Area Chart,1,DataWrapper
+Stacked Area Chart,2,DataWrapper
+Stacked Area Chart,3,Semiotic
+Stacked Area Chart,4,Datylon
+Stacked Area Chart,5,Plotly
+Stacked Area Chart,6,AnyChart
+Stacked Area Chart,7,FlexChart
+Stacked Area Chart,8,ObservablePlot
+Stacked Area Chart,9,D3.js
+Stacked Area Chart,10,Vega Lite
+Stacked Area Chart,11,
+Stacked Area Chart,12,ApexCharts
+Stacked Area Chart,13,
+Stacked Area Chart,14,
+Stacked Area Chart,15,
+Stacked Area Chart,16,VictoryChart
+Stacked Area Chart,17,GoogleChart
+Stacked Area Chart,18,D3.js
+Stacked Area Chart,19,D3.js
+Stacked Area Chart,20,D3.js
+Stacked Area Chart,21,D3.js
+Stacked Area Chart,22,
+Stacked Area Chart,23,
+Stacked Bar Chart,1,D3.js
+Stacked Bar Chart,2,D3.js
+Stacked Bar Chart,3,ApexCharts
+Stacked Bar Chart,4,Vega Lite
+Stacked Bar Chart,5,Vega Lite
+Stacked Bar Chart,6,Vega Lite
+Stacked Bar Chart,7,Vega Lite
+Stacked Bar Chart,8,Vega Lite
+Stacked Bar Chart,9,Mascot.js
+Stacked Bar Chart,10,D3.js
+Stacked Bar Chart,11,ApexCharts
+Stacked Bar Chart,12,ApexCharts
+Stacked Bar Chart,13,GoogleChart
+Stacked Bar Chart,14,
+Stacked Bar Chart,15,
+Stacked Bar Chart,16,
+Stacked Bar Chart,17,
+Stacked Bar Chart,18,R
+Stacked Bar Chart,19,Evidence
+Stacked Bar Chart,20,
+Stacked Bar Chart,21,R
+Stacked Bar Chart,22,NIVO
+Stacked Bar Chart,23,R
+Stacked Bar Chart,24,
+Stacked Bar Chart,25,
+Stream Graph,1,Datylon
+Stream Graph,2,Datylon
+Stream Graph,3,PlotDB
+Stream Graph,4,Datylon
+Stream Graph,5,
+Stream Graph,6,
+Stream Graph,7,R
+Stream Graph,8,
+Stream Graph,9,
+Stream Graph,10,HighCharts
+Stream Graph,11,NIVO
+Stream Graph,12,NIVO
+Stream Graph,13,NIVO
+Stream Graph,14,R
+Stream Graph,15,HighCharts
+Stream Graph,16,
+Stream Graph,17,
+Stream Graph,18,D3.js
+Stream Graph,19,D3.js
+Stream Graph,20,
+Stream Graph,21,Vega Lite
+Treemap,1,D3.js
+Treemap,2,Datylon
+Treemap,3,Datylon
+Treemap,4,
+Treemap,5,Diagrammm
+Treemap,6,R
+Treemap,7,HighCharts
+Treemap,8,PlotDB
+Treemap,9,Plotly
+Treemap,10,Vega Lite
+Treemap,11,Mascot.js
+Treemap,12,R
+Treemap,13,HighCharts
+Treemap,14,
+Treemap,15,NIVO
+Treemap,16,GoogleChart
+Treemap,17,
+Treemap,18,
+Treemap,19,HighCharts
+Treemap,20,
+Treemap,21,Plotly
+Treemap,22,FlexChart
+Violin Plot,1,Mascot.js
+Violin Plot,2,D3.js
+Violin Plot,3,
+Violin Plot,4,Plotly
+Violin Plot,5,D3.js
+Violin Plot,6,Vega
+Violin Plot,7,D3.js
+Violin Plot,8,ObservablePlot
+Violin Plot,9,BiochemPy
+Violin Plot,10,D3.js
+Violin Plot,11,Jamovi
+Violin Plot,12,Plotly
+Violin Plot,13,
+Violin Plot,14,
+Violin Plot,15,Diagrammm
+Violin Plot,16,R
+Violin Plot,17,Semiotic
+Violin Plot,18,R
+Violin Plot,19,R
+Violin Plot,20,AlgebraOfGraphics.jl
+Violin Plot,21,AlgebraOfGraphics.jl
+Waffle Chart,1,Mascot.js
+Waffle Chart,2,Mascot.js
+Waffle Chart,3,Data Illustrator
+Waffle Chart,4, PyWaffle
+Waffle Chart,5, PyWaffle
+Waffle Chart,6,Datylon
+Waffle Chart,7, PyWaffle
+Waffle Chart,8,D3.js
+Waffle Chart,9,Datylon
+Waffle Chart,10, PyWaffle
+Waffle Chart,11, PyWaffle
+Waffle Chart,12,R
+Waffle Chart,13,R
+Waffle Chart,14,
+Waffle Chart,15,NIVO
+Waffle Chart,16,Matplotlib
+Waffle Chart,17,D3.js
+Waffle Chart,18,NIVO
+Waffle Chart,19, PyWaffle
+Waffle Chart,20,Datylon
+Waffle Chart,21,
+Waffle Chart,22,ObservablePlot
+Waterfall Chart,1,Mascot.js
+Waterfall Chart,2,
+Waterfall Chart,3,AnyChart
+Waterfall Chart,4,AnyChart
+Waterfall Chart,5,
+Waterfall Chart,6,AnyChart
+Waterfall Chart,7,FusionCharts
+Waterfall Chart,8,
+Waterfall Chart,9,Plotly
+Waterfall Chart,10,Vega lite
+Waterfall Chart,11,HighCharts
+Waterfall Chart,12,
+Waterfall Chart,13,
+Waterfall Chart,14,FlexChart
+Waterfall Chart,15,
+Waterfall Chart,16,
+Waterfall Chart,17,ioDraw
+Waterfall Chart,18,FusionCharts
+Waterfall Chart,19,Semiotic
+Waterfall Chart,20,
+Waterfall Chart,21,AngularChart
+Word Cloud,1,D3.js
+Word Cloud,2,D3.js
+Word Cloud,3,Vega
+Word Cloud,4,AnyChart
+Word Cloud,5,AnyChart
+Word Cloud,6,AnyChart
+Word Cloud,7,D3.js
+Word Cloud,8,D3.js
+Word Cloud,9,D3.js
+Word Cloud,10,D3.js
+Word Cloud,11,
+Word Cloud,12,
+Word Cloud,13,HighCharts
+Word Cloud,14,
+Word Cloud,15,
+Word Cloud,16,
+Word Cloud,17,
+Word Cloud,18,
+Word Cloud,19,
+Word Cloud,20,
+Word Cloud,21,
+others,1,Mascot.js
+others,2,D3.js
+others,3,
+others,4,D3.js
+others,5,Mascot.js
+others,6,HighCharts
+others,7,ApexCharts
+others,8,HighCharts
+others,9,HighCharts
+others,10,HighCharts
+others,11,Datylon
+others,12,D3.js
+others,13,D3.js
+others,14,FusionCharts
+others,15,HighCharts
+others,16,HighCharts
+others,17,HighCharts
+others,18,
+others,19,NIVO
+others,20,
+others,21,ObservablePlot
+others,22,FlexChart
+others,23,FlexChart
+others,24,
+others,25,ApexCharts
+others,26,HighCharts
+others,27,Semiotic
+others,28,CUBA Platform

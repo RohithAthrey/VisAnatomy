@@ -12,6 +12,7 @@ from torch_geometric.loader import DataLoader
 from gcn import GCN
 from gcnn import GCNN
 from cnn import CNN
+from vit import create_vit_model
 
 
 def train(input_type="svg"):
@@ -20,7 +21,9 @@ def train(input_type="svg"):
     for data in train_loader:  # Iterate in batches over the training dataset.
         # Perform a single forward pass.
         if input_type == "img":
-            out = model(data.img)
+            # Handle image batching properly for ViT
+            img_batch = torch.stack([d.img for d in data.to_data_list()])
+            out = model(img_batch)
         elif input_type == "svg_wimg":
             out = model(data.x, data.edge_index, data.batch, data.img)
         elif input_type == "svg":
@@ -39,7 +42,9 @@ def test(loader, topk=5, input_type="svg"):
     correct_topk = 0
     for data in loader:  # Iterate in batches over the training/test dataset.
         if input_type == "img":
-            out = model(data.img)
+            # Handle image batching properly for ViT
+            img_batch = torch.stack([d.img for d in data.to_data_list()])
+            out = model(img_batch)
         elif input_type == "svg_wimg":
             out = model(data.x, data.edge_index, data.batch, data.img)
         elif input_type == "svg":
@@ -59,7 +64,7 @@ def test(loader, topk=5, input_type="svg"):
 current_dir = os.path.dirname(os.path.realpath(__file__))
 
 # datasets = ["graphData_v1", "graphData_v2", "graphData_v3", "graphData_v4"]
-datasets = ["graphData_img", "graphData_v4_wimg"]
+datasets = ["graphData_v4_filtered_06292025_vit"]
 
 seeds = [12345, 215, 114514, 520, 630] 
 combinations = product(datasets, seeds)
@@ -70,12 +75,14 @@ input_type = "svg"
 
 for comb in combinations:
     data_name, seed = comb
-    if not "img" in data_name:
-        input_type = "svg"
+    if "vit" in data_name:
+        input_type = "img"
     elif "wimg" in data_name:
         input_type = "svg_wimg"
-    else:
+    elif "img" in data_name:
         input_type = "img"
+    else:
+        input_type = "svg"
     
     dataset = torch.load(f'{current_dir}/data/GNN Dataset/{data_name}.pt')
     torch.manual_seed(seed)
@@ -83,7 +90,9 @@ for comb in combinations:
     # Define output folder
     date_time = datetime.datetime.now().strftime("%m-%d-%H-%M-%S")
     output_folder = f'{current_dir}/outputs/{data_name}/seed{seed}_{date_time}'
-    if input_type == "img":
+    if input_type == "img" and "vit" in data_name:
+        output_folder = f'{current_dir}/outputs/{data_name}_vit/seed{seed}_{date_time}'
+    elif input_type == "img":
         output_folder = f'{current_dir}/outputs/{data_name}_only/seed{seed}_{date_time}'
     print(output_folder)
     os.makedirs(output_folder, exist_ok=True)
@@ -102,7 +111,7 @@ for comb in combinations:
 
     # create model
     if input_type == "img":
-        model = CNN(hidden_channels=64, num_classes=40)
+        model = create_vit_model(hidden_channels=None, num_classes=40, model_size='small', img_size=224)
     elif input_type == "svg_wimg":
         model = GCNN(hidden_channels=64, num_node_features=dataset[0].x.shape[1], num_classes=40)
     elif input_type == "svg":
@@ -110,7 +119,9 @@ for comb in combinations:
     else:
         raise ValueError(f"Invalid input_type: {input_type}")
 
-    if input_type == "img":
+    if input_type == "img" and "vit" in data_name:
+        lr = 0.0001  # Lower learning rate for ViT
+    elif input_type == "img":
         lr = 0.001
     else:
         lr = 0.01

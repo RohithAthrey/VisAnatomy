@@ -2,13 +2,23 @@
   "started_at": "2025-06-27T21:38:14.294020",
   "total_files": 943,
   "completed": 841,
-  "successful": 835,
+  "successful": 837,
   "failed": 6,
   "results": {
     "0_MatrixDiagram18.svg": {
       "status": "success",
       "output_file": "results_openai/0_MatrixDiagram18_llm_annotation.json",
       "processed_at": "2025-06-27T21:38:14.296071"
+    },
+    "0_Calendar3.svg": {
+      "status": "success",
+      "output_file": "results_openai/0_Calendar3_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.296071"
+    },
+    "1_Calendar4.svg": {
+      "status": "success",
+      "output_file": "results_openai/1_Calendar4_llm_annotation.json",
+      "processed_at": "2025-06-27T21:38:14.296207"
     },
     "2_StackedBarChart14.svg": {
       "status": "success",

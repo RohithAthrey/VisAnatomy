@@ -116,15 +116,29 @@ Important notes:
 """
         return prompt
     
-    def create_batch_input_file(self, svg_directory: str, batch_file_path: str, limit: int = None) -> List[str]:
+    def create_batch_input_file(self, svg_directory: str, batch_file_path: str, limit: int = None, specific_files: List[str] = None) -> List[str]:
         """Create batch input file for OpenAI Batch API"""
-        svg_files = [f for f in os.listdir(svg_directory) if f.endswith('.svg')]
-        
-        # Limit the number of files if specified
-        if limit:
-            svg_files = svg_files[:limit]
-            print(f"🧪 TEST MODE: Processing only {len(svg_files)} files")
-            print(f"📋 Test files: {svg_files}")
+        if specific_files:
+            # Process only specific files
+            svg_files = []
+            for filename in specific_files:
+                if not filename.endswith('.svg'):
+                    filename += '.svg'
+                svg_path = os.path.join(svg_directory, filename)
+                if os.path.exists(svg_path):
+                    svg_files.append(filename)
+                else:
+                    print(f"⚠️  Warning: {filename} not found in {svg_directory}")
+            print(f"🎯 SPECIFIC FILES MODE: Processing {len(svg_files)} specified files")
+            print(f"📋 Files: {svg_files}")
+        else:
+            svg_files = [f for f in os.listdir(svg_directory) if f.endswith('.svg')]
+            
+            # Limit the number of files if specified
+            if limit:
+                svg_files = svg_files[:limit]
+                print(f"🧪 TEST MODE: Processing only {len(svg_files)} files")
+                print(f"📋 Test files: {svg_files}")
         
         batch_requests = []
         
@@ -139,6 +153,12 @@ Important notes:
                 
                 # Process SVG to add consistent IDs
                 processed_svg = self.process_svg(svg_content)
+                
+                # Check SVG size and truncate if necessary (OpenAI has token limits)
+                max_svg_chars = 50000  # Approximately 12.5k tokens
+                if len(processed_svg) > max_svg_chars:
+                    print(f"⚠️  {svg_file} is large ({len(processed_svg)} chars), truncating for API limits")
+                    processed_svg = processed_svg[:max_svg_chars] + "\n... (truncated)"
                 
                 # Create prompt
                 prompt = self.create_prompt(processed_svg)
@@ -269,8 +289,23 @@ Important notes:
                     response_body = result["response"]["body"]
                     content = response_body["choices"][0]["message"]["content"]
                     
-                    # Parse the JSON response
-                    parsed_result = json.loads(content)
+                    try:
+                        # Parse the JSON response
+                        parsed_result = json.loads(content)
+                    except json.JSONDecodeError as e:
+                        # Handle JSON parsing error
+                        print(f"❌ JSON parsing error for {svg_filename}: {e}")
+                        print(f"Raw content (first 500 chars): {content[:500]}")
+                        print(f"Raw content (last 500 chars): {content[-500:]}")
+                        
+                        failed += 1
+                        progress_data["results"][svg_filename] = {
+                            "status": "json_parse_error",
+                            "error": f"JSON parsing failed: {str(e)}",
+                            "raw_content_preview": f"Start: {content[:200]}... End: {content[-200:]}",
+                            "processed_at": datetime.now().isoformat()
+                        }
+                        continue
                     
                     # Save result
                     output_file = os.path.join(output_directory, svg_filename.replace('.svg', '_llm_annotation.json'))
@@ -326,7 +361,7 @@ Important notes:
         print(f"📊 Total: {len(results)} | ✅ Success: {successful} | ❌ Failed: {failed}")
         print(f"📄 Progress saved to: {progress_file}")
     
-    def process_all_svgs_batch(self, svg_directory: str, output_directory: str = None, test_limit: int = None):
+    def process_all_svgs_batch(self, svg_directory: str, output_directory: str = None, test_limit: int = None, specific_files: List[str] = None):
         """Process all SVG files using OpenAI Batch API"""
         if output_directory is None:
             output_directory = "results_openai"
@@ -335,7 +370,7 @@ Important notes:
         
         # Create batch input file
         batch_file_path = os.path.join(output_directory, "batch_input.jsonl")
-        svg_files = self.create_batch_input_file(svg_directory, batch_file_path, test_limit)
+        svg_files = self.create_batch_input_file(svg_directory, batch_file_path, test_limit, specific_files)
         
         if not svg_files:
             print("No SVG files to process!")
@@ -356,26 +391,37 @@ Important notes:
 
 def main():
     # Configuration
-    API_KEY = "your-openAI-api-key"
+    API_KEY = "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"
     CHARTS_SVG_DIR = "../../charts_svg"
     RESULTS_DIR = "results_openai"
     
-    # Check command line arguments for test mode
-    if len(sys.argv) > 1 and sys.argv[1] == "test":
-        TEST_LIMIT = 3  # Test with 3 files
-        print(f"🧪 RUNNING IN TEST MODE - Processing only {TEST_LIMIT} files")
-        print("To process all files, run: python infer_openai.py")
-        RESULTS_DIR = "results_openai_test"  # Use separate test directory
-    elif len(sys.argv) > 1 and sys.argv[1].isdigit():
-        TEST_LIMIT = int(sys.argv[1])
-        print(f"🧪 RUNNING IN TEST MODE - Processing only {TEST_LIMIT} files")
-        print("To process all files, run: python infer_openai.py")
-        RESULTS_DIR = "results_openai_test"  # Use separate test directory
+    # Check command line arguments for different modes
+    TEST_LIMIT = None
+    SPECIFIC_FILES = None
+    
+    if len(sys.argv) > 1:
+        if sys.argv[1] == "test":
+            TEST_LIMIT = 3  # Test with 3 files
+            print(f"🧪 RUNNING IN TEST MODE - Processing only {TEST_LIMIT} files")
+            print("To process all files, run: python infer_openai.py")
+            RESULTS_DIR = "results_openai_test"  # Use separate test directory
+        elif sys.argv[1].isdigit():
+            TEST_LIMIT = int(sys.argv[1])
+            print(f"🧪 RUNNING IN TEST MODE - Processing only {TEST_LIMIT} files")
+            print("To process all files, run: python infer_openai.py")
+            RESULTS_DIR = "results_openai_test"  # Use separate test directory
+        else:
+            # Assume specific filenames are provided
+            SPECIFIC_FILES = sys.argv[1:]
+            print(f"🎯 RUNNING IN SPECIFIC FILES MODE - Processing {len(SPECIFIC_FILES)} specified files")
+            print(f"📋 Files: {SPECIFIC_FILES}")
+            print("To process all files, run: python infer_openai.py")
+            RESULTS_DIR = "results_openai_specific"  # Use separate specific directory
     else:
-        TEST_LIMIT = None
         print("🚀 RUNNING IN FULL MODE - Processing all SVG files")
         print("To test with a few files, run: python infer_openai.py test")
         print("To test with specific number, run: python infer_openai.py 5")
+        print("To process specific files, run: python infer_openai.py file1.svg file2.svg")
     
     # Create results directory if it doesn't exist
     os.makedirs(RESULTS_DIR, exist_ok=True)
@@ -384,7 +430,7 @@ def main():
     processor = SVGProcessorOpenAI(API_KEY)
     
     # Process SVGs using Batch API
-    processor.process_all_svgs_batch(CHARTS_SVG_DIR, RESULTS_DIR, TEST_LIMIT)
+    processor.process_all_svgs_batch(CHARTS_SVG_DIR, RESULTS_DIR, TEST_LIMIT, SPECIFIC_FILES)
 
 
 if __name__ == "__main__":
