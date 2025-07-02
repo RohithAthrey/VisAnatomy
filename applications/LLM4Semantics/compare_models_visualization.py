@@ -42,11 +42,11 @@ class ModelComparisonVisualizer:
         """Load and prepare data from both models"""
         print("Loading DeepSeek data...")
         deepseek_df = pd.read_csv(deepseek_path)
-        deepseek_df['model'] = 'DeepSeek'
+        deepseek_df['model'] = 'DeepSeek-V3'
         
         print("Loading OpenAI data...")
         openai_df = pd.read_csv(openai_path)
-        openai_df['model'] = 'OpenAI'
+        openai_df['model'] = 'GPT-4o'
         
         return deepseek_df, openai_df
     
@@ -78,10 +78,10 @@ class ModelComparisonVisualizer:
         """Create the integrated three-level hierarchy comparison plot"""
         
         # Create single figure - optimized for horizontal layout
-        fig, ax = plt.subplots(figsize=(16, 14))
+        fig, ax = plt.subplots(figsize=(20, 14))
         
         # Color palette for models
-        model_colors = {'DeepSeek': '#2E86AB', 'OpenAI': '#A23B72'}
+        model_colors = {'DeepSeek-V3': '#2E86AB', 'GPT-4o': '#A23B72'}
         
         # Create hierarchical data ordering: metric -> category -> model
         # Sort data by metric first, then category
@@ -124,14 +124,14 @@ class ModelComparisonVisualizer:
                         category_idx = int(round(y_pos))
                         offset_from_center = y_pos - category_idx
                         
-                        if offset_from_center < 0:  # DeepSeek (below)
-                            child.set_color(model_colors['DeepSeek'])
-                            child.set_markerfacecolor(model_colors['DeepSeek'])
-                            child.set_markeredgecolor(model_colors['DeepSeek'])
-                        else:  # OpenAI (above)
-                            child.set_color(model_colors['OpenAI'])
-                            child.set_markerfacecolor(model_colors['OpenAI'])
-                            child.set_markeredgecolor(model_colors['OpenAI'])
+                        if offset_from_center < 0:  # DeepSeek-V3 (below)
+                            child.set_color(model_colors['DeepSeek-V3'])
+                            child.set_markerfacecolor(model_colors['DeepSeek-V3'])
+                            child.set_markeredgecolor(model_colors['DeepSeek-V3'])
+                        else:  # GPT-4o (above)
+                            child.set_color(model_colors['GPT-4o'])
+                            child.set_markerfacecolor(model_colors['GPT-4o'])
+                            child.set_markeredgecolor(model_colors['GPT-4o'])
                         
                         outliers_found += 1
                         break  # Only need to check once per child
@@ -148,10 +148,10 @@ class ModelComparisonVisualizer:
                         category_idx = int(round(sample_y))
                         offset_from_center = sample_y - category_idx
                         
-                        if offset_from_center < 0:  # DeepSeek (below)
-                            color = model_colors['DeepSeek']
-                        else:  # OpenAI (above)
-                            color = model_colors['OpenAI']
+                        if offset_from_center < 0:  # DeepSeek-V3 (below)
+                            color = model_colors['DeepSeek-V3']
+                        else:  # GPT-4o (above)
+                            color = model_colors['GPT-4o']
                         
                         try:
                             collection.set_facecolors(color)
@@ -172,9 +172,9 @@ class ModelComparisonVisualizer:
                         offset_from_center = sample_y - category_idx
                         
                         if offset_from_center < 0:
-                            color = model_colors['DeepSeek']
+                            color = model_colors['DeepSeek-V3']
                         else:
-                            color = model_colors['OpenAI']
+                            color = model_colors['GPT-4o']
                         
                         artist.set_facecolor(color)
                         artist.set_edgecolor(color)
@@ -185,12 +185,12 @@ class ModelComparisonVisualizer:
         print(f"Colored {outliers_found} outlier points")
         
         # Customize the plot (swapped axes)
-        ax.set_xlabel('Score', fontsize=16, fontweight='bold')
-        ax.set_ylabel('', fontsize=16, fontweight='bold')  # Remove y-label since we'll add custom labels
+        ax.set_xlabel('Score', fontsize=24, fontweight='bold')
+        ax.set_ylabel('', fontsize=24, fontweight='bold')  # Remove y-label since we'll add custom labels
         
         # Rotate y-axis labels for better readability
-        ax.tick_params(axis='y', rotation=0, labelsize=12)
-        ax.tick_params(axis='x', labelsize=12)
+        ax.tick_params(axis='y', rotation=0, labelsize=18)
+        ax.tick_params(axis='x', labelsize=18)
         
         # Add grid for better readability
         ax.grid(True, alpha=0.3, linestyle='--')
@@ -224,14 +224,14 @@ class ModelComparisonVisualizer:
             if '_' in label:
                 metric, category = label.split('_', 1)
                 ax.text(-0.02, i, category, ha='right', va='center', transform=ax.get_yaxis_transform(),
-                       fontsize=12)  # Closer to chart
+                       fontsize=18)  # Closer to chart
         
         # Add metric group labels (outer level) - F1 Score, Precision, Recall
         for metric, positions_categories in categories_by_metric.items():
             positions = [pos for pos, cat in positions_categories]
             center_pos = np.mean(positions)
             ax.text(-0.15, center_pos, metric, ha='right', va='center', transform=ax.get_yaxis_transform(),
-                   fontsize=16, fontweight='bold')  # Further from semantic labels
+                   fontsize=24, fontweight='bold')  # Further from semantic labels
             
             # Add separator lines between metric groups
             if metric != list(categories_by_metric.keys())[-1]:  # Not the last group
@@ -239,14 +239,14 @@ class ModelComparisonVisualizer:
                 ax.axhline(y=separator_pos, color='gray', linestyle='--', alpha=0.5, linewidth=1)
         
         # Position legend in the empty label area to avoid overlapping with chart
-        legend = ax.legend(title='Model', bbox_to_anchor=(-0.30, 1), loc='upper left',
-                          frameon=True, fancybox=True, shadow=True, fontsize=12)
+        legend = ax.legend(title='Model', bbox_to_anchor=(-0.35, 1), loc='upper left',
+                          frameon=True, fancybox=True, shadow=True, fontsize=18)
         legend.get_title().set_fontweight('bold')
-        legend.get_title().set_fontsize(14)
+        legend.get_title().set_fontsize(21)
         
         # Adjust layout to accommodate left hierarchical labels
         plt.tight_layout()
-        plt.subplots_adjust(left=0.22)
+        plt.subplots_adjust(left=0.28)
         
         # Save the plot
         output_path = Path(output_dir) / 'integrated_model_comparison.png'
@@ -262,7 +262,7 @@ class ModelComparisonVisualizer:
         
         for metric in self.metrics:
             for category in self.categories:
-                for model in ['DeepSeek', 'OpenAI']:
+                for model in ['DeepSeek-V3', 'GPT-4o']:
                     data = comparison_df[
                         (comparison_df['metric'] == metric) &
                         (comparison_df['category'] == category) &
@@ -301,25 +301,25 @@ class ModelComparisonVisualizer:
         x = np.arange(len(self.metrics))
         width = 0.35
         
-        deepseek_means = overall_stats[overall_stats['model'] == 'DeepSeek']['mean'].values
-        openai_means = overall_stats[overall_stats['model'] == 'OpenAI']['mean'].values
+        deepseek_means = overall_stats[overall_stats['model'] == 'DeepSeek-V3']['mean'].values
+        openai_means = overall_stats[overall_stats['model'] == 'GPT-4o']['mean'].values
         
-        deepseek_stds = overall_stats[overall_stats['model'] == 'DeepSeek']['std'].values
-        openai_stds = overall_stats[overall_stats['model'] == 'OpenAI']['std'].values
+        deepseek_stds = overall_stats[overall_stats['model'] == 'DeepSeek-V3']['std'].values
+        openai_stds = overall_stats[overall_stats['model'] == 'GPT-4o']['std'].values
         
-        bars1 = ax.bar(x - width/2, deepseek_means, width, label='DeepSeek', 
+        bars1 = ax.bar(x - width/2, deepseek_means, width, label='DeepSeek-V3', 
                       color='#2E86AB', alpha=0.8, yerr=deepseek_stds, capsize=5)
-        bars2 = ax.bar(x + width/2, openai_means, width, label='OpenAI', 
+        bars2 = ax.bar(x + width/2, openai_means, width, label='GPT-4o', 
                       color='#A23B72', alpha=0.8, yerr=openai_stds, capsize=5)
         
         # Customize the plot
-        ax.set_title('Overall Model Performance Comparison', fontsize=18, fontweight='bold', pad=20)
-        ax.set_xlabel('Metrics', fontsize=16, fontweight='bold')
-        ax.set_ylabel('Average Score', fontsize=16, fontweight='bold')
+        ax.set_title('Overall Model Performance Comparison', fontsize=27, fontweight='bold', pad=20)
+        ax.set_xlabel('Metrics', fontsize=24, fontweight='bold')
+        ax.set_ylabel('Average Score', fontsize=24, fontweight='bold')
         ax.set_xticks(x)
-        ax.set_xticklabels([self.metric_display_names[m] for m in self.metrics], fontsize=12)
-        ax.tick_params(axis='y', labelsize=12)
-        legend = ax.legend(frameon=True, fancybox=True, shadow=True, fontsize=12)
+        ax.set_xticklabels([self.metric_display_names[m] for m in self.metrics], fontsize=18)
+        ax.tick_params(axis='y', labelsize=18)
+        legend = ax.legend(frameon=True, fancybox=True, shadow=True, fontsize=18)
         ax.grid(True, alpha=0.3, linestyle='--')
         ax.set_axisbelow(True)
         ax.set_facecolor('#f8f9fa')
@@ -329,7 +329,7 @@ class ModelComparisonVisualizer:
             for bar, value in zip(bars, values):
                 height = bar.get_height()
                 ax.text(bar.get_x() + bar.get_width()/2., height + 0.01,
-                       f'{value:.3f}', ha='center', va='bottom', fontweight='bold', fontsize=11)
+                       f'{value:.3f}', ha='center', va='bottom', fontweight='bold', fontsize=17)
         
         add_value_labels(bars1, deepseek_means)
         add_value_labels(bars2, openai_means)
@@ -349,9 +349,9 @@ def main():
     visualizer = ModelComparisonVisualizer()
     
     # Define file paths
-    deepseek_path = "applications/LLM4Semantics/evaluation_results_deepseek/performance_by_chart.csv"
-    openai_path = "applications/LLM4Semantics/evaluation_results_openai/performance_by_chart.csv"
-    output_dir = "applications/LLM4Semantics/model_comparison_plots"
+    deepseek_path = "evaluation_results_deepseek/final_evaluation_results.csv"
+    openai_path = "evaluation_results_openai (772 charts)/openai_matched_evaluation_results.csv"
+    output_dir = "model_comparison_plots"
     
     # Create output directory
     Path(output_dir).mkdir(parents=True, exist_ok=True)
