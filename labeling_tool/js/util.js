@@ -89,7 +89,16 @@ function tryLoadAnnotations(filename) {
         annotations.referenceElements.gridlines.y
           ? annotations.referenceElements.gridlines.y
           : [];
-      markInfo = annotations.markInfo ? annotations.markInfo : {};
+
+      markInfo = {};
+      Object.keys(allGraphicsElement).forEach((id) => {
+        const element = allGraphicsElement[id];
+        markInfo[id] = {
+          Type: element.type || "none",
+          Role: element.role || "none"
+        };
+      });
+      
       groupAnnotations = annotations.groupInfo ? annotations.groupInfo : [];
       nestedGrouping = annotations.nestedGrouping
         ? annotations.nestedGrouping
