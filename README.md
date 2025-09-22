@@ -27,8 +27,8 @@ Online browser for the charts: https://visanatomy.github.io/
 - labeling_tool/  
   Web application for interactively labeling and annotating SVG charts.
 
-- final_annotations/  
-  Finalized annotation files, typically post-processed for research use.
+- annotations/  
+  Annotation files in the JSON format, one for each chart.
 
 - applications/  
   Contains subprojects and scripts, including LLM4Semantics for evaluation and analysis.
@@ -36,15 +36,12 @@ Online browser for the charts: https://visanatomy.github.io/
 - utils/  
   Utility scripts and helper functions for data processing and
 
-- annotations/  
-  JSON files containing semantic annotations for individual charts. Will be deleted.
-
 - _data_analysis_scripts/  
   Scripts for analyzing chart type distributions and annotation statistics.
 
 ## Using the Interactive Chart Labeling Tool
 
-To start the server:
+To start the server, in the root directory of this Git repository, do:
 
 ```python labeling_tool/server.py```
 
